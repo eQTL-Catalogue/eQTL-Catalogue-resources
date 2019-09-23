@@ -1,0 +1,67 @@
+study	cell_type	qtl_group	ontology_term	ontology_label
+BLUEPRINT	monocyte	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+BLUEPRINT	neutrophil	neutrophil	CL_0000775	neutrophil
+BLUEPRINT	T-cell	T-cell	CL_0000624	"CD4-positive, alpha-beta T cell"
+CEDAR	T-cell	T-cell_CD8	CL_0000625	"CD8-positive, alpha-beta T cell"
+CEDAR	T-cell	T-cell_CD4	CL_0000624	"CD4-positive, alpha-beta T cell"
+CEDAR	transverse_colon	transverse_colon	UBERON_0001157	transverse colon
+CEDAR	monocyte	monocyte_CD14	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+CEDAR	neutrophil	neutrophil_CD15	CL_0000775	neutrophil
+CEDAR	platelet	platelet	CL_0000233	platelet
+CEDAR	rectum	rectum	UBERON_0001052	rectum
+CEDAR	B-cell	B-cell_CD19	CL_0000236	B cell
+CEDAR	ileum	ileum	UBERON_0002116	ileum
+Fairfax_2014	monocyte	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Fairfax_2014	monocyte	monocyte_IFN24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Fairfax_2014	monocyte	monocyte_LPS2	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Fairfax_2014	monocyte	monocyte_LPS24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+GENCORD	LCL	LCL	EFO_0005292	lymphoblastoid cell line
+GENCORD	fibroblast	fibroblast	CL_0000057	fibroblast
+GENCORD	T-cell	T-cell	CL_0000084	T cell
+GEUVADIS	LCL	LCL	EFO_0005292	lymphoblastoid cell line
+TwinsUK	fat	fat	UBERON_0001013	adipose tissue
+TwinsUK	LCL	LCL	EFO_0005292	lymphoblastoid cell line
+TwinsUK	skin	skin	UBERON_0002097	skin of body
+TwinsUK	blood	blood	UBERON_0000178	blood
+Alasoo_2018	macrophage	macrophage_naive	CL_0000235	macrophage
+Alasoo_2018	macrophage	macrophage_IFNg	CL_0000235	macrophage
+Alasoo_2018	macrophage	macrophage_Salmonella	CL_0000235	macrophage
+Alasoo_2018	macrophage	macrophage_IFNg+Salmonella	CL_0000235	macrophage
+Nedelec_2016	macrophage	macrophage_Listeria	CL_0000235	macrophage
+Nedelec_2016	macrophage	macrophage_naive	CL_0000235	macrophage
+Nedelec_2016	macrophage	macrophage_Salmonella	CL_0000235	macrophage
+Quach_2016	monocyte	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Quach_2016	monocyte	monocyte_LPS	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Quach_2016	monocyte	monocyte_Pam3CSK4	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Quach_2016	monocyte	monocyte_R848	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Quach_2016	monocyte	monocyte_IAV	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Fairfax_2012	B-cell	B-cell_CD19	CL_0000236	B cell
+Schwartzentruber_2018	sensory_neuron	sensory_neuron	CL_0000101	sensory neuron
+van_de_Bunt_2015	pancreatic_islet	pancreatic_islet	UBERON_0000006	islet of Langerhans
+HipSci	iPSC	iPSC	EFO_0004905	induced pluripotent stem cell
+Naranbhai_2015	neutrophil	neutrophil_CD16	CL_0000775	neutrophil
+Kasela_2017	T-cell	T-cell_CD4	CL_0000624	"CD4-positive, alpha-beta T cell"
+Kasela_2017	T-cell	T-cell_CD8	CL_0000625	"CD8-positive, alpha-beta T cell"
+Ye_2018	dendritic_cell	dendritic_cell_naive	CL_0000451	dendritic cell
+Ye_2018	dendritic_cell	dendritic_cell_IFN	CL_0000451	dendritic cell
+Ye_2018	dendritic_cell	dendritic_cell_FLU	CL_0000451	dendritic cell
+Raj_2014	monocyte	monocyte_CD14	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Raj_2014	T-cell	T-cell_CD4	CL_0000624	"CD4-positive, alpha-beta T cell"
+Schmiedel_2018	Tfh	Tfh_memory	CL_0002038	T follicular helper cell
+Schmiedel_2018	Th17	Th17_memory	CL_0000899	T-helper 17 cell
+Schmiedel_2018	Th1	Th1_memory	CL_0000545	T-helper 1 cell
+Schmiedel_2018	Th2	Th2_memory	CL_0000546	T-helper 2 cell
+Schmiedel_2018	Th1-17	Th1-17_memory	CL_0000899	T-helper 17 cell
+Schmiedel_2018	Treg	Treg_memory	CL_0002678	memory regulatory T cell
+Schmiedel_2018	Treg	Treg_naive	CL_0002677	naive regulatory T cell
+Schmiedel_2018	B-cell	B-cell_naive	CL_0000236	B cell
+Schmiedel_2018	CD4_T-cell	CD4_T-cell_naive	CL_0000624	"CD4-positive, alpha-beta T cell"
+Schmiedel_2018	CD4_T-cell	CD4_T-cell_anti-CD3-CD28	CL_0000624	"CD4-positive, alpha-beta T cell"
+Schmiedel_2018	CD8_T-cell	CD8_T-cell_naive	CL_0000625	"CD8-positive, alpha-beta T cell"
+Schmiedel_2018	CD8_T-cell	CD8_T-cell_anti-CD3-CD28	CL_0000625	"CD8-positive, alpha-beta T cell"
+Schmiedel_2018	monocyte_CD16	monocyte_CD16_naive	CL_0002396	"CD14-low, CD16-positive monocyte"
+Schmiedel_2018	monocyte	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Schmiedel_2018	NK-cell	NK-cell_naive	CL_0000623	natural killer cell
+ROSMAP	brain	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex
+BrainSeq	brain	brain	UBERON_0009834	dorsolateral prefrontal cortex
+Lepik_2017	blood	blood	UBERON_0000178	blood

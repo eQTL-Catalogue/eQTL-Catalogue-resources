@@ -1,0 +1,16 @@
+study	condition	ontology_term	ontology_label
+Fairfax_2014	IFN24	EFO_0003024	interferon gamma
+Fairfax_2014	LPS2	CHEBI_16412	lipopolysaccharide
+Fairfax_2014	LPS24	CHEBI_16412	lipopolysaccharide
+Alasoo_2018	IFNg	EFO_0003024	interferon gamma
+Alasoo_2018	Salmonella	NCBITaxon_90371	Salmonella enterica subsp. enterica serovar Typhimurium
+Alasoo_2018	IFNg+Salmonella	EFO_0003024; NCBITaxon_90371	Salmonella enterica subsp. enterica serovar Typhimurium; interferon gamma
+Nedelec_2016	Listeria	NCBITaxon_1639	Listeria monocytogenes
+Nedelec_2016	Salmonella	NCBITaxon_90371	Salmonella enterica subsp. enterica serovar Typhimurium
+Quach_2016	LPS	CHEBI_16412	lipopolysaccharide
+Quach_2016	Pam3CSK4	CHEBI_46895	lipopeptide
+Quach_2016	R848	CHEBI_36706	resiquimod
+Quach_2016	IAV	NCBITaxon_11320	Influenza A virus
+Ye_2018	IFN	EFO_0003023	interferon beta
+Ye_2018	FLU	NCBITaxon_11320	Influenza A virus
+Schmiedel_2018	anti-CD3-CD28	EFO_0003317; EFO_0003304	anti-CD3; anti-CD28
