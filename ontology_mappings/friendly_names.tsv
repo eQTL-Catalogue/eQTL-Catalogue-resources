@@ -1,0 +1,30 @@
+ontology_term	ontology_label	ontology_tissue
+CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte
+CL_0000775	neutrophil	neutrophil
+CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell
+CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell
+UBERON_0001157	transverse colon	transverse colon
+CL_0000233	platelet	platelet
+UBERON_0001052	rectum	rectum
+CL_0000236	B cell	B cell
+UBERON_0002116	ileum	ileum
+EFO_0005292	lymphoblastoid cell line	LCL
+CL_0000057	fibroblast	fibroblast
+CL_0000084	T cell	T cell
+UBERON_0001013	adipose tissue	adipose
+UBERON_0002097	skin of body	skin
+UBERON_0000178	blood	blood
+CL_0000235	macrophage	macrophage
+CL_0000101	sensory neuron	sensory neuron
+UBERON_0000006	islet of Langerhans	pancreatic islet
+EFO_0004905	induced pluripotent stem cell	iPSC
+CL_0000451	dendritic cell	dendritic cell
+CL_0002038	T follicular helper cell	Tfh cell
+CL_0000899	T-helper 17 cell	Th17 cell
+CL_0000545	T-helper 1 cell	Th1 cell
+CL_0000546	T-helper 2 cell	Th2 cell
+CL_0002678	memory regulatory T cell	Treg naive
+CL_0002677	naive regulatory T cell	Treg memory
+CL_0002396	CD14-low, CD16-positive monocyte	CD16+ monocyte
+CL_0000623	natural killer cell	NK cell
+UBERON_0009834	dorsolateral prefrontal cortex	DLPFC
