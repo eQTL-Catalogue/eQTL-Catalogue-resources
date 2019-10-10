@@ -1,0 +1,62 @@
+study	qtl_group	condition	condition_label	cell_type	ontology_term	ontology_label
+BLUEPRINT	monocyte	naive	naive	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+BLUEPRINT	neutrophil	naive	naive	neutrophil	CL_0000775	neutrophil
+BLUEPRINT	T-cell	naive	naive	T-cell	CL_0000624	"CD4-positive, alpha-beta T cell"
+CEDAR	T-cell_CD8	naive	naive	T-cell	CL_0000625	"CD8-positive, alpha-beta T cell"
+CEDAR	T-cell_CD4	naive	naive	T-cell	CL_0000624	"CD4-positive, alpha-beta T cell"
+CEDAR	transverse_colon	naive	naive	transverse_colon	UBERON_0001157	transverse colon
+CEDAR	monocyte_CD14	naive	naive	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+CEDAR	neutrophil_CD15	naive	naive	neutrophil	CL_0000775	neutrophil
+CEDAR	platelet	naive	naive	platelet	CL_0000233	platelet
+CEDAR	rectum	naive	naive	rectum	UBERON_0001052	rectum
+CEDAR	B-cell_CD19	naive	naive	B-cell	CL_0000236	B cell
+CEDAR	ileum	naive	naive	ileum	UBERON_0002116	ileum
+Fairfax_2014	monocyte_naive	naive	naive	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Fairfax_2014	monocyte_IFN24	IFN24	IFNg_24h	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Fairfax_2014	monocyte_LPS2	LPS2	LPS_2h	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Fairfax_2014	monocyte_LPS24	LPS24	LPS_24h	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+GENCORD	LCL	naive	naive	LCL	EFO_0005292	lymphoblastoid cell line
+GENCORD	fibroblast	naive	naive	fibroblast	CL_0000057	fibroblast
+GENCORD	T-cell	naive	naive	T-cell	CL_0000084	T cell
+GEUVADIS	LCL	naive	naive	LCL	EFO_0005292	lymphoblastoid cell line
+TwinsUK	fat	naive	naive	fat	UBERON_0001013	adipose tissue
+TwinsUK	LCL	naive	naive	LCL	EFO_0005292	lymphoblastoid cell line
+TwinsUK	skin	naive	naive	skin	UBERON_0002097	skin of body
+TwinsUK	blood	naive	naive	blood	UBERON_0000178	blood
+Alasoo_2018	macrophage_naive	naive	naive	macrophage	CL_0000235	macrophage
+Alasoo_2018	macrophage_IFNg	IFNg	IFNg_18h	macrophage	CL_0000235	macrophage
+Alasoo_2018	macrophage_Salmonella	Salmonella	Salmonella_5h	macrophage	CL_0000235	macrophage
+Alasoo_2018	macrophage_IFNg+Salmonella	IFNg+Salmonella	IFNg_18h+Salmonella_5h	macrophage	CL_0000235	macrophage
+Nedelec_2016	macrophage_Listeria	Listeria	Listeria_5h	macrophage	CL_0000235	macrophage
+Nedelec_2016	macrophage_naive	naive	naive	macrophage	CL_0000235	macrophage
+Nedelec_2016	macrophage_Salmonella	Salmonella	Salmonella_5h	macrophage	CL_0000235	macrophage
+Quach_2016	monocyte_naive	naive	naive	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Quach_2016	monocyte_LPS	LPS	LPS_6h	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Quach_2016	monocyte_Pam3CSK4	Pam3CSK4	Pam3CSK4_6h	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Quach_2016	monocyte_R848	R848	R848_6h	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Quach_2016	monocyte_IAV	IAV	influenza_6h	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Fairfax_2012	B-cell_CD19	naive	naive	B-cell	CL_0000236	B cell
+Schwartzentruber_2018	sensory_neuron	naive	naive	sensory_neuron	CL_0000101	sensory neuron
+van_de_Bunt_2015	pancreatic_islet	naive	naive	pancreatic_islet	UBERON_0000006	islet of Langerhans
+HipSci	iPSC	naive	naive	iPSC	EFO_0004905	induced pluripotent stem cell
+Naranbhai_2015	neutrophil_CD16	naive	naive	neutrophil	CL_0000775	neutrophil
+Kasela_2017	T-cell_CD4	naive	naive	T-cell	CL_0000624	"CD4-positive, alpha-beta T cell"
+Kasela_2017	T-cell_CD8	naive	naive	T-cell	CL_0000625	"CD8-positive, alpha-beta T cell"
+Schmiedel_2018	Tfh_memory	memory	naive	Tfh	CL_0002038	T follicular helper cell
+Schmiedel_2018	Th17_memory	memory	naive	Th17	CL_0000899	T-helper 17 cell
+Schmiedel_2018	Th1_memory	memory	naive	Th1	CL_0000545	T-helper 1 cell
+Schmiedel_2018	Th2_memory	memory	naive	Th2	CL_0000546	T-helper 2 cell
+Schmiedel_2018	Th1-17_memory	memory	naive	Th1-17	CL_0000899	T-helper 17 cell
+Schmiedel_2018	Treg_memory	memory	naive	Treg	CL_0002678	memory regulatory T cell
+Schmiedel_2018	Treg_naive	naive	naive	Treg	CL_0002677	naive regulatory T cell
+Schmiedel_2018	B-cell_naive	naive	naive	B-cell	CL_0000236	B cell
+Schmiedel_2018	CD4_T-cell_naive	naive	naive	CD4_T-cell	CL_0000624	"CD4-positive, alpha-beta T cell"
+Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	anti-CD3-CD28	anti-CD3-CD28_4h	CD4_T-cell	CL_0000624	"CD4-positive, alpha-beta T cell"
+Schmiedel_2018	CD8_T-cell_naive	naive	naive	CD8_T-cell	CL_0000625	"CD8-positive, alpha-beta T cell"
+Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	anti-CD3-CD28	anti-CD3-CD28_4h	CD8_T-cell	CL_0000625	"CD8-positive, alpha-beta T cell"
+Schmiedel_2018	monocyte_CD16_naive	naive	naive	monocyte_CD16	CL_0002396	"CD14-low, CD16-positive monocyte"
+Schmiedel_2018	monocyte_naive	naive	naive	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Schmiedel_2018	NK-cell_naive	naive	naive	NK-cell	CL_0000623	natural killer cell
+ROSMAP	brain_naive	naive	naive	brain	UBERON_0009834	dorsolateral prefrontal cortex
+BrainSeq	brain	naive	naive	brain	UBERON_0009834	dorsolateral prefrontal cortex
+Lepik_2017	blood	naive	naive	blood	UBERON_0000178	blood
