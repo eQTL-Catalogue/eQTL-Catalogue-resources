@@ -1,0 +1,47 @@
+ontology_tissue	ontology_term	study	type	n
+monocyte	CL_0002057	BLUEPRINT	RNA-seq	191
+monocyte	CL_0002057	CEDAR	microarray	286
+monocyte	CL_0002057	Fairfax_2014	microarray	420
+monocyte	CL_0002057	Quach_2016	RNA-seq	200
+monocyte	CL_0002057	Schmiedel_2018	RNA-seq	91
+CD16+ monocyte	CL_0002396	Schmiedel_2018	RNA-seq	90
+macrophage	CL_0000235	Alasoo_2018	RNA-seq	84
+macrophage	CL_0000235	Nedelec_2016	RNA-seq	163
+neutrophil	CL_0000775	BLUEPRINT	RNA-seq	196
+neutrophil	CL_0000775	CEDAR	microarray	280
+neutrophil	CL_0000775	Naranbhai_2015	microarray	93
+platelet	CL_0000233	CEDAR	microarray	205
+CD4+ T cell	CL_0000624	BLUEPRINT	RNA-seq	167
+CD4+ T cell	CL_0000624	CEDAR	microarray	290
+CD4+ T cell	CL_0000624	Kasela_2017	microarray	280
+CD4+ T cell	CL_0000624	Schmiedel_2018	RNA-seq	88
+CD8+ T cell	CL_0000625	CEDAR	microarray	277
+CD8+ T cell	CL_0000625	Kasela_2017	microarray	269
+CD8+ T cell	CL_0000625	Schmiedel_2018	RNA-seq	89
+T cell	CL_0000084	GENCORD	RNA-seq	184
+Tfh cell	CL_0002038	Schmiedel_2018	RNA-seq	89
+Th17 cell	CL_0000899	Schmiedel_2018	RNA-seq	89
+Th1 cell	CL_0000545	Schmiedel_2018	RNA-seq	82
+Th2 cell	CL_0000546	Schmiedel_2018	RNA-seq	89
+Treg naive	CL_0002678	Schmiedel_2018	RNA-seq	89
+Treg memory	CL_0002677	Schmiedel_2018	RNA-seq	89
+NK cell	CL_0000623	Schmiedel_2018	RNA-seq	90
+B cell	CL_0000236	CEDAR	microarray	262
+B cell	CL_0000236	Fairfax_2012	microarray	281
+B cell	CL_0000236	Schmiedel_2018	RNA-seq	91
+LCL	EFO_0005292	GENCORD	RNA-seq	190
+LCL	EFO_0005292	GEUVADIS	RNA-seq	445
+LCL	EFO_0005292	TwinsUK	RNA-seq	418
+blood	UBERON_0000178	Lepik_2017	RNA-seq	471
+blood	UBERON_0000178	TwinsUK	RNA-seq	195
+DLPFC	UBERON_0009834	BrainSeq	RNA-seq	479
+DLPFC	UBERON_0009834	ROSMAP	RNA-seq	576
+fibroblast	CL_0000057	GENCORD	RNA-seq	186
+adipose	UBERON_0001013	TwinsUK	RNA-seq	381
+skin	UBERON_0002097	TwinsUK	RNA-seq	370
+pancreatic islet	UBERON_0000006	van_de_Bunt_2015	RNA-seq	117
+iPSC	EFO_0004905	HipSci	RNA-seq	322
+sensory neuron	CL_0000101	Schwartzentruber_2018	RNA-seq	98
+transverse colon	UBERON_0001157	CEDAR	microarray	286
+ileum	UBERON_0002116	CEDAR	microarray	180
+rectum	UBERON_0001052	CEDAR	microarray	271

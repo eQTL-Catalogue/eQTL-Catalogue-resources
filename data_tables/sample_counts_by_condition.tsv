@@ -1,0 +1,15 @@
+ontology_tissue	study	ontology_term	condition_label	type	n
+monocyte	Fairfax_2014	CL_0002057	IFNg_24h	microarray	370
+monocyte	Fairfax_2014	CL_0002057	LPS_24h	microarray	325
+monocyte	Fairfax_2014	CL_0002057	LPS_2h	microarray	256
+monocyte	Quach_2016	CL_0002057	Influenza_6h	RNA-seq	198
+monocyte	Quach_2016	CL_0002057	LPS_6h	RNA-seq	184
+monocyte	Quach_2016	CL_0002057	Pam3CSK4_6h	RNA-seq	196
+monocyte	Quach_2016	CL_0002057	R848_6h	RNA-seq	191
+macrophage	Alasoo_2018	CL_0000235	IFNg_18h	RNA-seq	84
+macrophage	Alasoo_2018	CL_0000235	IFNg_18h+Salmonella_5h	RNA-seq	84
+macrophage	Alasoo_2018	CL_0000235	Salmonella_5h	RNA-seq	84
+macrophage	Nedelec_2016	CL_0000235	Listeria_5h	RNA-seq	163
+macrophage	Nedelec_2016	CL_0000235	Salmonella_5h	RNA-seq	167
+CD4+ T cell	Schmiedel_2018	CL_0000624	anti-CD3-CD28_4h	RNA-seq	89
+CD8+ T cell	Schmiedel_2018	CL_0000625	anti-CD3-CD28_4h	RNA-seq	88
