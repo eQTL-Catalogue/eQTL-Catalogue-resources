@@ -1,0 +1,5 @@
+study	qtl_group	tissue_ontology_id	tissue_ontology_term tissue_label	condition_label	ftp_path
+Fairfax_2014	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_naive.all.tsv.gz
+Fairfax_2014	monocyte_IFN24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	IFNg_24h	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_IFN24.all.tsv.gz
+Fairfax_2014	monocyte_LPS2	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_2h	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_LPS2.all.tsv.gz
+Fairfax_2014	monocyte_LPS24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_24h	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_LPS24.all.tsv.gz
