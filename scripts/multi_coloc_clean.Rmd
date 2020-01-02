@@ -1,0 +1,442 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+
+First things first: Loading needed libraries
+```{r load_libraries, warning=FALSE, message=FALSE}
+library("dplyr")
+library("ggplot2")
+library("readr")
+library("stringr")
+library("httr")
+library("jsonlite")
+library("tidyverse")
+library("coloc")
+library("biomaRt")
+library("wiggleplotr")
+library("GenomicRanges")
+library("biomaRt")
+```
+
+We defined a local function to easily fetch data from both GWAS and eQTL APIs
+```{r define_function_to_fetch_paginated_API_response, warning=FALSE}
+fetch_from_eqtl_cat_API <- function(link, is_gwas = FALSE){
+  nullToNA <- function(x) {
+    x[sapply(x, is.null)] <- NA
+    return(x)
+  }
+  if (is_gwas) {
+    cols_to_nest <- c("variant_id", "chromosome", "base_pair_location", "trait", 
+                      "p_value", "ci_lower", "ci_upper", "beta", 
+                      "effect_allele", "other_allele", "effect_allele_frequency", 
+                      "odds_ratio", "study_accession", "code")
+  } else {
+    cols_to_nest <- c("study_id", "qtl_group", "rsid", 
+                       "chromosome", "position", "pvalue", "condition_label", 
+                       "tissue_label", "molecular_trait_id", "gene_id", "ac",  
+                       "ref", "beta",  "variant", "an", "median_tpm",  "condition", 
+                       "r2", "alt", "type", "maf",  "tissue")
+  }
+  is_paginated <- !str_detect(link,"paginate=False")
+  # message("isPagined:", is_paginated)
+  page = 1
+  merged_summaries <- data.frame()
+  while(!is.null(link)){
+    # print(paste0("Fetching page #",page))
+    api_raw_data <- fromJSON(link, simplifyDataFrame = TRUE, flatten = TRUE)
+    link <- api_raw_data$`_links`$`next`$href
+    if (is_empty(api_raw_data$`_embedded`$associations)) {
+      return(merged_summaries)
+    }
+    eqtl_raw_list_data <- do.call(rbind, lapply(api_raw_data$`_embedded`$associations, rbind))
+    eqtl_data <- nullToNA(eqtl_raw_list_data) %>% as.matrix() %>% as_tibble()
+    if (is_paginated) { eqtl_data <- dplyr::select(eqtl_data, -c("_links")) }
+    eqtl_data <- tidyr::unnest(eqtl_data, cols = cols_to_nest)
+    if (!is.null(link)) {
+      page <- page + 1
+    }
+    merged_summaries <- merged_summaries %>% rbind(eqtl_data)
+  }
+  return(merged_summaries[cols_to_nest])
+}
+```
+
+Method to get significant associations with lead GWAS variant ID.
+```{r}
+get_significant_assocs_of_var <- function(study_ids, variant_id, p_upper = 0.0001, quant_method = "ge"){
+  rnaseq_studies_sign_assocs <- data.frame()
+  for(study_name in study_ids){
+    print(study_name)
+    ge_study_query_gwas_lead <- paste0("https://www.ebi.ac.uk/eqtl/api/associations?variant_id=", variant_id,
+                                       "&p_upper=", p_upper,
+                                       "&study=", study_name,
+                                       "&quant_method=", quant_method)
+    fetched_df <- fetch_from_eqtl_cat_API(ge_study_query_gwas_lead)
+    rnaseq_studies_sign_assocs <- rnaseq_studies_sign_assocs %>% rbind(fetched_df)
+  }
+  rnaseq_studies_sign_assocs$quant_method <- quant_method
+
+  return(rnaseq_studies_sign_assocs)
+}
+```
+
+Method to get all associations in cis region of each significant QTL
+```{r}
+get_assocs_in_region <- function(sign_assoc) {
+  message(sign_assoc["qtl_group"])
+  fetch_region_for_study_gene_link <- paste0("http://www.ebi.ac.uk/eqtl/api/chromosomes/",sign_assoc["chromosome"],
+                                          "/associations?paginate=False&study=",sign_assoc["study_id"],
+                                          "&qtl_group=",sign_assoc["qtl_group"],
+                                          "&molecular_trait_id=",sign_assoc["molecular_trait_id"],
+                                          "&quant_method=", sign_assoc["quant_method"],
+                                          "&bp_lower=45980000&bp_upper=46200000&size=1000")
+  
+  message("Fetching: ", fetch_region_for_study_gene_link)
+  region_for_study_gene_data <- fetch_from_eqtl_cat_API(fetch_region_for_study_gene_link)
+
+  region_for_study_gene_data <- region_for_study_gene_data %>%
+    dplyr::group_by(position) %>%
+    dplyr::mutate(alt_allele_count = length(alt)) %>%
+    dplyr::filter(alt_allele_count == 1)
+  
+  return(region_for_study_gene_data)
+}
+```
+
+Method to perform colocalisation analysis.
+```{r}
+get_colocs <- function(eqtl_data_for_region, gwas_data_for_trait) {
+  shared_positions = intersect(eqtl_data_for_region$position, gwas_data_for_trait$base_pair_location)
+
+  eqtl_shared = dplyr::filter(eqtl_data_for_region, position %in% shared_positions) %>% 
+    dplyr::mutate(variant_id = as.character(position))
+  gwas_shared = dplyr::filter(gwas_data_for_trait, base_pair_location %in% shared_positions) %>% 
+    dplyr::mutate(variant_id = as.character(base_pair_location))
+  
+  eQTL_dataset = list(pvalues = eqtl_shared$pvalue, 
+                      N = 84, #The sample size of the eQTL dataset was 84
+                      MAF = eqtl_shared$maf, 
+                      type = "quant", 
+                      beta = eqtl_shared$beta,
+                      snp = eqtl_shared$variant_id)
+  gwas_dataset = list(beta = gwas_shared$log_OR, #If log_OR column is full of NAs then use beta column instead
+                      varbeta = gwas_shared$se^2, 
+                      type = "cc", 
+                      snp = gwas_shared$variant_id,
+                      s = 0.5, #This is acutally not used, because we already specified varbeta above.
+                      MAF = eqtl_shared$maf)
+  
+  coloc_res = coloc::coloc.abf(dataset1 = eQTL_dataset, dataset2 = gwas_dataset,p1 = 1e-4, p2 = 1e-4, p12 = 1e-5)
+  return(coloc_res$summary)
+}
+```
+
+Util method for saving plots in different formats
+```{r}
+save_ggplots <- function(plot, path = ".", filename = "unnamed_plot", height = 15, width = 15){
+  ggsave(plot = plot,
+       filename = paste0(filename, ".eps"), 
+       path = path,
+       device = "eps", 
+       height = height, 
+       width = width,
+       units = "cm",
+       dpi = 300)
+
+ggsave(plot = plot,
+       filename = paste0(filename, ".png"), 
+       path = path,
+       device = "png", 
+       height = height, 
+       width = width,
+       units = "cm",
+       dpi = 300)
+
+ggsave(plot = plot,
+       filename = paste0(filename, ".pdf"), 
+       path = path,
+       device = "pdf", 
+       height = height, 
+       width = width,
+       units = "cm",
+       dpi = 300)
+}
+```
+
+Method to prepare data for plotting a faceted figure
+```{r}
+make_assocs_list_to_merged_plottable <- function(all_coloc_dt, quant_method = "ge"){
+  merged_assoc_data <- data.frame()
+  for (index in 1:(all_coloc_dt$eqtl_assocs_in_region %>% length())) {
+    assoc_df <- all_coloc_dt$eqtl_assocs_in_region[[index]]
+    assoc_df$coloc_PP4 <- round(all_coloc_dt$colocs[6,index], 3)
+    assoc_df$coloc_PP3 <- round(all_coloc_dt$colocs[5,index], 3)
+    assoc_df$track <- paste0("eQTL Catalogue\n", 
+                             assoc_df$study_id, "_",quant_method,"\n", 
+                             assoc_df$qtl_group,"\n",assoc_df$molecular_trait_id)
+    
+    if (index==1) {
+      merged_assoc_data <- assoc_df
+    } else {
+      merged_assoc_data <- merged_assoc_data %>% rbind(assoc_df)  
+    }
+  }
+  return(merged_assoc_data)
+}
+```
+
+
+```{r}
+plot_faceted_multi_manhattans <- function(merged_eqtl_assocs,
+                                          gwas_data_for_trait,
+                                          save_plot = FALSE,
+                                          save_dir = ".",
+                                          save_filename = "new_manhattan_plot",
+                                          save_width = 15,
+                                          save_height = NA,
+                                          no_GWAS_plot = FALSE) {
+  # get shared positions between GWAS and eQTL data
+  shared_positions = intersect(merged_eqtl_assocs$position,
+                               gwas_data_for_trait$base_pair_location)
+  
+  eqtl_shared = dplyr::filter(merged_eqtl_assocs, position %in% shared_positions) %>%
+    dplyr::mutate(variant_id = as.character(position))
+  gwas_shared = dplyr::filter(gwas_data_for_trait, base_pair_location %in% shared_positions) %>% 
+    dplyr::mutate(variant_id = as.character(base_pair_location))
+  
+  merged_data_for_plot <- as.data.frame(eqtl_shared %>% dplyr::select(pvalue, position, track))
+  if (!no_GWAS_plot) {
+    gwas_shared$track <- "GWAS RA"
+    gwas_sagred_trans <- gwas_shared %>% 
+      dplyr::select(p_value, base_pair_location, track) %>% 
+      stats::setNames(c("pvalue", "position", "track"))
+    merged_data_for_plot <- merged_data_for_plot %>% rbind(gwas_sagred_trans)
+    
+    merged_data_for_plot$track <- factor(merged_data_for_plot$track) %>% 
+    forcats::fct_relevel("GWAS RA", after = 0)
+  }   
+  
+  region_coords = c(45980000, 46200000)
+  plot_base_all = ggplot(merged_data_for_plot, aes_(x = ~ position, y = ~
+                                                      -log(pvalue, 10))) + geom_blank()
+
+  plot_gwas_eqtl_plot = plot_base_all +
+    geom_point(color = "deepskyblue4") +
+    theme_light() +
+    ylab(expression(paste("-", log[10], " p-value"))) +
+    scale_x_continuous(limits = region_coords, expand = c(0, 0)) +
+    facet_grid(track ~ ., scales = "free_y") +
+    theme(
+      plot.margin = unit(c(0.1, 1, 0.1, 1), "line"),
+      axis.text.x = element_blank(),
+      axis.title.x = element_blank(),
+      axis.ticks.x = element_blank(),
+      legend.position = "none",
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank(),
+      strip.text.y = element_text(colour = "grey10"),
+      strip.background = element_rect(fill = "grey85")
+    )
+  
+  summary_coloc <- merged_eqtl_assocs %>% 
+    group_by(track) %>% 
+    summarise(coloc_PP4 = unique(coloc_PP4), coloc_PP3 = unique(coloc_PP3))
+  
+  dat_text <- data.frame(
+    label = c(paste0("PP4: ", summary_coloc$coloc_PP4, 
+                   "\nPP3: ", summary_coloc$coloc_PP3)),
+    track = c( summary_coloc$track))
+
+  if (!no_GWAS_plot) {
+    dat_text <- rbind(data.frame(label="", track="GWAS RA"), dat_text)
+  }
+  
+  plot_gwas_eqtl <- plot_gwas_eqtl_plot + geom_text(
+    data    = dat_text,
+    mapping = aes(x = -Inf, y = -Inf, label = label),
+    hjust   = -0.1,
+    vjust = -3.4
+  )
+  
+  if (save_plot) {
+    save_height= ifelse(test = is.na(save_height), 
+                        yes = ((as.integer(!no_GWAS_plot) + unique(merged_eqtl_assocs$track) %>% length()) * 4),
+                        no = save_height)
+    message("Saving: ", save_filename)
+    save_ggplots(
+      plot = plot_gwas_eqtl,
+      path = save_dir,
+      filename = save_filename,
+      height = save_height,
+      width = save_width
+    )
+  }
+  return(plot_gwas_eqtl)
+}
+```
+
+# Here we start the analysis
+
+We first fetch GWAS data
+========================
+Chromosome: 20
+study_accession: GCST002318
+bp_lower: 45980000
+bp_upper: 46200000
+```{r fetch_GWAS_data}
+RA_gwas_query_str <- "https://www.ebi.ac.uk/gwas/summary-statistics/api/chromosomes/20/associations?study_accession=GCST002318&bp_lower=45980000&bp_upper=46200000&size=1000"
+gwas_data <- fetch_from_eqtl_cat_API(link = RA_gwas_query_str, is_gwas = TRUE)
+message("Downloaded ", gwas_data %>% nrow(), " associations from GWAS Catalogue")
+gwas_data <- gwas_data %>% 
+  dplyr::filter(!ci_lower %>% is.na()) %>% 
+  dplyr::filter(!ci_upper %>% is.na()) %>% 
+  dplyr::mutate(log_OR = log(odds_ratio)) %>%
+  dplyr::mutate(se = (log(ci_upper)-log(ci_lower))/3.92)
+message("There remain ", gwas_data %>% nrow(), " associations after filtering invalid values")
+```
+
+Pick the lead variant from GWAS data
+```{r}
+lead_var_gwas = dplyr::arrange(gwas_data, p_value)[1,]
+```
+
+Pick significant associations in eQTL Catalogue with lead GWAS variant ID for RNA-seq and Microarray studies and merge two tables
+```{r}
+# "ROSMAP"
+# "Schmiedel_2018",
+rnaseq_study_names <- c("Alasoo_2018", "BLUEPRINT", "BrainSeq", "GENCORD", "GEUVADIS", 
+                        "HipSci", "Lepik_2017", "Nedelec_2016", "Quach_2016", 
+                        "Schwartzentruber_2018", "TwinsUK", "van_de_Bunt_2015")
+rnaseq_studies_sign_assocs <- get_significant_assocs_of_var(study_ids = rnaseq_study_names, 
+                                                            variant_id = lead_var_gwas$variant_id) 
+
+microarray_study_names <- c("CEDAR", "Fairfax_2014", "Kasela_2017", "Naranbhai_2015", "Fairfax_2012")
+microarray_studies_sign_assocs <- get_significant_assocs_of_var(study_ids = microarray_study_names, 
+                                                                variant_id = lead_var_gwas$variant_id,
+                                                                quant_method = "microarray")
+
+all_studies_sign_assocs <- rnaseq_studies_sign_assocs %>% rbind(microarray_studies_sign_assocs)
+```
+
+Get all associations in cis region of each significant QTL
+```{r get_associations_in_cis, message=FALSE}
+all_coloc_data <- list()
+all_coloc_data$eqtl_assocs_in_region <- apply(all_studies_sign_assocs, 1, get_assocs_in_region)
+```
+
+Perform colocalisation analysis.
+```{r perform_coloc}
+all_coloc_data$colocs <- sapply(all_coloc_data$eqtl_assocs_in_region, get_colocs, gwas_data_for_trait=gwas_data)
+```
+
+Prepare merged facet plottable dataframe
+```{r merge_assoc_dataframes}
+plottable_merged_data <- make_assocs_list_to_merged_plottable(all_coloc_data)
+```
+
+Plot faceted manhattan figure with multiple 
+```{r plot_all_contexts_faceted, fig.width=15, fig.height=65}
+all_plots_faceted <- plot_faceted_multi_manhattans(merged_eqtl_assocs = plottable_merged_data, 
+                              gwas_data_for_trait = gwas_data,
+                              save_plot = TRUE,
+                              save_dir = "../paper_plots/eQTL_api_usecase/", 
+                              save_filename = "merged_manhattan", no_GWAS_plot = TRUE) 
+```
+
+Plot specific figures in faceted plot
+```{r plot_filtered_contexts_faceted, fig.width=15, fig.height=25}
+plottable_merged_data_filt <- plottable_merged_data %>% 
+  dplyr::filter(study_id %in% c("BLUEPRINT", "Quach_2016", "CEDAR", "Fairfax_2014")) %>% 
+  dplyr::filter(qtl_group %in% c("monocyte_naive", "monocyte", "monocyte_CD14")) %>% 
+  dplyr::filter(molecular_trait_id %in% c("ENSG00000101017", "ILMN_1779257"))
+
+filt_plots_faceted <- plot_faceted_multi_manhattans(merged_eqtl_assocs = plottable_merged_data_filt, 
+                              gwas_data_for_trait = gwas_data,
+                              save_plot = TRUE,
+                              save_dir = "../paper_plots/eQTL_api_usecase/", 
+                              save_filename = "merged_manhattan_filt", no_GWAS_plot = TRUE) 
+```
+## Analyse transcript usage associations in Alasoo_2018
+```{r}
+sign_tx_rs4239702 <-  get_significant_assocs_of_var(study_ids = rnaseq_study_names,
+                                                    variant_id = lead_var_gwas$variant_id, 
+                                                    quant_method = "tx")
+sign_tx_Alasoo_2018 <- sign_tx_rs4239702 %>% dplyr::filter(study_id=="Alasoo_2018")
+
+all_coloc_data_tx <- list()
+all_coloc_data_tx$eqtl_assocs_in_region <- apply(sign_tx_Alasoo_2018, 1, get_assocs_in_region)
+
+all_coloc_data_tx$colocs <- sapply(all_coloc_data_tx$eqtl_assocs_in_region, get_colocs, gwas_data_for_trait=gwas_data)
+merged_plottable_df <-  make_assocs_list_to_merged_plottable(all_coloc_data_tx, quant_method = "tx")
+
+manhattan_tx_gwas <- plot_faceted_multi_manhattans(merged_eqtl_assocs = merged_plottable_df, 
+                                                 gwas_data_for_trait = gwas_data,
+                                                 save_plot = TRUE,
+                                                 save_dir = "../paper_plots/eQTL_api_usecase/",
+                                                 save_filename = "merged_manhattan_tx")
+```
+```{r add_CD40_transcript_location}
+ensembl = useEnsembl(biomart="ensembl", dataset="hsapiens_gene_ensembl", version=78)
+
+CD_40_ENST00000466205_exons <- getBM(attributes=c('ensembl_exon_id','exon_chrom_start','exon_chrom_end',
+                                                  'strand', 'chromosome_name'), 
+                                     filters = 'ensembl_transcript_id', 
+                                     values ="ENST00000466205", 
+                                     mart = ensembl)
+
+CD_40_ENST00000466205_exons$strand <- "+"
+
+exons_grange <- makeGRangesFromDataFrame(CD_40_ENST00000466205_exons, ignore.strand = FALSE, seqnames.field = "chromosome_name", start.field = 'exon_chrom_start', end.field = 'exon_chrom_end', strand.field = 'strand', keep.extra.columns = TRUE)
+CD_40_exons_list <- GRangesList()
+CD_40_exons_list[['ENST00000466205']] <- exons_grange
+
+CD40_exons_plot <- plotTranscripts(exons = CD_40_exons_list, rescale_introns = FALSE, region_coords = region_coords)
+
+```
+
+```{r}
+joint_plot = cowplot::plot_grid(manhattan_tx_gwas, filt_plots_faceted, CD40_exons_plot,
+                                align = "v", ncol = 1, rel_heights = c(2,4, 1))
+
+save_ggplots(plot = joint_plot, path = "../paper_plots/eQTL_api_usecase/", filename = "new_tx_merged_plot_with_exon", height = 28, width = 15)
+```
+
+## Plot pvalues of each significant association
+```{r}
+all_studies_sign_assocs_with_tx <- all_studies_sign_assocs %>% rbind(sign_tx_rs4239702)
+sign_assocs_to_plot_scatter <- all_studies_sign_assocs_with_tx %>% group_by(study_id, qtl_group) %>% 
+  dplyr::filter(pvalue == min(pvalue)) %>% 
+  summarise(condition_label = condition_label,  
+            molecular_trait_id=molecular_trait_id, 
+            pvalue = pvalue, 
+            tissue_label = tissue_label, 
+            quant_method = quant_method) %>% 
+  arrange(pvalue) %>% 
+  mutate(context = paste0(study_id,"_",condition_label))
+
+sign_assocs_to_plot_scatter$quant_method[sign_assocs_to_plot_scatter$quant_method=="tx"] <- "RNA-seq Transcript usage"
+sign_assocs_to_plot_scatter$quant_method[sign_assocs_to_plot_scatter$quant_method=="ge"] <- "RNA-seq Gene expression"
+sign_assocs_to_plot_scatter$quant_method[sign_assocs_to_plot_scatter$quant_method=="microarray"] <- "Microarray Gene expression"
+sign_assocs_to_plot_scatter$context <- factor(sign_assocs_to_plot_scatter$context, levels = rev(unique(sign_assocs_to_plot_scatter$context)))
+
+sign_assocs_to_plot_scatter$tissue_label <- factor(sign_assocs_to_plot_scatter$tissue_label, levels = unique(sign_assocs_to_plot_scatter$tissue_label))
+
+# font_styles <- c(rep("plain", 6), "bold", rep("plain", 7))
+# y_tick_colors <- c(rep("black", 6), "blue", rep("black", 7))
+base_plot <- ggplot(sign_assocs_to_plot_scatter, aes(x=-log10(pvalue), y = context, color = tissue_label, shape = quant_method))
+final_plot <- base_plot + geom_point() + theme_bw()+ scale_color_brewer(palette="Dark2") +
+  xlab(expression(paste("-",log[10], " p-value"))) +
+  ylab("Study and Condition") +
+  labs(color = "Cell Type", shape = "Quantification method")
+
+# theme(axis.text.y = element_text(face = font_styles, colour = y_tick_colors))
+# size = c(15,rep(8,5))
+
+save_ggplots(plot = final_plot, path = "../paper_plots/eQTL_api_usecase/", filename = "sign_eqtl_scatter_shape", height = 10, width = 18)
+
+```
+
+
