@@ -122,7 +122,7 @@ get_colocs <- function(eqtl_data_for_region, gwas_data_for_trait) {
     dplyr::mutate(variant_id = as.character(base_pair_location))
   
   eQTL_dataset = list(pvalues = eqtl_shared$pvalue, 
-                      N = 84, #The sample size of the eQTL dataset was 84
+                      N = (eqtl_shared$an)[1]/2, #The sample size of the eQTL dataset was 84
                       MAF = eqtl_shared$maf, 
                       type = "quant", 
                       beta = eqtl_shared$beta,
