@@ -21,6 +21,11 @@ library("GenomicRanges")
 library("biomaRt")
 ```
 
+Make an output directory for all of the figures
+```{r, warning =FALSE}
+dir.create("eQTL_API_usecase_figures")
+```
+
 We defined a local function to easily fetch data from both GWAS and eQTL APIs
 ```{r define_function_to_fetch_paginated_API_response, warning=FALSE}
 fetch_from_eqtl_cat_API <- function(link, is_gwas = FALSE){
@@ -342,7 +347,7 @@ Plot faceted manhattan figure with multiple
 all_plots_faceted <- plot_faceted_multi_manhattans(merged_eqtl_assocs = plottable_merged_data, 
                               gwas_data_for_trait = gwas_data,
                               save_plot = TRUE,
-                              save_dir = "../paper_plots/eQTL_api_usecase/", 
+                              save_dir = "eQTL_API_usecase_figures", 
                               save_filename = "merged_manhattan", no_GWAS_plot = TRUE) 
 ```
 
@@ -356,7 +361,7 @@ plottable_merged_data_filt <- plottable_merged_data %>%
 filt_plots_faceted <- plot_faceted_multi_manhattans(merged_eqtl_assocs = plottable_merged_data_filt, 
                               gwas_data_for_trait = gwas_data,
                               save_plot = TRUE,
-                              save_dir = "../paper_plots/eQTL_api_usecase/", 
+                              save_dir = "eQTL_API_usecase_figures", 
                               save_filename = "merged_manhattan_filt", no_GWAS_plot = TRUE) 
 ```
 ## Analyse transcript usage associations in Alasoo_2018
@@ -375,7 +380,7 @@ merged_plottable_df <-  make_assocs_list_to_merged_plottable(all_coloc_data_tx, 
 manhattan_tx_gwas <- plot_faceted_multi_manhattans(merged_eqtl_assocs = merged_plottable_df, 
                                                  gwas_data_for_trait = gwas_data,
                                                  save_plot = TRUE,
-                                                 save_dir = "../paper_plots/eQTL_api_usecase/",
+                                                 save_dir = "eQTL_API_usecase_figures",
                                                  save_filename = "merged_manhattan_tx")
 ```
 ```{r add_CD40_transcript_location}
@@ -393,6 +398,7 @@ exons_grange <- makeGRangesFromDataFrame(CD_40_ENST00000466205_exons, ignore.str
 CD_40_exons_list <- GRangesList()
 CD_40_exons_list[['ENST00000466205']] <- exons_grange
 
+region_coords = c(45980000, 46200000)
 CD40_exons_plot <- plotTranscripts(exons = CD_40_exons_list, rescale_introns = FALSE, region_coords = region_coords)
 
 ```
@@ -401,7 +407,7 @@ CD40_exons_plot <- plotTranscripts(exons = CD_40_exons_list, rescale_introns = F
 joint_plot = cowplot::plot_grid(manhattan_tx_gwas, filt_plots_faceted, CD40_exons_plot,
                                 align = "v", ncol = 1, rel_heights = c(2,4, 1))
 
-save_ggplots(plot = joint_plot, path = "../paper_plots/eQTL_api_usecase/", filename = "new_tx_merged_plot_with_exon", height = 28, width = 15)
+save_ggplots(plot = joint_plot, path = "eQTL_API_usecase_figures", filename = "new_tx_merged_plot_with_exon", height = 28, width = 15)
 ```
 
 ## Plot pvalues of each significant association
@@ -435,7 +441,7 @@ final_plot <- base_plot + geom_point() + theme_bw()+ scale_color_brewer(palette=
 # theme(axis.text.y = element_text(face = font_styles, colour = y_tick_colors))
 # size = c(15,rep(8,5))
 
-save_ggplots(plot = final_plot, path = "../paper_plots/eQTL_api_usecase/", filename = "sign_eqtl_scatter_shape", height = 10, width = 18)
+save_ggplots(plot = final_plot, path = "eQTL_API_usecase_figures", filename = "sign_eqtl_scatter_shape", height = 10, width = 18)
 
 ```
 
