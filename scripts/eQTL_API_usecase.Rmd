@@ -285,8 +285,7 @@ plot_faceted_multi_manhattans <- function(merged_eqtl_assocs,
 
 # Here we start the analysis
 
-We first fetch GWAS data
-========================
+### We first fetch GWAS data
 Chromosome: 20
 study_accession: GCST002318
 bp_lower: 45980000
@@ -326,92 +325,13 @@ microarray_studies_sign_assocs <- get_significant_assocs_of_var(study_ids = micr
 all_studies_sign_assocs <- rnaseq_studies_sign_assocs %>% rbind(microarray_studies_sign_assocs)
 ```
 
-Get all associations in cis region of each significant QTL
-```{r get_associations_in_cis, message=FALSE}
-all_coloc_data <- list()
-all_coloc_data$eqtl_assocs_in_region <- apply(all_studies_sign_assocs, 1, get_assocs_in_region)
-```
-
-Perform colocalisation analysis.
-```{r perform_coloc}
-all_coloc_data$colocs <- sapply(all_coloc_data$eqtl_assocs_in_region, get_colocs, gwas_data_for_trait=gwas_data)
-```
-
-Prepare merged facet plottable dataframe
-```{r merge_assoc_dataframes}
-plottable_merged_data <- make_assocs_list_to_merged_plottable(all_coloc_data)
-```
-
-Plot faceted manhattan figure with multiple 
-```{r plot_all_contexts_faceted, fig.width=15, fig.height=65}
-all_plots_faceted <- plot_faceted_multi_manhattans(merged_eqtl_assocs = plottable_merged_data, 
-                              gwas_data_for_trait = gwas_data,
-                              save_plot = TRUE,
-                              save_dir = "eQTL_API_usecase_figures", 
-                              save_filename = "merged_manhattan", no_GWAS_plot = TRUE) 
-```
-
-Plot specific figures in faceted plot
-```{r plot_filtered_contexts_faceted, fig.width=15, fig.height=25}
-plottable_merged_data_filt <- plottable_merged_data %>% 
-  dplyr::filter(study_id %in% c("BLUEPRINT", "Quach_2016", "CEDAR", "Fairfax_2014")) %>% 
-  dplyr::filter(qtl_group %in% c("monocyte_naive", "monocyte", "monocyte_CD14")) %>% 
-  dplyr::filter(molecular_trait_id %in% c("ENSG00000101017", "ILMN_1779257"))
-
-filt_plots_faceted <- plot_faceted_multi_manhattans(merged_eqtl_assocs = plottable_merged_data_filt, 
-                              gwas_data_for_trait = gwas_data,
-                              save_plot = TRUE,
-                              save_dir = "eQTL_API_usecase_figures", 
-                              save_filename = "merged_manhattan_filt", no_GWAS_plot = TRUE) 
-```
-## Analyse transcript usage associations in Alasoo_2018
-```{r}
+## Plot pvalues of each significant association
+```{r sign_QTLS_scatter_plot, message=FALSE, fig.height=7, fig.width=10}
+# fetch all significant transcript QTLs
 sign_tx_rs4239702 <-  get_significant_assocs_of_var(study_ids = rnaseq_study_names,
                                                     variant_id = lead_var_gwas$variant_id, 
                                                     quant_method = "tx")
-sign_tx_Alasoo_2018 <- sign_tx_rs4239702 %>% dplyr::filter(study_id=="Alasoo_2018")
 
-all_coloc_data_tx <- list()
-all_coloc_data_tx$eqtl_assocs_in_region <- apply(sign_tx_Alasoo_2018, 1, get_assocs_in_region)
-
-all_coloc_data_tx$colocs <- sapply(all_coloc_data_tx$eqtl_assocs_in_region, get_colocs, gwas_data_for_trait=gwas_data)
-merged_plottable_df <-  make_assocs_list_to_merged_plottable(all_coloc_data_tx, quant_method = "tx")
-
-manhattan_tx_gwas <- plot_faceted_multi_manhattans(merged_eqtl_assocs = merged_plottable_df, 
-                                                 gwas_data_for_trait = gwas_data,
-                                                 save_plot = TRUE,
-                                                 save_dir = "eQTL_API_usecase_figures",
-                                                 save_filename = "merged_manhattan_tx")
-```
-```{r add_CD40_transcript_location}
-ensembl = useEnsembl(biomart="ensembl", dataset="hsapiens_gene_ensembl", version=78)
-
-CD_40_ENST00000466205_exons <- getBM(attributes=c('ensembl_exon_id','exon_chrom_start','exon_chrom_end',
-                                                  'strand', 'chromosome_name'), 
-                                     filters = 'ensembl_transcript_id', 
-                                     values ="ENST00000466205", 
-                                     mart = ensembl)
-
-CD_40_ENST00000466205_exons$strand <- "+"
-
-exons_grange <- makeGRangesFromDataFrame(CD_40_ENST00000466205_exons, ignore.strand = FALSE, seqnames.field = "chromosome_name", start.field = 'exon_chrom_start', end.field = 'exon_chrom_end', strand.field = 'strand', keep.extra.columns = TRUE)
-CD_40_exons_list <- GRangesList()
-CD_40_exons_list[['ENST00000466205']] <- exons_grange
-
-region_coords = c(45980000, 46200000)
-CD40_exons_plot <- plotTranscripts(exons = CD_40_exons_list, rescale_introns = FALSE, region_coords = region_coords)
-
-```
-
-```{r}
-joint_plot = cowplot::plot_grid(manhattan_tx_gwas, filt_plots_faceted, CD40_exons_plot,
-                                align = "v", ncol = 1, rel_heights = c(2,4, 1))
-
-save_ggplots(plot = joint_plot, path = "eQTL_API_usecase_figures", filename = "new_tx_merged_plot_with_exon", height = 28, width = 15)
-```
-
-## Plot pvalues of each significant association
-```{r}
 all_studies_sign_assocs_with_tx <- all_studies_sign_assocs %>% rbind(sign_tx_rs4239702)
 sign_assocs_to_plot_scatter <- all_studies_sign_assocs_with_tx %>% group_by(study_id, qtl_group) %>% 
   dplyr::filter(pvalue == min(pvalue)) %>% 
@@ -430,19 +350,102 @@ sign_assocs_to_plot_scatter$context <- factor(sign_assocs_to_plot_scatter$contex
 
 sign_assocs_to_plot_scatter$tissue_label <- factor(sign_assocs_to_plot_scatter$tissue_label, levels = unique(sign_assocs_to_plot_scatter$tissue_label))
 
-# font_styles <- c(rep("plain", 6), "bold", rep("plain", 7))
-# y_tick_colors <- c(rep("black", 6), "blue", rep("black", 7))
 base_plot <- ggplot(sign_assocs_to_plot_scatter, aes(x=-log10(pvalue), y = context, color = tissue_label, shape = quant_method))
 final_plot <- base_plot + geom_point() + theme_bw()+ scale_color_brewer(palette="Dark2") +
   xlab(expression(paste("-",log[10], " p-value"))) +
   ylab("Study and Condition") +
   labs(color = "Cell Type", shape = "Quantification method")
 
-# theme(axis.text.y = element_text(face = font_styles, colour = y_tick_colors))
-# size = c(15,rep(8,5))
-
 save_ggplots(plot = final_plot, path = "eQTL_API_usecase_figures", filename = "sign_eqtl_scatter_shape", height = 10, width = 18)
-
+final_plot
 ```
+
+Get all associations in cis region of each significant QTL
+```{r get_associations_in_cis, message=FALSE}
+all_coloc_data <- list()
+all_coloc_data$eqtl_assocs_in_region <- apply(all_studies_sign_assocs, 1, get_assocs_in_region)
+```
+
+Perform colocalisation analysis.
+```{r perform_coloc}
+all_coloc_data$colocs <- sapply(all_coloc_data$eqtl_assocs_in_region, get_colocs, gwas_data_for_trait=gwas_data)
+```
+
+Prepare merged facet plottable dataframe
+```{r merge_assoc_dataframes}
+plottable_merged_data <- make_assocs_list_to_merged_plottable(all_coloc_data)
+```
+
+Plot faceted manhattan figure with multiple 
+```{r plot_all_contexts_faceted, fig.width=8, fig.height=48}
+all_plots_faceted <- plot_faceted_multi_manhattans(merged_eqtl_assocs = plottable_merged_data, 
+                              gwas_data_for_trait = gwas_data,
+                              save_plot = TRUE,
+                              save_dir = "eQTL_API_usecase_figures", 
+                              save_filename = "merged_manhattan", no_GWAS_plot = TRUE) 
+all_plots_faceted
+```
+
+Plot specific figures in faceted plot
+```{r plot_filtered_contexts_faceted, fig.width=8, fig.height=12}
+plottable_merged_data_filt <- plottable_merged_data %>% 
+  dplyr::filter(study_id %in% c("BLUEPRINT", "Quach_2016", "CEDAR", "Fairfax_2014")) %>% 
+  dplyr::filter(qtl_group %in% c("monocyte_naive", "monocyte", "monocyte_CD14")) %>% 
+  dplyr::filter(molecular_trait_id %in% c("ENSG00000101017", "ILMN_1779257"))
+
+filt_plots_faceted <- plot_faceted_multi_manhattans(merged_eqtl_assocs = plottable_merged_data_filt, 
+                              gwas_data_for_trait = gwas_data,
+                              save_plot = TRUE,
+                              save_dir = "eQTL_API_usecase_figures", 
+                              save_filename = "merged_manhattan_filt", no_GWAS_plot = TRUE) 
+filt_plots_faceted
+```
+
+
+## Analyse transcript usage associations in Alasoo_2018
+```{r get_Alasoo_2018_transcript_QTLs, fig.width=8, fig.height=6}
+sign_tx_Alasoo_2018 <- sign_tx_rs4239702 %>% dplyr::filter(study_id=="Alasoo_2018")
+
+all_coloc_data_tx <- list()
+all_coloc_data_tx$eqtl_assocs_in_region <- apply(sign_tx_Alasoo_2018, 1, get_assocs_in_region)
+
+all_coloc_data_tx$colocs <- sapply(all_coloc_data_tx$eqtl_assocs_in_region, get_colocs, gwas_data_for_trait=gwas_data)
+merged_plottable_df <-  make_assocs_list_to_merged_plottable(all_coloc_data_tx, quant_method = "tx")
+
+manhattan_tx_gwas <- plot_faceted_multi_manhattans(merged_eqtl_assocs = merged_plottable_df, 
+                                                 gwas_data_for_trait = gwas_data,
+                                                 save_plot = TRUE,
+                                                 save_dir = "eQTL_API_usecase_figures",
+                                                 save_filename = "merged_manhattan_tx")
+manhattan_tx_gwas
+```
+```{r add_CD40_transcript_location, fig.width=8, fig.height=3}
+ensembl = useEnsembl(biomart="ensembl", dataset="hsapiens_gene_ensembl", version=78)
+
+CD_40_ENST00000466205_exons <- getBM(attributes=c('ensembl_exon_id','exon_chrom_start','exon_chrom_end',
+                                                  'strand', 'chromosome_name'), 
+                                     filters = 'ensembl_transcript_id', 
+                                     values ="ENST00000466205", 
+                                     mart = ensembl)
+
+CD_40_ENST00000466205_exons$strand <- "+"
+
+exons_grange <- makeGRangesFromDataFrame(CD_40_ENST00000466205_exons, ignore.strand = FALSE, seqnames.field = "chromosome_name", start.field = 'exon_chrom_start', end.field = 'exon_chrom_end', strand.field = 'strand', keep.extra.columns = TRUE)
+CD_40_exons_list <- GRangesList()
+CD_40_exons_list[['ENST00000466205']] <- exons_grange
+
+region_coords = c(45980000, 46200000)
+CD40_exons_plot <- plotTranscripts(exons = CD_40_exons_list, rescale_introns = FALSE, region_coords = region_coords)
+CD40_exons_plot
+```
+
+```{r plot_merged_manhattan_plot, fig.width=8, fig.height=18}
+joint_plot = cowplot::plot_grid(manhattan_tx_gwas, filt_plots_faceted, CD40_exons_plot,
+                                align = "v", ncol = 1, rel_heights = c(2,4, 1))
+
+save_ggplots(plot = joint_plot, path = "eQTL_API_usecase_figures", filename = "new_tx_merged_plot_with_exon", height = 28, width = 15)
+joint_plot
+```
+
 
 
