@@ -1,5 +1,194 @@
-study	qtl_group	tissue_ontology_id	tissue_ontology_term	tissue_label	condition_label	ftp_path
-Fairfax_2014	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_naive.all.tsv.gz
-Fairfax_2014	monocyte_IFN24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	IFNg_24h	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_IFN24.all.tsv.gz
-Fairfax_2014	monocyte_LPS2	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_2h	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_LPS2.all.tsv.gz
-Fairfax_2014	monocyte_LPS24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_24h	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_LPS24.all.tsv.gz
+study	qtl_group	tissue_ontology_id	tissue_ontology_term	tissue_label	condition_label	quant_method	ftp_path
+Alasoo_2018	macrophage_naive	CL_0000235	"macrophage"	macrophage	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/ge/Alasoo_2018_ge_macrophage_naive.all.tsv.gz
+Alasoo_2018	macrophage_naive	CL_0000235	"macrophage"	macrophage	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/exon/Alasoo_2018_exon_macrophage_naive.all.tsv.gz
+Alasoo_2018	macrophage_naive	CL_0000235	"macrophage"	macrophage	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/tx/Alasoo_2018_tx_macrophage_naive.all.tsv.gz
+Alasoo_2018	macrophage_naive	CL_0000235	"macrophage"	macrophage	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/txrev/Alasoo_2018_txrev_macrophage_naive.all.tsv.gz
+Alasoo_2018	macrophage_IFNg	CL_0000235	"macrophage"	macrophage	IFNg_18h	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/ge/Alasoo_2018_ge_macrophage_IFNg.all.tsv.gz
+Alasoo_2018	macrophage_IFNg	CL_0000235	"macrophage"	macrophage	IFNg_18h	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/exon/Alasoo_2018_exon_macrophage_IFNg.all.tsv.gz
+Alasoo_2018	macrophage_IFNg	CL_0000235	"macrophage"	macrophage	IFNg_18h	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/tx/Alasoo_2018_tx_macrophage_IFNg.all.tsv.gz
+Alasoo_2018	macrophage_IFNg	CL_0000235	"macrophage"	macrophage	IFNg_18h	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/txrev/Alasoo_2018_txrev_macrophage_IFNg.all.tsv.gz
+Alasoo_2018	macrophage_Salmonella	CL_0000235	"macrophage"	macrophage	Salmonella_5h	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/ge/Alasoo_2018_ge_macrophage_Salmonella.all.tsv.gz
+Alasoo_2018	macrophage_Salmonella	CL_0000235	"macrophage"	macrophage	Salmonella_5h	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/exon/Alasoo_2018_exon_macrophage_Salmonella.all.tsv.gz
+Alasoo_2018	macrophage_Salmonella	CL_0000235	"macrophage"	macrophage	Salmonella_5h	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/tx/Alasoo_2018_tx_macrophage_Salmonella.all.tsv.gz
+Alasoo_2018	macrophage_Salmonella	CL_0000235	"macrophage"	macrophage	Salmonella_5h	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/txrev/Alasoo_2018_txrev_macrophage_Salmonella.all.tsv.gz
+Alasoo_2018	macrophage_IFNg+Salmonella	CL_0000235	"macrophage"	macrophage	IFNg_18h+Salmonella_5h	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/ge/Alasoo_2018_ge_macrophage_IFNg+Salmonella.all.tsv.gz
+Alasoo_2018	macrophage_IFNg+Salmonella	CL_0000235	"macrophage"	macrophage	IFNg_18h+Salmonella_5h	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/exon/Alasoo_2018_exon_macrophage_IFNg+Salmonella.all.tsv.gz
+Alasoo_2018	macrophage_IFNg+Salmonella	CL_0000235	"macrophage"	macrophage	IFNg_18h+Salmonella_5h	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/tx/Alasoo_2018_tx_macrophage_IFNg+Salmonella.all.tsv.gz
+Alasoo_2018	macrophage_IFNg+Salmonella	CL_0000235	"macrophage"	macrophage	IFNg_18h+Salmonella_5h	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/txrev/Alasoo_2018_txrev_macrophage_IFNg+Salmonella.all.tsv.gz
+BLUEPRINT	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/ge/BLUEPRINT_ge_monocyte.all.tsv.gz
+BLUEPRINT	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/exon/BLUEPRINT_exon_monocyte.all.tsv.gz
+BLUEPRINT	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/tx/BLUEPRINT_tx_monocyte.all.tsv.gz
+BLUEPRINT	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/txrev/BLUEPRINT_txrev_monocyte.all.tsv.gz
+BLUEPRINT	neutrophil	CL_0000775	"neutrophil"	neutrophil	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/ge/BLUEPRINT_ge_neutrophil.all.tsv.gz
+BLUEPRINT	neutrophil	CL_0000775	"neutrophil"	neutrophil	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/exon/BLUEPRINT_exon_neutrophil.all.tsv.gz
+BLUEPRINT	neutrophil	CL_0000775	"neutrophil"	neutrophil	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/tx/BLUEPRINT_tx_neutrophil.all.tsv.gz
+BLUEPRINT	neutrophil	CL_0000775	"neutrophil"	neutrophil	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/txrev/BLUEPRINT_txrev_neutrophil.all.tsv.gz
+BLUEPRINT	T-cell	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/ge/BLUEPRINT_ge_T-cell.all.tsv.gz
+BLUEPRINT	T-cell	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/exon/BLUEPRINT_exon_T-cell.all.tsv.gz
+BLUEPRINT	T-cell	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/tx/BLUEPRINT_tx_T-cell.all.tsv.gz
+BLUEPRINT	T-cell	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/txrev/BLUEPRINT_txrev_T-cell.all.tsv.gz
+BrainSeq	brain	UBERON_0009834	"dorsolateral prefrontal cortex"	DLPFC	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/ge/BrainSeq_ge_brain.all.tsv.gz
+BrainSeq	brain	UBERON_0009834	"dorsolateral prefrontal cortex"	DLPFC	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/exon/BrainSeq_exon_brain.all.tsv.gz
+BrainSeq	brain	UBERON_0009834	"dorsolateral prefrontal cortex"	DLPFC	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/tx/BrainSeq_tx_brain.all.tsv.gz
+BrainSeq	brain	UBERON_0009834	"dorsolateral prefrontal cortex"	DLPFC	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/txrev/BrainSeq_txrev_brain.all.tsv.gz
+CEDAR	T-cell_CD8	CL_0000625	"CD8-positive, alpha-beta T cell"	CD8+ T cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_T-cell_CD8.all.tsv.gz
+CEDAR	T-cell_CD4	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_T-cell_CD4.all.tsv.gz
+CEDAR	transverse_colon	UBERON_0001157	"transverse colon"	transverse colon	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_transverse_colon.all.tsv.gz
+CEDAR	monocyte_CD14	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_monocyte_CD14.all.tsv.gz
+CEDAR	neutrophil_CD15	CL_0000775	"neutrophil"	neutrophil	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_neutrophil_CD15.all.tsv.gz
+CEDAR	platelet	CL_0000233	"platelet"	platelet	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_platelet.all.tsv.gz
+CEDAR	rectum	UBERON_0001052	"rectum"	rectum	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_rectum.all.tsv.gz
+CEDAR	B-cell_CD19	CL_0000236	"B cell"	B cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_B-cell_CD19.all.tsv.gz
+CEDAR	ileum	UBERON_0002116	"ileum"	ileum	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_ileum.all.tsv.gz
+Fairfax_2012	B-cell_CD19	CL_0000236	"B cell"	B cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2012/microarray/Fairfax_2012_B-cell_CD19.all.tsv.gz
+Fairfax_2014	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_monocyte_naive.all.tsv.gz
+Fairfax_2014	monocyte_IFN24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	IFNg_24h	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_monocyte_IFN24.all.tsv.gz
+Fairfax_2014	monocyte_LPS2	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_2h	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_monocyte_LPS2.all.tsv.gz
+Fairfax_2014	monocyte_LPS24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_24h	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_monocyte_LPS24.all.tsv.gz
+GENCORD	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/ge/GENCORD_ge_LCL.all.tsv.gz
+GENCORD	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/exon/GENCORD_exon_LCL.all.tsv.gz
+GENCORD	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/tx/GENCORD_tx_LCL.all.tsv.gz
+GENCORD	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/txrev/GENCORD_txrev_LCL.all.tsv.gz
+GENCORD	fibroblast	CL_0000057	"fibroblast"	fibroblast	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/ge/GENCORD_ge_fibroblast.all.tsv.gz
+GENCORD	fibroblast	CL_0000057	"fibroblast"	fibroblast	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/exon/GENCORD_exon_fibroblast.all.tsv.gz
+GENCORD	fibroblast	CL_0000057	"fibroblast"	fibroblast	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/tx/GENCORD_tx_fibroblast.all.tsv.gz
+GENCORD	fibroblast	CL_0000057	"fibroblast"	fibroblast	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/txrev/GENCORD_txrev_fibroblast.all.tsv.gz
+GENCORD	T-cell	CL_0000084	"T cell"	T cell	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/ge/GENCORD_ge_T-cell.all.tsv.gz
+GENCORD	T-cell	CL_0000084	"T cell"	T cell	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/exon/GENCORD_exon_T-cell.all.tsv.gz
+GENCORD	T-cell	CL_0000084	"T cell"	T cell	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/tx/GENCORD_tx_T-cell.all.tsv.gz
+GENCORD	T-cell	CL_0000084	"T cell"	T cell	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/txrev/GENCORD_txrev_T-cell.all.tsv.gz
+GEUVADIS	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GEUVADIS/ge/GEUVADIS_ge_LCL.all.tsv.gz
+GEUVADIS	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GEUVADIS/exon/GEUVADIS_exon_LCL.all.tsv.gz
+GEUVADIS	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GEUVADIS/tx/GEUVADIS_tx_LCL.all.tsv.gz
+GEUVADIS	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GEUVADIS/txrev/GEUVADIS_txrev_LCL.all.tsv.gz
+HipSci	iPSC	EFO_0004905	"induced pluripotent stem cell"	iPSC	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/HipSci/ge/HipSci_ge_iPSC.all.tsv.gz
+HipSci	iPSC	EFO_0004905	"induced pluripotent stem cell"	iPSC	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/HipSci/exon/HipSci_exon_iPSC.all.tsv.gz
+HipSci	iPSC	EFO_0004905	"induced pluripotent stem cell"	iPSC	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/HipSci/tx/HipSci_tx_iPSC.all.tsv.gz
+HipSci	iPSC	EFO_0004905	"induced pluripotent stem cell"	iPSC	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/HipSci/txrev/HipSci_txrev_iPSC.all.tsv.gz
+Kasela_2017	T-cell_CD4	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Kasela_2017/microarray/Kasela_2017_T-cell_CD4.all.tsv.gz
+Kasela_2017	T-cell_CD8	CL_0000625	"CD8-positive, alpha-beta T cell"	CD8+ T cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Kasela_2017/microarray/Kasela_2017_T-cell_CD8.all.tsv.gz
+Lepik_2017	blood	UBERON_0000178	"blood"	blood	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Lepik_2017/ge/Lepik_2017_ge_blood.all.tsv.gz
+Lepik_2017	blood	UBERON_0000178	"blood"	blood	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Lepik_2017/exon/Lepik_2017_exon_blood.all.tsv.gz
+Lepik_2017	blood	UBERON_0000178	"blood"	blood	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Lepik_2017/tx/Lepik_2017_tx_blood.all.tsv.gz
+Lepik_2017	blood	UBERON_0000178	"blood"	blood	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Lepik_2017/txrev/Lepik_2017_txrev_blood.all.tsv.gz
+Naranbhai_2015	neutrophil_CD16	CL_0000775	"neutrophil"	neutrophil	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Naranbhai_2015/microarray/Naranbhai_2015_neutrophil_CD16.all.tsv.gz
+Nedelec_2016	macrophage_Listeria	CL_0000235	"macrophage"	macrophage	Listeria_5h	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/ge/Nedelec_2016_ge_macrophage_Listeria.all.tsv.gz
+Nedelec_2016	macrophage_Listeria	CL_0000235	"macrophage"	macrophage	Listeria_5h	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/exon/Nedelec_2016_exon_macrophage_Listeria.all.tsv.gz
+Nedelec_2016	macrophage_Listeria	CL_0000235	"macrophage"	macrophage	Listeria_5h	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/tx/Nedelec_2016_tx_macrophage_Listeria.all.tsv.gz
+Nedelec_2016	macrophage_Listeria	CL_0000235	"macrophage"	macrophage	Listeria_5h	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/txrev/Nedelec_2016_txrev_macrophage_Listeria.all.tsv.gz
+Nedelec_2016	macrophage_naive	CL_0000235	"macrophage"	macrophage	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/ge/Nedelec_2016_ge_macrophage_naive.all.tsv.gz
+Nedelec_2016	macrophage_naive	CL_0000235	"macrophage"	macrophage	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/exon/Nedelec_2016_exon_macrophage_naive.all.tsv.gz
+Nedelec_2016	macrophage_naive	CL_0000235	"macrophage"	macrophage	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/tx/Nedelec_2016_tx_macrophage_naive.all.tsv.gz
+Nedelec_2016	macrophage_naive	CL_0000235	"macrophage"	macrophage	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/txrev/Nedelec_2016_txrev_macrophage_naive.all.tsv.gz
+Nedelec_2016	macrophage_Salmonella	CL_0000235	"macrophage"	macrophage	Salmonella_5h	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/ge/Nedelec_2016_ge_macrophage_Salmonella.all.tsv.gz
+Nedelec_2016	macrophage_Salmonella	CL_0000235	"macrophage"	macrophage	Salmonella_5h	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/exon/Nedelec_2016_exon_macrophage_Salmonella.all.tsv.gz
+Nedelec_2016	macrophage_Salmonella	CL_0000235	"macrophage"	macrophage	Salmonella_5h	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/tx/Nedelec_2016_tx_macrophage_Salmonella.all.tsv.gz
+Nedelec_2016	macrophage_Salmonella	CL_0000235	"macrophage"	macrophage	Salmonella_5h	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/txrev/Nedelec_2016_txrev_macrophage_Salmonella.all.tsv.gz
+Quach_2016	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/ge/Quach_2016_ge_monocyte_naive.all.tsv.gz
+Quach_2016	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/exon/Quach_2016_exon_monocyte_naive.all.tsv.gz
+Quach_2016	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/tx/Quach_2016_tx_monocyte_naive.all.tsv.gz
+Quach_2016	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/txrev/Quach_2016_txrev_monocyte_naive.all.tsv.gz
+Quach_2016	monocyte_LPS	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_6h	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/ge/Quach_2016_ge_monocyte_LPS.all.tsv.gz
+Quach_2016	monocyte_LPS	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_6h	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/exon/Quach_2016_exon_monocyte_LPS.all.tsv.gz
+Quach_2016	monocyte_LPS	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_6h	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/tx/Quach_2016_tx_monocyte_LPS.all.tsv.gz
+Quach_2016	monocyte_LPS	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_6h	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/txrev/Quach_2016_txrev_monocyte_LPS.all.tsv.gz
+Quach_2016	monocyte_Pam3CSK4	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	Pam3CSK4_6h	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/ge/Quach_2016_ge_monocyte_Pam3CSK4.all.tsv.gz
+Quach_2016	monocyte_Pam3CSK4	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	Pam3CSK4_6h	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/exon/Quach_2016_exon_monocyte_Pam3CSK4.all.tsv.gz
+Quach_2016	monocyte_Pam3CSK4	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	Pam3CSK4_6h	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/tx/Quach_2016_tx_monocyte_Pam3CSK4.all.tsv.gz
+Quach_2016	monocyte_Pam3CSK4	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	Pam3CSK4_6h	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/txrev/Quach_2016_txrev_monocyte_Pam3CSK4.all.tsv.gz
+Quach_2016	monocyte_R848	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	R848_6h	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/ge/Quach_2016_ge_monocyte_R848.all.tsv.gz
+Quach_2016	monocyte_R848	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	R848_6h	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/exon/Quach_2016_exon_monocyte_R848.all.tsv.gz
+Quach_2016	monocyte_R848	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	R848_6h	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/tx/Quach_2016_tx_monocyte_R848.all.tsv.gz
+Quach_2016	monocyte_R848	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	R848_6h	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/txrev/Quach_2016_txrev_monocyte_R848.all.tsv.gz
+Quach_2016	monocyte_IAV	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	Influenza_6h	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/ge/Quach_2016_ge_monocyte_IAV.all.tsv.gz
+Quach_2016	monocyte_IAV	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	Influenza_6h	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/exon/Quach_2016_exon_monocyte_IAV.all.tsv.gz
+Quach_2016	monocyte_IAV	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	Influenza_6h	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/tx/Quach_2016_tx_monocyte_IAV.all.tsv.gz
+Quach_2016	monocyte_IAV	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	Influenza_6h	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/txrev/Quach_2016_txrev_monocyte_IAV.all.tsv.gz
+ROSMAP	brain_naive	UBERON_0009834	"dorsolateral prefrontal cortex"	DLPFC	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/ge/ROSMAP_ge_brain_naive.all.tsv.gz
+ROSMAP	brain_naive	UBERON_0009834	"dorsolateral prefrontal cortex"	DLPFC	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/exon/ROSMAP_exon_brain_naive.all.tsv.gz
+ROSMAP	brain_naive	UBERON_0009834	"dorsolateral prefrontal cortex"	DLPFC	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/tx/ROSMAP_tx_brain_naive.all.tsv.gz
+ROSMAP	brain_naive	UBERON_0009834	"dorsolateral prefrontal cortex"	DLPFC	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/txrev/ROSMAP_txrev_brain_naive.all.tsv.gz
+Schmiedel_2018	Tfh_memory	CL_0002038	"T follicular helper cell"	Tfh cell	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_Tfh_memory.all.tsv.gz
+Schmiedel_2018	Tfh_memory	CL_0002038	"T follicular helper cell"	Tfh cell	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_Tfh_memory.all.tsv.gz
+Schmiedel_2018	Tfh_memory	CL_0002038	"T follicular helper cell"	Tfh cell	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_Tfh_memory.all.tsv.gz
+Schmiedel_2018	Tfh_memory	CL_0002038	"T follicular helper cell"	Tfh cell	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Tfh_memory.all.tsv.gz
+Schmiedel_2018	Th17_memory	CL_0000899	"T-helper 17 cell"	Th17 cell	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_Th17_memory.all.tsv.gz
+Schmiedel_2018	Th17_memory	CL_0000899	"T-helper 17 cell"	Th17 cell	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_Th17_memory.all.tsv.gz
+Schmiedel_2018	Th17_memory	CL_0000899	"T-helper 17 cell"	Th17 cell	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_Th17_memory.all.tsv.gz
+Schmiedel_2018	Th17_memory	CL_0000899	"T-helper 17 cell"	Th17 cell	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Th17_memory.all.tsv.gz
+Schmiedel_2018	Th1_memory	CL_0000545	"T-helper 1 cell"	Th1 cell	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_Th1_memory.all.tsv.gz
+Schmiedel_2018	Th1_memory	CL_0000545	"T-helper 1 cell"	Th1 cell	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_Th1_memory.all.tsv.gz
+Schmiedel_2018	Th1_memory	CL_0000545	"T-helper 1 cell"	Th1 cell	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_Th1_memory.all.tsv.gz
+Schmiedel_2018	Th1_memory	CL_0000545	"T-helper 1 cell"	Th1 cell	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Th1_memory.all.tsv.gz
+Schmiedel_2018	Th2_memory	CL_0000546	"T-helper 2 cell"	Th2 cell	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_Th2_memory.all.tsv.gz
+Schmiedel_2018	Th2_memory	CL_0000546	"T-helper 2 cell"	Th2 cell	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_Th2_memory.all.tsv.gz
+Schmiedel_2018	Th2_memory	CL_0000546	"T-helper 2 cell"	Th2 cell	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_Th2_memory.all.tsv.gz
+Schmiedel_2018	Th2_memory	CL_0000546	"T-helper 2 cell"	Th2 cell	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Th2_memory.all.tsv.gz
+Schmiedel_2018	Th1-17_memory	CL_0000899	"T-helper 17 cell"	Th17 cell	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_Th1-17_memory.all.tsv.gz
+Schmiedel_2018	Th1-17_memory	CL_0000899	"T-helper 17 cell"	Th17 cell	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_Th1-17_memory.all.tsv.gz
+Schmiedel_2018	Th1-17_memory	CL_0000899	"T-helper 17 cell"	Th17 cell	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_Th1-17_memory.all.tsv.gz
+Schmiedel_2018	Th1-17_memory	CL_0000899	"T-helper 17 cell"	Th17 cell	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Th1-17_memory.all.tsv.gz
+Schmiedel_2018	Treg_memory	CL_0002678	"memory regulatory T cell"	Treg naive	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_Treg_memory.all.tsv.gz
+Schmiedel_2018	Treg_memory	CL_0002678	"memory regulatory T cell"	Treg naive	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_Treg_memory.all.tsv.gz
+Schmiedel_2018	Treg_memory	CL_0002678	"memory regulatory T cell"	Treg naive	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_Treg_memory.all.tsv.gz
+Schmiedel_2018	Treg_memory	CL_0002678	"memory regulatory T cell"	Treg naive	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Treg_memory.all.tsv.gz
+Schmiedel_2018	Treg_naive	CL_0002677	"naive regulatory T cell"	Treg memory	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_Treg_naive.all.tsv.gz
+Schmiedel_2018	Treg_naive	CL_0002677	"naive regulatory T cell"	Treg memory	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_Treg_naive.all.tsv.gz
+Schmiedel_2018	Treg_naive	CL_0002677	"naive regulatory T cell"	Treg memory	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_Treg_naive.all.tsv.gz
+Schmiedel_2018	Treg_naive	CL_0002677	"naive regulatory T cell"	Treg memory	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Treg_naive.all.tsv.gz
+Schmiedel_2018	B-cell_naive	CL_0000236	"B cell"	B cell	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_B-cell_naive.all.tsv.gz
+Schmiedel_2018	B-cell_naive	CL_0000236	"B cell"	B cell	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_B-cell_naive.all.tsv.gz
+Schmiedel_2018	B-cell_naive	CL_0000236	"B cell"	B cell	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_B-cell_naive.all.tsv.gz
+Schmiedel_2018	B-cell_naive	CL_0000236	"B cell"	B cell	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_B-cell_naive.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_naive	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_CD4_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_naive	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_CD4_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_naive	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_CD4_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_naive	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_CD4_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	anti-CD3-CD28_4h	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_CD4_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	anti-CD3-CD28_4h	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_CD4_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	anti-CD3-CD28_4h	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_CD4_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	anti-CD3-CD28_4h	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_CD4_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_naive	CL_0000625	"CD8-positive, alpha-beta T cell"	CD8+ T cell	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_CD8_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_naive	CL_0000625	"CD8-positive, alpha-beta T cell"	CD8+ T cell	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_CD8_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_naive	CL_0000625	"CD8-positive, alpha-beta T cell"	CD8+ T cell	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_CD8_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_naive	CL_0000625	"CD8-positive, alpha-beta T cell"	CD8+ T cell	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_CD8_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	CL_0000625	"CD8-positive, alpha-beta T cell"	CD8+ T cell	anti-CD3-CD28_4h	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_CD8_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	CL_0000625	"CD8-positive, alpha-beta T cell"	CD8+ T cell	anti-CD3-CD28_4h	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_CD8_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	CL_0000625	"CD8-positive, alpha-beta T cell"	CD8+ T cell	anti-CD3-CD28_4h	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_CD8_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	CL_0000625	"CD8-positive, alpha-beta T cell"	CD8+ T cell	anti-CD3-CD28_4h	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_CD8_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	monocyte_CD16_naive	CL_0002396	"CD14-low, CD16-positive monocyte"	CD16+ monocyte	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_monocyte_CD16_naive.all.tsv.gz
+Schmiedel_2018	monocyte_CD16_naive	CL_0002396	"CD14-low, CD16-positive monocyte"	CD16+ monocyte	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_monocyte_CD16_naive.all.tsv.gz
+Schmiedel_2018	monocyte_CD16_naive	CL_0002396	"CD14-low, CD16-positive monocyte"	CD16+ monocyte	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_monocyte_CD16_naive.all.tsv.gz
+Schmiedel_2018	monocyte_CD16_naive	CL_0002396	"CD14-low, CD16-positive monocyte"	CD16+ monocyte	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_monocyte_CD16_naive.all.tsv.gz
+Schmiedel_2018	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_monocyte_naive.all.tsv.gz
+Schmiedel_2018	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_monocyte_naive.all.tsv.gz
+Schmiedel_2018	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_monocyte_naive.all.tsv.gz
+Schmiedel_2018	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_monocyte_naive.all.tsv.gz
+Schmiedel_2018	NK-cell_naive	CL_0000623	"natural killer cell"	NK cell	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_NK-cell_naive.all.tsv.gz
+Schmiedel_2018	NK-cell_naive	CL_0000623	"natural killer cell"	NK cell	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_NK-cell_naive.all.tsv.gz
+Schmiedel_2018	NK-cell_naive	CL_0000623	"natural killer cell"	NK cell	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_NK-cell_naive.all.tsv.gz
+Schmiedel_2018	NK-cell_naive	CL_0000623	"natural killer cell"	NK cell	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_NK-cell_naive.all.tsv.gz
+Schwartzentruber_2018	sensory_neuron	CL_0000101	"sensory neuron"	sensory neuron	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schwartzentruber_2018/ge/Schwartzentruber_2018_ge_sensory_neuron.all.tsv.gz
+Schwartzentruber_2018	sensory_neuron	CL_0000101	"sensory neuron"	sensory neuron	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schwartzentruber_2018/exon/Schwartzentruber_2018_exon_sensory_neuron.all.tsv.gz
+Schwartzentruber_2018	sensory_neuron	CL_0000101	"sensory neuron"	sensory neuron	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schwartzentruber_2018/tx/Schwartzentruber_2018_tx_sensory_neuron.all.tsv.gz
+Schwartzentruber_2018	sensory_neuron	CL_0000101	"sensory neuron"	sensory neuron	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schwartzentruber_2018/txrev/Schwartzentruber_2018_txrev_sensory_neuron.all.tsv.gz
+TwinsUK	fat	UBERON_0001013	"adipose tissue"	adipose	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/ge/TwinsUK_ge_fat.all.tsv.gz
+TwinsUK	fat	UBERON_0001013	"adipose tissue"	adipose	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/exon/TwinsUK_exon_fat.all.tsv.gz
+TwinsUK	fat	UBERON_0001013	"adipose tissue"	adipose	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/tx/TwinsUK_tx_fat.all.tsv.gz
+TwinsUK	fat	UBERON_0001013	"adipose tissue"	adipose	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/txrev/TwinsUK_txrev_fat.all.tsv.gz
+TwinsUK	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/ge/TwinsUK_ge_LCL.all.tsv.gz
+TwinsUK	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/exon/TwinsUK_exon_LCL.all.tsv.gz
+TwinsUK	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/tx/TwinsUK_tx_LCL.all.tsv.gz
+TwinsUK	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/txrev/TwinsUK_txrev_LCL.all.tsv.gz
+TwinsUK	skin	UBERON_0002097	"skin of body"	skin	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/ge/TwinsUK_ge_skin.all.tsv.gz
+TwinsUK	skin	UBERON_0002097	"skin of body"	skin	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/exon/TwinsUK_exon_skin.all.tsv.gz
+TwinsUK	skin	UBERON_0002097	"skin of body"	skin	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/tx/TwinsUK_tx_skin.all.tsv.gz
+TwinsUK	skin	UBERON_0002097	"skin of body"	skin	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/txrev/TwinsUK_txrev_skin.all.tsv.gz
+TwinsUK	blood	UBERON_0000178	"blood"	blood	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/ge/TwinsUK_ge_blood.all.tsv.gz
+TwinsUK	blood	UBERON_0000178	"blood"	blood	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/exon/TwinsUK_exon_blood.all.tsv.gz
+TwinsUK	blood	UBERON_0000178	"blood"	blood	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/tx/TwinsUK_tx_blood.all.tsv.gz
+TwinsUK	blood	UBERON_0000178	"blood"	blood	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/txrev/TwinsUK_txrev_blood.all.tsv.gz
+van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	"islet of Langerhans"	pancreatic islet	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/van_de_Bunt_2015/ge/van_de_Bunt_2015_ge_pancreatic_islet.all.tsv.gz
+van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	"islet of Langerhans"	pancreatic islet	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/van_de_Bunt_2015/exon/van_de_Bunt_2015_exon_pancreatic_islet.all.tsv.gz
+van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	"islet of Langerhans"	pancreatic islet	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/van_de_Bunt_2015/tx/van_de_Bunt_2015_tx_pancreatic_islet.all.tsv.gz
+van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	"islet of Langerhans"	pancreatic islet	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/van_de_Bunt_2015/txrev/van_de_Bunt_2015_txrev_pancreatic_islet.all.tsv.gz
