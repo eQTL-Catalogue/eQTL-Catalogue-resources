@@ -236,7 +236,7 @@ plot_faceted_multi_manhattans <- function(merged_eqtl_assocs,
   plot_base_all = ggplot(merged_data_for_plot, aes_(x = ~ position, y = ~ -log(pvalue, 10))) + geom_blank()
 
   plot_gwas_eqtl_plot = plot_base_all +
-    geom_point(aes(colour = factor(is_lead_var))) +
+    geom_point(aes(colour = factor(is_lead_var), alpha = 0.7)) +
     geom_point(data = merged_data_for_plot %>% filter(is_lead_var %in% c(1,2)), aes(colour = factor(is_lead_var))) +
     theme_light() +
     ylab(expression(paste("-", log[10], " p-value"))) +
@@ -252,7 +252,7 @@ plot_faceted_multi_manhattans <- function(merged_eqtl_assocs,
       panel.grid.minor = element_blank(),
       strip.text.y = element_text(colour = "grey10"),
       strip.background = element_rect(fill = "grey85")
-    ) + scale_color_manual(values=c("skyblue4", "firebrick4", "chartreuse4"))
+    ) + scale_color_manual(values=c("#BDBDBD", "#D95F02", "#7570B3"))
   
   summary_coloc <- merged_eqtl_assocs %>% 
     group_by(track, study_id, qtl_group, molecular_trait_id) %>% 
@@ -463,15 +463,15 @@ CD40_exons_plot
 joint_ge_plot = cowplot::plot_grid(filt_plots_faceted, CD40_exons_plot,
                                 align = "v", ncol = 1, rel_heights = c(15,2))
 
-save_ggplots(plot = joint_ge_plot, path = figures_dir, filename = "ge_merged_plot_with_exon", height = 24, width = 15)
+save_ggplots(plot = joint_ge_plot, path = figures_dir, filename = "ge_merged_plot_with_exon", height = 23, width = 15)
 joint_ge_plot
 ```
 
 ```{r plot_merged_manhattan_plot_tx, fig.width=8, fig.height=6}
 joint_tx_plot = cowplot::plot_grid(manhattan_tx_gwas, CD40_exons_plot,
-                                align = "v", ncol = 1, rel_heights = c(5,2))
+                                align = "v", ncol = 1, rel_heights = c(6,2))
 
-save_ggplots(plot = joint_tx_plot, path = figures_dir, filename = "tx_merged_plot_with_exon", height = 11.5, width = 15)
+save_ggplots(plot = joint_tx_plot, path = figures_dir, filename = "tx_merged_plot_with_exon", height = 11, width = 15)
 joint_tx_plot
 ```
 
