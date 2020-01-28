@@ -1,0 +1,12 @@
+Group	Sample size	Number of studies	Proportion of studies
+Single-end	3180	4	0.267
+Paired-end	4935	11	0.733
+Non-stranded	3831	5	0.333
+Stranded	4284	10	0.667
+100bp	3188	7	0.467
+50bp	3726	4	0.267
+75bp	1201	4	0.267
+microarray	4631	5	0.25
+RNAseq	8115	15	0.75
+Not-imputed	2834	5	0.25
+Imputed	9912	15	0.75

@@ -1,0 +1,26 @@
+Cell type or tissue	RNA-seq studies	RNA-seq sample size	Microarray studies	Microarray sample size	Total
+monocyte	BLUEPRINT, Quach_2016, Schmiedel_2018	1251	CEDAR, Fairfax_2014	1657	2908
+DLPFC	BrainSeq, ROSMAP	1055	-	0	1055
+LCL	GENCORD, GEUVADIS, TwinsUK	1053	-	0	1053
+CD4+ T cell	BLUEPRINT, Schmiedel_2018	344	CEDAR, Kasela_2017	570	914
+macrophage	Alasoo_2018, Nedelec_2016	829	-	0	829
+CD8+ T cell	Schmiedel_2018	177	CEDAR, Kasela_2017	546	723
+blood	Lepik_2017, TwinsUK	666	-	0	666
+B cell	Schmiedel_2018	91	CEDAR, Fairfax_2012	543	634
+neutrophil	BLUEPRINT	196	CEDAR, Naranbhai_2015	373	569
+adipose	TwinsUK	381	-	0	381
+skin	TwinsUK	370	-	0	370
+iPSC	HipSci	322	-	0	322
+fibroblast	GENCORD	186	-	0	186
+T cell	GENCORD	184	-	0	184
+Th17 cell	Schmiedel_2018	177	-	0	177
+pancreatic islet	van_de_Bunt_2015	117	-	0	117
+sensory neuron	Schwartzentruber_2018	98	-	0	98
+CD16+ monocyte	Schmiedel_2018	90	-	0	90
+NK cell	Schmiedel_2018	90	-	0	90
+Tfh cell	Schmiedel_2018	89	-	0	89
+Th2 cell	Schmiedel_2018	89	-	0	89
+Treg memory	Schmiedel_2018	89	-	0	89
+Treg naive	Schmiedel_2018	89	-	0	89
+Th1 cell	Schmiedel_2018	82	-	0	82
+	Total:	8115		3689	11804

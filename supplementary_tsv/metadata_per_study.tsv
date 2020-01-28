@@ -1,0 +1,24 @@
+Study	Dataset Type	Imputed	Paired	Stranded	Read length	Pre-QC sample size	Sample size
+Alasoo_2018	RNAseq	YES	YES	YES	75bp	336	336
+BLUEPRINT_PE	RNAseq	NO	YES	YES	100bp	221	167
+BLUEPRINT_SE	RNAseq	NO	NO	YES	100bp	387	387
+BrainSeq	RNAseq	YES	YES	YES	100bp	495	479
+GENCORD	RNAseq	YES	YES	NO	50bp	567	560
+GEUVADIS	RNAseq	NO	YES	NO	75bp	462	445
+HipSci	RNAseq	YES	YES	YES	75bp	513	322
+Lepik_2017	RNAseq	NO	YES	YES	50bp	508	471
+Nedelec_2016	RNAseq	YES	NO	NO	100bp	503	493
+Quach_2016	RNAseq	YES	NO	NO	100bp	970	969
+ROSMAP	RNAseq	YES	YES	YES	100bp	581	576
+Schmiedel_2018	RNAseq	YES	NO	YES	50bp	1544	1331
+Schwartzentruber_2018	RNAseq	YES	YES	YES	75bp	130	98
+TwinsUK	RNAseq	NO	YES	NO	50bp	2505	1364
+van_de_Bunt_2015	RNAseq	YES	YES	YES	100bp	118	117
+CEDAR	microarray	YES	NA	NA	NA	2967	2337
+Fairfax_2012	microarray	YES	NA	NA	NA	296	281
+Fairfax_2014	microarray	YES	NA	NA	NA	1384	1371
+Kasela_2017	microarray	YES	NA	NA	NA	576	549
+Naranbhai_2015	microarray	YES	NA	NA	NA	101	93
+				RNAseq samples		9840	8115
+				Microarray samples		5324	4631
+				Total samples		15164	12746
