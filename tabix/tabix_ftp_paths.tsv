@@ -41,10 +41,10 @@ CEDAR	rectum	UBERON_0001052	"rectum"	rectum	naive	microarray	ftp://ftp.ebi.ac.uk
 CEDAR	B-cell_CD19	CL_0000236	"B cell"	B cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_B-cell_CD19.all.tsv.gz
 CEDAR	ileum	UBERON_0002116	"ileum"	ileum	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_ileum.all.tsv.gz
 Fairfax_2012	B-cell_CD19	CL_0000236	"B cell"	B cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2012/microarray/Fairfax_2012_B-cell_CD19.all.tsv.gz
-Fairfax_2014	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_monocyte_naive.all.tsv.gz
-Fairfax_2014	monocyte_IFN24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	IFNg_24h	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_monocyte_IFN24.all.tsv.gz
-Fairfax_2014	monocyte_LPS2	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_2h	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_monocyte_LPS2.all.tsv.gz
-Fairfax_2014	monocyte_LPS24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_24h	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_monocyte_LPS24.all.tsv.gz
+Fairfax_2014	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_naive.all.tsv.gz
+Fairfax_2014	monocyte_IFN24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	IFNg_24h	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_IFN24.all.tsv.gz
+Fairfax_2014	monocyte_LPS2	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_2h	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_LPS2.all.tsv.gz
+Fairfax_2014	monocyte_LPS24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_24h	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_LPS24.all.tsv.gz
 GENCORD	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/ge/GENCORD_ge_LCL.all.tsv.gz
 GENCORD	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/exon/GENCORD_exon_LCL.all.tsv.gz
 GENCORD	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/tx/GENCORD_tx_LCL.all.tsv.gz
