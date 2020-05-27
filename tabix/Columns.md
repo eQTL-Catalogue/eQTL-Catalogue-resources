@@ -17,4 +17,4 @@
 * **ref** - GRCh38 reference allele.
 * **alt** - GRCh38 alternative allele (also the effect allele).
 * **type** - Type of the genetic variant; SNP, INDEL or OTHER.
-* **rsid** - The dbSNP v151 rsid of the variant. If the same variant has multiple rsids then these should be split over multiple rows so that all of the other values are duplicates.
+* **rsid** - The dbSNP v151 rsid of the variant. If the same variant has multiple rsids then these should be split over multiple rows so that all of the other values are duplicated.
