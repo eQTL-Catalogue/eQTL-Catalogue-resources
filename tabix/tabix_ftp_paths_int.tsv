@@ -1,0 +1,50 @@
+study	qtl_group	tissue_ontology_id	tissue_ontology_term	tissue_label	condition_label	quant_method	ftp_path
+GTEx_V8	Adipose_Subcutaneous	UBER_0002190	subcutaneous adipose tissue	Adipose - Subcutaneous	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Adipose_Subcutaneous.tsv.gz
+GTEx_V8	Adipose_Visceral_Omentum	UBER_0010414	omental fat pad	Adipose - Visceral (Omentum)	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Adipose_Visceral_Omentum.tsv.gz
+GTEx_V8	Adrenal_Gland	UBER_0002369	adrenal gland	Adrenal Gland	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Adrenal_Gland.tsv.gz
+GTEx_V8	Artery_Aorta	UBER_0001496	ascending aorta	Artery - Aorta	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Artery_Aorta.tsv.gz
+GTEx_V8	Artery_Coronary	UBER_0001621	coronary artery	Artery - Coronary	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Artery_Coronary.tsv.gz
+GTEx_V8	Artery_Tibial	UBER_0007610	tibial artery	Artery - Tibial	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Artery_Tibial.tsv.gz
+GTEx_V8	Brain_Amygdala	UBER_0001876	amygdala	Brain - Amygdala	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Brain_Amygdala.tsv.gz
+GTEx_V8	Brain_Anterior_cingulate_cortex_BA24	UBER_0009835	anterior cingulate cortex	Brain - Anterior cingulate cortex (BA24)	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Brain_Anterior_cingulate_cortex_BA24.tsv.gz
+GTEx_V8	Brain_Caudate_basal_ganglia	UBER_0001873	caudate nucleus	Brain - Caudate (basal ganglia)	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Brain_Caudate_basal_ganglia.tsv.gz
+GTEx_V8	Brain_Cerebellar_Hemisphere	UBER_0002037	cerebellum	Brain - Cerebellar Hemisphere	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Brain_Cerebellar_Hemisphere.tsv.gz
+GTEx_V8	Brain_Cerebellum	UBER_0002037	cerebellum	Brain - Cerebellum	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Brain_Cerebellum.tsv.gz
+GTEx_V8	Brain_Cortex	UBER_0001870	frontal cortex	Brain - Cortex	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Brain_Cortex.tsv.gz
+GTEx_V8	Brain_Frontal_Cortex_BA9	UBER_0009834	dorsolateral prefrontal cortex	Brain - Frontal Cortex (BA9)	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Brain_Frontal_Cortex_BA9.tsv.gz
+GTEx_V8	Brain_Hippocampus	UBER_0001954	Ammon's horn	Brain - Hippocampus	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Brain_Hippocampus.tsv.gz
+GTEx_V8	Brain_Hypothalamus	UBER_0001898	hypothalamus	Brain - Hypothalamus	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Brain_Hypothalamus.tsv.gz
+GTEx_V8	Brain_Nucleus_accumbens_basal_ganglia	UBER_0001882	nucleus accumbens	Brain - Nucleus accumbens (basal ganglia)	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Brain_Nucleus_accumbens_basal_ganglia.tsv.gz
+GTEx_V8	Brain_Putamen_basal_ganglia	UBER_0001874	putamen	Brain - Putamen (basal ganglia)	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Brain_Putamen_basal_ganglia.tsv.gz
+GTEx_V8	Brain_Spinal_cord_cervical_c-1	UBER_0006469	C1 segment of cervical spinal cord	Brain - Spinal cord (cervical c-1)	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Brain_Spinal_cord_cervical_c-1.tsv.gz
+GTEx_V8	Brain_Substantia_nigra	UBER_0002038	substantia nigra	Brain - Substantia nigra	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Brain_Substantia_nigra.tsv.gz
+GTEx_V8	Breast_Mammary_Tissue	UBER_0008367	breast epithelium	Breast - Mammary Tissue	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Breast_Mammary_Tissue.tsv.gz
+GTEx_V8	Cells_Cultured_fibroblasts	EFO_0002009	fibroblast derived cell line	Cells - Cultured fibroblasts	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Cells_Cultured_fibroblasts.tsv.gz
+GTEx_V8	Cells_EBV-transformed_lymphocytes	EFO_0000572	lymphoblast	Cells - EBV-transformed lymphocytes	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Cells_EBV-transformed_lymphocytes.tsv.gz
+GTEx_V8	Colon_Sigmoid	UBER_0001159	sigmoid colon	Colon - Sigmoid	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Colon_Sigmoid.tsv.gz
+GTEx_V8	Colon_Transverse	UBER_0001157	transverse colon	Colon - Transverse	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Colon_Transverse.tsv.gz
+GTEx_V8	Esophagus_Gastroesophageal_Junction	UBER_0004550	gastroesophageal sphincter	Esophagus - Gastroesophageal Junction	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Esophagus_Gastroesophageal_Junction.tsv.gz
+GTEx_V8	Esophagus_Mucosa	UBER_0006920	esophagus squamous epithelium	Esophagus - Mucosa	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Esophagus_Mucosa.tsv.gz
+GTEx_V8	Esophagus_Muscularis	UBER_0004648	esophagus muscularis mucosa	Esophagus - Muscularis	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Esophagus_Muscularis.tsv.gz
+GTEx_V8	Heart_Atrial_Appendage	UBER_0006631	right atrium auricular region	Heart - Atrial Appendage	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Heart_Atrial_Appendage.tsv.gz
+GTEx_V8	Heart_Left_Ventricle	UBER_0006566	left ventricle myocardium	Heart - Left Ventricle	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Heart_Left_Ventricle.tsv.gz
+GTEx_V8	Kidney_Cortex	UBER_0001225	cortex of kidney	Kidney - Cortex	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Kidney_Cortex.tsv.gz
+GTEx_V8	Liver	UBER_0001114	right lobe of liver	Liver	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Liver.tsv.gz
+GTEx_V8	Lung	UBER_0008952	upper lobe of left lung	Lung	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Lung.tsv.gz
+GTEx_V8	Minor_Salivary_Gland	UBER_0006330	anterior lingual gland	Minor Salivary Gland	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Minor_Salivary_Gland.tsv.gz
+GTEx_V8	Muscle_Skeletal	UBER_0011907	gastrocnemius medialis	Muscle - Skeletal	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Muscle_Skeletal.tsv.gz
+GTEx_V8	Nerve_Tibial	UBER_0001323	tibial nerve	Nerve - Tibial	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Nerve_Tibial.tsv.gz
+GTEx_V8	Ovary	UBER_0000992	female gonad	Ovary	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Ovary.tsv.gz
+GTEx_V8	Pancreas	UBER_0001150	body of pancreas	Pancreas	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Pancreas.tsv.gz
+GTEx_V8	Pituitary	UBER_0000007	pituitary gland	Pituitary	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Pituitary.tsv.gz
+GTEx_V8	Prostate	UBER_0002367	prostate gland	Prostate	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Prostate.tsv.gz
+GTEx_V8	Skin_Not_Sun_Exposed_Suprapubic	UBER_0036149	suprapubic skin	Skin - Not Sun Exposed (Suprapubic)	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Skin_Not_Sun_Exposed_Suprapubic.tsv.gz
+GTEx_V8	Skin_Sun_Exposed_Lower_leg	UBER_0004264	lower leg skin	Skin - Sun Exposed (Lower leg)	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Skin_Sun_Exposed_Lower_leg.tsv.gz
+GTEx_V8	Small_Intestine_Terminal_Ileum	UBER_0001211	Peyer's patch	Small Intestine - Terminal Ileum	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Small_Intestine_Terminal_Ileum.tsv.gz
+GTEx_V8	Spleen	UBER_0002106	spleen	Spleen	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Spleen.tsv.gz
+GTEx_V8	Stomach	UBER_0000945	stomach	Stomach	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Stomach.tsv.gz
+GTEx_V8	Testis	UBER_0000473	testis	Testis	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Testis.tsv.gz
+GTEx_V8	Thyroid	UBER_0002046	thyroid gland	Thyroid	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Thyroid.tsv.gz
+GTEx_V8	Uterus	UBER_0000995	uterus	Uterus	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Uterus.tsv.gz
+GTEx_V8	Vagina	UBER_0000996	vagina	Vagina	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Vagina.tsv.gz
+GTEx_V8	Whole_Blood	UBER_0013756	venous blood	Whole Blood	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Whole_Blood.tsv.gz
