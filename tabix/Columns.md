@@ -1,6 +1,6 @@
 # Explanation of the columns in the eQTL summary statistics files
 
-* **variant** - The variant ID (chromosome_position_ref_alt) e.g. 19_226776_C_T. Based on GRCh38 coordinates and reference genome. The chromosome, position, ref and alt values should exactly match same fields in the summary statistics file. 
+* **variant** - The variant ID (chromosome_position_ref_alt) e.g. chr19_226776_C_T. Based on GRCh38 coordinates and reference genome. The chromosome, position, ref and alt values should exactly match same fields in the summary statistics file, with 'chr' prefix added to the chromosome number. 
 * **r2** - Optional imputation quality score from the imputation software, can be replaced with NA if not available.
 * **pvalue** - Nominal p-value of association between the variant and the molecular trait.
 * **molecular_trait_object_id** - For phenotypes with multiple correlated alternatives (multiple alternative transcripts or exons within a gene, multple alternative promoters in txrevise, multiple alternative intons in Leafcutter), this defines the level at which the phenotypes were aggregated. Permutation p-values are calculated accross this set of alternatives.  
