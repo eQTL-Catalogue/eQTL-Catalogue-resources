@@ -65,3 +65,54 @@ Schmiedel_2018	NK-cell	NK-cell_naive	CL_0000623	natural killer cell
 ROSMAP	brain	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex
 BrainSeq	brain	brain	UBERON_0009834	dorsolateral prefrontal cortex
 Lepik_2017	blood	blood	UBERON_0000178	blood
+FUSION	muscle	muscle_naive	UBERON_0001134	skeletal muscle tissue
+FUSION	adipose	adipose_naive	UBERON_0001013	adipose tissue
+GTEx	adipose_subcutaneous	adipose_subcutaneous	UBERON_0001013	adipose tissue
+GTEx	LCL	LCL	EFO_0005292	lymphoblastoid cell line
+GTEx	blood	blood	UBERON_0000178	blood
+GTEx	fibroblast	fibroblast	CL_0000057	fibroblast
+GTEx	muscle	muscle	UBERON_0001134	skeletal muscle tissue
+GTEx	skin_sun_exposed	skin_sun_exposed	UBERON_0002097	skin of body
+GTEx	adipose_visceral	adipose_visceral	UBERON_0010414	omental fat pad
+GTEx	adrenal_gland	adrenal_gland	UBERON_0002369	adrenal gland
+GTEx	artery_aorta	artery_aorta	UBERON_0001496	ascending aorta
+GTEx	artery_coronary	artery_coronary	UBERON_0001621	coronary artery
+GTEx	artery_tibial	artery_tibial	UBERON_0007610	tibial artery
+GTEx	brain_amygdala	brain_amygdala	UBERON_0001876	amygdala
+GTEx	brain_anterior_cingulate_cortex	brain_anterior_cingulate_cortex	UBERON_0009835	anterior cingulate cortex
+GTEx	brain_caudate	brain_caudate	UBERON_0001873	caudate nucleus
+GTEx	brain_cerebellar_hemisphere	brain_cerebellar_hemisphere	UBERON_0002037	cerebellum
+GTEx	brain_cerebellum	brain_cerebellum	UBERON_0002037	cerebellum
+GTEx	brain_cortex	brain_cortex	UBERON_0001870	frontal cortex
+GTEx	brain_frontal_cortex	brain_frontal_cortex	UBERON_0009834	dorsolateral prefrontal cortex
+GTEx	brain_hippocampus	brain_hippocampus	UBERON_0001954	Ammon's horn
+GTEx	brain_hypothalamus	brain_hypothalamus	UBERON_0001898	hypothalamus
+GTEx	brain_nucleus_accumbens	brain_nucleus_accumbens	UBERON_0001882	nucleus accumbens
+GTEx	brain_putamen	brain_putamen	UBERON_0001874	putamen
+GTEx	brain_spinal_cord	brain_spinal_cord	UBERON_0006469	C1 segment of cervical spinal cord
+GTEx	brain_substantia_nigra	brain_substantia_nigra	UBERON_0002038	substantia nigra
+GTEx	breast	breast	UBERON_0008367	breast epithelium
+GTEx	colon_sigmoid	colon_sigmoid	UBERON_0001159	sigmoid colon
+GTEx	colon_transverse	colon_transverse	UBERON_0001157	transverse colon
+GTEx	esophagus_gej	esophagus_gej	UBERON_0004550	gastroesophageal sphincter
+GTEx	esophagus_mucosa	esophagus_mucosa	UBERON_0006920	esophagus squamous epithelium
+GTEx	esophagus_muscularis	esophagus_muscularis	UBERON_0004648	esophagus muscularis mucosa
+GTEx	heart_atrial_appendage	heart_atrial_appendage	UBERON_0006631	right atrium auricular region
+GTEx	heart_left_ventricle	heart_left_ventricle	UBERON_0006566	left ventricle myocardium
+GTEx	kidney_cortex	kidney_cortex	UBERON_0001225	cortex of kidney
+GTEx	liver	liver	UBERON_0001114	right lobe of liver
+GTEx	lung	lung	UBERON_0008952	upper lobe of left lung
+GTEx	minor_salivary_gland	minor_salivary_gland	UBERON_0006330	anterior lingual gland
+GTEx	nerve_tibial	nerve_tibial	UBERON_0001323	tibial nerve
+GTEx	ovary	ovary	UBERON_0000992	female gonad
+GTEx	pancreas	pancreas	UBERON_0001150	body of pancreas
+GTEx	pituitary	pituitary	UBERON_0000007	pituitary gland
+GTEx	prostate	prostate	UBERON_0002367	prostate gland
+GTEx	skin_not_sun_exposed	skin_not_sun_exposed	UBERON_0036149	suprapubic skin
+GTEx	small_intestine	small_intestine	UBERON_0001211	Peyer's patch
+GTEx	spleen	spleen	UBERON_0002106	spleen
+GTEx	stomach	stomach	UBERON_0000945	stomach
+GTEx	testis	testis	UBERON_0000473	testis
+GTEx	thyroid	thyroid	UBERON_0002046	thyroid gland
+GTEx	uterus	uterus	UBERON_0000995	uterus
+GTEx	vagina	vagina	UBERON_0000996	vagina
