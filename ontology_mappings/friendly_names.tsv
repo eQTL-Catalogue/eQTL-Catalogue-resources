@@ -3,21 +3,12 @@ CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte
 CL_0000775	neutrophil	neutrophil
 CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell
 CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell
-UBERON_0001157	transverse colon	transverse colon
 CL_0000233	platelet	platelet
-UBERON_0001052	rectum	rectum
 CL_0000236	B cell	B cell
-UBERON_0002116	ileum	ileum
-EFO_0005292	lymphoblastoid cell line	LCL
 CL_0000057	fibroblast	fibroblast
 CL_0000084	T cell	T cell
-UBERON_0001013	adipose tissue	adipose
-UBERON_0002097	skin of body	skin
-UBERON_0000178	blood	blood
 CL_0000235	macrophage	macrophage
 CL_0000101	sensory neuron	sensory neuron
-UBERON_0000006	islet of Langerhans	pancreatic islet
-EFO_0004905	induced pluripotent stem cell	iPSC
 CL_0000451	dendritic cell	dendritic cell
 CL_0002038	T follicular helper cell	Tfh cell
 CL_0000899	T-helper 17 cell	Th17 cell
@@ -27,4 +18,55 @@ CL_0002678	memory regulatory T cell	Treg naive
 CL_0002677	naive regulatory T cell	Treg memory
 CL_0002396	CD14-low, CD16-positive monocyte	CD16+ monocyte
 CL_0000623	natural killer cell	NK cell
-UBERON_0009834	dorsolateral prefrontal cortex	DLPFC
+EFO_0004905	induced pluripotent stem cell	iPSC
+EFO_0005292	lymphoblastoid cell line	LCL
+UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)
+UBERON_0001134	skeletal muscle tissue	muscle
+UBERON_0001013	adipose tissue	adipose
+UBERON_0002097	skin of body	skin
+UBERON_0000178	blood	blood
+UBERON_0001157	transverse colon	transverse colon
+UBERON_0002116	ileum	ileum
+UBERON_0001052	rectum	rectum
+UBERON_0002097	skin of body	skin
+UBERON_0000006	islet of Langerhans	pancreatic islet
+UBERON_0010414	omental fat pad	adipose (visceral)
+UBERON_0002369	adrenal gland	adrenal gland
+UBERON_0001496	ascending aorta	artery (aorta)
+UBERON_0001621	coronary artery	artery (coronary)
+UBERON_0007610	tibial artery	artery (tibial)
+UBERON_0001876	amygdala	brain (amygdala)
+UBERON_0009835	anterior cingulate cortex	brain (anterior cingulate cortex)
+UBERON_0001873	caudate nucleus	brain (caudate)
+UBERON_0002037	cerebellum	brain (cerebellum)
+UBERON_0001870	frontal cortex	brain (cortex)
+UBERON_0001954	"Ammon's horn"	brain (hippocampus)
+UBERON_0001898	hypothalamus	brain (hypothalamus)
+UBERON_0001882	nucleus accumbens	brain (nucleus accumbens)
+UBERON_0001874	putamen	brain (putamen)
+UBERON_0006469	C1 segment of cervical spinal cord	brain (spinal cord)
+UBERON_0002038	substantia nigra	brain (substantia nigra)
+UBERON_0008367	breast epithelium	breast
+UBERON_0001159	sigmoid colon	sigmoid colon
+UBERON_0004550	gastroesophageal sphincter	esophagus (gej)
+UBERON_0006920	esophagus squamous epithelium	esophagus (mucosa)
+UBERON_0004648	esophagus muscularis mucosa	esophagus (muscularis)
+UBERON_0006631	right atrium auricular region	heart (atrial appendage)
+UBERON_0006566	left ventricle myocardium	heart (left ventricle)
+UBERON_0001225	cortex of kidney	kidney (cortex)
+UBERON_0001114	right lobe of liver	liver
+UBERON_0008952	upper lobe of left lung	lung
+UBERON_0006330	anterior lingual gland	minor salivary gland
+UBERON_0001323	tibial nerve	tibial nerve
+UBERON_0000992	female gonad	ovary
+UBERON_0001150	body of pancreas	pancreas
+UBERON_0000007	pituitary gland	pituitary
+UBERON_0002367	prostate gland	prostate
+UBERON_0036149	suprapubic skin	skin (suprapubic)
+UBERON_0001211	"Peyer's patch"	small intestine
+UBERON_0002106	spleen	spleen
+UBERON_0000945	stomach	stomach
+UBERON_0000473	testis	testis
+UBERON_0002046	thyroid gland	thyroid
+UBERON_0000995	uterus	uterus
+UBERON_0000996	vagina	vagina

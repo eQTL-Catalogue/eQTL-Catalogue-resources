@@ -73,6 +73,7 @@ GTEx	blood	blood	UBERON_0000178	blood
 GTEx	fibroblast	fibroblast	CL_0000057	fibroblast
 GTEx	muscle	muscle	UBERON_0001134	skeletal muscle tissue
 GTEx	skin_sun_exposed	skin_sun_exposed	UBERON_0002097	skin of body
+GTEx	brain_frontal_cortex	brain_frontal_cortex	UBERON_0009834	dorsolateral prefrontal cortex
 GTEx	adipose_visceral	adipose_visceral	UBERON_0010414	omental fat pad
 GTEx	adrenal_gland	adrenal_gland	UBERON_0002369	adrenal gland
 GTEx	artery_aorta	artery_aorta	UBERON_0001496	ascending aorta
@@ -84,8 +85,7 @@ GTEx	brain_caudate	brain_caudate	UBERON_0001873	caudate nucleus
 GTEx	brain_cerebellar_hemisphere	brain_cerebellar_hemisphere	UBERON_0002037	cerebellum
 GTEx	brain_cerebellum	brain_cerebellum	UBERON_0002037	cerebellum
 GTEx	brain_cortex	brain_cortex	UBERON_0001870	frontal cortex
-GTEx	brain_frontal_cortex	brain_frontal_cortex	UBERON_0009834	dorsolateral prefrontal cortex
-GTEx	brain_hippocampus	brain_hippocampus	UBERON_0001954	Ammon's horn
+GTEx	brain_hippocampus	brain_hippocampus	UBERON_0001954	"Ammon's horn"
 GTEx	brain_hypothalamus	brain_hypothalamus	UBERON_0001898	hypothalamus
 GTEx	brain_nucleus_accumbens	brain_nucleus_accumbens	UBERON_0001882	nucleus accumbens
 GTEx	brain_putamen	brain_putamen	UBERON_0001874	putamen
@@ -109,7 +109,7 @@ GTEx	pancreas	pancreas	UBERON_0001150	body of pancreas
 GTEx	pituitary	pituitary	UBERON_0000007	pituitary gland
 GTEx	prostate	prostate	UBERON_0002367	prostate gland
 GTEx	skin_not_sun_exposed	skin_not_sun_exposed	UBERON_0036149	suprapubic skin
-GTEx	small_intestine	small_intestine	UBERON_0001211	Peyer's patch
+GTEx	small_intestine	small_intestine	UBERON_0001211	"Peyer's patch"
 GTEx	spleen	spleen	UBERON_0002106	spleen
 GTEx	stomach	stomach	UBERON_0000945	stomach
 GTEx	testis	testis	UBERON_0000473	testis
