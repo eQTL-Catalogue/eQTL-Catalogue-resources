@@ -31,5 +31,5 @@
 * **pvalue** - Nominal p-value of association between the variant and the molecular trait.
 * **beta** - Regression coefficient from the linear model.
 * **p_perm** - Empirical p-value calculated from 1000 permutations.
-* **p_beta** - Estimated empirical p-value based on the beta distribution. This is the column that you want to use for filtering the results. See the FastQTL paper for more details. 
+* **p_beta** - Estimated empirical p-value based on the beta distribution. This is the column that you want to use for filtering the results. See the FastQTL [paper](http://dx.doi.org/10.1093/bioinformatics/btv722) for more details. 
 
