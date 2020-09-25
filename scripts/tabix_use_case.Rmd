@@ -119,7 +119,8 @@ geom_point()
 Most GWAS summary statistics still use GRCh37 coordinates, so we first look up the coordinate of the rs1354034 variant in GRCh37, which is 3:56849749. We will use GWAS summary statistics for [mean platelet volume](https://gwas.mrcieu.ac.uk/datasets/ebi-a-GCST004599/) from the [IEU OpenGWAS database](https://gwas.mrcieu.ac.uk/), because they have released all summary statistics in [uniformly formatted VCF files](https://www.biorxiv.org/content/10.1101/2020.05.29.115824v1). These files can be queried using the [gwasvcf](https://github.com/MRCIEU/gwasvcf) R package:
 
 ```{r, message=FALSE}
-#Download the VCF first using 'wget https://gwas.mrcieu.ac.uk/files/ebi-a-GCST004599/ebi-a-GCST004599.vcf.gz'
+# First, download the VCF file with 'wget https://gwas.mrcieu.ac.uk/files/ebi-a-GCST004599/ebi-a-GCST004599.vcf.gz'
+#and its tabix index with 'wget https://gwas.mrcieu.ac.uk/files/ebi-a-GCST004599/ebi-a-GCST004599.vcf.gz.tbi'
 gwas_stats = gwasvcf::query_gwas("ebi-a-GCST004599.vcf.gz", chrompos = "3:56649749-57049749")
 gwas_stats = gwasvcf::vcf_to_granges(gwas_stats) %>% 
   keepSeqlevels("3") %>% 
@@ -161,12 +162,12 @@ geom_point()
 Define a helper function for colocalisation
 ```{r}
 run_coloc <- function(eqtl_sumstats, gwas_sumstats){
-    eQTL_dataset = list(pvalues = eqtl_sumstats$pvalue, 
-                      N = (eqtl_sumstats$an)[1]/2, # Samples size is allele number (AN) dvided by 2
-                      MAF = eqtl_sumstats$maf, 
-                      type = "quant", 
-                      beta = eqtl_sumstats$beta,
-                      snp = eqtl_sumstats$id)
+    eQTL_dataset = list(beta = eqtl_sumstats$beta,
+                        varbeta = eqtl_sumstats$se^2,
+                        N = (eqtl_sumstats$an)[1]/2, # Samples size is allele number (AN) dvided by 2
+                        MAF = eqtl_sumstats$maf, 
+                        type = "quant", 
+                        snp = eqtl_sumstats$id)
   gwas_dataset = list(beta = gwas_sumstats$ES,
                       varbeta = gwas_sumstats$SE^2, 
                       type = "quant", 
@@ -258,8 +259,11 @@ message("Download failed for: ")
 failed = names(which(!unlist(purrr::map(summary_list, ~is.null(.$error)))))
 failed
 
+#Remove rows that have NAs for standard error
+result_filtered = purrr::map(result_list, ~dplyr::filter(., !is.na(se)))
+
 #Run coloc
-coloc_df_imported = purrr::map_df(result_list, ~run_coloc(., gwas_stats_hg38), .id = "qtl_id")
+coloc_df_imported = purrr::map_df(result_filtered, ~run_coloc(., gwas_stats_hg38), .id = "qtl_id")
 ```
 
 Finally, we can merge all of the results together and sort them according to the posterior probabilty of coloclisation. From the table below, we can see that across 110 contexts (cell types/tissues/conditions) we find strong evidence for colocaliation only in platelets.
