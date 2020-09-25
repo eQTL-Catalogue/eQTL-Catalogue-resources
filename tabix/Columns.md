@@ -1,4 +1,4 @@
-# Explanation of the columns in the eQTL summary statistics files
+# Column names of the nominal eQTL summary statistics files (*.all.tsv.gz)
 
 * **variant** - The variant ID (chromosome_position_ref_alt) e.g. chr19_226776_C_T. Based on GRCh38 coordinates and reference genome. The chromosome, position, ref and alt values should exactly match same fields in the summary statistics file, with 'chr' prefix added to the chromosome number. 
 * **r2** - Optional imputation quality score from the imputation software, can be replaced with NA if not available.
@@ -18,3 +18,18 @@
 * **alt** - GRCh38 alternative allele (also the effect allele).
 * **type** - Type of the genetic variant; SNP, INDEL or OTHER.
 * **rsid** - The dbSNP v151 rsid of the variant. If the same variant has multiple rsids then these should be split over multiple rows so that all of the other values are duplicated.
+
+# Column names of the permutation p-value files (*.permuted.tsv.gz)
+
+* **molecular_trait_object_id** - For phenotypes with multiple correlated alternatives (multiple alternative transcripts or exons within a gene, multple alternative promoters in txrevise, multiple alternative intons in Leafcutter), this defines the level at which the phenotypes were aggregated. Permutation p-values are calculated accross this set of alternatives.
+* **molecular_trait_id** - ID of the molecular trait used for QTL mapping. Depending on the quantification method used, this can be either a gene id, exon id, transcript id or a txrevise promoter, splicing or 3'end event id. Examples: ENST00000356937, ENSG00000008128. 
+* **n_traits** - The number of molecular traits over which permutation p-values were calculated (e.g. the number of transcripts per gene). Note that the permutations are performed accross all molecular traits within the same molecular trait object (e.g. all transcripts of a gene) and the results are reported for the most significant variant and molecular trait pair. 
+* **n_variants** - number of genetic variants tested within the cis region of the molecular trait.
+* **variant** - The variant ID (chromosome_position_ref_alt) e.g. chr19_226776_C_T. Based on GRCh38 coordinates and reference genome. The chromosome, position, ref and alt values should exactly match same fields in the summary statistics file, with 'chr' prefix added to the chromosome number.
+* **chromosome** - GRCh38 chromosome name of the variant (e.g. 1,2,3 ...,X).
+* **position** - GRCh38 position of the variant.
+* **pvalue** - Nominal p-value of association between the variant and the molecular trait.
+* **beta** - Regression coefficient from the linear model.
+* **p_perm** - Empirical p-value calculated from 1000 permutations.
+* **p_beta** - Estimated empirical p-value based on the beta distribution. This is the column that you want to use for filtering the results. See the FastQTL paper for more details. 
+
