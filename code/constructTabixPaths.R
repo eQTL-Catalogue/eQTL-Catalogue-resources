@@ -1,0 +1,37 @@
+library("dplyr")
+
+#Import mappings
+friendly_names = readr::read_tsv("ontology_mappings/friendly_names.tsv")
+mappings = readr::read_tsv("ontology_mappings/tissue_ontology_mapping.tsv") %>%
+  dplyr::left_join(friendly_names, by = c("ontology_term", "ontology_label"))
+
+#Find those conditions that are not naive
+condition_mapping = readr::read_tsv("ontology_mappings/cell_type_condition_mapping.tsv") %>%
+  dplyr::select(study, qtl_group, condition_label) %>%
+  dplyr::filter(condition_label != "naive")
+
+#Add quants
+quants = dplyr::tibble(quant_method = c("ge","exon","tx","txrev"))
+
+#Specify microarray studies
+microarray = dplyr::tibble(study = c("CEDAR", "Kasela_2017", "Fairfax_2014", "Fairfax_2012", "Naranbhai_2015"))
+
+#Rename columns
+tabix_paths = dplyr::transmute(mappings, study, qtl_group,
+                               tissue_ontology_id = ontology_term,
+                               tissue_ontology_term = ontology_label,
+                               tissue_label = ontology_tissue) %>%
+  dplyr::left_join(condition_mapping, by = c("study", "qtl_group")) %>%
+  dplyr::mutate(condition_label = ifelse(is.na(condition_label), "naive", condition_label))
+
+#Process RNA-seq studies
+rnaseq_paths = dplyr::anti_join(tabix_paths, microarray, by = "study") %>%
+  tidyr::crossing(quants) %>%
+  dplyr::mutate(ftp_path = paste("ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv",
+                                 study, quant_method,
+                                 paste0(study, "_", quant_method, "_", qtl_group, ".all.tsv.gz"), sep ="/"))
+
+a  = dplyr::filter(rnaseq_paths, study == "FUSION")
+a$ftp_path
+
+

@@ -192,3 +192,11 @@ van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	"islet of Langerhans"	pancreati
 van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	"islet of Langerhans"	pancreatic islet	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/van_de_Bunt_2015/exon/van_de_Bunt_2015_exon_pancreatic_islet.all.tsv.gz
 van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	"islet of Langerhans"	pancreatic islet	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/van_de_Bunt_2015/tx/van_de_Bunt_2015_tx_pancreatic_islet.all.tsv.gz
 van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	"islet of Langerhans"	pancreatic islet	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/van_de_Bunt_2015/txrev/van_de_Bunt_2015_txrev_pancreatic_islet.all.tsv.gz
+FUSION	adipose_naive	UBERON_0001013	"adipose tissue"	adipose	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/exon/FUSION_exon_adipose_naive.all.tsv.gz
+FUSION	adipose_naive	UBERON_0001013	"adipose tissue"	adipose	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/ge/FUSION_ge_adipose_naive.all.tsv.gz
+FUSION	adipose_naive	UBERON_0001013	"adipose tissue"	adipose	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/tx/FUSION_tx_adipose_naive.all.tsv.gz
+FUSION	adipose_naive	UBERON_0001013	"adipose tissue"	adipose	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/txrev/FUSION_txrev_adipose_naive.all.tsv.gz
+FUSION	muscle_naive	UBERON_0001134	"skeletal muscle tissue"	muscle	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/exon/FUSION_exon_muscle_naive.all.tsv.gz
+FUSION	muscle_naive	UBERON_0001134	"skeletal muscle tissue"	muscle	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/ge/FUSION_ge_muscle_naive.all.tsv.gz
+FUSION	muscle_naive	UBERON_0001134	"skeletal muscle tissue"	muscle	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/tx/FUSION_tx_muscle_naive.all.tsv.gz
+FUSION	muscle_naive	UBERON_0001134	"skeletal muscle tissue"	muscle	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/txrev/FUSION_txrev_muscle_naive.all.tsv.gz
