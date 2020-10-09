@@ -1,0 +1,90 @@
+```{r}
+library("dplyr")
+library("ggplot2")
+library("readr")
+library("stringr")
+library("devtools")
+library("data.table")
+load_all("../../../../eQTLUtils/")
+library("RColorBrewer")
+```
+
+```{r eval=FALSE}
+# read and rbind rhe median_tpms
+raw_files_dir = "raw_data_median_tpm/"
+study_list_dir <- list.files(raw_files_dir, full.names = TRUE, recursive = TRUE)
+
+rbinded_median_tpm = data.frame()
+
+for (median_tpm in study_list_dir){
+  print(median_tpm)
+  temp_median_tpms <- read_tsv(median_tpm)
+  
+  rbinded_median_tpm<-rbind(rbinded_median_tpm, temp_median_tpms)
+}
+
+rbinded_median_tpm <- rbinded_median_tpm %>% 
+  mutate(study_qtl = paste0(study, "_", qtl_group)) %>% 
+  select(phenotype_id, study_qtl, median_tpm) %>% as.data.frame()
+
+rbinded_median_tpm_wide <- reshape(rbinded_median_tpm, idvar = "phenotype_id", timevar = "study_qtl", direction = "wide")
+colnames(rbinded_median_tpm_wide) <- gsub("median_tpm.","",colnames(rbinded_median_tpm_wide) )
+
+write_tsv(rbinded_median_tpm_wide, "../data/median_tpms/merged_wide_median_tpms.tsv")
+```
+
+
+```{r}
+rbinded_median_tpm_wide = readr::read_tsv("merged_wide_median_tpms.tsv.gz")
+rownames(rbinded_median_tpm_wide) <- rbinded_median_tpm_wide$phenotype_id 
+
+#Perform MDS
+matrix = log(rbinded_median_tpm_wide %>% select(-phenotype_id) %>% as.matrix()+0.1,2)
+dist = cor(matrix, method = "pearson")
+fit <- MASS::isoMDS(1-dist, k=2)
+
+mds_matrix = as.data.frame(fit$points) %>%
+  as_tibble() %>% dplyr::mutate(study_qtlgroup = rownames(fit$points)) 
+
+mds_matrix[mds_matrix$study_qtlgroup=="BLUEPRINT_PE_T-cell",]$study_qtlgroup <- "BLUEPRINT_T-cell"
+mds_matrix[mds_matrix$study_qtlgroup=="BLUEPRINT_SE_monocyte",]$study_qtlgroup <- "BLUEPRINT_monocyte"
+mds_matrix[mds_matrix$study_qtlgroup=="BLUEPRINT_SE_neutrophil",]$study_qtlgroup <- "BLUEPRINT_neutrophil"
+
+ontology_map <- read_tsv("../../../ontology_mappings/tissue_ontology_mapping.tsv")
+friendly_names = readr::read_tsv("../../../ontology_mappings/friendly_names.tsv") %>%
+  dplyr::select(ontology_term, ontology_tissue)
+ontology_map <- ontology_map %>% mutate(study_qtlgroup = paste0(study, "_", qtl_group)) %>%
+  dplyr::left_join(friendly_names) %>%
+  dplyr::mutate(sample_class = ifelse(ontology_tissue %like% "brain", "brain", "other")) %>%
+  dplyr::mutate(sample_class = ifelse(ontology_tissue %like% "LCL", "LCL", sample_class)) %>%
+  dplyr::mutate(sample_class = ifelse(ontology_tissue %like% "monocyte", "monocyte", sample_class)) %>%
+  dplyr::mutate(sample_class = ifelse(ontology_tissue %like% "macrophage", "macrophage", sample_class)) %>%
+  dplyr::mutate(sample_class = ifelse(ontology_tissue %like% "blood", "blood", sample_class)) %>%
+  dplyr::mutate(sample_class = ifelse(ontology_tissue %like% "neutrophil", "neutrophil", sample_class)) %>%
+  dplyr::mutate(sample_class = ifelse(ontology_term %in% c("CL_0000236","CL_0002677","CL_0002678","CL_0000624","CL_0000625","CL_0000623","CL_0000899","CL_0000546","CL_0000545","CL_0000899","CL_0002038","CL_0000084"), "lymphocyte", sample_class)) %>%
+  dplyr::mutate(sample_class = ifelse(ontology_tissue %like% "iPSC", "iPSC", sample_class))
+
+#Add order
+fct_levels = c("blood","lymphocyte","LCL","neutrophil","monocyte","brain","macrophage","iPSC","other")
+ontology_map = dplyr::mutate(ontology_map, tissue_fct = factor(sample_class, levels = fct_levels))
+
+
+mds_matrix_ont <- mds_matrix %>% left_join(ontology_map %>% select(study_qtlgroup, tissue_fct), by = "study_qtlgroup")
+
+mds_plot_median_tpm = ggplot2::ggplot(mds_matrix_ont, ggplot2::aes(x = V1, y = -V2, color=tissue_fct, label = study_qtlgroup)) +
+  ggplot2::geom_point(shape = 20) +
+  ggplot2::labs(x="MDS Coordinate 1", y="MDS Coordinate 2") + 
+   theme_bw() +
+  scale_color_manual(values = c("#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#fed976","#a65628","#f781bf","#999999"))
+
+mds_plot_median_tpm_plot <- plotly::ggplotly(mds_plot_median_tpm)
+htmlwidgets::saveWidget(widget = plotly::as_widget(mds_plot_median_tpm_plot),
+                        file = file.path("median_tpm_by_qtlgroups.html"),
+                        libdir = "dependencies")
+mds_plot_median_tpm
+ggsave("median_tpm_MDS.pdf", plot = mds_plot_median_tpm, width = 5, height = 3.1)
+
+
+```
+
+

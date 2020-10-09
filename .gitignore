@@ -3,3 +3,5 @@
 .Rproj.user
 *.Rproj
 .Rhistory
+manuscript/figures/median_TPM_MDS/median_tpm_by_qtlgroups.html
+manuscript/figures/median_TPM_MDS/median_tpm_MDS.pdf
