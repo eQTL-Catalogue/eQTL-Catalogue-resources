@@ -1,8 +1,8 @@
-library(tidyverse)
-library(ggplot2)
-library(RColorBrewer)
-library(ggrepel)
-library(data.table)
+library("tidyverse")
+library("ggplot2")
+library("RColorBrewer")
+library("ggrepel")
+library("data.table")
 
 sharing = readr::read_tsv("mash_sharing.tsv")
 
@@ -28,37 +28,33 @@ ontology_map = dplyr::mutate(ontology_map, tissue_fct = factor(sample_class, lev
 ontology_map = ontology_map %>% dplyr::mutate(label = paste(study, ontology_tissue, sep=" "))
 
 # lead datasets
-leads=c("TwinsUK.blood", "BLUEPRINT_PE.T-cell", "GEUVADIS.LCL", 
-        "BLUEPRINT_SE.neutrophil", "BLUEPRINT_SE.monocyte", "Alasoo_2018.macrophage_naive", 
-        "ROSMAP.brain_naive", "HipSci.iPSC")
+leads=c("BLUEPRINT_SE.neutrophil", "BLUEPRINT_SE.monocyte", "BLUEPRINT_PE.T-cell","Schmiedel_2018.CD4_T-cell_naive","Schmiedel_2018.B-cell_naive", "Alasoo_2018.macrophage_naive", "GEUVADIS.LCL", 
+        "TwinsUK.blood", "GENCORD.fibroblast", "HipSci.iPSC", "ROSMAP.brain_naive", "TwinsUK.fat", "TwinsUK.skin", "FUSION.muscle_naive")
 
-plot_distribution <- function(similarity_matrix, y_axis="Mash sharing", measure="sharing"){
-  df_sharing = pivot_longer(similarity_matrix, cols=c(-dataset), names_to="dataset2")
-  # remove diagonal values
-  df_sharing = df_sharing %>% filter(value < 1)
-  # filter similarities for lead datasets
-  df_sharing = filter(df_sharing, dataset %in% leads)
-  df_sharing = df_sharing %>% left_join(ontology_map[c("tissue_fct", "study_qtlgroup")], by=c("dataset2"="study_qtlgroup"))
-  # add friendly label to lead datasets
-  df_sharing = df_sharing %>% left_join(ontology_map[c("label", "study_qtlgroup")], by=c("dataset"="study_qtlgroup"))
-  
-  df_sharing = dplyr::rename(df_sharing, !!measure:=value)
-  
-  # or ggplot(df_sharing, aes(dataset, get(measure), colour=tissue_fct)) for friendly label of lead group
-  plt <- ggplot(df_sharing, aes(dataset, get(measure), colour=tissue_fct)) +
+#Convert sharing matrix into a data frame
+df_sharing = pivot_longer(sharing, cols=c(-dataset), names_to="dataset2")
+# remove diagonal values
+df_sharing = df_sharing %>% filter(value < 1)
+
+# filter similarities for lead datasets
+df_sharing = filter(df_sharing, dataset %in% leads)
+df_sharing = df_sharing %>% left_join(ontology_map[c("tissue_fct", "study_qtlgroup")], by=c("dataset2"="study_qtlgroup"))
+# add friendly label to lead datasets
+df_sharing = df_sharing %>% left_join(ontology_map[c("label", "study_qtlgroup")], by=c("dataset"="study_qtlgroup"))
+df_sharing = dplyr::rename(df_sharing, sharing = value) %>%
+  dplyr::mutate(dataset = factor(dataset, levels = leads))
+
+plt <- ggplot(df_sharing, aes(x = dataset, y = sharing, colour=tissue_fct)) +
     geom_jitter(width = 0.2) +
-    xlab("Dataset") +
-    ylab(y_axis) +
+    xlab("") +
+    ylab("Pairwise eQTL sharing") +
     scale_colour_manual(name = "group",
                         values=c("#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#a65628","#fed976","#f781bf","#999999"))  +
     theme_light() + 
-    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
-  
-  return(plt)
-}
+    theme(panel.grid = element_blank()) + 
+    theme(axis.text.x = element_text(angle = 330, vjust = 1, hjust=0))
+plt
 
 
-plt = plot_distribution(sharing)
-
-ggsave("sharing_distribution.pdf", plt, width = 8, height = 8)
+ggsave("sharing_distribution.pdf", plt, width = 10, height = 4)
 
