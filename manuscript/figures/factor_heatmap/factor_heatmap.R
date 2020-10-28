@@ -53,9 +53,9 @@ FactorM = FactorM[datasets,]
 # name factors
 factor_names = tibble(factor = paste0("Factor", c(1:16)),
                       name = c("Universal", "iPSC", "Skin", "Blood",
-                               "LCL", "T-cell", "Monocyte & Macrophage", "Fat",
-                               "T-cell immune response", "Brain", "Macrophage", "Monocyte naive",
-                               "BLUEPRINT T-cell", "ROSMAP Brain", "Muscle", "Neutrophil" ))
+                               "LCL", "Lymphocyte", "Monocyte & Macrophage", "Adipose",
+                               "T cell (anti-CD3/CD28)", "Brain", "Macrophage", "Monocyte",
+                               "BLUEPRINT T cell", "ROSMAP Brain", "Muscle", "Neutrophil"))
 colnames(FactorM) = factor_names$name
 
 colors = c("#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#a65628","#fed976","#f781bf","#999999")
@@ -75,7 +75,7 @@ pheatmap::pheatmap(t(FactorM), fontsize=8, cluster_rows = F, cluster_cols = F, c
 matrix = FactorM[rowSums(FactorM[,2:16]) > 3,]
 
 pheatmap::pheatmap(t(matrix), fontsize=8, cluster_rows = F, cluster_cols = F, cellwidth=10, cellheight = 10,
-                   angle_col = 45, labels_col = labels[rownames(matrix),], 
+                   angle_col = 315, labels_col = labels[rownames(matrix),], 
                    annotation_legend = T, annotation_col = col_annot, annotation_colors=list(group=colors), 
                    height = 6, width = 13, filename="factor_heatmap_compact.pdf")
 

@@ -72,9 +72,10 @@ ontology_map = dplyr::mutate(ontology_map, tissue_fct = factor(sample_class, lev
 mds_matrix_ont <- mds_matrix %>% left_join(ontology_map %>% select(study_qtlgroup, tissue_fct), by = "study_qtlgroup")
 
 mds_plot_median_tpm = ggplot2::ggplot(mds_matrix_ont, ggplot2::aes(x = V1, y = -V2, color=tissue_fct, label = study_qtlgroup)) +
-  ggplot2::geom_point(shape = 20) +
+  ggplot2::geom_point() +
   ggplot2::labs(x="MDS Coordinate 1", y="MDS Coordinate 2") + 
-   theme_light() +
+  theme_light() +
+  theme(panel.grid = element_blank()) + 
   scale_color_manual(values = c("#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#fed976","#a65628","#f781bf","#999999"))
 
 mds_plot_median_tpm_plot <- plotly::ggplotly(mds_plot_median_tpm)

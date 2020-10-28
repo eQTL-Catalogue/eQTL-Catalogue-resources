@@ -1,5 +1,6 @@
-library(tidyverse)
-library(ggplot2)
+library("tidyverse")
+library("ggplot2")
+library("data.table")
 
 sharing = read_tsv("mash_sharing.tsv")
 sharing_matrix = as.matrix(sharing %>% select(-dataset))
@@ -35,9 +36,10 @@ plot_coords = function(coords){
     scale_colour_manual(name = "group",
                         values=c("#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#a65628","#fed976","#f781bf","#999999"))  +
     theme_light() + 
-    theme(panel.grid = element_blank())
+    theme(panel.grid = element_blank()) + 
+    ggplot2::labs(x="MDS Coordinate 1", y="MDS Coordinate 2")
   return(plt)
 }
 
 plt = plot_coords(fit)
-ggsave("mash_mds.pdf", plt, width = 8, height = 6)
+ggsave("mash_mds.pdf", plt, width = 5, height = 3.1)
