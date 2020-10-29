@@ -2,9 +2,9 @@ library(tidyverse)
 
 factor_names = tibble(factor = paste0("Factor", c(1:16)),
                       name = c("Universal", "iPSC", "Skin", "Blood",
-                               "LCL", "T-cell", "Monocyte & Macrophage", "Fat",
-                               "T-cell immune response", "Brain", "Macrophage", "Monocyte naive",
-                               "BLUEPRINT T-cell", "ROSMAP Brain", "Muscle", "Neutrophil" ))
+                               "LCL", "Lymphocyte", "Monocyte & Macrophage", "Adipose",
+                               "T cell (anti-CD3/CD28)", "Brain", "Macrophage", "Monocyte",
+                               "BLUEPRINT T cell", "ROSMAP Brain", "Muscle", "Neutrophil" ))
 
 mapped_data = "mapping_sn_spMF_K30_a1900_l11100"
 
@@ -45,7 +45,7 @@ plt = ggplot(factors, aes(x=factor(Factors, levels = Factors), y=Loadings, fill=
   geom_col() + 
   xlab("Factors") + 
   theme_bw() +
-  theme(axis.text.x = element_text(angle = 45, vjust=1, hjust=1), panel.grid = element_blank())
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1), panel.grid = element_blank(), legend.position = 'none')
 
-ggsave("RBMS1_factor_loadings.pdf", plt, width = 6, height = 4)
+ggsave("RBMS1_factor_loadings.pdf", plt, width = 3.5, height = 3)
 

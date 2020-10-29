@@ -87,7 +87,8 @@ plt = ggplot(effect, aes(x = study_qtlgroup, y = beta, ymin = beta - interval, y
   xlab("Dataset") + 
   ylab("Effect size") +
   theme_light() +
-  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1),
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
         plot.margin = margin(1, 1, 1, 3, "cm"),panel.grid = element_blank(),)+
   geom_hline(yintercept = 0)
-ggsave("RBMS1_effects.pdf", plt, width = 15, height = 7)
+ggsave("RBMS1_effects.pdf", plt, width = 10, height = 3.3)
