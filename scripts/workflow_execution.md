@@ -20,10 +20,23 @@ Imputed genotypes in VCF format lifted to GRCh38 coordinates.
 nextflow run main.nf -profile eqtl_catalogue -resume\
   --bfile <path_to_plink_file_prefix>\
   --harmonise_genotypes true\
-  --output_name <output_file_prefix>\
+  --output_name <output_prefix>\
   --outdir <path_to_output_dir>
 ```
 
+#### Manual quality control steps
+
+- Check the <output_prefix>.imiss file for samples with large proportion of missing genotypes (e.g. > 5%). These samples are likely to have poor genotyping quality and should probably the excluded from the analysis before continuing. Remove these inviduals from the original plink file and re-run the genimpute workflow.
+
+## Step 2: RNA-seq quantification with [eQTL-Catalogue/rnaseq](https://github.com/eQTL-Catalogue/rnaseq)
+
+## Step 3: Gene expression and genotype data normalisation and QC with [eQTL-Catalogue/qcnorm](https://github.com/eQTL-Catalogue/qcnorm)
+
+## Step 4: QTL mapping with [eQTL-Catalogue/qtlmap](https://github.com/eQTL-Catalogue/qtlmap)
+
+## Step 5: QTL fine mapping with [eQTL-Catalogue/susie-workflow](https://github.com/eQTL-Catalogue/susie-workflow)
+
+# Modular approach
 
 
 
