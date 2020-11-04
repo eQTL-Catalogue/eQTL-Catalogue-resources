@@ -30,6 +30,40 @@ nextflow run main.nf -profile eqtl_catalogue -resume\
 
 ## Step 2: RNA-seq quantification with [eQTL-Catalogue/rnaseq](https://github.com/eQTL-Catalogue/rnaseq)
 
+#### Input
+1. Raw RNA-seq data in fastq format. 
+  - Is it paired-end or single-end? (Do you have one or two fastq files per sample?)
+  - Is it stranded or unstranded?
+  - Paths to the fastq files can be passed with the readPathsFile parameter. See example files for [paired-end](https://github.com/eQTL-Catalogue/rnaseq/blob/master/data/readPathsFile_macrophages_PE.tsv) and [single-end](https://github.com/eQTL-Catalogue/rnaseq/blob/master/data/readPathsFile_macrophages_SE.tsv) data.
+2. Imputed genotypes in VCF format (from the genimpute workflow). These are required to check genotype condordance between the VCF files and the RNA-seq data using the [MBV](https://doi.org/10.1093/bioinformatics/btx074) method.
+
+#### Output
+Raw gene expression, exon expression, transcript expression and event expression matrices in a format suitable for the eQTL-Catalogue/qcnorm workflow.
+
+#### Running the workflow
+```bash
+nextflow run main.nf\
+ -profile eqtl_catalogue\
+ --readPathsFile <path_to_readPathsFile.tsv>\
+ --reverse_stranded\
+ --skip_qc\
+ --skip_multiqc\
+ --skip_stringtie\
+ --saveReference\
+ --run_tx_exp_quant\
+ --run_txrevise\
+ --run_splicing_exp_quant\
+ --run_exon_quant\
+ --run_mbv\
+ --mbv_vcf <path_to_imputed_genotypes_from_the_genimpute_workflow.vcf.gz>\
+ -process.queue main\
+ -resume
+```
+
+#### Other useful options
+Use the `-executor.queueSize` option to limit the number alignment jobs running in parallel to avoid too much load on the disks.
+
+
 ## Step 3: Gene expression and genotype data normalisation and QC with [eQTL-Catalogue/qcnorm](https://github.com/eQTL-Catalogue/qcnorm)
 
 ## Step 4: QTL mapping with [eQTL-Catalogue/qtlmap](https://github.com/eQTL-Catalogue/qtlmap)
