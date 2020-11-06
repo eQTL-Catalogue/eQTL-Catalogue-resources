@@ -58,11 +58,11 @@ datasets$type = factor(datasets$type, levels=c("RNA-seq", "Microarray"))
 plt = ggplot(datasets, aes(dataset_sample_size, n_significant, colour=type, dataset=dataset)) +
   geom_point() +
   facet_grid(. ~ term) +
-  theme_light() +
+  theme_bw() +
   theme(legend.position = "bottom", legend.title = element_blank(), panel.grid = element_blank())+
   ylab("Number of QTLs") + 
   xlab("Sample size")
 
-ggsave("quantification_methods_sample_size.pdf", plt, width=12, height = 4)
+ggsave("quantification_methods_sample_size.pdf", plt, width=8, height = 2.8)
 
 # ggplotly(plt)

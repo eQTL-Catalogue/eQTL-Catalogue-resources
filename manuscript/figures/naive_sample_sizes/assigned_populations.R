@@ -9,8 +9,10 @@ sizes$`Assigned population` = factor(sizes$`Assigned population`, levels=sizes$`
 plt = ggplot(sizes, aes(x=`Assigned population`, `Sample Size`))+
   geom_col() +
   xlab("Assigned population") + 
+  ylab("Sample size") +
   geom_text(aes(label = Percent), vjust = -0.5) + 
   theme_light() + 
-  theme(panel.grid = element_blank())
+  theme(panel.grid = element_blank()) +
+  ylim(0,5700)
 
-ggsave("assigned_populations.pdf", width=5, height=5)
+ggsave("assigned_populations.pdf", width=2.8, height=2.8)
