@@ -69,7 +69,7 @@ Use the `-executor.queueSize` option to limit the number alignment jobs running 
 #### Input
 1. Imputed genotypes from the genimpute workflow
 2. RNA-seq quantification results from the rnaseq workflow.
-3. Sample metadata file. See here for an example from the GEUVADIS dataset. Required columns:
+3. Sample metadata file. See here for an example from the [GEUVADIS dataset](workflow_execution_files/GEUVADIS.tsv). Required columns:
 
 #### Output
 Normalised molecular trait (gene expression, exon expression, transcript usage, event usage) matrices in a format suitable for the qtlmap workflow.
