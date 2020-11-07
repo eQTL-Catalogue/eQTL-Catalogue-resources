@@ -66,6 +66,28 @@ Use the `-executor.queueSize` option to limit the number alignment jobs running 
 
 ## Step 3: Gene expression and genotype data normalisation and QC with [eQTL-Catalogue/qcnorm](https://github.com/eQTL-Catalogue/qcnorm)
 
+#### Input
+1. Imputed genotypes from the genimpute workflow
+2. RNA-seq quantification results from the rnaseq workflow.
+3. Sample metadata file. See here for an example from the GEUVADIS dataset. Required columns:
+
+#### Output
+Normalised molecular trait (gene expression, exon expression, transcript usage, event usage) matrices in a format suitable for the qtlmap workflow.
+
+```bash
+nextflow run main.nf\
+  -profile tartu_hpc\
+  --study_name <name_of_the_study>\
+  --vcf_file <path_to_imputed_genotypes_from_the_genimpute_workflow.vcf.gz>\
+  --exclude_population\
+  --quant_results_path <rnaseq_workfow_output_folder_path>\
+  --sample_meta_path <path_to_sample_metadata_file>\
+  --skip_leafcutter_norm\
+  --outdir <path_to_output_directory>\
+  -process.queue amd\
+  -resume
+```
+
 ## Step 4: QTL mapping with [eQTL-Catalogue/qtlmap](https://github.com/eQTL-Catalogue/qtlmap)
 
 ## Step 5: QTL fine mapping with [eQTL-Catalogue/susie-workflow](https://github.com/eQTL-Catalogue/susie-workflow)
