@@ -24,7 +24,7 @@ nextflow run main.nf -profile eqtl_catalogue -resume\
   --outdir <path_to_output_dir>
 ```
 
-#### Manual quality control steps
+#### Manual QC steps
 
 - Check the <output_prefix>.imiss file for samples with large proportion of missing genotypes (e.g. > 5%). These samples are likely to have poor genotyping quality and should probably the excluded from the analysis before continuing. Remove these inviduals from the original plink file and re-run the genimpute workflow.
 
@@ -77,7 +77,7 @@ Normalised molecular trait (gene expression, exon expression, transcript usage, 
 ```bash
 nextflow run main.nf\
   -profile tartu_hpc\
-  --study_name <name_of_the_study>\
+  --study_name <study_name>\
   --vcf_file <path_to_imputed_genotypes_from_the_genimpute_workflow.vcf.gz>\
   --exclude_population\
   --quant_results_path <rnaseq_workfow_output_folder_path>\
@@ -87,6 +87,14 @@ nextflow run main.nf\
   -process.queue amd\
   -resume
 ```
+
+#### Manual QC steps
+
+1. Check genotype concordance between the imputed genotypes and aligned RNA-seq reads. The summarised QTLtools mbv output is stored in the `QC/<study_name>_MBV_best_matches_matrix.tsv` file. Correct any obvious sample swaps between RNA-seq and genotype files. Exclude RNA-seq samples that do not match any individuals in the genotype data by setting the `genotype_qc_passed` field to FALSE in the sample metadata file. Also exclude RNA-seq samples that match more than one individual in the genotype data as this could be a sign of cross-contamination between RNA samples (NOTE: make sure that each individual is present only once in the genotype data and your data does not contain any monoxygotic twins.). 
+2. Study the 'pop_assing/relatedness_matrix.tsv' file to ensure that there are no related individuals in the genotype data. Relatedness values > 0.2 are an obvious concern.
+3. Check the gene expression PCA and MDS plots in the `QC/<study_name>_QC_report.html` file. Exclude any obvious outliers by setting `rna_qc_passed` field to FALSE in the sample metadata file. 
+4. Check of the expression of sex-specific genes is consistent with the annotated sex of the samples. Fix missing or mis-annotated sex in the sample metadata file. Note that high simultaneous expression of both XIST (female-specifc) and Y chromosome genes (male-specifc) can be a good indiciation of RNA cross-contamination between two samples. This is often concordant with the results seen in the RNA-seq analysis.
+
 
 ## Step 4: QTL mapping with [eQTL-Catalogue/qtlmap](https://github.com/eQTL-Catalogue/qtlmap)
 
