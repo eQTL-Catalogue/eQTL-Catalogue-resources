@@ -74,6 +74,7 @@ Use the `-executor.queueSize` option to limit the number alignment jobs running 
 #### Output
 Normalised molecular trait (gene expression, exon expression, transcript usage, event usage) matrices in a format suitable for the qtlmap workflow.
 
+#### Running the workflow
 ```bash
 nextflow run main.nf\
   -profile tartu_hpc\
@@ -97,6 +98,23 @@ nextflow run main.nf\
 
 
 ## Step 4: QTL mapping with [eQTL-Catalogue/qtlmap](https://github.com/eQTL-Catalogue/qtlmap)
+
+#### Input
+
+#### Output
+
+#### Running the workflow
+
+```bash
+nextflow run main.nf -profile eqtl_catalogue\
+   --studyFile <qcnorm_output_directory>/<study_name>/<study_name>_qtlmap_inputs.tsv\
+    --is_imputed true\
+    --run_permutation true\
+    --run_nominal true\
+    --n_batches 200\
+    -resume\
+    -process.queue main
+```
 
 ## Step 5: QTL fine mapping with [eQTL-Catalogue/susie-workflow](https://github.com/eQTL-Catalogue/susie-workflow)
 
