@@ -30,11 +30,15 @@ ontology_map = ontology_map %>% dplyr::filter(study_qtlgroup %in% rownames(shari
 plot_coords = function(coords){
   coords = tibble(x = coords$points[,1], y=coords$points[,2], study_qtlgroup=rownames(coords$points))
   coords = left_join(coords, ontology_map[c("study_qtlgroup", "tissue_fct")])
-  coords
-  plt = ggplot2::ggplot(coords, aes(x, y, colour=tissue_fct, grp=study_qtlgroup)) +
-    ggplot2::geom_point() +
-    scale_colour_manual(name = "group",
-                        values=c("#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#a65628","#fed976","#f781bf","#999999"))  +
+  coords$study = ifelse(grepl("GTEx", coords$study_qtlgroup), "GTEx", NA)
+  coords$study = ifelse(grepl("BLUEPRINT", coords$study_qtlgroup), "BLUEPRINT", coords$study)
+  coords$study = factor(coords$study, levels=c("GTEx", "BLUEPRINT", NA))
+  plt = ggplot2::ggplot(coords, aes(x, y, grp=study_qtlgroup)) +
+    ggplot2::geom_point(aes(colour=tissue_fct), size=3, show.legend = F) +
+    geom_point(aes(shape=study, size=study), data=coords[!is.na(coords$study),], fill=NA) +
+    scale_shape_manual(values=c(21,24))+
+    scale_size_manual(values=c(3,5))+
+    scale_colour_manual(name="group", values = c("#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#a65628","#fed976","#f781bf","#999999"))  +  
     theme_light() + 
     theme(panel.grid = element_blank()) + 
     ggplot2::labs(x="MDS Coordinate 1", y="MDS Coordinate 2")

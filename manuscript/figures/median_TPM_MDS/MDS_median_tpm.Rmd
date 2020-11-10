@@ -71,8 +71,15 @@ ontology_map = dplyr::mutate(ontology_map, tissue_fct = factor(sample_class, lev
 
 mds_matrix_ont <- mds_matrix %>% left_join(ontology_map %>% select(study_qtlgroup, tissue_fct), by = "study_qtlgroup")
 
-mds_plot_median_tpm = ggplot2::ggplot(mds_matrix_ont, ggplot2::aes(x = V1, y = -V2, color=tissue_fct, label = study_qtlgroup)) +
-  ggplot2::geom_point() +
+mds_matrix_ont$study = ifelse(grepl("GTEx", mds_matrix_ont$study_qtlgroup), "GTEx", NA)
+mds_matrix_ont$study = ifelse(grepl("BLUEPRINT", mds_matrix_ont$study_qtlgroup), "BLUEPRINT", mds_matrix_ont$study)
+mds_matrix_ont$study = factor(mds_matrix_ont$study, levels=c("GTEx", "BLUEPRINT", NA))
+
+mds_plot_median_tpm = ggplot2::ggplot(mds_matrix_ont, ggplot2::aes(x = V1, y = -V2, label = study_qtlgroup)) +
+  ggplot2::geom_point(aes(color=tissue_fct)) +
+  geom_point(aes(shape=study, size=study), fill=NA, data=mds_matrix_ont[!is.na(mds_matrix_ont$study),],) +
+  scale_shape_manual(values=c(21,24))+
+  scale_size_manual(values=c(2,3))+
   ggplot2::labs(x="MDS Coordinate 1", y="MDS Coordinate 2") + 
   theme_light() +
   theme(panel.grid = element_blank()) + 
