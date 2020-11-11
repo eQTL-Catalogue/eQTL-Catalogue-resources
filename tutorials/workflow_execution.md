@@ -10,7 +10,11 @@ Data processing for the eQTL Catalogue is based on the four main workflows:
 ## Step 1: Genotype imputation with [eQTL-Catalogue/genimpute](https://github.com/eQTL-Catalogue/genimpute)
 
 #### Input
-Raw genotype data in PLINK binary format (.bed, .bim, .fam) using GRCh37 coordinates
+Raw genotype data in PLINK binary format (.bed, .bim, .fam) using GRCh37 coordinates. If your data is in VCF format, then you need to first convert it to PLINK format with:
+```bash
+plink --vcf <path_to_vcf_file> --make-bed --out <plink_file_prefix>
+
+```
 
 #### Output
 Imputed genotypes in VCF format lifted to GRCh38 coordinates.
@@ -22,7 +26,7 @@ nextflow run main.nf -profile eqtl_catalogue -resume\
   --harmonise_genotypes true\
   --output_name <output_prefix>\
   --outdir <path_to_output_dir>
-```
+```bash
 
 #### Manual QC steps
 
