@@ -6,7 +6,6 @@
 .Rhistory
 manuscript/figures/median_TPM_MDS/median_tpm_by_qtlgroups.html
 manuscript/figures/median_TPM_MDS/median_tpm_MDS.pdf
-manuscript/figures/novel_colocs/data
-manuscript/figures/novel_colocs/plots
-manuscript/figures/novel_colocs/09*
+manuscript/figures/RBMS1/LC-*
 tutorials/tabix_data
+novel_colocs

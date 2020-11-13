@@ -1,0 +1,16 @@
+gwas_id	gwas_class
+BMI-ukb-a-248	non-immune
+CAD-ebi-a-GCST003116	non-immune
+CD-ebi-a-GCST004132	immune
+HEIGHT-ukb-a-389	non-immune
+IBD-ebi-a-GCST004131	immune
+LC-ebi-a-GCST004627	blood
+MC-ebi-a-GCST004625	blood
+MPV-ebi-a-GCST004599	blood
+PLT-ebi-a-GCST004603	blood
+RA-ebi-a-GCST002318	immune
+RA-ieu-a-833	immune
+SLE-ebi-a-GCST003156	immune
+T2D1-ebi-a-GCST006867	non-immune
+UC-ebi-a-GCST004133	immune
+HPT-ukb-a-531	non-immune

@@ -1,0 +1,820 @@
+gwas_id	qtl_subset	n_colocs_in_novel_ld_blocks	n_unique_novel_ld_blocks	sample_size	present_in_GTEx	cell_type_class	sample_size_norm_novel_LD_block_count	gwas_class	gwas_id_short
+BMI-ukb-a-248	Alasoo_2018.macrophage_naive_ge	1	1	84	FALSE	immune cell	0.011904761904761904	non-immune	BMI
+BMI-ukb-a-248	Alasoo_2018.macrophage_Salmonella_ge	8	1	84	FALSE	immune cell	0.011904761904761904	non-immune	BMI
+BMI-ukb-a-248	BrainSeq.brain_ge	3	2	479	TRUE	other	0.0041753653444676405	non-immune	BMI
+BMI-ukb-a-248	CEDAR.ileum	1	1	180	TRUE	other	0.005555555555555556	non-immune	BMI
+BMI-ukb-a-248	Fairfax_2014.monocyte_IFN24	3	2	370	FALSE	immune cell	0.005405405405405406	non-immune	BMI
+BMI-ukb-a-248	Fairfax_2014.monocyte_LPS24	1	1	325	FALSE	immune cell	0.003076923076923077	non-immune	BMI
+BMI-ukb-a-248	FUSION.adipose_naive_ge	3	3	271	TRUE	other	0.01107011070110701	non-immune	BMI
+BMI-ukb-a-248	FUSION.muscle_naive_ge	7	3	288	TRUE	other	0.010416666666666666	non-immune	BMI
+BMI-ukb-a-248	GENCORD.fibroblast_ge	1	1	186	TRUE	immune cell	0.005376344086021506	non-immune	BMI
+BMI-ukb-a-248	GENCORD.T-cell_ge	1	1	184	FALSE	immune cell	0.005434782608695652	non-immune	BMI
+BMI-ukb-a-248	GEUVADIS.LCL_ge	3	2	445	TRUE	immune cell	0.0044943820224719105	non-immune	BMI
+BMI-ukb-a-248	HipSci.iPSC_ge	20	10	322	FALSE	other	0.031055900621118012	non-immune	BMI
+BMI-ukb-a-248	Kasela_2017.T-cell_CD4	2	1	280	FALSE	immune cell	0.0035714285714285713	non-immune	BMI
+BMI-ukb-a-248	Lepik_2017.blood_ge	1	1	471	TRUE	immune cell	0.0021231422505307855	non-immune	BMI
+BMI-ukb-a-248	Nedelec_2016.macrophage_Listeria_ge	2	1	163	FALSE	immune cell	0.006134969325153374	non-immune	BMI
+BMI-ukb-a-248	Nedelec_2016.macrophage_Salmonella_ge	8	2	167	FALSE	immune cell	0.011976047904191617	non-immune	BMI
+BMI-ukb-a-248	Quach_2016.monocyte_IAV_ge	12	1	198	FALSE	immune cell	0.005050505050505051	non-immune	BMI
+BMI-ukb-a-248	Quach_2016.monocyte_LPS_ge	3	1	184	FALSE	immune cell	0.005434782608695652	non-immune	BMI
+BMI-ukb-a-248	Quach_2016.monocyte_naive_ge	4	2	200	FALSE	immune cell	0.01	non-immune	BMI
+BMI-ukb-a-248	Quach_2016.monocyte_Pam3CSK4_ge	3	1	196	FALSE	immune cell	0.00510204081632653	non-immune	BMI
+BMI-ukb-a-248	Quach_2016.monocyte_R848_ge	3	1	191	FALSE	immune cell	0.005235602094240838	non-immune	BMI
+BMI-ukb-a-248	ROSMAP.brain_naive_ge	4	4	576	TRUE	other	0.006944444444444444	non-immune	BMI
+BMI-ukb-a-248	Schmiedel_2018.B-cell_naive_ge	1	1	91	FALSE	immune cell	0.01098901098901099	non-immune	BMI
+BMI-ukb-a-248	TwinsUK.fat_ge	5	4	381	TRUE	other	0.010498687664041995	non-immune	BMI
+BMI-ukb-a-248	TwinsUK.LCL_ge	1	1	418	TRUE	immune cell	0.0023923444976076554	non-immune	BMI
+BMI-ukb-a-248	TwinsUK.skin_ge	4	3	370	TRUE	other	0.008108108108108109	non-immune	BMI
+BMI-ukb-a-248	Alasoo_2018.macrophage_IFNg_ge	0	0	84	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Alasoo_2018.macrophage_IFNg+Salmonella_ge	0	0	84	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	BLUEPRINT_SE.monocyte_ge	0	0	191	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	BLUEPRINT_SE.neutrophil_ge	0	0	196	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	BLUEPRINT_PE.T-cell_ge	0	0	167	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	CEDAR.T-cell_CD8	0	0	277	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	CEDAR.T-cell_CD4	0	0	290	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	CEDAR.transverse_colon	0	0	286	TRUE	other	0	non-immune	BMI
+BMI-ukb-a-248	CEDAR.monocyte_CD14	0	0	286	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	CEDAR.neutrophil_CD15	0	0	280	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	CEDAR.platelet	0	0	205	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	CEDAR.rectum	0	0	271	FALSE	other	0	non-immune	BMI
+BMI-ukb-a-248	CEDAR.B-cell_CD19	0	0	262	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Fairfax_2012.B-cell_CD19	0	0	281	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Fairfax_2014.monocyte_naive	0	0	420	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Fairfax_2014.monocyte_LPS2	0	0	256	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	GENCORD.LCL_ge	0	0	190	TRUE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Kasela_2017.T-cell_CD8	0	0	269	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Naranbhai_2015.neutrophil_CD16	0	0	93	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Nedelec_2016.macrophage_naive_ge	0	0	163	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Schmiedel_2018.Tfh_memory_ge	0	0	89	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Schmiedel_2018.Th17_memory_ge	0	0	89	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Schmiedel_2018.Th1_memory_ge	0	0	82	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Schmiedel_2018.Th2_memory_ge	0	0	89	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Schmiedel_2018.Th1-17_memory_ge	0	0	88	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Schmiedel_2018.Treg_memory_ge	0	0	89	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Schmiedel_2018.Treg_naive_ge	0	0	89	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Schmiedel_2018.CD4_T-cell_naive_ge	0	0	88	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	0	0	89	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Schmiedel_2018.CD8_T-cell_naive_ge	0	0	89	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	0	0	88	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Schmiedel_2018.monocyte_CD16_naive_ge	0	0	90	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Schmiedel_2018.monocyte_naive_ge	0	0	91	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Schmiedel_2018.NK-cell_naive_ge	0	0	90	FALSE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	Schwartzentruber_2018.sensory_neuron_ge	0	0	98	FALSE	other	0	non-immune	BMI
+BMI-ukb-a-248	TwinsUK.blood_ge	0	0	195	TRUE	immune cell	0	non-immune	BMI
+BMI-ukb-a-248	van_de_Bunt_2015.pancreatic_islet_ge	0	0	117	TRUE	other	0	non-immune	BMI
+CAD-ebi-a-GCST003116	BLUEPRINT_SE.neutrophil_ge	1	1	196	FALSE	immune cell	0.00510204081632653	non-immune	CAD
+CAD-ebi-a-GCST003116	Fairfax_2014.monocyte_naive	1	1	420	FALSE	immune cell	0.002380952380952381	non-immune	CAD
+CAD-ebi-a-GCST003116	FUSION.adipose_naive_ge	1	1	271	TRUE	other	0.0036900369003690036	non-immune	CAD
+CAD-ebi-a-GCST003116	GEUVADIS.LCL_ge	1	1	445	TRUE	immune cell	0.0022471910112359553	non-immune	CAD
+CAD-ebi-a-GCST003116	Kasela_2017.T-cell_CD4	1	1	280	FALSE	immune cell	0.0035714285714285713	non-immune	CAD
+CAD-ebi-a-GCST003116	Lepik_2017.blood_ge	1	1	471	TRUE	immune cell	0.0021231422505307855	non-immune	CAD
+CAD-ebi-a-GCST003116	Nedelec_2016.macrophage_Listeria_ge	1	1	163	FALSE	immune cell	0.006134969325153374	non-immune	CAD
+CAD-ebi-a-GCST003116	Nedelec_2016.macrophage_Salmonella_ge	1	1	167	FALSE	immune cell	0.005988023952095809	non-immune	CAD
+CAD-ebi-a-GCST003116	Schmiedel_2018.CD8_T-cell_naive_ge	1	1	89	FALSE	immune cell	0.011235955056179775	non-immune	CAD
+CAD-ebi-a-GCST003116	TwinsUK.fat_ge	1	1	381	TRUE	other	0.0026246719160104987	non-immune	CAD
+CAD-ebi-a-GCST003116	Alasoo_2018.macrophage_naive_ge	0	0	84	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Alasoo_2018.macrophage_IFNg_ge	0	0	84	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Alasoo_2018.macrophage_Salmonella_ge	0	0	84	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Alasoo_2018.macrophage_IFNg+Salmonella_ge	0	0	84	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	BLUEPRINT_SE.monocyte_ge	0	0	191	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	BLUEPRINT_PE.T-cell_ge	0	0	167	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	BrainSeq.brain_ge	0	0	479	TRUE	other	0	non-immune	CAD
+CAD-ebi-a-GCST003116	CEDAR.T-cell_CD8	0	0	277	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	CEDAR.T-cell_CD4	0	0	290	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	CEDAR.transverse_colon	0	0	286	TRUE	other	0	non-immune	CAD
+CAD-ebi-a-GCST003116	CEDAR.monocyte_CD14	0	0	286	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	CEDAR.neutrophil_CD15	0	0	280	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	CEDAR.platelet	0	0	205	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	CEDAR.rectum	0	0	271	FALSE	other	0	non-immune	CAD
+CAD-ebi-a-GCST003116	CEDAR.B-cell_CD19	0	0	262	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	CEDAR.ileum	0	0	180	TRUE	other	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Fairfax_2012.B-cell_CD19	0	0	281	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Fairfax_2014.monocyte_IFN24	0	0	370	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Fairfax_2014.monocyte_LPS2	0	0	256	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Fairfax_2014.monocyte_LPS24	0	0	325	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	FUSION.muscle_naive_ge	0	0	288	TRUE	other	0	non-immune	CAD
+CAD-ebi-a-GCST003116	GENCORD.LCL_ge	0	0	190	TRUE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	GENCORD.fibroblast_ge	0	0	186	TRUE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	GENCORD.T-cell_ge	0	0	184	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	HipSci.iPSC_ge	0	0	322	FALSE	other	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Kasela_2017.T-cell_CD8	0	0	269	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Naranbhai_2015.neutrophil_CD16	0	0	93	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Nedelec_2016.macrophage_naive_ge	0	0	163	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Quach_2016.monocyte_naive_ge	0	0	200	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Quach_2016.monocyte_LPS_ge	0	0	184	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Quach_2016.monocyte_Pam3CSK4_ge	0	0	196	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Quach_2016.monocyte_R848_ge	0	0	191	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Quach_2016.monocyte_IAV_ge	0	0	198	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	ROSMAP.brain_naive_ge	0	0	576	TRUE	other	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Schmiedel_2018.Tfh_memory_ge	0	0	89	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Schmiedel_2018.Th17_memory_ge	0	0	89	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Schmiedel_2018.Th1_memory_ge	0	0	82	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Schmiedel_2018.Th2_memory_ge	0	0	89	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Schmiedel_2018.Th1-17_memory_ge	0	0	88	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Schmiedel_2018.Treg_memory_ge	0	0	89	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Schmiedel_2018.Treg_naive_ge	0	0	89	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Schmiedel_2018.B-cell_naive_ge	0	0	91	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Schmiedel_2018.CD4_T-cell_naive_ge	0	0	88	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	0	0	89	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	0	0	88	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Schmiedel_2018.monocyte_CD16_naive_ge	0	0	90	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Schmiedel_2018.monocyte_naive_ge	0	0	91	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Schmiedel_2018.NK-cell_naive_ge	0	0	90	FALSE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	Schwartzentruber_2018.sensory_neuron_ge	0	0	98	FALSE	other	0	non-immune	CAD
+CAD-ebi-a-GCST003116	TwinsUK.LCL_ge	0	0	418	TRUE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	TwinsUK.skin_ge	0	0	370	TRUE	other	0	non-immune	CAD
+CAD-ebi-a-GCST003116	TwinsUK.blood_ge	0	0	195	TRUE	immune cell	0	non-immune	CAD
+CAD-ebi-a-GCST003116	van_de_Bunt_2015.pancreatic_islet_ge	0	0	117	TRUE	other	0	non-immune	CAD
+CD-ebi-a-GCST004132	BLUEPRINT_PE.T-cell_ge	3	1	167	FALSE	immune cell	0.005988023952095809	immune	CD
+CD-ebi-a-GCST004132	CEDAR.monocyte_CD14	3	1	286	FALSE	immune cell	0.0034965034965034965	immune	CD
+CD-ebi-a-GCST004132	CEDAR.rectum	1	1	271	FALSE	other	0.0036900369003690036	immune	CD
+CD-ebi-a-GCST004132	CEDAR.T-cell_CD4	2	1	290	FALSE	immune cell	0.0034482758620689655	immune	CD
+CD-ebi-a-GCST004132	CEDAR.transverse_colon	2	2	286	TRUE	other	0.006993006993006993	immune	CD
+CD-ebi-a-GCST004132	Fairfax_2014.monocyte_IFN24	1	1	370	FALSE	immune cell	0.002702702702702703	immune	CD
+CD-ebi-a-GCST004132	Fairfax_2014.monocyte_LPS2	4	2	256	FALSE	immune cell	0.0078125	immune	CD
+CD-ebi-a-GCST004132	Fairfax_2014.monocyte_LPS24	1	1	325	FALSE	immune cell	0.003076923076923077	immune	CD
+CD-ebi-a-GCST004132	Fairfax_2014.monocyte_naive	2	2	420	FALSE	immune cell	0.004761904761904762	immune	CD
+CD-ebi-a-GCST004132	FUSION.adipose_naive_ge	2	1	271	TRUE	other	0.0036900369003690036	immune	CD
+CD-ebi-a-GCST004132	FUSION.muscle_naive_ge	8	3	288	TRUE	other	0.010416666666666666	immune	CD
+CD-ebi-a-GCST004132	GENCORD.T-cell_ge	5	1	184	FALSE	immune cell	0.005434782608695652	immune	CD
+CD-ebi-a-GCST004132	GEUVADIS.LCL_ge	3	1	445	TRUE	immune cell	0.0022471910112359553	immune	CD
+CD-ebi-a-GCST004132	Nedelec_2016.macrophage_Listeria_ge	2	1	163	FALSE	immune cell	0.006134969325153374	immune	CD
+CD-ebi-a-GCST004132	Nedelec_2016.macrophage_naive_ge	2	1	163	FALSE	immune cell	0.006134969325153374	immune	CD
+CD-ebi-a-GCST004132	Nedelec_2016.macrophage_Salmonella_ge	6	3	167	FALSE	immune cell	0.017964071856287425	immune	CD
+CD-ebi-a-GCST004132	Quach_2016.monocyte_IAV_ge	2	2	198	FALSE	immune cell	0.010101010101010102	immune	CD
+CD-ebi-a-GCST004132	Quach_2016.monocyte_LPS_ge	4	3	184	FALSE	immune cell	0.016304347826086956	immune	CD
+CD-ebi-a-GCST004132	Quach_2016.monocyte_naive_ge	4	2	200	FALSE	immune cell	0.01	immune	CD
+CD-ebi-a-GCST004132	Quach_2016.monocyte_Pam3CSK4_ge	5	4	196	FALSE	immune cell	0.02040816326530612	immune	CD
+CD-ebi-a-GCST004132	Quach_2016.monocyte_R848_ge	5	3	191	FALSE	immune cell	0.015706806282722512	immune	CD
+CD-ebi-a-GCST004132	ROSMAP.brain_naive_ge	1	1	576	TRUE	other	0.001736111111111111	immune	CD
+CD-ebi-a-GCST004132	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	6	1	89	FALSE	immune cell	0.011235955056179775	immune	CD
+CD-ebi-a-GCST004132	Schmiedel_2018.CD4_T-cell_naive_ge	4	1	88	FALSE	immune cell	0.011363636363636364	immune	CD
+CD-ebi-a-GCST004132	Schmiedel_2018.monocyte_naive_ge	1	1	91	FALSE	immune cell	0.01098901098901099	immune	CD
+CD-ebi-a-GCST004132	TwinsUK.LCL_ge	10	2	418	TRUE	immune cell	0.004784688995215311	immune	CD
+CD-ebi-a-GCST004132	TwinsUK.skin_ge	2	1	370	TRUE	other	0.002702702702702703	immune	CD
+CD-ebi-a-GCST004132	Alasoo_2018.macrophage_naive_ge	0	0	84	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Alasoo_2018.macrophage_IFNg_ge	0	0	84	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Alasoo_2018.macrophage_Salmonella_ge	0	0	84	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Alasoo_2018.macrophage_IFNg+Salmonella_ge	0	0	84	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	BLUEPRINT_SE.monocyte_ge	0	0	191	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	BLUEPRINT_SE.neutrophil_ge	0	0	196	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	BrainSeq.brain_ge	0	0	479	TRUE	other	0	immune	CD
+CD-ebi-a-GCST004132	CEDAR.T-cell_CD8	0	0	277	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	CEDAR.neutrophil_CD15	0	0	280	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	CEDAR.platelet	0	0	205	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	CEDAR.B-cell_CD19	0	0	262	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	CEDAR.ileum	0	0	180	TRUE	other	0	immune	CD
+CD-ebi-a-GCST004132	Fairfax_2012.B-cell_CD19	0	0	281	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	GENCORD.LCL_ge	0	0	190	TRUE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	GENCORD.fibroblast_ge	0	0	186	TRUE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	HipSci.iPSC_ge	0	0	322	FALSE	other	0	immune	CD
+CD-ebi-a-GCST004132	Kasela_2017.T-cell_CD4	0	0	280	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Kasela_2017.T-cell_CD8	0	0	269	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Lepik_2017.blood_ge	0	0	471	TRUE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Naranbhai_2015.neutrophil_CD16	0	0	93	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Schmiedel_2018.Tfh_memory_ge	0	0	89	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Schmiedel_2018.Th17_memory_ge	0	0	89	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Schmiedel_2018.Th1_memory_ge	0	0	82	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Schmiedel_2018.Th2_memory_ge	0	0	89	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Schmiedel_2018.Th1-17_memory_ge	0	0	88	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Schmiedel_2018.Treg_memory_ge	0	0	89	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Schmiedel_2018.Treg_naive_ge	0	0	89	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Schmiedel_2018.B-cell_naive_ge	0	0	91	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Schmiedel_2018.CD8_T-cell_naive_ge	0	0	89	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	0	0	88	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Schmiedel_2018.monocyte_CD16_naive_ge	0	0	90	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Schmiedel_2018.NK-cell_naive_ge	0	0	90	FALSE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	Schwartzentruber_2018.sensory_neuron_ge	0	0	98	FALSE	other	0	immune	CD
+CD-ebi-a-GCST004132	TwinsUK.fat_ge	0	0	381	TRUE	other	0	immune	CD
+CD-ebi-a-GCST004132	TwinsUK.blood_ge	0	0	195	TRUE	immune cell	0	immune	CD
+CD-ebi-a-GCST004132	van_de_Bunt_2015.pancreatic_islet_ge	0	0	117	TRUE	other	0	immune	CD
+HEIGHT-ukb-a-389	BLUEPRINT_PE.T-cell_ge	6	3	167	FALSE	immune cell	0.017964071856287425	non-immune	HEIGHT
+HEIGHT-ukb-a-389	BLUEPRINT_SE.monocyte_ge	13	3	191	FALSE	immune cell	0.015706806282722512	non-immune	HEIGHT
+HEIGHT-ukb-a-389	BLUEPRINT_SE.neutrophil_ge	7	2	196	FALSE	immune cell	0.01020408163265306	non-immune	HEIGHT
+HEIGHT-ukb-a-389	BrainSeq.brain_ge	5	3	479	TRUE	other	0.006263048016701462	non-immune	HEIGHT
+HEIGHT-ukb-a-389	CEDAR.ileum	1	1	180	TRUE	other	0.005555555555555556	non-immune	HEIGHT
+HEIGHT-ukb-a-389	CEDAR.T-cell_CD4	1	1	290	FALSE	immune cell	0.0034482758620689655	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Fairfax_2012.B-cell_CD19	2	2	281	FALSE	immune cell	0.0071174377224199285	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Fairfax_2014.monocyte_IFN24	4	4	370	FALSE	immune cell	0.010810810810810811	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Fairfax_2014.monocyte_LPS2	3	3	256	FALSE	immune cell	0.01171875	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Fairfax_2014.monocyte_LPS24	2	2	325	FALSE	immune cell	0.006153846153846154	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Fairfax_2014.monocyte_naive	1	1	420	FALSE	immune cell	0.002380952380952381	non-immune	HEIGHT
+HEIGHT-ukb-a-389	FUSION.adipose_naive_ge	5	3	271	TRUE	other	0.01107011070110701	non-immune	HEIGHT
+HEIGHT-ukb-a-389	FUSION.muscle_naive_ge	4	2	288	TRUE	other	0.006944444444444444	non-immune	HEIGHT
+HEIGHT-ukb-a-389	GENCORD.fibroblast_ge	5	3	186	TRUE	immune cell	0.016129032258064516	non-immune	HEIGHT
+HEIGHT-ukb-a-389	GENCORD.LCL_ge	9	5	190	TRUE	immune cell	0.02631578947368421	non-immune	HEIGHT
+HEIGHT-ukb-a-389	GENCORD.T-cell_ge	5	3	184	FALSE	immune cell	0.016304347826086956	non-immune	HEIGHT
+HEIGHT-ukb-a-389	GEUVADIS.LCL_ge	10	6	445	TRUE	immune cell	0.01348314606741573	non-immune	HEIGHT
+HEIGHT-ukb-a-389	HipSci.iPSC_ge	10	5	322	FALSE	other	0.015527950310559006	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Lepik_2017.blood_ge	7	3	471	TRUE	immune cell	0.006369426751592357	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Nedelec_2016.macrophage_Listeria_ge	4	2	163	FALSE	immune cell	0.012269938650306749	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Quach_2016.monocyte_IAV_ge	4	2	198	FALSE	immune cell	0.010101010101010102	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Quach_2016.monocyte_LPS_ge	5	3	184	FALSE	immune cell	0.016304347826086956	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Quach_2016.monocyte_naive_ge	5	3	200	FALSE	immune cell	0.015	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Quach_2016.monocyte_Pam3CSK4_ge	4	2	196	FALSE	immune cell	0.01020408163265306	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Quach_2016.monocyte_R848_ge	5	3	191	FALSE	immune cell	0.015706806282722512	non-immune	HEIGHT
+HEIGHT-ukb-a-389	ROSMAP.brain_naive_ge	16	5	576	TRUE	other	0.008680555555555556	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schmiedel_2018.B-cell_naive_ge	5	3	91	FALSE	immune cell	0.03296703296703297	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	2	2	89	FALSE	immune cell	0.02247191011235955	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schmiedel_2018.CD4_T-cell_naive_ge	1	1	88	FALSE	immune cell	0.011363636363636364	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	2	2	88	FALSE	immune cell	0.022727272727272728	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schmiedel_2018.CD8_T-cell_naive_ge	2	2	89	FALSE	immune cell	0.02247191011235955	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schmiedel_2018.monocyte_naive_ge	5	2	91	FALSE	immune cell	0.02197802197802198	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schmiedel_2018.NK-cell_naive_ge	6	2	90	FALSE	immune cell	0.022222222222222223	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schmiedel_2018.Tfh_memory_ge	2	1	89	FALSE	immune cell	0.011235955056179775	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schmiedel_2018.Th1_memory_ge	2	2	82	FALSE	immune cell	0.024390243902439025	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schmiedel_2018.Th1-17_memory_ge	3	2	88	FALSE	immune cell	0.022727272727272728	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schmiedel_2018.Th17_memory_ge	3	2	89	FALSE	immune cell	0.02247191011235955	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schmiedel_2018.Th2_memory_ge	2	2	89	FALSE	immune cell	0.02247191011235955	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schmiedel_2018.Treg_memory_ge	3	1	89	FALSE	immune cell	0.011235955056179775	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schmiedel_2018.Treg_naive_ge	2	2	89	FALSE	immune cell	0.02247191011235955	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schwartzentruber_2018.sensory_neuron_ge	3	2	98	FALSE	other	0.02040816326530612	non-immune	HEIGHT
+HEIGHT-ukb-a-389	TwinsUK.blood_ge	4	2	195	TRUE	immune cell	0.010256410256410256	non-immune	HEIGHT
+HEIGHT-ukb-a-389	TwinsUK.fat_ge	7	4	381	TRUE	other	0.010498687664041995	non-immune	HEIGHT
+HEIGHT-ukb-a-389	TwinsUK.LCL_ge	18	8	418	TRUE	immune cell	0.019138755980861243	non-immune	HEIGHT
+HEIGHT-ukb-a-389	TwinsUK.skin_ge	7	3	370	TRUE	other	0.008108108108108109	non-immune	HEIGHT
+HEIGHT-ukb-a-389	van_de_Bunt_2015.pancreatic_islet_ge	3	2	117	TRUE	other	0.017094017094017096	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Alasoo_2018.macrophage_naive_ge	0	0	84	FALSE	immune cell	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Alasoo_2018.macrophage_IFNg_ge	0	0	84	FALSE	immune cell	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Alasoo_2018.macrophage_Salmonella_ge	0	0	84	FALSE	immune cell	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Alasoo_2018.macrophage_IFNg+Salmonella_ge	0	0	84	FALSE	immune cell	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	CEDAR.T-cell_CD8	0	0	277	FALSE	immune cell	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	CEDAR.transverse_colon	0	0	286	TRUE	other	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	CEDAR.monocyte_CD14	0	0	286	FALSE	immune cell	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	CEDAR.neutrophil_CD15	0	0	280	FALSE	immune cell	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	CEDAR.platelet	0	0	205	FALSE	immune cell	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	CEDAR.rectum	0	0	271	FALSE	other	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	CEDAR.B-cell_CD19	0	0	262	FALSE	immune cell	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Kasela_2017.T-cell_CD4	0	0	280	FALSE	immune cell	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Kasela_2017.T-cell_CD8	0	0	269	FALSE	immune cell	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Naranbhai_2015.neutrophil_CD16	0	0	93	FALSE	immune cell	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Nedelec_2016.macrophage_naive_ge	0	0	163	FALSE	immune cell	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Nedelec_2016.macrophage_Salmonella_ge	0	0	167	FALSE	immune cell	0	non-immune	HEIGHT
+HEIGHT-ukb-a-389	Schmiedel_2018.monocyte_CD16_naive_ge	0	0	90	FALSE	immune cell	0	non-immune	HEIGHT
+IBD-ebi-a-GCST004131	Alasoo_2018.macrophage_IFNg+Salmonella_ge	3	1	84	FALSE	immune cell	0.011904761904761904	immune	IBD
+IBD-ebi-a-GCST004131	BLUEPRINT_PE.T-cell_ge	2	1	167	FALSE	immune cell	0.005988023952095809	immune	IBD
+IBD-ebi-a-GCST004131	BLUEPRINT_SE.monocyte_ge	3	2	191	FALSE	immune cell	0.010471204188481676	immune	IBD
+IBD-ebi-a-GCST004131	CEDAR.B-cell_CD19	3	2	262	FALSE	immune cell	0.007633587786259542	immune	IBD
+IBD-ebi-a-GCST004131	CEDAR.monocyte_CD14	2	2	286	FALSE	immune cell	0.006993006993006993	immune	IBD
+IBD-ebi-a-GCST004131	CEDAR.rectum	1	1	271	FALSE	other	0.0036900369003690036	immune	IBD
+IBD-ebi-a-GCST004131	CEDAR.T-cell_CD4	2	1	290	FALSE	immune cell	0.0034482758620689655	immune	IBD
+IBD-ebi-a-GCST004131	CEDAR.T-cell_CD8	2	1	277	FALSE	immune cell	0.0036101083032490976	immune	IBD
+IBD-ebi-a-GCST004131	CEDAR.transverse_colon	4	3	286	TRUE	other	0.01048951048951049	immune	IBD
+IBD-ebi-a-GCST004131	Fairfax_2012.B-cell_CD19	2	1	281	FALSE	immune cell	0.0035587188612099642	immune	IBD
+IBD-ebi-a-GCST004131	Fairfax_2014.monocyte_IFN24	3	2	370	FALSE	immune cell	0.005405405405405406	immune	IBD
+IBD-ebi-a-GCST004131	Fairfax_2014.monocyte_LPS24	4	3	325	FALSE	immune cell	0.009230769230769232	immune	IBD
+IBD-ebi-a-GCST004131	Fairfax_2014.monocyte_naive	3	3	420	FALSE	immune cell	0.007142857142857143	immune	IBD
+IBD-ebi-a-GCST004131	FUSION.adipose_naive_ge	2	1	271	TRUE	other	0.0036900369003690036	immune	IBD
+IBD-ebi-a-GCST004131	FUSION.muscle_naive_ge	5	3	288	TRUE	other	0.010416666666666666	immune	IBD
+IBD-ebi-a-GCST004131	GENCORD.LCL_ge	8	2	190	TRUE	immune cell	0.010526315789473684	immune	IBD
+IBD-ebi-a-GCST004131	GEUVADIS.LCL_ge	6	2	445	TRUE	immune cell	0.0044943820224719105	immune	IBD
+IBD-ebi-a-GCST004131	HipSci.iPSC_ge	2	1	322	FALSE	other	0.003105590062111801	immune	IBD
+IBD-ebi-a-GCST004131	Kasela_2017.T-cell_CD4	1	1	280	FALSE	immune cell	0.0035714285714285713	immune	IBD
+IBD-ebi-a-GCST004131	Kasela_2017.T-cell_CD8	1	1	269	FALSE	immune cell	0.0037174721189591076	immune	IBD
+IBD-ebi-a-GCST004131	Lepik_2017.blood_ge	7	4	471	TRUE	immune cell	0.008492569002123142	immune	IBD
+IBD-ebi-a-GCST004131	Nedelec_2016.macrophage_Listeria_ge	2	1	163	FALSE	immune cell	0.006134969325153374	immune	IBD
+IBD-ebi-a-GCST004131	Nedelec_2016.macrophage_Salmonella_ge	1	1	167	FALSE	immune cell	0.005988023952095809	immune	IBD
+IBD-ebi-a-GCST004131	Quach_2016.monocyte_IAV_ge	3	1	198	FALSE	immune cell	0.005050505050505051	immune	IBD
+IBD-ebi-a-GCST004131	Quach_2016.monocyte_LPS_ge	1	1	184	FALSE	immune cell	0.005434782608695652	immune	IBD
+IBD-ebi-a-GCST004131	Quach_2016.monocyte_Pam3CSK4_ge	1	1	196	FALSE	immune cell	0.00510204081632653	immune	IBD
+IBD-ebi-a-GCST004131	Quach_2016.monocyte_R848_ge	3	2	191	FALSE	immune cell	0.010471204188481676	immune	IBD
+IBD-ebi-a-GCST004131	ROSMAP.brain_naive_ge	6	4	576	TRUE	other	0.006944444444444444	immune	IBD
+IBD-ebi-a-GCST004131	Schmiedel_2018.B-cell_naive_ge	1	1	91	FALSE	immune cell	0.01098901098901099	immune	IBD
+IBD-ebi-a-GCST004131	Schmiedel_2018.monocyte_naive_ge	2	2	91	FALSE	immune cell	0.02197802197802198	immune	IBD
+IBD-ebi-a-GCST004131	TwinsUK.blood_ge	3	2	195	TRUE	immune cell	0.010256410256410256	immune	IBD
+IBD-ebi-a-GCST004131	TwinsUK.LCL_ge	4	2	418	TRUE	immune cell	0.004784688995215311	immune	IBD
+IBD-ebi-a-GCST004131	Alasoo_2018.macrophage_naive_ge	0	0	84	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Alasoo_2018.macrophage_IFNg_ge	0	0	84	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Alasoo_2018.macrophage_Salmonella_ge	0	0	84	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	BLUEPRINT_SE.neutrophil_ge	0	0	196	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	BrainSeq.brain_ge	0	0	479	TRUE	other	0	immune	IBD
+IBD-ebi-a-GCST004131	CEDAR.neutrophil_CD15	0	0	280	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	CEDAR.platelet	0	0	205	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	CEDAR.ileum	0	0	180	TRUE	other	0	immune	IBD
+IBD-ebi-a-GCST004131	Fairfax_2014.monocyte_LPS2	0	0	256	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	GENCORD.fibroblast_ge	0	0	186	TRUE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	GENCORD.T-cell_ge	0	0	184	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Naranbhai_2015.neutrophil_CD16	0	0	93	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Nedelec_2016.macrophage_naive_ge	0	0	163	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Quach_2016.monocyte_naive_ge	0	0	200	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Schmiedel_2018.Tfh_memory_ge	0	0	89	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Schmiedel_2018.Th17_memory_ge	0	0	89	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Schmiedel_2018.Th1_memory_ge	0	0	82	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Schmiedel_2018.Th2_memory_ge	0	0	89	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Schmiedel_2018.Th1-17_memory_ge	0	0	88	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Schmiedel_2018.Treg_memory_ge	0	0	89	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Schmiedel_2018.Treg_naive_ge	0	0	89	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Schmiedel_2018.CD4_T-cell_naive_ge	0	0	88	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	0	0	89	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Schmiedel_2018.CD8_T-cell_naive_ge	0	0	89	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	0	0	88	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Schmiedel_2018.monocyte_CD16_naive_ge	0	0	90	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Schmiedel_2018.NK-cell_naive_ge	0	0	90	FALSE	immune cell	0	immune	IBD
+IBD-ebi-a-GCST004131	Schwartzentruber_2018.sensory_neuron_ge	0	0	98	FALSE	other	0	immune	IBD
+IBD-ebi-a-GCST004131	TwinsUK.fat_ge	0	0	381	TRUE	other	0	immune	IBD
+IBD-ebi-a-GCST004131	TwinsUK.skin_ge	0	0	370	TRUE	other	0	immune	IBD
+IBD-ebi-a-GCST004131	van_de_Bunt_2015.pancreatic_islet_ge	0	0	117	TRUE	other	0	immune	IBD
+LC-ebi-a-GCST004627	Alasoo_2018.macrophage_naive_ge	2	2	84	FALSE	immune cell	0.023809523809523808	blood	LC
+LC-ebi-a-GCST004627	BLUEPRINT_PE.T-cell_ge	25	6	167	FALSE	immune cell	0.03592814371257485	blood	LC
+LC-ebi-a-GCST004627	BLUEPRINT_SE.monocyte_ge	3	1	191	FALSE	immune cell	0.005235602094240838	blood	LC
+LC-ebi-a-GCST004627	BLUEPRINT_SE.neutrophil_ge	4	2	196	FALSE	immune cell	0.01020408163265306	blood	LC
+LC-ebi-a-GCST004627	CEDAR.ileum	1	1	180	TRUE	other	0.005555555555555556	blood	LC
+LC-ebi-a-GCST004627	CEDAR.platelet	4	1	205	FALSE	immune cell	0.004878048780487805	blood	LC
+LC-ebi-a-GCST004627	CEDAR.T-cell_CD8	1	1	277	FALSE	immune cell	0.0036101083032490976	blood	LC
+LC-ebi-a-GCST004627	CEDAR.transverse_colon	1	1	286	TRUE	other	0.0034965034965034965	blood	LC
+LC-ebi-a-GCST004627	Fairfax_2012.B-cell_CD19	4	2	281	FALSE	immune cell	0.0071174377224199285	blood	LC
+LC-ebi-a-GCST004627	Fairfax_2014.monocyte_IFN24	3	2	370	FALSE	immune cell	0.005405405405405406	blood	LC
+LC-ebi-a-GCST004627	Fairfax_2014.monocyte_LPS2	3	2	256	FALSE	immune cell	0.0078125	blood	LC
+LC-ebi-a-GCST004627	Fairfax_2014.monocyte_LPS24	4	2	325	FALSE	immune cell	0.006153846153846154	blood	LC
+LC-ebi-a-GCST004627	Fairfax_2014.monocyte_naive	3	2	420	FALSE	immune cell	0.004761904761904762	blood	LC
+LC-ebi-a-GCST004627	FUSION.muscle_naive_ge	4	2	288	TRUE	other	0.006944444444444444	blood	LC
+LC-ebi-a-GCST004627	GENCORD.T-cell_ge	1	1	184	FALSE	immune cell	0.005434782608695652	blood	LC
+LC-ebi-a-GCST004627	HipSci.iPSC_ge	3	1	322	FALSE	other	0.003105590062111801	blood	LC
+LC-ebi-a-GCST004627	Kasela_2017.T-cell_CD4	1	1	280	FALSE	immune cell	0.0035714285714285713	blood	LC
+LC-ebi-a-GCST004627	Lepik_2017.blood_ge	11	4	471	TRUE	immune cell	0.008492569002123142	blood	LC
+LC-ebi-a-GCST004627	Nedelec_2016.macrophage_naive_ge	1	1	163	FALSE	immune cell	0.006134969325153374	blood	LC
+LC-ebi-a-GCST004627	Quach_2016.monocyte_IAV_ge	8	2	198	FALSE	immune cell	0.010101010101010102	blood	LC
+LC-ebi-a-GCST004627	Quach_2016.monocyte_LPS_ge	7	2	184	FALSE	immune cell	0.010869565217391304	blood	LC
+LC-ebi-a-GCST004627	Quach_2016.monocyte_naive_ge	4	1	200	FALSE	immune cell	0.005	blood	LC
+LC-ebi-a-GCST004627	Quach_2016.monocyte_Pam3CSK4_ge	7	2	196	FALSE	immune cell	0.01020408163265306	blood	LC
+LC-ebi-a-GCST004627	Quach_2016.monocyte_R848_ge	2	1	191	FALSE	immune cell	0.005235602094240838	blood	LC
+LC-ebi-a-GCST004627	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	2	1	89	FALSE	immune cell	0.011235955056179775	blood	LC
+LC-ebi-a-GCST004627	Schmiedel_2018.CD4_T-cell_naive_ge	6	2	88	FALSE	immune cell	0.022727272727272728	blood	LC
+LC-ebi-a-GCST004627	Schmiedel_2018.Tfh_memory_ge	3	1	89	FALSE	immune cell	0.011235955056179775	blood	LC
+LC-ebi-a-GCST004627	Schmiedel_2018.Th1_memory_ge	1	1	82	FALSE	immune cell	0.012195121951219513	blood	LC
+LC-ebi-a-GCST004627	Schmiedel_2018.Th2_memory_ge	2	2	89	FALSE	immune cell	0.02247191011235955	blood	LC
+LC-ebi-a-GCST004627	Schmiedel_2018.Treg_naive_ge	4	2	89	FALSE	immune cell	0.02247191011235955	blood	LC
+LC-ebi-a-GCST004627	TwinsUK.fat_ge	5	3	381	TRUE	other	0.007874015748031496	blood	LC
+LC-ebi-a-GCST004627	TwinsUK.LCL_ge	5	2	418	TRUE	immune cell	0.004784688995215311	blood	LC
+LC-ebi-a-GCST004627	Alasoo_2018.macrophage_IFNg_ge	0	0	84	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	Alasoo_2018.macrophage_Salmonella_ge	0	0	84	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	Alasoo_2018.macrophage_IFNg+Salmonella_ge	0	0	84	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	BrainSeq.brain_ge	0	0	479	TRUE	other	0	blood	LC
+LC-ebi-a-GCST004627	CEDAR.T-cell_CD4	0	0	290	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	CEDAR.monocyte_CD14	0	0	286	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	CEDAR.neutrophil_CD15	0	0	280	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	CEDAR.rectum	0	0	271	FALSE	other	0	blood	LC
+LC-ebi-a-GCST004627	CEDAR.B-cell_CD19	0	0	262	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	FUSION.adipose_naive_ge	0	0	271	TRUE	other	0	blood	LC
+LC-ebi-a-GCST004627	GENCORD.LCL_ge	0	0	190	TRUE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	GENCORD.fibroblast_ge	0	0	186	TRUE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	GEUVADIS.LCL_ge	0	0	445	TRUE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	Kasela_2017.T-cell_CD8	0	0	269	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	Naranbhai_2015.neutrophil_CD16	0	0	93	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	Nedelec_2016.macrophage_Listeria_ge	0	0	163	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	Nedelec_2016.macrophage_Salmonella_ge	0	0	167	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	ROSMAP.brain_naive_ge	0	0	576	TRUE	other	0	blood	LC
+LC-ebi-a-GCST004627	Schmiedel_2018.Th17_memory_ge	0	0	89	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	Schmiedel_2018.Th1-17_memory_ge	0	0	88	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	Schmiedel_2018.Treg_memory_ge	0	0	89	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	Schmiedel_2018.B-cell_naive_ge	0	0	91	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	Schmiedel_2018.CD8_T-cell_naive_ge	0	0	89	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	0	0	88	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	Schmiedel_2018.monocyte_CD16_naive_ge	0	0	90	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	Schmiedel_2018.monocyte_naive_ge	0	0	91	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	Schmiedel_2018.NK-cell_naive_ge	0	0	90	FALSE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	Schwartzentruber_2018.sensory_neuron_ge	0	0	98	FALSE	other	0	blood	LC
+LC-ebi-a-GCST004627	TwinsUK.skin_ge	0	0	370	TRUE	other	0	blood	LC
+LC-ebi-a-GCST004627	TwinsUK.blood_ge	0	0	195	TRUE	immune cell	0	blood	LC
+LC-ebi-a-GCST004627	van_de_Bunt_2015.pancreatic_islet_ge	0	0	117	TRUE	other	0	blood	LC
+MC-ebi-a-GCST004625	Alasoo_2018.macrophage_IFNg_ge	1	1	84	FALSE	immune cell	0.011904761904761904	blood	MC
+MC-ebi-a-GCST004625	Alasoo_2018.macrophage_naive_ge	2	1	84	FALSE	immune cell	0.011904761904761904	blood	MC
+MC-ebi-a-GCST004625	BLUEPRINT_PE.T-cell_ge	1	1	167	FALSE	immune cell	0.005988023952095809	blood	MC
+MC-ebi-a-GCST004625	BLUEPRINT_SE.monocyte_ge	11	3	191	FALSE	immune cell	0.015706806282722512	blood	MC
+MC-ebi-a-GCST004625	BLUEPRINT_SE.neutrophil_ge	7	4	196	FALSE	immune cell	0.02040816326530612	blood	MC
+MC-ebi-a-GCST004625	CEDAR.B-cell_CD19	3	1	262	FALSE	immune cell	0.003816793893129771	blood	MC
+MC-ebi-a-GCST004625	CEDAR.monocyte_CD14	10	4	286	FALSE	immune cell	0.013986013986013986	blood	MC
+MC-ebi-a-GCST004625	CEDAR.T-cell_CD4	5	2	290	FALSE	immune cell	0.006896551724137931	blood	MC
+MC-ebi-a-GCST004625	CEDAR.T-cell_CD8	3	2	277	FALSE	immune cell	0.007220216606498195	blood	MC
+MC-ebi-a-GCST004625	Fairfax_2012.B-cell_CD19	5	2	281	FALSE	immune cell	0.0071174377224199285	blood	MC
+MC-ebi-a-GCST004625	Fairfax_2014.monocyte_IFN24	20	7	370	FALSE	immune cell	0.01891891891891892	blood	MC
+MC-ebi-a-GCST004625	Fairfax_2014.monocyte_LPS2	5	2	256	FALSE	immune cell	0.0078125	blood	MC
+MC-ebi-a-GCST004625	Fairfax_2014.monocyte_LPS24	9	4	325	FALSE	immune cell	0.012307692307692308	blood	MC
+MC-ebi-a-GCST004625	Fairfax_2014.monocyte_naive	11	5	420	FALSE	immune cell	0.011904761904761904	blood	MC
+MC-ebi-a-GCST004625	FUSION.adipose_naive_ge	3	2	271	TRUE	other	0.007380073800738007	blood	MC
+MC-ebi-a-GCST004625	FUSION.muscle_naive_ge	1	1	288	TRUE	other	0.003472222222222222	blood	MC
+MC-ebi-a-GCST004625	HipSci.iPSC_ge	4	1	322	FALSE	other	0.003105590062111801	blood	MC
+MC-ebi-a-GCST004625	Lepik_2017.blood_ge	13	6	471	TRUE	immune cell	0.012738853503184714	blood	MC
+MC-ebi-a-GCST004625	Nedelec_2016.macrophage_Listeria_ge	2	1	163	FALSE	immune cell	0.006134969325153374	blood	MC
+MC-ebi-a-GCST004625	Nedelec_2016.macrophage_naive_ge	7	2	163	FALSE	immune cell	0.012269938650306749	blood	MC
+MC-ebi-a-GCST004625	Quach_2016.monocyte_IAV_ge	18	3	198	FALSE	immune cell	0.015151515151515152	blood	MC
+MC-ebi-a-GCST004625	Quach_2016.monocyte_LPS_ge	19	3	184	FALSE	immune cell	0.016304347826086956	blood	MC
+MC-ebi-a-GCST004625	Quach_2016.monocyte_naive_ge	25	6	200	FALSE	immune cell	0.03	blood	MC
+MC-ebi-a-GCST004625	Quach_2016.monocyte_Pam3CSK4_ge	15	3	196	FALSE	immune cell	0.015306122448979591	blood	MC
+MC-ebi-a-GCST004625	Quach_2016.monocyte_R848_ge	17	4	191	FALSE	immune cell	0.020942408376963352	blood	MC
+MC-ebi-a-GCST004625	Schmiedel_2018.monocyte_CD16_naive_ge	2	2	90	FALSE	immune cell	0.022222222222222223	blood	MC
+MC-ebi-a-GCST004625	Schmiedel_2018.monocyte_naive_ge	1	1	91	FALSE	immune cell	0.01098901098901099	blood	MC
+MC-ebi-a-GCST004625	TwinsUK.fat_ge	4	2	381	TRUE	other	0.005249343832020997	blood	MC
+MC-ebi-a-GCST004625	TwinsUK.LCL_ge	2	2	418	TRUE	immune cell	0.004784688995215311	blood	MC
+MC-ebi-a-GCST004625	TwinsUK.skin_ge	3	1	370	TRUE	other	0.002702702702702703	blood	MC
+MC-ebi-a-GCST004625	Alasoo_2018.macrophage_Salmonella_ge	0	0	84	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Alasoo_2018.macrophage_IFNg+Salmonella_ge	0	0	84	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	BrainSeq.brain_ge	0	0	479	TRUE	other	0	blood	MC
+MC-ebi-a-GCST004625	CEDAR.transverse_colon	0	0	286	TRUE	other	0	blood	MC
+MC-ebi-a-GCST004625	CEDAR.neutrophil_CD15	0	0	280	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	CEDAR.platelet	0	0	205	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	CEDAR.rectum	0	0	271	FALSE	other	0	blood	MC
+MC-ebi-a-GCST004625	CEDAR.ileum	0	0	180	TRUE	other	0	blood	MC
+MC-ebi-a-GCST004625	GENCORD.LCL_ge	0	0	190	TRUE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	GENCORD.fibroblast_ge	0	0	186	TRUE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	GENCORD.T-cell_ge	0	0	184	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	GEUVADIS.LCL_ge	0	0	445	TRUE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Kasela_2017.T-cell_CD4	0	0	280	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Kasela_2017.T-cell_CD8	0	0	269	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Naranbhai_2015.neutrophil_CD16	0	0	93	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Nedelec_2016.macrophage_Salmonella_ge	0	0	167	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	ROSMAP.brain_naive_ge	0	0	576	TRUE	other	0	blood	MC
+MC-ebi-a-GCST004625	Schmiedel_2018.Tfh_memory_ge	0	0	89	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Schmiedel_2018.Th17_memory_ge	0	0	89	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Schmiedel_2018.Th1_memory_ge	0	0	82	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Schmiedel_2018.Th2_memory_ge	0	0	89	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Schmiedel_2018.Th1-17_memory_ge	0	0	88	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Schmiedel_2018.Treg_memory_ge	0	0	89	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Schmiedel_2018.Treg_naive_ge	0	0	89	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Schmiedel_2018.B-cell_naive_ge	0	0	91	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Schmiedel_2018.CD4_T-cell_naive_ge	0	0	88	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	0	0	89	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Schmiedel_2018.CD8_T-cell_naive_ge	0	0	89	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	0	0	88	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Schmiedel_2018.NK-cell_naive_ge	0	0	90	FALSE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	Schwartzentruber_2018.sensory_neuron_ge	0	0	98	FALSE	other	0	blood	MC
+MC-ebi-a-GCST004625	TwinsUK.blood_ge	0	0	195	TRUE	immune cell	0	blood	MC
+MC-ebi-a-GCST004625	van_de_Bunt_2015.pancreatic_islet_ge	0	0	117	TRUE	other	0	blood	MC
+MPV-ebi-a-GCST004599	BLUEPRINT_PE.T-cell_ge	6	3	167	FALSE	immune cell	0.017964071856287425	blood	MPV
+MPV-ebi-a-GCST004599	BLUEPRINT_SE.monocyte_ge	6	3	191	FALSE	immune cell	0.015706806282722512	blood	MPV
+MPV-ebi-a-GCST004599	BLUEPRINT_SE.neutrophil_ge	8	3	196	FALSE	immune cell	0.015306122448979591	blood	MPV
+MPV-ebi-a-GCST004599	CEDAR.B-cell_CD19	3	2	262	FALSE	immune cell	0.007633587786259542	blood	MPV
+MPV-ebi-a-GCST004599	CEDAR.ileum	2	1	180	TRUE	other	0.005555555555555556	blood	MPV
+MPV-ebi-a-GCST004599	CEDAR.neutrophil_CD15	2	1	280	FALSE	immune cell	0.0035714285714285713	blood	MPV
+MPV-ebi-a-GCST004599	CEDAR.platelet	13	5	205	FALSE	immune cell	0.024390243902439025	blood	MPV
+MPV-ebi-a-GCST004599	CEDAR.rectum	2	1	271	FALSE	other	0.0036900369003690036	blood	MPV
+MPV-ebi-a-GCST004599	CEDAR.T-cell_CD4	1	1	290	FALSE	immune cell	0.0034482758620689655	blood	MPV
+MPV-ebi-a-GCST004599	CEDAR.T-cell_CD8	1	1	277	FALSE	immune cell	0.0036101083032490976	blood	MPV
+MPV-ebi-a-GCST004599	CEDAR.transverse_colon	2	1	286	TRUE	other	0.0034965034965034965	blood	MPV
+MPV-ebi-a-GCST004599	Fairfax_2012.B-cell_CD19	4	3	281	FALSE	immune cell	0.010676156583629894	blood	MPV
+MPV-ebi-a-GCST004599	Fairfax_2014.monocyte_IFN24	6	2	370	FALSE	immune cell	0.005405405405405406	blood	MPV
+MPV-ebi-a-GCST004599	Fairfax_2014.monocyte_LPS2	2	2	256	FALSE	immune cell	0.0078125	blood	MPV
+MPV-ebi-a-GCST004599	FUSION.muscle_naive_ge	1	1	288	TRUE	other	0.003472222222222222	blood	MPV
+MPV-ebi-a-GCST004599	GENCORD.T-cell_ge	3	2	184	FALSE	immune cell	0.010869565217391304	blood	MPV
+MPV-ebi-a-GCST004599	Kasela_2017.T-cell_CD4	1	1	280	FALSE	immune cell	0.0035714285714285713	blood	MPV
+MPV-ebi-a-GCST004599	Kasela_2017.T-cell_CD8	1	1	269	FALSE	immune cell	0.0037174721189591076	blood	MPV
+MPV-ebi-a-GCST004599	Lepik_2017.blood_ge	11	6	471	TRUE	immune cell	0.012738853503184714	blood	MPV
+MPV-ebi-a-GCST004599	Quach_2016.monocyte_naive_ge	1	1	200	FALSE	immune cell	0.005	blood	MPV
+MPV-ebi-a-GCST004599	Quach_2016.monocyte_Pam3CSK4_ge	1	1	196	FALSE	immune cell	0.00510204081632653	blood	MPV
+MPV-ebi-a-GCST004599	Quach_2016.monocyte_R848_ge	1	1	191	FALSE	immune cell	0.005235602094240838	blood	MPV
+MPV-ebi-a-GCST004599	ROSMAP.brain_naive_ge	4	3	576	TRUE	other	0.005208333333333333	blood	MPV
+MPV-ebi-a-GCST004599	Schmiedel_2018.CD8_T-cell_naive_ge	1	1	89	FALSE	immune cell	0.011235955056179775	blood	MPV
+MPV-ebi-a-GCST004599	Schmiedel_2018.monocyte_CD16_naive_ge	1	1	90	FALSE	immune cell	0.011111111111111112	blood	MPV
+MPV-ebi-a-GCST004599	Schmiedel_2018.monocyte_naive_ge	1	1	91	FALSE	immune cell	0.01098901098901099	blood	MPV
+MPV-ebi-a-GCST004599	Schmiedel_2018.NK-cell_naive_ge	1	1	90	FALSE	immune cell	0.011111111111111112	blood	MPV
+MPV-ebi-a-GCST004599	TwinsUK.fat_ge	1	1	381	TRUE	other	0.0026246719160104987	blood	MPV
+MPV-ebi-a-GCST004599	TwinsUK.LCL_ge	1	1	418	TRUE	immune cell	0.0023923444976076554	blood	MPV
+MPV-ebi-a-GCST004599	Alasoo_2018.macrophage_naive_ge	0	0	84	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Alasoo_2018.macrophage_IFNg_ge	0	0	84	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Alasoo_2018.macrophage_Salmonella_ge	0	0	84	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Alasoo_2018.macrophage_IFNg+Salmonella_ge	0	0	84	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	BrainSeq.brain_ge	0	0	479	TRUE	other	0	blood	MPV
+MPV-ebi-a-GCST004599	CEDAR.monocyte_CD14	0	0	286	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Fairfax_2014.monocyte_naive	0	0	420	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Fairfax_2014.monocyte_LPS24	0	0	325	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	FUSION.adipose_naive_ge	0	0	271	TRUE	other	0	blood	MPV
+MPV-ebi-a-GCST004599	GENCORD.LCL_ge	0	0	190	TRUE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	GENCORD.fibroblast_ge	0	0	186	TRUE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	GEUVADIS.LCL_ge	0	0	445	TRUE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	HipSci.iPSC_ge	0	0	322	FALSE	other	0	blood	MPV
+MPV-ebi-a-GCST004599	Naranbhai_2015.neutrophil_CD16	0	0	93	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Nedelec_2016.macrophage_Listeria_ge	0	0	163	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Nedelec_2016.macrophage_naive_ge	0	0	163	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Nedelec_2016.macrophage_Salmonella_ge	0	0	167	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Quach_2016.monocyte_LPS_ge	0	0	184	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Quach_2016.monocyte_IAV_ge	0	0	198	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Schmiedel_2018.Tfh_memory_ge	0	0	89	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Schmiedel_2018.Th17_memory_ge	0	0	89	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Schmiedel_2018.Th1_memory_ge	0	0	82	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Schmiedel_2018.Th2_memory_ge	0	0	89	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Schmiedel_2018.Th1-17_memory_ge	0	0	88	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Schmiedel_2018.Treg_memory_ge	0	0	89	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Schmiedel_2018.Treg_naive_ge	0	0	89	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Schmiedel_2018.B-cell_naive_ge	0	0	91	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Schmiedel_2018.CD4_T-cell_naive_ge	0	0	88	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	0	0	89	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	0	0	88	FALSE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	Schwartzentruber_2018.sensory_neuron_ge	0	0	98	FALSE	other	0	blood	MPV
+MPV-ebi-a-GCST004599	TwinsUK.skin_ge	0	0	370	TRUE	other	0	blood	MPV
+MPV-ebi-a-GCST004599	TwinsUK.blood_ge	0	0	195	TRUE	immune cell	0	blood	MPV
+MPV-ebi-a-GCST004599	van_de_Bunt_2015.pancreatic_islet_ge	0	0	117	TRUE	other	0	blood	MPV
+PLT-ebi-a-GCST004603	BLUEPRINT_PE.T-cell_ge	2	2	167	FALSE	immune cell	0.011976047904191617	blood	PLT
+PLT-ebi-a-GCST004603	BLUEPRINT_SE.monocyte_ge	3	1	191	FALSE	immune cell	0.005235602094240838	blood	PLT
+PLT-ebi-a-GCST004603	CEDAR.B-cell_CD19	2	1	262	FALSE	immune cell	0.003816793893129771	blood	PLT
+PLT-ebi-a-GCST004603	CEDAR.platelet	9	3	205	FALSE	immune cell	0.014634146341463415	blood	PLT
+PLT-ebi-a-GCST004603	CEDAR.transverse_colon	1	1	286	TRUE	other	0.0034965034965034965	blood	PLT
+PLT-ebi-a-GCST004603	Fairfax_2014.monocyte_IFN24	1	1	370	FALSE	immune cell	0.002702702702702703	blood	PLT
+PLT-ebi-a-GCST004603	Fairfax_2014.monocyte_naive	3	2	420	FALSE	immune cell	0.004761904761904762	blood	PLT
+PLT-ebi-a-GCST004603	FUSION.adipose_naive_ge	4	2	271	TRUE	other	0.007380073800738007	blood	PLT
+PLT-ebi-a-GCST004603	FUSION.muscle_naive_ge	2	1	288	TRUE	other	0.003472222222222222	blood	PLT
+PLT-ebi-a-GCST004603	GEUVADIS.LCL_ge	4	2	445	TRUE	immune cell	0.0044943820224719105	blood	PLT
+PLT-ebi-a-GCST004603	Kasela_2017.T-cell_CD8	2	1	269	FALSE	immune cell	0.0037174721189591076	blood	PLT
+PLT-ebi-a-GCST004603	Quach_2016.monocyte_IAV_ge	1	1	198	FALSE	immune cell	0.005050505050505051	blood	PLT
+PLT-ebi-a-GCST004603	Quach_2016.monocyte_LPS_ge	2	2	184	FALSE	immune cell	0.010869565217391304	blood	PLT
+PLT-ebi-a-GCST004603	Quach_2016.monocyte_naive_ge	1	1	200	FALSE	immune cell	0.005	blood	PLT
+PLT-ebi-a-GCST004603	Quach_2016.monocyte_Pam3CSK4_ge	2	2	196	FALSE	immune cell	0.01020408163265306	blood	PLT
+PLT-ebi-a-GCST004603	Quach_2016.monocyte_R848_ge	1	1	191	FALSE	immune cell	0.005235602094240838	blood	PLT
+PLT-ebi-a-GCST004603	ROSMAP.brain_naive_ge	1	1	576	TRUE	other	0.001736111111111111	blood	PLT
+PLT-ebi-a-GCST004603	TwinsUK.fat_ge	2	2	381	TRUE	other	0.005249343832020997	blood	PLT
+PLT-ebi-a-GCST004603	TwinsUK.LCL_ge	5	2	418	TRUE	immune cell	0.004784688995215311	blood	PLT
+PLT-ebi-a-GCST004603	Alasoo_2018.macrophage_naive_ge	0	0	84	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Alasoo_2018.macrophage_IFNg_ge	0	0	84	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Alasoo_2018.macrophage_Salmonella_ge	0	0	84	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Alasoo_2018.macrophage_IFNg+Salmonella_ge	0	0	84	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	BLUEPRINT_SE.neutrophil_ge	0	0	196	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	BrainSeq.brain_ge	0	0	479	TRUE	other	0	blood	PLT
+PLT-ebi-a-GCST004603	CEDAR.T-cell_CD8	0	0	277	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	CEDAR.T-cell_CD4	0	0	290	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	CEDAR.monocyte_CD14	0	0	286	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	CEDAR.neutrophil_CD15	0	0	280	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	CEDAR.rectum	0	0	271	FALSE	other	0	blood	PLT
+PLT-ebi-a-GCST004603	CEDAR.ileum	0	0	180	TRUE	other	0	blood	PLT
+PLT-ebi-a-GCST004603	Fairfax_2012.B-cell_CD19	0	0	281	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Fairfax_2014.monocyte_LPS2	0	0	256	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Fairfax_2014.monocyte_LPS24	0	0	325	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	GENCORD.LCL_ge	0	0	190	TRUE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	GENCORD.fibroblast_ge	0	0	186	TRUE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	GENCORD.T-cell_ge	0	0	184	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	HipSci.iPSC_ge	0	0	322	FALSE	other	0	blood	PLT
+PLT-ebi-a-GCST004603	Kasela_2017.T-cell_CD4	0	0	280	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Lepik_2017.blood_ge	0	0	471	TRUE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Naranbhai_2015.neutrophil_CD16	0	0	93	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Nedelec_2016.macrophage_Listeria_ge	0	0	163	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Nedelec_2016.macrophage_naive_ge	0	0	163	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Nedelec_2016.macrophage_Salmonella_ge	0	0	167	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schmiedel_2018.Tfh_memory_ge	0	0	89	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schmiedel_2018.Th17_memory_ge	0	0	89	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schmiedel_2018.Th1_memory_ge	0	0	82	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schmiedel_2018.Th2_memory_ge	0	0	89	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schmiedel_2018.Th1-17_memory_ge	0	0	88	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schmiedel_2018.Treg_memory_ge	0	0	89	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schmiedel_2018.Treg_naive_ge	0	0	89	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schmiedel_2018.B-cell_naive_ge	0	0	91	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schmiedel_2018.CD4_T-cell_naive_ge	0	0	88	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	0	0	89	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schmiedel_2018.CD8_T-cell_naive_ge	0	0	89	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	0	0	88	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schmiedel_2018.monocyte_CD16_naive_ge	0	0	90	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schmiedel_2018.monocyte_naive_ge	0	0	91	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schmiedel_2018.NK-cell_naive_ge	0	0	90	FALSE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	Schwartzentruber_2018.sensory_neuron_ge	0	0	98	FALSE	other	0	blood	PLT
+PLT-ebi-a-GCST004603	TwinsUK.skin_ge	0	0	370	TRUE	other	0	blood	PLT
+PLT-ebi-a-GCST004603	TwinsUK.blood_ge	0	0	195	TRUE	immune cell	0	blood	PLT
+PLT-ebi-a-GCST004603	van_de_Bunt_2015.pancreatic_islet_ge	0	0	117	TRUE	other	0	blood	PLT
+RA-ebi-a-GCST002318	Alasoo_2018.macrophage_IFNg_ge	1	1	84	FALSE	immune cell	0.011904761904761904	immune	RA
+RA-ebi-a-GCST002318	BLUEPRINT_PE.T-cell_ge	7	3	167	FALSE	immune cell	0.017964071856287425	immune	RA
+RA-ebi-a-GCST002318	BLUEPRINT_SE.monocyte_ge	9	3	191	FALSE	immune cell	0.015706806282722512	immune	RA
+RA-ebi-a-GCST002318	BLUEPRINT_SE.neutrophil_ge	2	1	196	FALSE	immune cell	0.00510204081632653	immune	RA
+RA-ebi-a-GCST002318	CEDAR.ileum	1	1	180	TRUE	other	0.005555555555555556	immune	RA
+RA-ebi-a-GCST002318	CEDAR.monocyte_CD14	3	2	286	FALSE	immune cell	0.006993006993006993	immune	RA
+RA-ebi-a-GCST002318	CEDAR.neutrophil_CD15	2	1	280	FALSE	immune cell	0.0035714285714285713	immune	RA
+RA-ebi-a-GCST002318	CEDAR.T-cell_CD8	1	1	277	FALSE	immune cell	0.0036101083032490976	immune	RA
+RA-ebi-a-GCST002318	CEDAR.transverse_colon	2	1	286	TRUE	other	0.0034965034965034965	immune	RA
+RA-ebi-a-GCST002318	Fairfax_2014.monocyte_IFN24	4	2	370	FALSE	immune cell	0.005405405405405406	immune	RA
+RA-ebi-a-GCST002318	Fairfax_2014.monocyte_LPS2	1	1	256	FALSE	immune cell	0.00390625	immune	RA
+RA-ebi-a-GCST002318	Fairfax_2014.monocyte_naive	5	3	420	FALSE	immune cell	0.007142857142857143	immune	RA
+RA-ebi-a-GCST002318	FUSION.adipose_naive_ge	3	2	271	TRUE	other	0.007380073800738007	immune	RA
+RA-ebi-a-GCST002318	FUSION.muscle_naive_ge	2	1	288	TRUE	other	0.003472222222222222	immune	RA
+RA-ebi-a-GCST002318	GENCORD.LCL_ge	10	2	190	TRUE	immune cell	0.010526315789473684	immune	RA
+RA-ebi-a-GCST002318	GENCORD.T-cell_ge	1	1	184	FALSE	immune cell	0.005434782608695652	immune	RA
+RA-ebi-a-GCST002318	GEUVADIS.LCL_ge	1	1	445	TRUE	immune cell	0.0022471910112359553	immune	RA
+RA-ebi-a-GCST002318	HipSci.iPSC_ge	1	1	322	FALSE	other	0.003105590062111801	immune	RA
+RA-ebi-a-GCST002318	Kasela_2017.T-cell_CD4	5	2	280	FALSE	immune cell	0.007142857142857143	immune	RA
+RA-ebi-a-GCST002318	Lepik_2017.blood_ge	7	3	471	TRUE	immune cell	0.006369426751592357	immune	RA
+RA-ebi-a-GCST002318	Naranbhai_2015.neutrophil_CD16	1	1	93	FALSE	immune cell	0.010752688172043012	immune	RA
+RA-ebi-a-GCST002318	Quach_2016.monocyte_naive_ge	2	1	200	FALSE	immune cell	0.005	immune	RA
+RA-ebi-a-GCST002318	Quach_2016.monocyte_R848_ge	4	1	191	FALSE	immune cell	0.005235602094240838	immune	RA
+RA-ebi-a-GCST002318	ROSMAP.brain_naive_ge	3	3	576	TRUE	other	0.005208333333333333	immune	RA
+RA-ebi-a-GCST002318	Schmiedel_2018.B-cell_naive_ge	2	1	91	FALSE	immune cell	0.01098901098901099	immune	RA
+RA-ebi-a-GCST002318	Schmiedel_2018.CD4_T-cell_naive_ge	4	2	88	FALSE	immune cell	0.022727272727272728	immune	RA
+RA-ebi-a-GCST002318	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	1	1	88	FALSE	immune cell	0.011363636363636364	immune	RA
+RA-ebi-a-GCST002318	Schmiedel_2018.CD8_T-cell_naive_ge	2	1	89	FALSE	immune cell	0.011235955056179775	immune	RA
+RA-ebi-a-GCST002318	Schmiedel_2018.monocyte_CD16_naive_ge	2	1	90	FALSE	immune cell	0.011111111111111112	immune	RA
+RA-ebi-a-GCST002318	Schmiedel_2018.monocyte_naive_ge	2	1	91	FALSE	immune cell	0.01098901098901099	immune	RA
+RA-ebi-a-GCST002318	Schmiedel_2018.NK-cell_naive_ge	3	2	90	FALSE	immune cell	0.022222222222222223	immune	RA
+RA-ebi-a-GCST002318	Schmiedel_2018.Tfh_memory_ge	5	2	89	FALSE	immune cell	0.02247191011235955	immune	RA
+RA-ebi-a-GCST002318	Schmiedel_2018.Th1_memory_ge	7	3	82	FALSE	immune cell	0.036585365853658534	immune	RA
+RA-ebi-a-GCST002318	Schmiedel_2018.Th1-17_memory_ge	10	2	88	FALSE	immune cell	0.022727272727272728	immune	RA
+RA-ebi-a-GCST002318	Schmiedel_2018.Th17_memory_ge	6	2	89	FALSE	immune cell	0.02247191011235955	immune	RA
+RA-ebi-a-GCST002318	Schmiedel_2018.Th2_memory_ge	5	2	89	FALSE	immune cell	0.02247191011235955	immune	RA
+RA-ebi-a-GCST002318	Schmiedel_2018.Treg_memory_ge	6	3	89	FALSE	immune cell	0.033707865168539325	immune	RA
+RA-ebi-a-GCST002318	Schmiedel_2018.Treg_naive_ge	5	4	89	FALSE	immune cell	0.0449438202247191	immune	RA
+RA-ebi-a-GCST002318	TwinsUK.blood_ge	4	2	195	TRUE	immune cell	0.010256410256410256	immune	RA
+RA-ebi-a-GCST002318	TwinsUK.LCL_ge	11	4	418	TRUE	immune cell	0.009569377990430622	immune	RA
+RA-ebi-a-GCST002318	Alasoo_2018.macrophage_naive_ge	0	0	84	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	Alasoo_2018.macrophage_Salmonella_ge	0	0	84	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	Alasoo_2018.macrophage_IFNg+Salmonella_ge	0	0	84	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	BrainSeq.brain_ge	0	0	479	TRUE	other	0	immune	RA
+RA-ebi-a-GCST002318	CEDAR.T-cell_CD4	0	0	290	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	CEDAR.platelet	0	0	205	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	CEDAR.rectum	0	0	271	FALSE	other	0	immune	RA
+RA-ebi-a-GCST002318	CEDAR.B-cell_CD19	0	0	262	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	Fairfax_2012.B-cell_CD19	0	0	281	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	Fairfax_2014.monocyte_LPS24	0	0	325	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	GENCORD.fibroblast_ge	0	0	186	TRUE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	Kasela_2017.T-cell_CD8	0	0	269	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	Nedelec_2016.macrophage_Listeria_ge	0	0	163	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	Nedelec_2016.macrophage_naive_ge	0	0	163	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	Nedelec_2016.macrophage_Salmonella_ge	0	0	167	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	Quach_2016.monocyte_LPS_ge	0	0	184	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	Quach_2016.monocyte_Pam3CSK4_ge	0	0	196	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	Quach_2016.monocyte_IAV_ge	0	0	198	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	0	0	89	FALSE	immune cell	0	immune	RA
+RA-ebi-a-GCST002318	Schwartzentruber_2018.sensory_neuron_ge	0	0	98	FALSE	other	0	immune	RA
+RA-ebi-a-GCST002318	TwinsUK.fat_ge	0	0	381	TRUE	other	0	immune	RA
+RA-ebi-a-GCST002318	TwinsUK.skin_ge	0	0	370	TRUE	other	0	immune	RA
+RA-ebi-a-GCST002318	van_de_Bunt_2015.pancreatic_islet_ge	0	0	117	TRUE	other	0	immune	RA
+SLE-ebi-a-GCST003156	BLUEPRINT_SE.monocyte_ge	1	1	191	FALSE	immune cell	0.005235602094240838	immune	SLE
+SLE-ebi-a-GCST003156	BrainSeq.brain_ge	1	1	479	TRUE	other	0.0020876826722338203	immune	SLE
+SLE-ebi-a-GCST003156	CEDAR.T-cell_CD4	6	1	290	FALSE	immune cell	0.0034482758620689655	immune	SLE
+SLE-ebi-a-GCST003156	CEDAR.T-cell_CD8	6	1	277	FALSE	immune cell	0.0036101083032490976	immune	SLE
+SLE-ebi-a-GCST003156	Fairfax_2014.monocyte_IFN24	3	2	370	FALSE	immune cell	0.005405405405405406	immune	SLE
+SLE-ebi-a-GCST003156	Fairfax_2014.monocyte_LPS2	2	1	256	FALSE	immune cell	0.00390625	immune	SLE
+SLE-ebi-a-GCST003156	Fairfax_2014.monocyte_LPS24	1	1	325	FALSE	immune cell	0.003076923076923077	immune	SLE
+SLE-ebi-a-GCST003156	FUSION.muscle_naive_ge	2	1	288	TRUE	other	0.003472222222222222	immune	SLE
+SLE-ebi-a-GCST003156	GENCORD.LCL_ge	3	1	190	TRUE	immune cell	0.005263157894736842	immune	SLE
+SLE-ebi-a-GCST003156	HipSci.iPSC_ge	1	1	322	FALSE	other	0.003105590062111801	immune	SLE
+SLE-ebi-a-GCST003156	Kasela_2017.T-cell_CD4	3	1	280	FALSE	immune cell	0.0035714285714285713	immune	SLE
+SLE-ebi-a-GCST003156	Lepik_2017.blood_ge	2	1	471	TRUE	immune cell	0.0021231422505307855	immune	SLE
+SLE-ebi-a-GCST003156	Nedelec_2016.macrophage_Listeria_ge	8	2	163	FALSE	immune cell	0.012269938650306749	immune	SLE
+SLE-ebi-a-GCST003156	Nedelec_2016.macrophage_Salmonella_ge	8	2	167	FALSE	immune cell	0.011976047904191617	immune	SLE
+SLE-ebi-a-GCST003156	Quach_2016.monocyte_IAV_ge	4	3	198	FALSE	immune cell	0.015151515151515152	immune	SLE
+SLE-ebi-a-GCST003156	Quach_2016.monocyte_LPS_ge	14	3	184	FALSE	immune cell	0.016304347826086956	immune	SLE
+SLE-ebi-a-GCST003156	Quach_2016.monocyte_naive_ge	4	1	200	FALSE	immune cell	0.005	immune	SLE
+SLE-ebi-a-GCST003156	Quach_2016.monocyte_Pam3CSK4_ge	14	3	196	FALSE	immune cell	0.015306122448979591	immune	SLE
+SLE-ebi-a-GCST003156	Quach_2016.monocyte_R848_ge	9	2	191	FALSE	immune cell	0.010471204188481676	immune	SLE
+SLE-ebi-a-GCST003156	ROSMAP.brain_naive_ge	1	1	576	TRUE	other	0.001736111111111111	immune	SLE
+SLE-ebi-a-GCST003156	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	8	3	89	FALSE	immune cell	0.033707865168539325	immune	SLE
+SLE-ebi-a-GCST003156	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	8	2	88	FALSE	immune cell	0.022727272727272728	immune	SLE
+SLE-ebi-a-GCST003156	TwinsUK.fat_ge	1	1	381	TRUE	other	0.0026246719160104987	immune	SLE
+SLE-ebi-a-GCST003156	TwinsUK.LCL_ge	5	3	418	TRUE	immune cell	0.007177033492822967	immune	SLE
+SLE-ebi-a-GCST003156	TwinsUK.skin_ge	1	1	370	TRUE	other	0.002702702702702703	immune	SLE
+SLE-ebi-a-GCST003156	Alasoo_2018.macrophage_naive_ge	0	0	84	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Alasoo_2018.macrophage_IFNg_ge	0	0	84	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Alasoo_2018.macrophage_Salmonella_ge	0	0	84	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Alasoo_2018.macrophage_IFNg+Salmonella_ge	0	0	84	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	BLUEPRINT_SE.neutrophil_ge	0	0	196	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	BLUEPRINT_PE.T-cell_ge	0	0	167	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	CEDAR.transverse_colon	0	0	286	TRUE	other	0	immune	SLE
+SLE-ebi-a-GCST003156	CEDAR.monocyte_CD14	0	0	286	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	CEDAR.neutrophil_CD15	0	0	280	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	CEDAR.platelet	0	0	205	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	CEDAR.rectum	0	0	271	FALSE	other	0	immune	SLE
+SLE-ebi-a-GCST003156	CEDAR.B-cell_CD19	0	0	262	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	CEDAR.ileum	0	0	180	TRUE	other	0	immune	SLE
+SLE-ebi-a-GCST003156	Fairfax_2012.B-cell_CD19	0	0	281	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Fairfax_2014.monocyte_naive	0	0	420	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	FUSION.adipose_naive_ge	0	0	271	TRUE	other	0	immune	SLE
+SLE-ebi-a-GCST003156	GENCORD.fibroblast_ge	0	0	186	TRUE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	GENCORD.T-cell_ge	0	0	184	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	GEUVADIS.LCL_ge	0	0	445	TRUE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Kasela_2017.T-cell_CD8	0	0	269	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Naranbhai_2015.neutrophil_CD16	0	0	93	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Nedelec_2016.macrophage_naive_ge	0	0	163	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Schmiedel_2018.Tfh_memory_ge	0	0	89	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Schmiedel_2018.Th17_memory_ge	0	0	89	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Schmiedel_2018.Th1_memory_ge	0	0	82	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Schmiedel_2018.Th2_memory_ge	0	0	89	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Schmiedel_2018.Th1-17_memory_ge	0	0	88	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Schmiedel_2018.Treg_memory_ge	0	0	89	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Schmiedel_2018.Treg_naive_ge	0	0	89	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Schmiedel_2018.B-cell_naive_ge	0	0	91	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Schmiedel_2018.CD4_T-cell_naive_ge	0	0	88	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Schmiedel_2018.CD8_T-cell_naive_ge	0	0	89	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Schmiedel_2018.monocyte_CD16_naive_ge	0	0	90	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Schmiedel_2018.monocyte_naive_ge	0	0	91	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Schmiedel_2018.NK-cell_naive_ge	0	0	90	FALSE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	Schwartzentruber_2018.sensory_neuron_ge	0	0	98	FALSE	other	0	immune	SLE
+SLE-ebi-a-GCST003156	TwinsUK.blood_ge	0	0	195	TRUE	immune cell	0	immune	SLE
+SLE-ebi-a-GCST003156	van_de_Bunt_2015.pancreatic_islet_ge	0	0	117	TRUE	other	0	immune	SLE
+T2D1-ebi-a-GCST006867	Alasoo_2018.macrophage_IFNg+Salmonella_ge	1	1	84	FALSE	immune cell	0.011904761904761904	non-immune	T2D
+T2D1-ebi-a-GCST006867	Alasoo_2018.macrophage_Salmonella_ge	1	1	84	FALSE	immune cell	0.011904761904761904	non-immune	T2D
+T2D1-ebi-a-GCST006867	BLUEPRINT_SE.monocyte_ge	5	3	191	FALSE	immune cell	0.015706806282722512	non-immune	T2D
+T2D1-ebi-a-GCST006867	BLUEPRINT_SE.neutrophil_ge	5	1	196	FALSE	immune cell	0.00510204081632653	non-immune	T2D
+T2D1-ebi-a-GCST006867	BrainSeq.brain_ge	1	1	479	TRUE	other	0.0020876826722338203	non-immune	T2D
+T2D1-ebi-a-GCST006867	CEDAR.B-cell_CD19	2	1	262	FALSE	immune cell	0.003816793893129771	non-immune	T2D
+T2D1-ebi-a-GCST006867	CEDAR.monocyte_CD14	5	2	286	FALSE	immune cell	0.006993006993006993	non-immune	T2D
+T2D1-ebi-a-GCST006867	CEDAR.T-cell_CD4	2	2	290	FALSE	immune cell	0.006896551724137931	non-immune	T2D
+T2D1-ebi-a-GCST006867	CEDAR.T-cell_CD8	1	1	277	FALSE	immune cell	0.0036101083032490976	non-immune	T2D
+T2D1-ebi-a-GCST006867	Fairfax_2012.B-cell_CD19	1	1	281	FALSE	immune cell	0.0035587188612099642	non-immune	T2D
+T2D1-ebi-a-GCST006867	Fairfax_2014.monocyte_IFN24	5	1	370	FALSE	immune cell	0.002702702702702703	non-immune	T2D
+T2D1-ebi-a-GCST006867	Fairfax_2014.monocyte_LPS2	3	1	256	FALSE	immune cell	0.00390625	non-immune	T2D
+T2D1-ebi-a-GCST006867	Fairfax_2014.monocyte_LPS24	5	1	325	FALSE	immune cell	0.003076923076923077	non-immune	T2D
+T2D1-ebi-a-GCST006867	Fairfax_2014.monocyte_naive	8	3	420	FALSE	immune cell	0.007142857142857143	non-immune	T2D
+T2D1-ebi-a-GCST006867	FUSION.adipose_naive_ge	5	3	271	TRUE	other	0.01107011070110701	non-immune	T2D
+T2D1-ebi-a-GCST006867	FUSION.muscle_naive_ge	2	2	288	TRUE	other	0.006944444444444444	non-immune	T2D
+T2D1-ebi-a-GCST006867	GEUVADIS.LCL_ge	2	2	445	TRUE	immune cell	0.0044943820224719105	non-immune	T2D
+T2D1-ebi-a-GCST006867	HipSci.iPSC_ge	2	1	322	FALSE	other	0.003105590062111801	non-immune	T2D
+T2D1-ebi-a-GCST006867	Kasela_2017.T-cell_CD4	3	1	280	FALSE	immune cell	0.0035714285714285713	non-immune	T2D
+T2D1-ebi-a-GCST006867	Kasela_2017.T-cell_CD8	3	1	269	FALSE	immune cell	0.0037174721189591076	non-immune	T2D
+T2D1-ebi-a-GCST006867	Lepik_2017.blood_ge	2	1	471	TRUE	immune cell	0.0021231422505307855	non-immune	T2D
+T2D1-ebi-a-GCST006867	Quach_2016.monocyte_LPS_ge	2	2	184	FALSE	immune cell	0.010869565217391304	non-immune	T2D
+T2D1-ebi-a-GCST006867	Quach_2016.monocyte_Pam3CSK4_ge	2	1	196	FALSE	immune cell	0.00510204081632653	non-immune	T2D
+T2D1-ebi-a-GCST006867	Quach_2016.monocyte_R848_ge	8	3	191	FALSE	immune cell	0.015706806282722512	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	1	1	89	FALSE	immune cell	0.011235955056179775	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schmiedel_2018.CD4_T-cell_naive_ge	1	1	88	FALSE	immune cell	0.011363636363636364	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	1	1	88	FALSE	immune cell	0.011363636363636364	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schmiedel_2018.CD8_T-cell_naive_ge	1	1	89	FALSE	immune cell	0.011235955056179775	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schmiedel_2018.Tfh_memory_ge	1	1	89	FALSE	immune cell	0.011235955056179775	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schmiedel_2018.Th1_memory_ge	1	1	82	FALSE	immune cell	0.012195121951219513	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schmiedel_2018.Th17_memory_ge	1	1	89	FALSE	immune cell	0.011235955056179775	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schmiedel_2018.Th2_memory_ge	1	1	89	FALSE	immune cell	0.011235955056179775	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schmiedel_2018.Treg_memory_ge	1	1	89	FALSE	immune cell	0.011235955056179775	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schmiedel_2018.Treg_naive_ge	2	2	89	FALSE	immune cell	0.02247191011235955	non-immune	T2D
+T2D1-ebi-a-GCST006867	TwinsUK.fat_ge	3	2	381	TRUE	other	0.005249343832020997	non-immune	T2D
+T2D1-ebi-a-GCST006867	TwinsUK.LCL_ge	5	4	418	TRUE	immune cell	0.009569377990430622	non-immune	T2D
+T2D1-ebi-a-GCST006867	Alasoo_2018.macrophage_naive_ge	0	0	84	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	Alasoo_2018.macrophage_IFNg_ge	0	0	84	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	BLUEPRINT_PE.T-cell_ge	0	0	167	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	CEDAR.transverse_colon	0	0	286	TRUE	other	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	CEDAR.neutrophil_CD15	0	0	280	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	CEDAR.platelet	0	0	205	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	CEDAR.rectum	0	0	271	FALSE	other	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	CEDAR.ileum	0	0	180	TRUE	other	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	GENCORD.LCL_ge	0	0	190	TRUE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	GENCORD.fibroblast_ge	0	0	186	TRUE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	GENCORD.T-cell_ge	0	0	184	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	Naranbhai_2015.neutrophil_CD16	0	0	93	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	Nedelec_2016.macrophage_Listeria_ge	0	0	163	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	Nedelec_2016.macrophage_naive_ge	0	0	163	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	Nedelec_2016.macrophage_Salmonella_ge	0	0	167	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	Quach_2016.monocyte_naive_ge	0	0	200	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	Quach_2016.monocyte_IAV_ge	0	0	198	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	ROSMAP.brain_naive_ge	0	0	576	TRUE	other	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schmiedel_2018.Th1-17_memory_ge	0	0	88	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schmiedel_2018.B-cell_naive_ge	0	0	91	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schmiedel_2018.monocyte_CD16_naive_ge	0	0	90	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schmiedel_2018.monocyte_naive_ge	0	0	91	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schmiedel_2018.NK-cell_naive_ge	0	0	90	FALSE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	Schwartzentruber_2018.sensory_neuron_ge	0	0	98	FALSE	other	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	TwinsUK.skin_ge	0	0	370	TRUE	other	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	TwinsUK.blood_ge	0	0	195	TRUE	immune cell	0	non-immune	T2D
+T2D1-ebi-a-GCST006867	van_de_Bunt_2015.pancreatic_islet_ge	0	0	117	TRUE	other	0	non-immune	T2D
+UC-ebi-a-GCST004133	BLUEPRINT_PE.T-cell_ge	8	2	167	FALSE	immune cell	0.011976047904191617	immune	UC
+UC-ebi-a-GCST004133	BLUEPRINT_SE.monocyte_ge	1	1	191	FALSE	immune cell	0.005235602094240838	immune	UC
+UC-ebi-a-GCST004133	BLUEPRINT_SE.neutrophil_ge	3	1	196	FALSE	immune cell	0.00510204081632653	immune	UC
+UC-ebi-a-GCST004133	CEDAR.rectum	1	1	271	FALSE	other	0.0036900369003690036	immune	UC
+UC-ebi-a-GCST004133	CEDAR.transverse_colon	1	1	286	TRUE	other	0.0034965034965034965	immune	UC
+UC-ebi-a-GCST004133	Fairfax_2014.monocyte_IFN24	2	2	370	FALSE	immune cell	0.005405405405405406	immune	UC
+UC-ebi-a-GCST004133	Fairfax_2014.monocyte_LPS24	1	1	325	FALSE	immune cell	0.003076923076923077	immune	UC
+UC-ebi-a-GCST004133	Fairfax_2014.monocyte_naive	2	1	420	FALSE	immune cell	0.002380952380952381	immune	UC
+UC-ebi-a-GCST004133	FUSION.adipose_naive_ge	1	1	271	TRUE	other	0.0036900369003690036	immune	UC
+UC-ebi-a-GCST004133	GEUVADIS.LCL_ge	4	3	445	TRUE	immune cell	0.006741573033707865	immune	UC
+UC-ebi-a-GCST004133	Lepik_2017.blood_ge	8	3	471	TRUE	immune cell	0.006369426751592357	immune	UC
+UC-ebi-a-GCST004133	Quach_2016.monocyte_LPS_ge	3	1	184	FALSE	immune cell	0.005434782608695652	immune	UC
+UC-ebi-a-GCST004133	Quach_2016.monocyte_Pam3CSK4_ge	3	1	196	FALSE	immune cell	0.00510204081632653	immune	UC
+UC-ebi-a-GCST004133	Quach_2016.monocyte_R848_ge	2	1	191	FALSE	immune cell	0.005235602094240838	immune	UC
+UC-ebi-a-GCST004133	ROSMAP.brain_naive_ge	11	3	576	TRUE	other	0.005208333333333333	immune	UC
+UC-ebi-a-GCST004133	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	1	1	89	FALSE	immune cell	0.011235955056179775	immune	UC
+UC-ebi-a-GCST004133	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	1	1	88	FALSE	immune cell	0.011363636363636364	immune	UC
+UC-ebi-a-GCST004133	TwinsUK.fat_ge	4	1	381	TRUE	other	0.0026246719160104987	immune	UC
+UC-ebi-a-GCST004133	TwinsUK.LCL_ge	2	2	418	TRUE	immune cell	0.004784688995215311	immune	UC
+UC-ebi-a-GCST004133	TwinsUK.skin_ge	1	1	370	TRUE	other	0.002702702702702703	immune	UC
+UC-ebi-a-GCST004133	Alasoo_2018.macrophage_naive_ge	0	0	84	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Alasoo_2018.macrophage_IFNg_ge	0	0	84	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Alasoo_2018.macrophage_Salmonella_ge	0	0	84	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Alasoo_2018.macrophage_IFNg+Salmonella_ge	0	0	84	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	BrainSeq.brain_ge	0	0	479	TRUE	other	0	immune	UC
+UC-ebi-a-GCST004133	CEDAR.T-cell_CD8	0	0	277	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	CEDAR.T-cell_CD4	0	0	290	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	CEDAR.monocyte_CD14	0	0	286	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	CEDAR.neutrophil_CD15	0	0	280	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	CEDAR.platelet	0	0	205	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	CEDAR.B-cell_CD19	0	0	262	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	CEDAR.ileum	0	0	180	TRUE	other	0	immune	UC
+UC-ebi-a-GCST004133	Fairfax_2012.B-cell_CD19	0	0	281	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Fairfax_2014.monocyte_LPS2	0	0	256	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	FUSION.muscle_naive_ge	0	0	288	TRUE	other	0	immune	UC
+UC-ebi-a-GCST004133	GENCORD.LCL_ge	0	0	190	TRUE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	GENCORD.fibroblast_ge	0	0	186	TRUE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	GENCORD.T-cell_ge	0	0	184	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	HipSci.iPSC_ge	0	0	322	FALSE	other	0	immune	UC
+UC-ebi-a-GCST004133	Kasela_2017.T-cell_CD4	0	0	280	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Kasela_2017.T-cell_CD8	0	0	269	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Naranbhai_2015.neutrophil_CD16	0	0	93	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Nedelec_2016.macrophage_Listeria_ge	0	0	163	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Nedelec_2016.macrophage_naive_ge	0	0	163	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Nedelec_2016.macrophage_Salmonella_ge	0	0	167	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Quach_2016.monocyte_naive_ge	0	0	200	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Quach_2016.monocyte_IAV_ge	0	0	198	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Schmiedel_2018.Tfh_memory_ge	0	0	89	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Schmiedel_2018.Th17_memory_ge	0	0	89	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Schmiedel_2018.Th1_memory_ge	0	0	82	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Schmiedel_2018.Th2_memory_ge	0	0	89	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Schmiedel_2018.Th1-17_memory_ge	0	0	88	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Schmiedel_2018.Treg_memory_ge	0	0	89	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Schmiedel_2018.Treg_naive_ge	0	0	89	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Schmiedel_2018.B-cell_naive_ge	0	0	91	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Schmiedel_2018.CD4_T-cell_naive_ge	0	0	88	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Schmiedel_2018.CD8_T-cell_naive_ge	0	0	89	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Schmiedel_2018.monocyte_CD16_naive_ge	0	0	90	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Schmiedel_2018.monocyte_naive_ge	0	0	91	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Schmiedel_2018.NK-cell_naive_ge	0	0	90	FALSE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	Schwartzentruber_2018.sensory_neuron_ge	0	0	98	FALSE	other	0	immune	UC
+UC-ebi-a-GCST004133	TwinsUK.blood_ge	0	0	195	TRUE	immune cell	0	immune	UC
+UC-ebi-a-GCST004133	van_de_Bunt_2015.pancreatic_islet_ge	0	0	117	TRUE	other	0	immune	UC

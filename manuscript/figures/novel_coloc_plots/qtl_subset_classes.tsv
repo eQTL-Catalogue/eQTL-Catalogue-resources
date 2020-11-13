@@ -1,0 +1,64 @@
+qtl_subset	sample_size	n_colocs_in_novel_ld_blocks	n_unique_novel_ld_blocks	present_in_GTEx	cell_type_class
+Alasoo_2018.macrophage_naive_ge	84	0	0	FALSE	immune cell
+Alasoo_2018.macrophage_IFNg_ge	84	0	0	FALSE	immune cell
+Alasoo_2018.macrophage_Salmonella_ge	84	0	0	FALSE	immune cell
+Alasoo_2018.macrophage_IFNg+Salmonella_ge	84	0	0	FALSE	immune cell
+BLUEPRINT_SE.monocyte_ge	191	0	0	FALSE	immune cell
+BLUEPRINT_SE.neutrophil_ge	196	0	0	FALSE	immune cell
+BLUEPRINT_PE.T-cell_ge	167	0	0	FALSE	immune cell
+BrainSeq.brain_ge	479	0	0	TRUE	other
+CEDAR.T-cell_CD8	277	0	0	FALSE	immune cell
+CEDAR.T-cell_CD4	290	0	0	FALSE	immune cell
+CEDAR.transverse_colon	286	0	0	TRUE	other
+CEDAR.monocyte_CD14	286	0	0	FALSE	immune cell
+CEDAR.neutrophil_CD15	280	0	0	FALSE	immune cell
+CEDAR.platelet	205	0	0	FALSE	immune cell
+CEDAR.rectum	271	0	0	FALSE	other
+CEDAR.B-cell_CD19	262	0	0	FALSE	immune cell
+CEDAR.ileum	180	0	0	TRUE	other
+Fairfax_2012.B-cell_CD19	281	0	0	FALSE	immune cell
+Fairfax_2014.monocyte_naive	420	0	0	FALSE	immune cell
+Fairfax_2014.monocyte_IFN24	370	0	0	FALSE	immune cell
+Fairfax_2014.monocyte_LPS2	256	0	0	FALSE	immune cell
+Fairfax_2014.monocyte_LPS24	325	0	0	FALSE	immune cell
+FUSION.adipose_naive_ge	271	0	0	TRUE	other
+FUSION.muscle_naive_ge	288	0	0	TRUE	other
+GENCORD.LCL_ge	190	0	0	TRUE	immune cell
+GENCORD.fibroblast_ge	186	0	0	TRUE	immune cell
+GENCORD.T-cell_ge	184	0	0	FALSE	immune cell
+GEUVADIS.LCL_ge	445	0	0	TRUE	immune cell
+HipSci.iPSC_ge	322	0	0	FALSE	other
+Kasela_2017.T-cell_CD4	280	0	0	FALSE	immune cell
+Kasela_2017.T-cell_CD8	269	0	0	FALSE	immune cell
+Lepik_2017.blood_ge	471	0	0	TRUE	immune cell
+Naranbhai_2015.neutrophil_CD16	93	0	0	FALSE	immune cell
+Nedelec_2016.macrophage_Listeria_ge	163	0	0	FALSE	immune cell
+Nedelec_2016.macrophage_naive_ge	163	0	0	FALSE	immune cell
+Nedelec_2016.macrophage_Salmonella_ge	167	0	0	FALSE	immune cell
+Quach_2016.monocyte_naive_ge	200	0	0	FALSE	immune cell
+Quach_2016.monocyte_LPS_ge	184	0	0	FALSE	immune cell
+Quach_2016.monocyte_Pam3CSK4_ge	196	0	0	FALSE	immune cell
+Quach_2016.monocyte_R848_ge	191	0	0	FALSE	immune cell
+Quach_2016.monocyte_IAV_ge	198	0	0	FALSE	immune cell
+ROSMAP.brain_naive_ge	576	0	0	TRUE	other
+Schmiedel_2018.Tfh_memory_ge	89	0	0	FALSE	immune cell
+Schmiedel_2018.Th17_memory_ge	89	0	0	FALSE	immune cell
+Schmiedel_2018.Th1_memory_ge	82	0	0	FALSE	immune cell
+Schmiedel_2018.Th2_memory_ge	89	0	0	FALSE	immune cell
+Schmiedel_2018.Th1-17_memory_ge	88	0	0	FALSE	immune cell
+Schmiedel_2018.Treg_memory_ge	89	0	0	FALSE	immune cell
+Schmiedel_2018.Treg_naive_ge	89	0	0	FALSE	immune cell
+Schmiedel_2018.B-cell_naive_ge	91	0	0	FALSE	immune cell
+Schmiedel_2018.CD4_T-cell_naive_ge	88	0	0	FALSE	immune cell
+Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	89	0	0	FALSE	immune cell
+Schmiedel_2018.CD8_T-cell_naive_ge	89	0	0	FALSE	immune cell
+Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	88	0	0	FALSE	immune cell
+Schmiedel_2018.monocyte_CD16_naive_ge	90	0	0	FALSE	immune cell
+Schmiedel_2018.monocyte_naive_ge	91	0	0	FALSE	immune cell
+Schmiedel_2018.NK-cell_naive_ge	90	0	0	FALSE	immune cell
+Schwartzentruber_2018.sensory_neuron_ge	98	0	0	FALSE	other
+TwinsUK.fat_ge	381	0	0	TRUE	other
+TwinsUK.LCL_ge	418	0	0	TRUE	immune cell
+TwinsUK.skin_ge	370	0	0	TRUE	other
+TwinsUK.blood_ge	195	0	0	TRUE	immune cell
+van_de_Bunt_2015.pancreatic_islet_ge	117	0	0	TRUE	other
