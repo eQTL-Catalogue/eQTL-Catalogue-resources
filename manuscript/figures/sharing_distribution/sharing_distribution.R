@@ -44,7 +44,7 @@ df_sharing = df_sharing %>% left_join(ontology_map[c("label", "study_qtlgroup")]
 df_sharing = dplyr::rename(df_sharing, sharing = value) %>%
   dplyr::mutate(dataset = factor(dataset, levels = leads))
 
-plt <- ggplot(df_sharing, aes(x = dataset, y = sharing, colour=tissue_fct)) +
+plt <- ggplot(df_sharing, aes(x = dataset, y = sharing, colour=tissue_fct, label = dataset2)) +
     geom_jitter(width = 0.2) +
     xlab("") +
     ylab("Pairwise eQTL sharing") +
@@ -58,3 +58,8 @@ plt
 
 ggsave("sharing_distribution.pdf", plt, width = 10, height = 4)
 
+#Make plotly plot
+ggplotly_plot <- plotly::ggplotly(plt)
+htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
+                        file = "sharing_distribution.html",
+                        libdir = "dependencies")

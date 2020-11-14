@@ -127,3 +127,8 @@ coloc_plot = ggplot(rbms1_colocs, aes(x = PP.H3.abf, y = PP.H4.abf, label = qtl_
   ylab("PP4 (shared causal variant)")
 ggsave("RBMS1_coloc_plot.pdf", plot = coloc_plot, width = 3, height = 3)
 
+
+#Import Quach credible set
+quach_cs= readr::read_tsv("ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/credible_sets/Quach_2016.monocyte_LPS_ge.purity_filtered.txt.gz") %>%
+  dplyr::filter(phenotype_id == "ENSG00000153250")
+
