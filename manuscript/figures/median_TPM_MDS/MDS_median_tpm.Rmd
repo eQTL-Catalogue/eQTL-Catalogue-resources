@@ -76,10 +76,10 @@ mds_matrix_ont$study = ifelse(grepl("BLUEPRINT", mds_matrix_ont$study_qtlgroup),
 mds_matrix_ont$study = factor(mds_matrix_ont$study, levels=c("GTEx", "BLUEPRINT", NA))
 
 mds_plot_median_tpm = ggplot2::ggplot(mds_matrix_ont, ggplot2::aes(x = V1, y = -V2, label = study_qtlgroup)) +
-  ggplot2::geom_point(aes(color=tissue_fct)) +
+  ggplot2::geom_point(aes(color=tissue_fct), size = 3) +
   geom_point(aes(shape=study, size=study), fill=NA, data=mds_matrix_ont[!is.na(mds_matrix_ont$study),],) +
   scale_shape_manual(values=c(21,24))+
-  scale_size_manual(values=c(2,3))+
+  scale_size_manual(values=c(3,5))+
   ggplot2::labs(x="MDS Coordinate 1", y="MDS Coordinate 2") + 
   theme_light() +
   theme(panel.grid = element_blank()) + 
@@ -91,6 +91,7 @@ htmlwidgets::saveWidget(widget = plotly::as_widget(mds_plot_median_tpm_plot),
                         libdir = "dependencies")
 mds_plot_median_tpm
 ggsave("median_tpm_MDS.pdf", plot = mds_plot_median_tpm, width = 5, height = 3.1)
+ggsave("median_tpm_MDS2.pdf", plot = mds_plot_median_tpm, width = 6, height = 4)
 
 
 ```

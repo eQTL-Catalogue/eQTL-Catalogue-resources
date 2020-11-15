@@ -43,7 +43,7 @@ draw_plot = function(studies, legend_rows = 4, legend_x_pos = 0.5, legen_y_posit
     xlab("Cell type or tissue") + 
     ylab("Sample size") +
     theme_light() + 
-    theme(axis.text.x = element_text(angle = 30, vjust = 1, hjust=1, size = 10),
+    theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1, size = 8),
           panel.grid = element_blank(),
           legend.position=c(legend_x_pos, legen_y_position),
           legend.background = element_rect(colour="lightgrey", 
