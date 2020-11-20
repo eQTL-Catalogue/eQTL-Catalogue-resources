@@ -78,21 +78,19 @@ importTraitVariantPair <- function(molecular_trait_id, variant, ftp_path){
 }
 
 #Find all files
-ftp_list = list.files("/gpfs/hpc/projects/eQTLCatalogue/qtlmap/eQTL_Catalogue_r3_old/pipeline_out/sumstats/", pattern = "*exon.nominal.sorted.tsv.gz$")
-file_list = setNames(as.list(paste0("/gpfs/hpc/projects/eQTLCatalogue/qtlmap/eQTL_Catalogue_r3_old/pipeline_out/sumstats/", ftp_list)), ftp_list)
+ftp_list = list.files("/gpfs/hpc/projects/eQTLCatalogue/qtlmap/eQTL_Catalogue_r3/pipeline_out/sumstats/", pattern = "*exon.nominal.sorted.tsv.gz$")
+file_list = setNames(as.list(paste0("/gpfs/hpc/projects/eQTLCatalogue/qtlmap/eQTL_Catalogue_r3/pipeline_out/sumstats/", ftp_list)), ftp_list)
 
 #Extract effects
 results_df = purrr::map_df(file_list, ~importTraitVariantPair("ENSG00000113161.16_5_75355215_75355364", "chr5_75355259_A_G", .), .id = "file_name")
 write.table(results_df, "HMGCR_exon.tsv", sep = "\t", row.names = F, quote = F)
 
 #Find all files
-ftp_list = list.files("/gpfs/hpc/projects/eQTLCatalogue/qtlmap/eQTL_Catalogue_r3_old/pipeline_out/sumstats/", pattern = "*ge.nominal.sorted.tsv.gz$")
-file_list = setNames(as.list(paste0("/gpfs/hpc/projects/eQTLCatalogue/qtlmap/eQTL_Catalogue_r3_old/pipeline_out/sumstats/", ftp_list)), ftp_list)
+ftp_list = list.files("/gpfs/hpc/projects/eQTLCatalogue/qtlmap/eQTL_Catalogue_r3/pipeline_out/sumstats/", pattern = "*ge.nominal.sorted.tsv.gz$")
+file_list = setNames(as.list(paste0("/gpfs/hpc/projects/eQTLCatalogue/qtlmap/eQTL_Catalogue_r3/pipeline_out/sumstats/", ftp_list)), ftp_list)
 
 #Extract effects
 results_df = purrr::map_df(file_list, ~importTraitVariantPair("ENSG00000113161", "chr5_75355259_A_G", .), .id = "file_name")
 write.table(results_df, "HMGCR_gene.tsv", sep = "\t", row.names = F, quote = F)
-
-
 
 
