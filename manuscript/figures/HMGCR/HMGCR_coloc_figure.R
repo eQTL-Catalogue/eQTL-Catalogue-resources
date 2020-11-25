@@ -95,6 +95,13 @@ plt = ggplot(exon_effect_sizes, aes(x = study_qtlgroup, y = beta, ymin = beta - 
 
 ggsave("HMGCR_exon_forest.pdf", plot = plt, width = 8, height = 3)
 
+#Make plotly plot
+ggplotly_plot <- plotly::ggplotly(plt)
+htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
+                        file = "HMGCR_exon_forest.html",
+                        libdir = "dependencies")
+
+
 #Make gene expression effect size plots
 gene_effect_sizes = readr::read_tsv("HMGCR_gene.tsv")
 
@@ -117,7 +124,7 @@ plt = ggplot(gene_effect_sizes, aes(x = study_qtlgroup, y = beta, ymin = beta - 
   geom_errorbar(width = 0.1) + 
   xlab("Dataset") + 
   ylab("Effect size") +
-  ylim(c(-0.5, 2)) +
+  coord_cartesian(ylim = c(-0.5, 2)) +
   theme_light() +
   theme(axis.text.x = element_blank(),
         axis.ticks.x = element_blank(),
@@ -125,4 +132,57 @@ plt = ggplot(gene_effect_sizes, aes(x = study_qtlgroup, y = beta, ymin = beta - 
   geom_hline(yintercept = 0) 
 
 ggsave("HMGCR_gene_forest.pdf", plot = plt, width = 8, height = 3)
+
+#Make plotly plot
+ggplotly_plot <- plotly::ggplotly(plt)
+htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
+                        file = "HMGCR_gene_forest.html",
+                        libdir = "dependencies")
+
+
+
+
+#Make regional plot
+#bcftools view -r 5:74855259-75855259 LDLC.GRCh38.sorted.vcf.gz -Oz -o LDLC_HMGCR.vcf.gz
+# tabix GEUVADIS.LCL_exon.nominal.sorted.tsv.gz 5:74855259-75855259 > ~/GEUVADIS_HMGCR_exon.tsv
+
+eqtl_data = readr::read_tsv("GEUVADIS_HMGCR_exon2.tsv") %>%
+  dplyr::filter(molecular_trait_id == "ENSG00000113161.16_5_75355215_75355364") %>%
+  dplyr::mutate(z_score = beta/se) %>%
+  dplyr::select(position, z_score) %>%
+  dplyr::mutate(type = "HMGCR exon QTL")
+gwas_data = gwasvcf::query_gwas("LDLC_HMGCR.vcf.gz", chrompos = "5:74855259-75855259") %>% 
+  gwasvcf::vcf_to_granges() %>% 
+  as.data.frame() %>%
+  dplyr::as_tibble() %>%
+  dplyr::transmute(position = start, z_score = ES/SE, type = "LDL cholesterol")
+gwas_data_selected = dplyr::semi_join(gwas_data, eqtl_data, by = "position")
+
+joint_data = dplyr::bind_rows(eqtl_data, gwas_data)
+
+#Import exon QTL credible sets
+cs_exon = readr::read_tsv("ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/credible_sets/GEUVADIS.LCL_exon.purity_filtered.txt.gz") %>%
+  dplyr::filter(phenotype_id == "ENSG00000113161.16_5_75355215_75355364")
+
+#Flag the credible set in GWAS results
+gwas_flagged = dplyr::mutate(joint_data, in_cs = ifelse(position %in% cs_exon$pos, TRUE, FALSE)) %>%
+  dplyr::mutate(LP = 2*pnorm(-abs(z_score), log.p = T)) %>%
+  dplyr::mutate(type = factor(type, levels = c("LDL cholesterol","HMGCR exon QTL")))
+
+#Make manhattan plots
+manhattan = ggplot(gwas_flagged, aes(y = abs(z_score), x = position, color = in_cs)) + 
+  geom_point(size = 1) + 
+  facet_grid(type~., scales = "free_y") +
+  theme_bw() +
+  theme(panel.grid = element_blank()) +
+  xlab("Chromosome 2 position") + 
+  ylab("abs(z-score)") + 
+  scale_colour_manual(name = "group",
+                      values=c("black","red")) +
+  theme(legend.position = "none")
+ggsave("HMGCR_manhattan.pdf", plot = manhattan, width = 4, height = 3)
+
+hipsci_cs = readr::read_tsv("ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/credible_sets/HipSci.iPSC_exon.purity_filtered.txt.gz") %>%
+  dplyr::filter(phenotype_id == "ENSG00000113161.16_5_75355215_75355364")
+
 
