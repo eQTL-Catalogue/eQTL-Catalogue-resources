@@ -6,9 +6,9 @@ colocs = readr::read_tsv("merged_colocs.tsv") %>%
   dplyr::filter(qtl_subset != "qtl_subset") %>%
   dplyr::mutate(PP.H4.abf = as.numeric(PP.H4.abf),
                 PP.H3.abf = as.numeric(PP.H3.abf)) %>%
-  dplyr::mutate(quant = ifelse(colocs$qtl_subset %like% "_tx", "transcript", "gene")) %>%
-  dplyr::mutate(quant = ifelse(colocs$qtl_subset %like% "_txrev", "txrevise", quant)) %>%
-  dplyr::mutate(quant = ifelse(colocs$qtl_subset %like% "_exon", "exon", quant))
+  dplyr::mutate(quant = ifelse(qtl_subset %like% "_tx", "transcript", "gene")) %>%
+  dplyr::mutate(quant = ifelse(qtl_subset %like% "_txrev", "txrevise", quant)) %>%
+  dplyr::mutate(quant = ifelse(qtl_subset %like% "_exon", "exon", quant))
 
 
 plt = ggplot(colocs, aes(x = PP.H3.abf, y = PP.H4.abf, color = quant)) + 
@@ -43,6 +43,7 @@ plt = ggplot(exon_effect_sizes, aes(x = file_name, y = beta, ymin = beta - inter
         plot.margin = margin(1, 1, 1, 3, "cm"),panel.grid = element_blank(),)+
   geom_hline(yintercept = 0)
 
+ggsave("HMGCR_exon_forest.pdf", plot = plt, width = 8, height = 3)
 
 
 #Make gene expression effect size plots
@@ -65,5 +66,6 @@ plt = ggplot(gene_effect_sizes, aes(x = file_name, y = beta, ymin = beta - inter
         plot.margin = margin(1, 1, 1, 3, "cm"),panel.grid = element_blank(),)+
   geom_hline(yintercept = 0)
 
+ggsave("HMGCR_gene_forest.pdf", plot = plt, width = 8, height = 3)
 
 
