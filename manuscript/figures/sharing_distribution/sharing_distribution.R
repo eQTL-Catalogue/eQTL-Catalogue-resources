@@ -63,3 +63,18 @@ ggplotly_plot <- plotly::ggplotly(plt)
 htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
                         file = "sharing_distribution.html",
                         libdir = "dependencies")
+
+
+#Estimate sharing between bulk tissues
+a = dplyr::filter(df_sharing, tissue_fct == "other")
+other_sharing = dplyr::filter(a, dataset %in% a$dataset2) %>%
+  dplyr::filter(!(dataset %like% "fibroblast")) %>%
+  dplyr::filter(!(dataset2 %like% "fibroblast"))
+
+#Estimate sharing between LCLs
+a = dplyr::filter(df_sharing, tissue_fct == "LCL")
+lcl_sharing = dplyr::filter(a, dataset %in% a$dataset2) %>%
+  dplyr::filter(!(dataset %like% "fibroblast")) %>%
+  dplyr::filter(!(dataset2 %like% "fibroblast"))
+
+

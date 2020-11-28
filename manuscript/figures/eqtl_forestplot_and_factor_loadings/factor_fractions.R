@@ -35,3 +35,4 @@ plt = ggplot(fractions, aes(reorder(Factors, -Fraction), Fraction)) +
   theme_light() +
   xlab("Factors") +
   theme(axis.text.x = element_text(angle = 45, vjust=1, hjust=1), text = element_text(size=16), panel.grid = element_blank())
+ggsave("factor_assignment.png", plot = plt, width = 8.2, height = 4)
