@@ -19,14 +19,14 @@ save_ggplots <- function(plot, path = ".", filename = "unnamed_plot", height = 1
     dir.create(path = path, recursive = TRUE)
   }
 
-ggsave(plot = plot,
-       filename = paste0(filename, "_", width, "x", height, ".pdf"), 
-       path = path,
-       device = "pdf", 
-       height = height, 
-       width = width,
-       units = "cm",
-       dpi = 300)
+  ggsave(plot = plot,
+         filename = paste0(filename, "_", width, "x", height, ".pdf"), 
+         path = path,
+         device = "pdf", 
+         height = height, 
+         width = width,
+         units = "cm",
+         dpi = 300)
 }
 
 read_colocs_to_df <- function(file_dir, ...) {
@@ -44,7 +44,8 @@ read_colocs_to_df <- function(file_dir, ...) {
   return(dataset)
 }
 
-output_dir = paste0("../plots/", format(Sys.time(), "%d_%b_%Y"))
+# output_dir = paste0("../plots/", format(Sys.time(), "%d_%b_%Y"))
+output_dir = "coloc_plots"
 if (!dir.exists(paste0(output_dir, "/plotly"))) {
   dir.create(paste0(output_dir, "/plotly"), recursive = TRUE)
 }
@@ -153,20 +154,20 @@ for (gwasid in gwas_ids) {
   novel_ld_block_colocs <- novel_ld_block_colocs %>% rbind(colocs_in_novel_ld_blocks)
 }
 
-# write_tsv(novel_ld_block_colocs, "../data/TSVs/colocs_merged_R3/novel/novel_eqtlcat_colocs_in_novel_ldblocks.tsv")
+write_tsv(novel_ld_block_colocs, "novel_eqtlcat_colocs_in_novel_ldblocks_relative_to_GTExV8.tsv")
 ```
 
 ```{r}
-novel_ld_block_colocs$gwas_id %>% unique()
-novel_ld_block_colocs$qtl_subset %>% unique()
-
-novel_ld_block_colocs <- read_tsv("novel_eqtlcat_colocs_in_novel_ldblocks_relative_to_GTExV8.tsv")
-
-novel_ld_block_colocs %>% 
-  filter(gwas_id == "LC-ebi-a-GCST004627") %>% 
-  filter(qtl_subset == "BLUEPRINT_PE.T-cell_ge") %>% 
-  pull(ID_hg38) %>% 
-  unique()
+# novel_ld_block_colocs$gwas_id %>% unique()
+# novel_ld_block_colocs$qtl_subset %>% unique()
+# 
+# novel_ld_block_colocs <- read_tsv("novel_eqtlcat_colocs_in_novel_ldblocks_relative_to_GTExV8.tsv")
+# 
+# novel_ld_block_colocs %>% 
+#   filter(gwas_id == "LC-ebi-a-GCST004627") %>% 
+#   filter(qtl_subset == "BLUEPRINT_PE.T-cell_ge") %>% 
+#   pull(ID_hg38) %>% 
+#   unique()
 ```
 
 
@@ -201,7 +202,7 @@ temp_plot <- ggplot(gwas_colocs, aes(x = sample_size, y = n_unique_novel_ld_bloc
     theme(plot.title = element_text(size = 10)) +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
 temp_plot
-ggsave("LC_novel_coloc_plot.pdf", plot = temp_plot, width = 3, height = 3)
+ggsave("LC_novel_coloc_plot.pdf", plot = temp_plot, path = output_dir, width = 3, height = 3)
 ```
 
 Height scatter plot
@@ -235,7 +236,7 @@ temp_plot <- ggplot(gwas_colocs, aes(x = sample_size, y = n_unique_novel_ld_bloc
     theme(plot.title = element_text(size = 10)) +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
 temp_plot
-ggsave("Height_novel_coloc_plot.pdf", plot = temp_plot, width = 3, height = 3)
+ggsave("Height_novel_coloc_plot.pdf", plot = temp_plot, path = output_dir, width = 3, height = 3)
 ```
 
 
@@ -250,15 +251,15 @@ novel_ld_block_based_counts <- novel_ld_block_colocs %>% group_by(gwas_id, qtl_s
 for (gwasid in gwas_ids) {
   gwas_colocs = novel_ld_block_based_counts %>% filter(gwas_id == gwasid)
   zero_egene_qtlSubsets <- qtl_group_samplesizes[!qtl_group_samplesizes$qtl_subset %in% gwas_colocs$qtl_subset,] %>%
-    select(-sample_size, -novel_egene_count) %>% 
-    mutate(gwas_id = gwasid, n_colocs_in_novel_ld_blocks = 0, n_unique_novel_ld_blocks = 0) 
+    select(-sample_size, -novel_egene_count) %>%
+    mutate(gwas_id = gwasid, n_colocs_in_novel_ld_blocks = 0, n_unique_novel_ld_blocks = 0)
 
-  gwas_colocs <- gwas_colocs %>% rbind(zero_egene_qtlSubsets) %>% 
-    left_join(qtl_group_samplesizes %>% select(qtl_subset, sample_size)) %>% 
+  gwas_colocs <- gwas_colocs %>% rbind(zero_egene_qtlSubsets) %>%
+    left_join(qtl_group_samplesizes %>% select(qtl_subset, sample_size)) %>%
     left_join(qtlsubset_classes %>% select(qtl_subset, cell_type_class))
-  
+
   top <- gwas_colocs %>% arrange(-n_unique_novel_ld_blocks) %>% pull(n_unique_novel_ld_blocks)
-  
+
   # make scatter plots with repel labels
   temp_plot <- ggplot(gwas_colocs, aes(x = sample_size, y = n_unique_novel_ld_blocks, label=qtl_subset)) +
     # geom_rect(data = gwas_colocs, mapping=aes(xmin=0, xmax=150, ymin=0,ymax=Inf), fill = "darkred", alpha=0.2) +
@@ -271,23 +272,23 @@ for (gwasid in gwas_ids) {
       box.padding = unit(0.35, "lines"),
       point.padding = unit(0.3, "lines")
     ) +
-    ggplot2::labs(x="Dataset sample size", 
-                  y="Count of unique novel LD blocks from dataset", 
+    ggplot2::labs(x="Dataset sample size",
+                  y="Count of unique novel LD blocks from dataset",
                   title = paste0("Plot of the ", gwasid, " novel LD blocks counts\nwhen using eQTLCatalogue relative to GTExV8"),
-                  color = "Cell type class") + 
+                  color = "Cell type class") +
     theme(plot.title = element_text(size = 10))
-  
+
   save_ggplots(plot = temp_plot,
                filename = paste0(gwasid, ".novel_ld_blocks"),
-               path = paste0(output_dir, "/scatter_plots_LD_blocks/"), 
+               path = paste0(output_dir, "/scatter_plots_LD_blocks/"),
                width = 16, height = 12)
-  
+
   # make scatter plots without repel labels for plotly
   temp_plot <- ggplot(gwas_colocs, aes(x = sample_size, y = n_unique_novel_ld_blocks, label=qtl_subset)) +
     geom_point(aes(color = factor(qtl_subset)), show.legend = FALSE) + theme_light() +
     ggtitle(paste0("Plot of the ", gwasid, " novel LD blocks counts when using eQTLCatalogue relative to GTExV8")) +
     theme(plot.title = element_text(size = 10))
-  
+
   ggplotly_plot <- plotly::ggplotly(temp_plot)
   htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
                           file = file.path(normalizePath(paste0(output_dir, "/plotly")),
@@ -319,18 +320,18 @@ novel_ld_block_counts = novel_ld_block_based_counts_prop %>%
   mutate(n_common_ld_blocks = n_union_ld_blocks - n_distinct_gtex_ld_blocks - n_unique_novel_ld_blocks, 
          novel_ld_block_perc = paste0(round(100*n_unique_novel_ld_blocks/n_union_ld_blocks, digits = 2), "%"))
 
-# write_tsv(novel_ld_block_counts, "../data/TSVs/colocs_merged_R3/novel/novel_ld_blocks_counts.tsv")
+write_tsv(novel_ld_block_counts, "novel_ld_blocks_counts.tsv")
 
 novel_ld_block_counts_melted <- melt(novel_ld_block_counts %>% select(-n_colocs_in_novel_ld_blocks, -n_union_ld_blocks),
                                      id.vars=c("gwas_id","novel_ld_block_perc"))
 
-plot_distinct_counts <- ggplot(novel_ld_block_counts_melted, aes(fill=variable, y=value, x=gwas_id, label = novel_ld_block_perc)) + 
+plot_distinct_counts <- ggplot(novel_ld_block_counts_melted, aes(fill=variable, y=value, x=gwas_id, label = novel_ld_block_perc)) +
     geom_bar(position="stack", stat="identity") +
     scale_fill_viridis(discrete = T) +
     theme_light() +
-    ggplot2::labs(x="GWAS ID", 
-                  y="# of independent LD blocks", 
-                  title = "Proportion of novel independent LD blocks") + 
+    ggplot2::labs(x="GWAS ID",
+                  y="# of independent LD blocks",
+                  title = "Proportion of novel independent LD blocks") +
     theme(axis.text.x = element_text(angle = 90), ) + scale_y_continuous(limits = c(0,800))
 
 
@@ -340,14 +341,14 @@ htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
                         libdir = "dependencies")
 
 novel_ld_block_counts_melted$novel_ld_block_perc[novel_ld_block_counts_melted$variable != "n_unique_novel_ld_blocks"] <- NA
-plot_distinct_counts <- ggplot(novel_ld_block_counts_melted, aes(fill=variable, y=value, x=gwas_id, label = novel_ld_block_perc)) + 
+plot_distinct_counts <- ggplot(novel_ld_block_counts_melted, aes(fill=variable, y=value, x=gwas_id, label = novel_ld_block_perc)) +
     geom_bar(position="stack", stat="identity") +
     geom_text(aes(label=novel_ld_block_perc), vjust = -1, size = 2, position = "stack") +
     scale_fill_viridis(discrete = T) +
     theme_light() +
-    ggplot2::labs(x="GWAS ID", 
-                  y="# of independent LD blocks", 
-                  title = "Proportion of novel independent LD blocks") + 
+    ggplot2::labs(x="GWAS ID",
+                  y="# of independent LD blocks",
+                  title = "Proportion of novel independent LD blocks") +
     theme(axis.text.x = element_text(angle = 90), ) + scale_y_continuous(limits = c(0,800))
 
 save_ggplots(plot = plot_distinct_counts, path = paste0(output_dir, "/barplots"), filename = "novel_ld_blocks_proportions_new" , width = 20)
@@ -428,15 +429,15 @@ temp_plot_violin_notfilt_labeled <- temp_plot_violin_not_filter +
       aes(label = qtl_subset),
       size = 2,
       color = "black"
-    ) 
-save_ggplots(plot = temp_plot_violin_notfilt_labeled, 
-             path = paste0(output_dir, "/faceted_difference_violins/"), 
+    )
+save_ggplots(plot = temp_plot_violin_notfilt_labeled,
+             path = paste0(output_dir, "/faceted_difference_violins/"),
              filename = "GTExV8_vs_eQTLCatR3_violin_not_filter_labeled",width = 20)
 
-# ggplotly_plot <- plotly::ggplotly(temp_plot_violin)
-# htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
-#                         file = file.path(normalizePath(paste0(output_dir, "/plotly")), "violin_plots.html"),
-#                         libdir = "dependencies")
+ggplotly_plot <- plotly::ggplotly(temp_plot_violin)
+htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
+                        file = file.path(normalizePath(paste0(output_dir, "/plotly")), "violin_plots.html"),
+                        libdir = "dependencies")
 ```
 
 #Make filtered violin plot
@@ -473,7 +474,7 @@ temp_plot_violin <- ggplot(novel_ld_block_based_counts_all_gwas_filt,
     ggplot2::labs(x="Novel LD block count / sample size", 
                   y="GWAS") +
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
-ggsave("coloc_violin.pdf", plot = temp_plot_violin, width = 5, height = 6.5)
+ggsave("coloc_violin.pdf", plot = temp_plot_violin, path = output_dir, width = 5, height = 6.5)
 
 save_ggplots(plot = temp_plot_violin, 
              path = paste0(output_dir, "/faceted_difference_violins/"), 
@@ -496,28 +497,28 @@ save_ggplots(plot = temp_plot_violin_labeled,
 
 #Explore the CD40 locus
 ```{r}
-gtex = readr::read_tsv("GTExV8_sign_colocs.tsv")
-eqtl_catalogue = readr::read_tsv("eqtlCat_all_sign_colocs.tsv")
-
-#import all colocs for RA:
-txrevise <- read_colocs_to_df(file_dir = "../data/results_coloc_eQTLCatR3_txrev/coloc_results_merged/RA-ebi-a-GCST002318/", PP.H4.abf>=0.8)
-dplyr::filter(txrevise, molecular_trait_id %like% "ENSG00000143226")
-
-tx <- read_colocs_to_df(file_dir = "../data/results_coloc_eQTLCatR3_tx/coloc_results_merged/RA-ebi-a-GCST002318/", PP.H4.abf>=0.8)
-dplyr::filter(tx, molecular_trait_id %like% "ENSG00000143226")
-
-#Explore the credible set
-txrevise_cs = readr::read_tsv("../data/Alasoo_2018.macrophage_naive_txrev.purity_filtered.txt.gz")
-cs_variants = dplyr::filter(txrevise_cs, phenotype_id == "ENSG00000143226.grp_1.contained.ENST00000471026")
-write.table(cs_variants, "FCGR2A_cs_variants.tsv", sep = "\t", row.names = F, quote = F)
-
-#Import all variants from the locus
-locus_variants = readr::read_tsv("FCGR2A_locus_variants.txt", col_names = FALSE) %>%
-  dplyr::filter(X1 == "ENSG00000143226.grp_1.contained.ENST00000471026")
-locus_variants
-
-cs_variants2 = dplyr::filter(locus_variants, X6 %in% cs_variants$variant_id)
-write.table(cs_variants2, "FCGR2A_cs_variants.tsv", sep = "\t", row.names = F, quote = F)
+# gtex = readr::read_tsv("GTExV8_sign_colocs.tsv")
+# eqtl_catalogue = readr::read_tsv("eqtlCat_all_sign_colocs.tsv")
+# 
+# #import all colocs for RA:
+# txrevise <- read_colocs_to_df(file_dir = "../data/results_coloc_eQTLCatR3_txrev/coloc_results_merged/RA-ebi-a-GCST002318/", PP.H4.abf>=0.8)
+# dplyr::filter(txrevise, molecular_trait_id %like% "ENSG00000143226")
+# 
+# tx <- read_colocs_to_df(file_dir = "../data/results_coloc_eQTLCatR3_tx/coloc_results_merged/RA-ebi-a-GCST002318/", PP.H4.abf>=0.8)
+# dplyr::filter(tx, molecular_trait_id %like% "ENSG00000143226")
+# 
+# #Explore the credible set
+# txrevise_cs = readr::read_tsv("../data/Alasoo_2018.macrophage_naive_txrev.purity_filtered.txt.gz")
+# cs_variants = dplyr::filter(txrevise_cs, phenotype_id == "ENSG00000143226.grp_1.contained.ENST00000471026")
+# write.table(cs_variants, "FCGR2A_cs_variants.tsv", sep = "\t", row.names = F, quote = F)
+# 
+# #Import all variants from the locus
+# locus_variants = readr::read_tsv("FCGR2A_locus_variants.txt", col_names = FALSE) %>%
+#   dplyr::filter(X1 == "ENSG00000143226.grp_1.contained.ENST00000471026")
+# locus_variants
+# 
+# cs_variants2 = dplyr::filter(locus_variants, X6 %in% cs_variants$variant_id)
+# write.table(cs_variants2, "FCGR2A_cs_variants.tsv", sep = "\t", row.names = F, quote = F)
 
 ```
 
