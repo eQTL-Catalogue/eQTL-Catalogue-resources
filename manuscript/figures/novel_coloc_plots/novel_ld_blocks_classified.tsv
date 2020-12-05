@@ -377,69 +377,69 @@ LC-ebi-a-GCST004627	Schwartzentruber_2018.sensory_neuron_ge	0	0	98	FALSE	other	0
 LC-ebi-a-GCST004627	TwinsUK.skin_ge	0	0	370	TRUE	other	0	blood	LC
 LC-ebi-a-GCST004627	TwinsUK.blood_ge	0	0	195	TRUE	immune cell	0	blood	LC
 LC-ebi-a-GCST004627	van_de_Bunt_2015.pancreatic_islet_ge	0	0	117	TRUE	other	0	blood	LC
-LDLC	Alasoo_2018.macrophage_IFNg_ge	6	3	84	FALSE	immune cell	0.03571428571428571	blood	LDLC
-LDLC	Alasoo_2018.macrophage_IFNg+Salmonella_ge	5	2	84	FALSE	immune cell	0.023809523809523808	blood	LDLC
-LDLC	Alasoo_2018.macrophage_naive_ge	8	3	84	FALSE	immune cell	0.03571428571428571	blood	LDLC
-LDLC	Alasoo_2018.macrophage_Salmonella_ge	2	1	84	FALSE	immune cell	0.011904761904761904	blood	LDLC
-LDLC	BLUEPRINT_PE.T-cell_ge	13	5	167	FALSE	immune cell	0.029940119760479042	blood	LDLC
-LDLC	BLUEPRINT_SE.monocyte_ge	8	3	191	FALSE	immune cell	0.015706806282722512	blood	LDLC
-LDLC	BLUEPRINT_SE.neutrophil_ge	4	1	196	FALSE	immune cell	0.00510204081632653	blood	LDLC
-LDLC	BrainSeq.brain_ge	1	1	479	TRUE	other	0.0020876826722338203	blood	LDLC
-LDLC	FUSION.adipose_naive_ge	11	4	271	TRUE	other	0.014760147601476014	blood	LDLC
-LDLC	FUSION.muscle_naive_ge	3	1	288	TRUE	other	0.003472222222222222	blood	LDLC
-LDLC	GENCORD.LCL_ge	4	2	190	TRUE	immune cell	0.010526315789473684	blood	LDLC
-LDLC	GENCORD.T-cell_ge	3	1	184	FALSE	immune cell	0.005434782608695652	blood	LDLC
-LDLC	GEUVADIS.LCL_ge	10	5	445	TRUE	immune cell	0.011235955056179775	blood	LDLC
-LDLC	HipSci.iPSC_ge	8	4	322	FALSE	other	0.012422360248447204	blood	LDLC
-LDLC	Lepik_2017.blood_ge	14	5	471	TRUE	immune cell	0.010615711252653927	blood	LDLC
-LDLC	Nedelec_2016.macrophage_Listeria_ge	12	4	163	FALSE	immune cell	0.024539877300613498	blood	LDLC
-LDLC	Nedelec_2016.macrophage_naive_ge	11	4	163	FALSE	immune cell	0.024539877300613498	blood	LDLC
-LDLC	Nedelec_2016.macrophage_Salmonella_ge	2	2	167	FALSE	immune cell	0.011976047904191617	blood	LDLC
-LDLC	Quach_2016.monocyte_IAV_ge	8	3	198	FALSE	immune cell	0.015151515151515152	blood	LDLC
-LDLC	Quach_2016.monocyte_LPS_ge	12	4	184	FALSE	immune cell	0.021739130434782608	blood	LDLC
-LDLC	Quach_2016.monocyte_naive_ge	17	8	200	FALSE	immune cell	0.04	blood	LDLC
-LDLC	Quach_2016.monocyte_Pam3CSK4_ge	10	3	196	FALSE	immune cell	0.015306122448979591	blood	LDLC
-LDLC	Quach_2016.monocyte_R848_ge	7	3	191	FALSE	immune cell	0.015706806282722512	blood	LDLC
-LDLC	ROSMAP.brain_naive_ge	19	9	576	TRUE	other	0.015625	blood	LDLC
-LDLC	Schmiedel_2018.CD4_T-cell_naive_ge	12	3	88	FALSE	immune cell	0.03409090909090909	blood	LDLC
-LDLC	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	5	1	88	FALSE	immune cell	0.011363636363636364	blood	LDLC
-LDLC	Schmiedel_2018.CD8_T-cell_naive_ge	10	2	89	FALSE	immune cell	0.02247191011235955	blood	LDLC
-LDLC	Schmiedel_2018.monocyte_CD16_naive_ge	8	2	90	FALSE	immune cell	0.022222222222222223	blood	LDLC
-LDLC	Schmiedel_2018.monocyte_naive_ge	8	2	91	FALSE	immune cell	0.02197802197802198	blood	LDLC
-LDLC	Schmiedel_2018.NK-cell_naive_ge	3	1	90	FALSE	immune cell	0.011111111111111112	blood	LDLC
-LDLC	Schmiedel_2018.Tfh_memory_ge	3	1	89	FALSE	immune cell	0.011235955056179775	blood	LDLC
-LDLC	Schmiedel_2018.Th1_memory_ge	3	1	82	FALSE	immune cell	0.012195121951219513	blood	LDLC
-LDLC	Schmiedel_2018.Th1-17_memory_ge	2	1	88	FALSE	immune cell	0.011363636363636364	blood	LDLC
-LDLC	Schmiedel_2018.Th17_memory_ge	6	2	89	FALSE	immune cell	0.02247191011235955	blood	LDLC
-LDLC	Schmiedel_2018.Th2_memory_ge	1	1	89	FALSE	immune cell	0.011235955056179775	blood	LDLC
-LDLC	Schmiedel_2018.Treg_naive_ge	3	1	89	FALSE	immune cell	0.011235955056179775	blood	LDLC
-LDLC	TwinsUK.blood_ge	8	2	195	TRUE	immune cell	0.010256410256410256	blood	LDLC
-LDLC	TwinsUK.fat_ge	11	7	381	TRUE	other	0.01837270341207349	blood	LDLC
-LDLC	TwinsUK.LCL_ge	16	9	418	TRUE	immune cell	0.0215311004784689	blood	LDLC
-LDLC	TwinsUK.skin_ge	2	2	370	TRUE	other	0.005405405405405406	blood	LDLC
-LDLC	CEDAR.T-cell_CD8	0	0	277	FALSE	immune cell	0	blood	LDLC
-LDLC	CEDAR.T-cell_CD4	0	0	290	FALSE	immune cell	0	blood	LDLC
-LDLC	CEDAR.transverse_colon	0	0	286	TRUE	other	0	blood	LDLC
-LDLC	CEDAR.monocyte_CD14	0	0	286	FALSE	immune cell	0	blood	LDLC
-LDLC	CEDAR.neutrophil_CD15	0	0	280	FALSE	immune cell	0	blood	LDLC
-LDLC	CEDAR.platelet	0	0	205	FALSE	immune cell	0	blood	LDLC
-LDLC	CEDAR.rectum	0	0	271	FALSE	other	0	blood	LDLC
-LDLC	CEDAR.B-cell_CD19	0	0	262	FALSE	immune cell	0	blood	LDLC
-LDLC	CEDAR.ileum	0	0	180	TRUE	other	0	blood	LDLC
-LDLC	Fairfax_2012.B-cell_CD19	0	0	281	FALSE	immune cell	0	blood	LDLC
-LDLC	Fairfax_2014.monocyte_naive	0	0	420	FALSE	immune cell	0	blood	LDLC
-LDLC	Fairfax_2014.monocyte_IFN24	0	0	370	FALSE	immune cell	0	blood	LDLC
-LDLC	Fairfax_2014.monocyte_LPS2	0	0	256	FALSE	immune cell	0	blood	LDLC
-LDLC	Fairfax_2014.monocyte_LPS24	0	0	325	FALSE	immune cell	0	blood	LDLC
-LDLC	GENCORD.fibroblast_ge	0	0	186	TRUE	immune cell	0	blood	LDLC
-LDLC	Kasela_2017.T-cell_CD4	0	0	280	FALSE	immune cell	0	blood	LDLC
-LDLC	Kasela_2017.T-cell_CD8	0	0	269	FALSE	immune cell	0	blood	LDLC
-LDLC	Naranbhai_2015.neutrophil_CD16	0	0	93	FALSE	immune cell	0	blood	LDLC
-LDLC	Schmiedel_2018.Treg_memory_ge	0	0	89	FALSE	immune cell	0	blood	LDLC
-LDLC	Schmiedel_2018.B-cell_naive_ge	0	0	91	FALSE	immune cell	0	blood	LDLC
-LDLC	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	0	0	89	FALSE	immune cell	0	blood	LDLC
-LDLC	Schwartzentruber_2018.sensory_neuron_ge	0	0	98	FALSE	other	0	blood	LDLC
-LDLC	van_de_Bunt_2015.pancreatic_islet_ge	0	0	117	TRUE	other	0	blood	LDLC
+LDLC	Alasoo_2018.macrophage_IFNg_ge	6	3	84	FALSE	immune cell	0.03571428571428571	non-immune	LDLC
+LDLC	Alasoo_2018.macrophage_IFNg+Salmonella_ge	5	2	84	FALSE	immune cell	0.023809523809523808	non-immune	LDLC
+LDLC	Alasoo_2018.macrophage_naive_ge	8	3	84	FALSE	immune cell	0.03571428571428571	non-immune	LDLC
+LDLC	Alasoo_2018.macrophage_Salmonella_ge	2	1	84	FALSE	immune cell	0.011904761904761904	non-immune	LDLC
+LDLC	BLUEPRINT_PE.T-cell_ge	13	5	167	FALSE	immune cell	0.029940119760479042	non-immune	LDLC
+LDLC	BLUEPRINT_SE.monocyte_ge	8	3	191	FALSE	immune cell	0.015706806282722512	non-immune	LDLC
+LDLC	BLUEPRINT_SE.neutrophil_ge	4	1	196	FALSE	immune cell	0.00510204081632653	non-immune	LDLC
+LDLC	BrainSeq.brain_ge	1	1	479	TRUE	other	0.0020876826722338203	non-immune	LDLC
+LDLC	FUSION.adipose_naive_ge	11	4	271	TRUE	other	0.014760147601476014	non-immune	LDLC
+LDLC	FUSION.muscle_naive_ge	3	1	288	TRUE	other	0.003472222222222222	non-immune	LDLC
+LDLC	GENCORD.LCL_ge	4	2	190	TRUE	immune cell	0.010526315789473684	non-immune	LDLC
+LDLC	GENCORD.T-cell_ge	3	1	184	FALSE	immune cell	0.005434782608695652	non-immune	LDLC
+LDLC	GEUVADIS.LCL_ge	10	5	445	TRUE	immune cell	0.011235955056179775	non-immune	LDLC
+LDLC	HipSci.iPSC_ge	8	4	322	FALSE	other	0.012422360248447204	non-immune	LDLC
+LDLC	Lepik_2017.blood_ge	14	5	471	TRUE	immune cell	0.010615711252653927	non-immune	LDLC
+LDLC	Nedelec_2016.macrophage_Listeria_ge	12	4	163	FALSE	immune cell	0.024539877300613498	non-immune	LDLC
+LDLC	Nedelec_2016.macrophage_naive_ge	11	4	163	FALSE	immune cell	0.024539877300613498	non-immune	LDLC
+LDLC	Nedelec_2016.macrophage_Salmonella_ge	2	2	167	FALSE	immune cell	0.011976047904191617	non-immune	LDLC
+LDLC	Quach_2016.monocyte_IAV_ge	8	3	198	FALSE	immune cell	0.015151515151515152	non-immune	LDLC
+LDLC	Quach_2016.monocyte_LPS_ge	12	4	184	FALSE	immune cell	0.021739130434782608	non-immune	LDLC
+LDLC	Quach_2016.monocyte_naive_ge	17	8	200	FALSE	immune cell	0.04	non-immune	LDLC
+LDLC	Quach_2016.monocyte_Pam3CSK4_ge	10	3	196	FALSE	immune cell	0.015306122448979591	non-immune	LDLC
+LDLC	Quach_2016.monocyte_R848_ge	7	3	191	FALSE	immune cell	0.015706806282722512	non-immune	LDLC
+LDLC	ROSMAP.brain_naive_ge	19	9	576	TRUE	other	0.015625	non-immune	LDLC
+LDLC	Schmiedel_2018.CD4_T-cell_naive_ge	12	3	88	FALSE	immune cell	0.03409090909090909	non-immune	LDLC
+LDLC	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	5	1	88	FALSE	immune cell	0.011363636363636364	non-immune	LDLC
+LDLC	Schmiedel_2018.CD8_T-cell_naive_ge	10	2	89	FALSE	immune cell	0.02247191011235955	non-immune	LDLC
+LDLC	Schmiedel_2018.monocyte_CD16_naive_ge	8	2	90	FALSE	immune cell	0.022222222222222223	non-immune	LDLC
+LDLC	Schmiedel_2018.monocyte_naive_ge	8	2	91	FALSE	immune cell	0.02197802197802198	non-immune	LDLC
+LDLC	Schmiedel_2018.NK-cell_naive_ge	3	1	90	FALSE	immune cell	0.011111111111111112	non-immune	LDLC
+LDLC	Schmiedel_2018.Tfh_memory_ge	3	1	89	FALSE	immune cell	0.011235955056179775	non-immune	LDLC
+LDLC	Schmiedel_2018.Th1_memory_ge	3	1	82	FALSE	immune cell	0.012195121951219513	non-immune	LDLC
+LDLC	Schmiedel_2018.Th1-17_memory_ge	2	1	88	FALSE	immune cell	0.011363636363636364	non-immune	LDLC
+LDLC	Schmiedel_2018.Th17_memory_ge	6	2	89	FALSE	immune cell	0.02247191011235955	non-immune	LDLC
+LDLC	Schmiedel_2018.Th2_memory_ge	1	1	89	FALSE	immune cell	0.011235955056179775	non-immune	LDLC
+LDLC	Schmiedel_2018.Treg_naive_ge	3	1	89	FALSE	immune cell	0.011235955056179775	non-immune	LDLC
+LDLC	TwinsUK.blood_ge	8	2	195	TRUE	immune cell	0.010256410256410256	non-immune	LDLC
+LDLC	TwinsUK.fat_ge	11	7	381	TRUE	other	0.01837270341207349	non-immune	LDLC
+LDLC	TwinsUK.LCL_ge	16	9	418	TRUE	immune cell	0.0215311004784689	non-immune	LDLC
+LDLC	TwinsUK.skin_ge	2	2	370	TRUE	other	0.005405405405405406	non-immune	LDLC
+LDLC	CEDAR.T-cell_CD8	0	0	277	FALSE	immune cell	0	non-immune	LDLC
+LDLC	CEDAR.T-cell_CD4	0	0	290	FALSE	immune cell	0	non-immune	LDLC
+LDLC	CEDAR.transverse_colon	0	0	286	TRUE	other	0	non-immune	LDLC
+LDLC	CEDAR.monocyte_CD14	0	0	286	FALSE	immune cell	0	non-immune	LDLC
+LDLC	CEDAR.neutrophil_CD15	0	0	280	FALSE	immune cell	0	non-immune	LDLC
+LDLC	CEDAR.platelet	0	0	205	FALSE	immune cell	0	non-immune	LDLC
+LDLC	CEDAR.rectum	0	0	271	FALSE	other	0	non-immune	LDLC
+LDLC	CEDAR.B-cell_CD19	0	0	262	FALSE	immune cell	0	non-immune	LDLC
+LDLC	CEDAR.ileum	0	0	180	TRUE	other	0	non-immune	LDLC
+LDLC	Fairfax_2012.B-cell_CD19	0	0	281	FALSE	immune cell	0	non-immune	LDLC
+LDLC	Fairfax_2014.monocyte_naive	0	0	420	FALSE	immune cell	0	non-immune	LDLC
+LDLC	Fairfax_2014.monocyte_IFN24	0	0	370	FALSE	immune cell	0	non-immune	LDLC
+LDLC	Fairfax_2014.monocyte_LPS2	0	0	256	FALSE	immune cell	0	non-immune	LDLC
+LDLC	Fairfax_2014.monocyte_LPS24	0	0	325	FALSE	immune cell	0	non-immune	LDLC
+LDLC	GENCORD.fibroblast_ge	0	0	186	TRUE	immune cell	0	non-immune	LDLC
+LDLC	Kasela_2017.T-cell_CD4	0	0	280	FALSE	immune cell	0	non-immune	LDLC
+LDLC	Kasela_2017.T-cell_CD8	0	0	269	FALSE	immune cell	0	non-immune	LDLC
+LDLC	Naranbhai_2015.neutrophil_CD16	0	0	93	FALSE	immune cell	0	non-immune	LDLC
+LDLC	Schmiedel_2018.Treg_memory_ge	0	0	89	FALSE	immune cell	0	non-immune	LDLC
+LDLC	Schmiedel_2018.B-cell_naive_ge	0	0	91	FALSE	immune cell	0	non-immune	LDLC
+LDLC	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	0	0	89	FALSE	immune cell	0	non-immune	LDLC
+LDLC	Schwartzentruber_2018.sensory_neuron_ge	0	0	98	FALSE	other	0	non-immune	LDLC
+LDLC	van_de_Bunt_2015.pancreatic_islet_ge	0	0	117	TRUE	other	0	non-immune	LDLC
 MC-ebi-a-GCST004625	Alasoo_2018.macrophage_IFNg_ge	1	1	84	FALSE	immune cell	0.011904761904761904	blood	MC
 MC-ebi-a-GCST004625	Alasoo_2018.macrophage_naive_ge	2	1	84	FALSE	immune cell	0.011904761904761904	blood	MC
 MC-ebi-a-GCST004625	BLUEPRINT_PE.T-cell_ge	1	1	167	FALSE	immune cell	0.005988023952095809	blood	MC

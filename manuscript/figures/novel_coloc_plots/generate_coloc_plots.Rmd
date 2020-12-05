@@ -341,7 +341,9 @@ htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
                         libdir = "dependencies")
 
 novel_ld_block_counts_melted$novel_ld_block_perc[novel_ld_block_counts_melted$variable != "n_unique_novel_ld_blocks"] <- NA
-plot_distinct_counts <- ggplot(novel_ld_block_counts_melted, aes(fill=variable, y=value, x=gwas_id, label = novel_ld_block_perc)) +
+novel_ld_block_counts_melted = tidyr::separate(novel_ld_block_counts_melted, gwas_id, c("gwas_label", "other"), sep = "-", remove =F)
+
+plot_distinct_counts <- ggplot(novel_ld_block_counts_melted, aes(fill=variable, y=value, x=gwas_label, label = novel_ld_block_perc)) +
     geom_bar(position="stack", stat="identity") +
     geom_text(aes(label=novel_ld_block_perc), vjust = -1, size = 2, position = "stack") +
     scale_fill_viridis(discrete = T) +
@@ -351,7 +353,9 @@ plot_distinct_counts <- ggplot(novel_ld_block_counts_melted, aes(fill=variable, 
                   title = "Proportion of novel independent LD blocks") +
     theme(axis.text.x = element_text(angle = 90), ) + scale_y_continuous(limits = c(0,800))
 
-save_ggplots(plot = plot_distinct_counts, path = paste0(output_dir, "/barplots"), filename = "novel_ld_blocks_proportions_new" , width = 20)
+ggsave("coloc_plots/novel_LD_blocks.png", plot = plot_distinct_counts, width = 7, height = 4)
+
+#save_ggplots(plot = plot_distinct_counts, path = paste0(output_dir, "/barplots"), filename = "novel_ld_blocks_proportions_new" , width = 20)
 ```
 
 ```{r}

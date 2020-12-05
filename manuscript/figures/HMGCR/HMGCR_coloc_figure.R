@@ -146,7 +146,7 @@ htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
 #bcftools view -r 5:74855259-75855259 LDLC.GRCh38.sorted.vcf.gz -Oz -o LDLC_HMGCR.vcf.gz
 # tabix GEUVADIS.LCL_exon.nominal.sorted.tsv.gz 5:74855259-75855259 > ~/GEUVADIS_HMGCR_exon.tsv
 
-eqtl_data = readr::read_tsv("GEUVADIS_HMGCR_exon2.tsv") %>%
+eqtl_data = readr::read_tsv("HipSci_HMGCR_exon.tsv") %>%
   dplyr::filter(molecular_trait_id == "ENSG00000113161.16_5_75355215_75355364") %>%
   dplyr::mutate(z_score = beta/se) %>%
   dplyr::select(position, z_score) %>%
@@ -161,12 +161,12 @@ gwas_data_selected = dplyr::semi_join(gwas_data, eqtl_data, by = "position")
 joint_data = dplyr::bind_rows(eqtl_data, gwas_data)
 
 #Import exon QTL credible sets
-cs_exon = readr::read_tsv("ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/credible_sets/GEUVADIS.LCL_exon.purity_filtered.txt.gz") %>%
+cs_exon = readr::read_tsv("ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/credible_sets/HipSci.iPSC_exon.purity_filtered.txt.gz") %>%
   dplyr::filter(phenotype_id == "ENSG00000113161.16_5_75355215_75355364")
 
 #Flag the credible set in GWAS results
 gwas_flagged = dplyr::mutate(joint_data, in_cs = ifelse(position %in% cs_exon$pos, TRUE, FALSE)) %>%
-  dplyr::mutate(LP = 2*pnorm(-abs(z_score), log.p = T)) %>%
+  dplyr::mutate(LP = (2*pnorm(-abs(z_score), log.p = T))/log(10)) %>%
   dplyr::mutate(type = factor(type, levels = c("LDL cholesterol","HMGCR exon QTL")))
 
 #Make manhattan plots
@@ -182,7 +182,42 @@ manhattan = ggplot(gwas_flagged, aes(y = abs(z_score), x = position, color = in_
   theme(legend.position = "none")
 ggsave("HMGCR_manhattan.pdf", plot = manhattan, width = 4, height = 3)
 
-hipsci_cs = readr::read_tsv("ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/credible_sets/HipSci.iPSC_exon.purity_filtered.txt.gz") %>%
-  dplyr::filter(phenotype_id == "ENSG00000113161.16_5_75355215_75355364")
+
+#Make the same plot for gene expression
+eqtl_data = readr::read_tsv("FUSION_muscle_HMGCR_gene.tsv") %>%
+  dplyr::filter(molecular_trait_id == "ENSG00000113161") %>%
+  dplyr::mutate(z_score = beta/se) %>%
+  dplyr::select(position, z_score) %>%
+  dplyr::mutate(type = "HMGCR eQTL")
+gwas_data = gwasvcf::query_gwas("LDLC_HMGCR.vcf.gz", chrompos = "5:74855259-75855259") %>% 
+  gwasvcf::vcf_to_granges() %>% 
+  as.data.frame() %>%
+  dplyr::as_tibble() %>%
+  dplyr::transmute(position = start, z_score = ES/SE, type = "LDL cholesterol")
+gwas_data_selected = dplyr::semi_join(gwas_data, eqtl_data, by = "position")
+
+joint_data = dplyr::bind_rows(eqtl_data, gwas_data)
+
+#Import exon QTL credible sets
+cs_exon = readr::read_tsv("ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/credible_sets/FUSION.muscle_naive_ge.purity_filtered.txt.gz") %>%
+  dplyr::filter(phenotype_id == "ENSG00000113161")
+
+#Flag the credible set in GWAS results
+gwas_flagged = dplyr::mutate(joint_data, in_cs = ifelse(position %in% cs_exon$pos, TRUE, FALSE)) %>%
+  dplyr::mutate(LP = (2*pnorm(-abs(z_score), log.p = T))/log(10)) %>%
+  dplyr::mutate(type = factor(type, levels = c("LDL cholesterol","HMGCR eQTL")))
+
+#Make manhattan plots
+manhattan = ggplot(gwas_flagged, aes(y = abs(z_score), x = position, color = in_cs)) + 
+  geom_point(size = 1) + 
+  facet_grid(type~., scales = "free_y") +
+  theme_bw() +
+  theme(panel.grid = element_blank()) +
+  xlab("Chromosome 2 position") + 
+  ylab("abs(z-score)") + 
+  scale_colour_manual(name = "group",
+                      values=c("black","red")) +
+  theme(legend.position = "none")
+ggsave("HMGCR_manhattan_FUSION.png", plot = manhattan, width = 4, height = 3)
 
 
