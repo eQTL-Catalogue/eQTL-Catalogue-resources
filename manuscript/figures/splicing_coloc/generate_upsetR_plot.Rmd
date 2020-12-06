@@ -1,0 +1,324 @@
+
+```{r}
+message(" ## Loading libraries: dplyr, readr, coloc, GenomicRanges, Rsamtools, optparse")
+suppressPackageStartupMessages(library("dplyr"))
+suppressPackageStartupMessages(library("readr"))
+suppressPackageStartupMessages(library("coloc"))
+suppressPackageStartupMessages(library("GenomicRanges"))
+suppressPackageStartupMessages(library("Rsamtools"))
+suppressPackageStartupMessages(library("optparse"))
+library(plotly)
+library(reshape2)
+library(viridis)
+library(hrbrthemes)
+library(ggrepel)
+library(ggpubr)
+library(UpSetR)
+
+save_ggplots <- function(plot, path = ".", filename = "unnamed_plot", height = 15, width = 15){
+  if (!dir.exists(path)) {
+    dir.create(path = path, recursive = TRUE)
+  }
+
+  ggsave(plot = plot,
+         filename = paste0(filename, "_", width, "x", height, ".pdf"), 
+         path = path,
+         device = "pdf", 
+         height = height, 
+         width = width,
+         units = "cm",
+         dpi = 300)
+}
+
+read_colocs_to_df <- function(file_dir, ...) {
+  file_list <- list.files(file_dir, recursive = TRUE ,full.names = TRUE)
+  dataset = data.frame()
+  
+  for (file in file_list){
+    print(file)    
+  
+    # if the merged dataset does exist, append to it
+    temp_dataset <-read_tsv(file, trim_ws = TRUE)
+    temp_dataset <- temp_dataset %>% dplyr::filter(...)
+    dataset<-rbind(dataset, temp_dataset)
+  }
+  return(dataset)
+}
+
+output_dir = paste0("../plots/", format(Sys.time(), "%d_%b_%Y"), "_upsetR")
+if (!dir.exists(paste0(output_dir, "/plotly"))) {
+  dir.create(paste0(output_dir, "/plotly"), recursive = TRUE)
+}
+```
+
+First we read necessary data and metadata files and do the preliminary joining operations
+```{r}
+# read all the necessary coloc data
+# eqtlCat_rnaseq_sign_colocs_ge <- read_tsv("../data/TSVs/colocs_merged_R3/eqtlCat_all_sign_colocs.tsv")
+
+eqtlCat_rnaseq_sign_colocs_ge <- read_colocs_to_df(file_dir = "../data/coloc_results/results_coloc_eQTLCatR3_rnaseq_16Sept2020/",
+                                                   PP.H4.abf>=0.8)
+eqtlCat_rnaseq_sign_colocs_tx <- read_colocs_to_df(file_dir = "../data/coloc_results/results_coloc_eQTLCatR3_tx/coloc_results_merged/",
+                                                   PP.H4.abf>=0.8)
+eqtlCat_rnaseq_sign_colocs_txrev <- read_colocs_to_df(file_dir = "../data/coloc_results/results_coloc_eQTLCatR3_txrev/coloc_results_merged/",
+                                                   PP.H4.abf>=0.8)
+eqtlCat_rnaseq_sign_colocs_exon <- read_colocs_to_df(file_dir = "../data/coloc_results/results_coloc_eQTLCatR3_exon/coloc_results_merged/",
+                                                   PP.H4.abf>=0.8)
+
+# filter out some GWAS related colocs
+eqtlCat_rnaseq_sign_colocs_ge <- eqtlCat_rnaseq_sign_colocs_ge %>% filter(!gwas_id %in% c("RA-ieu-a-833", "HPT-ukb-a-531")) 
+eqtlCat_rnaseq_sign_colocs_tx <- eqtlCat_rnaseq_sign_colocs_tx %>% filter(!gwas_id %in% c("RA-ieu-a-833", "HPT-ukb-a-531")) 
+eqtlCat_rnaseq_sign_colocs_txrev <- eqtlCat_rnaseq_sign_colocs_txrev %>% filter(!gwas_id %in% c("RA-ieu-a-833", "HPT-ukb-a-531")) 
+eqtlCat_rnaseq_sign_colocs_exon <- eqtlCat_rnaseq_sign_colocs_exon %>% filter(!gwas_id %in% c("RA-ieu-a-833", "HPT-ukb-a-531")) 
+
+tx_pheno_meta <- read_tsv("../data/phenotype_metadata/transcript_usage_Ensembl_96_phenotype_metadata.tsv.gz") %>% select(phenotype_id, gene_id)
+eqtlCat_rnaseq_sign_colocs_tx_geneid <- 
+  left_join(eqtlCat_rnaseq_sign_colocs_tx, tx_pheno_meta , by = c("molecular_trait_id" = "phenotype_id"))
+
+txrev_pheno_meta <- read_tsv("../data/phenotype_metadata/txrevise_Ensembl_96_phenotype_metadata.tsv.gz") %>% select(phenotype_id, gene_id)
+eqtlCat_rnaseq_sign_colocs_txrev_geneid <- 
+  left_join(eqtlCat_rnaseq_sign_colocs_txrev, txrev_pheno_meta , by = c("molecular_trait_id" = "phenotype_id"))
+
+exon_pheno_meta <- read_tsv("../data/phenotype_metadata/exon_counts_Ensembl_96_phenotype_metadata.tsv.gz", col_types = "cccccddccccddn") %>% 
+  select(phenotype_id, gene_id)
+eqtlCat_rnaseq_sign_colocs_exon_geneid <- 
+  left_join(eqtlCat_rnaseq_sign_colocs_exon, exon_pheno_meta , by = c("molecular_trait_id" = "phenotype_id"))
+
+eqtlCat_rnaseq_sign_colocs_ge$gene_id <- eqtlCat_rnaseq_sign_colocs_ge$molecular_trait_id
+
+# read other metadata files needed for analysis
+# qtl_group_samplesizes <- read_tsv("../data/TSVs/qtl_group_samplesizes.tsv")
+ld_blocks <-  read_tsv("../data/ind_regions_Hg38.bed")
+
+# novel_ld_blocks_ge <- read_tsv("../data/TSVs/colocs_merged_R3/novel/novel_eqtlcat_colocs_in_novel_ldblocks.tsv")
+GTExV8_sign_colocs_ge <- read_tsv("../data/TSVs/colocs_merged_R3/GTExV8_sign_colocs.tsv.gz")
+
+```
+
+```{r}
+# this is only if microarray studied are needed
+
+# eqtlCat_ma_sign_colocs <- read_colocs_to_df(file_dir = "../data/coloc_results/results_coloc_eQTLCatR3_microarray_15Sept2020/", PP.H4.abf>=0.8)
+# 
+# eqtlCat_ma_sign_colocs <- eqtlCat_ma_sign_colocs %>% filter(!gwas_id %in% c("RA-ieu-a-833", "HPT-ukb-a-531")) 
+# # replace probeIDs with geneIDs in microarray colocs
+# ma_pheno_meta <- read_tsv("../data/phenotype_metadata/HumanHT-12_V4_Ensembl_96_phenotype_metadata.tsv.gz") %>%
+#   select(phenotype_id, gene_id)
+# colnames(ma_pheno_meta) <- c("molecular_trait_id", "gene_id")
+# 
+# eqtlCat_ma_sign_colocs_replaced <- eqtlCat_ma_sign_colocs %>%
+#   left_join(ma_pheno_meta) %>%
+#   mutate(molecular_trait_id = gene_id) %>%
+#   select(-gene_id)
+# 
+# eqtlCat_ma_sign_colocs_replaced$gene_id <- eqtlCat_ma_sign_colocs_replaced$molecular_trait_id
+# 
+# # row binf rnaseq and microarray colocs into one df
+# eqtlCat_all_sign_colocs_ge <- rbind(eqtlCat_rnaseq_sign_colocs_ge, eqtlCat_ma_sign_colocs_replaced)
+
+
+```
+
+```{r}
+extract_novel_ld_blocks <- function(GTExV8_sign_colocs, eqtlCat_all_sign_colocs)  {
+  gwas_ids <- GTExV8_sign_colocs %>% 
+    filter(gwas_id != "RA-ieu-a-833") %>% 
+    pull(gwas_id) %>% unique()
+  
+  distinct_eqtlcat_egenes <- list()
+  distinct_gtex_egenes <- list()
+  union_egenes_gwas <- list()
+  uniq_eqtlcat_egenes_gwas <- list()
+  
+  df_novel_eqtlcat_colocs <- data.frame()
+  for (gwasid in gwas_ids) {
+    eqtl_cat_colocs_by_gwas = eqtlCat_all_sign_colocs %>% filter(gwas_id == gwasid)
+    uniq_eqtlcat_egenes <- eqtl_cat_colocs_by_gwas %>% pull(gene_id) %>% unique() 
+    uniq_gtex_egenes <- GTExV8_sign_colocs %>% filter(gwas_id == gwasid) %>% pull(molecular_trait_id) %>% unique() 
+    
+    common_egenes <- intersect(uniq_eqtlcat_egenes, uniq_gtex_egenes)
+    distinct_eqtlcat_egenes[[gwasid]] <- uniq_eqtlcat_egenes[!uniq_eqtlcat_egenes %in% common_egenes]
+    distinct_gtex_egenes[[gwasid]] <- uniq_gtex_egenes[!uniq_gtex_egenes %in% common_egenes]
+    union_egenes_gwas[[gwasid]] <- union(uniq_eqtlcat_egenes, uniq_gtex_egenes)
+    
+    eqtl_cat_distinct_colocs_by_gwas <- eqtl_cat_colocs_by_gwas %>% filter(gene_id %in% distinct_eqtlcat_egenes[[gwasid]])
+    df_novel_eqtlcat_colocs <- rbind(df_novel_eqtlcat_colocs, eqtl_cat_distinct_colocs_by_gwas)
+  }
+  
+  distinct_eqtlcat_ld_blocks <- list()
+  distinct_gtex_ld_blocks <- list()
+  union_ld_blocks <- list()
+  
+  novel_ld_block_colocs <- data.frame()
+  
+  for (gwasid in gwas_ids) {
+    eqtl_cat_novel_colocs_by_gwas <- df_novel_eqtlcat_colocs %>% filter(gwas_id == gwasid)
+    gtex_colocs_by_gwas <- GTExV8_sign_colocs %>% filter(gwas_id == gwasid)
+    
+    # merge according to chromosome, start and end positions
+    gtex_merged = sqldf::sqldf("
+      SELECT *
+      FROM gtex_colocs_by_gwas d1 JOIN ld_blocks d2
+      ON d1.chromosome = d2.chr
+      AND d1.position >= d2.start
+      AND d1.position <= d2.end")
+    
+    gtex_unique_ld_blocks <- gtex_merged %>% pull(ID_hg38) %>% unique()
+    
+    eqtlcat_merged = sqldf::sqldf("
+      SELECT *
+      FROM eqtl_cat_novel_colocs_by_gwas d1 JOIN ld_blocks d2
+      ON d1.chromosome = d2.chr
+      AND d1.position >= d2.start
+      AND d1.position <= d2.end")
+    
+    eqtlcat_unique_ld_blocks <- eqtlcat_merged %>% pull(ID_hg38) %>% unique()
+      
+    common_ld_blocks <- intersect(gtex_unique_ld_blocks, eqtlcat_unique_ld_blocks)
+    distinct_eqtlcat_ld_blocks[[gwasid]] <- eqtlcat_unique_ld_blocks[!eqtlcat_unique_ld_blocks %in% common_ld_blocks]
+    distinct_gtex_ld_blocks[[gwasid]] <- gtex_unique_ld_blocks[!gtex_unique_ld_blocks %in% common_ld_blocks]
+    union_ld_blocks[[gwasid]] <- union(eqtlcat_unique_ld_blocks, gtex_unique_ld_blocks)
+    
+    colocs_in_novel_ld_blocks <- eqtlcat_merged %>% 
+      filter(ID_hg38 %in% distinct_eqtlcat_ld_blocks[[gwasid]]) %>%
+      select(-chr,-start,-end, -ID_hg19)
+    
+    novel_ld_block_colocs <- novel_ld_block_colocs %>% rbind(colocs_in_novel_ld_blocks)
+  }
+  return(novel_ld_block_colocs)
+}
+
+```
+
+```{r}
+novel_ld_blocks_ge <- extract_novel_ld_blocks(GTExV8_sign_colocs = GTExV8_sign_colocs_ge, eqtlCat_rnaseq_sign_colocs_ge)
+novel_ld_blocks_tx <- extract_novel_ld_blocks(GTExV8_sign_colocs = GTExV8_sign_colocs_ge, eqtlCat_rnaseq_sign_colocs_tx_geneid)
+novel_ld_blocks_txrev <- extract_novel_ld_blocks(GTExV8_sign_colocs = GTExV8_sign_colocs_ge, eqtlCat_rnaseq_sign_colocs_txrev_geneid)
+novel_ld_blocks_exon <- extract_novel_ld_blocks(GTExV8_sign_colocs = GTExV8_sign_colocs_ge, eqtlCat_rnaseq_sign_colocs_exon_geneid)
+```
+
+```{r}
+listInput <- list(ge = novel_ld_blocks_ge$ID_hg38, 
+                  tx = novel_ld_blocks_tx$ID_hg38, 
+                  txrev = novel_ld_blocks_txrev$ID_hg38,
+                  exon = novel_ld_blocks_exon$ID_hg38)
+
+upset(fromList(listInput), 
+      order.by = "freq", 
+      point.size = 4, 
+      mainbar.y.label = "Count of novel LD blocks \nrelative to GTExV8",
+      sets.x.label = "Novel LD blocks size")
+```
+
+```{r}
+
+eqtlcat_ldblocks_ge = sqldf::sqldf("
+      SELECT *
+      FROM eqtlCat_rnaseq_sign_colocs_ge d1 JOIN ld_blocks d2
+      ON d1.chromosome = d2.chr
+      AND d1.position >= d2.start
+      AND d1.position <= d2.end")
+
+eqtlcat_ldblocks_tx = sqldf::sqldf("
+      SELECT *
+      FROM eqtlCat_rnaseq_sign_colocs_tx d1 JOIN ld_blocks d2
+      ON d1.chromosome = d2.chr
+      AND d1.position >= d2.start
+      AND d1.position <= d2.end")
+
+eqtlcat_ldblocks_txrev = sqldf::sqldf("
+      SELECT *
+      FROM eqtlCat_rnaseq_sign_colocs_txrev d1 JOIN ld_blocks d2
+      ON d1.chromosome = d2.chr
+      AND d1.position >= d2.start
+      AND d1.position <= d2.end")
+
+eqtlcat_ldblocks_exon = sqldf::sqldf("
+      SELECT *
+      FROM eqtlCat_rnaseq_sign_colocs_exon d1 JOIN ld_blocks d2
+      ON d1.chromosome = d2.chr
+      AND d1.position >= d2.start
+      AND d1.position <= d2.end")
+```
+
+```{r}
+# Just for explorative analysis
+unique(eqtlcat_ldblocks_ge$ID_hg38) %>% length() 
+unique(eqtlcat_ldblocks_tx$ID_hg38) %>% length() 
+unique(eqtlcat_ldblocks_txrev$ID_hg38) %>% length() 
+unique(eqtlcat_ldblocks_exon$ID_hg38) %>% length() 
+```
+
+```{r}
+listInputUniqueLDBlockCount <- list(ge = eqtlcat_ldblocks_ge$ID_hg38, 
+                  tx = eqtlcat_ldblocks_tx$ID_hg38, 
+                  txrev = eqtlcat_ldblocks_txrev$ID_hg38,
+                  exon = eqtlcat_ldblocks_exon$ID_hg38)
+
+upsetR_plot_unique_ld_blocks <- upset(fromList(listInputUniqueLDBlockCount), 
+      order.by = "freq", 
+      point.size = 4, 
+      mainbar.y.label = "Count of unique LD blocks",
+      sets.x.label = "Unique LD blocks size")
+
+# save_ggplots(plot = upsetR_plot_unique_ld_blocks, path = "../plots/27_Sep_2020_upsetR/",filename = "upsetR_unique_ld_blocks")
+
+upsetR_plot_unique_ld_blocks
+```
+```{r}
+gwas_ids <- GTExV8_sign_colocs_ge %>% 
+  filter(!gwas_id %in% c("RA-ieu-a-833", "HPT-ukb-a-531")) %>% 
+  pull(gwas_id) %>% unique()
+
+df_novel_ld_blocks_per_gwas_ge <- data.frame()
+df_novel_ld_blocks_per_gwas_tx <- data.frame()
+df_novel_ld_blocks_per_gwas_txrev <- data.frame()
+df_novel_ld_blocks_per_gwas_exon <- data.frame()
+
+upset_plot_list_gwas <- list()
+for (gwasid in gwas_ids) {
+  eqtlcat_ldblocks_ge_gwas <- eqtlcat_ldblocks_ge %>% filter(gwas_id == gwasid) %>% mutate(ldgwas = paste0(gwasid,"_", ID_hg38))
+  eqtlcat_ldblocks_tx_gwas <- eqtlcat_ldblocks_tx %>% filter(gwas_id == gwasid) %>% mutate(ldgwas = paste0(gwasid,"_", ID_hg38))
+  eqtlcat_ldblocks_txrev_gwas <- eqtlcat_ldblocks_txrev %>% filter(gwas_id == gwasid) %>% mutate(ldgwas = paste0(gwasid,"_", ID_hg38))
+  eqtlcat_ldblocks_exon_gwas <- eqtlcat_ldblocks_exon %>% filter(gwas_id == gwasid) %>% mutate(ldgwas = paste0(gwasid,"_", ID_hg38))
+  
+  df_novel_ld_blocks_per_gwas_ge <- df_novel_ld_blocks_per_gwas_ge %>% rbind(eqtlcat_ldblocks_ge_gwas)
+  df_novel_ld_blocks_per_gwas_tx <- df_novel_ld_blocks_per_gwas_tx %>% rbind(eqtlcat_ldblocks_tx_gwas)
+  df_novel_ld_blocks_per_gwas_txrev <- df_novel_ld_blocks_per_gwas_txrev %>% rbind(eqtlcat_ldblocks_txrev_gwas)
+  df_novel_ld_blocks_per_gwas_exon <- df_novel_ld_blocks_per_gwas_exon %>% rbind(eqtlcat_ldblocks_exon_gwas)
+  
+  
+  listInputUniqueLDBlockCountGWAS <- list(ge = eqtlcat_ldblocks_ge_gwas$ldgwas,
+                                              tx = eqtlcat_ldblocks_tx_gwas$ldgwas,
+                                              txrev = eqtlcat_ldblocks_txrev_gwas$ldgwas,
+                                              exon = eqtlcat_ldblocks_exon_gwas$ldgwas)
+  
+  upset_plot_list_gwas[[gwasid]] <- upsetR_plot_unique_ld_blocks <- upset(fromList(listInputUniqueLDBlockCountGWAS), 
+                                      order.by = "freq", 
+                                      point.size = 4, 
+                                      mainbar.y.label = "Count of unique LD blocks\n(Total count across GWASs)",
+                                      sets.x.label = "Unique LD blocks count\n(Total count across GWASs)")
+}
+
+listInputUniqueLDBlockCount_per_gwas <- list(ge = df_novel_ld_blocks_per_gwas_ge$ldgwas,
+                                              tx = df_novel_ld_blocks_per_gwas_tx$ldgwas,
+                                              txrev = df_novel_ld_blocks_per_gwas_txrev$ldgwas,
+                                              exon = df_novel_ld_blocks_per_gwas_exon$ldgwas)
+
+upsetR_plot_unique_ld_blocks <- upset(fromList(listInputUniqueLDBlockCount_per_gwas), 
+      order.by = "freq", 
+      point.size = 4, 
+      mainbar.y.label = "Count of unique LD blocks\n(Total count across GWASs)",
+      sets.x.label = "Unique LD blocks count\n(Total count across GWASs)")
+
+upsetR_plot_unique_ld_blocks
+```
+
+
+
+
+
+
+
+
+
