@@ -305,6 +305,8 @@ listInputUniqueLDBlockCount_per_gwas <- list(ge = df_novel_ld_blocks_per_gwas_ge
                                               txrev = df_novel_ld_blocks_per_gwas_txrev$ldgwas,
                                               exon = df_novel_ld_blocks_per_gwas_exon$ldgwas)
 
+write_rds(listInputUniqueLDBlockCount_per_gwas, "../data/listInputUniqueLDBlockCount_per_gwas.rds")
+
 upsetR_plot_unique_ld_blocks <- upset(fromList(listInputUniqueLDBlockCount_per_gwas), 
       order.by = "freq", 
       point.size = 4, 
@@ -314,6 +316,17 @@ upsetR_plot_unique_ld_blocks <- upset(fromList(listInputUniqueLDBlockCount_per_g
 upsetR_plot_unique_ld_blocks
 ```
 
+```{r}
+listInputUniqueLDBlockCount_per_gwas <- read_rds("listInputUniqueLDBlockCount_per_gwas.rds.gz")
+
+upsetR_plot_unique_ld_blocks <- upset(fromList(listInputUniqueLDBlockCount_per_gwas), 
+      order.by = "freq", 
+      point.size = 4, 
+      mainbar.y.label = "Count of unique LD blocks\n(Total count across GWASs)",
+      sets.x.label = "Unique LD blocks count\n(Total count across GWASs)")
+
+upsetR_plot_unique_ld_blocks
+```
 
 
 
