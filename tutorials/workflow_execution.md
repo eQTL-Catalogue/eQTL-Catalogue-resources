@@ -97,6 +97,7 @@ nextflow run main.nf\
 ## Step 4: QTL mapping with [eQTL-Catalogue/qtlmap](https://github.com/eQTL-Catalogue/qtlmap)
 
 #### Input
+1. Normalised moleocular trait files from the qcnorm workflow. **NOTE:** The studyFile from qcnorm `(qcnorm_output_directory>/<study_name>/<study_name>_qtlmap_inputs.tsv)` contains relative paths. You should either copy the qcnorm output directory to the qtlmap directory or create a symlink with the same name. 
 
 #### Output
 
