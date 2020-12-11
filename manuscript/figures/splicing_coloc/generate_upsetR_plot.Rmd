@@ -312,20 +312,24 @@ upsetR_plot_unique_ld_blocks <- upset(fromList(listInputUniqueLDBlockCount_per_g
       point.size = 4, 
       mainbar.y.label = "Count of unique LD blocks\n(Total count across GWASs)",
       sets.x.label = "Unique LD blocks count\n(Total count across GWASs)")
-
 upsetR_plot_unique_ld_blocks
 ```
 
 ```{r}
 listInputUniqueLDBlockCount_per_gwas <- read_rds("listInputUniqueLDBlockCount_per_gwas.rds.gz")
 
-upsetR_plot_unique_ld_blocks <- upset(fromList(listInputUniqueLDBlockCount_per_gwas), 
-      order.by = "freq", 
-      point.size = 4, 
-      mainbar.y.label = "Count of unique LD blocks\n(Total count across GWASs)",
-      sets.x.label = "Unique LD blocks count\n(Total count across GWASs)")
+table = fromList(listInputUniqueLDBlockCount_per_gwas) %>%
+  dplyr::rename(gene = ge, txrevise = txrev)
 
+upsetR_plot_unique_ld_blocks <- upset(table,
+      order.by = "freq", 
+      mainbar.y.label = "Intersection size",
+      sets.x.label = "No of colocalisations")
+
+
+pdf(file="coloc_upset_plot.pdf", width = 3.8, height = 2.6, onefile=FALSE)
 upsetR_plot_unique_ld_blocks
+dev.off()
 ```
 
 

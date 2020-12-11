@@ -42,9 +42,12 @@ df_sharing = df_sharing %>% left_join(ontology_map[c("tissue_fct", "study_qtlgro
 # add friendly label to lead datasets
 df_sharing = df_sharing %>% left_join(ontology_map[c("label", "study_qtlgroup")], by=c("dataset"="study_qtlgroup"))
 df_sharing = dplyr::rename(df_sharing, sharing = value) %>%
-  dplyr::mutate(dataset = factor(dataset, levels = leads))
+  dplyr::mutate(dataset = factor(dataset, levels = leads)) %>%
+  dplyr::arrange(dataset) %>%
+  dplyr::mutate(label = factor(label, levels = unique(label)))
 
-plt <- ggplot(df_sharing, aes(x = dataset, y = sharing, colour=tissue_fct, label = dataset2)) +
+
+plt <- ggplot(df_sharing, aes(x = label, y = sharing, colour=tissue_fct, label = dataset2)) +
     geom_jitter(width = 0.2) +
     xlab("") +
     ylab("Pairwise eQTL sharing") +
@@ -52,7 +55,8 @@ plt <- ggplot(df_sharing, aes(x = dataset, y = sharing, colour=tissue_fct, label
                         values=c("#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#a65628","#fed976","#f781bf","#999999"))  +
     theme_light() + 
     theme(panel.grid = element_blank()) + 
-    theme(axis.text.x = element_text(angle = 330, vjust = 1, hjust=0))
+    theme(axis.text.x = element_text(angle = 330, vjust = 1, hjust=0)) +
+    scale_x_discrete() 
 plt
 
 
