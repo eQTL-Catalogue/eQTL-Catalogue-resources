@@ -16,7 +16,7 @@ library("ggplot2")
 library("readr")
 library("coloc")
 library("GenomicRanges")
-library("Rsamtools")
+library("seqminer")
 ```
 
 We also need the paths to individual tabix-indexed summary-statistics files. These can be obtained from eQTL Catalogue resources GitHub repository:
@@ -27,43 +27,7 @@ tabix_paths = read.delim("https://raw.githubusercontent.com/eQTL-Catalogue/eQTL-
 imported_tabix_paths = read.delim("https://raw.githubusercontent.com/eQTL-Catalogue/eQTL-Catalogue-resources/master/tabix/tabix_ftp_paths_imported.tsv", sep = "\t", header = TRUE, stringsAsFactors = FALSE) %>% dplyr::as_tibble()
 ```
 
-Define a small helper function to quickly read regions from tabix-indexed summary statistics files into R.
-
-
-```r
-#' A general function to quickly import tabix indexed tab-separated files into data_frame
-#'
-#' @param tabix_file Path to tabix-indexed text file
-#' @param param An instance of GRanges, RangedData, or RangesList
-#' provide the sequence names and regions to be parsed. Passed onto Rsamtools::scanTabix()
-#' @param ... Additional parameters to be passed on to readr::read_delim()
-#'
-#' @return List of data_frames, one for each entry in the param GRanges object.
-#' @export
-scanTabixDataFrame <- function(tabix_file, param, ...){
-  tabix_list = Rsamtools::scanTabix(tabix_file, param = param)
-  df_list = lapply(tabix_list, function(x,...){
-    if(length(x) > 0){
-      if(length(x) == 1){
-        #Hack to make sure that it also works for data frames with only one row
-        #Adds an empty row and then removes it
-        result = paste(paste(x, collapse = "\n"),"\n",sep = "")
-        result = readr::read_delim(result, delim = "\t", ...)[1,]
-      }else{
-        result = paste(x, collapse = "\n")
-        result = readr::read_delim(result, delim = "\t", ...)
-      }
-    } else{
-      #Return NULL if the nothing is returned from tabix file
-      result = NULL
-    }
-    return(result)
-  }, ...)
-  return(df_list)
-}
-```
-
-In eQTL Catalogue, **variants with multiple rsids are split over multiple rows** in the summary statistics files. Thus, we first want to retain only one unique record per variant. To simplify colocalisation analysis, we also want to exclude multi-allelic variants. The following function imports summary statistics from a tabix-index TSV file and performs necessary filtering.
+In eQTL Catalogue, **variants with multiple rsids are split over multiple rows** in the summary statistics files. Thus, we first want to retain only one unique record per variant. To simplify colocalisation analysis, we also want to exclude multi-allelic variants. The following function imports summary statistics from a tabix-indexed TSV file and performs necessary filtering.
 
 
 ```r
@@ -73,19 +37,19 @@ import_eQTLCatalogue <- function(ftp_path, region, selected_gene_id, column_name
       print(ftp_path)
   }
   
-  #Fetch summary statistics with Rsamtools
-  summary_stats = scanTabixDataFrame(ftp_path, region, col_names = column_names)[[1]] %>%
-  dplyr::filter(gene_id == selected_gene_id)
+  #Fetch summary statistics with seqminer
+  fetch_table = seqminer::tabix.read.table(tabixFile = ftp_path, tabixRange = region, stringsAsFactors = FALSE) %>%
+    dplyr::as_tibble()
+  colnames(fetch_table) = column_names
   
   #Remove rsid duplicates and multi-allelic variant
-  summary_stats = dplyr::select(summary_stats, -rsid) %>% 
+  summary_stats = dplyr::filter(fetch_table, gene_id == selected_gene_id) %>%
+    dplyr::select(-rsid) %>% 
     dplyr::distinct() %>% #rsid duplicates
     dplyr::mutate(id = paste(chromosome, position, sep = ":")) %>% 
     dplyr::group_by(id) %>% 
     dplyr::mutate(row_count = n()) %>% dplyr::ungroup() %>% 
     dplyr::filter(row_count == 1) #Multialllics
-  
-  return(summary_stats)
 }
 ```
 
@@ -95,20 +59,7 @@ Here, the lead variant of interest is chr3_56815721_T_C (rs1354034). For colocal
 
 
 ```r
-region_granges = GenomicRanges::GRanges(
-  seqnames = "3", 
-  ranges = IRanges::IRanges(start = 56815721 - 200000, end = 56815721 + 200000), 
-  strand = "*")
-region_granges
-```
-
-```
-## GRanges object with 1 range and 0 metadata columns:
-##       seqnames            ranges strand
-##          <Rle>         <IRanges>  <Rle>
-##   [1]        3 56615721-57015721      *
-##   -------
-##   seqinfo: 1 sequence from an unspecified genome; no seqlengths
+region = "3:56649749-57049749"
 ```
 
 Since this is a known platelet-specific eQTL, let's first fetch this region from the platelet summary statistics of the CEDAR study:
@@ -119,11 +70,12 @@ platelet_df = dplyr::filter(tabix_paths, study == "CEDAR", tissue_label == "plat
 #Extract column names from first file
 column_names = colnames(readr::read_tsv(platelet_df$ftp_path, n_max = 1))
 
-summary_stats = import_eQTLCatalogue(platelet_df$ftp_path, region_granges, selected_gene_id = "ENSG00000163947", column_names)
+#Import summary statistics
+summary_stats = import_eQTLCatalogue(platelet_df$ftp_path, region, selected_gene_id = "ENSG00000163947", column_names)
 ```
 
 ```
-## [1] "ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_platelet.all.tsv.gz"
+## [1] "ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_platelet.all.tsv.gz"
 ```
 
 ```r
@@ -131,23 +83,23 @@ summary_stats
 ```
 
 ```
-## # A tibble: 1,561 x 20
+## # A tibble: 1,573 x 20
 ##    molecular_trait… chromosome position ref   alt   variant ma_samples
-##    <chr>                 <dbl>    <dbl> <chr> <chr> <chr>        <dbl>
-##  1 ILMN_1781010              3 56615731 T     C     chr3_5…         33
-##  2 ILMN_1781010              3 56616150 A     G     chr3_5…        136
-##  3 ILMN_1781010              3 56616554 A     G     chr3_5…         25
-##  4 ILMN_1781010              3 56617874 T     C     chr3_5…         37
-##  5 ILMN_1781010              3 56618030 C     A     chr3_5…         33
-##  6 ILMN_1781010              3 56618451 T     C     chr3_5…         33
-##  7 ILMN_1781010              3 56618452 T     A     chr3_5…         33
-##  8 ILMN_1781010              3 56618996 TC    T     chr3_5…        118
-##  9 ILMN_1781010              3 56619396 A     T     chr3_5…         25
-## 10 ILMN_1781010              3 56619399 T     C     chr3_5…         25
-## # … with 1,551 more rows, and 13 more variables: ac <dbl>, an <dbl>,
-## #   maf <dbl>, pvalue <dbl>, beta <dbl>, se <dbl>,
+##    <chr>                 <int>    <int> <chr> <chr> <chr>        <int>
+##  1 ILMN_1781010              3 56649804 G     T     chr3_5…         14
+##  2 ILMN_1781010              3 56649864 A     G     chr3_5…         23
+##  3 ILMN_1781010              3 56650196 G     A     chr3_5…         13
+##  4 ILMN_1781010              3 56650217 A     T     chr3_5…          7
+##  5 ILMN_1781010              3 56650492 T     G     chr3_5…        136
+##  6 ILMN_1781010              3 56650617 G     A     chr3_5…         25
+##  7 ILMN_1781010              3 56650620 C     T     chr3_5…         30
+##  8 ILMN_1781010              3 56650722 C     G     chr3_5…         13
+##  9 ILMN_1781010              3 56650737 C     T     chr3_5…         30
+## 10 ILMN_1781010              3 56650791 C     G     chr3_5…         24
+## # … with 1,563 more rows, and 13 more variables: maf <dbl>, pvalue <dbl>,
+## #   beta <dbl>, se <dbl>, type <chr>, ac <int>, an <int>, r2 <dbl>,
 ## #   molecular_trait_object_id <chr>, gene_id <chr>, median_tpm <lgl>,
-## #   r2 <dbl>, type <chr>, id <chr>, row_count <int>
+## #   id <chr>, row_count <int>
 ```
 
 We can easily visualise the association with ggplot2.
@@ -157,7 +109,7 @@ ggplot(summary_stats, aes(x = position, y = -log(pvalue, 10))) +
 geom_point()
 ```
 
-![](tabix_use_case_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](tabix_use_case_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 # Fetch GWAS summary statistics from the same region from IEU OpenGWAS database
 
@@ -167,7 +119,7 @@ Most GWAS summary statistics still use GRCh37 coordinates, so we first look up t
 ```r
 # First, download the VCF file with 'wget https://gwas.mrcieu.ac.uk/files/ebi-a-GCST004599/ebi-a-GCST004599.vcf.gz'
 #and its tabix index with 'wget https://gwas.mrcieu.ac.uk/files/ebi-a-GCST004599/ebi-a-GCST004599.vcf.gz.tbi'
-gwas_stats = gwasvcf::query_gwas("ebi-a-GCST004599.vcf.gz", chrompos = "3:56649749-57049749")
+gwas_stats = gwasvcf::query_gwas("tabix_data/ebi-a-GCST004599.vcf.gz", chrompos = region)
 gwas_stats = gwasvcf::vcf_to_granges(gwas_stats) %>% 
   keepSeqlevels("3") %>% 
   renameSeqlevels("chr3")
@@ -181,7 +133,7 @@ Note that the `rtracklayer::import.chain()` function does not seem to work with 
 #Download the chain file first using 'wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz'
 
 #Import chain file
-chain = rtracklayer::import.chain("hg19ToHg38.over.chain")
+chain = rtracklayer::import.chain("tabix_data/hg19ToHg38.over.chain")
 
 #Lift over summary statistics
 gwas_stats_hg38 = rtracklayer::liftOver(gwas_stats, chain) %>% 
@@ -205,7 +157,7 @@ ggplot(gwas_stats_hg38, aes(x = position, y = LP)) +
 geom_point()
 ```
 
-![](tabix_use_case_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](tabix_use_case_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
 ## Performing colocalisation
 
@@ -239,8 +191,8 @@ res = run_coloc(summary_stats, gwas_stats_hg38)
 
 ```
 ## PP.H0.abf PP.H1.abf PP.H2.abf PP.H3.abf PP.H4.abf 
-##  0.000000  0.000000  0.001490  0.000266  0.998000 
-## [1] "PP abf for shared variant: 99.8%"
+##  0.00e+00  0.00e+00  1.07e-12  1.18e-10  1.00e+00 
+## [1] "PP abf for shared variant: 100%"
 ```
 
 ## Extend this analysis to all other eQTL datasets
@@ -258,7 +210,7 @@ ftp_path_list = setNames(as.list(microarray_df$ftp_path), microarray_df$qtl_id)
 column_names = colnames(readr::read_tsv(ftp_path_list[[1]], n_max = 1))
 
 #Import summmary stats
-summary_list = purrr::map(ftp_path_list, ~import_eQTLCatalogue(., region_granges, selected_gene_id = "ENSG00000163947", column_names))
+summary_list = purrr::map(ftp_path_list, ~import_eQTLCatalogue(., region, selected_gene_id = "ENSG00000163947", column_names))
 
 #Run coloc
 coloc_df_microarray = purrr::map_df(summary_list, ~run_coloc(., gwas_stats_hg38), .id = "qtl_id")
@@ -278,7 +230,7 @@ column_names = colnames(readr::read_tsv(ftp_path_list[[1]], n_max = 1))
 safe_import = purrr::safely(import_eQTLCatalogue)
 
 #Import summmary stats
-summary_list = purrr::map(ftp_path_list, ~safe_import(., region_granges, selected_gene_id = "ENSG00000163947", column_names))
+summary_list = purrr::map(ftp_path_list, ~safe_import(., region, selected_gene_id = "ENSG00000163947", column_names))
 
 #Extract successful results
 result_list = purrr::map(summary_list, ~.$result)
@@ -309,7 +261,7 @@ column_names = colnames(readr::read_tsv(ftp_path_list[[1]], n_max = 1))
 safe_import = purrr::safely(import_eQTLCatalogue)
 
 #Import summmary stats
-summary_list = purrr::map(ftp_path_list, ~safe_import(., region_granges, selected_gene_id = "ENSG00000163947", column_names))
+summary_list = purrr::map(ftp_path_list, ~safe_import(., region, selected_gene_id = "ENSG00000163947", column_names))
 
 #Extract successful results
 result_list = purrr::map(summary_list, ~.$result)
@@ -338,16 +290,16 @@ dplyr::arrange(coloc_df, -PP.H4.abf)
 ## # A tibble: 112 x 7
 ##    qtl_id           nsnps PP.H0.abf PP.H1.abf PP.H2.abf PP.H3.abf PP.H4.abf
 ##    <chr>            <dbl>     <dbl>     <dbl>     <dbl>     <dbl>     <dbl>
-##  1 CEDAR_platelet    1532         0         0   0.00149  0.000266    0.998 
-##  2 GTEx_V8_Cells_E…  1549         0         0   0.408    0.106       0.487 
-##  3 FUSION_adipose_…  1543         0         0   0.741    0.134       0.125 
-##  4 GTEx_V8_Spleen    1555         0         0   0.753    0.124       0.123 
-##  5 GTEx_V8_Brain_C…  1555         0         0   0.606    0.274       0.120 
-##  6 GTEx_V8_Brain_S…  1553         0         0   0.759    0.127       0.113 
-##  7 GTEx_V8_Brain_H…  1553         0         0   0.786    0.108       0.106 
-##  8 Alasoo_2018_mac…  1543         0         0   0.776    0.121       0.103 
-##  9 HipSci_iPSC       1568         0         0   0.774    0.127       0.0992
-## 10 Schmiedel_2018_…  1734         0         0   0.770    0.133       0.0972
+##  1 CEDAR_platelet    1391         0         0  1.07e-12  1.18e-10     1.00 
+##  2 GTEx_V8_Cells_E…  1406         0         0  4.20e- 1  8.09e- 2     0.499
+##  3 Alasoo_2018_mac…  1389         0         0  4.97e- 1  2.68e- 1     0.236
+##  4 FUSION_adipose_…  1399         0         0  6.17e- 1  1.73e- 1     0.210
+##  5 Alasoo_2018_mac…  1389         0         0  6.62e- 1  1.42e- 1     0.196
+##  6 Schmiedel_2018_…  1592         0         0  7.44e- 1  1.17e- 1     0.139
+##  7 GTEx_V8_Spleen    1412         0         0  7.63e- 1  1.13e- 1     0.125
+##  8 Schmiedel_2018_…  1595         0         0  7.55e- 1  1.20e- 1     0.125
+##  9 GTEx_V8_Brain_C…  1412         0         0  6.15e- 1  2.63e- 1     0.122
+## 10 GTEx_V8_Brain_S…  1410         0         0  7.68e- 1  1.18e- 1     0.114
 ## # … with 102 more rows
 ```
 
@@ -357,4 +309,4 @@ Alternatively, histogram of the PP4 values also confirms that there is only one 
 ggplot(coloc_df, aes(x = PP.H4.abf)) + geom_histogram()
 ```
 
-![](tabix_use_case_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
+![](tabix_use_case_files/figure-html/unnamed-chunk-15-1.png)<!-- -->

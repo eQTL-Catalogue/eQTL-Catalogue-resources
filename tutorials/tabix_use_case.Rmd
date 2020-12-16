@@ -15,7 +15,7 @@ library("ggplot2")
 library("readr")
 library("coloc")
 library("GenomicRanges")
-library("Rsamtools")
+library("seqminer")
 ```
 
 We also need the paths to individual tabix-indexed summary-statistics files. These can be obtained from eQTL Catalogue resources GitHub repository:
@@ -25,42 +25,7 @@ tabix_paths = read.delim("https://raw.githubusercontent.com/eQTL-Catalogue/eQTL-
 imported_tabix_paths = read.delim("https://raw.githubusercontent.com/eQTL-Catalogue/eQTL-Catalogue-resources/master/tabix/tabix_ftp_paths_imported.tsv", sep = "\t", header = TRUE, stringsAsFactors = FALSE) %>% dplyr::as_tibble()
 ```
 
-Define a small helper function to quickly read regions from tabix-indexed summary statistics files into R.
-
-```{r}
-#' A general function to quickly import tabix indexed tab-separated files into data_frame
-#'
-#' @param tabix_file Path to tabix-indexed text file
-#' @param param An instance of GRanges, RangedData, or RangesList
-#' provide the sequence names and regions to be parsed. Passed onto Rsamtools::scanTabix()
-#' @param ... Additional parameters to be passed on to readr::read_delim()
-#'
-#' @return List of data_frames, one for each entry in the param GRanges object.
-#' @export
-scanTabixDataFrame <- function(tabix_file, param, ...){
-  tabix_list = Rsamtools::scanTabix(tabix_file, param = param)
-  df_list = lapply(tabix_list, function(x,...){
-    if(length(x) > 0){
-      if(length(x) == 1){
-        #Hack to make sure that it also works for data frames with only one row
-        #Adds an empty row and then removes it
-        result = paste(paste(x, collapse = "\n"),"\n",sep = "")
-        result = readr::read_delim(result, delim = "\t", ...)[1,]
-      }else{
-        result = paste(x, collapse = "\n")
-        result = readr::read_delim(result, delim = "\t", ...)
-      }
-    } else{
-      #Return NULL if the nothing is returned from tabix file
-      result = NULL
-    }
-    return(result)
-  }, ...)
-  return(df_list)
-}
-```
-
-In eQTL Catalogue, **variants with multiple rsids are split over multiple rows** in the summary statistics files. Thus, we first want to retain only one unique record per variant. To simplify colocalisation analysis, we also want to exclude multi-allelic variants. The following function imports summary statistics from a tabix-index TSV file and performs necessary filtering.
+In eQTL Catalogue, **variants with multiple rsids are split over multiple rows** in the summary statistics files. Thus, we first want to retain only one unique record per variant. To simplify colocalisation analysis, we also want to exclude multi-allelic variants. The following function imports summary statistics from a tabix-indexed TSV file and performs necessary filtering.
 
 ```{r}
 import_eQTLCatalogue <- function(ftp_path, region, selected_gene_id, column_names, verbose = TRUE){
@@ -69,19 +34,19 @@ import_eQTLCatalogue <- function(ftp_path, region, selected_gene_id, column_name
       print(ftp_path)
   }
   
-  #Fetch summary statistics with Rsamtools
-  summary_stats = scanTabixDataFrame(ftp_path, region, col_names = column_names)[[1]] %>%
-  dplyr::filter(gene_id == selected_gene_id)
+  #Fetch summary statistics with seqminer
+  fetch_table = seqminer::tabix.read.table(tabixFile = ftp_path, tabixRange = region, stringsAsFactors = FALSE) %>%
+    dplyr::as_tibble()
+  colnames(fetch_table) = column_names
   
   #Remove rsid duplicates and multi-allelic variant
-  summary_stats = dplyr::select(summary_stats, -rsid) %>% 
+  summary_stats = dplyr::filter(fetch_table, gene_id == selected_gene_id) %>%
+    dplyr::select(-rsid) %>% 
     dplyr::distinct() %>% #rsid duplicates
     dplyr::mutate(id = paste(chromosome, position, sep = ":")) %>% 
     dplyr::group_by(id) %>% 
     dplyr::mutate(row_count = n()) %>% dplyr::ungroup() %>% 
     dplyr::filter(row_count == 1) #Multialllics
-  
-  return(summary_stats)
 }
 ```
 
@@ -90,11 +55,7 @@ import_eQTLCatalogue <- function(ftp_path, region, selected_gene_id, column_name
 Here, the lead variant of interest is chr3_56815721_T_C (rs1354034). For colocalistion analysis, let's define a region +/- 200kb around this variant: 
 
 ```{r}
-region_granges = GenomicRanges::GRanges(
-  seqnames = "3", 
-  ranges = IRanges::IRanges(start = 56815721 - 200000, end = 56815721 + 200000), 
-  strand = "*")
-region_granges
+region = "3:56649749-57049749"
 ```
 
 Since this is a known platelet-specific eQTL, let's first fetch this region from the platelet summary statistics of the CEDAR study:
@@ -104,7 +65,8 @@ platelet_df = dplyr::filter(tabix_paths, study == "CEDAR", tissue_label == "plat
 #Extract column names from first file
 column_names = colnames(readr::read_tsv(platelet_df$ftp_path, n_max = 1))
 
-summary_stats = import_eQTLCatalogue(platelet_df$ftp_path, region_granges, selected_gene_id = "ENSG00000163947", column_names)
+#Import summary statistics
+summary_stats = import_eQTLCatalogue(platelet_df$ftp_path, region, selected_gene_id = "ENSG00000163947", column_names)
 summary_stats
 ```
 
@@ -121,7 +83,7 @@ Most GWAS summary statistics still use GRCh37 coordinates, so we first look up t
 ```{r, message=FALSE}
 # First, download the VCF file with 'wget https://gwas.mrcieu.ac.uk/files/ebi-a-GCST004599/ebi-a-GCST004599.vcf.gz'
 #and its tabix index with 'wget https://gwas.mrcieu.ac.uk/files/ebi-a-GCST004599/ebi-a-GCST004599.vcf.gz.tbi'
-gwas_stats = gwasvcf::query_gwas("ebi-a-GCST004599.vcf.gz", chrompos = "3:56649749-57049749")
+gwas_stats = gwasvcf::query_gwas("tabix_data/ebi-a-GCST004599.vcf.gz", chrompos = region)
 gwas_stats = gwasvcf::vcf_to_granges(gwas_stats) %>% 
   keepSeqlevels("3") %>% 
   renameSeqlevels("chr3")
@@ -134,7 +96,7 @@ Note that the `rtracklayer::import.chain()` function does not seem to work with 
 #Download the chain file first using 'wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz'
 
 #Import chain file
-chain = rtracklayer::import.chain("hg19ToHg38.over.chain")
+chain = rtracklayer::import.chain("tabix_data/hg19ToHg38.over.chain")
 
 #Lift over summary statistics
 gwas_stats_hg38 = rtracklayer::liftOver(gwas_stats, chain) %>% 
@@ -199,7 +161,7 @@ ftp_path_list = setNames(as.list(microarray_df$ftp_path), microarray_df$qtl_id)
 column_names = colnames(readr::read_tsv(ftp_path_list[[1]], n_max = 1))
 
 #Import summmary stats
-summary_list = purrr::map(ftp_path_list, ~import_eQTLCatalogue(., region_granges, selected_gene_id = "ENSG00000163947", column_names))
+summary_list = purrr::map(ftp_path_list, ~import_eQTLCatalogue(., region, selected_gene_id = "ENSG00000163947", column_names))
 
 #Run coloc
 coloc_df_microarray = purrr::map_df(summary_list, ~run_coloc(., gwas_stats_hg38), .id = "qtl_id")
@@ -218,7 +180,7 @@ column_names = colnames(readr::read_tsv(ftp_path_list[[1]], n_max = 1))
 safe_import = purrr::safely(import_eQTLCatalogue)
 
 #Import summmary stats
-summary_list = purrr::map(ftp_path_list, ~safe_import(., region_granges, selected_gene_id = "ENSG00000163947", column_names))
+summary_list = purrr::map(ftp_path_list, ~safe_import(., region, selected_gene_id = "ENSG00000163947", column_names))
 
 #Extract successful results
 result_list = purrr::map(summary_list, ~.$result)
@@ -248,7 +210,7 @@ column_names = colnames(readr::read_tsv(ftp_path_list[[1]], n_max = 1))
 safe_import = purrr::safely(import_eQTLCatalogue)
 
 #Import summmary stats
-summary_list = purrr::map(ftp_path_list, ~safe_import(., region_granges, selected_gene_id = "ENSG00000163947", column_names))
+summary_list = purrr::map(ftp_path_list, ~safe_import(., region, selected_gene_id = "ENSG00000163947", column_names))
 
 #Extract successful results
 result_list = purrr::map(summary_list, ~.$result)
