@@ -31,20 +31,20 @@ BrainSeq	brain	UBERON_0009834	"dorsolateral prefrontal cortex"	DLPFC	naive	ge	ft
 BrainSeq	brain	UBERON_0009834	"dorsolateral prefrontal cortex"	DLPFC	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/exon/BrainSeq_exon_brain.all.tsv.gz
 BrainSeq	brain	UBERON_0009834	"dorsolateral prefrontal cortex"	DLPFC	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/tx/BrainSeq_tx_brain.all.tsv.gz
 BrainSeq	brain	UBERON_0009834	"dorsolateral prefrontal cortex"	DLPFC	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/txrev/BrainSeq_txrev_brain.all.tsv.gz
-CEDAR	T-cell_CD8	CL_0000625	"CD8-positive, alpha-beta T cell"	CD8+ T cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_T-cell_CD8.all.tsv.gz
-CEDAR	T-cell_CD4	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_T-cell_CD4.all.tsv.gz
-CEDAR	transverse_colon	UBERON_0001157	"transverse colon"	transverse colon	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_transverse_colon.all.tsv.gz
-CEDAR	monocyte_CD14	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_monocyte_CD14.all.tsv.gz
-CEDAR	neutrophil_CD15	CL_0000775	"neutrophil"	neutrophil	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_neutrophil_CD15.all.tsv.gz
-CEDAR	platelet	CL_0000233	"platelet"	platelet	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_platelet.all.tsv.gz
-CEDAR	rectum	UBERON_0001052	"rectum"	rectum	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_rectum.all.tsv.gz
-CEDAR	B-cell_CD19	CL_0000236	"B cell"	B cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_B-cell_CD19.all.tsv.gz
-CEDAR	ileum	UBERON_0002116	"ileum"	ileum	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_ileum.all.tsv.gz
-Fairfax_2012	B-cell_CD19	CL_0000236	"B cell"	B cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2012/microarray/Fairfax_2012_B-cell_CD19.all.tsv.gz
-Fairfax_2014	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_naive.all.tsv.gz
-Fairfax_2014	monocyte_IFN24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	IFNg_24h	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_IFN24.all.tsv.gz
-Fairfax_2014	monocyte_LPS2	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_2h	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_LPS2.all.tsv.gz
-Fairfax_2014	monocyte_LPS24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_24h	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_LPS24.all.tsv.gz
+CEDAR	T-cell_CD8	CL_0000625	"CD8-positive, alpha-beta T cell"	CD8+ T cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_T-cell_CD8.all.tsv.gz
+CEDAR	T-cell_CD4	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_T-cell_CD4.all.tsv.gz
+CEDAR	transverse_colon	UBERON_0001157	"transverse colon"	transverse colon	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_transverse_colon.all.tsv.gz
+CEDAR	monocyte_CD14	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_monocyte_CD14.all.tsv.gz
+CEDAR	neutrophil_CD15	CL_0000775	"neutrophil"	neutrophil	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_neutrophil_CD15.all.tsv.gz
+CEDAR	platelet	CL_0000233	"platelet"	platelet	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_platelet.all.tsv.gz
+CEDAR	rectum	UBERON_0001052	"rectum"	rectum	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_rectum.all.tsv.gz
+CEDAR	B-cell_CD19	CL_0000236	"B cell"	B cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_B-cell_CD19.all.tsv.gz
+CEDAR	ileum	UBERON_0002116	"ileum"	ileum	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_ileum.all.tsv.gz
+Fairfax_2012	B-cell_CD19	CL_0000236	"B cell"	B cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2012/microarray/Fairfax_2012_microarray_B-cell_CD19.all.tsv.gz
+Fairfax_2014	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_microarray_naive.all.tsv.gz
+Fairfax_2014	monocyte_IFN24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	IFNg_24h	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_microarray_IFN24.all.tsv.gz
+Fairfax_2014	monocyte_LPS2	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_2h	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_microarray_LPS2.all.tsv.gz
+Fairfax_2014	monocyte_LPS24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"	monocyte	LPS_24h	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_microarray_LPS24.all.tsv.gz
 GENCORD	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/ge/GENCORD_ge_LCL.all.tsv.gz
 GENCORD	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/exon/GENCORD_exon_LCL.all.tsv.gz
 GENCORD	LCL	EFO_0005292	"lymphoblastoid cell line"	LCL	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/tx/GENCORD_tx_LCL.all.tsv.gz
@@ -65,13 +65,13 @@ HipSci	iPSC	EFO_0004905	"induced pluripotent stem cell"	iPSC	naive	ge	ftp://ftp.
 HipSci	iPSC	EFO_0004905	"induced pluripotent stem cell"	iPSC	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/HipSci/exon/HipSci_exon_iPSC.all.tsv.gz
 HipSci	iPSC	EFO_0004905	"induced pluripotent stem cell"	iPSC	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/HipSci/tx/HipSci_tx_iPSC.all.tsv.gz
 HipSci	iPSC	EFO_0004905	"induced pluripotent stem cell"	iPSC	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/HipSci/txrev/HipSci_txrev_iPSC.all.tsv.gz
-Kasela_2017	T-cell_CD4	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Kasela_2017/microarray/Kasela_2017_T-cell_CD4.all.tsv.gz
-Kasela_2017	T-cell_CD8	CL_0000625	"CD8-positive, alpha-beta T cell"	CD8+ T cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Kasela_2017/microarray/Kasela_2017_T-cell_CD8.all.tsv.gz
+Kasela_2017	T-cell_CD4	CL_0000624	"CD4-positive, alpha-beta T cell"	CD4+ T cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Kasela_2017/microarray/Kasela_2017_microarray_T-cell_CD4.all.tsv.gz
+Kasela_2017	T-cell_CD8	CL_0000625	"CD8-positive, alpha-beta T cell"	CD8+ T cell	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Kasela_2017/microarray/Kasela_2017_microarray_T-cell_CD8.all.tsv.gz
 Lepik_2017	blood	UBERON_0000178	"blood"	blood	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Lepik_2017/ge/Lepik_2017_ge_blood.all.tsv.gz
 Lepik_2017	blood	UBERON_0000178	"blood"	blood	naive	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Lepik_2017/exon/Lepik_2017_exon_blood.all.tsv.gz
 Lepik_2017	blood	UBERON_0000178	"blood"	blood	naive	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Lepik_2017/tx/Lepik_2017_tx_blood.all.tsv.gz
 Lepik_2017	blood	UBERON_0000178	"blood"	blood	naive	txrev	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Lepik_2017/txrev/Lepik_2017_txrev_blood.all.tsv.gz
-Naranbhai_2015	neutrophil_CD16	CL_0000775	"neutrophil"	neutrophil	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Naranbhai_2015/microarray/Naranbhai_2015_neutrophil_CD16.all.tsv.gz
+Naranbhai_2015	neutrophil_CD16	CL_0000775	"neutrophil"	neutrophil	naive	microarray	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Naranbhai_2015/microarray/Naranbhai_2015_microarray_neutrophil_CD16.all.tsv.gz
 Nedelec_2016	macrophage_Listeria	CL_0000235	"macrophage"	macrophage	Listeria_5h	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/ge/Nedelec_2016_ge_macrophage_Listeria.all.tsv.gz
 Nedelec_2016	macrophage_Listeria	CL_0000235	"macrophage"	macrophage	Listeria_5h	exon	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/exon/Nedelec_2016_exon_macrophage_Listeria.all.tsv.gz
 Nedelec_2016	macrophage_Listeria	CL_0000235	"macrophage"	macrophage	Listeria_5h	tx	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/tx/Nedelec_2016_tx_macrophage_Listeria.all.tsv.gz
