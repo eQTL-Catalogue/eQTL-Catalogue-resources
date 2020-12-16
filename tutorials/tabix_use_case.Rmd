@@ -55,7 +55,7 @@ import_eQTLCatalogue <- function(ftp_path, region, selected_gene_id, column_name
 Here, the lead variant of interest is chr3_56815721_T_C (rs1354034). For colocalistion analysis, let's define a region +/- 200kb around this variant: 
 
 ```{r}
-region = "3:56649749-57049749"
+region = "3:56615721-57015721"
 ```
 
 Since this is a known platelet-specific eQTL, let's first fetch this region from the platelet summary statistics of the CEDAR study:
@@ -83,7 +83,7 @@ Most GWAS summary statistics still use GRCh37 coordinates, so we first look up t
 ```{r, message=FALSE}
 # First, download the VCF file with 'wget https://gwas.mrcieu.ac.uk/files/ebi-a-GCST004599/ebi-a-GCST004599.vcf.gz'
 #and its tabix index with 'wget https://gwas.mrcieu.ac.uk/files/ebi-a-GCST004599/ebi-a-GCST004599.vcf.gz.tbi'
-gwas_stats = gwasvcf::query_gwas("tabix_data/ebi-a-GCST004599.vcf.gz", chrompos = region)
+gwas_stats = gwasvcf::query_gwas("tabix_data/ebi-a-GCST004599.vcf.gz", chrompos = "3:56649749-57049749")
 gwas_stats = gwasvcf::vcf_to_granges(gwas_stats) %>% 
   keepSeqlevels("3") %>% 
   renameSeqlevels("chr3")

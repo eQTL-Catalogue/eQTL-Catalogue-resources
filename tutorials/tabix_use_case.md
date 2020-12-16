@@ -59,7 +59,7 @@ Here, the lead variant of interest is chr3_56815721_T_C (rs1354034). For colocal
 
 
 ```r
-region = "3:56649749-57049749"
+region = "3:56615721-57015721"
 ```
 
 Since this is a known platelet-specific eQTL, let's first fetch this region from the platelet summary statistics of the CEDAR study:
@@ -83,20 +83,20 @@ summary_stats
 ```
 
 ```
-## # A tibble: 1,573 x 20
+## # A tibble: 1,561 x 20
 ##    molecular_trait… chromosome position ref   alt   variant ma_samples
 ##    <chr>                 <int>    <int> <chr> <chr> <chr>        <int>
-##  1 ILMN_1781010              3 56649804 G     T     chr3_5…         14
-##  2 ILMN_1781010              3 56649864 A     G     chr3_5…         23
-##  3 ILMN_1781010              3 56650196 G     A     chr3_5…         13
-##  4 ILMN_1781010              3 56650217 A     T     chr3_5…          7
-##  5 ILMN_1781010              3 56650492 T     G     chr3_5…        136
-##  6 ILMN_1781010              3 56650617 G     A     chr3_5…         25
-##  7 ILMN_1781010              3 56650620 C     T     chr3_5…         30
-##  8 ILMN_1781010              3 56650722 C     G     chr3_5…         13
-##  9 ILMN_1781010              3 56650737 C     T     chr3_5…         30
-## 10 ILMN_1781010              3 56650791 C     G     chr3_5…         24
-## # … with 1,563 more rows, and 13 more variables: maf <dbl>, pvalue <dbl>,
+##  1 ILMN_1781010              3 56615731 T     C     chr3_5…         33
+##  2 ILMN_1781010              3 56616150 A     G     chr3_5…        136
+##  3 ILMN_1781010              3 56616554 A     G     chr3_5…         25
+##  4 ILMN_1781010              3 56617874 T     C     chr3_5…         37
+##  5 ILMN_1781010              3 56618030 C     A     chr3_5…         33
+##  6 ILMN_1781010              3 56618451 T     C     chr3_5…         33
+##  7 ILMN_1781010              3 56618452 T     A     chr3_5…         33
+##  8 ILMN_1781010              3 56618996 TC    T     chr3_5…        118
+##  9 ILMN_1781010              3 56619396 A     T     chr3_5…         25
+## 10 ILMN_1781010              3 56619399 T     C     chr3_5…         25
+## # … with 1,551 more rows, and 13 more variables: maf <dbl>, pvalue <dbl>,
 ## #   beta <dbl>, se <dbl>, type <chr>, ac <int>, an <int>, r2 <dbl>,
 ## #   molecular_trait_object_id <chr>, gene_id <chr>, median_tpm <lgl>,
 ## #   id <chr>, row_count <int>
@@ -119,7 +119,7 @@ Most GWAS summary statistics still use GRCh37 coordinates, so we first look up t
 ```r
 # First, download the VCF file with 'wget https://gwas.mrcieu.ac.uk/files/ebi-a-GCST004599/ebi-a-GCST004599.vcf.gz'
 #and its tabix index with 'wget https://gwas.mrcieu.ac.uk/files/ebi-a-GCST004599/ebi-a-GCST004599.vcf.gz.tbi'
-gwas_stats = gwasvcf::query_gwas("tabix_data/ebi-a-GCST004599.vcf.gz", chrompos = region)
+gwas_stats = gwasvcf::query_gwas("tabix_data/ebi-a-GCST004599.vcf.gz", chrompos = "3:56649749-57049749")
 gwas_stats = gwasvcf::vcf_to_granges(gwas_stats) %>% 
   keepSeqlevels("3") %>% 
   renameSeqlevels("chr3")
@@ -191,7 +191,7 @@ res = run_coloc(summary_stats, gwas_stats_hg38)
 
 ```
 ## PP.H0.abf PP.H1.abf PP.H2.abf PP.H3.abf PP.H4.abf 
-##  0.00e+00  0.00e+00  1.07e-12  1.18e-10  1.00e+00 
+##  0.00e+00  0.00e+00  1.04e-12  1.16e-10  1.00e+00 
 ## [1] "PP abf for shared variant: 100%"
 ```
 
@@ -290,16 +290,16 @@ dplyr::arrange(coloc_df, -PP.H4.abf)
 ## # A tibble: 112 x 7
 ##    qtl_id           nsnps PP.H0.abf PP.H1.abf PP.H2.abf PP.H3.abf PP.H4.abf
 ##    <chr>            <dbl>     <dbl>     <dbl>     <dbl>     <dbl>     <dbl>
-##  1 CEDAR_platelet    1391         0         0  1.07e-12  1.18e-10     1.00 
-##  2 GTEx_V8_Cells_E…  1406         0         0  4.20e- 1  8.09e- 2     0.499
-##  3 Alasoo_2018_mac…  1389         0         0  4.97e- 1  2.68e- 1     0.236
-##  4 FUSION_adipose_…  1399         0         0  6.17e- 1  1.73e- 1     0.210
-##  5 Alasoo_2018_mac…  1389         0         0  6.62e- 1  1.42e- 1     0.196
-##  6 Schmiedel_2018_…  1592         0         0  7.44e- 1  1.17e- 1     0.139
-##  7 GTEx_V8_Spleen    1412         0         0  7.63e- 1  1.13e- 1     0.125
-##  8 Schmiedel_2018_…  1595         0         0  7.55e- 1  1.20e- 1     0.125
-##  9 GTEx_V8_Brain_C…  1412         0         0  6.15e- 1  2.63e- 1     0.122
-## 10 GTEx_V8_Brain_S…  1410         0         0  7.68e- 1  1.18e- 1     0.114
+##  1 CEDAR_platelet    1532         0         0  1.04e-12  1.16e-10     1.00 
+##  2 GTEx_V8_Cells_E…  1549         0         0  4.08e- 1  1.06e- 1     0.487
+##  3 Alasoo_2018_mac…  1543         0         0  4.88e- 1  2.79e- 1     0.233
+##  4 FUSION_adipose_…  1543         0         0  6.07e- 1  1.86e- 1     0.207
+##  5 Alasoo_2018_mac…  1543         0         0  6.53e- 1  1.55e- 1     0.192
+##  6 Schmiedel_2018_…  1734         0         0  7.37e- 1  1.25e- 1     0.139
+##  7 Schmiedel_2018_…  1737         0         0  7.46e- 1  1.30e- 1     0.124
+##  8 GTEx_V8_Spleen    1555         0         0  7.53e- 1  1.24e- 1     0.123
+##  9 GTEx_V8_Brain_C…  1555         0         0  6.06e- 1  2.74e- 1     0.120
+## 10 GTEx_V8_Brain_S…  1553         0         0  7.59e- 1  1.27e- 1     0.113
 ## # … with 102 more rows
 ```
 
