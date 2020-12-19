@@ -200,3 +200,199 @@ FUSION	muscle_naive	UBERON_0001134	skeletal muscle tissue	muscle	naive	exon	288	
 FUSION	muscle_naive	UBERON_0001134	skeletal muscle tissue	muscle	naive	ge	288	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/ge/FUSION_ge_muscle_naive.all.tsv.gz
 FUSION	muscle_naive	UBERON_0001134	skeletal muscle tissue	muscle	naive	tx	288	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/tx/FUSION_tx_muscle_naive.all.tsv.gz
 FUSION	muscle_naive	UBERON_0001134	skeletal muscle tissue	muscle	naive	txrev	288	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/txrev/FUSION_txrev_muscle_naive.all.tsv.gz
+GTEx	adipose_subcutaneous	UBERON_0001013	adipose tissue	adipose	naive	ge	335	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_adipose_subcutaneous.all.tsv.gz
+GTEx	adipose_subcutaneous	UBERON_0001013	adipose tissue	adipose	naive	exon	335	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_adipose_subcutaneous.all.tsv.gz
+GTEx	adipose_subcutaneous	UBERON_0001013	adipose tissue	adipose	naive	tx	335	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_adipose_subcutaneous.all.tsv.gz
+GTEx	adipose_subcutaneous	UBERON_0001013	adipose tissue	adipose	naive	txrev	335	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_adipose_subcutaneous.all.tsv.gz
+GTEx	adipose_visceral	UBERON_0010414	omental fat pad	adipose (visceral)	naive	ge	219	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_adipose_visceral.all.tsv.gz
+GTEx	adipose_visceral	UBERON_0010414	omental fat pad	adipose (visceral)	naive	exon	219	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_adipose_visceral.all.tsv.gz
+GTEx	adipose_visceral	UBERON_0010414	omental fat pad	adipose (visceral)	naive	tx	219	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_adipose_visceral.all.tsv.gz
+GTEx	adipose_visceral	UBERON_0010414	omental fat pad	adipose (visceral)	naive	txrev	219	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_adipose_visceral.all.tsv.gz
+GTEx	adrenal_gland	UBERON_0002369	adrenal gland	adrenal gland	naive	ge	147	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_adrenal_gland.all.tsv.gz
+GTEx	adrenal_gland	UBERON_0002369	adrenal gland	adrenal gland	naive	exon	147	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_adrenal_gland.all.tsv.gz
+GTEx	adrenal_gland	UBERON_0002369	adrenal gland	adrenal gland	naive	tx	147	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_adrenal_gland.all.tsv.gz
+GTEx	adrenal_gland	UBERON_0002369	adrenal gland	adrenal gland	naive	txrev	147	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_adrenal_gland.all.tsv.gz
+GTEx	artery_aorta	UBERON_0001496	ascending aorta	artery (aorta)	naive	ge	234	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_artery_aorta.all.tsv.gz
+GTEx	artery_aorta	UBERON_0001496	ascending aorta	artery (aorta)	naive	exon	234	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_artery_aorta.all.tsv.gz
+GTEx	artery_aorta	UBERON_0001496	ascending aorta	artery (aorta)	naive	tx	234	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_artery_aorta.all.tsv.gz
+GTEx	artery_aorta	UBERON_0001496	ascending aorta	artery (aorta)	naive	txrev	234	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_artery_aorta.all.tsv.gz
+GTEx	artery_coronary	UBERON_0001621	coronary artery	artery (coronary)	naive	ge	133	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_artery_coronary.all.tsv.gz
+GTEx	artery_coronary	UBERON_0001621	coronary artery	artery (coronary)	naive	exon	133	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_artery_coronary.all.tsv.gz
+GTEx	artery_coronary	UBERON_0001621	coronary artery	artery (coronary)	naive	tx	133	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_artery_coronary.all.tsv.gz
+GTEx	artery_coronary	UBERON_0001621	coronary artery	artery (coronary)	naive	txrev	133	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_artery_coronary.all.tsv.gz
+GTEx	artery_tibial	UBERON_0007610	tibial artery	artery (tibial)	naive	ge	332	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_artery_tibial.all.tsv.gz
+GTEx	artery_tibial	UBERON_0007610	tibial artery	artery (tibial)	naive	exon	332	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_artery_tibial.all.tsv.gz
+GTEx	artery_tibial	UBERON_0007610	tibial artery	artery (tibial)	naive	tx	332	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_artery_tibial.all.tsv.gz
+GTEx	artery_tibial	UBERON_0007610	tibial artery	artery (tibial)	naive	txrev	332	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_artery_tibial.all.tsv.gz
+GTEx	blood	UBERON_0000178	blood	blood	naive	ge	379	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_blood.all.tsv.gz
+GTEx	blood	UBERON_0000178	blood	blood	naive	exon	379	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_blood.all.tsv.gz
+GTEx	blood	UBERON_0000178	blood	blood	naive	tx	379	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_blood.all.tsv.gz
+GTEx	blood	UBERON_0000178	blood	blood	naive	txrev	379	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_blood.all.tsv.gz
+GTEx	brain_amygdala	UBERON_0001876	amygdala	brain (amygdala)	naive	ge	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_amygdala.all.tsv.gz
+GTEx	brain_amygdala	UBERON_0001876	amygdala	brain (amygdala)	naive	exon	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_amygdala.all.tsv.gz
+GTEx	brain_amygdala	UBERON_0001876	amygdala	brain (amygdala)	naive	tx	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_amygdala.all.tsv.gz
+GTEx	brain_amygdala	UBERON_0001876	amygdala	brain (amygdala)	naive	txrev	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_amygdala.all.tsv.gz
+GTEx	brain_anterior_cingulate_cortex	UBERON_0009835	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	ge	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_anterior_cingulate_cortex.all.tsv.gz
+GTEx	brain_anterior_cingulate_cortex	UBERON_0009835	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	exon	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_anterior_cingulate_cortex.all.tsv.gz
+GTEx	brain_anterior_cingulate_cortex	UBERON_0009835	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	tx	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_anterior_cingulate_cortex.all.tsv.gz
+GTEx	brain_anterior_cingulate_cortex	UBERON_0009835	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	txrev	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_anterior_cingulate_cortex.all.tsv.gz
+GTEx	brain_caudate	UBERON_0001873	caudate nucleus	brain (caudate)	naive	ge	116	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_caudate.all.tsv.gz
+GTEx	brain_caudate	UBERON_0001873	caudate nucleus	brain (caudate)	naive	exon	116	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_caudate.all.tsv.gz
+GTEx	brain_caudate	UBERON_0001873	caudate nucleus	brain (caudate)	naive	tx	116	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_caudate.all.tsv.gz
+GTEx	brain_caudate	UBERON_0001873	caudate nucleus	brain (caudate)	naive	txrev	116	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_caudate.all.tsv.gz
+GTEx	brain_cerebellar_hemisphere	UBERON_0002037	cerebellum	brain (cerebellum)	naive	ge	105	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_cerebellar_hemisphere.all.tsv.gz
+GTEx	brain_cerebellar_hemisphere	UBERON_0002037	cerebellum	brain (cerebellum)	naive	exon	105	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_cerebellar_hemisphere.all.tsv.gz
+GTEx	brain_cerebellar_hemisphere	UBERON_0002037	cerebellum	brain (cerebellum)	naive	tx	105	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_cerebellar_hemisphere.all.tsv.gz
+GTEx	brain_cerebellar_hemisphere	UBERON_0002037	cerebellum	brain (cerebellum)	naive	txrev	105	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_cerebellar_hemisphere.all.tsv.gz
+GTEx	brain_cerebellum	UBERON_0002037	cerebellum	brain (cerebellum)	naive	ge	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_cerebellum.all.tsv.gz
+GTEx	brain_cerebellum	UBERON_0002037	cerebellum	brain (cerebellum)	naive	exon	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_cerebellum.all.tsv.gz
+GTEx	brain_cerebellum	UBERON_0002037	cerebellum	brain (cerebellum)	naive	tx	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_cerebellum.all.tsv.gz
+GTEx	brain_cerebellum	UBERON_0002037	cerebellum	brain (cerebellum)	naive	txrev	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_cerebellum.all.tsv.gz
+GTEx	brain_cortex	UBERON_0001870	frontal cortex	brain (cortex)	naive	ge	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_cortex.all.tsv.gz
+GTEx	brain_cortex	UBERON_0001870	frontal cortex	brain (cortex)	naive	exon	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_cortex.all.tsv.gz
+GTEx	brain_cortex	UBERON_0001870	frontal cortex	brain (cortex)	naive	tx	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_cortex.all.tsv.gz
+GTEx	brain_cortex	UBERON_0001870	frontal cortex	brain (cortex)	naive	txrev	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_cortex.all.tsv.gz
+GTEx	brain_frontal_cortex	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	106	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_frontal_cortex.all.tsv.gz
+GTEx	brain_frontal_cortex	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	106	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_frontal_cortex.all.tsv.gz
+GTEx	brain_frontal_cortex	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	106	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_frontal_cortex.all.tsv.gz
+GTEx	brain_frontal_cortex	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	106	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_frontal_cortex.all.tsv.gz
+GTEx	brain_hippocampus	UBERON_0001954	Ammon's horn	brain (hippocampus)	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_hippocampus.all.tsv.gz
+GTEx	brain_hippocampus	UBERON_0001954	Ammon's horn	brain (hippocampus)	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_hippocampus.all.tsv.gz
+GTEx	brain_hippocampus	UBERON_0001954	Ammon's horn	brain (hippocampus)	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_hippocampus.all.tsv.gz
+GTEx	brain_hippocampus	UBERON_0001954	Ammon's horn	brain (hippocampus)	naive	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_hippocampus.all.tsv.gz
+GTEx	brain_hypothalamus	UBERON_0001898	hypothalamus	brain (hypothalamus)	naive	ge	92	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_hypothalamus.all.tsv.gz
+GTEx	brain_hypothalamus	UBERON_0001898	hypothalamus	brain (hypothalamus)	naive	exon	92	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_hypothalamus.all.tsv.gz
+GTEx	brain_hypothalamus	UBERON_0001898	hypothalamus	brain (hypothalamus)	naive	tx	92	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_hypothalamus.all.tsv.gz
+GTEx	brain_hypothalamus	UBERON_0001898	hypothalamus	brain (hypothalamus)	naive	txrev	92	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_hypothalamus.all.tsv.gz
+GTEx	brain_nucleus_accumbens	UBERON_0001882	nucleus accumbens	brain (nucleus accumbens)	naive	ge	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_nucleus_accumbens.all.tsv.gz
+GTEx	brain_nucleus_accumbens	UBERON_0001882	nucleus accumbens	brain (nucleus accumbens)	naive	exon	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_nucleus_accumbens.all.tsv.gz
+GTEx	brain_nucleus_accumbens	UBERON_0001882	nucleus accumbens	brain (nucleus accumbens)	naive	tx	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_nucleus_accumbens.all.tsv.gz
+GTEx	brain_nucleus_accumbens	UBERON_0001882	nucleus accumbens	brain (nucleus accumbens)	naive	txrev	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_nucleus_accumbens.all.tsv.gz
+GTEx	brain_putamen	UBERON_0001874	putamen	brain (putamen)	naive	ge	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_putamen.all.tsv.gz
+GTEx	brain_putamen	UBERON_0001874	putamen	brain (putamen)	naive	exon	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_putamen.all.tsv.gz
+GTEx	brain_putamen	UBERON_0001874	putamen	brain (putamen)	naive	tx	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_putamen.all.tsv.gz
+GTEx	brain_putamen	UBERON_0001874	putamen	brain (putamen)	naive	txrev	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_putamen.all.tsv.gz
+GTEx	brain_spinal_cord	UBERON_0006469	C1 segment of cervical spinal cord	brain (spinal cord)	naive	ge	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_spinal_cord.all.tsv.gz
+GTEx	brain_spinal_cord	UBERON_0006469	C1 segment of cervical spinal cord	brain (spinal cord)	naive	exon	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_spinal_cord.all.tsv.gz
+GTEx	brain_spinal_cord	UBERON_0006469	C1 segment of cervical spinal cord	brain (spinal cord)	naive	tx	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_spinal_cord.all.tsv.gz
+GTEx	brain_spinal_cord	UBERON_0006469	C1 segment of cervical spinal cord	brain (spinal cord)	naive	txrev	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_spinal_cord.all.tsv.gz
+GTEx	brain_substantia_nigra	UBERON_0002038	substantia nigra	brain (substantia nigra)	naive	ge	64	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_substantia_nigra.all.tsv.gz
+GTEx	brain_substantia_nigra	UBERON_0002038	substantia nigra	brain (substantia nigra)	naive	exon	64	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_substantia_nigra.all.tsv.gz
+GTEx	brain_substantia_nigra	UBERON_0002038	substantia nigra	brain (substantia nigra)	naive	tx	64	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_substantia_nigra.all.tsv.gz
+GTEx	brain_substantia_nigra	UBERON_0002038	substantia nigra	brain (substantia nigra)	naive	txrev	64	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_substantia_nigra.all.tsv.gz
+GTEx	breast	UBERON_0008367	breast epithelium	breast	naive	ge	199	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_breast.all.tsv.gz
+GTEx	breast	UBERON_0008367	breast epithelium	breast	naive	exon	199	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_breast.all.tsv.gz
+GTEx	breast	UBERON_0008367	breast epithelium	breast	naive	tx	199	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_breast.all.tsv.gz
+GTEx	breast	UBERON_0008367	breast epithelium	breast	naive	txrev	199	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_breast.all.tsv.gz
+GTEx	colon_sigmoid	UBERON_0001159	sigmoid colon	sigmoid colon	naive	ge	164	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_colon_sigmoid.all.tsv.gz
+GTEx	colon_sigmoid	UBERON_0001159	sigmoid colon	sigmoid colon	naive	exon	164	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_colon_sigmoid.all.tsv.gz
+GTEx	colon_sigmoid	UBERON_0001159	sigmoid colon	sigmoid colon	naive	tx	164	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_colon_sigmoid.all.tsv.gz
+GTEx	colon_sigmoid	UBERON_0001159	sigmoid colon	sigmoid colon	naive	txrev	164	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_colon_sigmoid.all.tsv.gz
+GTEx	colon_transverse	UBERON_0001157	transverse colon	transverse colon	naive	ge	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_colon_transverse.all.tsv.gz
+GTEx	colon_transverse	UBERON_0001157	transverse colon	transverse colon	naive	exon	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_colon_transverse.all.tsv.gz
+GTEx	colon_transverse	UBERON_0001157	transverse colon	transverse colon	naive	tx	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_colon_transverse.all.tsv.gz
+GTEx	colon_transverse	UBERON_0001157	transverse colon	transverse colon	naive	txrev	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_colon_transverse.all.tsv.gz
+GTEx	esophagus_gej	UBERON_0004550	gastroesophageal sphincter	esophagus (gej)	naive	ge	168	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_esophagus_gej.all.tsv.gz
+GTEx	esophagus_gej	UBERON_0004550	gastroesophageal sphincter	esophagus (gej)	naive	exon	168	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_esophagus_gej.all.tsv.gz
+GTEx	esophagus_gej	UBERON_0004550	gastroesophageal sphincter	esophagus (gej)	naive	tx	168	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_esophagus_gej.all.tsv.gz
+GTEx	esophagus_gej	UBERON_0004550	gastroesophageal sphincter	esophagus (gej)	naive	txrev	168	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_esophagus_gej.all.tsv.gz
+GTEx	esophagus_mucosa	UBERON_0006920	esophagus squamous epithelium	esophagus (mucosa)	naive	ge	306	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_esophagus_mucosa.all.tsv.gz
+GTEx	esophagus_mucosa	UBERON_0006920	esophagus squamous epithelium	esophagus (mucosa)	naive	exon	306	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_esophagus_mucosa.all.tsv.gz
+GTEx	esophagus_mucosa	UBERON_0006920	esophagus squamous epithelium	esophagus (mucosa)	naive	tx	306	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_esophagus_mucosa.all.tsv.gz
+GTEx	esophagus_mucosa	UBERON_0006920	esophagus squamous epithelium	esophagus (mucosa)	naive	txrev	306	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_esophagus_mucosa.all.tsv.gz
+GTEx	esophagus_muscularis	UBERON_0004648	esophagus muscularis mucosa	esophagus (muscularis)	naive	ge	262	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_esophagus_muscularis.all.tsv.gz
+GTEx	esophagus_muscularis	UBERON_0004648	esophagus muscularis mucosa	esophagus (muscularis)	naive	exon	262	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_esophagus_muscularis.all.tsv.gz
+GTEx	esophagus_muscularis	UBERON_0004648	esophagus muscularis mucosa	esophagus (muscularis)	naive	tx	262	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_esophagus_muscularis.all.tsv.gz
+GTEx	esophagus_muscularis	UBERON_0004648	esophagus muscularis mucosa	esophagus (muscularis)	naive	txrev	262	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_esophagus_muscularis.all.tsv.gz
+GTEx	fibroblast	CL_0000057	fibroblast	fibroblast	naive	ge	282	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_fibroblast.all.tsv.gz
+GTEx	fibroblast	CL_0000057	fibroblast	fibroblast	naive	exon	282	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_fibroblast.all.tsv.gz
+GTEx	fibroblast	CL_0000057	fibroblast	fibroblast	naive	tx	282	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_fibroblast.all.tsv.gz
+GTEx	fibroblast	CL_0000057	fibroblast	fibroblast	naive	txrev	282	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_fibroblast.all.tsv.gz
+GTEx	heart_atrial_appendage	UBERON_0006631	right atrium auricular region	heart (atrial appendage)	naive	ge	204	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_heart_atrial_appendage.all.tsv.gz
+GTEx	heart_atrial_appendage	UBERON_0006631	right atrium auricular region	heart (atrial appendage)	naive	exon	204	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_heart_atrial_appendage.all.tsv.gz
+GTEx	heart_atrial_appendage	UBERON_0006631	right atrium auricular region	heart (atrial appendage)	naive	tx	204	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_heart_atrial_appendage.all.tsv.gz
+GTEx	heart_atrial_appendage	UBERON_0006631	right atrium auricular region	heart (atrial appendage)	naive	txrev	204	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_heart_atrial_appendage.all.tsv.gz
+GTEx	heart_left_ventricle	UBERON_0006566	left ventricle myocardium	heart (left ventricle)	naive	ge	220	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_heart_left_ventricle.all.tsv.gz
+GTEx	heart_left_ventricle	UBERON_0006566	left ventricle myocardium	heart (left ventricle)	naive	exon	220	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_heart_left_ventricle.all.tsv.gz
+GTEx	heart_left_ventricle	UBERON_0006566	left ventricle myocardium	heart (left ventricle)	naive	tx	220	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_heart_left_ventricle.all.tsv.gz
+GTEx	heart_left_ventricle	UBERON_0006566	left ventricle myocardium	heart (left ventricle)	naive	txrev	220	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_heart_left_ventricle.all.tsv.gz
+GTEx	kidney_cortex	UBERON_0001225	cortex of kidney	kidney (cortex)	naive	ge	32	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_kidney_cortex.all.tsv.gz
+GTEx	kidney_cortex	UBERON_0001225	cortex of kidney	kidney (cortex)	naive	exon	32	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_kidney_cortex.all.tsv.gz
+GTEx	kidney_cortex	UBERON_0001225	cortex of kidney	kidney (cortex)	naive	tx	32	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_kidney_cortex.all.tsv.gz
+GTEx	kidney_cortex	UBERON_0001225	cortex of kidney	kidney (cortex)	naive	txrev	32	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_kidney_cortex.all.tsv.gz
+GTEx	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	ge	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_LCL.all.tsv.gz
+GTEx	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	exon	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_LCL.all.tsv.gz
+GTEx	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	tx	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_LCL.all.tsv.gz
+GTEx	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	txrev	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_LCL.all.tsv.gz
+GTEx	liver	UBERON_0001114	right lobe of liver	liver	naive	ge	128	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_liver.all.tsv.gz
+GTEx	liver	UBERON_0001114	right lobe of liver	liver	naive	exon	128	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_liver.all.tsv.gz
+GTEx	liver	UBERON_0001114	right lobe of liver	liver	naive	tx	128	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_liver.all.tsv.gz
+GTEx	liver	UBERON_0001114	right lobe of liver	liver	naive	txrev	128	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_liver.all.tsv.gz
+GTEx	lung	UBERON_0008952	upper lobe of left lung	lung	naive	ge	310	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_lung.all.tsv.gz
+GTEx	lung	UBERON_0008952	upper lobe of left lung	lung	naive	exon	310	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_lung.all.tsv.gz
+GTEx	lung	UBERON_0008952	upper lobe of left lung	lung	naive	tx	310	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_lung.all.tsv.gz
+GTEx	lung	UBERON_0008952	upper lobe of left lung	lung	naive	txrev	310	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_lung.all.tsv.gz
+GTEx	minor_salivary_gland	UBERON_0006330	anterior lingual gland	minor salivary gland	naive	ge	67	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_minor_salivary_gland.all.tsv.gz
+GTEx	minor_salivary_gland	UBERON_0006330	anterior lingual gland	minor salivary gland	naive	exon	67	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_minor_salivary_gland.all.tsv.gz
+GTEx	minor_salivary_gland	UBERON_0006330	anterior lingual gland	minor salivary gland	naive	tx	67	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_minor_salivary_gland.all.tsv.gz
+GTEx	minor_salivary_gland	UBERON_0006330	anterior lingual gland	minor salivary gland	naive	txrev	67	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_minor_salivary_gland.all.tsv.gz
+GTEx	muscle	UBERON_0001134	skeletal muscle tissue	muscle	naive	ge	410	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_muscle.all.tsv.gz
+GTEx	muscle	UBERON_0001134	skeletal muscle tissue	muscle	naive	exon	410	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_muscle.all.tsv.gz
+GTEx	muscle	UBERON_0001134	skeletal muscle tissue	muscle	naive	tx	410	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_muscle.all.tsv.gz
+GTEx	muscle	UBERON_0001134	skeletal muscle tissue	muscle	naive	txrev	410	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_muscle.all.tsv.gz
+GTEx	nerve_tibial	UBERON_0001323	tibial nerve	tibial nerve	naive	ge	302	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_nerve_tibial.all.tsv.gz
+GTEx	nerve_tibial	UBERON_0001323	tibial nerve	tibial nerve	naive	exon	302	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_nerve_tibial.all.tsv.gz
+GTEx	nerve_tibial	UBERON_0001323	tibial nerve	tibial nerve	naive	tx	302	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_nerve_tibial.all.tsv.gz
+GTEx	nerve_tibial	UBERON_0001323	tibial nerve	tibial nerve	naive	txrev	302	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_nerve_tibial.all.tsv.gz
+GTEx	ovary	UBERON_0000992	female gonad	ovary	naive	ge	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_ovary.all.tsv.gz
+GTEx	ovary	UBERON_0000992	female gonad	ovary	naive	exon	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_ovary.all.tsv.gz
+GTEx	ovary	UBERON_0000992	female gonad	ovary	naive	tx	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_ovary.all.tsv.gz
+GTEx	ovary	UBERON_0000992	female gonad	ovary	naive	txrev	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_ovary.all.tsv.gz
+GTEx	pancreas	UBERON_0001150	body of pancreas	pancreas	naive	ge	177	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_pancreas.all.tsv.gz
+GTEx	pancreas	UBERON_0001150	body of pancreas	pancreas	naive	exon	177	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_pancreas.all.tsv.gz
+GTEx	pancreas	UBERON_0001150	body of pancreas	pancreas	naive	tx	177	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_pancreas.all.tsv.gz
+GTEx	pancreas	UBERON_0001150	body of pancreas	pancreas	naive	txrev	177	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_pancreas.all.tsv.gz
+GTEx	pituitary	UBERON_0000007	pituitary gland	pituitary	naive	ge	114	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_pituitary.all.tsv.gz
+GTEx	pituitary	UBERON_0000007	pituitary gland	pituitary	naive	exon	114	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_pituitary.all.tsv.gz
+GTEx	pituitary	UBERON_0000007	pituitary gland	pituitary	naive	tx	114	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_pituitary.all.tsv.gz
+GTEx	pituitary	UBERON_0000007	pituitary gland	pituitary	naive	txrev	114	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_pituitary.all.tsv.gz
+GTEx	prostate	UBERON_0002367	prostate gland	prostate	naive	ge	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_prostate.all.tsv.gz
+GTEx	prostate	UBERON_0002367	prostate gland	prostate	naive	exon	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_prostate.all.tsv.gz
+GTEx	prostate	UBERON_0002367	prostate gland	prostate	naive	tx	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_prostate.all.tsv.gz
+GTEx	prostate	UBERON_0002367	prostate gland	prostate	naive	txrev	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_prostate.all.tsv.gz
+GTEx	skin_not_sun_exposed	UBERON_0036149	suprapubic skin	skin (suprapubic)	naive	ge	248	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_skin_not_sun_exposed.all.tsv.gz
+GTEx	skin_not_sun_exposed	UBERON_0036149	suprapubic skin	skin (suprapubic)	naive	exon	248	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_skin_not_sun_exposed.all.tsv.gz
+GTEx	skin_not_sun_exposed	UBERON_0036149	suprapubic skin	skin (suprapubic)	naive	tx	248	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_skin_not_sun_exposed.all.tsv.gz
+GTEx	skin_not_sun_exposed	UBERON_0036149	suprapubic skin	skin (suprapubic)	naive	txrev	248	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_skin_not_sun_exposed.all.tsv.gz
+GTEx	skin_sun_exposed	UBERON_0002097	skin of body	skin	naive	ge	343	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_skin_sun_exposed.all.tsv.gz
+GTEx	skin_sun_exposed	UBERON_0002097	skin of body	skin	naive	exon	343	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_skin_sun_exposed.all.tsv.gz
+GTEx	skin_sun_exposed	UBERON_0002097	skin of body	skin	naive	tx	343	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_skin_sun_exposed.all.tsv.gz
+GTEx	skin_sun_exposed	UBERON_0002097	skin of body	skin	naive	txrev	343	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_skin_sun_exposed.all.tsv.gz
+GTEx	small_intestine	UBERON_0001211	Peyer's patch	small intestine	naive	ge	99	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_small_intestine.all.tsv.gz
+GTEx	small_intestine	UBERON_0001211	Peyer's patch	small intestine	naive	exon	99	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_small_intestine.all.tsv.gz
+GTEx	small_intestine	UBERON_0001211	Peyer's patch	small intestine	naive	tx	99	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_small_intestine.all.tsv.gz
+GTEx	small_intestine	UBERON_0001211	Peyer's patch	small intestine	naive	txrev	99	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_small_intestine.all.tsv.gz
+GTEx	spleen	UBERON_0002106	spleen	spleen	naive	ge	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_spleen.all.tsv.gz
+GTEx	spleen	UBERON_0002106	spleen	spleen	naive	exon	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_spleen.all.tsv.gz
+GTEx	spleen	UBERON_0002106	spleen	spleen	naive	tx	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_spleen.all.tsv.gz
+GTEx	spleen	UBERON_0002106	spleen	spleen	naive	txrev	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_spleen.all.tsv.gz
+GTEx	stomach	UBERON_0000945	stomach	stomach	naive	ge	188	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_stomach.all.tsv.gz
+GTEx	stomach	UBERON_0000945	stomach	stomach	naive	exon	188	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_stomach.all.tsv.gz
+GTEx	stomach	UBERON_0000945	stomach	stomach	naive	tx	188	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_stomach.all.tsv.gz
+GTEx	stomach	UBERON_0000945	stomach	stomach	naive	txrev	188	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_stomach.all.tsv.gz
+GTEx	testis	UBERON_0000473	testis	testis	naive	ge	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_testis.all.tsv.gz
+GTEx	testis	UBERON_0000473	testis	testis	naive	exon	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_testis.all.tsv.gz
+GTEx	testis	UBERON_0000473	testis	testis	naive	tx	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_testis.all.tsv.gz
+GTEx	testis	UBERON_0000473	testis	testis	naive	txrev	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_testis.all.tsv.gz
+GTEx	thyroid	UBERON_0002046	thyroid gland	thyroid	naive	ge	316	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_thyroid.all.tsv.gz
+GTEx	thyroid	UBERON_0002046	thyroid gland	thyroid	naive	exon	316	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_thyroid.all.tsv.gz
+GTEx	thyroid	UBERON_0002046	thyroid gland	thyroid	naive	tx	316	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_thyroid.all.tsv.gz
+GTEx	thyroid	UBERON_0002046	thyroid gland	thyroid	naive	txrev	316	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_thyroid.all.tsv.gz
+GTEx	uterus	UBERON_0000995	uterus	uterus	naive	ge	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_uterus.all.tsv.gz
+GTEx	uterus	UBERON_0000995	uterus	uterus	naive	exon	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_uterus.all.tsv.gz
+GTEx	uterus	UBERON_0000995	uterus	uterus	naive	tx	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_uterus.all.tsv.gz
+GTEx	uterus	UBERON_0000995	uterus	uterus	naive	txrev	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_uterus.all.tsv.gz
+GTEx	vagina	UBERON_0000996	vagina	vagina	naive	ge	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_vagina.all.tsv.gz
+GTEx	vagina	UBERON_0000996	vagina	vagina	naive	exon	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_vagina.all.tsv.gz
+GTEx	vagina	UBERON_0000996	vagina	vagina	naive	tx	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_vagina.all.tsv.gz
+GTEx	vagina	UBERON_0000996	vagina	vagina	naive	txrev	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_vagina.all.tsv.gz
