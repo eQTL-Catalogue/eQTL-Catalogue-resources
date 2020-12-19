@@ -1,4 +1,4 @@
-study	qtl_group	tissue_ontology_id	tissue_ontology_term	tissue_label	condition_label	quant_method	ftp_path
+study	qtl_group	tissue_ontology_id	tissue_ontology_term	tissue_ontology_label	condition_label	quant_method	ftp_path
 GTEx_V8	Adipose_Subcutaneous	UBER_0002190	subcutaneous adipose tissue	Adipose - Subcutaneous	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Adipose_Subcutaneous.tsv.gz
 GTEx_V8	Adipose_Visceral_Omentum	UBER_0010414	omental fat pad	Adipose - Visceral (Omentum)	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Adipose_Visceral_Omentum.tsv.gz
 GTEx_V8	Adrenal_Gland	UBER_0002369	adrenal gland	Adrenal Gland	naive	ge	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx_V8/ge/Adrenal_Gland.tsv.gz

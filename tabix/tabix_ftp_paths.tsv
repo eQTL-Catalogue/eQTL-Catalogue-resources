@@ -1,4 +1,4 @@
-study	qtl_group	tissue_ontology_id	tissue_ontology_term	tissue_label	condition_label	quant_method	sample_size	ftp_path
+study	qtl_group	tissue_ontology_id	tissue_ontology_term	tissue_ontology_label	condition_label	quant_method	sample_size	ftp_path
 Alasoo_2018	macrophage_naive	CL_0000235	macrophage	macrophage	naive	ge	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/ge/Alasoo_2018_ge_macrophage_naive.all.tsv.gz
 Alasoo_2018	macrophage_naive	CL_0000235	macrophage	macrophage	naive	exon	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/exon/Alasoo_2018_exon_macrophage_naive.all.tsv.gz
 Alasoo_2018	macrophage_naive	CL_0000235	macrophage	macrophage	naive	tx	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/tx/Alasoo_2018_tx_macrophage_naive.all.tsv.gz

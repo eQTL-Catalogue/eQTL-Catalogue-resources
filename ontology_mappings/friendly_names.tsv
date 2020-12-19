@@ -1,4 +1,4 @@
-ontology_term	ontology_label	ontology_tissue
+tissue_ontology_id	tissue_ontology_term	tissue_ontology_label
 CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte
 CL_0000775	neutrophil	neutrophil
 CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell
