@@ -27,10 +27,10 @@ BLUEPRINT	T-cell	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	ge
 BLUEPRINT	T-cell	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	exon	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/exon/BLUEPRINT_exon_T-cell.all.tsv.gz
 BLUEPRINT	T-cell	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	tx	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/tx/BLUEPRINT_tx_T-cell.all.tsv.gz
 BLUEPRINT	T-cell	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	txrev	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/txrev/BLUEPRINT_txrev_T-cell.all.tsv.gz
-BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	DLPFC	naive	ge	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/ge/BrainSeq_ge_brain.all.tsv.gz
-BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	DLPFC	naive	exon	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/exon/BrainSeq_exon_brain.all.tsv.gz
-BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	DLPFC	naive	tx	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/tx/BrainSeq_tx_brain.all.tsv.gz
-BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	DLPFC	naive	txrev	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/txrev/BrainSeq_txrev_brain.all.tsv.gz
+BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/ge/BrainSeq_ge_brain.all.tsv.gz
+BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/exon/BrainSeq_exon_brain.all.tsv.gz
+BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/tx/BrainSeq_tx_brain.all.tsv.gz
+BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/txrev/BrainSeq_txrev_brain.all.tsv.gz
 CEDAR	T-cell_CD8	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	microarray	277	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_T-cell_CD8.all.tsv.gz
 CEDAR	T-cell_CD4	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	microarray	290	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_T-cell_CD4.all.tsv.gz
 CEDAR	transverse_colon	UBERON_0001157	transverse colon	transverse colon	naive	microarray	286	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_transverse_colon.all.tsv.gz
@@ -104,10 +104,10 @@ Quach_2016	monocyte_IAV	CL_0002057	CD14-positive, CD16-negative classical monocy
 Quach_2016	monocyte_IAV	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	exon	198	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/exon/Quach_2016_exon_monocyte_IAV.all.tsv.gz
 Quach_2016	monocyte_IAV	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	tx	198	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/tx/Quach_2016_tx_monocyte_IAV.all.tsv.gz
 Quach_2016	monocyte_IAV	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	txrev	198	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/txrev/Quach_2016_txrev_monocyte_IAV.all.tsv.gz
-ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	DLPFC	naive	ge	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/ge/ROSMAP_ge_brain_naive.all.tsv.gz
-ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	DLPFC	naive	exon	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/exon/ROSMAP_exon_brain_naive.all.tsv.gz
-ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	DLPFC	naive	tx	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/tx/ROSMAP_tx_brain_naive.all.tsv.gz
-ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	DLPFC	naive	txrev	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/txrev/ROSMAP_txrev_brain_naive.all.tsv.gz
+ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/ge/ROSMAP_ge_brain_naive.all.tsv.gz
+ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/exon/ROSMAP_exon_brain_naive.all.tsv.gz
+ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/tx/ROSMAP_tx_brain_naive.all.tsv.gz
+ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/txrev/ROSMAP_txrev_brain_naive.all.tsv.gz
 Schmiedel_2018	Tfh_memory	CL_0002038	T follicular helper cell	Tfh cell	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_Tfh_memory.all.tsv.gz
 Schmiedel_2018	Tfh_memory	CL_0002038	T follicular helper cell	Tfh cell	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_Tfh_memory.all.tsv.gz
 Schmiedel_2018	Tfh_memory	CL_0002038	T follicular helper cell	Tfh cell	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_Tfh_memory.all.tsv.gz
