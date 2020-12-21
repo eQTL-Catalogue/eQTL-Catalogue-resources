@@ -1,4 +1,4 @@
-study	cell_type	qtl_group	ontology_term	ontology_label
+study	cell_type	qtl_group	tissue_ontology_id	tissue_ontology_term
 BLUEPRINT	monocyte	monocyte	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
 BLUEPRINT	neutrophil	neutrophil	CL_0000775	neutrophil
 BLUEPRINT	T-cell	T-cell	CL_0000624	"CD4-positive, alpha-beta T cell"
