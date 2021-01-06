@@ -17,6 +17,12 @@ plink --vcf <path_to_vcf_file> --make-bed --out <plink_file_prefix>
 
 ```
 
+Optionally, you can also immediately also check if there are some individual with many missing genotypes (see manual QC steps below). If there are then you should probably exclude those individuals, because their presence can cause the imputation workflow to fail.
+
+```bash
+plink --bfile <plink_file_prefix> --missing
+```
+
 #### Output
 Imputed genotypes in VCF format lifted to GRCh38 coordinates.
 
