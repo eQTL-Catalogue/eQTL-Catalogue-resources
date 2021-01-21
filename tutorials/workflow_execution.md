@@ -120,6 +120,8 @@ nextflow run main.nf -profile eqtl_catalogue\
     -process.queue main
 ```
 
+TODO: explain what --is_imputed does.
+
 ## Step 5: QTL fine mapping with [eQTL-Catalogue/susie-workflow](https://github.com/eQTL-Catalogue/susie-workflow)
 
 # Modular approach
