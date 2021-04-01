@@ -2,12 +2,13 @@ library(tidyverse)
 library(ggplot2)
 
 sample_size = readr::read_tsv("dataset_sample_sizes.tsv")
+sample_size = sample_size %>% mutate(study = ifelse(study %in% c("BLUEPRINT_PE","BLUEPRINT_SE"), "BLUEPRINT", study))
 
 ontology = readr::read_tsv("../../../ontology_mappings/tissue_ontology_mapping.tsv")
 friendly_names = readr::read_tsv("../../../ontology_mappings/friendly_names.tsv")
 
-ontology = ontology %>% dplyr::left_join(friendly_names[c("ontology_term", "ontology_tissue")], by="ontology_term")
-ontology = ontology %>% dplyr::arrange(ontology_tissue, study)
+ontology = ontology %>% dplyr::left_join(friendly_names[c("tissue_ontology_id", "tissue_label")], by="tissue_ontology_id")
+ontology = ontology %>% dplyr::arrange(tissue_label, study)
 
 studies = dplyr::left_join(sample_size, ontology)
 
@@ -34,10 +35,10 @@ clr_values = c(values, c(GTEx="darkgrey"))
 
 draw_plot = function(studies, legend_rows = 4, legend_x_pos = 0.5, legen_y_position=0.8){
   sample_sizes = studies %>% 
-    dplyr::group_by(ontology_tissue) %>% 
+    dplyr::group_by(tissue_label) %>% 
     dplyr::mutate(total_sample_size=sum(dataset_sample_size))
   
-  plt = ggplot(sample_sizes, aes(x = reorder(ontology_tissue, -total_sample_size), dataset_sample_size, fill=study)) +
+  plt = ggplot(sample_sizes, aes(x = reorder(tissue_label, -total_sample_size), dataset_sample_size, fill=study)) +
     geom_col() + 
     guides(fill=guide_legend(nrow=legend_rows,byrow=TRUE))+
     xlab("Cell type or tissue") + 
@@ -59,4 +60,4 @@ rnaseq_plt = draw_plot(rnaseq_studies, legen_y_position = 0.75)
 ggsave("rnaseq_sample_size.pdf", rnaseq_plt, width = 10, height = 5)
 
 microarr_plt = draw_plot(microarray_studies, legend_rows = 3, legend_x_pos = 0.76, legen_y_position=0.76)
-ggsave("microarr_sample_size.pdf", microarr_plt, width = 6, height = 3.7)
+ggsave(microarr_sample_size.pdf", microarr_plt, width = 6, height = 3.7)
