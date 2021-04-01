@@ -60,4 +60,4 @@ rnaseq_plt = draw_plot(rnaseq_studies, legen_y_position = 0.75)
 ggsave("rnaseq_sample_size.pdf", rnaseq_plt, width = 10, height = 5)
 
 microarr_plt = draw_plot(microarray_studies, legend_rows = 3, legend_x_pos = 0.76, legen_y_position=0.76)
-ggsave(microarr_sample_size.pdf", microarr_plt, width = 6, height = 3.7)
+ggsave("microarr_sample_size.pdf", microarr_plt, width = 6, height = 3.7)
