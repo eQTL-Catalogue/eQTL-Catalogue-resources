@@ -52,7 +52,7 @@ lung	lung	GTEx	RNA-seq	510
 macrophage	macrophage_naive	Alasoo_2018	RNA-seq	84
 macrophage	macrophage_naive	Nedelec_2016	RNA-seq	163
 minor_salivary_gland	minor_salivary_gland	GTEx	RNA-seq	144
-monocyte	monocyte	BLUEPRINT_SE	RNA-seq	191
+monocyte	monocyte	BLUEPRINT	RNA-seq	191
 monocyte	monocyte_CD14	CEDAR	microarray	286
 monocyte	monocyte_naive	Fairfax_2014	microarray	420
 monocyte	monocyte_naive	Quach_2016	RNA-seq	200
@@ -61,7 +61,7 @@ monocyte_CD16	monocyte_CD16_naive	Schmiedel_2018	RNA-seq	90
 muscle	muscle	GTEx	RNA-seq	702
 muscle	muscle_naive	FUSION	RNA-seq	288
 nerve_tibial	nerve_tibial	GTEx	RNA-seq	532
-neutrophil	neutrophil	BLUEPRINT_SE	RNA-seq	196
+neutrophil	neutrophil	BLUEPRINT	RNA-seq	196
 neutrophil	neutrophil_CD15	CEDAR	microarray	280
 neutrophil	neutrophil_CD16	Naranbhai_2015	microarray	93
 NK-cell	NK-cell_naive	Schmiedel_2018	RNA-seq	90
@@ -79,7 +79,7 @@ skin_sun_exposed	skin_sun_exposed	GTEx	RNA-seq	602
 small_intestine	small_intestine	GTEx	RNA-seq	174
 spleen	spleen	GTEx	RNA-seq	227
 stomach	stomach	GTEx	RNA-seq	324
-T-cell	T-cell	BLUEPRINT_PE	RNA-seq	167
+T-cell	T-cell	BLUEPRINT	RNA-seq	167
 T-cell	T-cell	GENCORD	RNA-seq	184
 T-cell	T-cell_CD4	CEDAR	microarray	290
 T-cell	T-cell_CD4	Kasela_2017	microarray	280

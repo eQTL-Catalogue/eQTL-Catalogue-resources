@@ -46,7 +46,7 @@ ileum	CEDAR	180	CEDAR.ileum
 iPSC	HipSci	322	HipSci.iPSC
 kidney_cortex	GTEx	73	GTEx.kidney_cortex
 LCL	GENCORD	190	GENCORD.LCL
-LCL	GEUVADIS	358	GEUVADIS.LCL
+LCL	GEUVADIS	445	GEUVADIS.LCL
 LCL	GTEx	147	GTEx.LCL
 LCL	TwinsUK	418	TwinsUK.LCL
 liver	GTEx	208	GTEx.liver
@@ -59,7 +59,7 @@ macrophage_naive	Nedelec_2016	163	Nedelec_2016.macrophage_naive
 macrophage_Salmonella	Alasoo_2018	84	Alasoo_2018.macrophage_Salmonella
 macrophage_Salmonella	Nedelec_2016	167	Nedelec_2016.macrophage_Salmonella
 minor_salivary_gland	GTEx	144	GTEx.minor_salivary_gland
-monocyte	BLUEPRINT_SE	191	BLUEPRINT_SE.monocyte
+monocyte	BLUEPRINT	191	BLUEPRINT.monocyte
 monocyte_CD14	CEDAR	286	CEDAR.monocyte_CD14
 monocyte_CD16_naive	Schmiedel_2018	90	Schmiedel_2018.monocyte_CD16_naive
 monocyte_IAV	Quach_2016	198	Quach_2016.monocyte_IAV
@@ -75,7 +75,7 @@ monocyte_R848	Quach_2016	191	Quach_2016.monocyte_R848
 muscle	GTEx	702	GTEx.muscle
 muscle_naive	FUSION	288	FUSION.muscle_naive
 nerve_tibial	GTEx	532	GTEx.nerve_tibial
-neutrophil	BLUEPRINT_SE	196	BLUEPRINT_SE.neutrophil
+neutrophil	BLUEPRINT	196	BLUEPRINT.neutrophil
 neutrophil_CD15	CEDAR	280	CEDAR.neutrophil_CD15
 neutrophil_CD16	Naranbhai_2015	93	Naranbhai_2015.neutrophil_CD16
 NK-cell_naive	Schmiedel_2018	90	Schmiedel_2018.NK-cell_naive
@@ -93,7 +93,7 @@ skin_sun_exposed	GTEx	602	GTEx.skin_sun_exposed
 small_intestine	GTEx	174	GTEx.small_intestine
 spleen	GTEx	227	GTEx.spleen
 stomach	GTEx	324	GTEx.stomach
-T-cell	BLUEPRINT_PE	167	BLUEPRINT_PE.T-cell
+T-cell	BLUEPRINT	167	BLUEPRINT.T-cell
 T-cell	GENCORD	184	GENCORD.T-cell
 T-cell_CD4	CEDAR	290	CEDAR.T-cell_CD4
 T-cell_CD4	Kasela_2017	280	Kasela_2017.T-cell_CD4

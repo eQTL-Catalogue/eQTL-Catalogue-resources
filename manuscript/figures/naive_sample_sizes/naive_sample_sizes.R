@@ -2,7 +2,6 @@ library(tidyverse)
 library(ggplot2)
 
 sample_size = readr::read_tsv("dataset_sample_sizes.tsv")
-sample_size = sample_size %>% mutate(study = ifelse(study %in% c("BLUEPRINT_PE","BLUEPRINT_SE"), "BLUEPRINT", study))
 
 ontology = readr::read_tsv("../../../ontology_mappings/tissue_ontology_mapping.tsv")
 friendly_names = readr::read_tsv("../../../ontology_mappings/friendly_names.tsv")
@@ -56,7 +55,7 @@ draw_plot = function(studies, legend_rows = 4, legend_x_pos = 0.5, legen_y_posit
   return(plt)
 }
 
-rnaseq_plt = draw_plot(rnaseq_studies, legen_y_position = 0.75)
+rnaseq_plt = draw_plot(rnaseq_studies, legen_y_position = 0.75, legend_x_pos = 0.68)
 ggsave("rnaseq_sample_size.pdf", rnaseq_plt, width = 10, height = 5)
 
 microarr_plt = draw_plot(microarray_studies, legend_rows = 3, legend_x_pos = 0.76, legen_y_position=0.76)

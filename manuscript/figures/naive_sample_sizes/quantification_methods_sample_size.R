@@ -4,7 +4,7 @@ library(ggplot2)
 
 #################################
 
-# sumstat_path = "/gpfs/hpc/projects/eQTLCatalogue/qtlmap/eQTL_Catalogue_r3/pipeline_out/sumstats/"
+# sumstat_path = "../../temp_files/manuscript_figures_temp/perm_results/"
 # suffix = ".permuted.txt.gz"
 # files <- list.files(sumstat_path, pattern=suffix)
 # 
@@ -16,16 +16,14 @@ library(ggplot2)
 # })
 # 
 # datasets = dplyr::bind_rows(datasets)
-# readr::write_tsv(datasets, "dataset_significant_qtls.tsv")
+# readr::write_tsv(datasets, "../../GitHub/eQTL-Catalogue-resources/manuscript/figures/naive_sample_sizes/dataset_significant_qtls.tsv")
 
 #################################
 # sample sizes
-# dir_path = "../../GitHub//SampleArcheology/studies/cleaned/"
-# # files = list.files(dir_path, full.names = F)
-# # files = files[!files %in% c("GEUVADIS.tsv", "BLUEPRINT.tsv")]
+# dir_path = "../../GitHub//SampleArcheology/studies/cleaned_for_manuscript/"
 # 
 # microarray_study_names <- c("CEDAR", "Fairfax_2014", "Kasela_2017", "Naranbhai_2015", "Fairfax_2012")
-# rnaseq_study_names <- c("Alasoo_2018", "BLUEPRINT_PE", "BLUEPRINT_SE", "BrainSeq", "GTEx", "FUSION", "GENCORD", "GEUVADIS_EUR", "HipSci", "Lepik_2017", "Nedelec_2016", "Quach_2016", "ROSMAP", "Schmiedel_2018", "Schwartzentruber_2018", "TwinsUK", "van_de_Bunt_2015")
+# rnaseq_study_names <- c("Alasoo_2018", "BLUEPRINT", "BrainSeq", "GTEx", "FUSION", "GENCORD", "GEUVADIS", "HipSci", "Lepik_2017", "Nedelec_2016", "Quach_2016", "ROSMAP", "Schmiedel_2018", "Schwartzentruber_2018", "TwinsUK", "van_de_Bunt_2015")
 # 
 # files = c(rnaseq_study_names, microarray_study_names)
 # tbls = lapply(files, function(file){
@@ -38,13 +36,12 @@ library(ggplot2)
 #   return(tbl)
 # })
 # studies = bind_rows(tbls)
-# studies = studies %>% mutate(type = ifelse(study %in% rnaseq_study_names, "RNA-seq", "microarray"))
 # studies = studies %>% filter(rna_qc_passed == TRUE, genotype_qc_passed == TRUE)
-# sample_size = studies %>% 
-#   group_by(qtl_group, study) %>% 
+# sample_size = studies %>%
+#   group_by(qtl_group, study) %>%
 #   summarise(dataset_sample_size=n())
 # sample_size = sample_size %>% mutate(dataset=paste(study, qtl_group, sep="."))
-# sample_size %>% write_tsv("sample_sizes.tsv")
+# sample_size %>% write_tsv("../../GitHub/eQTL-Catalogue-resources/manuscript/figures/naive_sample_sizes/sample_sizes.tsv")
 
 #################################
 sample_size = readr::read_tsv("sample_sizes.tsv")
