@@ -7,20 +7,20 @@ BLUEPRINT_SE.monocyte_ge	191	0	0	FALSE	immune cell
 BLUEPRINT_SE.neutrophil_ge	196	0	0	FALSE	immune cell
 BLUEPRINT_PE.T-cell_ge	167	0	0	FALSE	immune cell
 BrainSeq.brain_ge	479	0	0	TRUE	other
-CEDAR.T-cell_CD8	277	0	0	FALSE	immune cell
-CEDAR.T-cell_CD4	290	0	0	FALSE	immune cell
-CEDAR.transverse_colon	286	0	0	TRUE	other
-CEDAR.monocyte_CD14	286	0	0	FALSE	immune cell
-CEDAR.neutrophil_CD15	280	0	0	FALSE	immune cell
-CEDAR.platelet	205	0	0	FALSE	immune cell
-CEDAR.rectum	271	0	0	FALSE	other
-CEDAR.B-cell_CD19	262	0	0	FALSE	immune cell
-CEDAR.ileum	180	0	0	TRUE	other
-Fairfax_2012.B-cell_CD19	281	0	0	FALSE	immune cell
-Fairfax_2014.monocyte_naive	420	0	0	FALSE	immune cell
-Fairfax_2014.monocyte_IFN24	370	0	0	FALSE	immune cell
-Fairfax_2014.monocyte_LPS2	256	0	0	FALSE	immune cell
-Fairfax_2014.monocyte_LPS24	325	0	0	FALSE	immune cell
+CEDAR.T-cell_CD8_microarray	277	0	0	FALSE	immune cell
+CEDAR.T-cell_CD4_microarray	290	0	0	FALSE	immune cell
+CEDAR.transverse_colon_microarray	286	0	0	TRUE	other
+CEDAR.monocyte_CD14_microarray	286	0	0	FALSE	immune cell
+CEDAR.neutrophil_CD15_microarray	280	0	0	FALSE	immune cell
+CEDAR.platelet_microarray	205	0	0	FALSE	immune cell
+CEDAR.rectum_microarray	271	0	0	FALSE	other
+CEDAR.B-cell_CD19_microarray	262	0	0	FALSE	immune cell
+CEDAR.ileum_microarray	180	0	0	TRUE	other
+Fairfax_2012.B-cell_CD19_microarray	281	0	0	FALSE	immune cell
+Fairfax_2014.monocyte_naive_microarray	420	0	0	FALSE	immune cell
+Fairfax_2014.monocyte_IFN24_microarray	370	0	0	FALSE	immune cell
+Fairfax_2014.monocyte_LPS2_microarray	256	0	0	FALSE	immune cell
+Fairfax_2014.monocyte_LPS24_microarray	325	0	0	FALSE	immune cell
 FUSION.adipose_naive_ge	271	0	0	TRUE	other
 FUSION.muscle_naive_ge	288	0	0	TRUE	other
 GENCORD.LCL_ge	190	0	0	TRUE	immune cell
@@ -28,10 +28,10 @@ GENCORD.fibroblast_ge	186	0	0	TRUE	immune cell
 GENCORD.T-cell_ge	184	0	0	FALSE	immune cell
 GEUVADIS.LCL_ge	445	0	0	TRUE	immune cell
 HipSci.iPSC_ge	322	0	0	FALSE	other
-Kasela_2017.T-cell_CD4	280	0	0	FALSE	immune cell
-Kasela_2017.T-cell_CD8	269	0	0	FALSE	immune cell
+Kasela_2017.T-cell_CD4_microarray	280	0	0	FALSE	immune cell
+Kasela_2017.T-cell_CD8_microarray	269	0	0	FALSE	immune cell
 Lepik_2017.blood_ge	471	0	0	TRUE	immune cell
-Naranbhai_2015.neutrophil_CD16	93	0	0	FALSE	immune cell
+Naranbhai_2015.neutrophil_CD16_microarray	93	0	0	FALSE	immune cell
 Nedelec_2016.macrophage_Listeria_ge	163	0	0	FALSE	immune cell
 Nedelec_2016.macrophage_naive_ge	163	0	0	FALSE	immune cell
 Nedelec_2016.macrophage_Salmonella_ge	167	0	0	FALSE	immune cell

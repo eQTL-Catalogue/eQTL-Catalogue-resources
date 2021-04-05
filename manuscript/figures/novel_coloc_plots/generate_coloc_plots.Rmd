@@ -29,21 +29,6 @@ save_ggplots <- function(plot, path = ".", filename = "unnamed_plot", height = 1
          dpi = 300)
 }
 
-read_colocs_to_df <- function(file_dir, ...) {
-  file_list <- list.files(file_dir, recursive = TRUE ,full.names = TRUE)
-  dataset = data.frame()
-  
-  for (file in file_list){
-    print(file)    
-  
-    # if the merged dataset does exist, append to it
-    temp_dataset <-read_tsv(file, trim_ws = TRUE)
-    temp_dataset <- temp_dataset %>% dplyr::filter(...)
-    dataset<-rbind(dataset, temp_dataset)
-  }
-  return(dataset)
-}
-
 # output_dir = paste0("../plots/", format(Sys.time(), "%d_%b_%Y"))
 output_dir = "coloc_plots"
 if (!dir.exists(paste0(output_dir, "/plotly"))) {
@@ -81,8 +66,7 @@ ld_blocks <-  read_tsv("ind_regions_Hg38.bed")
 ```
 
 ```{r}
-
-GTExV8_sign_colocs <- read_tsv("GTExV8_sign_colocs.tsv.gz")
+GTExV8_sign_colocs <- read_tsv("GTExV8_sign_colocs.tsv.gz", )
 eqtlCat_all_sign_colocs <- read_tsv("eqtlCat_all_sign_colocs.tsv.gz")
 ```
 
@@ -106,7 +90,9 @@ for (gwasid in gwas_ids) {
   distinct_gtex_egenes[[gwasid]] <- uniq_gtex_egenes[!uniq_gtex_egenes %in% common_egenes]
   union_egenes_gwas[[gwasid]] <- union(uniq_eqtlcat_egenes, uniq_gtex_egenes)
   
-  eqtl_cat_distinct_colocs_by_gwas <- eqtl_cat_colocs_by_gwas %>% filter(molecular_trait_id %in% distinct_eqtlcat_egenes[[gwasid]])
+  eqtl_cat_distinct_colocs_by_gwas <- eqtl_cat_colocs_by_gwas %>% 
+    filter(molecular_trait_id %in% distinct_eqtlcat_egenes[[gwasid]])
+  
   df_novel_eqtlcat_colocs <- rbind(df_novel_eqtlcat_colocs, eqtl_cat_distinct_colocs_by_gwas)
 }
 # write_tsv(df_novel_eqtlcat_colocs, "../data/TSVs/colocs_merged_R3/novel/novel_eqtlcat_colocs_by_mtid.tsv")
@@ -183,9 +169,9 @@ novel_ld_block_based_counts <- novel_ld_block_colocs %>% group_by(gwas_id, qtl_s
 gwasid = "LC-ebi-a-GCST004627"
 
 gwas_colocs = novel_ld_block_based_counts %>% filter(gwas_id == gwasid)
-  zero_egene_qtlSubsets <- qtl_group_samplesizes[!qtl_group_samplesizes$qtl_subset %in% gwas_colocs$qtl_subset,] %>%
-    select(-sample_size, -novel_egene_count) %>% 
-    mutate(gwas_id = gwasid, n_colocs_in_novel_ld_blocks = 0, n_unique_novel_ld_blocks = 0) 
+zero_egene_qtlSubsets <- qtl_group_samplesizes[!qtl_group_samplesizes$qtl_subset %in% gwas_colocs$qtl_subset,] %>%
+  select(-sample_size, -novel_egene_count) %>% 
+  mutate(gwas_id = gwasid, n_colocs_in_novel_ld_blocks = 0, n_unique_novel_ld_blocks = 0) 
 
 gwas_colocs <- dplyr::bind_rows(gwas_colocs, zero_egene_qtlSubsets) %>% 
     left_join(qtl_group_samplesizes %>% select(qtl_subset, sample_size)) %>% 
@@ -217,9 +203,9 @@ novel_ld_block_based_counts <- novel_ld_block_colocs %>% group_by(gwas_id, qtl_s
 gwasid = "HEIGHT-ukb-a-389"
 
 gwas_colocs = novel_ld_block_based_counts %>% filter(gwas_id == gwasid)
-  zero_egene_qtlSubsets <- qtl_group_samplesizes[!qtl_group_samplesizes$qtl_subset %in% gwas_colocs$qtl_subset,] %>%
-    select(-sample_size, -novel_egene_count) %>% 
-    mutate(gwas_id = gwasid, n_colocs_in_novel_ld_blocks = 0, n_unique_novel_ld_blocks = 0) 
+zero_egene_qtlSubsets <- qtl_group_samplesizes[!qtl_group_samplesizes$qtl_subset %in% gwas_colocs$qtl_subset,] %>%
+  select(-sample_size, -novel_egene_count) %>% 
+  mutate(gwas_id = gwasid, n_colocs_in_novel_ld_blocks = 0, n_unique_novel_ld_blocks = 0) 
 
 gwas_colocs <- dplyr::bind_rows(gwas_colocs, zero_egene_qtlSubsets) %>% 
     left_join(qtl_group_samplesizes %>% select(qtl_subset, sample_size)) %>% 
@@ -438,10 +424,6 @@ save_ggplots(plot = temp_plot_violin_notfilt_labeled,
              path = paste0(output_dir, "/faceted_difference_violins/"),
              filename = "GTExV8_vs_eQTLCatR3_violin_not_filter_labeled",width = 20)
 
-ggplotly_plot <- plotly::ggplotly(temp_plot_violin)
-htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
-                        file = file.path(normalizePath(paste0(output_dir, "/plotly")), "violin_plots.html"),
-                        libdir = "dependencies")
 ```
 
 #Make filtered violin plot
@@ -479,6 +461,11 @@ temp_plot_violin <- ggplot(novel_ld_block_based_counts_all_gwas_filt,
                   y="GWAS") +
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
 ggsave("coloc_violin.pdf", plot = temp_plot_violin, path = output_dir, width = 5, height = 6.5)
+
+ggplotly_plot <- plotly::ggplotly(temp_plot_violin)
+htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
+                        file = file.path(normalizePath(paste0(output_dir, "/plotly")), "violin_plots.html"),
+                        libdir = "dependencies")
 
 save_ggplots(plot = temp_plot_violin, 
              path = paste0(output_dir, "/faceted_difference_violins/"), 
