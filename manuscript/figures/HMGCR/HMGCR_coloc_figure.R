@@ -22,34 +22,33 @@ ggsave("HMGCR_coloc_plot.pdf", plot = plt, width = 3.5, height = 2.7)
 
 #######################
 # ordering the datasets
-
 ontology_map = readr::read_tsv("../../../ontology_mappings/tissue_ontology_mapping.tsv")
 friendly_names = readr::read_tsv("../../../ontology_mappings/friendly_names.tsv") %>%
-  dplyr::select(ontology_term, ontology_tissue)
-# rename blueprint dataset for consistency with effect dataset names
+  dplyr::select(tissue_ontology_id, tissue_label)
 ontology_map$study[c(1,2,3)] = c("BLUEPRINT_SE", "BLUEPRINT_SE", "BLUEPRINT_PE")
 ontology_map <- ontology_map %>% dplyr::mutate(study_qtlgroup = paste0(study, ".", qtl_group)) %>%
   dplyr::left_join(friendly_names) %>%
-  dplyr::mutate(sample_class = ifelse(ontology_tissue %like% "brain", "brain", "other")) %>%
-  dplyr::mutate(sample_class = ifelse(ontology_tissue %like% "LCL", "LCL", sample_class)) %>%
-  dplyr::mutate(sample_class = ifelse(ontology_tissue %like% "monocyte", "monocyte", sample_class)) %>%
-  dplyr::mutate(sample_class = ifelse(ontology_tissue %like% "macrophage", "macrophage", sample_class)) %>%
-  dplyr::mutate(sample_class = ifelse(ontology_tissue %like% "blood", "blood", sample_class)) %>%
-  dplyr::mutate(sample_class = ifelse(ontology_tissue %like% "neutrophil", "neutrophil", sample_class)) %>%
-  dplyr::mutate(sample_class = ifelse(ontology_term %in% c("CL_0000236","CL_0002677","CL_0002678","CL_0000624","CL_0000625","CL_0000623","CL_0000899","CL_0000546","CL_0000545","CL_0000899","CL_0002038","CL_0000084"), "lymphocyte", sample_class)) %>%
-  dplyr::mutate(sample_class = ifelse(ontology_tissue %like% "iPSC", "iPSC", sample_class))
+  dplyr::mutate(sample_class = ifelse(tissue_label %like% "brain", "brain", "other")) %>%
+  dplyr::mutate(sample_class = ifelse(tissue_label %like% "LCL", "LCL", sample_class)) %>%
+  dplyr::mutate(sample_class = ifelse(tissue_label %like% "monocyte", "monocyte", sample_class)) %>%
+  dplyr::mutate(sample_class = ifelse(tissue_label %like% "macrophage", "macrophage", sample_class)) %>%
+  dplyr::mutate(sample_class = ifelse(tissue_label %like% "blood", "blood", sample_class)) %>%
+  dplyr::mutate(sample_class = ifelse(tissue_label %like% "neutrophil", "neutrophil", sample_class)) %>%
+  dplyr::mutate(sample_class = ifelse(tissue_ontology_id %in% c("CL_0000236","CL_0002677","CL_0002678","CL_0000624","CL_0000625","CL_0000623","CL_0000899","CL_0000546","CL_0000545","CL_0000899","CL_0002038","CL_0000084"), "lymphocyte", sample_class)) %>%
+  dplyr::mutate(sample_class = ifelse(tissue_label %like% "iPSC", "iPSC", sample_class))
+
 
 fct_levels = c("blood","lymphocyte","LCL","neutrophil","monocyte","macrophage","brain","iPSC","other")
 ontology_map = dplyr::mutate(ontology_map, tissue_fct = factor(sample_class, levels = fct_levels))
 # place immune t-cells together
-ontology_map = ontology_map %>% dplyr::mutate(dummy = ifelse(qtl_group %like% "anti", "ANTI", ontology_tissue), 
-                                              ontology_tissue = ifelse(qtl_group %like% "anti", paste(ontology_tissue, "(anti-CD3-CD28)"), ontology_tissue))
+ontology_map = ontology_map %>% dplyr::mutate(dummy = ifelse(qtl_group %like% "anti", "ANTI", tissue_label), 
+                                              tissue_label = ifelse(qtl_group %like% "anti", paste(tissue_label, "(anti-CD3-CD28)"), tissue_label))
 # place quach monocyte and nedelec macrophage together because they load on one factor
 ontology_map = ontology_map %>% dplyr::mutate(dummy = ifelse(study_qtlgroup == "Quach_2016.monocyte_naive", "z-monocyte", dummy))
 ontology_map = ontology_map %>% dplyr::mutate(dummy = ifelse(study_qtlgroup == "Nedelec_2016.macrophage_naive", "a-macrophage", dummy))
 # sort studies
 ontology_map = ontology_map %>% dplyr::arrange(tissue_fct, dummy, study)
-ontology_map = ontology_map %>% dplyr::mutate(heatmap_label = paste(study, ontology_tissue, sep=" "))
+ontology_map = ontology_map %>% dplyr::mutate(heatmap_label = paste(study, tissue_label, sep=" "))
 
 # remove stimulated datasets
 datasets = ontology_map$study_qtlgroup
@@ -69,7 +68,8 @@ names(colors) = c("blood","lymphocyte","LCL","neutrophil","monocyte","macrophage
 
 #Make effect size plots
 exon_effect_sizes = readr::read_tsv("HMGCR_exon.tsv")
-exon_effect_sizes = exon_effect_sizes %>%  dplyr::mutate(qtl_group = stringr::str_remove(file_name, "_exon.nominal.sorted.tsv.gz"))
+exon_effect_sizes = exon_effect_sizes %>%  dplyr::mutate(qtl_group = stringr::str_remove(file_name, "_exon.tsv.gz"))
+exon_effect_sizes = exon_effect_sizes %>% mutate(qtl_group = gsub(pattern = "GTExV8", replacement = "GTEx", x = qtl_group))
 
 exon_effect_sizes = dplyr::inner_join(ontology_map[c("heatmap_label", "study_qtlgroup", "tissue_fct")], exon_effect_sizes, by = c("study_qtlgroup"="qtl_group"))
 exon_effect_sizes = exon_effect_sizes %>% dplyr::mutate(study_qtlgroup=factor(study_qtlgroup, levels=study_qtlgroup))
@@ -104,8 +104,8 @@ htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
 
 #Make gene expression effect size plots
 gene_effect_sizes = readr::read_tsv("HMGCR_gene.tsv")
-
-gene_effect_sizes = gene_effect_sizes %>%  dplyr::mutate(qtl_group = stringr::str_remove(file_name, "_ge.nominal.sorted.tsv.gz"))
+gene_effect_sizes = gene_effect_sizes %>%  dplyr::mutate(qtl_group = stringr::str_remove(file_name, "_ge.tsv.gz"))
+gene_effect_sizes = gene_effect_sizes %>% mutate(qtl_group = gsub(pattern = "GTExV8", replacement = "GTEx", x = qtl_group))
 
 gene_effect_sizes = dplyr::inner_join(ontology_map[c("heatmap_label", "study_qtlgroup", "tissue_fct")], gene_effect_sizes, by = c("study_qtlgroup"="qtl_group"))
 gene_effect_sizes = gene_effect_sizes %>% dplyr::mutate(study_qtlgroup=factor(study_qtlgroup, levels=study_qtlgroup))
