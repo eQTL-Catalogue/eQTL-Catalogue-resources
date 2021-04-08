@@ -5,7 +5,6 @@ Data processing for the eQTL Catalogue is based on the four main workflows:
 * [eQTL-Catalogue/rnaseq](https://github.com/eQTL-Catalogue/rnaseq)
 * [eQTL-Catalogue/qcnorm](https://github.com/eQTL-Catalogue/qcnorm)
 * [eQTL-Catalogue/qtlmap](https://github.com/eQTL-Catalogue/qtlmap)
-* [eQTL-Catalogue/susie-workflow](https://github.com/eQTL-Catalogue/susie-workflow)
 
 ## Step 1: Genotype imputation with [eQTL-Catalogue/genimpute](https://github.com/eQTL-Catalogue/genimpute)
 
@@ -100,7 +99,7 @@ nextflow run main.nf\
 4. Check of the expression of sex-specific genes is consistent with the annotated sex of the samples. Fix missing or mis-annotated sex in the sample metadata file. Note that high simultaneous expression of both XIST (female-specifc) and Y chromosome genes (male-specifc) can be a good indiciation of RNA cross-contamination between two samples. This is often concordant with the results seen in the RNA-seq analysis.
 
 
-## Step 4: QTL mapping with [eQTL-Catalogue/qtlmap](https://github.com/eQTL-Catalogue/qtlmap)
+## Step 4: QTL analysis and fine mapping with [eQTL-Catalogue/qtlmap](https://github.com/eQTL-Catalogue/qtlmap)
 
 #### Input
 1. Normalised moleocular trait files from the qcnorm workflow. **NOTE:** The studyFile from qcnorm `(qcnorm_output_directory>/<study_name>/<study_name>_qtlmap_inputs.tsv)` contains relative paths. You should either copy the qcnorm output directory to the qtlmap directory or create a symlink with the same name. 
@@ -111,20 +110,10 @@ nextflow run main.nf\
 
 ```bash
 nextflow run main.nf -profile eqtl_catalogue\
-   --studyFile <qcnorm_output_directory>/<study_name>/<study_name>_qtlmap_inputs.tsv\
-    --is_imputed true\
-    --run_permutation true\
-    --run_nominal true\
-    --n_batches 200\
-    -resume\
-    -process.queue main
+  --studyFile <qcnorm_output_directory>/<study_name>/<study_name>_qtlmap_inputs.tsv\
+  --vcf_has_R2_field FALSE\
+  --varid_rsid_map_file testdata/varid_rsid_map.tsv.gz\
+  --n_batches 200
 ```
-
-TODO: explain what --is_imputed does.
-
-## Step 5: QTL fine mapping with [eQTL-Catalogue/susie-workflow](https://github.com/eQTL-Catalogue/susie-workflow)
-
-# Modular approach
-
 
 
