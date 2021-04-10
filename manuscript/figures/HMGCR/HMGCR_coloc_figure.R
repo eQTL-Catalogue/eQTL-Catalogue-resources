@@ -146,7 +146,7 @@ htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
 #bcftools view -r 5:74855259-75855259 LDLC.GRCh38.sorted.vcf.gz -Oz -o LDLC_HMGCR.vcf.gz
 # tabix GEUVADIS.LCL_exon.nominal.sorted.tsv.gz 5:74855259-75855259 > ~/GEUVADIS_HMGCR_exon.tsv
 
-eqtl_data = readr::read_tsv("HipSci_HMGCR_exon.tsv") %>%
+eqtl_data = readr::read_tsv("HipSci_HMGCR_exon.tsv.gz") %>%
   dplyr::filter(molecular_trait_id == "ENSG00000113161.16_5_75355215_75355364") %>%
   dplyr::mutate(z_score = beta/se) %>%
   dplyr::select(position, z_score) %>%
@@ -184,7 +184,7 @@ ggsave("HMGCR_manhattan.pdf", plot = manhattan, width = 4, height = 3)
 
 
 #Make the same plot for gene expression
-eqtl_data = readr::read_tsv("FUSION_muscle_HMGCR_gene.tsv") %>%
+eqtl_data = readr::read_tsv("FUSION_muscle_HMGCR_gene.tsv.gz") %>%
   dplyr::filter(molecular_trait_id == "ENSG00000113161") %>%
   dplyr::mutate(z_score = beta/se) %>%
   dplyr::select(position, z_score) %>%

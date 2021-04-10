@@ -15,3 +15,5 @@ manuscript/figures/splicing_coloc/LDLC_upet_plot.pdf
 manuscript/figures/eqtl_forestplot_and_factor_loadings/factor_assignment.png
 manuscript/figures/*/*.pdf
 manuscript/figures/*/*.html
+tutorials/*.tbi
+manuscript/figures/HMGCR/HipSci_HMGCR_exon.tsv.gz
