@@ -66,10 +66,51 @@ ld_blocks <-  read_tsv("ind_regions_Hg38.bed")
 ```
 
 ```{r}
-GTExV8_sign_colocs <- read_tsv("GTExV8_sign_colocs.tsv.gz", )
+GTExV8_sign_colocs <- read_tsv("GTExV8_sign_colocs.tsv.gz")
 eqtlCat_all_sign_colocs <- read_tsv("eqtlCat_all_sign_colocs.tsv.gz")
+all_sign_colocs <- rbind(GTExV8_sign_colocs, eqtlCat_all_sign_colocs)
+all_sign_colocs <- all_sign_colocs %>% mutate(qtl_subset = gsub(pattern = "GTExV8", replacement = "GTEx", x = qtl_subset))
+all_sign_colocs$qtl_subset %>% table()
 ```
 
+```{r}
+gwas_ids <- all_sign_colocs$gwas_id %>% unique()
+gwasid <- "LC-ebi-a-GCST004627"
+for (gwasid in gwas_ids) {
+  all_colocs_by_gwas <- all_sign_colocs %>% filter(gwas_id == gwasid)
+  
+  # merge according to chromosome, start and end positions
+  all_merged = sqldf::sqldf("
+    SELECT *
+    FROM all_colocs_by_gwas d1 JOIN ld_blocks d2
+    ON d1.chromosome = d2.chr
+    AND d1.position >= d2.start
+    AND d1.position <= d2.end")
+  
+  by_ld_block_summarised <- all_merged %>% 
+    group_by(ID_hg38) %>% 
+    summarise(n_unique_genes_in_ld_block = length(unique(molecular_trait_id)))
+
+  write_tsv(by_ld_block_summarised, paste0("gene_counts_in_ld_blocks/", gwasid,".tsv"))
+  
+  subtitle_str <- paste0("Prop: proportion of LD blocks containing only one unique gene\nTotal number of LD blocks: ",
+                         nrow(by_ld_block_summarised))
+  proportion_1 <- round(nrow(by_ld_block_summarised %>% filter(n_unique_genes_in_ld_block == 1))/nrow(by_ld_block_summarised), digits = 3)*100
+  annotate_label <- paste0(" Prop: ", proportion_1, "%")
+  genes_ld_block_plt <- ggplot(by_ld_block_summarised, aes(x=as.factor(n_unique_genes_in_ld_block))) + 
+    geom_bar(color="black", fill ="#56B4E9") +
+    geom_text(stat='count', aes(label=..count..), vjust=-0.5, size = 3) +
+    annotate(geom="label", x=-Inf, y=Inf, hjust = -5, vjust=2,label=annotate_label, size = 4, fill = "#ede8a4") +
+    labs(title = gwasid, subtitle = subtitle_str) +
+    scale_x_discrete(drop=FALSE) +
+    ylab("Count of LD blocks") +
+    xlab("Number of unique genes assigned to the single LD block") +
+    theme_bw()  
+  
+  ggsave(plot = genes_ld_block_plt, filename = paste0("gene_counts_in_ld_blocks/plots/", gwasid,"_hist.pdf"), 
+         device = "pdf", height = 5, width = 7)
+}
+```
 
 ```{r}
 gwas_ids <- GTExV8_sign_colocs$gwas_id %>% unique()
@@ -82,14 +123,24 @@ uniq_eqtlcat_egenes_gwas <- list()
 df_novel_eqtlcat_colocs <- data.frame()
 for (gwasid in gwas_ids) {
   eqtl_cat_colocs_by_gwas = eqtlCat_all_sign_colocs %>% filter(gwas_id == gwasid)
+  # get all unique genes from eqtlcat 
   uniq_eqtlcat_egenes <- eqtl_cat_colocs_by_gwas %>% pull(molecular_trait_id) %>% unique() 
+  
+  # get all unique genes from GTExV8
   uniq_gtex_egenes <- GTExV8_sign_colocs %>% filter(gwas_id == gwasid) %>% pull(molecular_trait_id) %>% unique() 
   
+  # find which genes are common 
   common_egenes <- intersect(uniq_eqtlcat_egenes, uniq_gtex_egenes)
-  distinct_eqtlcat_egenes[[gwasid]] <- uniq_eqtlcat_egenes[!uniq_eqtlcat_egenes %in% common_egenes]
-  distinct_gtex_egenes[[gwasid]] <- uniq_gtex_egenes[!uniq_gtex_egenes %in% common_egenes]
-  union_egenes_gwas[[gwasid]] <- union(uniq_eqtlcat_egenes, uniq_gtex_egenes)
   
+  # find which genes are found only in eqtlcat
+  distinct_eqtlcat_egenes[[gwasid]] <- uniq_eqtlcat_egenes[!uniq_eqtlcat_egenes %in% common_egenes]
+  
+  # find which genes are found only in GTExV8
+  distinct_gtex_egenes[[gwasid]] <- uniq_gtex_egenes[!uniq_gtex_egenes %in% common_egenes]
+  
+  # union_egenes_gwas[[gwasid]] <- union(uniq_eqtlcat_egenes, uniq_gtex_egenes)
+  
+  # find the colocalisations which are unique to eqtlcat
   eqtl_cat_distinct_colocs_by_gwas <- eqtl_cat_colocs_by_gwas %>% 
     filter(molecular_trait_id %in% distinct_eqtlcat_egenes[[gwasid]])
   
@@ -140,7 +191,7 @@ for (gwasid in gwas_ids) {
   novel_ld_block_colocs <- novel_ld_block_colocs %>% rbind(colocs_in_novel_ld_blocks)
 }
 
-write_tsv(novel_ld_block_colocs, "novel_eqtlcat_colocs_in_novel_ldblocks_relative_to_GTExV8.tsv")
+# write_tsv(novel_ld_block_colocs, "novel_eqtlcat_colocs_in_novel_ldblocks_relative_to_GTExV8.tsv")
 ```
 
 ```{r}
