@@ -6,12 +6,14 @@ library("data.table")
 # path_files <- "../../temp_files/eQTL_sharing/new_with_GTExV8/exon_no_graph_mash//"
 # path_files <- "../../temp_files/eQTL_sharing/new_with_GTExV8/ge_graph_30_thresh///"
 path_files <- "../../temp_files/eQTL_sharing/new_with_GTExV8/ma_graph_30_thresh//"
+path_files <- "/Users/kerimov/Work/temp_files/eQTL_sharing/new_with_GTExV8/txrev_no_graph_all_together/"
 for (path_file in path_files) {
   load(paste0(path_file,"/sharing.R"))
   # sharing = read_tsv("../../temp_files/eQTL_sharing/results/results_min_pvalue/sharing.tsv")
   # sharing_matrix = as.matrix(sharing %>% select(-dataset))
   sharing_matrix = as.matrix(sharing)
-  rownames(sharing_matrix) = colnames(sharing_matrix)
+  rownames(sharing_matrix) = gsub(pattern = "GTExV8", replacement = "GTEx", x = colnames(sharing_matrix))
+  colnames(sharing_matrix) <- gsub(pattern = "GTExV8", replacement = "GTEx", x = colnames(sharing_matrix))
   fit <- MASS::isoMDS(1-sharing_matrix, k=2)
   
   # naming of studies
