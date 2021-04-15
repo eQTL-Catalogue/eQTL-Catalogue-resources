@@ -1,0 +1,707 @@
+gwas_id	qtl_subset	n_colocs_in_novel_ld_blocks	n_unique_novel_ld_blocks	sample_size	cell_type_class
+BMI-ukb-a-248	Alasoo_2018.macrophage_IFNg_ge	3	1	84	immune cell
+BMI-ukb-a-248	Alasoo_2018.macrophage_IFNg+Salmonella_ge	4	2	84	immune cell
+BMI-ukb-a-248	Alasoo_2018.macrophage_naive_ge	11	4	84	immune cell
+BMI-ukb-a-248	Alasoo_2018.macrophage_Salmonella_ge	3	2	84	immune cell
+BMI-ukb-a-248	BLUEPRINT_PE.T-cell_ge	1	1	167	immune cell
+BMI-ukb-a-248	BLUEPRINT_SE.monocyte_ge	16	9	191	immune cell
+BMI-ukb-a-248	BLUEPRINT_SE.neutrophil_ge	10	7	196	immune cell
+BMI-ukb-a-248	BrainSeq.brain_ge	17	4	479	other
+BMI-ukb-a-248	CEDAR.B-cell_CD19_microarray	1	1	262	immune cell
+BMI-ukb-a-248	CEDAR.ileum_microarray	5	4	180	other
+BMI-ukb-a-248	CEDAR.monocyte_CD14_microarray	7	4	286	immune cell
+BMI-ukb-a-248	CEDAR.neutrophil_CD15_microarray	5	3	280	immune cell
+BMI-ukb-a-248	CEDAR.platelet_microarray	1	1	205	immune cell
+BMI-ukb-a-248	CEDAR.rectum_microarray	5	4	271	other
+BMI-ukb-a-248	CEDAR.T-cell_CD4_microarray	5	5	290	immune cell
+BMI-ukb-a-248	CEDAR.T-cell_CD8_microarray	2	2	277	immune cell
+BMI-ukb-a-248	CEDAR.transverse_colon_microarray	9	5	286	other
+BMI-ukb-a-248	Fairfax_2012.B-cell_CD19_microarray	6	2	281	immune cell
+BMI-ukb-a-248	Fairfax_2014.monocyte_IFN24_microarray	8	5	370	immune cell
+BMI-ukb-a-248	Fairfax_2014.monocyte_LPS2_microarray	6	5	256	immune cell
+BMI-ukb-a-248	Fairfax_2014.monocyte_LPS24_microarray	3	3	325	immune cell
+BMI-ukb-a-248	Fairfax_2014.monocyte_naive_microarray	10	6	420	immune cell
+BMI-ukb-a-248	FUSION.adipose_naive_ge	38	13	271	other
+BMI-ukb-a-248	FUSION.muscle_naive_ge	23	10	288	other
+BMI-ukb-a-248	GENCORD.fibroblast_ge	14	4	186	immune cell
+BMI-ukb-a-248	GENCORD.LCL_ge	9	2	190	immune cell
+BMI-ukb-a-248	GENCORD.T-cell_ge	8	3	184	immune cell
+BMI-ukb-a-248	GEUVADIS.LCL_ge	8	4	445	immune cell
+BMI-ukb-a-248	HipSci.iPSC_ge	31	14	322	other
+BMI-ukb-a-248	Kasela_2017.T-cell_CD4_microarray	3	2	280	immune cell
+BMI-ukb-a-248	Lepik_2017.blood_ge	20	10	471	immune cell
+BMI-ukb-a-248	Naranbhai_2015.neutrophil_CD16_microarray	1	1	93	immune cell
+BMI-ukb-a-248	Nedelec_2016.macrophage_Listeria_ge	3	3	163	immune cell
+BMI-ukb-a-248	Nedelec_2016.macrophage_naive_ge	2	1	163	immune cell
+BMI-ukb-a-248	Nedelec_2016.macrophage_Salmonella_ge	6	3	167	immune cell
+BMI-ukb-a-248	Quach_2016.monocyte_IAV_ge	7	4	198	immune cell
+BMI-ukb-a-248	Quach_2016.monocyte_LPS_ge	15	5	184	immune cell
+BMI-ukb-a-248	Quach_2016.monocyte_naive_ge	13	5	200	immune cell
+BMI-ukb-a-248	Quach_2016.monocyte_Pam3CSK4_ge	20	5	196	immune cell
+BMI-ukb-a-248	Quach_2016.monocyte_R848_ge	36	8	191	immune cell
+BMI-ukb-a-248	ROSMAP.brain_naive_ge	32	17	576	other
+BMI-ukb-a-248	Schmiedel_2018.B-cell_naive_ge	2	2	91	immune cell
+BMI-ukb-a-248	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	1	1	89	immune cell
+BMI-ukb-a-248	Schmiedel_2018.CD4_T-cell_naive_ge	8	3	88	immune cell
+BMI-ukb-a-248	Schmiedel_2018.CD8_T-cell_naive_ge	1	1	89	immune cell
+BMI-ukb-a-248	Schmiedel_2018.monocyte_CD16_naive_ge	2	1	90	immune cell
+BMI-ukb-a-248	Schmiedel_2018.NK-cell_naive_ge	2	1	90	immune cell
+BMI-ukb-a-248	Schmiedel_2018.Tfh_memory_ge	1	1	89	immune cell
+BMI-ukb-a-248	Schmiedel_2018.Th17_memory_ge	4	2	89	immune cell
+BMI-ukb-a-248	Schmiedel_2018.Th2_memory_ge	3	2	89	immune cell
+BMI-ukb-a-248	Schmiedel_2018.Treg_memory_ge	1	1	89	immune cell
+BMI-ukb-a-248	Schmiedel_2018.Treg_naive_ge	1	1	89	immune cell
+BMI-ukb-a-248	TwinsUK.fat_ge	14	5	381	other
+BMI-ukb-a-248	TwinsUK.LCL_ge	5	3	418	immune cell
+BMI-ukb-a-248	TwinsUK.skin_ge	11	2	370	other
+CAD-ebi-a-GCST003116	Alasoo_2018.macrophage_IFNg+Salmonella_ge	4	1	84	immune cell
+CAD-ebi-a-GCST003116	BLUEPRINT_PE.T-cell_ge	4	3	167	immune cell
+CAD-ebi-a-GCST003116	BLUEPRINT_SE.neutrophil_ge	8	3	196	immune cell
+CAD-ebi-a-GCST003116	CEDAR.B-cell_CD19_microarray	1	1	262	immune cell
+CAD-ebi-a-GCST003116	CEDAR.monocyte_CD14_microarray	1	1	286	immune cell
+CAD-ebi-a-GCST003116	CEDAR.neutrophil_CD15_microarray	6	2	280	immune cell
+CAD-ebi-a-GCST003116	CEDAR.rectum_microarray	1	1	271	other
+CAD-ebi-a-GCST003116	CEDAR.T-cell_CD4_microarray	2	1	290	immune cell
+CAD-ebi-a-GCST003116	CEDAR.T-cell_CD8_microarray	1	1	277	immune cell
+CAD-ebi-a-GCST003116	CEDAR.transverse_colon_microarray	1	1	286	other
+CAD-ebi-a-GCST003116	Fairfax_2012.B-cell_CD19_microarray	2	1	281	immune cell
+CAD-ebi-a-GCST003116	Fairfax_2014.monocyte_IFN24_microarray	2	1	370	immune cell
+CAD-ebi-a-GCST003116	Fairfax_2014.monocyte_LPS2_microarray	3	2	256	immune cell
+CAD-ebi-a-GCST003116	Fairfax_2014.monocyte_LPS24_microarray	3	2	325	immune cell
+CAD-ebi-a-GCST003116	Fairfax_2014.monocyte_naive_microarray	2	1	420	immune cell
+CAD-ebi-a-GCST003116	FUSION.adipose_naive_ge	4	1	271	other
+CAD-ebi-a-GCST003116	FUSION.muscle_naive_ge	8	3	288	other
+CAD-ebi-a-GCST003116	GENCORD.T-cell_ge	1	1	184	immune cell
+CAD-ebi-a-GCST003116	GEUVADIS.LCL_ge	2	1	445	immune cell
+CAD-ebi-a-GCST003116	Kasela_2017.T-cell_CD4_microarray	3	2	280	immune cell
+CAD-ebi-a-GCST003116	Kasela_2017.T-cell_CD8_microarray	2	1	269	immune cell
+CAD-ebi-a-GCST003116	Lepik_2017.blood_ge	13	4	471	immune cell
+CAD-ebi-a-GCST003116	Naranbhai_2015.neutrophil_CD16_microarray	1	1	93	immune cell
+CAD-ebi-a-GCST003116	Nedelec_2016.macrophage_Listeria_ge	4	1	163	immune cell
+CAD-ebi-a-GCST003116	ROSMAP.brain_naive_ge	6	4	576	other
+CAD-ebi-a-GCST003116	Schmiedel_2018.CD4_T-cell_naive_ge	2	1	88	immune cell
+CAD-ebi-a-GCST003116	Schmiedel_2018.CD8_T-cell_naive_ge	6	1	89	immune cell
+CAD-ebi-a-GCST003116	Schmiedel_2018.Th2_memory_ge	7	2	89	immune cell
+CAD-ebi-a-GCST003116	TwinsUK.fat_ge	14	5	381	other
+CAD-ebi-a-GCST003116	TwinsUK.LCL_ge	1	1	418	immune cell
+CAD-ebi-a-GCST003116	TwinsUK.skin_ge	6	1	370	other
+CAD-ebi-a-GCST003116	van_de_Bunt_2015.pancreatic_islet_ge	1	1	117	other
+CD-ebi-a-GCST004132	Alasoo_2018.macrophage_IFNg_ge	3	1	84	immune cell
+CD-ebi-a-GCST004132	Alasoo_2018.macrophage_IFNg+Salmonella_ge	12	2	84	immune cell
+CD-ebi-a-GCST004132	Alasoo_2018.macrophage_naive_ge	4	2	84	immune cell
+CD-ebi-a-GCST004132	BLUEPRINT_PE.T-cell_ge	22	4	167	immune cell
+CD-ebi-a-GCST004132	BLUEPRINT_SE.monocyte_ge	22	6	191	immune cell
+CD-ebi-a-GCST004132	BLUEPRINT_SE.neutrophil_ge	9	4	196	immune cell
+CD-ebi-a-GCST004132	CEDAR.B-cell_CD19_microarray	2	1	262	immune cell
+CD-ebi-a-GCST004132	CEDAR.monocyte_CD14_microarray	5	3	286	immune cell
+CD-ebi-a-GCST004132	CEDAR.neutrophil_CD15_microarray	1	1	280	immune cell
+CD-ebi-a-GCST004132	CEDAR.platelet_microarray	2	1	205	immune cell
+CD-ebi-a-GCST004132	CEDAR.rectum_microarray	4	2	271	other
+CD-ebi-a-GCST004132	CEDAR.T-cell_CD4_microarray	6	3	290	immune cell
+CD-ebi-a-GCST004132	CEDAR.T-cell_CD8_microarray	2	1	277	immune cell
+CD-ebi-a-GCST004132	CEDAR.transverse_colon_microarray	2	1	286	other
+CD-ebi-a-GCST004132	Fairfax_2012.B-cell_CD19_microarray	5	4	281	immune cell
+CD-ebi-a-GCST004132	Fairfax_2014.monocyte_IFN24_microarray	6	4	370	immune cell
+CD-ebi-a-GCST004132	Fairfax_2014.monocyte_LPS2_microarray	7	5	256	immune cell
+CD-ebi-a-GCST004132	Fairfax_2014.monocyte_LPS24_microarray	4	3	325	immune cell
+CD-ebi-a-GCST004132	Fairfax_2014.monocyte_naive_microarray	27	9	420	immune cell
+CD-ebi-a-GCST004132	FUSION.adipose_naive_ge	9	2	271	other
+CD-ebi-a-GCST004132	FUSION.muscle_naive_ge	19	4	288	other
+CD-ebi-a-GCST004132	GENCORD.fibroblast_ge	1	1	186	immune cell
+CD-ebi-a-GCST004132	GENCORD.LCL_ge	11	2	190	immune cell
+CD-ebi-a-GCST004132	GENCORD.T-cell_ge	12	4	184	immune cell
+CD-ebi-a-GCST004132	GEUVADIS.LCL_ge	17	5	445	immune cell
+CD-ebi-a-GCST004132	HipSci.iPSC_ge	13	4	322	other
+CD-ebi-a-GCST004132	Kasela_2017.T-cell_CD4_microarray	5	4	280	immune cell
+CD-ebi-a-GCST004132	Kasela_2017.T-cell_CD8_microarray	2	2	269	immune cell
+CD-ebi-a-GCST004132	Lepik_2017.blood_ge	19	7	471	immune cell
+CD-ebi-a-GCST004132	Nedelec_2016.macrophage_Listeria_ge	7	2	163	immune cell
+CD-ebi-a-GCST004132	Nedelec_2016.macrophage_naive_ge	11	3	163	immune cell
+CD-ebi-a-GCST004132	Nedelec_2016.macrophage_Salmonella_ge	13	4	167	immune cell
+CD-ebi-a-GCST004132	Quach_2016.monocyte_IAV_ge	8	5	198	immune cell
+CD-ebi-a-GCST004132	Quach_2016.monocyte_LPS_ge	14	6	184	immune cell
+CD-ebi-a-GCST004132	Quach_2016.monocyte_naive_ge	19	8	200	immune cell
+CD-ebi-a-GCST004132	Quach_2016.monocyte_Pam3CSK4_ge	30	9	196	immune cell
+CD-ebi-a-GCST004132	Quach_2016.monocyte_R848_ge	22	6	191	immune cell
+CD-ebi-a-GCST004132	ROSMAP.brain_naive_ge	11	4	576	other
+CD-ebi-a-GCST004132	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	9	1	89	immune cell
+CD-ebi-a-GCST004132	Schmiedel_2018.CD4_T-cell_naive_ge	8	1	88	immune cell
+CD-ebi-a-GCST004132	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	2	1	88	immune cell
+CD-ebi-a-GCST004132	Schmiedel_2018.CD8_T-cell_naive_ge	9	2	89	immune cell
+CD-ebi-a-GCST004132	Schmiedel_2018.monocyte_CD16_naive_ge	10	2	90	immune cell
+CD-ebi-a-GCST004132	Schmiedel_2018.monocyte_naive_ge	22	5	91	immune cell
+CD-ebi-a-GCST004132	Schmiedel_2018.NK-cell_naive_ge	7	3	90	immune cell
+CD-ebi-a-GCST004132	Schmiedel_2018.Tfh_memory_ge	1	1	89	immune cell
+CD-ebi-a-GCST004132	Schmiedel_2018.Th1-17_memory_ge	4	1	88	immune cell
+CD-ebi-a-GCST004132	Schmiedel_2018.Treg_memory_ge	8	4	89	immune cell
+CD-ebi-a-GCST004132	Schmiedel_2018.Treg_naive_ge	3	2	89	immune cell
+CD-ebi-a-GCST004132	TwinsUK.blood_ge	2	1	195	immune cell
+CD-ebi-a-GCST004132	TwinsUK.fat_ge	9	4	381	other
+CD-ebi-a-GCST004132	TwinsUK.LCL_ge	22	4	418	immune cell
+CD-ebi-a-GCST004132	TwinsUK.skin_ge	6	3	370	other
+HEIGHT-ukb-a-389	Alasoo_2018.macrophage_IFNg_ge	10	2	84	immune cell
+HEIGHT-ukb-a-389	Alasoo_2018.macrophage_IFNg+Salmonella_ge	1	1	84	immune cell
+HEIGHT-ukb-a-389	Alasoo_2018.macrophage_naive_ge	11	3	84	immune cell
+HEIGHT-ukb-a-389	Alasoo_2018.macrophage_Salmonella_ge	1	1	84	immune cell
+HEIGHT-ukb-a-389	BLUEPRINT_PE.T-cell_ge	17	8	167	immune cell
+HEIGHT-ukb-a-389	BLUEPRINT_SE.monocyte_ge	20	8	191	immune cell
+HEIGHT-ukb-a-389	BLUEPRINT_SE.neutrophil_ge	11	4	196	immune cell
+HEIGHT-ukb-a-389	BrainSeq.brain_ge	19	8	479	other
+HEIGHT-ukb-a-389	CEDAR.B-cell_CD19_microarray	3	2	262	immune cell
+HEIGHT-ukb-a-389	CEDAR.ileum_microarray	1	1	180	other
+HEIGHT-ukb-a-389	CEDAR.monocyte_CD14_microarray	2	1	286	immune cell
+HEIGHT-ukb-a-389	CEDAR.neutrophil_CD15_microarray	11	3	280	immune cell
+HEIGHT-ukb-a-389	CEDAR.rectum_microarray	16	3	271	other
+HEIGHT-ukb-a-389	CEDAR.T-cell_CD4_microarray	6	3	290	immune cell
+HEIGHT-ukb-a-389	CEDAR.T-cell_CD8_microarray	5	2	277	immune cell
+HEIGHT-ukb-a-389	CEDAR.transverse_colon_microarray	11	4	286	other
+HEIGHT-ukb-a-389	Fairfax_2012.B-cell_CD19_microarray	15	7	281	immune cell
+HEIGHT-ukb-a-389	Fairfax_2014.monocyte_IFN24_microarray	8	5	370	immune cell
+HEIGHT-ukb-a-389	Fairfax_2014.monocyte_LPS2_microarray	7	5	256	immune cell
+HEIGHT-ukb-a-389	Fairfax_2014.monocyte_LPS24_microarray	11	5	325	immune cell
+HEIGHT-ukb-a-389	Fairfax_2014.monocyte_naive_microarray	5	4	420	immune cell
+HEIGHT-ukb-a-389	FUSION.adipose_naive_ge	22	10	271	other
+HEIGHT-ukb-a-389	FUSION.muscle_naive_ge	27	13	288	other
+HEIGHT-ukb-a-389	GENCORD.fibroblast_ge	18	6	186	immune cell
+HEIGHT-ukb-a-389	GENCORD.LCL_ge	31	10	190	immune cell
+HEIGHT-ukb-a-389	GENCORD.T-cell_ge	8	3	184	immune cell
+HEIGHT-ukb-a-389	GEUVADIS.LCL_ge	26	12	445	immune cell
+HEIGHT-ukb-a-389	HipSci.iPSC_ge	15	5	322	other
+HEIGHT-ukb-a-389	Kasela_2017.T-cell_CD4_microarray	9	5	280	immune cell
+HEIGHT-ukb-a-389	Kasela_2017.T-cell_CD8_microarray	2	1	269	immune cell
+HEIGHT-ukb-a-389	Lepik_2017.blood_ge	29	10	471	immune cell
+HEIGHT-ukb-a-389	Naranbhai_2015.neutrophil_CD16_microarray	1	1	93	immune cell
+HEIGHT-ukb-a-389	Nedelec_2016.macrophage_Listeria_ge	5	2	163	immune cell
+HEIGHT-ukb-a-389	Nedelec_2016.macrophage_naive_ge	2	2	163	immune cell
+HEIGHT-ukb-a-389	Quach_2016.monocyte_IAV_ge	26	7	198	immune cell
+HEIGHT-ukb-a-389	Quach_2016.monocyte_LPS_ge	19	6	184	immune cell
+HEIGHT-ukb-a-389	Quach_2016.monocyte_naive_ge	20	10	200	immune cell
+HEIGHT-ukb-a-389	Quach_2016.monocyte_Pam3CSK4_ge	13	6	196	immune cell
+HEIGHT-ukb-a-389	Quach_2016.monocyte_R848_ge	17	5	191	immune cell
+HEIGHT-ukb-a-389	ROSMAP.brain_naive_ge	38	17	576	other
+HEIGHT-ukb-a-389	Schmiedel_2018.B-cell_naive_ge	11	4	91	immune cell
+HEIGHT-ukb-a-389	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	5	2	89	immune cell
+HEIGHT-ukb-a-389	Schmiedel_2018.CD4_T-cell_naive_ge	11	2	88	immune cell
+HEIGHT-ukb-a-389	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	17	6	88	immune cell
+HEIGHT-ukb-a-389	Schmiedel_2018.monocyte_CD16_naive_ge	4	1	90	immune cell
+HEIGHT-ukb-a-389	Schmiedel_2018.monocyte_naive_ge	17	4	91	immune cell
+HEIGHT-ukb-a-389	Schmiedel_2018.NK-cell_naive_ge	24	7	90	immune cell
+HEIGHT-ukb-a-389	Schmiedel_2018.Tfh_memory_ge	11	3	89	immune cell
+HEIGHT-ukb-a-389	Schmiedel_2018.Th1_memory_ge	8	3	82	immune cell
+HEIGHT-ukb-a-389	Schmiedel_2018.Th1-17_memory_ge	6	3	88	immune cell
+HEIGHT-ukb-a-389	Schmiedel_2018.Th17_memory_ge	14	4	89	immune cell
+HEIGHT-ukb-a-389	Schmiedel_2018.Th2_memory_ge	6	3	89	immune cell
+HEIGHT-ukb-a-389	Schmiedel_2018.Treg_memory_ge	6	3	89	immune cell
+HEIGHT-ukb-a-389	Schmiedel_2018.Treg_naive_ge	14	4	89	immune cell
+HEIGHT-ukb-a-389	Schwartzentruber_2018.sensory_neuron_ge	5	2	98	other
+HEIGHT-ukb-a-389	TwinsUK.blood_ge	5	2	195	immune cell
+HEIGHT-ukb-a-389	TwinsUK.fat_ge	25	7	381	other
+HEIGHT-ukb-a-389	TwinsUK.LCL_ge	46	15	418	immune cell
+HEIGHT-ukb-a-389	TwinsUK.skin_ge	14	5	370	other
+HEIGHT-ukb-a-389	van_de_Bunt_2015.pancreatic_islet_ge	7	4	117	other
+IBD-ebi-a-GCST004131	Alasoo_2018.macrophage_IFNg_ge	18	5	84	immune cell
+IBD-ebi-a-GCST004131	Alasoo_2018.macrophage_IFNg+Salmonella_ge	3	1	84	immune cell
+IBD-ebi-a-GCST004131	Alasoo_2018.macrophage_naive_ge	9	3	84	immune cell
+IBD-ebi-a-GCST004131	BLUEPRINT_PE.T-cell_ge	8	4	167	immune cell
+IBD-ebi-a-GCST004131	BLUEPRINT_SE.monocyte_ge	33	10	191	immune cell
+IBD-ebi-a-GCST004131	BLUEPRINT_SE.neutrophil_ge	18	6	196	immune cell
+IBD-ebi-a-GCST004131	BrainSeq.brain_ge	6	2	479	other
+IBD-ebi-a-GCST004131	CEDAR.monocyte_CD14_microarray	8	5	286	immune cell
+IBD-ebi-a-GCST004131	CEDAR.neutrophil_CD15_microarray	2	1	280	immune cell
+IBD-ebi-a-GCST004131	CEDAR.rectum_microarray	3	2	271	other
+IBD-ebi-a-GCST004131	CEDAR.T-cell_CD4_microarray	11	4	290	immune cell
+IBD-ebi-a-GCST004131	CEDAR.T-cell_CD8_microarray	9	3	277	immune cell
+IBD-ebi-a-GCST004131	CEDAR.transverse_colon_microarray	4	2	286	other
+IBD-ebi-a-GCST004131	Fairfax_2012.B-cell_CD19_microarray	8	5	281	immune cell
+IBD-ebi-a-GCST004131	Fairfax_2014.monocyte_IFN24_microarray	8	6	370	immune cell
+IBD-ebi-a-GCST004131	Fairfax_2014.monocyte_LPS2_microarray	2	1	256	immune cell
+IBD-ebi-a-GCST004131	Fairfax_2014.monocyte_LPS24_microarray	7	6	325	immune cell
+IBD-ebi-a-GCST004131	Fairfax_2014.monocyte_naive_microarray	10	9	420	immune cell
+IBD-ebi-a-GCST004131	FUSION.adipose_naive_ge	4	2	271	other
+IBD-ebi-a-GCST004131	FUSION.muscle_naive_ge	31	8	288	other
+IBD-ebi-a-GCST004131	GENCORD.fibroblast_ge	5	1	186	immune cell
+IBD-ebi-a-GCST004131	GENCORD.LCL_ge	6	2	190	immune cell
+IBD-ebi-a-GCST004131	GENCORD.T-cell_ge	5	1	184	immune cell
+IBD-ebi-a-GCST004131	GEUVADIS.LCL_ge	18	5	445	immune cell
+IBD-ebi-a-GCST004131	HipSci.iPSC_ge	13	3	322	other
+IBD-ebi-a-GCST004131	Kasela_2017.T-cell_CD4_microarray	14	4	280	immune cell
+IBD-ebi-a-GCST004131	Kasela_2017.T-cell_CD8_microarray	6	3	269	immune cell
+IBD-ebi-a-GCST004131	Lepik_2017.blood_ge	32	12	471	immune cell
+IBD-ebi-a-GCST004131	Nedelec_2016.macrophage_Listeria_ge	12	4	163	immune cell
+IBD-ebi-a-GCST004131	Nedelec_2016.macrophage_naive_ge	15	4	163	immune cell
+IBD-ebi-a-GCST004131	Nedelec_2016.macrophage_Salmonella_ge	17	6	167	immune cell
+IBD-ebi-a-GCST004131	Quach_2016.monocyte_IAV_ge	26	8	198	immune cell
+IBD-ebi-a-GCST004131	Quach_2016.monocyte_LPS_ge	33	11	184	immune cell
+IBD-ebi-a-GCST004131	Quach_2016.monocyte_naive_ge	24	9	200	immune cell
+IBD-ebi-a-GCST004131	Quach_2016.monocyte_Pam3CSK4_ge	26	8	196	immune cell
+IBD-ebi-a-GCST004131	Quach_2016.monocyte_R848_ge	41	12	191	immune cell
+IBD-ebi-a-GCST004131	ROSMAP.brain_naive_ge	15	4	576	other
+IBD-ebi-a-GCST004131	Schmiedel_2018.B-cell_naive_ge	5	3	91	immune cell
+IBD-ebi-a-GCST004131	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	3	1	89	immune cell
+IBD-ebi-a-GCST004131	Schmiedel_2018.CD4_T-cell_naive_ge	7	3	88	immune cell
+IBD-ebi-a-GCST004131	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	3	1	88	immune cell
+IBD-ebi-a-GCST004131	Schmiedel_2018.CD8_T-cell_naive_ge	23	3	89	immune cell
+IBD-ebi-a-GCST004131	Schmiedel_2018.monocyte_CD16_naive_ge	11	2	90	immune cell
+IBD-ebi-a-GCST004131	Schmiedel_2018.monocyte_naive_ge	13	5	91	immune cell
+IBD-ebi-a-GCST004131	Schmiedel_2018.NK-cell_naive_ge	2	1	90	immune cell
+IBD-ebi-a-GCST004131	Schmiedel_2018.Tfh_memory_ge	1	1	89	immune cell
+IBD-ebi-a-GCST004131	Schmiedel_2018.Th1_memory_ge	1	1	82	immune cell
+IBD-ebi-a-GCST004131	Schmiedel_2018.Th1-17_memory_ge	1	1	88	immune cell
+IBD-ebi-a-GCST004131	Schmiedel_2018.Th17_memory_ge	6	2	89	immune cell
+IBD-ebi-a-GCST004131	Schmiedel_2018.Th2_memory_ge	5	1	89	immune cell
+IBD-ebi-a-GCST004131	Schmiedel_2018.Treg_memory_ge	7	3	89	immune cell
+IBD-ebi-a-GCST004131	Schmiedel_2018.Treg_naive_ge	7	3	89	immune cell
+IBD-ebi-a-GCST004131	TwinsUK.blood_ge	12	5	195	immune cell
+IBD-ebi-a-GCST004131	TwinsUK.fat_ge	11	4	381	other
+IBD-ebi-a-GCST004131	TwinsUK.LCL_ge	10	2	418	immune cell
+IBD-ebi-a-GCST004131	TwinsUK.skin_ge	5	2	370	other
+LC-ebi-a-GCST004627	Alasoo_2018.macrophage_IFNg_ge	12	4	84	immune cell
+LC-ebi-a-GCST004627	Alasoo_2018.macrophage_IFNg+Salmonella_ge	1	1	84	immune cell
+LC-ebi-a-GCST004627	Alasoo_2018.macrophage_naive_ge	4	2	84	immune cell
+LC-ebi-a-GCST004627	BLUEPRINT_PE.T-cell_ge	69	17	167	immune cell
+LC-ebi-a-GCST004627	BLUEPRINT_SE.monocyte_ge	18	6	191	immune cell
+LC-ebi-a-GCST004627	BLUEPRINT_SE.neutrophil_ge	21	7	196	immune cell
+LC-ebi-a-GCST004627	CEDAR.B-cell_CD19_microarray	1	1	262	immune cell
+LC-ebi-a-GCST004627	CEDAR.monocyte_CD14_microarray	1	1	286	immune cell
+LC-ebi-a-GCST004627	CEDAR.neutrophil_CD15_microarray	2	1	280	immune cell
+LC-ebi-a-GCST004627	CEDAR.T-cell_CD4_microarray	5	4	290	immune cell
+LC-ebi-a-GCST004627	CEDAR.T-cell_CD8_microarray	2	2	277	immune cell
+LC-ebi-a-GCST004627	CEDAR.transverse_colon_microarray	8	1	286	other
+LC-ebi-a-GCST004627	Fairfax_2012.B-cell_CD19_microarray	7	4	281	immune cell
+LC-ebi-a-GCST004627	Fairfax_2014.monocyte_IFN24_microarray	12	8	370	immune cell
+LC-ebi-a-GCST004627	Fairfax_2014.monocyte_LPS2_microarray	12	5	256	immune cell
+LC-ebi-a-GCST004627	Fairfax_2014.monocyte_LPS24_microarray	5	4	325	immune cell
+LC-ebi-a-GCST004627	Fairfax_2014.monocyte_naive_microarray	14	6	420	immune cell
+LC-ebi-a-GCST004627	FUSION.adipose_naive_ge	2	1	271	other
+LC-ebi-a-GCST004627	FUSION.muscle_naive_ge	5	2	288	other
+LC-ebi-a-GCST004627	GENCORD.T-cell_ge	11	3	184	immune cell
+LC-ebi-a-GCST004627	GEUVADIS.LCL_ge	3	2	445	immune cell
+LC-ebi-a-GCST004627	HipSci.iPSC_ge	6	2	322	other
+LC-ebi-a-GCST004627	Kasela_2017.T-cell_CD4_microarray	5	2	280	immune cell
+LC-ebi-a-GCST004627	Kasela_2017.T-cell_CD8_microarray	8	3	269	immune cell
+LC-ebi-a-GCST004627	Lepik_2017.blood_ge	52	12	471	immune cell
+LC-ebi-a-GCST004627	Naranbhai_2015.neutrophil_CD16_microarray	5	2	93	immune cell
+LC-ebi-a-GCST004627	Nedelec_2016.macrophage_Listeria_ge	17	3	163	immune cell
+LC-ebi-a-GCST004627	Nedelec_2016.macrophage_naive_ge	4	2	163	immune cell
+LC-ebi-a-GCST004627	Nedelec_2016.macrophage_Salmonella_ge	2	1	167	immune cell
+LC-ebi-a-GCST004627	Quach_2016.monocyte_IAV_ge	8	3	198	immune cell
+LC-ebi-a-GCST004627	Quach_2016.monocyte_LPS_ge	7	3	184	immune cell
+LC-ebi-a-GCST004627	Quach_2016.monocyte_naive_ge	4	2	200	immune cell
+LC-ebi-a-GCST004627	Quach_2016.monocyte_Pam3CSK4_ge	7	3	196	immune cell
+LC-ebi-a-GCST004627	Quach_2016.monocyte_R848_ge	9	3	191	immune cell
+LC-ebi-a-GCST004627	ROSMAP.brain_naive_ge	2	1	576	other
+LC-ebi-a-GCST004627	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	22	2	89	immune cell
+LC-ebi-a-GCST004627	Schmiedel_2018.CD4_T-cell_naive_ge	29	7	88	immune cell
+LC-ebi-a-GCST004627	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	2	2	88	immune cell
+LC-ebi-a-GCST004627	Schmiedel_2018.CD8_T-cell_naive_ge	6	3	89	immune cell
+LC-ebi-a-GCST004627	Schmiedel_2018.monocyte_CD16_naive_ge	4	2	90	immune cell
+LC-ebi-a-GCST004627	Schmiedel_2018.monocyte_naive_ge	1	1	91	immune cell
+LC-ebi-a-GCST004627	Schmiedel_2018.Tfh_memory_ge	20	4	89	immune cell
+LC-ebi-a-GCST004627	Schmiedel_2018.Th1_memory_ge	13	4	82	immune cell
+LC-ebi-a-GCST004627	Schmiedel_2018.Th1-17_memory_ge	16	3	88	immune cell
+LC-ebi-a-GCST004627	Schmiedel_2018.Th17_memory_ge	29	6	89	immune cell
+LC-ebi-a-GCST004627	Schmiedel_2018.Th2_memory_ge	25	5	89	immune cell
+LC-ebi-a-GCST004627	Schmiedel_2018.Treg_memory_ge	4	1	89	immune cell
+LC-ebi-a-GCST004627	Schmiedel_2018.Treg_naive_ge	26	7	89	immune cell
+LC-ebi-a-GCST004627	TwinsUK.blood_ge	14	4	195	immune cell
+LC-ebi-a-GCST004627	TwinsUK.fat_ge	10	5	381	other
+LC-ebi-a-GCST004627	TwinsUK.LCL_ge	13	6	418	immune cell
+LDLC	Alasoo_2018.macrophage_IFNg_ge	8	4	84	immune cell
+LDLC	Alasoo_2018.macrophage_IFNg+Salmonella_ge	3	1	84	immune cell
+LDLC	Alasoo_2018.macrophage_naive_ge	11	4	84	immune cell
+LDLC	Alasoo_2018.macrophage_Salmonella_ge	2	1	84	immune cell
+LDLC	BLUEPRINT_PE.T-cell_ge	12	3	167	immune cell
+LDLC	BLUEPRINT_SE.monocyte_ge	16	6	191	immune cell
+LDLC	BLUEPRINT_SE.neutrophil_ge	6	2	196	immune cell
+LDLC	BrainSeq.brain_ge	3	1	479	other
+LDLC	CEDAR.B-cell_CD19_microarray	1	1	262	immune cell
+LDLC	CEDAR.ileum_microarray	1	1	180	other
+LDLC	CEDAR.monocyte_CD14_microarray	5	4	286	immune cell
+LDLC	CEDAR.neutrophil_CD15_microarray	2	2	280	immune cell
+LDLC	CEDAR.platelet_microarray	6	1	205	immune cell
+LDLC	CEDAR.rectum_microarray	2	2	271	other
+LDLC	CEDAR.T-cell_CD4_microarray	2	2	290	immune cell
+LDLC	CEDAR.transverse_colon_microarray	2	2	286	other
+LDLC	Fairfax_2012.B-cell_CD19_microarray	7	4	281	immune cell
+LDLC	Fairfax_2014.monocyte_IFN24_microarray	16	8	370	immune cell
+LDLC	Fairfax_2014.monocyte_LPS2_microarray	3	3	256	immune cell
+LDLC	Fairfax_2014.monocyte_LPS24_microarray	4	2	325	immune cell
+LDLC	Fairfax_2014.monocyte_naive_microarray	18	6	420	immune cell
+LDLC	FUSION.adipose_naive_ge	19	7	271	other
+LDLC	FUSION.muscle_naive_ge	10	3	288	other
+LDLC	GEUVADIS.LCL_ge	19	4	445	immune cell
+LDLC	HipSci.iPSC_ge	12	5	322	other
+LDLC	Kasela_2017.T-cell_CD4_microarray	3	2	280	immune cell
+LDLC	Lepik_2017.blood_ge	13	6	471	immune cell
+LDLC	Naranbhai_2015.neutrophil_CD16_microarray	2	1	93	immune cell
+LDLC	Nedelec_2016.macrophage_Listeria_ge	6	4	163	immune cell
+LDLC	Nedelec_2016.macrophage_naive_ge	16	6	163	immune cell
+LDLC	Nedelec_2016.macrophage_Salmonella_ge	7	3	167	immune cell
+LDLC	Quach_2016.monocyte_IAV_ge	11	4	198	immune cell
+LDLC	Quach_2016.monocyte_LPS_ge	15	5	184	immune cell
+LDLC	Quach_2016.monocyte_naive_ge	27	11	200	immune cell
+LDLC	Quach_2016.monocyte_Pam3CSK4_ge	9	3	196	immune cell
+LDLC	Quach_2016.monocyte_R848_ge	9	4	191	immune cell
+LDLC	ROSMAP.brain_naive_ge	28	8	576	other
+LDLC	Schmiedel_2018.B-cell_naive_ge	4	2	91	immune cell
+LDLC	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	9	4	89	immune cell
+LDLC	Schmiedel_2018.CD4_T-cell_naive_ge	16	3	88	immune cell
+LDLC	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	7	2	88	immune cell
+LDLC	Schmiedel_2018.CD8_T-cell_naive_ge	14	2	89	immune cell
+LDLC	Schmiedel_2018.monocyte_CD16_naive_ge	3	2	90	immune cell
+LDLC	Schmiedel_2018.monocyte_naive_ge	4	2	91	immune cell
+LDLC	Schmiedel_2018.NK-cell_naive_ge	6	2	90	immune cell
+LDLC	Schmiedel_2018.Tfh_memory_ge	5	3	89	immune cell
+LDLC	Schmiedel_2018.Th1-17_memory_ge	10	3	88	immune cell
+LDLC	Schmiedel_2018.Th17_memory_ge	16	5	89	immune cell
+LDLC	Schmiedel_2018.Th2_memory_ge	1	1	89	immune cell
+LDLC	Schmiedel_2018.Treg_memory_ge	1	1	89	immune cell
+LDLC	Schmiedel_2018.Treg_naive_ge	4	2	89	immune cell
+LDLC	TwinsUK.fat_ge	19	9	381	other
+LDLC	TwinsUK.LCL_ge	23	9	418	immune cell
+LDLC	TwinsUK.skin_ge	7	5	370	other
+MC-ebi-a-GCST004625	Alasoo_2018.macrophage_IFNg+Salmonella_ge	4	2	84	immune cell
+MC-ebi-a-GCST004625	Alasoo_2018.macrophage_naive_ge	2	2	84	immune cell
+MC-ebi-a-GCST004625	Alasoo_2018.macrophage_Salmonella_ge	3	1	84	immune cell
+MC-ebi-a-GCST004625	BLUEPRINT_PE.T-cell_ge	16	4	167	immune cell
+MC-ebi-a-GCST004625	BLUEPRINT_SE.monocyte_ge	41	12	191	immune cell
+MC-ebi-a-GCST004625	BLUEPRINT_SE.neutrophil_ge	27	9	196	immune cell
+MC-ebi-a-GCST004625	BrainSeq.brain_ge	5	1	479	other
+MC-ebi-a-GCST004625	CEDAR.B-cell_CD19_microarray	14	4	262	immune cell
+MC-ebi-a-GCST004625	CEDAR.monocyte_CD14_microarray	21	8	286	immune cell
+MC-ebi-a-GCST004625	CEDAR.neutrophil_CD15_microarray	2	2	280	immune cell
+MC-ebi-a-GCST004625	CEDAR.rectum_microarray	9	2	271	other
+MC-ebi-a-GCST004625	CEDAR.T-cell_CD4_microarray	10	3	290	immune cell
+MC-ebi-a-GCST004625	CEDAR.T-cell_CD8_microarray	11	3	277	immune cell
+MC-ebi-a-GCST004625	CEDAR.transverse_colon_microarray	4	1	286	other
+MC-ebi-a-GCST004625	Fairfax_2012.B-cell_CD19_microarray	13	3	281	immune cell
+MC-ebi-a-GCST004625	Fairfax_2014.monocyte_IFN24_microarray	29	8	370	immune cell
+MC-ebi-a-GCST004625	Fairfax_2014.monocyte_LPS2_microarray	17	3	256	immune cell
+MC-ebi-a-GCST004625	Fairfax_2014.monocyte_LPS24_microarray	21	9	325	immune cell
+MC-ebi-a-GCST004625	Fairfax_2014.monocyte_naive_microarray	38	14	420	immune cell
+MC-ebi-a-GCST004625	FUSION.adipose_naive_ge	8	2	271	other
+MC-ebi-a-GCST004625	FUSION.muscle_naive_ge	2	2	288	other
+MC-ebi-a-GCST004625	GEUVADIS.LCL_ge	6	2	445	immune cell
+MC-ebi-a-GCST004625	HipSci.iPSC_ge	8	2	322	other
+MC-ebi-a-GCST004625	Lepik_2017.blood_ge	52	14	471	immune cell
+MC-ebi-a-GCST004625	Naranbhai_2015.neutrophil_CD16_microarray	1	1	93	immune cell
+MC-ebi-a-GCST004625	Nedelec_2016.macrophage_Listeria_ge	8	1	163	immune cell
+MC-ebi-a-GCST004625	Nedelec_2016.macrophage_naive_ge	9	1	163	immune cell
+MC-ebi-a-GCST004625	Nedelec_2016.macrophage_Salmonella_ge	8	1	167	immune cell
+MC-ebi-a-GCST004625	Quach_2016.monocyte_IAV_ge	28	5	198	immune cell
+MC-ebi-a-GCST004625	Quach_2016.monocyte_LPS_ge	28	3	184	immune cell
+MC-ebi-a-GCST004625	Quach_2016.monocyte_naive_ge	35	6	200	immune cell
+MC-ebi-a-GCST004625	Quach_2016.monocyte_Pam3CSK4_ge	19	4	196	immune cell
+MC-ebi-a-GCST004625	Quach_2016.monocyte_R848_ge	33	4	191	immune cell
+MC-ebi-a-GCST004625	ROSMAP.brain_naive_ge	5	2	576	other
+MC-ebi-a-GCST004625	Schmiedel_2018.B-cell_naive_ge	2	1	91	immune cell
+MC-ebi-a-GCST004625	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	1	1	88	immune cell
+MC-ebi-a-GCST004625	Schmiedel_2018.monocyte_CD16_naive_ge	12	3	90	immune cell
+MC-ebi-a-GCST004625	Schmiedel_2018.monocyte_naive_ge	30	7	91	immune cell
+MC-ebi-a-GCST004625	Schmiedel_2018.NK-cell_naive_ge	1	1	90	immune cell
+MC-ebi-a-GCST004625	Schmiedel_2018.Treg_memory_ge	4	2	89	immune cell
+MC-ebi-a-GCST004625	Schmiedel_2018.Treg_naive_ge	2	2	89	immune cell
+MC-ebi-a-GCST004625	TwinsUK.blood_ge	19	6	195	immune cell
+MC-ebi-a-GCST004625	TwinsUK.fat_ge	13	4	381	other
+MC-ebi-a-GCST004625	TwinsUK.LCL_ge	11	7	418	immune cell
+MC-ebi-a-GCST004625	TwinsUK.skin_ge	11	4	370	other
+MPV-ebi-a-GCST004599	Alasoo_2018.macrophage_IFNg_ge	10	2	84	immune cell
+MPV-ebi-a-GCST004599	Alasoo_2018.macrophage_IFNg+Salmonella_ge	5	1	84	immune cell
+MPV-ebi-a-GCST004599	Alasoo_2018.macrophage_Salmonella_ge	10	3	84	immune cell
+MPV-ebi-a-GCST004599	BLUEPRINT_PE.T-cell_ge	24	5	167	immune cell
+MPV-ebi-a-GCST004599	BLUEPRINT_SE.monocyte_ge	13	5	191	immune cell
+MPV-ebi-a-GCST004599	BLUEPRINT_SE.neutrophil_ge	18	5	196	immune cell
+MPV-ebi-a-GCST004599	BrainSeq.brain_ge	3	1	479	other
+MPV-ebi-a-GCST004599	CEDAR.B-cell_CD19_microarray	2	2	262	immune cell
+MPV-ebi-a-GCST004599	CEDAR.monocyte_CD14_microarray	6	1	286	immune cell
+MPV-ebi-a-GCST004599	CEDAR.neutrophil_CD15_microarray	8	3	280	immune cell
+MPV-ebi-a-GCST004599	CEDAR.platelet_microarray	30	7	205	immune cell
+MPV-ebi-a-GCST004599	CEDAR.rectum_microarray	5	3	271	other
+MPV-ebi-a-GCST004599	CEDAR.T-cell_CD8_microarray	1	1	277	immune cell
+MPV-ebi-a-GCST004599	CEDAR.transverse_colon_microarray	2	1	286	other
+MPV-ebi-a-GCST004599	Fairfax_2012.B-cell_CD19_microarray	4	1	281	immune cell
+MPV-ebi-a-GCST004599	Fairfax_2014.monocyte_IFN24_microarray	6	4	370	immune cell
+MPV-ebi-a-GCST004599	Fairfax_2014.monocyte_LPS2_microarray	5	2	256	immune cell
+MPV-ebi-a-GCST004599	Fairfax_2014.monocyte_LPS24_microarray	5	2	325	immune cell
+MPV-ebi-a-GCST004599	Fairfax_2014.monocyte_naive_microarray	12	2	420	immune cell
+MPV-ebi-a-GCST004599	FUSION.adipose_naive_ge	3	1	271	other
+MPV-ebi-a-GCST004599	FUSION.muscle_naive_ge	12	5	288	other
+MPV-ebi-a-GCST004599	GENCORD.LCL_ge	4	3	190	immune cell
+MPV-ebi-a-GCST004599	GENCORD.T-cell_ge	3	1	184	immune cell
+MPV-ebi-a-GCST004599	GEUVADIS.LCL_ge	13	5	445	immune cell
+MPV-ebi-a-GCST004599	HipSci.iPSC_ge	14	5	322	other
+MPV-ebi-a-GCST004599	Kasela_2017.T-cell_CD8_microarray	1	1	269	immune cell
+MPV-ebi-a-GCST004599	Lepik_2017.blood_ge	23	8	471	immune cell
+MPV-ebi-a-GCST004599	Nedelec_2016.macrophage_Listeria_ge	3	1	163	immune cell
+MPV-ebi-a-GCST004599	Nedelec_2016.macrophage_Salmonella_ge	6	3	167	immune cell
+MPV-ebi-a-GCST004599	Quach_2016.monocyte_IAV_ge	13	6	198	immune cell
+MPV-ebi-a-GCST004599	Quach_2016.monocyte_LPS_ge	9	4	184	immune cell
+MPV-ebi-a-GCST004599	Quach_2016.monocyte_naive_ge	13	5	200	immune cell
+MPV-ebi-a-GCST004599	Quach_2016.monocyte_Pam3CSK4_ge	18	5	196	immune cell
+MPV-ebi-a-GCST004599	Quach_2016.monocyte_R848_ge	11	4	191	immune cell
+MPV-ebi-a-GCST004599	ROSMAP.brain_naive_ge	8	5	576	other
+MPV-ebi-a-GCST004599	Schmiedel_2018.B-cell_naive_ge	6	2	91	immune cell
+MPV-ebi-a-GCST004599	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	1	1	89	immune cell
+MPV-ebi-a-GCST004599	Schmiedel_2018.CD4_T-cell_naive_ge	5	1	88	immune cell
+MPV-ebi-a-GCST004599	Schmiedel_2018.monocyte_CD16_naive_ge	4	2	90	immune cell
+MPV-ebi-a-GCST004599	Schmiedel_2018.monocyte_naive_ge	1	1	91	immune cell
+MPV-ebi-a-GCST004599	Schmiedel_2018.NK-cell_naive_ge	2	1	90	immune cell
+MPV-ebi-a-GCST004599	Schmiedel_2018.Th1_memory_ge	1	1	82	immune cell
+MPV-ebi-a-GCST004599	Schmiedel_2018.Th17_memory_ge	2	1	89	immune cell
+MPV-ebi-a-GCST004599	Schmiedel_2018.Treg_memory_ge	1	1	89	immune cell
+MPV-ebi-a-GCST004599	TwinsUK.blood_ge	5	1	195	immune cell
+MPV-ebi-a-GCST004599	TwinsUK.fat_ge	11	5	381	other
+MPV-ebi-a-GCST004599	TwinsUK.LCL_ge	21	10	418	immune cell
+MPV-ebi-a-GCST004599	TwinsUK.skin_ge	10	1	370	other
+PLT-ebi-a-GCST004603	Alasoo_2018.macrophage_IFNg_ge	11	3	84	immune cell
+PLT-ebi-a-GCST004603	Alasoo_2018.macrophage_IFNg+Salmonella_ge	10	2	84	immune cell
+PLT-ebi-a-GCST004603	Alasoo_2018.macrophage_naive_ge	6	3	84	immune cell
+PLT-ebi-a-GCST004603	Alasoo_2018.macrophage_Salmonella_ge	3	2	84	immune cell
+PLT-ebi-a-GCST004603	BLUEPRINT_PE.T-cell_ge	38	8	167	immune cell
+PLT-ebi-a-GCST004603	BLUEPRINT_SE.monocyte_ge	14	5	191	immune cell
+PLT-ebi-a-GCST004603	BLUEPRINT_SE.neutrophil_ge	3	2	196	immune cell
+PLT-ebi-a-GCST004603	BrainSeq.brain_ge	1	1	479	other
+PLT-ebi-a-GCST004603	CEDAR.B-cell_CD19_microarray	3	2	262	immune cell
+PLT-ebi-a-GCST004603	CEDAR.ileum_microarray	1	1	180	other
+PLT-ebi-a-GCST004603	CEDAR.neutrophil_CD15_microarray	4	3	280	immune cell
+PLT-ebi-a-GCST004603	CEDAR.platelet_microarray	15	4	205	immune cell
+PLT-ebi-a-GCST004603	CEDAR.rectum_microarray	3	3	271	other
+PLT-ebi-a-GCST004603	CEDAR.T-cell_CD4_microarray	4	2	290	immune cell
+PLT-ebi-a-GCST004603	CEDAR.T-cell_CD8_microarray	1	1	277	immune cell
+PLT-ebi-a-GCST004603	CEDAR.transverse_colon_microarray	5	5	286	other
+PLT-ebi-a-GCST004603	Fairfax_2012.B-cell_CD19_microarray	6	3	281	immune cell
+PLT-ebi-a-GCST004603	Fairfax_2014.monocyte_IFN24_microarray	6	4	370	immune cell
+PLT-ebi-a-GCST004603	Fairfax_2014.monocyte_LPS24_microarray	2	2	325	immune cell
+PLT-ebi-a-GCST004603	Fairfax_2014.monocyte_naive_microarray	6	3	420	immune cell
+PLT-ebi-a-GCST004603	FUSION.adipose_naive_ge	12	4	271	other
+PLT-ebi-a-GCST004603	FUSION.muscle_naive_ge	6	1	288	other
+PLT-ebi-a-GCST004603	GENCORD.fibroblast_ge	6	1	186	immune cell
+PLT-ebi-a-GCST004603	GENCORD.LCL_ge	22	5	190	immune cell
+PLT-ebi-a-GCST004603	GENCORD.T-cell_ge	6	2	184	immune cell
+PLT-ebi-a-GCST004603	GEUVADIS.LCL_ge	13	6	445	immune cell
+PLT-ebi-a-GCST004603	HipSci.iPSC_ge	5	3	322	other
+PLT-ebi-a-GCST004603	Lepik_2017.blood_ge	24	8	471	immune cell
+PLT-ebi-a-GCST004603	Naranbhai_2015.neutrophil_CD16_microarray	1	1	93	immune cell
+PLT-ebi-a-GCST004603	Nedelec_2016.macrophage_Salmonella_ge	3	2	167	immune cell
+PLT-ebi-a-GCST004603	Quach_2016.monocyte_IAV_ge	14	5	198	immune cell
+PLT-ebi-a-GCST004603	Quach_2016.monocyte_LPS_ge	23	6	184	immune cell
+PLT-ebi-a-GCST004603	Quach_2016.monocyte_naive_ge	14	4	200	immune cell
+PLT-ebi-a-GCST004603	Quach_2016.monocyte_Pam3CSK4_ge	17	6	196	immune cell
+PLT-ebi-a-GCST004603	Quach_2016.monocyte_R848_ge	18	5	191	immune cell
+PLT-ebi-a-GCST004603	ROSMAP.brain_naive_ge	3	2	576	other
+PLT-ebi-a-GCST004603	Schmiedel_2018.B-cell_naive_ge	8	2	91	immune cell
+PLT-ebi-a-GCST004603	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	1	1	89	immune cell
+PLT-ebi-a-GCST004603	Schmiedel_2018.CD4_T-cell_naive_ge	11	2	88	immune cell
+PLT-ebi-a-GCST004603	Schmiedel_2018.CD8_T-cell_naive_ge	3	1	89	immune cell
+PLT-ebi-a-GCST004603	Schmiedel_2018.monocyte_CD16_naive_ge	9	2	90	immune cell
+PLT-ebi-a-GCST004603	Schmiedel_2018.monocyte_naive_ge	7	2	91	immune cell
+PLT-ebi-a-GCST004603	Schmiedel_2018.NK-cell_naive_ge	5	1	90	immune cell
+PLT-ebi-a-GCST004603	Schmiedel_2018.Tfh_memory_ge	3	1	89	immune cell
+PLT-ebi-a-GCST004603	Schmiedel_2018.Th1_memory_ge	3	1	82	immune cell
+PLT-ebi-a-GCST004603	Schmiedel_2018.Th17_memory_ge	15	4	89	immune cell
+PLT-ebi-a-GCST004603	Schmiedel_2018.Th2_memory_ge	4	2	89	immune cell
+PLT-ebi-a-GCST004603	Schmiedel_2018.Treg_memory_ge	7	1	89	immune cell
+PLT-ebi-a-GCST004603	Schmiedel_2018.Treg_naive_ge	4	1	89	immune cell
+PLT-ebi-a-GCST004603	Schwartzentruber_2018.sensory_neuron_ge	3	1	98	other
+PLT-ebi-a-GCST004603	TwinsUK.blood_ge	7	2	195	immune cell
+PLT-ebi-a-GCST004603	TwinsUK.fat_ge	22	8	381	other
+PLT-ebi-a-GCST004603	TwinsUK.LCL_ge	22	9	418	immune cell
+PLT-ebi-a-GCST004603	TwinsUK.skin_ge	4	2	370	other
+RA-ebi-a-GCST002318	Alasoo_2018.macrophage_IFNg_ge	2	2	84	immune cell
+RA-ebi-a-GCST002318	Alasoo_2018.macrophage_IFNg+Salmonella_ge	1	1	84	immune cell
+RA-ebi-a-GCST002318	Alasoo_2018.macrophage_Salmonella_ge	1	1	84	immune cell
+RA-ebi-a-GCST002318	BLUEPRINT_PE.T-cell_ge	17	7	167	immune cell
+RA-ebi-a-GCST002318	BLUEPRINT_SE.monocyte_ge	18	4	191	immune cell
+RA-ebi-a-GCST002318	BLUEPRINT_SE.neutrophil_ge	3	2	196	immune cell
+RA-ebi-a-GCST002318	CEDAR.B-cell_CD19_microarray	8	3	262	immune cell
+RA-ebi-a-GCST002318	CEDAR.monocyte_CD14_microarray	3	2	286	immune cell
+RA-ebi-a-GCST002318	CEDAR.neutrophil_CD15_microarray	4	2	280	immune cell
+RA-ebi-a-GCST002318	CEDAR.T-cell_CD4_microarray	6	2	290	immune cell
+RA-ebi-a-GCST002318	CEDAR.T-cell_CD8_microarray	1	1	277	immune cell
+RA-ebi-a-GCST002318	CEDAR.transverse_colon_microarray	1	1	286	other
+RA-ebi-a-GCST002318	Fairfax_2012.B-cell_CD19_microarray	11	5	281	immune cell
+RA-ebi-a-GCST002318	Fairfax_2014.monocyte_IFN24_microarray	1	1	370	immune cell
+RA-ebi-a-GCST002318	Fairfax_2014.monocyte_LPS2_microarray	2	2	256	immune cell
+RA-ebi-a-GCST002318	Fairfax_2014.monocyte_LPS24_microarray	1	1	325	immune cell
+RA-ebi-a-GCST002318	Fairfax_2014.monocyte_naive_microarray	5	3	420	immune cell
+RA-ebi-a-GCST002318	FUSION.adipose_naive_ge	7	4	271	other
+RA-ebi-a-GCST002318	FUSION.muscle_naive_ge	1	1	288	other
+RA-ebi-a-GCST002318	GENCORD.LCL_ge	9	2	190	immune cell
+RA-ebi-a-GCST002318	GENCORD.T-cell_ge	1	1	184	immune cell
+RA-ebi-a-GCST002318	GEUVADIS.LCL_ge	4	2	445	immune cell
+RA-ebi-a-GCST002318	HipSci.iPSC_ge	2	2	322	other
+RA-ebi-a-GCST002318	Kasela_2017.T-cell_CD4_microarray	10	3	280	immune cell
+RA-ebi-a-GCST002318	Kasela_2017.T-cell_CD8_microarray	1	1	269	immune cell
+RA-ebi-a-GCST002318	Lepik_2017.blood_ge	15	2	471	immune cell
+RA-ebi-a-GCST002318	Naranbhai_2015.neutrophil_CD16_microarray	3	2	93	immune cell
+RA-ebi-a-GCST002318	Quach_2016.monocyte_IAV_ge	10	5	198	immune cell
+RA-ebi-a-GCST002318	Quach_2016.monocyte_LPS_ge	7	2	184	immune cell
+RA-ebi-a-GCST002318	Quach_2016.monocyte_naive_ge	14	3	200	immune cell
+RA-ebi-a-GCST002318	Quach_2016.monocyte_Pam3CSK4_ge	7	2	196	immune cell
+RA-ebi-a-GCST002318	Quach_2016.monocyte_R848_ge	9	3	191	immune cell
+RA-ebi-a-GCST002318	ROSMAP.brain_naive_ge	20	6	576	other
+RA-ebi-a-GCST002318	Schmiedel_2018.B-cell_naive_ge	11	2	91	immune cell
+RA-ebi-a-GCST002318	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	4	1	89	immune cell
+RA-ebi-a-GCST002318	Schmiedel_2018.CD4_T-cell_naive_ge	25	4	88	immune cell
+RA-ebi-a-GCST002318	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	4	1	88	immune cell
+RA-ebi-a-GCST002318	Schmiedel_2018.CD8_T-cell_naive_ge	19	3	89	immune cell
+RA-ebi-a-GCST002318	Schmiedel_2018.monocyte_CD16_naive_ge	21	5	90	immune cell
+RA-ebi-a-GCST002318	Schmiedel_2018.monocyte_naive_ge	9	2	91	immune cell
+RA-ebi-a-GCST002318	Schmiedel_2018.NK-cell_naive_ge	7	2	90	immune cell
+RA-ebi-a-GCST002318	Schmiedel_2018.Tfh_memory_ge	13	3	89	immune cell
+RA-ebi-a-GCST002318	Schmiedel_2018.Th1_memory_ge	16	4	82	immune cell
+RA-ebi-a-GCST002318	Schmiedel_2018.Th1-17_memory_ge	16	3	88	immune cell
+RA-ebi-a-GCST002318	Schmiedel_2018.Th17_memory_ge	18	4	89	immune cell
+RA-ebi-a-GCST002318	Schmiedel_2018.Th2_memory_ge	30	5	89	immune cell
+RA-ebi-a-GCST002318	Schmiedel_2018.Treg_memory_ge	26	9	89	immune cell
+RA-ebi-a-GCST002318	Schmiedel_2018.Treg_naive_ge	24	7	89	immune cell
+RA-ebi-a-GCST002318	TwinsUK.blood_ge	20	4	195	immune cell
+RA-ebi-a-GCST002318	TwinsUK.fat_ge	7	2	381	other
+RA-ebi-a-GCST002318	TwinsUK.LCL_ge	16	6	418	immune cell
+RA-ebi-a-GCST002318	TwinsUK.skin_ge	6	1	370	other
+SLE-ebi-a-GCST003156	Alasoo_2018.macrophage_IFNg+Salmonella_ge	11	1	84	immune cell
+SLE-ebi-a-GCST003156	BLUEPRINT_PE.T-cell_ge	12	5	167	immune cell
+SLE-ebi-a-GCST003156	BLUEPRINT_SE.monocyte_ge	14	5	191	immune cell
+SLE-ebi-a-GCST003156	BLUEPRINT_SE.neutrophil_ge	8	3	196	immune cell
+SLE-ebi-a-GCST003156	BrainSeq.brain_ge	12	4	479	other
+SLE-ebi-a-GCST003156	CEDAR.neutrophil_CD15_microarray	2	2	280	immune cell
+SLE-ebi-a-GCST003156	CEDAR.T-cell_CD4_microarray	8	2	290	immune cell
+SLE-ebi-a-GCST003156	CEDAR.T-cell_CD8_microarray	6	1	277	immune cell
+SLE-ebi-a-GCST003156	Fairfax_2014.monocyte_IFN24_microarray	5	4	370	immune cell
+SLE-ebi-a-GCST003156	Fairfax_2014.monocyte_LPS2_microarray	1	1	256	immune cell
+SLE-ebi-a-GCST003156	Fairfax_2014.monocyte_LPS24_microarray	2	2	325	immune cell
+SLE-ebi-a-GCST003156	Fairfax_2014.monocyte_naive_microarray	2	1	420	immune cell
+SLE-ebi-a-GCST003156	FUSION.adipose_naive_ge	12	3	271	other
+SLE-ebi-a-GCST003156	FUSION.muscle_naive_ge	6	3	288	other
+SLE-ebi-a-GCST003156	GENCORD.fibroblast_ge	5	1	186	immune cell
+SLE-ebi-a-GCST003156	GENCORD.LCL_ge	5	1	190	immune cell
+SLE-ebi-a-GCST003156	GENCORD.T-cell_ge	18	3	184	immune cell
+SLE-ebi-a-GCST003156	GEUVADIS.LCL_ge	6	3	445	immune cell
+SLE-ebi-a-GCST003156	HipSci.iPSC_ge	6	4	322	other
+SLE-ebi-a-GCST003156	Kasela_2017.T-cell_CD4_microarray	8	4	280	immune cell
+SLE-ebi-a-GCST003156	Kasela_2017.T-cell_CD8_microarray	2	1	269	immune cell
+SLE-ebi-a-GCST003156	Lepik_2017.blood_ge	19	8	471	immune cell
+SLE-ebi-a-GCST003156	Nedelec_2016.macrophage_Listeria_ge	19	3	163	immune cell
+SLE-ebi-a-GCST003156	Nedelec_2016.macrophage_Salmonella_ge	19	3	167	immune cell
+SLE-ebi-a-GCST003156	Quach_2016.monocyte_IAV_ge	25	3	198	immune cell
+SLE-ebi-a-GCST003156	Quach_2016.monocyte_LPS_ge	22	5	184	immune cell
+SLE-ebi-a-GCST003156	Quach_2016.monocyte_naive_ge	8	2	200	immune cell
+SLE-ebi-a-GCST003156	Quach_2016.monocyte_Pam3CSK4_ge	25	3	196	immune cell
+SLE-ebi-a-GCST003156	Quach_2016.monocyte_R848_ge	14	2	191	immune cell
+SLE-ebi-a-GCST003156	ROSMAP.brain_naive_ge	11	3	576	other
+SLE-ebi-a-GCST003156	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	4	3	89	immune cell
+SLE-ebi-a-GCST003156	Schmiedel_2018.CD4_T-cell_naive_ge	2	1	88	immune cell
+SLE-ebi-a-GCST003156	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	11	1	88	immune cell
+SLE-ebi-a-GCST003156	Schmiedel_2018.CD8_T-cell_naive_ge	3	1	89	immune cell
+SLE-ebi-a-GCST003156	Schmiedel_2018.monocyte_CD16_naive_ge	13	2	90	immune cell
+SLE-ebi-a-GCST003156	Schmiedel_2018.monocyte_naive_ge	13	2	91	immune cell
+SLE-ebi-a-GCST003156	Schmiedel_2018.Tfh_memory_ge	2	1	89	immune cell
+SLE-ebi-a-GCST003156	Schmiedel_2018.Th1_memory_ge	2	1	82	immune cell
+SLE-ebi-a-GCST003156	Schmiedel_2018.Th1-17_memory_ge	3	1	88	immune cell
+SLE-ebi-a-GCST003156	Schmiedel_2018.Th17_memory_ge	4	2	89	immune cell
+SLE-ebi-a-GCST003156	Schmiedel_2018.Th2_memory_ge	3	2	89	immune cell
+SLE-ebi-a-GCST003156	Schmiedel_2018.Treg_memory_ge	4	2	89	immune cell
+SLE-ebi-a-GCST003156	Schmiedel_2018.Treg_naive_ge	11	4	89	immune cell
+SLE-ebi-a-GCST003156	TwinsUK.blood_ge	11	3	195	immune cell
+SLE-ebi-a-GCST003156	TwinsUK.fat_ge	5	2	381	other
+SLE-ebi-a-GCST003156	TwinsUK.LCL_ge	13	3	418	immune cell
+SLE-ebi-a-GCST003156	TwinsUK.skin_ge	1	1	370	other
+T2D1-ebi-a-GCST006867	Alasoo_2018.macrophage_IFNg_ge	5	1	84	immune cell
+T2D1-ebi-a-GCST006867	Alasoo_2018.macrophage_IFNg+Salmonella_ge	10	1	84	immune cell
+T2D1-ebi-a-GCST006867	Alasoo_2018.macrophage_naive_ge	5	1	84	immune cell
+T2D1-ebi-a-GCST006867	BLUEPRINT_PE.T-cell_ge	6	2	167	immune cell
+T2D1-ebi-a-GCST006867	BLUEPRINT_SE.monocyte_ge	33	12	191	immune cell
+T2D1-ebi-a-GCST006867	BLUEPRINT_SE.neutrophil_ge	11	4	196	immune cell
+T2D1-ebi-a-GCST006867	BrainSeq.brain_ge	13	5	479	other
+T2D1-ebi-a-GCST006867	CEDAR.monocyte_CD14_microarray	7	2	286	immune cell
+T2D1-ebi-a-GCST006867	CEDAR.platelet_microarray	1	1	205	immune cell
+T2D1-ebi-a-GCST006867	Fairfax_2012.B-cell_CD19_microarray	2	2	281	immune cell
+T2D1-ebi-a-GCST006867	Fairfax_2014.monocyte_IFN24_microarray	17	6	370	immune cell
+T2D1-ebi-a-GCST006867	Fairfax_2014.monocyte_LPS2_microarray	11	3	256	immune cell
+T2D1-ebi-a-GCST006867	Fairfax_2014.monocyte_LPS24_microarray	10	4	325	immune cell
+T2D1-ebi-a-GCST006867	Fairfax_2014.monocyte_naive_microarray	8	2	420	immune cell
+T2D1-ebi-a-GCST006867	FUSION.adipose_naive_ge	27	7	271	other
+T2D1-ebi-a-GCST006867	FUSION.muscle_naive_ge	16	6	288	other
+T2D1-ebi-a-GCST006867	GENCORD.fibroblast_ge	1	1	186	immune cell
+T2D1-ebi-a-GCST006867	GENCORD.LCL_ge	8	2	190	immune cell
+T2D1-ebi-a-GCST006867	GENCORD.T-cell_ge	2	1	184	immune cell
+T2D1-ebi-a-GCST006867	GEUVADIS.LCL_ge	10	3	445	immune cell
+T2D1-ebi-a-GCST006867	HipSci.iPSC_ge	12	4	322	other
+T2D1-ebi-a-GCST006867	Kasela_2017.T-cell_CD4_microarray	6	3	280	immune cell
+T2D1-ebi-a-GCST006867	Lepik_2017.blood_ge	27	10	471	immune cell
+T2D1-ebi-a-GCST006867	Nedelec_2016.macrophage_Listeria_ge	1	1	163	immune cell
+T2D1-ebi-a-GCST006867	Nedelec_2016.macrophage_naive_ge	15	2	163	immune cell
+T2D1-ebi-a-GCST006867	Nedelec_2016.macrophage_Salmonella_ge	10	1	167	immune cell
+T2D1-ebi-a-GCST006867	Quach_2016.monocyte_IAV_ge	2	1	198	immune cell
+T2D1-ebi-a-GCST006867	Quach_2016.monocyte_LPS_ge	14	3	184	immune cell
+T2D1-ebi-a-GCST006867	Quach_2016.monocyte_naive_ge	2	2	200	immune cell
+T2D1-ebi-a-GCST006867	Quach_2016.monocyte_Pam3CSK4_ge	5	4	196	immune cell
+T2D1-ebi-a-GCST006867	Quach_2016.monocyte_R848_ge	10	1	191	immune cell
+T2D1-ebi-a-GCST006867	ROSMAP.brain_naive_ge	9	4	576	other
+T2D1-ebi-a-GCST006867	Schmiedel_2018.B-cell_naive_ge	3	1	91	immune cell
+T2D1-ebi-a-GCST006867	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	6	3	89	immune cell
+T2D1-ebi-a-GCST006867	Schmiedel_2018.CD4_T-cell_naive_ge	10	2	88	immune cell
+T2D1-ebi-a-GCST006867	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	11	4	88	immune cell
+T2D1-ebi-a-GCST006867	Schmiedel_2018.CD8_T-cell_naive_ge	5	1	89	immune cell
+T2D1-ebi-a-GCST006867	Schmiedel_2018.monocyte_CD16_naive_ge	1	1	90	immune cell
+T2D1-ebi-a-GCST006867	Schmiedel_2018.NK-cell_naive_ge	5	1	90	immune cell
+T2D1-ebi-a-GCST006867	Schmiedel_2018.Tfh_memory_ge	5	1	89	immune cell
+T2D1-ebi-a-GCST006867	Schmiedel_2018.Th1_memory_ge	9	2	82	immune cell
+T2D1-ebi-a-GCST006867	Schmiedel_2018.Th1-17_memory_ge	7	2	88	immune cell
+T2D1-ebi-a-GCST006867	Schmiedel_2018.Th17_memory_ge	5	1	89	immune cell
+T2D1-ebi-a-GCST006867	Schmiedel_2018.Th2_memory_ge	5	1	89	immune cell
+T2D1-ebi-a-GCST006867	Schmiedel_2018.Treg_memory_ge	11	3	89	immune cell
+T2D1-ebi-a-GCST006867	Schmiedel_2018.Treg_naive_ge	9	2	89	immune cell
+T2D1-ebi-a-GCST006867	Schwartzentruber_2018.sensory_neuron_ge	5	1	98	other
+T2D1-ebi-a-GCST006867	TwinsUK.blood_ge	4	1	195	immune cell
+T2D1-ebi-a-GCST006867	TwinsUK.fat_ge	32	10	381	other
+T2D1-ebi-a-GCST006867	TwinsUK.LCL_ge	19	7	418	immune cell
+UC-ebi-a-GCST004133	Alasoo_2018.macrophage_IFNg_ge	7	2	84	immune cell
+UC-ebi-a-GCST004133	Alasoo_2018.macrophage_IFNg+Salmonella_ge	3	1	84	immune cell
+UC-ebi-a-GCST004133	Alasoo_2018.macrophage_naive_ge	6	1	84	immune cell
+UC-ebi-a-GCST004133	Alasoo_2018.macrophage_Salmonella_ge	5	1	84	immune cell
+UC-ebi-a-GCST004133	BLUEPRINT_PE.T-cell_ge	9	2	167	immune cell
+UC-ebi-a-GCST004133	BLUEPRINT_SE.monocyte_ge	19	7	191	immune cell
+UC-ebi-a-GCST004133	BLUEPRINT_SE.neutrophil_ge	2	2	196	immune cell
+UC-ebi-a-GCST004133	CEDAR.B-cell_CD19_microarray	2	1	262	immune cell
+UC-ebi-a-GCST004133	CEDAR.ileum_microarray	2	1	180	other
+UC-ebi-a-GCST004133	CEDAR.monocyte_CD14_microarray	7	2	286	immune cell
+UC-ebi-a-GCST004133	CEDAR.neutrophil_CD15_microarray	2	2	280	immune cell
+UC-ebi-a-GCST004133	CEDAR.rectum_microarray	4	3	271	other
+UC-ebi-a-GCST004133	CEDAR.T-cell_CD4_microarray	2	1	290	immune cell
+UC-ebi-a-GCST004133	CEDAR.T-cell_CD8_microarray	2	1	277	immune cell
+UC-ebi-a-GCST004133	CEDAR.transverse_colon_microarray	7	4	286	other
+UC-ebi-a-GCST004133	Fairfax_2012.B-cell_CD19_microarray	9	4	281	immune cell
+UC-ebi-a-GCST004133	Fairfax_2014.monocyte_IFN24_microarray	11	5	370	immune cell
+UC-ebi-a-GCST004133	Fairfax_2014.monocyte_LPS2_microarray	6	2	256	immune cell
+UC-ebi-a-GCST004133	Fairfax_2014.monocyte_LPS24_microarray	8	3	325	immune cell
+UC-ebi-a-GCST004133	Fairfax_2014.monocyte_naive_microarray	8	4	420	immune cell
+UC-ebi-a-GCST004133	FUSION.adipose_naive_ge	4	1	271	other
+UC-ebi-a-GCST004133	FUSION.muscle_naive_ge	14	2	288	other
+UC-ebi-a-GCST004133	GENCORD.fibroblast_ge	4	2	186	immune cell
+UC-ebi-a-GCST004133	GENCORD.LCL_ge	12	4	190	immune cell
+UC-ebi-a-GCST004133	GENCORD.T-cell_ge	3	1	184	immune cell
+UC-ebi-a-GCST004133	GEUVADIS.LCL_ge	20	7	445	immune cell
+UC-ebi-a-GCST004133	HipSci.iPSC_ge	2	1	322	other
+UC-ebi-a-GCST004133	Kasela_2017.T-cell_CD4_microarray	3	2	280	immune cell
+UC-ebi-a-GCST004133	Kasela_2017.T-cell_CD8_microarray	2	1	269	immune cell
+UC-ebi-a-GCST004133	Lepik_2017.blood_ge	35	10	471	immune cell
+UC-ebi-a-GCST004133	Nedelec_2016.macrophage_Listeria_ge	6	2	163	immune cell
+UC-ebi-a-GCST004133	Nedelec_2016.macrophage_naive_ge	9	4	163	immune cell
+UC-ebi-a-GCST004133	Nedelec_2016.macrophage_Salmonella_ge	15	5	167	immune cell
+UC-ebi-a-GCST004133	Quach_2016.monocyte_IAV_ge	11	5	198	immune cell
+UC-ebi-a-GCST004133	Quach_2016.monocyte_LPS_ge	19	5	184	immune cell
+UC-ebi-a-GCST004133	Quach_2016.monocyte_naive_ge	17	5	200	immune cell
+UC-ebi-a-GCST004133	Quach_2016.monocyte_Pam3CSK4_ge	29	9	196	immune cell
+UC-ebi-a-GCST004133	Quach_2016.monocyte_R848_ge	21	7	191	immune cell
+UC-ebi-a-GCST004133	ROSMAP.brain_naive_ge	28	6	576	other
+UC-ebi-a-GCST004133	Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_ge	3	1	89	immune cell
+UC-ebi-a-GCST004133	Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_ge	4	2	88	immune cell
+UC-ebi-a-GCST004133	Schmiedel_2018.CD8_T-cell_naive_ge	2	1	89	immune cell
+UC-ebi-a-GCST004133	Schmiedel_2018.monocyte_CD16_naive_ge	3	1	90	immune cell
+UC-ebi-a-GCST004133	Schmiedel_2018.monocyte_naive_ge	1	1	91	immune cell
+UC-ebi-a-GCST004133	Schmiedel_2018.NK-cell_naive_ge	2	1	90	immune cell
+UC-ebi-a-GCST004133	Schmiedel_2018.Treg_memory_ge	6	2	89	immune cell
+UC-ebi-a-GCST004133	TwinsUK.fat_ge	5	2	381	other
+UC-ebi-a-GCST004133	TwinsUK.LCL_ge	15	5	418	immune cell
+UC-ebi-a-GCST004133	TwinsUK.skin_ge	4	1	370	other
