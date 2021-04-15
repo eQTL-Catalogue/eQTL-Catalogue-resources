@@ -1,0 +1,15 @@
+gwas_id	n_colocs_in_novel_ld_blocks	n_unique_novel_ld_blocks	n_distinct_gtex_ld_blocks	n_union_ld_blocks	n_common_ld_blocks	novel_ld_block_perc
+BMI-ukb-a-248	64	52	50	251	149	20.72%
+CAD-ebi-a-GCST003116	15	13	14	60	33	21.67%
+CD-ebi-a-GCST004132	47	31	31	122	60	25.41%
+HEIGHT-ukb-a-389	96	56	87	391	248	14.32%
+IBD-ebi-a-GCST004131	45	30	33	132	69	22.73%
+LC-ebi-a-GCST004627	43	32	29	144	83	22.22%
+LDLC	58	41	65	217	111	18.89%
+MC-ebi-a-GCST004625	39	32	33	145	80	22.07%
+MPV-ebi-a-GCST004599	54	27	28	139	84	19.42%
+PLT-ebi-a-GCST004603	48	34	32	168	102	20.24%
+RA-ebi-a-GCST002318	48	22	23	93	48	23.66%
+SLE-ebi-a-GCST003156	12	11	22	61	28	18.03%
+T2D1-ebi-a-GCST006867	36	29	40	143	74	20.28%
+UC-ebi-a-GCST004133	41	21	26	96	49	21.88%
