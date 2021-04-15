@@ -1,12 +1,19 @@
 library(tidyverse)
 
-factor_names = tibble(factor = paste0("Factor", c(1:16)),
-                      name = c("Universal", "iPSC", "Skin", "Blood",
-                               "LCL", "Lymphocyte", "Monocyte & Macrophage", "Adipose",
-                               "T cell (anti-CD3/CD28)", "Brain", "Macrophage", "Monocyte",
-                               "BLUEPRINT T cell", "ROSMAP Brain", "Muscle", "Neutrophil"))
+# factor_names = tibble(factor = paste0("Factor", c(1:16)),
+#                       name = c("Universal", "iPSC", "Skin", "Blood",
+#                                "LCL", "Lymphocyte", "Monocyte & Macrophage", "Adipose",
+#                                "T cell (anti-CD3/CD28)", "Brain", "Macrophage", "Monocyte",
+#                                "BLUEPRINT T cell", "ROSMAP Brain", "Muscle", "Neutrophil"))
 
-loadings_file = "sn_spMF_K30_a1900_l11100_Loadings_beta_alpha0.05_corrected.txt.gz"
+factor_names = tibble(factor = paste0("Factor", c(1:21)),
+                      name = c("Universal", "ROSMAP Brain", "Muscle", "Monocyte",
+                               "LCL", "Brain Cerebellum", "Neutrophil", "Testis", "Blood",
+                               "BLUEPRINT T cell", "iPSC", "Schmiedel_2018 T cell", "T cell",
+                               "Adipose", "Mixed Tissues", "Brain", "Heart", 
+                               "Fibroblast", "Thyroid", "Monocyte & Macrophage","Skin"))
+
+loadings_file = "sn_spMF_K50_a11060_l11020_Loadings_beta_alpha0.05_corrected.txt"
 loadings = read.delim(loadings_file)
 
 loadings_to_tibble <- function(loadings){
@@ -35,4 +42,4 @@ plt = ggplot(fractions, aes(reorder(Factors, -Fraction), Fraction)) +
   theme_light() +
   xlab("Factors") +
   theme(axis.text.x = element_text(angle = 45, vjust=1, hjust=1), text = element_text(size=16), panel.grid = element_blank())
-ggsave("factor_assignment.png", plot = plt, width = 8.2, height = 4)
+ggsave("factor_assignment_21.pdf", plot = plt, width = 10.2, height = 4, device = "pdf")
