@@ -7,6 +7,7 @@ library("data.table")
 # path_files <- "../../temp_files/eQTL_sharing/new_with_GTExV8/ge_graph_30_thresh///"
 path_files <- "../../temp_files/eQTL_sharing/new_with_GTExV8/ma_graph_30_thresh//"
 path_files <- "/Users/kerimov/Work/temp_files/eQTL_sharing/new_with_GTExV8/txrev_no_graph_all_together/"
+path_files <- "/Users/kerimov/Work/temp_files/eQTL_sharing/new_with_GTExV8/ge_graph_30_minpval/"
 for (path_file in path_files) {
   load(paste0(path_file,"/sharing.R"))
   # sharing = read_tsv("../../temp_files/eQTL_sharing/results/results_min_pvalue/sharing.tsv")

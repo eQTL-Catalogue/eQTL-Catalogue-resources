@@ -9,6 +9,7 @@ path_files <- c(path_files,"../../temp_files/eQTL_sharing/new_with_GTExV8/exon_n
 path_files <- c(path_files,"../../temp_files/eQTL_sharing/new_with_GTExV8/ge_graph_30_thresh/")
 path_files <- c(path_files,"/Users/kerimov/Work/temp_files/eQTL_sharing/new_with_GTExV8/ge_no_graph_mash/")
 path_files <- c("/Users/kerimov/Work/temp_files/eQTL_sharing/new_with_GTExV8/txrev_no_graph_all_together//")
+path_files <- c("/Users/kerimov/Work/temp_files/eQTL_sharing/new_with_GTExV8/ge_graph_30_minpval/")
 
 for (path_file in path_files) {
   correlation_matrix = read_delim(paste0(path_file, "/spearman_cor_na_to_zero.txt"), delim = " ", skip = 1, col_names = F)

@@ -9,6 +9,7 @@ library("data.table")
 # path_files <- "../../temp_files/eQTL_sharing/new_with_GTExV8/ge_graph_30_thresh///"
 path_files <- "../../temp_files/eQTL_sharing/new_with_GTExV8/ma_graph_30_thresh/"
 path_files <- "/Users/kerimov/Work//temp_files/eQTL_sharing/new_with_GTExV8/txrev_no_graph_all_together//"
+path_files <- "/Users/kerimov/Work//temp_files/eQTL_sharing/new_with_GTExV8/ge_graph_30_minpval/"
 for (path_file in path_files) {
   # sharing = readr::read_tsv("../../GitHub/eQTL-Catalogue-resources/manuscript/figures/sharing_distribution/mash_sharing.tsv")
   # load("../../temp_files/eQTL_sharing/results/results_max_beta/sharing.R")

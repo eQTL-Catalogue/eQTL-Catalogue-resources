@@ -9,7 +9,7 @@ library("ggplot2")
 library("RColorBrewer")
 library("ggrepel")
 library("data.table")
-library(plotly)
+library("plotly")
 library("dplyr")
 ```
 
@@ -212,6 +212,95 @@ ggsave(plot = p,
 #                         libdir = "dependencies")
 wilcox_test
 ```
+
+```{r}
+# gene expression connected components thresh 30 with min p-val selection
+df_sharing = read_tsv("sharing_tsv/sharing_ge_with_cc_30_minpval.tsv", 
+                      col_names = c("dataset1","dataset2","value"), skip = 1)
+
+df_sharing = df_sharing %>% 
+    mutate(dataset1 = gsub(pattern = "GTExV8", replacement = "GTEx", x = dataset1)) %>% 
+    mutate(dataset2 = gsub(pattern = "GTExV8", replacement = "GTEx", x = dataset2))
+
+# remove diagonal values
+df_sharing = df_sharing %>% filter(value < 1)
+df_sharing_filt <- df_sharing %>% 
+  filter(dataset1 %in% ontology_map$study_qtlgroup) %>% 
+  filter(dataset2 %in% ontology_map$study_qtlgroup) %>% 
+  group_by(value) %>% 
+  dplyr::slice(1) %>% 
+  ungroup()
+
+df_sharing_filt <- df_sharing_filt %>% 
+  left_join(ontology_map %>% select(study, study_qtlgroup, tissue_ontology_id, cell_type), by = c("dataset1" = "study_qtlgroup")) %>% 
+  dplyr::rename(study1 = study) %>% 
+  dplyr::rename(tissue_ontology_id1 = tissue_ontology_id) %>% 
+  dplyr::rename(cell_type1 = cell_type) %>% 
+  left_join(ontology_map %>% select(study, study_qtlgroup, tissue_ontology_id,cell_type), by = c("dataset2" = "study_qtlgroup")) %>% 
+  dplyr::rename(study2 = study) %>% 
+  dplyr::rename(tissue_ontology_id2 = tissue_ontology_id) %>% 
+  dplyr::rename(cell_type2 = cell_type) 
+
+df_sharing_filt <- df_sharing_filt %>% 
+  dplyr::mutate(study1 = ifelse(study1 %in% c("BLUEPRINT_SE", "BLUEPRINT_PE"), "BLUEPRINT", study1)) %>% 
+  dplyr::mutate(study2 = ifelse(study2 %in% c("BLUEPRINT_SE", "BLUEPRINT_PE"), "BLUEPRINT", study2)) 
+
+df_sharing_filt <- df_sharing_filt %>% 
+  mutate(same_study = study1==study2, same_celltype = tissue_ontology_id1==tissue_ontology_id2) 
+
+df_sharing_filt <- df_sharing_filt %>% 
+  filter(same_celltype | same_study)
+
+df_sharing_filt <- df_sharing_filt %>% 
+  mutate(label = ifelse(same_study & !same_celltype, "Same study,\ndifferent cell types", "Different studies,\nsame cell type"))
+
+
+p <- ggplot(data = df_sharing_filt, mapping = aes(x=label, y=value, label = study1)) +
+  geom_violin(trim=FALSE) +
+  geom_dotplot(binaxis='y', stackdir='center', dotsize=1) +
+  scale_y_continuous(breaks = seq(0, 1, 0.2)) +
+  xlab("") +
+  ylab("Mash sharing coefficient") +
+  # geom_text_repel() +
+  theme_bw() +   theme(axis.text=element_text(size=14)) 
+
+ggsave(plot = p, 
+       filename = "sharing_violin_plots/eqtl_sharing_celltype_vs_study_violin_ge_thresh_30_with_cc_minpval.pdf", 
+       device = "pdf", width = 5, height = 4)
+
+# Gene expression (connected components approach) Mann-Whitney U test for the violin plots
+wilcox_test <- wilcox.test(df_sharing_filt$value~df_sharing_filt$same_study)
+annotate_label <- paste0("Two-sample Wilcoxon test p-value: ", wilcox_test$p.value)
+
+p <- ggplot(data = df_sharing_filt, mapping = aes(x=label, y=value, label = study1)) +
+  geom_violin(trim=FALSE) +
+  geom_dotplot(binaxis='y', stackdir='center', dotsize=1) +
+  # annotate(geom="label", x=-Inf, y=-Inf, hjust = -0.01, vjust=-0.5,label=annotate_label, size = 4, fill = "#ede8a4") +
+  scale_y_continuous(breaks = seq(0, 1, 0.2)) +
+  xlab("") +
+  ylab("Mash sharing coefficient") +
+  labs(title = "GE with graph and minpval (cs_size threshold = 30)", subtitle = annotate_label) +
+  # geom_text_repel() +
+  theme_bw() +   theme(axis.text=element_text(size=14)) 
+
+ggsave(plot = p, 
+       filename = "sharing_violin_plots//eqtl_sharing_celltype_vs_study_violin_ge_thresh_30_with_cc_pval_minpval.pdf", 
+       device = "pdf", width = 5, height = 4)
+
+# df_sharing_filt <- df_sharing_filt %>%
+#   mutate(summary_data = paste0(study1,"_",cell_type1,"_",study2,"_",cell_type2))
+# 
+# plot_for_plotly <- ggplot(data = df_sharing_filt, mapping = aes(x=label, y=value, label = summary_data)) + 
+#   geom_point(mapping = aes(color = study1)) + 
+#   theme_bw() +   theme(axis.text=element_text(size=14)) 
+# ggplotly_plot <- ggplotly(plot_for_plotly)
+# 
+# htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
+#                         file = paste0(path_file,"/eqtl_sharing_celltype_vs_study_violin.html"),
+#                         libdir = "dependencies")
+wilcox_test
+```
+
 
 ```{r}
 # gene expression connected components thresh 15
