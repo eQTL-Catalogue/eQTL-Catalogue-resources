@@ -1,17 +1,19 @@
 library(tidyverse)
 
-factor_names = tibble(factor = paste0("Factor", c(1:16)),
-                      name = c("Universal", "iPSC", "Skin", "Blood",
-                               "LCL", "Lymphocyte", "Monocyte & Macrophage", "Adipose",
-                               "T cell (anti-CD3/CD28)", "Brain", "Macrophage", "Monocyte",
-                               "BLUEPRINT T cell", "ROSMAP Brain", "Muscle", "Neutrophil" ))
+factor_names = tibble(factor = paste0("Factor", c(1:21)),
+                      name = c("Universal", "ROSMAP Brain", "Muscle", "Monocyte",
+                               "LCL", "Brain Cerebellum", "Neutrophil", "Testis", "Blood",
+                               "BLUEPRINT T cell", "iPSC", "Schmiedel_2018 T cell", "T cell",
+                               "Adipose", "Mixed Tissues", "Brain", "Heart", 
+                               "Fibroblast", "Thyroid", "Monocyte & Macrophage","Skin"))
 
 mapped_data = "mapping_sn_spMF_K30_a1900_l11100"
+mapped_data = "mapping_sn_spMF_K50_a11060_l11020"
 
 # read loading betas and p-values and 
 all_betas = read.table(paste0(mapped_data, "_Loadings_beta.txt"))
 # to colour significant loadings
-pvalues = read.table(paste0(mapped_data, "_Loadings_pvalue_BH.txt"))
+pvalues = read.table(paste0(mapped_data, "_Loadings_pvalue.txt"))
 
 loadings_to_tibble <- function(loadings){
   # function to transform sn-spMF output to more convenient
@@ -25,7 +27,7 @@ loadings_to_tibble <- function(loadings){
   return(dplyr::as_tibble(loadings))
 }
 
-get_loadings = function(effects, value_lbl = "Loadings", eqtl = "chr2_160468964_A_T.ENSG00000153250"){
+get_loadings = function(effects, value_lbl = "Loadings", eqtl = "chr2_160430631_G_A.ENSG00000153250"){
   # transform data
   effects = loadings_to_tibble(effects)
   effect = effects %>% dplyr::filter(eqtl_id == eqtl)
@@ -47,5 +49,5 @@ plt = ggplot(factors, aes(x=factor(Factors, levels = Factors), y=Loadings, fill=
   theme_bw() +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1), panel.grid = element_blank(), legend.position = 'none')
 
-ggsave("RBMS1_factor_loadings.pdf", plt, width = 3.5, height = 3)
+ggsave("RBMS1_factor_loadings_new.pdf", plt, width = 4.5, height = 3)
 
