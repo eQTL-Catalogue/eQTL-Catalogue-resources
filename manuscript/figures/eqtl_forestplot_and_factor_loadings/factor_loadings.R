@@ -1,13 +1,29 @@
 library(tidyverse)
 
 factor_names = tibble(factor = paste0("Factor", c(1:21)),
-                      name = c("Universal", "ROSMAP Brain", "Muscle", "Monocyte",
-                               "LCL", "Brain Cerebellum", "Neutrophil", "Testis", "Blood",
-                               "BLUEPRINT T cell", "iPSC", "Schmiedel_2018 T cell", "T cell",
-                               "Adipose", "Mixed Tissues", "Brain", "Heart", 
-                               "Fibroblast", "Thyroid", "Monocyte & Macrophage","Skin"))
+                      name = c("Universal", 
+                               "ROSMAP Brain", 
+                               "Muscle", 
+                               "Monocyte",
+                               "LCL", 
+                               "Brain Cerebellum", 
+                               "Neutrophil", 
+                               "Testis", 
+                               "Blood",
+                               "BLUEPRINT T cell", 
+                               "iPSC", 
+                               "T cell (anti-CD3/CD28)", 
+                               "Lymphocyte",
+                               "Adipose", 
+                               "Mixed Tissues", 
+                               "Brain", 
+                               "Heart", 
+                               "Fibroblast", 
+                               "Thyroid", 
+                               "Monocyte & Macrophage",
+                               "Skin"))
 
-mapped_data = "mapping_sn_spMF_K30_a1900_l11100"
+# mapped_data = "mapping_sn_spMF_K30_a1900_l11100"
 mapped_data = "mapping_sn_spMF_K50_a11060_l11020"
 
 # read loading betas and p-values and 
