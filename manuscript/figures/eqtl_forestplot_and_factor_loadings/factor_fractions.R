@@ -7,11 +7,27 @@ library(tidyverse)
 #                                "BLUEPRINT T cell", "ROSMAP Brain", "Muscle", "Neutrophil"))
 
 factor_names = tibble(factor = paste0("Factor", c(1:21)),
-                      name = c("Universal", "ROSMAP Brain", "Muscle", "Monocyte",
-                               "LCL", "Brain Cerebellum", "Neutrophil", "Testis", "Blood",
-                               "BLUEPRINT T cell", "iPSC", "Schmiedel_2018 T cell", "T cell",
-                               "Adipose", "Mixed Tissues", "Brain", "Heart", 
-                               "Fibroblast", "Thyroid", "Monocyte & Macrophage","Skin"))
+                      name = c("Universal", 
+                               "ROSMAP Brain", 
+                               "Muscle", 
+                               "Monocyte",
+                               "LCL", 
+                               "Brain Cerebellum", 
+                               "Neutrophil", 
+                               "Testis", 
+                               "Blood",
+                               "BLUEPRINT T cell", 
+                               "iPSC", 
+                               "T cell (anti-CD3/CD28)", 
+                               "Lymphocyte",
+                               "Adipose", 
+                               "Mixed Tissues", 
+                               "Brain", 
+                               "Heart", 
+                               "Fibroblast", 
+                               "Thyroid", 
+                               "Monocyte & Macrophage",
+                               "Skin"))
 
 loadings_file = "sn_spMF_K50_a11060_l11020_Loadings_beta_alpha0.05_corrected.txt"
 loadings = read.delim(loadings_file)
