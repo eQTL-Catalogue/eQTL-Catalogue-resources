@@ -1,0 +1,388 @@
+
+```{r, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+library("tidyverse")
+library("ggplot2")
+library("RColorBrewer")
+library("ggrepel")
+library("data.table")
+library("plotly")
+library("GenomicRanges")
+```
+
+
+Read all the susie datasets, add a unique credible set id (using credible set ID and study name) and bind all together
+```{r}
+# colnames_susie <- c("phenotype_id", "variant_id","chr","pos","ref","alt", "cs_id",
+#                     "cs_index", "finemapped_region", "pip", "z", "cs_min_r2",
+#                     "cs_avg_r2", "cs_size", "posterior_mean", "posterior_sd", "cs_log10bf")
+# susie_files <- list.files("/Users/kerimov/Work/temp_files/susie/", pattern = "*_ge.purity_filtered.txt.gz", full.names = T)
+# susie_all <- data.frame()
+# for (susie_file in susie_files) {
+#   message(susie_file)
+#   susie <-read_tsv(susie_file, col_names = colnames_susie, skip = 1)
+#   study_name <- gsub(pattern = "_ge.purity_filtered.txt.gz", replacement = "", x = basename(susie_file))
+#   susie <- susie %>% mutate(cs_uid = paste0(study_name, "+", cs_id))
+#   susie_all <- susie_all %>% rbind(susie)
+# }
+
+# write_tsv(susie_all, "../../temp_files/var_multi_gene_reg/merged_all_susie_gtex_V8.tsv")
+
+susie_all <- read_tsv("../../temp_files/var_multi_gene_reg/merged_all_susie_gtex_V8.tsv.gz")
+```
+
+
+
+```{r}
+make_connected_components_from_cs <- function(susie_all_df, z_threshold = 3, cs_size_threshold = 10) {
+  # Filter the credible sets by Z-score and size
+  susie_filt <- susie_all_df %>%
+    dplyr::group_by(cs_uid) %>%
+    dplyr::mutate(max_abs_z = max(abs(z))) %>%
+    dplyr::filter(max_abs_z > z_threshold, cs_size <= cs_size_threshold) %>%
+    dplyr::ungroup()
+
+  # make the ranges object in order to find overlaps
+  cs_ranges = GenomicRanges::GRanges(
+    seqnames = susie_filt$chr,
+    ranges = IRanges::IRanges(start = susie_filt$pos, end = susie_filt$pos),
+    strand = "*",
+    mcols = data.frame(cs_uid = susie_filt$cs_uid, variant_id = susie_filt$variant_id, gene_id = susie_filt$phenotype_id)
+  )
+  
+  # find overlaps and remove the duplicated
+  olaps <-  GenomicRanges::findOverlaps(cs_ranges, cs_ranges, ignore.strand = TRUE) %>%
+    as.data.frame() %>%
+    filter(queryHits <= subjectHits)
+  
+  # change variant sharing into credible set sharing 
+  # not to have multiple connected components of variants but credible sets
+  olaps <- olaps %>% mutate(cs_uid_1 = cs_ranges$mcols.cs_uid[queryHits], cs_uid_2 = cs_ranges$mcols.cs_uid[subjectHits])
+  edge_list <- olaps %>% select(cs_uid_1, cs_uid_2) %>% unique() %>% as.matrix()
+  
+  # make the graph of connected components
+  g <- igraph::graph_from_edgelist(edge_list, directed = F)
+  g_cc <- igraph::components(g)
+  
+  # turn connected components graph into data frame
+  cc_df <- data.frame(cc_membership_no = g_cc$membership, 
+                      cs_uid = g_cc$membership %>% names()) %>% 
+    mutate(gene_id = sub(x = gsub(".*\\+","",cs_uid), pattern = "_.*", replacement = ""))
+  
+  # summarise the connected components graph into final data frame
+  cc_id_df <- cc_df %>% 
+    group_by(cc_membership_no) %>% 
+    summarise(cc_size = n(),
+              cs_involved = paste(sort(unique(cs_uid)), collapse = "%"), 
+              cs_involved_count = length(unique(cs_uid)),
+              genes_involved = paste(sort(unique(gene_id)), collapse = "%"),
+              genes_involved_count = length(unique(gene_id))) 
+  
+  return(cc_id_df)
+}
+
+cc_stats <- data.frame()
+cc_id_df_merged <- data.frame()
+```
+
+```{r}
+cs_size_threshold <- 10
+cc_id_df <- make_connected_components_from_cs(susie_all_df = susie_all, z_threshold = 3, cs_size_threshold = cs_size_threshold)
+cc_id_df <- cc_id_df %>% 
+  mutate(cs_involved_count_char = ifelse(cs_involved_count<=15, as.character(cs_involved_count), ">15")) %>% 
+  mutate(genes_involved_count_char = ifelse(genes_involved_count<=15, as.character(genes_involved_count), ">15")) 
+cc_id_df$genes_involved_count_char <- factor(cc_id_df$genes_involved_count_char, levels = c(as.character(seq(1,15,1)), ">15"))
+cc_id_df$cs_involved_count_char <- factor(cc_id_df$cs_involved_count_char, levels = c(as.character(seq(1,15,1)), ">15"))
+
+prop_gene_round <- round(nrow(cc_id_df %>% filter(genes_involved_count==1))/nrow(cc_id_df)*100, digits = 1)
+prop_cs_round <- round(nrow(cc_id_df %>% filter(cs_involved_count==1))/nrow(cc_id_df)*100, digits = 1)
+cc_stats <-  cc_stats %>% rbind(data.frame(cs_size_thesh = cs_size_threshold, 
+                             cc_count = nrow(cc_id_df), 
+                             prop_1_gene = prop_gene_round,
+                             prop_1_cs = prop_cs_round))
+
+cc_id_df_merged <- cc_id_df_merged %>% rbind(cc_id_df %>% mutate(cs_size_threshold = cs_size_threshold))
+  
+cc_id_df$genes_involved_count_char %>% table()
+
+```
+
+
+```{r}
+title_str <- paste0("Number of genes regulated by 1 connected component")
+  
+subtitle_str <- paste0(" | cs size threshold <= ", cs_size_threshold,
+                    "\n | total number of connected components: ", nrow(cc_id_df),
+                    "\n | prop: Proportion of connected components regulating only 1 gene")
+
+annotate_label <- paste0(" prop: ", prop_gene_round, "%")
+
+genes_reg_by_each_cc_10 <- ggplot(cc_id_df, aes(x=genes_involved_count_char)) + 
+    geom_bar(color="black", fill ="#56B4E9") +
+    geom_text(stat='count', aes(label=..count..), vjust=-1, size = 3) +
+    annotate(geom="label", x=14, y=37500, label=annotate_label, size = 6, fill = "#ede8a4") +
+    ylim(c(0, 40000)) +
+    labs(title = title_str, subtitle = subtitle_str) +
+    ylab("Count of connected components") + 
+    xlab("Number of genes regulated by 1 connected component") +
+    scale_x_discrete(drop=FALSE) +
+    theme_bw()   
+
+genes_reg_by_each_cc_10
+```
+
+```{r}
+title_str <- "Number of unique credible sets regulated by 1 connected component "
+
+subtitle_str <- paste0(" | cs size threshold <= ", cs_size_threshold,
+                    "\n | total number of connected components: ", nrow(cc_id_df),
+                    "\n | prop: Proportion of connected components regulating only 1 credible set")
+
+annotate_label <- paste0("prop: ", prop_cs_round, "%")
+
+cs_reg_by_each_cc_10 <- ggplot(cc_id_df, aes(x=cs_involved_count_char)) + 
+  geom_bar(color="black", fill ="#56B4E9") +
+  geom_text(stat='count', aes(label=..count..), vjust=-1, size = 3) +
+  annotate(geom="label", x=14, y=27500, label=annotate_label, size = 6, fill = "#ede8a4") +
+    ylim(c(0, 30000)) +
+    labs(title = title_str, subtitle = subtitle_str) +
+    ylab("Count of connected components") + 
+    xlab("Number of credible sets regulated by 1 connected component") +
+    theme_bw()  
+
+
+cs_reg_by_each_cc_10
+```
+
+```{r}
+cs_size_threshold <- 30
+cc_id_df <- make_connected_components_from_cs(susie_all_df = susie_all, z_threshold = 3, cs_size_threshold = cs_size_threshold)
+cc_id_df <- cc_id_df %>% 
+  mutate(cs_involved_count_char = ifelse(cs_involved_count<=15, as.character(cs_involved_count), ">15")) %>% 
+  mutate(genes_involved_count_char = ifelse(genes_involved_count<=15, as.character(genes_involved_count), ">15")) 
+cc_id_df$genes_involved_count_char <- factor(cc_id_df$genes_involved_count_char, levels = c(as.character(seq(1,15,1)), ">15"))
+cc_id_df$cs_involved_count_char <- factor(cc_id_df$cs_involved_count_char, levels = c(as.character(seq(1,15,1)), ">15"))
+prop_gene_round <- round(nrow(cc_id_df %>% filter(genes_involved_count==1))/nrow(cc_id_df)*100, digits = 1)
+prop_cs_round <- round(nrow(cc_id_df %>% filter(cs_involved_count==1))/nrow(cc_id_df)*100, digits = 1)
+
+cc_stats <- cc_stats %>% rbind(data.frame(cs_size_thesh = cs_size_threshold, 
+                             cc_count = nrow(cc_id_df), 
+                             prop_1_gene = prop_gene_round,
+                             prop_1_cs = prop_cs_round))
+
+cc_id_df_merged <- cc_id_df_merged %>% rbind(cc_id_df %>% mutate(cs_size_threshold = cs_size_threshold))
+
+cc_id_df$genes_involved_count_char %>% table()
+```
+```{r}
+title_str <- paste0("Number of genes regulated by 1 connected component")
+  
+subtitle_str <- paste0(" | cs size threshold <= ", cs_size_threshold,
+                    "\n | total number of connected components: ", nrow(cc_id_df),
+                    "\n | prop: Proportion of connected components regulating only 1 gene")
+
+annotate_label <- paste0(" prop: ", prop_gene_round, "%")
+
+genes_reg_by_each_cc_30 <- ggplot(cc_id_df, aes(x=genes_involved_count_char)) + 
+    geom_bar(color="black", fill ="#56B4E9") +
+    geom_text(stat='count', aes(label=..count..), vjust=-1, size = 3) +
+    annotate(geom="label", x=14, y=37500, label=annotate_label, size = 6, fill = "#ede8a4") +
+    ylim(c(0, 40000)) +
+    labs(title = title_str, subtitle = subtitle_str) +
+    ylab("Count of connected components") + 
+    xlab("Number of genes regulated by 1 connected component") +
+    scale_x_discrete(drop=FALSE) +
+    theme_bw()   
+
+genes_reg_by_each_cc_30
+```
+
+```{r}
+title_str <- "Number of unique credible sets regulated by 1 connected component "
+
+subtitle_str <- paste0(" | cs size threshold <= ", cs_size_threshold,
+                    "\n | total number of connected components: ", nrow(cc_id_df),
+                    "\n | prop: Proportion of connected components regulating only 1 credible set")
+
+annotate_label <- paste0("prop: ", prop_cs_round, "%")
+
+cs_reg_by_each_cc_30 <- ggplot(cc_id_df, aes(x=cs_involved_count_char)) + 
+  geom_bar(color="black", fill ="#56B4E9") +
+  geom_text(stat='count', aes(label=..count..), vjust=-1, size = 3) +
+  annotate(geom="label", x=14, y=27500, label=annotate_label, size = 6, fill = "#ede8a4") +
+    ylim(c(0, 30000)) +
+    labs(title = title_str, subtitle = subtitle_str) +
+    ylab("Count of connected components") + 
+    xlab("Number of credible sets regulated by 1 connected component") +
+    theme_bw()  
+
+
+cs_reg_by_each_cc_30
+```
+
+```{r}
+cs_size_threshold <- 50
+cc_id_df <- make_connected_components_from_cs(susie_all_df = susie_all, z_threshold = 3, cs_size_threshold = cs_size_threshold)
+cc_id_df <- cc_id_df %>% 
+  mutate(cs_involved_count_char = ifelse(cs_involved_count<=15, as.character(cs_involved_count), ">15")) %>% 
+  mutate(genes_involved_count_char = ifelse(genes_involved_count<=15, as.character(genes_involved_count), ">15")) 
+cc_id_df$genes_involved_count_char <- factor(cc_id_df$genes_involved_count_char, levels = c(as.character(seq(1,15,1)), ">15"))
+cc_id_df$cs_involved_count_char <- factor(cc_id_df$cs_involved_count_char, levels = c(as.character(seq(1,15,1)), ">15"))
+
+prop_gene_round <- round(nrow(cc_id_df %>% filter(genes_involved_count==1))/nrow(cc_id_df)*100, digits = 1)
+prop_cs_round <- round(nrow(cc_id_df %>% filter(cs_involved_count==1))/nrow(cc_id_df)*100, digits = 1)
+cc_stats <- cc_stats %>% rbind(data.frame(cs_size_thesh = cs_size_threshold, 
+                             cc_count = nrow(cc_id_df), 
+                             prop_1_gene = prop_gene_round,
+                             prop_1_cs = prop_cs_round))
+
+cc_id_df_merged <- cc_id_df_merged %>% rbind(cc_id_df %>% mutate(cs_size_threshold = cs_size_threshold))
+
+cc_id_df$genes_involved_count_char %>% table()
+```
+```{r}
+title_str <- paste0("Number of genes regulated by 1 connected component")
+  
+subtitle_str <- paste0(" | cs size threshold <= ", cs_size_threshold,
+                    "\n | total number of connected components: ", nrow(cc_id_df),
+                    "\n | prop: Proportion of connected components regulating only 1 gene")
+
+annotate_label <- paste0(" prop: ", prop_gene_round, "%")
+
+genes_reg_by_each_cc_50 <- ggplot(cc_id_df, aes(x=genes_involved_count_char)) + 
+    geom_bar(color="black", fill ="#56B4E9") +
+    geom_text(stat='count', aes(label=..count..), vjust=-1, size = 3) +
+    annotate(geom="label", x=14, y=37500, label=annotate_label, size = 6, fill = "#ede8a4") +
+    ylim(c(0, 40000)) +
+    labs(title = title_str, subtitle = subtitle_str) +
+    ylab("Count of connected components") + 
+    xlab("Number of genes regulated by 1 connected component") +
+    scale_x_discrete(drop=FALSE) +
+    theme_bw()   
+
+genes_reg_by_each_cc_50
+```
+
+```{r}
+title_str <- "Number of unique credible sets regulated by 1 connected component "
+
+subtitle_str <- paste0(" | cs size threshold <= ", cs_size_threshold,
+                    "\n | total number of connected components: ", nrow(cc_id_df),
+                    "\n | prop: Proportion of connected components regulating only 1 credible set")
+
+annotate_label <- paste0("prop: ", prop_cs_round, "%")
+
+cs_reg_by_each_cc_50 <- ggplot(cc_id_df, aes(x=cs_involved_count_char)) + 
+  geom_bar(color="black", fill ="#56B4E9") +
+  geom_text(stat='count', aes(label=..count..), vjust=-1, size = 3) +
+  annotate(geom="label", x=14, y=27500, label=annotate_label, size = 6, fill = "#ede8a4") +
+    ylim(c(0, 30000)) +
+    labs(title = title_str, subtitle = subtitle_str) +
+    ylab("Count of connected components") + 
+    xlab("Number of credible sets regulated by 1 connected component") +
+    theme_bw()  
+
+
+cs_reg_by_each_cc_50
+```
+```{r}
+cc_stats %>% write_tsv("../../temp_files/var_multi_gene_reg/cc_counts_all.tsv")
+```
+
+```{r}
+cc_id_df_merged$cs_size_threshold %>% table()
+```
+```{r}
+title_str <- paste0("Number of genes regulated by 1 connected component")
+  
+subtitle_str <- paste0(" prop: Proportion of connected components regulating only 1 gene")
+
+prop_10 <- round(nrow(cc_id_df_merged %>% 
+                   filter(genes_involved_count==1, cs_size_threshold ==10))/
+                   nrow(cc_id_df_merged %>% filter(cs_size_threshold ==10))*100, digits = 1)
+prop_30 <- round(nrow(cc_id_df_merged %>% 
+                   filter(genes_involved_count==1, cs_size_threshold ==30))/
+                   nrow(cc_id_df_merged %>% filter(cs_size_threshold ==30))*100, digits = 1)
+prop_50 <- round(nrow(cc_id_df_merged %>% 
+                   filter(genes_involved_count==1, cs_size_threshold ==50))/
+                   nrow(cc_id_df_merged %>% filter(cs_size_threshold ==50))*100, digits = 1)
+annot_text <- data.frame(
+  label = c(paste0(" prop: ", prop_10, "%"),
+            paste0(" prop: ", prop_30, "%"),
+            paste0(" prop: ", prop_50, "%")
+            ),
+  cs_size_threshold = c(10, 30, 50)
+)
+
+genes_reg_by_each_cc_facet <- ggplot(cc_id_df_merged, aes(x=genes_involved_count_char)) + 
+    geom_bar(color="black", fill ="#56B4E9") +
+    geom_text(stat='count', aes(label=..count..), vjust=-1, size = 3) +
+    ylim(c(0, 45000)) +
+    labs(title = title_str, subtitle = subtitle_str) +
+    ylab("Count of connected components") + 
+    xlab("Number of genes regulated by 1 connected component") +
+    scale_x_discrete(drop=FALSE) +
+    facet_grid(rows = vars(cs_size_threshold)) +
+    geom_label(
+      data    = annot_text,
+      mapping = aes(x = Inf, y = Inf, label = label),
+      hjust   = 1.2,
+      vjust   = 1.5,
+      fill = "#ede8a4"
+    ) +
+    theme_bw()   
+
+genes_reg_by_each_cc_facet
+
+# ggsave(filename = "../../temp_files/var_multi_gene_reg/plots/cc_reg_gene_counts.pdf", 
+#        plot = genes_reg_by_each_cc_facet, device = "pdf")
+```
+
+```{r}
+title_str <- "Number of unique credible sets regulated by 1 connected component "
+
+subtitle_str <- " prop: Proportion of connected components regulating only 1 credible set"
+
+prop_10 <- round(nrow(cc_id_df_merged %>% 
+                   filter(cs_involved_count==1, cs_size_threshold ==10))/
+                   nrow(cc_id_df_merged %>% filter(cs_size_threshold ==10))*100, digits = 1)
+prop_30 <- round(nrow(cc_id_df_merged %>% 
+                   filter(cs_involved_count==1, cs_size_threshold ==30))/
+                   nrow(cc_id_df_merged %>% filter(cs_size_threshold ==30))*100, digits = 1)
+prop_50 <- round(nrow(cc_id_df_merged %>% 
+                   filter(cs_involved_count==1, cs_size_threshold ==50))/
+                   nrow(cc_id_df_merged %>% filter(cs_size_threshold ==50))*100, digits = 1)
+annot_text <- data.frame(
+  label = c(paste0(" prop: ", prop_10, "%"),
+            paste0(" prop: ", prop_30, "%"),
+            paste0(" prop: ", prop_50, "%")
+            ),
+  cs_size_threshold = c(10, 30, 50)
+)
+
+cs_reg_by_each_cc_facet <- ggplot(cc_id_df_merged, aes(x=cs_involved_count_char)) + 
+    geom_bar(color="black", fill ="#56B4E9") +
+    geom_text(stat='count', aes(label=..count..), vjust=-1, size = 3) +
+    ylim(c(0, 30000)) +
+    labs(title = title_str, subtitle = subtitle_str) +
+    ylab("Count of connected components") + 
+    xlab("Number of credible sets regulated by 1 connected component") +
+    scale_x_discrete(drop=FALSE) +
+    facet_grid(rows = vars(cs_size_threshold)) +
+    geom_label(
+      data    = annot_text,
+      mapping = aes(x = Inf, y = Inf, label = label),
+      hjust   = 1.2,
+      vjust   = 1.5,
+      fill = "#ede8a4"
+    ) +
+    theme_bw()   
+
+cs_reg_by_each_cc_facet
+
+# ggsave(filename = "../../temp_files/var_multi_gene_reg/plots/cc_reg_cs_counts.pdf", 
+#        plot = cs_reg_by_each_cc_facet, device = "pdf")
+
+```
+
+
+
