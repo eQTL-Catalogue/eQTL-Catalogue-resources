@@ -85,6 +85,9 @@ names(colors) = c("blood","lymphocyte","LCL","neutrophil","monocyte","macrophage
 col_annot = data.frame(group = ontology_map$tissue_fct)
 rownames(col_annot) = ontology_map$study_qtlgroup
 
+labels["GTEx.brain_cerebellar_hemisphere",] <- "GTEx brain (cerebellar hemisphere)"
+labels["Schmiedel_2018.Th1-17_memory",] <- "Schmiedel_2018 Th1-17 cell"
+
 pheatmap::pheatmap(t(FactorM), fontsize=8, cluster_rows = F, cluster_cols = F, cellwidth=10, cellheight = 10,
                    angle_col = 90, labels_col = labels[rownames(FactorM),], 
                    annotation_legend = F, annotation_col = col_annot, annotation_colors=list(group=colors),
