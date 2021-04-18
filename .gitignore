@@ -8,10 +8,10 @@ manuscript/figures/median_TPM_MDS/median_tpm_by_qtlgroups.html
 manuscript/figures/median_TPM_MDS/median_tpm_MDS.pdf
 manuscript/figures/RBMS1/LC-*
 tutorials/tabix_data
-novel_colocs
-coloc_plots/
+manuscript/figures/novel_coloc_plots/coloc_plots/*
 manuscript/figures/splicing_coloc/coloc
 manuscript/figures/splicing_coloc/LDLC_upet_plot.pdf
 manuscript/figures/eqtl_forestplot_and_factor_loadings/factor_assignment.png
-manuscript/figures/*/*.pdf
+manuscript/figures/factor_heatmap/first_levet_grid_result_plots
 manuscript/figures/*/*.html
+manuscript/figures/HMGCR/sparcity_heatmaps

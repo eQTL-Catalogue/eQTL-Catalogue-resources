@@ -1,0 +1,47 @@
+qtl_subset	sample_size	n_colocs_in_novel_ld_blocks	n_unique_novel_ld_blocks	present_in_GTEx	cell_type_class
+Alasoo_2018.macrophage_naive_txrev	84	0	0	FALSE	immune cell
+Alasoo_2018.macrophage_IFNg_txrev	84	0	0	FALSE	immune cell
+Alasoo_2018.macrophage_Salmonella_txrev	84	0	0	FALSE	immune cell
+Alasoo_2018.macrophage_IFNg+Salmonella_txrev	84	0	0	FALSE	immune cell
+BLUEPRINT_SE.monocyte_txrev	191	0	0	FALSE	immune cell
+BLUEPRINT_SE.neutrophil_txrev	196	0	0	FALSE	immune cell
+BLUEPRINT_PE.T-cell_txrev	167	0	0	FALSE	immune cell
+BrainSeq.brain_txrev	479	0	0	TRUE	other
+FUSION.adipose_naive_txrev	271	0	0	TRUE	other
+FUSION.muscle_naive_txrev	288	0	0	TRUE	other
+GENCORD.LCL_txrev	190	0	0	TRUE	immune cell
+GENCORD.fibroblast_txrev	186	0	0	TRUE	immune cell
+GENCORD.T-cell_txrev	184	0	0	FALSE	immune cell
+GEUVADIS.LCL_txrev	445	0	0	TRUE	immune cell
+HipSci.iPSC_txrev	322	0	0	FALSE	other
+Lepik_2017.blood_txrev	471	0	0	TRUE	immune cell
+Nedelec_2016.macrophage_Listeria_txrev	163	0	0	FALSE	immune cell
+Nedelec_2016.macrophage_naive_txrev	163	0	0	FALSE	immune cell
+Nedelec_2016.macrophage_Salmonella_txrev	167	0	0	FALSE	immune cell
+Quach_2016.monocyte_naive_txrev	200	0	0	FALSE	immune cell
+Quach_2016.monocyte_LPS_txrev	184	0	0	FALSE	immune cell
+Quach_2016.monocyte_Pam3CSK4_txrev	196	0	0	FALSE	immune cell
+Quach_2016.monocyte_R848_txrev	191	0	0	FALSE	immune cell
+Quach_2016.monocyte_IAV_txrev	198	0	0	FALSE	immune cell
+ROSMAP.brain_naive_txrev	576	0	0	TRUE	other
+Schmiedel_2018.Tfh_memory_txrev	89	0	0	FALSE	immune cell
+Schmiedel_2018.Th17_memory_txrev	89	0	0	FALSE	immune cell
+Schmiedel_2018.Th1_memory_txrev	82	0	0	FALSE	immune cell
+Schmiedel_2018.Th2_memory_txrev	89	0	0	FALSE	immune cell
+Schmiedel_2018.Th1-17_memory_txrev	88	0	0	FALSE	immune cell
+Schmiedel_2018.Treg_memory_txrev	89	0	0	FALSE	immune cell
+Schmiedel_2018.Treg_naive_txrev	89	0	0	FALSE	immune cell
+Schmiedel_2018.B-cell_naive_txrev	91	0	0	FALSE	immune cell
+Schmiedel_2018.CD4_T-cell_naive_txrev	88	0	0	FALSE	immune cell
+Schmiedel_2018.CD4_T-cell_anti-CD3-CD28_txrev	89	0	0	FALSE	immune cell
+Schmiedel_2018.CD8_T-cell_naive_txrev	89	0	0	FALSE	immune cell
+Schmiedel_2018.CD8_T-cell_anti-CD3-CD28_txrev	88	0	0	FALSE	immune cell
+Schmiedel_2018.monocyte_CD16_naive_txrev	90	0	0	FALSE	immune cell
+Schmiedel_2018.monocyte_naive_txrev	91	0	0	FALSE	immune cell
+Schmiedel_2018.NK-cell_naive_txrev	90	0	0	FALSE	immune cell
+Schwartzentruber_2018.sensory_neuron_txrev	98	0	0	FALSE	other
+TwinsUK.fat_txrev	381	0	0	TRUE	other
+TwinsUK.LCL_txrev	418	0	0	TRUE	immune cell
+TwinsUK.skin_txrev	370	0	0	TRUE	other
+TwinsUK.blood_txrev	195	0	0	TRUE	immune cell
+van_de_Bunt_2015.pancreatic_islet_txrev	117	0	0	TRUE	other
