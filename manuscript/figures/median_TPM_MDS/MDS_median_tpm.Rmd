@@ -66,8 +66,9 @@ ontology_map <- ontology_map %>% dplyr::mutate(study_qtlgroup = paste0(study, ".
   dplyr::mutate(sample_class = ifelse(tissue_label %like% "neutrophil", "neutrophil", sample_class)) %>%
   dplyr::mutate(sample_class = ifelse(tissue_ontology_id %in% c("CL_0000236","CL_0002677","CL_0002678","CL_0000624","CL_0000625","CL_0000623","CL_0000899","CL_0000546","CL_0000545","CL_0000899","CL_0002038","CL_0000084"), "lymphocyte", sample_class)) %>%
   dplyr::mutate(sample_class = ifelse(tissue_label %like% "iPSC", "iPSC", sample_class))
-  
-fct_levels = c("blood","lymphocyte","LCL","neutrophil","monocyte","macrophage","brain","iPSC","other")
+
+#Add order
+fct_levels = c("blood","lymphocyte","LCL","neutrophil","monocyte","brain","macrophage","iPSC","other")
 ontology_map = dplyr::mutate(ontology_map, tissue_fct = factor(sample_class, levels = fct_levels))
 
 
@@ -92,8 +93,9 @@ htmlwidgets::saveWidget(widget = plotly::as_widget(mds_plot_median_tpm_plot),
                         file = file.path("median_tpm_by_qtlgroups.html"),
                         libdir = "dependencies")
 mds_plot_median_tpm
-ggsave("median_tpm_MDS.pdf", plot = mds_plot_median_tpm, width = 5, height = 3.1)
-ggsave("median_tpm_MDS2.pdf", plot = mds_plot_median_tpm, width = 6, height = 4)
+ggsave("median_tpm_MDS_with_legend.pdf", plot = mds_plot_median_tpm, width = 5, height = 3.1)
+ggsave("median_tpm_MDS2_with_legend.pdf", plot = mds_plot_median_tpm, width = 6, height = 4)
+ggsave("median_tpm_MDS_with_legend_same_with_mash_size.pdf", plot = mds_plot_median_tpm, width = 5.5, height = 4)
 
 mds_plot_median_tpm = ggplot2::ggplot(mds_matrix_ont, ggplot2::aes(x = V1, y = -V2, label = study_qtlgroup)) +
   ggplot2::geom_point(aes(color=tissue_fct), size = 3, show.legend = F) +
@@ -108,6 +110,8 @@ mds_plot_median_tpm = ggplot2::ggplot(mds_matrix_ont, ggplot2::aes(x = V1, y = -
 ggsave("median_tpm_MDS_no_legend_35.pdf", plot = mds_plot_median_tpm, width = 3.5, height = 3.5)
 ggsave("median_tpm_MDS_no_legend_4.pdf", plot = mds_plot_median_tpm, width = 4, height = 4)
 ggsave("median_tpm_MDS_no_legend_3.pdf", plot = mds_plot_median_tpm, width = 3, height = 3)
+
+
 ```
 
 
