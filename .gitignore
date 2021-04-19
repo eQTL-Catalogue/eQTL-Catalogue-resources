@@ -14,4 +14,5 @@ manuscript/figures/splicing_coloc/LDLC_upet_plot.pdf
 manuscript/figures/eqtl_forestplot_and_factor_loadings/factor_assignment.png
 manuscript/figures/factor_heatmap/first_levet_grid_result_plots
 manuscript/figures/*/*.html
+manuscript/figures/median_TPM_MDS/median_TPMS
 manuscript/figures/HMGCR/sparcity_heatmaps
