@@ -19,31 +19,12 @@ library(UpSetR)
 First we read necessary data and metadata files and do the preliminary joining operations
 ```{r}
 # read all the necessary coloc data
-
 eqtlCat_rnaseq_sign_colocs_ge <- rbind(read_tsv("data/eqtlCat_all_sign_colocs.tsv.gz"), read_tsv("data/GTExV8_sign_colocs.tsv.gz"))
 eqtlCat_rnaseq_sign_colocs_tx <- rbind(read_tsv("data/tx_sign_colocs.tsv.gz"), read_tsv("data/GTExV8_sign_colocs_tx.tsv.gz"))
 eqtlCat_rnaseq_sign_colocs_txrev <- rbind(read_tsv("data/txrev_sign_colocs.tsv.gz"), read_tsv("data/GTExV8_sign_colocs_txrev.tsv.gz"))
 eqtlCat_rnaseq_sign_colocs_exon <- rbind(read_tsv("data/exon_sign_colocs.tsv.gz"), read_tsv("data/GTExV8_sign_colocs_exon.tsv.gz"))
 
-# Metadata file can be found in https://zenodo.org/record/3366011#.YHx4WJMzbeI
-tx_pheno_meta <- read_tsv("/Users/kerimov/Work/R_env/data/phenotype_metadata/transcript_usage_Ensembl_96_phenotype_metadata.tsv.gz") %>%
-  select(phenotype_id, gene_id)
-eqtlCat_rnaseq_sign_colocs_tx <- left_join(eqtlCat_rnaseq_sign_colocs_tx, tx_pheno_meta, 
-                                           by = c("molecular_trait_id" = "phenotype_id"))
-
-txrev_pheno_meta <- read_tsv("/Users/kerimov/Work/R_env/data/phenotype_metadata/txrevise_Ensembl_96_phenotype_metadata.tsv.gz") %>%
-  select(phenotype_id, gene_id)
-eqtlCat_rnaseq_sign_colocs_txrev <- left_join(eqtlCat_rnaseq_sign_colocs_txrev, txrev_pheno_meta, 
-                                              by = c("molecular_trait_id" = "phenotype_id"))
-
-exon_pheno_meta <- read_tsv("/Users/kerimov/Work/R_env/data/phenotype_metadata/exon_counts_Ensembl_96_phenotype_metadata.tsv.gz", 
-                            col_types = "cccccddccccddn") %>% select(phenotype_id, gene_id)
-eqtlCat_rnaseq_sign_colocs_exon <- left_join(eqtlCat_rnaseq_sign_colocs_exon, exon_pheno_meta, 
-                                             by = c("molecular_trait_id" = "phenotype_id"))
-
-eqtlCat_rnaseq_sign_colocs_ge <- eqtlCat_rnaseq_sign_colocs_ge %>% mutate(gene_id = molecular_trait_id)
-
-# read other metadata files needed for analysis
+# read LD block metadata
 ld_blocks <-  read_tsv("data/ind_regions_Hg38.bed")
 
 gwas_ids <- eqtlCat_rnaseq_sign_colocs_ge %>% pull(gwas_id) %>% unique()
@@ -125,11 +106,9 @@ listInputUniqueLDBlockCount <- list(ge = eqtlcat_colocs_with_ldblocks_ge$ID_hg38
 
 upsetR_plot_unique_ld_blocks <- upset(fromList(listInputUniqueLDBlockCount), 
       order.by = "freq", 
-      point.size = 3, 
+      point.size = 4, 
       mainbar.y.label = "Intersection size",
       sets.x.label = "Unique LD blocks size")
-
-# save_ggplots(plot = upsetR_plot_unique_ld_blocks, path = "../plots/27_Sep_2020_upsetR/",filename = "upsetR_unique_ld_blocks")
 
 upsetR_plot_unique_ld_blocks
 ```
