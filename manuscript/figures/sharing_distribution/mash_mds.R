@@ -4,10 +4,10 @@ library("data.table")
 
 # path_files <- list.files("../../temp_files/eQTL_sharing/new_with_GTExV8/txrevise_no_graph_mash/mash/", full.names = T)
 # path_files <- "../../temp_files/eQTL_sharing/new_with_GTExV8/exon_no_graph_mash//"
-# path_files <- "../../temp_files/eQTL_sharing/new_with_GTExV8/ge_graph_30_thresh///"
-path_files <- "../../temp_files/eQTL_sharing/new_with_GTExV8/ma_graph_30_thresh//"
-path_files <- "/Users/kerimov/Work/temp_files/eQTL_sharing/new_with_GTExV8/txrev_no_graph_all_together/"
-path_files <- "/Users/kerimov/Work/temp_files/eQTL_sharing/new_with_GTExV8/ge_graph_30_minpval/"
+path_files <- "../../temp_files/eQTL_sharing/new_with_GTExV8/ge_graph_30_thresh///"
+# path_files <- "../../temp_files/eQTL_sharing/new_with_GTExV8/ma_graph_30_thresh//"
+# path_files <- "/Users/kerimov/Work/temp_files/eQTL_sharing/new_with_GTExV8/txrev_no_graph_all_together/"
+# path_files <- "/Users/kerimov/Work/temp_files/eQTL_sharing/new_with_GTExV8/ge_graph_30_minpval/"
 for (path_file in path_files) {
   load(paste0(path_file,"/sharing.R"))
   # sharing = read_tsv("../../temp_files/eQTL_sharing/results/results_min_pvalue/sharing.tsv")
@@ -46,7 +46,7 @@ for (path_file in path_files) {
     coords$study = ifelse(grepl("BLUEPRINT", coords$study_qtlgroup), "BLUEPRINT", coords$study)
     coords$study = factor(coords$study, levels=c("GTEx", "BLUEPRINT", NA))
     plt = ggplot2::ggplot(coords, aes(x, y, grp=study_qtlgroup)) +
-      ggplot2::geom_point(aes(colour=tissue_fct), size=3, show.legend = T) +
+      ggplot2::geom_point(aes(colour=tissue_fct), size=3, show.legend = F) +
       geom_point(aes(shape=study, size=study), data=coords[!is.na(coords$study),], fill=NA) +
       scale_shape_manual(values=c(21,24))+
       scale_size_manual(values=c(3,5))+
@@ -57,6 +57,13 @@ for (path_file in path_files) {
     return(plt)
   }
   
+  fit$points <- -fit$points
+  
   plt = plot_coords(fit)
-  ggsave(paste0(path_file,"/mash_mds.pdf"), plt, width = 5.5, height = 4)
+  ggsave(paste0("mash_mds_inverted.pdf"), plt, width = 5, height = 3.1)
+  
+  pltly <- plotly::ggplotly(plt)
+  htmlwidgets::saveWidget(widget = plotly::as_widget(pltly),
+                          file = file.path("mash_mds_inverted.html"),
+                          libdir = "dependencies")
 }

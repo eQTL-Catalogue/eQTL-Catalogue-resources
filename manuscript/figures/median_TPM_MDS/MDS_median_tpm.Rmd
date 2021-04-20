@@ -99,7 +99,7 @@ ggsave("median_tpm_MDS_with_legend_same_with_mash_size.pdf", plot = mds_plot_med
 
 mds_plot_median_tpm = ggplot2::ggplot(mds_matrix_ont, ggplot2::aes(x = V1, y = -V2, label = study_qtlgroup)) +
   ggplot2::geom_point(aes(color=tissue_fct), size = 3, show.legend = F) +
-  geom_point(aes(shape=study, size=study), fill=NA, data=mds_matrix_ont[!is.na(mds_matrix_ont$study),], show.legend = F) +
+  geom_point(aes(shape=study, size=study), fill=NA, data=mds_matrix_ont[!is.na(mds_matrix_ont$study),]) +
   scale_shape_manual(values=c(21,24))+
   scale_size_manual(values=c(3,5))+
   ggplot2::labs(x="MDS Coordinate 1", y="MDS Coordinate 2") + 
@@ -107,6 +107,7 @@ mds_plot_median_tpm = ggplot2::ggplot(mds_matrix_ont, ggplot2::aes(x = V1, y = -
   theme(panel.grid = element_blank()) + 
   scale_color_manual(values = c("#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#fed976","#a65628","#f781bf","#999999"))
 
+ggsave("median_tpm_MDS_no_legend_mash_size.pdf", plot = mds_plot_median_tpm, width = 5, height = 3.1)
 ggsave("median_tpm_MDS_no_legend_35.pdf", plot = mds_plot_median_tpm, width = 3.5, height = 3.5)
 ggsave("median_tpm_MDS_no_legend_4.pdf", plot = mds_plot_median_tpm, width = 4, height = 4)
 ggsave("median_tpm_MDS_no_legend_3.pdf", plot = mds_plot_median_tpm, width = 3, height = 3)
