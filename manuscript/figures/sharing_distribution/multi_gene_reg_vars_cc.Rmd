@@ -38,7 +38,7 @@ make_connected_components_from_cs <- function(susie_all_df, z_threshold = 3, cs_
   susie_filt <- susie_all_df %>%
     dplyr::group_by(cs_uid) %>%
     dplyr::mutate(max_abs_z = max(abs(z))) %>%
-    dplyr::filter(max_abs_z > z_threshold, cs_size <= cs_size_threshold) %>%
+    dplyr::filter(max_abs_z > z_threshold, cs_size < cs_size_threshold) %>%
     dplyr::ungroup()
 
   # make the ranges object in order to find overlaps
@@ -110,7 +110,7 @@ cc_id_df$genes_involved_count_char %>% table()
 ```{r}
 title_str <- paste0("Number of genes regulated by 1 connected component")
   
-subtitle_str <- paste0(" | cs size threshold <= ", cs_size_threshold,
+subtitle_str <- paste0(" | cs size threshold < ", cs_size_threshold,
                     "\n | total number of connected components: ", nrow(cc_id_df),
                     "\n | prop: Proportion of connected components regulating only 1 gene")
 
@@ -133,7 +133,7 @@ genes_reg_by_each_cc_10
 ```{r}
 title_str <- "Number of unique credible sets regulated by 1 connected component "
 
-subtitle_str <- paste0(" | cs size threshold <= ", cs_size_threshold,
+subtitle_str <- paste0(" | cs size threshold < ", cs_size_threshold,
                     "\n | total number of connected components: ", nrow(cc_id_df),
                     "\n | prop: Proportion of connected components regulating only 1 credible set")
 
@@ -176,7 +176,7 @@ cc_id_df$genes_involved_count_char %>% table()
 ```{r}
 title_str <- paste0("Number of genes regulated by 1 connected component")
   
-subtitle_str <- paste0(" | cs size threshold <= ", cs_size_threshold,
+subtitle_str <- paste0(" | cs size threshold < ", cs_size_threshold,
                     "\n | total number of connected components: ", nrow(cc_id_df),
                     "\n | prop: Proportion of connected components regulating only 1 gene")
 
@@ -199,7 +199,7 @@ genes_reg_by_each_cc_30
 ```{r}
 title_str <- "Number of unique credible sets regulated by 1 connected component "
 
-subtitle_str <- paste0(" | cs size threshold <= ", cs_size_threshold,
+subtitle_str <- paste0(" | cs size threshold < ", cs_size_threshold,
                     "\n | total number of connected components: ", nrow(cc_id_df),
                     "\n | prop: Proportion of connected components regulating only 1 credible set")
 
@@ -242,7 +242,7 @@ cc_id_df$genes_involved_count_char %>% table()
 ```{r}
 title_str <- paste0("Number of genes regulated by 1 connected component")
   
-subtitle_str <- paste0(" | cs size threshold <= ", cs_size_threshold,
+subtitle_str <- paste0(" | cs size threshold < ", cs_size_threshold,
                     "\n | total number of connected components: ", nrow(cc_id_df),
                     "\n | prop: Proportion of connected components regulating only 1 gene")
 
@@ -265,7 +265,7 @@ genes_reg_by_each_cc_50
 ```{r}
 title_str <- "Number of unique credible sets regulated by 1 connected component "
 
-subtitle_str <- paste0(" | cs size threshold <= ", cs_size_threshold,
+subtitle_str <- paste0(" | cs size threshold < ", cs_size_threshold,
                     "\n | total number of connected components: ", nrow(cc_id_df),
                     "\n | prop: Proportion of connected components regulating only 1 credible set")
 
@@ -333,8 +333,8 @@ genes_reg_by_each_cc_facet <- ggplot(cc_id_df_merged, aes(x=genes_involved_count
 
 genes_reg_by_each_cc_facet
 
-# ggsave(filename = "../../temp_files/var_multi_gene_reg/plots/cc_reg_gene_counts.pdf", 
-#        plot = genes_reg_by_each_cc_facet, device = "pdf")
+ggsave(filename = "../../temp_files/var_multi_gene_reg/plots/cc_reg_gene_counts_new.pdf",
+       plot = genes_reg_by_each_cc_facet, device = "pdf", width = 7, height = 7)
 ```
 
 ```{r}
@@ -379,8 +379,8 @@ cs_reg_by_each_cc_facet <- ggplot(cc_id_df_merged, aes(x=cs_involved_count_char)
 
 cs_reg_by_each_cc_facet
 
-# ggsave(filename = "../../temp_files/var_multi_gene_reg/plots/cc_reg_cs_counts.pdf", 
-#        plot = cs_reg_by_each_cc_facet, device = "pdf")
+ggsave(filename = "../../temp_files/var_multi_gene_reg/plots/cc_reg_cs_counts_new.pdf",
+       plot = cs_reg_by_each_cc_facet, device = "pdf", width = 7, height = 7)
 
 ```
 
