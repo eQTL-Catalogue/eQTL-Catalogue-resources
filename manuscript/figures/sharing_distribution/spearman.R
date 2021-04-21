@@ -58,5 +58,11 @@ for (path_file in path_files) {
                      angle_col = 45,   
                      annotation_legend = T, annotation_col = col_annot, annotation_colors=list(group=colors), 
                      filename = paste0(path_file,"/spearman_heatmap.pdf"), width = 20, height = 14)
+  
+  # pheatmap::pheatmap(correlation_matrix, fontsize=8, cluster_rows = T, cluster_cols = T, cellwidth = 10, cellheight = 8,
+  #                    color=colorRampPalette(brewer.pal(n = 7, name ="OrRd"))(100), border_color=NA,
+  #                    angle_col = 45, cutree_rows = 10,
+  #                    annotation_legend = T, annotation_col = col_annot, annotation_colors=list(group=colors), 
+  #                    filename = paste0("mash_heatmap.pdf"), width = 20, height = 14)
 }  
   
