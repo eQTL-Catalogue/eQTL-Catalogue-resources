@@ -53,6 +53,8 @@ colnames(loadings) = factor_names$name
 factors = tidyr::pivot_longer(loadings, cols = colnames(loadings), names_to = "Factors", values_to = "Loadings")
 fractions = factors %>% group_by(Factors) %>% summarise(count = sum(Loadings != 0), Fraction = count / n_eqtls)
 
+fractions %>% arrange(desc(Fraction)) %>% write_tsv("factor_loading_fractions.tsv")
+
 plt = ggplot(fractions, aes(reorder(Factors, -Fraction), Fraction)) +
   geom_col() + 
   theme_light() +
