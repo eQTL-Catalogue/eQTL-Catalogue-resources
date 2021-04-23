@@ -1,0 +1,113 @@
+dataset	study	qtl_group	type	condition	condition_label	tissue_ontology_id	tissue_ontology_term	tissue_label	ge	exon	tx	txrev
+Alasoo_2018.macrophage_IFNg	Alasoo_2018	macrophage_IFNg	RNA-seq	IFNg	IFNg_18h	CL_0000235	macrophage	macrophage	1663	1233	1164	1571
+Alasoo_2018.macrophage_IFNg+Salmonella	Alasoo_2018	macrophage_IFNg+Salmonella	RNA-seq	IFNg+Salmonella	IFNg_18h+Salmonella_5h	CL_0000235	macrophage	macrophage	1131	774	726	975
+Alasoo_2018.macrophage_naive	Alasoo_2018	macrophage_naive	RNA-seq	naive	naive	CL_0000235	macrophage	macrophage	1615	1160	1205	1708
+Alasoo_2018.macrophage_Salmonella	Alasoo_2018	macrophage_Salmonella	RNA-seq	Salmonella	Salmonella_5h	CL_0000235	macrophage	macrophage	1174	935	915	1226
+BLUEPRINT.T-cell	BLUEPRINT	T-cell	RNA-seq	naive	naive	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	6154	4570	2848	3994
+BLUEPRINT.monocyte	BLUEPRINT	monocyte	RNA-seq	naive	naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	6934	4738	2593	4045
+BLUEPRINT.neutrophil	BLUEPRINT	neutrophil	RNA-seq	naive	naive	CL_0000775	neutrophil	neutrophil	5588	3829	1887	2905
+BrainSeq.brain	BrainSeq	brain	RNA-seq	naive	naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	4961	6046	3858	4999
+CEDAR.B-cell_CD19	CEDAR	B-cell_CD19	Microarray	naive	naive	CL_0000236	B cell	B cell	1197	NA	NA	NA
+CEDAR.ileum	CEDAR	ileum	Microarray	naive	naive	UBERON_0002116	ileum	ileum	592	NA	NA	NA
+CEDAR.monocyte_CD14	CEDAR	monocyte_CD14	Microarray	naive	naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	2264	NA	NA	NA
+CEDAR.neutrophil_CD15	CEDAR	neutrophil_CD15	Microarray	naive	naive	CL_0000775	neutrophil	neutrophil	1973	NA	NA	NA
+CEDAR.platelet	CEDAR	platelet	Microarray	naive	naive	CL_0000233	platelet	platelet	397	NA	NA	NA
+CEDAR.rectum	CEDAR	rectum	Microarray	naive	naive	UBERON_0001052	rectum	rectum	814	NA	NA	NA
+CEDAR.T-cell_CD4	CEDAR	T-cell_CD4	Microarray	naive	naive	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	2408	NA	NA	NA
+CEDAR.T-cell_CD8	CEDAR	T-cell_CD8	Microarray	naive	naive	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	1910	NA	NA	NA
+CEDAR.transverse_colon	CEDAR	transverse_colon	Microarray	naive	naive	UBERON_0001157	transverse colon	transverse colon	1079	NA	NA	NA
+Fairfax_2012.B-cell_CD19	Fairfax_2012	B-cell_CD19	Microarray	naive	naive	CL_0000236	B cell	B cell	3069	NA	NA	NA
+Fairfax_2014.monocyte_IFN24	Fairfax_2014	monocyte_IFN24	Microarray	IFN24	IFNg_24h	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	4156	NA	NA	NA
+Fairfax_2014.monocyte_LPS2	Fairfax_2014	monocyte_LPS2	Microarray	LPS2	LPS_2h	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	2874	NA	NA	NA
+Fairfax_2014.monocyte_LPS24	Fairfax_2014	monocyte_LPS24	Microarray	LPS24	LPS_24h	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	3751	NA	NA	NA
+Fairfax_2014.monocyte_naive	Fairfax_2014	monocyte_naive	Microarray	naive	naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	4483	NA	NA	NA
+FUSION.adipose_naive	FUSION	adipose_naive	RNA-seq	naive	naive	UBERON_0001013	adipose tissue	adipose	6863	6522	5030	6612
+FUSION.muscle_naive	FUSION	muscle_naive	RNA-seq	naive	naive	UBERON_0001134	skeletal muscle tissue	muscle	6636	5836	4374	6217
+GENCORD.fibroblast	GENCORD	fibroblast	RNA-seq	naive	naive	CL_0000057	fibroblast	fibroblast	2105	1422	904	1285
+GENCORD.LCL	GENCORD	LCL	RNA-seq	naive	naive	EFO_0005292	lymphoblastoid cell line	LCL	2585	1997	1355	1943
+GENCORD.T-cell	GENCORD	T-cell	RNA-seq	naive	naive	CL_0000084	T cell	T cell	2586	1844	1184	1688
+GEUVADIS.LCL	GEUVADIS	LCL	RNA-seq	naive	naive	EFO_0005292	lymphoblastoid cell line	LCL	5417	5212	3964	5646
+GTEx.adipose_subcutaneous	GTEx	adipose_subcutaneous	RNA-seq	naive	naive	UBERON_0001013	adipose tissue	adipose	6759	7627	5722	8050
+GTEx.adipose_visceral	GTEx	adipose_visceral	RNA-seq	naive	naive	UBERON_0010414	omental fat pad	adipose (visceral)	4834	5586	4591	6392
+GTEx.adrenal_gland	GTEx	adrenal_gland	RNA-seq	naive	naive	UBERON_0002369	adrenal gland	adrenal gland	3200	2692	2745	3672
+GTEx.artery_aorta	GTEx	artery_aorta	RNA-seq	naive	naive	UBERON_0001496	ascending aorta	artery (aorta)	5062	5592	4113	5714
+GTEx.artery_coronary	GTEx	artery_coronary	RNA-seq	naive	naive	UBERON_0001621	coronary artery	artery (coronary)	2281	2842	2409	3178
+GTEx.artery_tibial	GTEx	artery_tibial	RNA-seq	naive	naive	UBERON_0007610	tibial artery	artery (tibial)	6388	7188	5157	7361
+GTEx.blood	GTEx	blood	RNA-seq	naive	naive	UBERON_0000178	blood	blood	5130	5521	3185	4744
+GTEx.brain_amygdala	GTEx	brain_amygdala	RNA-seq	naive	naive	UBERON_0001876	amygdala	brain (amygdala)	1384	1228	1044	1380
+GTEx.brain_anterior_cingulate_cortex	GTEx	brain_anterior_cingulate_cortex	RNA-seq	naive	naive	UBERON_0009835	anterior cingulate cortex	brain (anterior cingulate cortex)	2064	1929	1481	1954
+GTEx.brain_caudate	GTEx	brain_caudate	RNA-seq	naive	naive	UBERON_0001873	caudate nucleus	brain (caudate)	2876	2702	1888	2604
+GTEx.brain_cerebellar_hemisphere	GTEx	brain_cerebellar_hemisphere	RNA-seq	naive	naive	UBERON_0002037	cerebellum	brain (cerebellum)	3872	3446	2260	3137
+GTEx.brain_cerebellum	GTEx	brain_cerebellum	RNA-seq	naive	naive	UBERON_0002037	cerebellum	brain (cerebellum)	5184	4673	2996	3970
+GTEx.brain_cortex	GTEx	brain_cortex	RNA-seq	naive	naive	UBERON_0001870	frontal cortex	brain (cortex)	3461	3177	2436	3109
+GTEx.brain_frontal_cortex	GTEx	brain_frontal_cortex	RNA-seq	naive	naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	2400	2573	1887	2464
+GTEx.brain_hippocampus	GTEx	brain_hippocampus	RNA-seq	naive	naive	UBERON_0001954	Ammon's horn	brain (hippocampus)	1720	1693	1475	1863
+GTEx.brain_hypothalamus	GTEx	brain_hypothalamus	RNA-seq	naive	naive	UBERON_0001898	hypothalamus	brain (hypothalamus)	1711	1818	1705	2156
+GTEx.brain_nucleus_accumbens	GTEx	brain_nucleus_accumbens	RNA-seq	naive	naive	UBERON_0001882	nucleus accumbens	brain (nucleus accumbens)	2722	2859	2074	2703
+GTEx.brain_putamen	GTEx	brain_putamen	RNA-seq	naive	naive	UBERON_0001874	putamen	brain (putamen)	2506	2326	1672	2154
+GTEx.brain_spinal_cord	GTEx	brain_spinal_cord	RNA-seq	naive	naive	UBERON_0006469	C1 segment of cervical spinal cord	brain (spinal cord)	1772	1380	1242	1564
+GTEx.brain_substantia_nigra	GTEx	brain_substantia_nigra	RNA-seq	naive	naive	UBERON_0002038	substantia nigra	brain (substantia nigra)	1302	1297	1006	1260
+GTEx.breast	GTEx	breast	RNA-seq	naive	naive	UBERON_0008367	breast epithelium	breast	4200	5534	4384	5948
+GTEx.colon_sigmoid	GTEx	colon_sigmoid	RNA-seq	naive	naive	UBERON_0001159	sigmoid colon	sigmoid colon	3817	4104	3690	4992
+GTEx.colon_transverse	GTEx	colon_transverse	RNA-seq	naive	naive	UBERON_0001157	transverse colon	transverse colon	4344	5382	4069	5462
+GTEx.esophagus_gej	GTEx	esophagus_gej	RNA-seq	naive	naive	UBERON_0004550	gastroesophageal sphincter	esophagus (gej)	4163	4233	3686	5026
+GTEx.esophagus_mucosa	GTEx	esophagus_mucosa	RNA-seq	naive	naive	UBERON_0006920	esophagus squamous epithelium	esophagus (mucosa)	5883	6122	4529	6304
+GTEx.esophagus_muscularis	GTEx	esophagus_muscularis	RNA-seq	naive	naive	UBERON_0004648	esophagus muscularis mucosa	esophagus (muscularis)	5909	6085	4790	6609
+GTEx.fibroblast	GTEx	fibroblast	RNA-seq	naive	naive	CL_0000057	fibroblast	fibroblast	6412	5818	5034	7296
+GTEx.heart_atrial_appendage	GTEx	heart_atrial_appendage	RNA-seq	naive	naive	UBERON_0006631	right atrium auricular region	heart (atrial appendage)	4362	5087	3396	4657
+GTEx.heart_left_ventricle	GTEx	heart_left_ventricle	RNA-seq	naive	naive	UBERON_0006566	left ventricle myocardium	heart (left ventricle)	4126	4398	2782	3878
+GTEx.kidney_cortex	GTEx	kidney_cortex	RNA-seq	naive	naive	UBERON_0001225	cortex of kidney	kidney (cortex)	589	634	543	755
+GTEx.LCL	GTEx	LCL	RNA-seq	naive	naive	EFO_0005292	lymphoblastoid cell line	LCL	1940	2502	2337	3257
+GTEx.liver	GTEx	liver	RNA-seq	naive	naive	UBERON_0001114	right lobe of liver	liver	2119	1474	1653	2192
+GTEx.lung	GTEx	lung	RNA-seq	naive	naive	UBERON_0008952	upper lobe of left lung	lung	5617	6801	4794	6559
+GTEx.minor_salivary_gland	GTEx	minor_salivary_gland	RNA-seq	naive	naive	UBERON_0006330	anterior lingual gland	minor salivary gland	1762	1865	1680	2252
+GTEx.muscle	GTEx	muscle	RNA-seq	naive	naive	UBERON_0001134	skeletal muscle tissue	muscle	5716	6518	4612	6609
+GTEx.nerve_tibial	GTEx	nerve_tibial	RNA-seq	naive	naive	UBERON_0001323	tibial nerve	tibial nerve	8183	8511	5788	8117
+GTEx.ovary	GTEx	ovary	RNA-seq	naive	naive	UBERON_0000992	female gonad	ovary	1977	2000	2022	2719
+GTEx.pancreas	GTEx	pancreas	RNA-seq	naive	naive	UBERON_0001150	body of pancreas	pancreas	4141	3523	2807	3729
+GTEx.pituitary	GTEx	pituitary	RNA-seq	naive	naive	UBERON_0000007	pituitary gland	pituitary	3363	3513	3099	4142
+GTEx.prostate	GTEx	prostate	RNA-seq	naive	naive	UBERON_0002367	prostate gland	prostate	2632	3112	2530	3344
+GTEx.skin_not_sun_exposed	GTEx	skin_not_sun_exposed	RNA-seq	naive	naive	UBERON_0036149	suprapubic skin	skin (suprapubic)	5951	6729	5102	6972
+GTEx.skin_sun_exposed	GTEx	skin_sun_exposed	RNA-seq	naive	naive	UBERON_0002097	skin of body	skin	6825	7529	5683	7986
+GTEx.small_intestine	GTEx	small_intestine	RNA-seq	naive	naive	UBERON_0001211	Peyer's patch	small intestine	2201	2626	1978	2706
+GTEx.spleen	GTEx	spleen	RNA-seq	naive	naive	UBERON_0002106	spleen	spleen	4129	3972	3082	4088
+GTEx.stomach	GTEx	stomach	RNA-seq	naive	naive	UBERON_0000945	stomach	stomach	3386	4065	3017	4051
+GTEx.testis	GTEx	testis	RNA-seq	naive	naive	UBERON_0000473	testis	testis	8293	10003	5752	7784
+GTEx.thyroid	GTEx	thyroid	RNA-seq	naive	naive	UBERON_0002046	thyroid gland	thyroid	8201	8500	6097	8647
+GTEx.uterus	GTEx	uterus	RNA-seq	naive	naive	UBERON_0000995	uterus	uterus	1411	1483	1626	2146
+GTEx.vagina	GTEx	vagina	RNA-seq	naive	naive	UBERON_0000996	vagina	vagina	1285	1450	1591	2103
+HipSci.iPSC	HipSci	iPSC	RNA-seq	naive	naive	EFO_0004905	induced pluripotent stem cell	iPSC	4294	5315	4373	6046
+Kasela_2017.T-cell_CD4	Kasela_2017	T-cell_CD4	Microarray	naive	naive	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	1907	NA	NA	NA
+Kasela_2017.T-cell_CD8	Kasela_2017	T-cell_CD8	Microarray	naive	naive	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	1176	NA	NA	NA
+Lepik_2017.blood	Lepik_2017	blood	RNA-seq	naive	naive	UBERON_0000178	blood	blood	7853	6060	3534	4969
+Naranbhai_2015.neutrophil_CD16	Naranbhai_2015	neutrophil_CD16	Microarray	naive	naive	CL_0000775	neutrophil	neutrophil	1107	NA	NA	NA
+Nedelec_2016.macrophage_Listeria	Nedelec_2016	macrophage_Listeria	RNA-seq	Listeria	Listeria_5h	CL_0000235	macrophage	macrophage	2188	1602	972	1362
+Nedelec_2016.macrophage_naive	Nedelec_2016	macrophage_naive	RNA-seq	naive	naive	CL_0000235	macrophage	macrophage	2322	1485	1104	1495
+Nedelec_2016.macrophage_Salmonella	Nedelec_2016	macrophage_Salmonella	RNA-seq	Salmonella	Salmonella_5h	CL_0000235	macrophage	macrophage	2189	1539	813	1213
+Quach_2016.monocyte_IAV	Quach_2016	monocyte_IAV	RNA-seq	IAV	Influenza_6h	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	4483	2872	1252	1858
+Quach_2016.monocyte_LPS	Quach_2016	monocyte_LPS	RNA-seq	LPS	LPS_6h	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	4647	3124	1605	2419
+Quach_2016.monocyte_naive	Quach_2016	monocyte_naive	RNA-seq	naive	naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	5202	3513	1986	2952
+Quach_2016.monocyte_Pam3CSK4	Quach_2016	monocyte_Pam3CSK4	RNA-seq	Pam3CSK4	Pam3CSK4_6h	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	4953	3496	1819	2677
+Quach_2016.monocyte_R848	Quach_2016	monocyte_R848	RNA-seq	R848	R848_6h	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	4457	2791	1556	2212
+ROSMAP.brain_naive	ROSMAP	brain_naive	RNA-seq	naive	naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	8690	8932	5427	6945
+Schmiedel_2018.B-cell_naive	Schmiedel_2018	B-cell_naive	RNA-seq	naive	naive	CL_0000236	B cell	B cell	2334	405	361	511
+Schmiedel_2018.CD4_T-cell_anti-CD3-CD28	Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	RNA-seq	anti-CD3-CD28	anti-CD3-CD28_4h	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	2099	313	336	449
+Schmiedel_2018.CD4_T-cell_naive	Schmiedel_2018	CD4_T-cell_naive	RNA-seq	naive	naive	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	2638	495	535	669
+Schmiedel_2018.CD8_T-cell_anti-CD3-CD28	Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	RNA-seq	anti-CD3-CD28	anti-CD3-CD28_4h	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	2048	348	384	488
+Schmiedel_2018.CD8_T-cell_naive	Schmiedel_2018	CD8_T-cell_naive	RNA-seq	naive	naive	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	2757	628	563	751
+Schmiedel_2018.monocyte_CD16_naive	Schmiedel_2018	monocyte_CD16_naive	RNA-seq	naive	naive	CL_0002396	CD14-low, CD16-positive monocyte	CD16+ monocyte	2391	381	364	540
+Schmiedel_2018.monocyte_naive	Schmiedel_2018	monocyte_naive	RNA-seq	naive	naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	2494	385	435	623
+Schmiedel_2018.NK-cell_naive	Schmiedel_2018	NK-cell_naive	RNA-seq	naive	naive	CL_0000623	natural killer cell	NK cell	1902	334	318	439
+Schmiedel_2018.Tfh_memory	Schmiedel_2018	Tfh_memory	RNA-seq	memory	naive	CL_0002038	T follicular helper cell	Tfh cell	2480	487	459	655
+Schmiedel_2018.Th1_memory	Schmiedel_2018	Th1_memory	RNA-seq	memory	naive	CL_0000545	T-helper 1 cell	Th1 cell	2181	415	383	534
+Schmiedel_2018.Th1-17_memory	Schmiedel_2018	Th1-17_memory	RNA-seq	memory	naive	CL_0000899	T-helper 17 cell	Th17 cell	2653	545	499	681
+Schmiedel_2018.Th17_memory	Schmiedel_2018	Th17_memory	RNA-seq	memory	naive	CL_0000899	T-helper 17 cell	Th17 cell	2896	582	594	747
+Schmiedel_2018.Th2_memory	Schmiedel_2018	Th2_memory	RNA-seq	memory	naive	CL_0000546	T-helper 2 cell	Th2 cell	2561	432	463	660
+Schmiedel_2018.Treg_memory	Schmiedel_2018	Treg_memory	RNA-seq	memory	naive	CL_0002678	memory regulatory T cell	Treg naive	2343	496	441	589
+Schmiedel_2018.Treg_naive	Schmiedel_2018	Treg_naive	RNA-seq	naive	naive	CL_0002677	naive regulatory T cell	Treg memory	2455	471	476	615
+Schwartzentruber_2018.sensory_neuron	Schwartzentruber_2018	sensory_neuron	RNA-seq	naive	naive	CL_0000101	sensory neuron	sensory neuron	514	923	1150	1496
+TwinsUK.blood	TwinsUK	blood	RNA-seq	naive	naive	UBERON_0000178	blood	blood	3239	1425	873	1261
+TwinsUK.fat	TwinsUK	fat	RNA-seq	naive	naive	UBERON_0001013	adipose tissue	adipose	7023	5608	2699	3847
+TwinsUK.LCL	TwinsUK	LCL	RNA-seq	naive	naive	EFO_0005292	lymphoblastoid cell line	LCL	6866	4070	3075	4356
+TwinsUK.skin	TwinsUK	skin	RNA-seq	naive	naive	UBERON_0002097	skin of body	skin	5541	4695	2355	3161
+van_de_Bunt_2015.pancreatic_islet	van_de_Bunt_2015	pancreatic_islet	RNA-seq	naive	naive	UBERON_0000006	islet of Langerhans	pancreatic islet	503	683	629	892

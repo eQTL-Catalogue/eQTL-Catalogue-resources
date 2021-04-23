@@ -4,7 +4,7 @@ library(ggplot2)
 
 #################################
 
-# sumstat_path = "../../temp_files/manuscript_figures_temp/perm_results/"
+# sumstat_path = "/Users/kerimov/Work/temp_files/manuscript_figures_temp/perm_results_new/"
 # suffix = ".permuted.txt.gz"
 # files <- list.files(sumstat_path, pattern=suffix)
 # 
@@ -16,7 +16,7 @@ library(ggplot2)
 # })
 # 
 # datasets = dplyr::bind_rows(datasets)
-# readr::write_tsv(datasets, "../../GitHub/eQTL-Catalogue-resources/manuscript/figures/naive_sample_sizes/dataset_significant_qtls.tsv")
+# readr::write_tsv(datasets, "dataset_significant_qtls.tsv")
 
 #################################
 # sample sizes
@@ -69,4 +69,44 @@ plt = ggplot(datasets, aes(dataset_sample_size, n_significant, colour=type, data
 
 ggsave("quantification_methods_sample_size.pdf", plt, width=8, height = 2.8)
 
-# ggplotly(plt)
+#################################
+# make significant qtl metadata table (supplementary material 1)
+
+
+ontology_map = readr::read_tsv("../../../ontology_mappings/tissue_ontology_mapping.tsv")
+condition_ontology_map = readr::read_tsv("../../../ontology_mappings/cell_type_condition_mapping.tsv")
+friendly_names = readr::read_tsv("../../../ontology_mappings/friendly_names.tsv") %>%
+  dplyr::select(tissue_ontology_id, tissue_label)
+
+ontology_map <- ontology_map %>% dplyr::mutate(study_qtlgroup = paste0(study, ".", qtl_group)) %>%
+  dplyr::left_join(friendly_names) %>% 
+  select(study_qtlgroup, tissue_ontology_id, tissue_ontology_term, tissue_label)
+condition_ontology_map <- condition_ontology_map %>% 
+  dplyr::mutate(study_qtlgroup = paste0(study, ".", qtl_group)) %>% 
+  dplyr::select(study_qtlgroup, condition, condition_label)
+
+sample_size = readr::read_tsv("sample_sizes.tsv")
+datasets = readr::read_tsv("dataset_significant_qtls.tsv")
+
+# split into datast and quantification method 
+datasets = datasets %>% tidyr::separate(dataset, into=c("dataset", "quant_method"), sep="_(?!.*_)")
+datasets = datasets %>% 
+  mutate(dataset = gsub(pattern = "GTExV8", replacement = "GTEx", x = dataset)) %>% 
+  mutate(dataset = gsub(pattern = "BLUEPRINT_SE", replacement = "BLUEPRINT", x = dataset)) %>% 
+  mutate(dataset = gsub(pattern = "BLUEPRINT_PE", replacement = "BLUEPRINT", x = dataset)) 
+
+datasets = datasets %>% left_join(sample_size)
+datasets = datasets %>% 
+  mutate(study_qtlgroup = paste0(study, ".", qtl_group)) %>% 
+  mutate(type=if_else(quant_method=="microarray", "Microarray", "RNA-seq")) %>% 
+  mutate(quant_method=if_else(quant_method=="microarray", "ge", quant_method))
+
+datasets_with_ontology <- datasets %>% 
+  left_join(ontology_map) %>% 
+  left_join(condition_ontology_map)
+
+datasets_with_ontology_wide <- datasets_with_ontology %>% 
+  pivot_wider(names_from = quant_method, values_from = n_significant) %>% 
+  select(dataset, study, qtl_group, type, condition, condition_label, tissue_ontology_id, tissue_ontology_term, tissue_label, ge, exon, tx, txrev)
+
+write_tsv(datasets_with_ontology_wide, "sign_qtl_counts_with_meta.tsv")
