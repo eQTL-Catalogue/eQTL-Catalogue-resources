@@ -107,6 +107,6 @@ datasets_with_ontology <- datasets %>%
 
 datasets_with_ontology_wide <- datasets_with_ontology %>% 
   pivot_wider(names_from = quant_method, values_from = n_significant) %>% 
-  select(dataset, study, qtl_group, type, condition, condition_label, tissue_ontology_id, tissue_ontology_term, tissue_label, ge, exon, tx, txrev)
+  select(dataset, study, qtl_group, dataset_sample_size, type, condition, condition_label, tissue_ontology_id, tissue_ontology_term, tissue_label, ge, exon, tx, txrev)
 
 write_tsv(datasets_with_ontology_wide, "sign_qtl_counts_with_meta.tsv")
