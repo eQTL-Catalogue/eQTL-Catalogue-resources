@@ -18,33 +18,26 @@ library(UpSetR)
 
 First we read necessary data and metadata files and do the preliminary joining operations
 ```{r}
-microarray_datasets <- c(
-    "CEDAR.B-cell_CD19_microarray",
-    "CEDAR.ileum_microarray",
-    "CEDAR.monocyte_CD14_microarray",
-    "CEDAR.neutrophil_CD15_microarray",
-    "CEDAR.platelet_microarray",
-    "CEDAR.rectum_microarray",
-    "CEDAR.T-cell_CD4_microarray",
-    "CEDAR.T-cell_CD8_microarray",
-    "CEDAR.transverse_colon_microarray",
-    "Fairfax_2012.B-cell_CD19_microarray",
-    "Fairfax_2014.monocyte_IFN24_microarray",
-    "Fairfax_2014.monocyte_LPS2_microarray",
-    "Fairfax_2014.monocyte_LPS24_microarray",
-    "Fairfax_2014.monocyte_naive_microarray",
-    "Kasela_2017.T-cell_CD4_microarray",
-    "Kasela_2017.T-cell_CD8_microarray",
-    "Naranbhai_2015.neutrophil_CD16_microarray"
-  )
+file_list <- list.files(path = "/Users/kerimov/Work/temp_files/coloc_results_merged/results_coloc_ge_perm//",
+                        recursive = TRUE, full.names = TRUE)
+ge_perm_sign_colocs = data.frame()
+
+for (file in file_list){
+  print(which(file == file_list))
+
+  # if the merged dataset does exist, append to it
+  temp_dataset <-read_tsv(file, trim_ws = TRUE)
+  temp_dataset <- temp_dataset %>% dplyr::filter(PP.H4.abf>=0.8)
+  ge_perm_sign_colocs<-rbind(ge_perm_sign_colocs, temp_dataset)
+}
+
+write_tsv(ge_perm_sign_colocs, "data/ge_perm_sign_colocs.tsv")
 
 # read all the necessary coloc data (Microrray data is also in the eqtlCat_all_sign_colocs_maxbeta table summarised by gene_id)
-eqtlCat_rnaseq_sign_colocs_ge_with_ma <- rbind(read_tsv("data/eqtlCat_all_sign_colocs_maxbeta.tsv.gz"), read_tsv("data/GTExV8_sign_colocs_maxbeta.tsv.gz"))
+eqtlCat_rnaseq_sign_colocs_ge <- read_tsv("data/ge_perm_sign_colocs.tsv.gz")
 eqtlCat_rnaseq_sign_colocs_tx <- rbind(read_tsv("data/tx_sign_colocs.tsv.gz"), read_tsv("data/GTExV8_sign_colocs_tx.tsv.gz"))
 eqtlCat_rnaseq_sign_colocs_txrev <- rbind(read_tsv("data/txrev_sign_colocs.tsv.gz"), read_tsv("data/GTExV8_sign_colocs_txrev.tsv.gz"))
 eqtlCat_rnaseq_sign_colocs_exon <- rbind(read_tsv("data/exon_sign_colocs.tsv.gz"), read_tsv("data/GTExV8_sign_colocs_exon.tsv.gz"))
-
-eqtlCat_rnaseq_sign_colocs_ge <- eqtlCat_rnaseq_sign_colocs_ge %>% filter(!qtl_subset %in% microarray_datasets)
 
 # read LD block metadata
 ld_blocks <-  read_tsv("data/ind_regions_Hg38.bed")
