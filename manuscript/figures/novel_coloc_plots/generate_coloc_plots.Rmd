@@ -36,38 +36,81 @@ if (!dir.exists(paste0(output_dir, "/plotly"))) {
 }
 ```
 
-First we read necessary data and metadata files and do the preliminary joining operations
 ```{r}
-# # read all the necessary coloc data
-# GTExV8_sign_colocs <- read_colocs_to_df(file_dir = "../data/coloc_results/results_coloc_GTExV8_15Sept2020/", PP.H4.abf>=0.8)
-# eqtlCat_rnaseq_sign_colocs <- read_colocs_to_df(file_dir = "../data/coloc_results/results_coloc_eQTLCatR3_rnaseq_16Sept2020/", PP.H4.abf>=0.8)
-# eqtlCat_ma_sign_colocs <- read_colocs_to_df(file_dir = "../data/coloc_results/results_coloc_eQTLCatR3_microarray_15Sept2020/", PP.H4.abf>=0.8)
+# file_list <- list.files(path = "/Users/kerimov/Work/temp_files/coloc_results_merged/results_coloc_ge_maxbeta/",
+#                         pattern = "*GTEx*",recursive = TRUE, full.names = TRUE)
+# GTExV8_sign_colocs = data.frame()
 # 
-# # replace probeIDs with geneIDs in microarray colocs
-# ma_pheno_meta <- read_tsv("../data/phenotype_metadata/HumanHT-12_V4_Ensembl_96_phenotype_metadata.tsv.gz") %>% 
-#   select(phenotype_id, gene_id)
-# colnames(ma_pheno_meta) <- c("molecular_trait_id", "gene_id")
+# for (file in file_list){
+#   print(which(file == file_list))
 # 
-# eqtlCat_ma_sign_colocs_replaced <- eqtlCat_ma_sign_colocs %>% 
-#   left_join(ma_pheno_meta) %>% 
-#   mutate(molecular_trait_id = gene_id) %>% 
-#   select(-gene_id)
+#   # if the merged dataset does exist, append to it
+#   temp_dataset <-read_tsv(file, trim_ws = TRUE)
+#   temp_dataset <- temp_dataset %>% dplyr::filter(PP.H4.abf>=0.8)
+#   GTExV8_sign_colocs<-rbind(GTExV8_sign_colocs, temp_dataset)
+# }
 # 
-# # row binf rnaseq and microarray colocs into one df
-# eqtlCat_all_sign_colocs <- rbind(eqtlCat_rnaseq_sign_colocs, eqtlCat_ma_sign_colocs_replaced)
-# eqtlCat_all_sign_colocs <- eqtlCat_all_sign_colocs %>% filter(gwas_id != "RA-ieu-a-833")
-
-# read other metadata files needed for analysis
-qtl_group_samplesizes <- read_tsv("data/qtl_group_samplesizes.tsv")
-ld_blocks <-  read_tsv("data/ind_regions_Hg38.bed")
-
-# write_tsv(GTExV8_sign_colocs, "../data/TSVs/colocs_merged_R3/GTExV8_sign_colocs.tsv")
-# write_tsv(eqtlCat_all_sign_colocs, "../data/TSVs/colocs_merged_R3/eqtlCat_all_sign_colocs.tsv")
+# write_tsv(GTExV8_sign_colocs, "data/GTExV8_sign_colocs_maxbeta.tsv")
 ```
 
 ```{r}
-GTExV8_sign_colocs <- read_tsv("data/GTExV8_sign_colocs.tsv.gz")
-eqtlCat_all_sign_colocs <- read_tsv("data/eqtlCat_all_sign_colocs.tsv.gz")
+# # select the files which are not GTEx
+# file_list <- grep(list.files(path="/Users/kerimov/Work/temp_files/coloc_results_merged/results_coloc_ge_maxbeta/", 
+#                              recursive = T, full.names = T), pattern='*GTEx*', invert=TRUE, value=TRUE)
+# 
+# ge_sign_colocs = data.frame()
+# 
+# for (file in file_list){
+#   print(which(file == file_list))
+#   print(file)
+# 
+#   # if the merged dataset does exist, append to it
+#   temp_dataset <-read_tsv(file, trim_ws = TRUE)
+#   temp_dataset <- temp_dataset %>% dplyr::filter(PP.H4.abf>=0.8)
+#   ge_sign_colocs<-rbind(ge_sign_colocs, temp_dataset)
+# }
+
+```
+
+```{r}
+# file_list <- list.files("/Users/kerimov/Work/temp_files/coloc_results_merged/results_coloc_ma_maxbeta/",
+#                         recursive = TRUE, full.names = TRUE)
+# ma_sign_colocs = data.frame()
+# 
+# for (file in file_list){
+#   print(which(file == file_list))
+# 
+#   temp_dataset <-read_tsv(file, trim_ws = TRUE)
+#   temp_dataset <- temp_dataset %>% dplyr::filter(PP.H4.abf>=0.8)
+#   ma_sign_colocs<-rbind(ma_sign_colocs, temp_dataset)
+# }
+# 
+# ma_pheno_meta <- read_tsv("/Users/kerimov/Work/temp_files/phenotype_metadata/HumanHT-12_V4_Ensembl_96_phenotype_metadata.tsv.gz")
+# ma_pheno_meta <- ma_pheno_meta %>%
+#   dplyr::rename(molecular_trait_id = phenotype_id) %>%
+#   select(molecular_trait_id, gene_id)
+# 
+# ma_sign_colocs <- ma_sign_colocs %>%
+#   left_join(ma_pheno_meta) %>%
+#   mutate(molecular_trait_id = gene_id) %>%
+#   select(-gene_id)
+# 
+# eqtlCat_all_sign_colocs <- rbind(ge_sign_colocs, ma_sign_colocs)
+# 
+# write_tsv(eqtlCat_all_sign_colocs, "data/eqtlCat_all_sign_colocs_maxbeta.tsv")
+```
+
+
+First we read necessary data and metadata files and do the preliminary joining operations
+```{r}
+# read other metadata files needed for analysis
+qtl_group_samplesizes <- read_tsv("data/qtl_group_samplesizes.tsv")
+ld_blocks <-  read_tsv("data/ind_regions_Hg38.bed")
+```
+
+```{r}
+GTExV8_sign_colocs <- read_tsv("data/GTExV8_sign_colocs_maxbeta.tsv.gz")
+eqtlCat_all_sign_colocs <- read_tsv("data/eqtlCat_all_sign_colocs_maxbeta.tsv.gz")
 all_sign_colocs <- rbind(GTExV8_sign_colocs, eqtlCat_all_sign_colocs)
 all_sign_colocs <- all_sign_colocs %>% mutate(qtl_subset = gsub(pattern = "GTExV8", replacement = "GTEx", x = qtl_subset))
 all_sign_colocs$qtl_subset %>% table()
@@ -214,7 +257,12 @@ temp_plot <- ggplot(gwas_colocs, aes(x = sample_size, y = n_unique_novel_ld_bloc
   theme(plot.title = element_text(size = 10)) +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
 
-temp_plot
+ggplotly_plot <- plotly::ggplotly(temp_plot)
+  htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
+                          file = file.path(normalizePath(paste0(output_dir, "/plotly")),
+                                           paste0("LC_scatter_plot.html")),
+                          libdir = "dependencies")
+
 
 ggsave(filename = "manuscript_needed_plots/LC_novel_coloc_plot_ge.pdf", plot = temp_plot, width = 3, height = 3)
 ```
