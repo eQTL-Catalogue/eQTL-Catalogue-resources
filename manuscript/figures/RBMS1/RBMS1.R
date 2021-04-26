@@ -98,24 +98,17 @@ ggsave("RBMS1_manhattan.pdf", plot = manhattan, width = 4, height = 3)
 
 # Make colocalisation figure
 #Import all coloc results
-#files_list = list.files("LC-ebi-a-GCST004627_rnaseq/")
-#paths = paste0("LC-ebi-a-GCST004627_rnaseq/", files_list)
-#path_list = setNames(as.list(paths), files_list)
-#coloc_res = purrr::map_df(path_list, ~readr::read_tsv(.), .id = "dataset")
-#rbms1_colocs = dplyr::filter(coloc_res, molecular_trait_id == "ENSG00000153250", variant == "chr2_160468964_A_T") %>%
-#  dplyr::mutate(qtl_subset = stringr::str_replace(qtl_subset, pattern = "BLUEPRINT_SE", replacement = "BLUEPRINT")) %>%
-#  dplyr::mutate(qtl_subset = stringr::str_replace(qtl_subset, pattern = "BLUEPRINT_PE", replacement = "BLUEPRINT"))
+files_list = list.files("/Users/kerimov/Work/temp_files/coloc_results_merged/results_coloc_ge_maxbeta/LC-ebi-a-GCST004627/")
+paths = paste0("/Users/kerimov/Work/temp_files/coloc_results_merged/results_coloc_ge_maxbeta/LC-ebi-a-GCST004627/", files_list)
+path_list = setNames(as.list(paths), files_list)
+coloc_res = purrr::map_df(path_list, ~readr::read_tsv(.), .id = "dataset")
 
+# rbms1_colocs = dplyr::filter(coloc_res, molecular_trait_id == "ENSG00000153250", variant == "chr2_160430631_G_A") %>%
+rbms1_colocs = dplyr::filter(coloc_res, variant == "chr2_160430631_G_A") %>%
+ dplyr::mutate(qtl_subset = stringr::str_replace(qtl_subset, pattern = "BLUEPRINT_SE", replacement = "BLUEPRINT")) %>%
+ dplyr::mutate(qtl_subset = stringr::str_replace(qtl_subset, pattern = "BLUEPRINT_PE", replacement = "BLUEPRINT"))
 
-#Import all coloc results
-#files_list = list.files("LC-ebi-a-GCST004627_GTEx_V8/")
-#paths = paste0("LC-ebi-a-GCST004627_GTEx_V8/", files_list)
-#path_list = setNames(as.list(paths), files_list)
-#coloc_res = purrr::map_df(path_list, ~readr::read_tsv(.), .id = "dataset")
-#gtex_colocs = dplyr::filter(coloc_res, molecular_trait_id == "ENSG00000153250", variant == "chr2_160468964_A_T")
-
-#rbms1_colocs = dplyr::bind_rows(rbms1_colocs, gtex_colocs)
-#write.table(rbms1_colocs, "rbms1_coloc_results.tsv", sep = "\t", row.names = F, quote = F)
+# write.table(rbms1_colocs, "rbms1_coloc_results.tsv", sep = "\t", row.names = F, quote = F)
 rbms1_colocs = read.table("rbms1_coloc_results.tsv", header = TRUE, stringsAsFactors = F)
 
 #Visualise
@@ -127,8 +120,12 @@ coloc_plot = ggplot(rbms1_colocs, aes(x = PP.H3.abf, y = PP.H4.abf, label = qtl_
   ylab("PP4 (shared causal variant)")
 ggsave("RBMS1_coloc_plot.pdf", plot = coloc_plot, width = 3, height = 3)
 
+ggplotly_plot <- plotly::ggplotly(coloc_plot)
+htmlwidgets::saveWidget(widget = plotly::as_widget(ggplotly_plot),
+                        file = "coloc_RBMS1.html",
+                        libdir = "dependencies")
 
-#Import Quach credible set
-quach_cs= readr::read_tsv("ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/credible_sets/Quach_2016.monocyte_LPS_ge.purity_filtered.txt.gz") %>%
-  dplyr::filter(phenotype_id == "ENSG00000153250")
+# #Import Quach credible set
+# quach_cs= readr::read_tsv("ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/credible_sets/Quach_2016.monocyte_LPS_ge.purity_filtered.txt.gz") %>%
+#   dplyr::filter(phenotype_id == "ENSG00000153250")
 
