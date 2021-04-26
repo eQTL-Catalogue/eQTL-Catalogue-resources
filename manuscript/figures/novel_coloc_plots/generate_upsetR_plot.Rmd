@@ -18,41 +18,39 @@ library(UpSetR)
 
 First we read necessary data and metadata files and do the preliminary joining operations
 ```{r}
-# read all the necessary coloc data
-eqtlCat_rnaseq_sign_colocs_ge <- rbind(read_tsv("data/eqtlCat_all_sign_colocs.tsv.gz"), read_tsv("data/GTExV8_sign_colocs.tsv.gz"))
+microarray_datasets <- c(
+    "CEDAR.B-cell_CD19_microarray",
+    "CEDAR.ileum_microarray",
+    "CEDAR.monocyte_CD14_microarray",
+    "CEDAR.neutrophil_CD15_microarray",
+    "CEDAR.platelet_microarray",
+    "CEDAR.rectum_microarray",
+    "CEDAR.T-cell_CD4_microarray",
+    "CEDAR.T-cell_CD8_microarray",
+    "CEDAR.transverse_colon_microarray",
+    "Fairfax_2012.B-cell_CD19_microarray",
+    "Fairfax_2014.monocyte_IFN24_microarray",
+    "Fairfax_2014.monocyte_LPS2_microarray",
+    "Fairfax_2014.monocyte_LPS24_microarray",
+    "Fairfax_2014.monocyte_naive_microarray",
+    "Kasela_2017.T-cell_CD4_microarray",
+    "Kasela_2017.T-cell_CD8_microarray",
+    "Naranbhai_2015.neutrophil_CD16_microarray"
+  )
+
+# read all the necessary coloc data (Microrray data is also in the eqtlCat_all_sign_colocs_maxbeta table summarised by gene_id)
+eqtlCat_rnaseq_sign_colocs_ge_with_ma <- rbind(read_tsv("data/eqtlCat_all_sign_colocs_maxbeta.tsv.gz"), read_tsv("data/GTExV8_sign_colocs_maxbeta.tsv.gz"))
 eqtlCat_rnaseq_sign_colocs_tx <- rbind(read_tsv("data/tx_sign_colocs.tsv.gz"), read_tsv("data/GTExV8_sign_colocs_tx.tsv.gz"))
 eqtlCat_rnaseq_sign_colocs_txrev <- rbind(read_tsv("data/txrev_sign_colocs.tsv.gz"), read_tsv("data/GTExV8_sign_colocs_txrev.tsv.gz"))
 eqtlCat_rnaseq_sign_colocs_exon <- rbind(read_tsv("data/exon_sign_colocs.tsv.gz"), read_tsv("data/GTExV8_sign_colocs_exon.tsv.gz"))
+
+eqtlCat_rnaseq_sign_colocs_ge <- eqtlCat_rnaseq_sign_colocs_ge %>% filter(!qtl_subset %in% microarray_datasets)
 
 # read LD block metadata
 ld_blocks <-  read_tsv("data/ind_regions_Hg38.bed")
 
 gwas_ids <- eqtlCat_rnaseq_sign_colocs_ge %>% pull(gwas_id) %>% unique()
 gwas_ids
-```
-
-```{r}
-# this is only if microarray studies are needed
-
-# eqtlCat_ma_sign_colocs <- read_colocs_to_df(file_dir = "../data/coloc_results/results_coloc_eQTLCatR3_microarray_15Sept2020/", PP.H4.abf>=0.8)
-# 
-# eqtlCat_ma_sign_colocs <- eqtlCat_ma_sign_colocs %>% filter(!gwas_id %in% c("RA-ieu-a-833", "HPT-ukb-a-531")) 
-# # replace probeIDs with geneIDs in microarray colocs
-# ma_pheno_meta <- read_tsv("../data/phenotype_metadata/HumanHT-12_V4_Ensembl_96_phenotype_metadata.tsv.gz") %>%
-#   select(phenotype_id, gene_id)
-# colnames(ma_pheno_meta) <- c("molecular_trait_id", "gene_id")
-# 
-# eqtlCat_ma_sign_colocs_replaced <- eqtlCat_ma_sign_colocs %>%
-#   left_join(ma_pheno_meta) %>%
-#   mutate(molecular_trait_id = gene_id) %>%
-#   select(-gene_id)
-# 
-# eqtlCat_ma_sign_colocs_replaced$gene_id <- eqtlCat_ma_sign_colocs_replaced$molecular_trait_id
-# 
-# # row binf rnaseq and microarray colocs into one df
-# eqtlCat_all_sign_colocs_ge <- rbind(eqtlCat_rnaseq_sign_colocs_ge, eqtlCat_ma_sign_colocs_replaced)
-
-
 ```
 
 
@@ -90,6 +88,7 @@ eqtlcat_colocs_with_ldblocks_exon = sqldf::sqldf("
 
 ```{r}
 # Just for explorative analysis
+# counts of unqiue LD blocks across GWASes (not for individual GWAS)
 unique(eqtlcat_colocs_with_ldblocks_ge$ID_hg38) %>% length() 
 unique(eqtlcat_colocs_with_ldblocks_tx$ID_hg38) %>% length() 
 unique(eqtlcat_colocs_with_ldblocks_txrev$ID_hg38) %>% length() 
@@ -142,7 +141,6 @@ for (gwasid in gwas_ids) {
   eqtlcat_colocs_with_ldblocks_txrev_total <- eqtlcat_colocs_with_ldblocks_txrev_total %>% rbind(eqtlcat_colocs_with_ldblocks_txrev_gwas)
   eqtlcat_colocs_with_ldblocks_exon_total <- eqtlcat_colocs_with_ldblocks_exon_total %>% rbind(eqtlcat_colocs_with_ldblocks_exon_gwas)
   
-  
   # listInputUniqueLDBlockCountGWAS <- list(ge = eqtlcat_colocs_with_ldblocks_ge_gwas$ldgwas,
   #                                             tx = eqtlcat_colocs_with_ldblocks_tx_gwas$ldgwas,
   #                                             txrev = eqtlcat_colocs_with_ldblocks_txrev_gwas$ldgwas,
@@ -167,6 +165,7 @@ upsetR_plot_unique_ld_blocks <- upset(fromList(listInput_colocs_with_ldblocks_pe
       sets.x.label = "No of colocalisations")
 
 upsetR_plot_unique_ld_blocks
+# saved as pdf height = 4.2, width = 5
 ```
 
 
