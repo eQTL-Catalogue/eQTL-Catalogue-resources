@@ -10,7 +10,7 @@ plt = ggplot(sizes, aes(x=`Assigned population`, `Sample Size`))+
   geom_col() +
   xlab("Assigned population") + 
   ylab("Sample size") +
-  geom_text(aes(label = paste0(Percent,"%")), vjust = -0.5) + 
+  geom_text(aes(label = paste0(Percent,"%")), vjust = -0.5, size = 3) + 
   theme_light() + 
   theme(panel.grid = element_blank()) +
   ylim(0,5700)
