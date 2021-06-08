@@ -71,6 +71,6 @@ UBERON_0000995	uterus	uterus
 UBERON_0000996	vagina	vagina
 UBERON_0001987	placenta	placenta
 CL_0000182	hepatocyte	hepatocyte
-UBERON_0007616	layer of synovial tissue	layer of synovial tissue
-UBERON_0002418	cartilage tissue	cartilage tissue
-CL_0000129	microglial cell	microglial cell
+UBERON_0007616	layer of synovial tissue	synovial
+UBERON_0002418	cartilage tissue	cartilage
+CL_0000129	microglial cell	microglia
