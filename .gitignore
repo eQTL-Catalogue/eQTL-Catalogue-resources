@@ -17,3 +17,5 @@ manuscript/figures/*/*.pdf
 manuscript/figures/*/*.html
 tutorials/*.tbi
 manuscript/figures/HMGCR/HipSci_HMGCR_exon.tsv.gz
+manuscript/figures/HMGCR/sparcity_heatmaps
+manuscript/figures/median_TPM_MDS/median_TPMS

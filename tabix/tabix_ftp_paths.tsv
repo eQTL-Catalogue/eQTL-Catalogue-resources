@@ -396,3 +396,55 @@ GTEx	vagina	UBERON_0000996	vagina	vagina	naive	ge	88	ftp://ftp.ebi.ac.uk/pub/dat
 GTEx	vagina	UBERON_0000996	vagina	vagina	naive	exon	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_vagina.all.tsv.gz
 GTEx	vagina	UBERON_0000996	vagina	vagina	naive	tx	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_vagina.all.tsv.gz
 GTEx	vagina	UBERON_0000996	vagina	vagina	naive	txrev	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_vagina.all.tsv.gz
+Braineac2	putamen	UBERON_0001874	putamen	brain (putamen)	naive	ge	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/ge/Braineac2_ge_putamen.all.tsv.gz
+Braineac2	putamen	UBERON_0001874	putamen	brain (putamen)	naive	exon	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/exon/Braineac2_exon_putamen.all.tsv.gz
+Braineac2	putamen	UBERON_0001874	putamen	brain (putamen)	naive	tx	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/tx/Braineac2_tx_putamen.all.tsv.gz
+Braineac2	putamen	UBERON_0001874	putamen	brain (putamen)	naive	txrev	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/txrev/Braineac2_txrev_putamen.all.tsv.gz
+Braineac2	substantia_nigra	UBERON_0002038	substantia_nigra	brain (substantia_nigra)	naive	ge	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/ge/Braineac2_ge_substantia_nigra.all.tsv.gz
+Braineac2	substantia_nigra	UBERON_0002038	substantia_nigra	brain (substantia_nigra)	naive	exon	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/exon/Braineac2_exon_substantia_nigra.all.tsv.gz
+Braineac2	substantia_nigra	UBERON_0002038	substantia_nigra	brain (substantia_nigra)	naive	tx	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/tx/Braineac2_tx_substantia_nigra.all.tsv.gz
+Braineac2	substantia_nigra	UBERON_0002038	substantia_nigra	brain (substantia_nigra)	naive	txrev	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/txrev/Braineac2_txrev_substantia_nigra.all.tsv.gz
+CommonMind	DLPFC_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	590	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CommonMind/ge/CommonMind_ge_DLPFC_naive.all.tsv.gz
+CommonMind	DLPFC_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	590	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CommonMind/exon/CommonMind_exon_DLPFC_naive.all.tsv.gz
+CommonMind	DLPFC_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	590	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CommonMind/tx/CommonMind_tx_DLPFC_naive.all.tsv.gz
+CommonMind	DLPFC_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	590	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CommonMind/txrev/CommonMind_txrev_DLPFC_naive.all.tsv.gz
+CAP	LCL_naive	EFO_0005292	lymphoblastoid cell line	LCL	naive	ge	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/ge/CAP_ge_LCL_naive.all.tsv.gz
+CAP	LCL_naive	EFO_0005292	lymphoblastoid cell line	LCL	naive	exon	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/exon/CAP_exon_LCL_naive.all.tsv.gz
+CAP	LCL_naive	EFO_0005292	lymphoblastoid cell line	LCL	naive	tx	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/tx/CAP_tx_LCL_naive.all.tsv.gz
+CAP	LCL_naive	EFO_0005292	lymphoblastoid cell line	LCL	naive	txrev	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/txrev/CAP_txrev_LCL_naive.all.tsv.gz
+CAP	LCL_statin	EFO_0005292	lymphoblastoid cell line	LCL	statin	ge	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/ge/CAP_ge_LCL_statin.all.tsv.gz
+CAP	LCL_statin	EFO_0005292	lymphoblastoid cell line	LCL	statin	exon	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/exon/CAP_exon_LCL_statin.all.tsv.gz
+CAP	LCL_statin	EFO_0005292	lymphoblastoid cell line	LCL	statin	tx	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/tx/CAP_tx_LCL_statin.all.tsv.gz
+CAP	LCL_statin	EFO_0005292	lymphoblastoid cell line	LCL	statin	txrev	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/txrev/CAP_txrev_LCL_statin.all.tsv.gz
+iPSCORE	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	ge	107	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/iPSCORE/ge/iPSCORE_ge_iPSC.all.tsv.gz
+iPSCORE	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	exon	107	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/iPSCORE/exon/iPSCORE_exon_iPSC.all.tsv.gz
+iPSCORE	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	tx	107	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/iPSCORE/tx/iPSCORE_tx_iPSC.all.tsv.gz
+iPSCORE	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	txrev	107	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/iPSCORE/txrev/iPSCORE_txrev_iPSC.all.tsv.gz
+Peng_2018	placenta_naive	UBERON_0001987	placenta	placenta	naive	ge	149	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Peng_2018/ge/Peng_2018_ge_placenta_naive.all.tsv.gz
+Peng_2018	placenta_naive	UBERON_0001987	placenta	placenta	naive	exon	149	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Peng_2018/exon/Peng_2018_exon_placenta_naive.all.tsv.gz
+Peng_2018	placenta_naive	UBERON_0001987	placenta	placenta	naive	tx	149	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Peng_2018/tx/Peng_2018_tx_placenta_naive.all.tsv.gz
+Peng_2018	placenta_naive	UBERON_0001987	placenta	placenta	naive	txrev	149	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Peng_2018/txrev/Peng_2018_txrev_placenta_naive.all.tsv.gz
+PhLiPS	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	ge	86	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/ge/PhLiPS_ge_iPSC.all.tsv.gz
+PhLiPS	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	exon	86	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/exon/PhLiPS_exon_iPSC.all.tsv.gz
+PhLiPS	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	tx	86	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/tx/PhLiPS_tx_iPSC.all.tsv.gz
+PhLiPS	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	txrev	86	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/txrev/PhLiPS_txrev_iPSC.all.tsv.gz
+PhLiPS	HLC	CL_0000182	HLC	hepatocyte	naive	ge	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/ge/PhLiPS_ge_HLC.all.tsv.gz
+PhLiPS	HLC	CL_0000182	HLC	hepatocyte	naive	exon	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/exon/PhLiPS_exon_HLC.all.tsv.gz
+PhLiPS	HLC	CL_0000182	HLC	hepatocyte	naive	tx	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/tx/PhLiPS_tx_HLC.all.tsv.gz
+PhLiPS	HLC	CL_0000182	HLC	hepatocyte	naive	txrev	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/txrev/PhLiPS_txrev_HLC.all.tsv.gz
+Steinberg_2020	synovium_naive	UBERON_0007616	layer of synovial tissue	layer of synovial tissue	naive	ge	72	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/ge/Steinberg_2020_ge_synovium_naive.all.tsv.gz
+Steinberg_2020	synovium_naive	UBERON_0007616	layer of synovial tissue	layer of synovial tissue	naive	exon	72	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/exon/Steinberg_2020_exon_synovium_naive.all.tsv.gz
+Steinberg_2020	synovium_naive	UBERON_0007616	layer of synovial tissue	layer of synovial tissue	naive	tx	72	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/tx/Steinberg_2020_tx_synovium_naive.all.tsv.gz
+Steinberg_2020	synovium_naive	UBERON_0007616	layer of synovial tissue	layer of synovial tissue	naive	txrev	72	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/txrev/Steinberg_2020_txrev_synovium_naive.all.tsv.gz
+Steinberg_2020	low_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage tissue	naive	ge	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/ge/Steinberg_2020_ge_low_grade_cartilage_naive.all.tsv.gz
+Steinberg_2020	low_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage tissue	naive	exon	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/exon/Steinberg_2020_exon_low_grade_cartilage_naive.all.tsv.gz
+Steinberg_2020	low_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage tissue	naive	tx	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/tx/Steinberg_2020_tx_low_grade_cartilage_naive.all.tsv.gz
+Steinberg_2020	low_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage tissue	naive	txrev	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/txrev/Steinberg_2020_txrev_low_grade_cartilage_naive.all.tsv.gz
+Steinberg_2020	high_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage tissue	naive	ge	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/ge/Steinberg_2020_ge_high_grade_cartilage_naive.all.tsv.gz
+Steinberg_2020	high_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage tissue	naive	exon	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/exon/Steinberg_2020_exon_high_grade_cartilage_naive.all.tsv.gz
+Steinberg_2020	high_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage tissue	naive	tx	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/tx/Steinberg_2020_tx_high_grade_cartilage_naive.all.tsv.gz
+Steinberg_2020	high_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage tissue	naive	txrev	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/txrev/Steinberg_2020_txrev_high_grade_cartilage_naive.all.tsv.gz
+Young_2019	microglia_naive	CL_0000129	microglial cell	microglial cell	naive	ge	104	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Young_2019/ge/Young_2019_ge_microglia_naive.all.tsv.gz
+Young_2019	microglia_naive	CL_0000129	microglial cell	microglial cell	naive	exon	104	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Young_2019/exon/Young_2019_exon_microglia_naive.all.tsv.gz
+Young_2019	microglia_naive	CL_0000129	microglial cell	microglial cell	naive	tx	104	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Young_2019/tx/Young_2019_tx_microglia_naive.all.tsv.gz
+Young_2019	microglia_naive	CL_0000129	microglial cell	microglial cell	naive	txrev	104	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Young_2019/txrev/Young_2019_txrev_microglia_naive.all.tsv.gz

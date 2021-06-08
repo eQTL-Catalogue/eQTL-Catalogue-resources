@@ -116,3 +116,18 @@ GTEx	testis	testis	UBERON_0000473	testis
 GTEx	thyroid	thyroid	UBERON_0002046	thyroid gland
 GTEx	uterus	uterus	UBERON_0000995	uterus
 GTEx	vagina	vagina	UBERON_0000996	vagina
+Braineac2	putamen	putamen	UBERON_0001874	putamen
+Braineac2	substantia_nigra	substantia_nigra	UBERON_0002038	substantia nigra
+Peng_2018	placenta	placenta_naive	UBERON_0001987	placenta
+PhLiPS	iPSC	iPSC	EFO_0004905	induced pluripotent stem cell
+PhLiPS	HLC	HLC	CL_0000182	hepatocyte
+Young_2019	microglia	microglia_naive	CL_0000129	microglial cell
+CAP	LCL	LCL_naive	EFO_0005292	lymphoblastoid cell line
+CAP	LCL	LCL_statin	EFO_0005292	lymphoblastoid cell line
+CommonMind	DLPFC	DLPFC_naive	UBERON_0009834	dorsolateral prefrontal cortex
+iPSCORE	iPSC	iPSC	EFO_0004905	induced pluripotent stem cell
+iPSCORE	iPSC-CM	iPSC-CM	CL_0000746	cardiac muscle cell
+iPSCORE	iPSC-CVPC	iPSC-CVPC	UBERON_0002348	epicardium
+Steinberg_2020	synovium	synovium_naive	UBERON_0007616	layer of synovial tissue
+Steinberg_2020	low_grade_cartilage	low_grade_cartilage_naive	UBERON_0002418	cartilage tissue
+Steinberg_2020	high_grade_cartilage	high_grade_cartilage_naive	UBERON_0002418	cartilage tissue
