@@ -8,3 +8,4 @@ This repository contains various resources related to the [eQTL Catalogue](https
 
 ## Data tables
  * [Metadata for tabix-indexed summary statistics files.](https://github.com/eQTL-Catalogue/eQTL-Catalogue-resources/blob/master/tabix/tabix_ftp_paths.tsv)
+ * [Assignment of indviduals to 1000 Genomes superpopulations.](https://github.com/eQTL-Catalogue/eQTL-Catalogue-resources/blob/master/data_tables/population_assignments.tsv)
