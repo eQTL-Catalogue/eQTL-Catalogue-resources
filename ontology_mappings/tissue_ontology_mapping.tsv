@@ -131,3 +131,4 @@ iPSCORE	iPSC-CVPC	iPSC-CVPC	UBERON_0002348	epicardium
 Steinberg_2020	synovium	synovium_naive	UBERON_0007616	layer of synovial tissue
 Steinberg_2020	low_grade_cartilage	low_grade_cartilage_naive	UBERON_0002418	cartilage tissue
 Steinberg_2020	high_grade_cartilage	high_grade_cartilage_naive	UBERON_0002418	cartilage tissue
+Gilchrist_2021	NK-cell	NK-cell_naive	CL_0000623	natural killer cell
