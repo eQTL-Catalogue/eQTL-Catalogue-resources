@@ -35,10 +35,10 @@
 
 # Column names of the fine mapping credible set files from SuSiE
 
-* **phenotype_id** - same as **molecular_trait_id** above 
-* **variant_id** - The variant ID (chromosome_position_ref_alt) e.g. chr19_226776_C_T. Based on GRCh38 coordinates and reference genome. The chromosome, position, ref and alt values should exactly match same fields in the summary statistics file, with 'chr' prefix added to the chromosome number.  
-* **chr** - GRCh38 chromosome name of the variant (e.g. 1,2,3 ...,X).
-* **pos** - GRCh38 position of the variant.
+* **molecular_trait_id** - ID of the molecular trait used for QTL mapping. Depending on the quantification method used, this can be either a gene id, exon id, transcript id or a txrevise promoter, splicing or 3'end event id. Examples: ENST00000356937, ENSG00000008128.
+* **variant** - The variant ID (chromosome_position_ref_alt) e.g. chr19_226776_C_T. Based on GRCh38 coordinates and reference genome. The chromosome, position, ref and alt values should exactly match same fields in the summary statistics file, with 'chr' prefix added to the chromosome number.  
+* **chromosome** - GRCh38 chromosome name of the variant (e.g. 1,2,3 ...,X).
+* **position** - GRCh38 position of the variant.
 * **ref** - GRCh38 reference allele.
 * **alt** - GRCh38 alternative allele (also the effect allele).
 * **cs_id** - unique ID for each credible set within a dataset
@@ -47,7 +47,7 @@
 * **pip** - posterior inclusion probability the variant
 * **z** - univariate z-score for the variant
 * **cs_min_r2** - minimal LD (r2) between any two variants in the credible set
-* **cs_avg_r2** - average LD between pairs of variants within a credible set
+* **cs_avg_r2** - average LD (r2) between pairs of variants within a credible set
 * **cs_size** - credible set size 
 * **posterior_mean**  
 * **posterior_sd**
