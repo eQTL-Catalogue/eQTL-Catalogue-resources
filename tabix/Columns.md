@@ -12,6 +12,7 @@
 * **se** - Standard error of the beta.
 * **an** - Total number of alleles. For autosomal variants, this is usually two times the sample size. Conversly, for autosomal variants, sample size is equal to an/2.
 * **ac** - Count of the alternative allele. 
+* **ma_samples** - Number of samples carrying at least one copy of the minor allele.
 * **chromosome** - GRCh38 chromosome name of the variant (e.g. 1,2,3 ...,X).
 * **position** - GRCh38 position of the variant.
 * **ref** - GRCh38 reference allele.
