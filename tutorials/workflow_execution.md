@@ -9,29 +9,50 @@ Data processing for the eQTL Catalogue is based on the four main workflows:
 ## Step 1: Genotype imputation with [eQTL-Catalogue/genimpute](https://github.com/eQTL-Catalogue/genimpute)
 
 #### Input
-Raw genotype data in PLINK binary format (.bed, .bim, .fam) using GRCh37 coordinates. If your data is in VCF format, then you need to first convert it to PLINK format with:
+1. Raw genotype data in PLINK binary format (.bed, .bim, .fam) and using GRCh37 coordinates. 
+
+For an example, you can download the raw genotypes from the [CEDAR](https://doi.org/10.5281/zenodo.6171348) dataset from Zenodo:
+
+```bash
+wget https://zenodo.org/record/6171348/files/CEDAR_HumanOmniExpress-12v1.tar.gz
+tar -xzfv CEDAR_HumanOmniExpress-12v1.tar.gz
+```
+
+If your data is in VCF format, then you need to first convert it to PLINK format with:
 
 ```bash
 plink --vcf <path_to_vcf_file> --make-bed --out <plink_file_prefix>
 
 ```
 
-Optionally, you can also immediately also check if there are some individual with many missing genotypes (see manual QC steps below). If there are then you should probably exclude those individuals, because their presence can cause the imputation workflow to fail.
+Optionally, you can also immediately check if there are some individual with many missing genotypes (see manual QC steps below). Individual samples with high levels of missingness (e.g. > 5%) should be excluded, because their presence can cause the imputation workflow to fail.
 
 ```bash
 plink --bfile <plink_file_prefix> --missing
 ```
 
+2. Imputation and phasing reference panel.
+
+You can download eQTL Catalogue [1000 Genomes 30x on GRCh38](https://www.internationalgenome.org/data-portal/data-collection/30x-grch38) reference panel from Zenodo:
+
+```bash
+wget <zenodo_path>/genimpute_complete_reference.tar.gz
+tar -xzfv genimpute_complete_reference.tar.gz
+```
+Note that the default paths to the phasing and imputation reference panels are specified in the `nextflow.config` file. If you place the `genimpute_complete_reference` folder into the genimpute workflow directory, then the paths should already be correct. If you decide to put the reference panel files somewhere else then you also need to modiy the corresponding paths in the `nextflow.config` file. 
+
 #### Output
-Imputed genotypes in VCF format lifted to GRCh38 coordinates.
+Imputed genotypes in VCF format using GRCh38 coordinates.
 
 #### Running the workflow
 ```bash
-nextflow run main.nf -profile eqtl_catalogue -resume\
-  --bfile <path_to_plink_file_prefix>\
-  --harmonise_genotypes true\
-  --output_name <output_prefix>\
-  --outdir <path_to_output_dir>
+nextflow run main.nf \
+  -profile tartu_hpc -resume\
+  --bfile CEDAR_HumanOmniExpress-12v1/CEDAR\
+  --output_name CEDAR\
+  --outdir CEDAR\
+  --impute_PAR true\
+  --impute_non_PAR true
 ```
 
 #### Manual QC steps
