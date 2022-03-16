@@ -48,7 +48,7 @@ Imputed genotypes in VCF format using GRCh38 coordinates.
 ```bash
 nextflow run main.nf \
   -profile tartu_hpc -resume\
-  --bfile CEDAR_HumanOmniExpress-12v1/CEDAR\
+  --bfile plink_genimpute/CEDAR\
   --output_name CEDAR\
   --outdir CEDAR\
   --impute_PAR true\
