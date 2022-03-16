@@ -125,6 +125,14 @@ nextflow run main.nf\
 #### Input
 1. Normalised moleocular trait files from the qcnorm workflow. **NOTE:** The studyFile from qcnorm `(qcnorm_output_directory>/<study_name>/<study_name>_qtlmap_inputs.tsv)` contains relative paths. You should either copy the qcnorm output directory to the qtlmap directory or create a symlink with the same name. 
 
+2. Mapping file form unique variant ids (CHR_POS_REF_ALT) to rsids (--varid_rsid_map_file parameter).
+
+The mapping file can be downloaded from Zenodo:
+
+```bash
+wget https://zenodo.org/record/6034023/files/dbSNP_b151_GRCh38p7_splitted_var_rsid.vcf.gz
+```
+
 #### Output
 
 #### Running the workflow
@@ -133,7 +141,7 @@ nextflow run main.nf\
 nextflow run main.nf -profile eqtl_catalogue\
   --studyFile <qcnorm_output_directory>/<study_name>/<study_name>_qtlmap_inputs.tsv\
   --vcf_has_R2_field FALSE\
-  --varid_rsid_map_file testdata/varid_rsid_map.tsv.gz\
+  --varid_rsid_map_file dbSNP_b151_GRCh38p7_splitted_var_rsid.vcf.gz\
   --n_batches 200
 ```
 
