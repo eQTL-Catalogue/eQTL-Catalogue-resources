@@ -1,0 +1,2 @@
+qtl_subset	count_matrix	pheno_meta	sample_meta	vcf	tpm_file
+CEDAR_platelet	testdata/CEDAR.platelet.tsv.gz	data/HumanHT-12_V4_Ensembl_96_phenotype_metadata.tsv.gz	data/CEDAR_sample_metadata.tsv	data/CEDAR_genimpute_200921.vcf.gz	null.txt
