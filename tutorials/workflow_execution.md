@@ -145,4 +145,66 @@ nextflow run main.nf -profile eqtl_catalogue\
   --n_batches 200
 ```
 
+### Running the workflow on the CEDAR dataset
 
+##### Download input data
+
+1. Make a new folder for the input data
+
+```bash
+mkdir data
+cd data
+```
+
+2. Download imputed genotypes (from the eQTL-Catalogue/genimpute workflow)
+
+```bash
+wget https://zenodo.org/record/6171348/files/CEDAR_genimpute_200921.vcf.gz
+wget https://zenodo.org/record/6171348/files/CEDAR_genimpute_200921.vcf.gz.csi
+```
+
+3. Download normalised gene expression matrix (from the eQTL-Catalogue/qcnorm workflow)
+
+```bash
+wget https://zenodo.org/record/6171348/files/CEDAR.platelet.tsv.gz
+```
+
+4. Download sample metadata
+
+```bash
+wget https://zenodo.org/record/6171348/files/CEDAR_sample_metadata.tsv
+```
+
+5. Download molecular trait metadata
+
+```bash
+wget https://zenodo.org/record/3366011/files/HumanHT-12_V4_Ensembl_96_phenotype_metadata.tsv.gz
+```
+
+6. Study file mapping all of the input files to correct workflow parameters
+
+```bash
+wget https://raw.githubusercontent.com/eQTL-Catalogue/eQTL-Catalogue-resources/master/tutorials/CEDAR_study_file.tsv
+```
+
+7. Download mapping from unique variant ids to rsids
+
+```bash
+wget https://zenodo.org/record/6034023/files/dbSNP_b151_GRCh38p7_splitted_var_rsid.vcf.gz
+```
+
+#### Run qtlmap
+
+```bash
+nextflow run main.nf -profile tartu_hpc\
+   --studyFile data/CEDAR_study_file.tsv\
+    --vcf_has_R2_field true\
+    --run_permutation true\
+    --run_nominal true\
+    --run_susie true\
+    --vcf_genotype_field DS\
+    --n_batches 200\
+    --covariates sex\
+    --varid_rsid_map_file data/dbSNP_b151_GRCh38p7_splitted_var_rsid.vcf.gz\
+    -resume
+```
