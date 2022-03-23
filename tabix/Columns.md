@@ -34,7 +34,7 @@
 * **p_perm** - Empirical p-value calculated from 1000 permutations.
 * **p_beta** - Estimated empirical p-value based on the beta distribution. This is the column that you want to use for filtering the results. See the FastQTL [paper](http://dx.doi.org/10.1093/bioinformatics/btv722) for more details. 
 
-# Column names of the fine mapping credible set files from SuSiE
+# Column names of the fine mapped credible set files from SuSiE
 
 * **molecular_trait_id** - ID of the molecular trait used for QTL mapping. Depending on the quantification method used, this can be either a gene id, exon id, transcript id or a txrevise promoter, splicing or 3'end event id. Examples: ENST00000356937, ENSG00000008128.
 * **variant** - The variant ID (chromosome_position_ref_alt) e.g. chr19_226776_C_T. Based on GRCh38 coordinates and reference genome. The chromosome, position, ref and alt values should exactly match same fields in the summary statistics file, with 'chr' prefix added to the chromosome number.  
