@@ -1,450 +1,455 @@
 study	qtl_group	tissue_ontology_id	tissue_ontology_term	tissue_label	condition_label	quant_method	sample_size	ftp_path
-Alasoo_2018	macrophage_naive	CL_0000235	macrophage	macrophage	naive	ge	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/ge/Alasoo_2018_ge_macrophage_naive.all.tsv.gz
-Alasoo_2018	macrophage_naive	CL_0000235	macrophage	macrophage	naive	exon	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/exon/Alasoo_2018_exon_macrophage_naive.all.tsv.gz
-Alasoo_2018	macrophage_naive	CL_0000235	macrophage	macrophage	naive	tx	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/tx/Alasoo_2018_tx_macrophage_naive.all.tsv.gz
-Alasoo_2018	macrophage_naive	CL_0000235	macrophage	macrophage	naive	txrev	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/txrev/Alasoo_2018_txrev_macrophage_naive.all.tsv.gz
-Alasoo_2018	macrophage_IFNg	CL_0000235	macrophage	macrophage	IFNg_18h	ge	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/ge/Alasoo_2018_ge_macrophage_IFNg.all.tsv.gz
-Alasoo_2018	macrophage_IFNg	CL_0000235	macrophage	macrophage	IFNg_18h	exon	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/exon/Alasoo_2018_exon_macrophage_IFNg.all.tsv.gz
-Alasoo_2018	macrophage_IFNg	CL_0000235	macrophage	macrophage	IFNg_18h	tx	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/tx/Alasoo_2018_tx_macrophage_IFNg.all.tsv.gz
-Alasoo_2018	macrophage_IFNg	CL_0000235	macrophage	macrophage	IFNg_18h	txrev	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/txrev/Alasoo_2018_txrev_macrophage_IFNg.all.tsv.gz
-Alasoo_2018	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	ge	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/ge/Alasoo_2018_ge_macrophage_Salmonella.all.tsv.gz
-Alasoo_2018	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	exon	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/exon/Alasoo_2018_exon_macrophage_Salmonella.all.tsv.gz
-Alasoo_2018	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	tx	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/tx/Alasoo_2018_tx_macrophage_Salmonella.all.tsv.gz
-Alasoo_2018	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	txrev	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/txrev/Alasoo_2018_txrev_macrophage_Salmonella.all.tsv.gz
-Alasoo_2018	macrophage_IFNg+Salmonella	CL_0000235	macrophage	macrophage	IFNg_18h+Salmonella_5h	ge	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/ge/Alasoo_2018_ge_macrophage_IFNg+Salmonella.all.tsv.gz
-Alasoo_2018	macrophage_IFNg+Salmonella	CL_0000235	macrophage	macrophage	IFNg_18h+Salmonella_5h	exon	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/exon/Alasoo_2018_exon_macrophage_IFNg+Salmonella.all.tsv.gz
-Alasoo_2018	macrophage_IFNg+Salmonella	CL_0000235	macrophage	macrophage	IFNg_18h+Salmonella_5h	tx	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/tx/Alasoo_2018_tx_macrophage_IFNg+Salmonella.all.tsv.gz
-Alasoo_2018	macrophage_IFNg+Salmonella	CL_0000235	macrophage	macrophage	IFNg_18h+Salmonella_5h	txrev	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Alasoo_2018/txrev/Alasoo_2018_txrev_macrophage_IFNg+Salmonella.all.tsv.gz
-BLUEPRINT	monocyte	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	ge	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/ge/BLUEPRINT_ge_monocyte.all.tsv.gz
-BLUEPRINT	monocyte	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	exon	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/exon/BLUEPRINT_exon_monocyte.all.tsv.gz
-BLUEPRINT	monocyte	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	tx	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/tx/BLUEPRINT_tx_monocyte.all.tsv.gz
-BLUEPRINT	monocyte	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	txrev	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/txrev/BLUEPRINT_txrev_monocyte.all.tsv.gz
-BLUEPRINT	neutrophil	CL_0000775	neutrophil	neutrophil	naive	ge	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/ge/BLUEPRINT_ge_neutrophil.all.tsv.gz
-BLUEPRINT	neutrophil	CL_0000775	neutrophil	neutrophil	naive	exon	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/exon/BLUEPRINT_exon_neutrophil.all.tsv.gz
-BLUEPRINT	neutrophil	CL_0000775	neutrophil	neutrophil	naive	tx	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/tx/BLUEPRINT_tx_neutrophil.all.tsv.gz
-BLUEPRINT	neutrophil	CL_0000775	neutrophil	neutrophil	naive	txrev	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/txrev/BLUEPRINT_txrev_neutrophil.all.tsv.gz
-BLUEPRINT	T-cell	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	ge	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/ge/BLUEPRINT_ge_T-cell.all.tsv.gz
-BLUEPRINT	T-cell	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	exon	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/exon/BLUEPRINT_exon_T-cell.all.tsv.gz
-BLUEPRINT	T-cell	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	tx	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/tx/BLUEPRINT_tx_T-cell.all.tsv.gz
-BLUEPRINT	T-cell	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	txrev	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BLUEPRINT/txrev/BLUEPRINT_txrev_T-cell.all.tsv.gz
-BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/ge/BrainSeq_ge_brain.all.tsv.gz
-BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/exon/BrainSeq_exon_brain.all.tsv.gz
-BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/tx/BrainSeq_tx_brain.all.tsv.gz
-BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/BrainSeq/txrev/BrainSeq_txrev_brain.all.tsv.gz
-CEDAR	T-cell_CD8	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	microarray	277	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_T-cell_CD8.all.tsv.gz
-CEDAR	T-cell_CD4	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	microarray	290	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_T-cell_CD4.all.tsv.gz
-CEDAR	transverse_colon	UBERON_0001157	transverse colon	transverse colon	naive	microarray	286	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_transverse_colon.all.tsv.gz
-CEDAR	monocyte_CD14	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	microarray	286	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_monocyte_CD14.all.tsv.gz
-CEDAR	neutrophil_CD15	CL_0000775	neutrophil	neutrophil	naive	microarray	280	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_neutrophil_CD15.all.tsv.gz
-CEDAR	platelet	CL_0000233	platelet	platelet	naive	microarray	205	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_platelet.all.tsv.gz
-CEDAR	rectum	UBERON_0001052	rectum	rectum	naive	microarray	271	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_rectum.all.tsv.gz
-CEDAR	B-cell_CD19	CL_0000236	B cell	B cell	naive	microarray	262	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_B-cell_CD19.all.tsv.gz
-CEDAR	ileum	UBERON_0002116	ileum	ileum	naive	microarray	180	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CEDAR/microarray/CEDAR_microarray_ileum.all.tsv.gz
-Fairfax_2012	B-cell_CD19	CL_0000236	B cell	B cell	naive	microarray	281	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2012/microarray/Fairfax_2012_microarray_B-cell_CD19.all.tsv.gz
-Fairfax_2014	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	microarray	420	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_microarray_monocyte_naive.all.tsv.gz
-Fairfax_2014	monocyte_IFN24	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	IFNg_24h	microarray	370	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_microarray_monocyte_IFN24.all.tsv.gz
-Fairfax_2014	monocyte_LPS2	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_2h	microarray	256	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_microarray_monocyte_LPS2.all.tsv.gz
-Fairfax_2014	monocyte_LPS24	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_24h	microarray	325	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Fairfax_2014/microarray/Fairfax_2014_microarray_monocyte_LPS24.all.tsv.gz
-GENCORD	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	ge	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/ge/GENCORD_ge_LCL.all.tsv.gz
-GENCORD	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	exon	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/exon/GENCORD_exon_LCL.all.tsv.gz
-GENCORD	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	tx	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/tx/GENCORD_tx_LCL.all.tsv.gz
-GENCORD	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	txrev	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/txrev/GENCORD_txrev_LCL.all.tsv.gz
-GENCORD	fibroblast	CL_0000057	fibroblast	fibroblast	naive	ge	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/ge/GENCORD_ge_fibroblast.all.tsv.gz
-GENCORD	fibroblast	CL_0000057	fibroblast	fibroblast	naive	exon	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/exon/GENCORD_exon_fibroblast.all.tsv.gz
-GENCORD	fibroblast	CL_0000057	fibroblast	fibroblast	naive	tx	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/tx/GENCORD_tx_fibroblast.all.tsv.gz
-GENCORD	fibroblast	CL_0000057	fibroblast	fibroblast	naive	txrev	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/txrev/GENCORD_txrev_fibroblast.all.tsv.gz
-GENCORD	T-cell	CL_0000084	T cell	T cell	naive	ge	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/ge/GENCORD_ge_T-cell.all.tsv.gz
-GENCORD	T-cell	CL_0000084	T cell	T cell	naive	exon	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/exon/GENCORD_exon_T-cell.all.tsv.gz
-GENCORD	T-cell	CL_0000084	T cell	T cell	naive	tx	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/tx/GENCORD_tx_T-cell.all.tsv.gz
-GENCORD	T-cell	CL_0000084	T cell	T cell	naive	txrev	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GENCORD/txrev/GENCORD_txrev_T-cell.all.tsv.gz
-GEUVADIS	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	ge	445	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GEUVADIS/ge/GEUVADIS_ge_LCL.all.tsv.gz
-GEUVADIS	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	exon	445	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GEUVADIS/exon/GEUVADIS_exon_LCL.all.tsv.gz
-GEUVADIS	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	tx	445	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GEUVADIS/tx/GEUVADIS_tx_LCL.all.tsv.gz
-GEUVADIS	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	txrev	445	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GEUVADIS/txrev/GEUVADIS_txrev_LCL.all.tsv.gz
-HipSci	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	ge	322	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/HipSci/ge/HipSci_ge_iPSC.all.tsv.gz
-HipSci	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	exon	322	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/HipSci/exon/HipSci_exon_iPSC.all.tsv.gz
-HipSci	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	tx	322	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/HipSci/tx/HipSci_tx_iPSC.all.tsv.gz
-HipSci	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	txrev	322	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/HipSci/txrev/HipSci_txrev_iPSC.all.tsv.gz
-Kasela_2017	T-cell_CD4	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	microarray	280	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Kasela_2017/microarray/Kasela_2017_microarray_T-cell_CD4.all.tsv.gz
-Kasela_2017	T-cell_CD8	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	microarray	269	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Kasela_2017/microarray/Kasela_2017_microarray_T-cell_CD8.all.tsv.gz
-Lepik_2017	blood	UBERON_0000178	blood	blood	naive	ge	471	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Lepik_2017/ge/Lepik_2017_ge_blood.all.tsv.gz
-Lepik_2017	blood	UBERON_0000178	blood	blood	naive	exon	471	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Lepik_2017/exon/Lepik_2017_exon_blood.all.tsv.gz
-Lepik_2017	blood	UBERON_0000178	blood	blood	naive	tx	471	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Lepik_2017/tx/Lepik_2017_tx_blood.all.tsv.gz
-Lepik_2017	blood	UBERON_0000178	blood	blood	naive	txrev	471	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Lepik_2017/txrev/Lepik_2017_txrev_blood.all.tsv.gz
-Naranbhai_2015	neutrophil_CD16	CL_0000775	neutrophil	neutrophil	naive	microarray	93	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Naranbhai_2015/microarray/Naranbhai_2015_microarray_neutrophil_CD16.all.tsv.gz
-Nedelec_2016	macrophage_Listeria	CL_0000235	macrophage	macrophage	Listeria_5h	ge	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/ge/Nedelec_2016_ge_macrophage_Listeria.all.tsv.gz
-Nedelec_2016	macrophage_Listeria	CL_0000235	macrophage	macrophage	Listeria_5h	exon	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/exon/Nedelec_2016_exon_macrophage_Listeria.all.tsv.gz
-Nedelec_2016	macrophage_Listeria	CL_0000235	macrophage	macrophage	Listeria_5h	tx	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/tx/Nedelec_2016_tx_macrophage_Listeria.all.tsv.gz
-Nedelec_2016	macrophage_Listeria	CL_0000235	macrophage	macrophage	Listeria_5h	txrev	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/txrev/Nedelec_2016_txrev_macrophage_Listeria.all.tsv.gz
-Nedelec_2016	macrophage_naive	CL_0000235	macrophage	macrophage	naive	ge	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/ge/Nedelec_2016_ge_macrophage_naive.all.tsv.gz
-Nedelec_2016	macrophage_naive	CL_0000235	macrophage	macrophage	naive	exon	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/exon/Nedelec_2016_exon_macrophage_naive.all.tsv.gz
-Nedelec_2016	macrophage_naive	CL_0000235	macrophage	macrophage	naive	tx	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/tx/Nedelec_2016_tx_macrophage_naive.all.tsv.gz
-Nedelec_2016	macrophage_naive	CL_0000235	macrophage	macrophage	naive	txrev	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/txrev/Nedelec_2016_txrev_macrophage_naive.all.tsv.gz
-Nedelec_2016	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	ge	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/ge/Nedelec_2016_ge_macrophage_Salmonella.all.tsv.gz
-Nedelec_2016	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	exon	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/exon/Nedelec_2016_exon_macrophage_Salmonella.all.tsv.gz
-Nedelec_2016	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	tx	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/tx/Nedelec_2016_tx_macrophage_Salmonella.all.tsv.gz
-Nedelec_2016	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	txrev	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Nedelec_2016/txrev/Nedelec_2016_txrev_macrophage_Salmonella.all.tsv.gz
-Quach_2016	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	ge	200	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/ge/Quach_2016_ge_monocyte_naive.all.tsv.gz
-Quach_2016	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	exon	200	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/exon/Quach_2016_exon_monocyte_naive.all.tsv.gz
-Quach_2016	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	tx	200	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/tx/Quach_2016_tx_monocyte_naive.all.tsv.gz
-Quach_2016	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	txrev	200	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/txrev/Quach_2016_txrev_monocyte_naive.all.tsv.gz
-Quach_2016	monocyte_LPS	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_6h	ge	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/ge/Quach_2016_ge_monocyte_LPS.all.tsv.gz
-Quach_2016	monocyte_LPS	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_6h	exon	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/exon/Quach_2016_exon_monocyte_LPS.all.tsv.gz
-Quach_2016	monocyte_LPS	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_6h	tx	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/tx/Quach_2016_tx_monocyte_LPS.all.tsv.gz
-Quach_2016	monocyte_LPS	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_6h	txrev	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/txrev/Quach_2016_txrev_monocyte_LPS.all.tsv.gz
-Quach_2016	monocyte_Pam3CSK4	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Pam3CSK4_6h	ge	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/ge/Quach_2016_ge_monocyte_Pam3CSK4.all.tsv.gz
-Quach_2016	monocyte_Pam3CSK4	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Pam3CSK4_6h	exon	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/exon/Quach_2016_exon_monocyte_Pam3CSK4.all.tsv.gz
-Quach_2016	monocyte_Pam3CSK4	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Pam3CSK4_6h	tx	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/tx/Quach_2016_tx_monocyte_Pam3CSK4.all.tsv.gz
-Quach_2016	monocyte_Pam3CSK4	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Pam3CSK4_6h	txrev	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/txrev/Quach_2016_txrev_monocyte_Pam3CSK4.all.tsv.gz
-Quach_2016	monocyte_R848	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	R848_6h	ge	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/ge/Quach_2016_ge_monocyte_R848.all.tsv.gz
-Quach_2016	monocyte_R848	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	R848_6h	exon	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/exon/Quach_2016_exon_monocyte_R848.all.tsv.gz
-Quach_2016	monocyte_R848	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	R848_6h	tx	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/tx/Quach_2016_tx_monocyte_R848.all.tsv.gz
-Quach_2016	monocyte_R848	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	R848_6h	txrev	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/txrev/Quach_2016_txrev_monocyte_R848.all.tsv.gz
-Quach_2016	monocyte_IAV	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	ge	198	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/ge/Quach_2016_ge_monocyte_IAV.all.tsv.gz
-Quach_2016	monocyte_IAV	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	exon	198	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/exon/Quach_2016_exon_monocyte_IAV.all.tsv.gz
-Quach_2016	monocyte_IAV	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	tx	198	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/tx/Quach_2016_tx_monocyte_IAV.all.tsv.gz
-Quach_2016	monocyte_IAV	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	txrev	198	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Quach_2016/txrev/Quach_2016_txrev_monocyte_IAV.all.tsv.gz
-ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/ge/ROSMAP_ge_brain_naive.all.tsv.gz
-ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/exon/ROSMAP_exon_brain_naive.all.tsv.gz
-ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/tx/ROSMAP_tx_brain_naive.all.tsv.gz
-ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/ROSMAP/txrev/ROSMAP_txrev_brain_naive.all.tsv.gz
-Schmiedel_2018	Tfh_memory	CL_0002038	T follicular helper cell	Tfh cell	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_Tfh_memory.all.tsv.gz
-Schmiedel_2018	Tfh_memory	CL_0002038	T follicular helper cell	Tfh cell	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_Tfh_memory.all.tsv.gz
-Schmiedel_2018	Tfh_memory	CL_0002038	T follicular helper cell	Tfh cell	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_Tfh_memory.all.tsv.gz
-Schmiedel_2018	Tfh_memory	CL_0002038	T follicular helper cell	Tfh cell	naive	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Tfh_memory.all.tsv.gz
-Schmiedel_2018	Th17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_Th17_memory.all.tsv.gz
-Schmiedel_2018	Th17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_Th17_memory.all.tsv.gz
-Schmiedel_2018	Th17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_Th17_memory.all.tsv.gz
-Schmiedel_2018	Th17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Th17_memory.all.tsv.gz
-Schmiedel_2018	Th1_memory	CL_0000545	T-helper 1 cell	Th1 cell	naive	ge	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_Th1_memory.all.tsv.gz
-Schmiedel_2018	Th1_memory	CL_0000545	T-helper 1 cell	Th1 cell	naive	exon	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_Th1_memory.all.tsv.gz
-Schmiedel_2018	Th1_memory	CL_0000545	T-helper 1 cell	Th1 cell	naive	tx	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_Th1_memory.all.tsv.gz
-Schmiedel_2018	Th1_memory	CL_0000545	T-helper 1 cell	Th1 cell	naive	txrev	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Th1_memory.all.tsv.gz
-Schmiedel_2018	Th2_memory	CL_0000546	T-helper 2 cell	Th2 cell	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_Th2_memory.all.tsv.gz
-Schmiedel_2018	Th2_memory	CL_0000546	T-helper 2 cell	Th2 cell	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_Th2_memory.all.tsv.gz
-Schmiedel_2018	Th2_memory	CL_0000546	T-helper 2 cell	Th2 cell	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_Th2_memory.all.tsv.gz
-Schmiedel_2018	Th2_memory	CL_0000546	T-helper 2 cell	Th2 cell	naive	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Th2_memory.all.tsv.gz
-Schmiedel_2018	Th1-17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	ge	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_Th1-17_memory.all.tsv.gz
-Schmiedel_2018	Th1-17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	exon	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_Th1-17_memory.all.tsv.gz
-Schmiedel_2018	Th1-17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	tx	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_Th1-17_memory.all.tsv.gz
-Schmiedel_2018	Th1-17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	txrev	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Th1-17_memory.all.tsv.gz
-Schmiedel_2018	Treg_memory	CL_0002678	memory regulatory T cell	Treg naive	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_Treg_memory.all.tsv.gz
-Schmiedel_2018	Treg_memory	CL_0002678	memory regulatory T cell	Treg naive	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_Treg_memory.all.tsv.gz
-Schmiedel_2018	Treg_memory	CL_0002678	memory regulatory T cell	Treg naive	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_Treg_memory.all.tsv.gz
-Schmiedel_2018	Treg_memory	CL_0002678	memory regulatory T cell	Treg naive	naive	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Treg_memory.all.tsv.gz
-Schmiedel_2018	Treg_naive	CL_0002677	naive regulatory T cell	Treg memory	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_Treg_naive.all.tsv.gz
-Schmiedel_2018	Treg_naive	CL_0002677	naive regulatory T cell	Treg memory	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_Treg_naive.all.tsv.gz
-Schmiedel_2018	Treg_naive	CL_0002677	naive regulatory T cell	Treg memory	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_Treg_naive.all.tsv.gz
-Schmiedel_2018	Treg_naive	CL_0002677	naive regulatory T cell	Treg memory	naive	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Treg_naive.all.tsv.gz
-Schmiedel_2018	B-cell_naive	CL_0000236	B cell	B cell	naive	ge	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_B-cell_naive.all.tsv.gz
-Schmiedel_2018	B-cell_naive	CL_0000236	B cell	B cell	naive	exon	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_B-cell_naive.all.tsv.gz
-Schmiedel_2018	B-cell_naive	CL_0000236	B cell	B cell	naive	tx	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_B-cell_naive.all.tsv.gz
-Schmiedel_2018	B-cell_naive	CL_0000236	B cell	B cell	naive	txrev	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_B-cell_naive.all.tsv.gz
-Schmiedel_2018	CD4_T-cell_naive	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	ge	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_CD4_T-cell_naive.all.tsv.gz
-Schmiedel_2018	CD4_T-cell_naive	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	exon	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_CD4_T-cell_naive.all.tsv.gz
-Schmiedel_2018	CD4_T-cell_naive	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	tx	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_CD4_T-cell_naive.all.tsv.gz
-Schmiedel_2018	CD4_T-cell_naive	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	txrev	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_CD4_T-cell_naive.all.tsv.gz
-Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	anti-CD3-CD28_4h	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_CD4_T-cell_anti-CD3-CD28.all.tsv.gz
-Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	anti-CD3-CD28_4h	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_CD4_T-cell_anti-CD3-CD28.all.tsv.gz
-Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	anti-CD3-CD28_4h	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_CD4_T-cell_anti-CD3-CD28.all.tsv.gz
-Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	anti-CD3-CD28_4h	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_CD4_T-cell_anti-CD3-CD28.all.tsv.gz
-Schmiedel_2018	CD8_T-cell_naive	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_CD8_T-cell_naive.all.tsv.gz
-Schmiedel_2018	CD8_T-cell_naive	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_CD8_T-cell_naive.all.tsv.gz
-Schmiedel_2018	CD8_T-cell_naive	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_CD8_T-cell_naive.all.tsv.gz
-Schmiedel_2018	CD8_T-cell_naive	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_CD8_T-cell_naive.all.tsv.gz
-Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	anti-CD3-CD28_4h	ge	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_CD8_T-cell_anti-CD3-CD28.all.tsv.gz
-Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	anti-CD3-CD28_4h	exon	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_CD8_T-cell_anti-CD3-CD28.all.tsv.gz
-Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	anti-CD3-CD28_4h	tx	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_CD8_T-cell_anti-CD3-CD28.all.tsv.gz
-Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	anti-CD3-CD28_4h	txrev	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_CD8_T-cell_anti-CD3-CD28.all.tsv.gz
-Schmiedel_2018	monocyte_CD16_naive	CL_0002396	CD14-low, CD16-positive monocyte	CD16+ monocyte	naive	ge	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_monocyte_CD16_naive.all.tsv.gz
-Schmiedel_2018	monocyte_CD16_naive	CL_0002396	CD14-low, CD16-positive monocyte	CD16+ monocyte	naive	exon	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_monocyte_CD16_naive.all.tsv.gz
-Schmiedel_2018	monocyte_CD16_naive	CL_0002396	CD14-low, CD16-positive monocyte	CD16+ monocyte	naive	tx	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_monocyte_CD16_naive.all.tsv.gz
-Schmiedel_2018	monocyte_CD16_naive	CL_0002396	CD14-low, CD16-positive monocyte	CD16+ monocyte	naive	txrev	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_monocyte_CD16_naive.all.tsv.gz
-Schmiedel_2018	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	ge	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_monocyte_naive.all.tsv.gz
-Schmiedel_2018	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	exon	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_monocyte_naive.all.tsv.gz
-Schmiedel_2018	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	tx	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_monocyte_naive.all.tsv.gz
-Schmiedel_2018	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	txrev	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_monocyte_naive.all.tsv.gz
-Schmiedel_2018	NK-cell_naive	CL_0000623	natural killer cell	NK cell	naive	ge	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/ge/Schmiedel_2018_ge_NK-cell_naive.all.tsv.gz
-Schmiedel_2018	NK-cell_naive	CL_0000623	natural killer cell	NK cell	naive	exon	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/exon/Schmiedel_2018_exon_NK-cell_naive.all.tsv.gz
-Schmiedel_2018	NK-cell_naive	CL_0000623	natural killer cell	NK cell	naive	tx	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/tx/Schmiedel_2018_tx_NK-cell_naive.all.tsv.gz
-Schmiedel_2018	NK-cell_naive	CL_0000623	natural killer cell	NK cell	naive	txrev	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schmiedel_2018/txrev/Schmiedel_2018_txrev_NK-cell_naive.all.tsv.gz
-Schwartzentruber_2018	sensory_neuron	CL_0000101	sensory neuron	sensory neuron	naive	ge	98	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schwartzentruber_2018/ge/Schwartzentruber_2018_ge_sensory_neuron.all.tsv.gz
-Schwartzentruber_2018	sensory_neuron	CL_0000101	sensory neuron	sensory neuron	naive	exon	98	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schwartzentruber_2018/exon/Schwartzentruber_2018_exon_sensory_neuron.all.tsv.gz
-Schwartzentruber_2018	sensory_neuron	CL_0000101	sensory neuron	sensory neuron	naive	tx	98	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schwartzentruber_2018/tx/Schwartzentruber_2018_tx_sensory_neuron.all.tsv.gz
-Schwartzentruber_2018	sensory_neuron	CL_0000101	sensory neuron	sensory neuron	naive	txrev	98	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Schwartzentruber_2018/txrev/Schwartzentruber_2018_txrev_sensory_neuron.all.tsv.gz
-TwinsUK	fat	UBERON_0001013	adipose tissue	adipose	naive	ge	381	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/ge/TwinsUK_ge_fat.all.tsv.gz
-TwinsUK	fat	UBERON_0001013	adipose tissue	adipose	naive	exon	381	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/exon/TwinsUK_exon_fat.all.tsv.gz
-TwinsUK	fat	UBERON_0001013	adipose tissue	adipose	naive	tx	381	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/tx/TwinsUK_tx_fat.all.tsv.gz
-TwinsUK	fat	UBERON_0001013	adipose tissue	adipose	naive	txrev	381	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/txrev/TwinsUK_txrev_fat.all.tsv.gz
-TwinsUK	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	ge	418	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/ge/TwinsUK_ge_LCL.all.tsv.gz
-TwinsUK	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	exon	418	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/exon/TwinsUK_exon_LCL.all.tsv.gz
-TwinsUK	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	tx	418	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/tx/TwinsUK_tx_LCL.all.tsv.gz
-TwinsUK	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	txrev	418	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/txrev/TwinsUK_txrev_LCL.all.tsv.gz
-TwinsUK	skin	UBERON_0002097	skin of body	skin	naive	ge	370	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/ge/TwinsUK_ge_skin.all.tsv.gz
-TwinsUK	skin	UBERON_0002097	skin of body	skin	naive	exon	370	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/exon/TwinsUK_exon_skin.all.tsv.gz
-TwinsUK	skin	UBERON_0002097	skin of body	skin	naive	tx	370	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/tx/TwinsUK_tx_skin.all.tsv.gz
-TwinsUK	skin	UBERON_0002097	skin of body	skin	naive	txrev	370	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/txrev/TwinsUK_txrev_skin.all.tsv.gz
-TwinsUK	blood	UBERON_0000178	blood	blood	naive	ge	195	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/ge/TwinsUK_ge_blood.all.tsv.gz
-TwinsUK	blood	UBERON_0000178	blood	blood	naive	exon	195	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/exon/TwinsUK_exon_blood.all.tsv.gz
-TwinsUK	blood	UBERON_0000178	blood	blood	naive	tx	195	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/tx/TwinsUK_tx_blood.all.tsv.gz
-TwinsUK	blood	UBERON_0000178	blood	blood	naive	txrev	195	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/TwinsUK/txrev/TwinsUK_txrev_blood.all.tsv.gz
-van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	islet of Langerhans	pancreatic islet	naive	ge	117	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/van_de_Bunt_2015/ge/van_de_Bunt_2015_ge_pancreatic_islet.all.tsv.gz
-van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	islet of Langerhans	pancreatic islet	naive	exon	117	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/van_de_Bunt_2015/exon/van_de_Bunt_2015_exon_pancreatic_islet.all.tsv.gz
-van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	islet of Langerhans	pancreatic islet	naive	tx	117	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/van_de_Bunt_2015/tx/van_de_Bunt_2015_tx_pancreatic_islet.all.tsv.gz
-van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	islet of Langerhans	pancreatic islet	naive	txrev	117	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/van_de_Bunt_2015/txrev/van_de_Bunt_2015_txrev_pancreatic_islet.all.tsv.gz
-FUSION	adipose_naive	UBERON_0001013	adipose tissue	adipose	naive	exon	271	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/exon/FUSION_exon_adipose_naive.all.tsv.gz
-FUSION	adipose_naive	UBERON_0001013	adipose tissue	adipose	naive	ge	271	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/ge/FUSION_ge_adipose_naive.all.tsv.gz
-FUSION	adipose_naive	UBERON_0001013	adipose tissue	adipose	naive	tx	271	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/tx/FUSION_tx_adipose_naive.all.tsv.gz
-FUSION	adipose_naive	UBERON_0001013	adipose tissue	adipose	naive	txrev	271	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/txrev/FUSION_txrev_adipose_naive.all.tsv.gz
-FUSION	muscle_naive	UBERON_0001134	skeletal muscle tissue	muscle	naive	exon	288	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/exon/FUSION_exon_muscle_naive.all.tsv.gz
-FUSION	muscle_naive	UBERON_0001134	skeletal muscle tissue	muscle	naive	ge	288	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/ge/FUSION_ge_muscle_naive.all.tsv.gz
-FUSION	muscle_naive	UBERON_0001134	skeletal muscle tissue	muscle	naive	tx	288	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/tx/FUSION_tx_muscle_naive.all.tsv.gz
-FUSION	muscle_naive	UBERON_0001134	skeletal muscle tissue	muscle	naive	txrev	288	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/FUSION/txrev/FUSION_txrev_muscle_naive.all.tsv.gz
-GTEx	adipose_subcutaneous	UBERON_0001013	adipose tissue	adipose	naive	ge	335	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_adipose_subcutaneous.all.tsv.gz
-GTEx	adipose_subcutaneous	UBERON_0001013	adipose tissue	adipose	naive	exon	335	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_adipose_subcutaneous.all.tsv.gz
-GTEx	adipose_subcutaneous	UBERON_0001013	adipose tissue	adipose	naive	tx	335	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_adipose_subcutaneous.all.tsv.gz
-GTEx	adipose_subcutaneous	UBERON_0001013	adipose tissue	adipose	naive	txrev	335	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_adipose_subcutaneous.all.tsv.gz
-GTEx	adipose_visceral	UBERON_0010414	omental fat pad	adipose (visceral)	naive	ge	219	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_adipose_visceral.all.tsv.gz
-GTEx	adipose_visceral	UBERON_0010414	omental fat pad	adipose (visceral)	naive	exon	219	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_adipose_visceral.all.tsv.gz
-GTEx	adipose_visceral	UBERON_0010414	omental fat pad	adipose (visceral)	naive	tx	219	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_adipose_visceral.all.tsv.gz
-GTEx	adipose_visceral	UBERON_0010414	omental fat pad	adipose (visceral)	naive	txrev	219	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_adipose_visceral.all.tsv.gz
-GTEx	adrenal_gland	UBERON_0002369	adrenal gland	adrenal gland	naive	ge	147	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_adrenal_gland.all.tsv.gz
-GTEx	adrenal_gland	UBERON_0002369	adrenal gland	adrenal gland	naive	exon	147	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_adrenal_gland.all.tsv.gz
-GTEx	adrenal_gland	UBERON_0002369	adrenal gland	adrenal gland	naive	tx	147	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_adrenal_gland.all.tsv.gz
-GTEx	adrenal_gland	UBERON_0002369	adrenal gland	adrenal gland	naive	txrev	147	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_adrenal_gland.all.tsv.gz
-GTEx	artery_aorta	UBERON_0001496	ascending aorta	artery (aorta)	naive	ge	234	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_artery_aorta.all.tsv.gz
-GTEx	artery_aorta	UBERON_0001496	ascending aorta	artery (aorta)	naive	exon	234	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_artery_aorta.all.tsv.gz
-GTEx	artery_aorta	UBERON_0001496	ascending aorta	artery (aorta)	naive	tx	234	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_artery_aorta.all.tsv.gz
-GTEx	artery_aorta	UBERON_0001496	ascending aorta	artery (aorta)	naive	txrev	234	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_artery_aorta.all.tsv.gz
-GTEx	artery_coronary	UBERON_0001621	coronary artery	artery (coronary)	naive	ge	133	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_artery_coronary.all.tsv.gz
-GTEx	artery_coronary	UBERON_0001621	coronary artery	artery (coronary)	naive	exon	133	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_artery_coronary.all.tsv.gz
-GTEx	artery_coronary	UBERON_0001621	coronary artery	artery (coronary)	naive	tx	133	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_artery_coronary.all.tsv.gz
-GTEx	artery_coronary	UBERON_0001621	coronary artery	artery (coronary)	naive	txrev	133	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_artery_coronary.all.tsv.gz
-GTEx	artery_tibial	UBERON_0007610	tibial artery	artery (tibial)	naive	ge	332	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_artery_tibial.all.tsv.gz
-GTEx	artery_tibial	UBERON_0007610	tibial artery	artery (tibial)	naive	exon	332	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_artery_tibial.all.tsv.gz
-GTEx	artery_tibial	UBERON_0007610	tibial artery	artery (tibial)	naive	tx	332	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_artery_tibial.all.tsv.gz
-GTEx	artery_tibial	UBERON_0007610	tibial artery	artery (tibial)	naive	txrev	332	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_artery_tibial.all.tsv.gz
-GTEx	blood	UBERON_0000178	blood	blood	naive	ge	379	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_blood.all.tsv.gz
-GTEx	blood	UBERON_0000178	blood	blood	naive	exon	379	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_blood.all.tsv.gz
-GTEx	blood	UBERON_0000178	blood	blood	naive	tx	379	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_blood.all.tsv.gz
-GTEx	blood	UBERON_0000178	blood	blood	naive	txrev	379	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_blood.all.tsv.gz
-GTEx	brain_amygdala	UBERON_0001876	amygdala	brain (amygdala)	naive	ge	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_amygdala.all.tsv.gz
-GTEx	brain_amygdala	UBERON_0001876	amygdala	brain (amygdala)	naive	exon	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_amygdala.all.tsv.gz
-GTEx	brain_amygdala	UBERON_0001876	amygdala	brain (amygdala)	naive	tx	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_amygdala.all.tsv.gz
-GTEx	brain_amygdala	UBERON_0001876	amygdala	brain (amygdala)	naive	txrev	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_amygdala.all.tsv.gz
-GTEx	brain_anterior_cingulate_cortex	UBERON_0009835	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	ge	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_anterior_cingulate_cortex.all.tsv.gz
-GTEx	brain_anterior_cingulate_cortex	UBERON_0009835	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	exon	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_anterior_cingulate_cortex.all.tsv.gz
-GTEx	brain_anterior_cingulate_cortex	UBERON_0009835	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	tx	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_anterior_cingulate_cortex.all.tsv.gz
-GTEx	brain_anterior_cingulate_cortex	UBERON_0009835	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	txrev	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_anterior_cingulate_cortex.all.tsv.gz
-GTEx	brain_caudate	UBERON_0001873	caudate nucleus	brain (caudate)	naive	ge	116	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_caudate.all.tsv.gz
-GTEx	brain_caudate	UBERON_0001873	caudate nucleus	brain (caudate)	naive	exon	116	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_caudate.all.tsv.gz
-GTEx	brain_caudate	UBERON_0001873	caudate nucleus	brain (caudate)	naive	tx	116	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_caudate.all.tsv.gz
-GTEx	brain_caudate	UBERON_0001873	caudate nucleus	brain (caudate)	naive	txrev	116	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_caudate.all.tsv.gz
-GTEx	brain_cerebellar_hemisphere	UBERON_0002037	cerebellum	brain (cerebellum)	naive	ge	105	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_cerebellar_hemisphere.all.tsv.gz
-GTEx	brain_cerebellar_hemisphere	UBERON_0002037	cerebellum	brain (cerebellum)	naive	exon	105	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_cerebellar_hemisphere.all.tsv.gz
-GTEx	brain_cerebellar_hemisphere	UBERON_0002037	cerebellum	brain (cerebellum)	naive	tx	105	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_cerebellar_hemisphere.all.tsv.gz
-GTEx	brain_cerebellar_hemisphere	UBERON_0002037	cerebellum	brain (cerebellum)	naive	txrev	105	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_cerebellar_hemisphere.all.tsv.gz
-GTEx	brain_cerebellum	UBERON_0002037	cerebellum	brain (cerebellum)	naive	ge	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_cerebellum.all.tsv.gz
-GTEx	brain_cerebellum	UBERON_0002037	cerebellum	brain (cerebellum)	naive	exon	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_cerebellum.all.tsv.gz
-GTEx	brain_cerebellum	UBERON_0002037	cerebellum	brain (cerebellum)	naive	tx	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_cerebellum.all.tsv.gz
-GTEx	brain_cerebellum	UBERON_0002037	cerebellum	brain (cerebellum)	naive	txrev	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_cerebellum.all.tsv.gz
-GTEx	brain_cortex	UBERON_0001870	frontal cortex	brain (cortex)	naive	ge	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_cortex.all.tsv.gz
-GTEx	brain_cortex	UBERON_0001870	frontal cortex	brain (cortex)	naive	exon	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_cortex.all.tsv.gz
-GTEx	brain_cortex	UBERON_0001870	frontal cortex	brain (cortex)	naive	tx	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_cortex.all.tsv.gz
-GTEx	brain_cortex	UBERON_0001870	frontal cortex	brain (cortex)	naive	txrev	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_cortex.all.tsv.gz
-GTEx	brain_frontal_cortex	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	106	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_frontal_cortex.all.tsv.gz
-GTEx	brain_frontal_cortex	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	106	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_frontal_cortex.all.tsv.gz
-GTEx	brain_frontal_cortex	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	106	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_frontal_cortex.all.tsv.gz
-GTEx	brain_frontal_cortex	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	106	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_frontal_cortex.all.tsv.gz
-GTEx	brain_hippocampus	UBERON_0001954	Ammon's horn	brain (hippocampus)	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_hippocampus.all.tsv.gz
-GTEx	brain_hippocampus	UBERON_0001954	Ammon's horn	brain (hippocampus)	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_hippocampus.all.tsv.gz
-GTEx	brain_hippocampus	UBERON_0001954	Ammon's horn	brain (hippocampus)	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_hippocampus.all.tsv.gz
-GTEx	brain_hippocampus	UBERON_0001954	Ammon's horn	brain (hippocampus)	naive	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_hippocampus.all.tsv.gz
-GTEx	brain_hypothalamus	UBERON_0001898	hypothalamus	brain (hypothalamus)	naive	ge	92	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_hypothalamus.all.tsv.gz
-GTEx	brain_hypothalamus	UBERON_0001898	hypothalamus	brain (hypothalamus)	naive	exon	92	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_hypothalamus.all.tsv.gz
-GTEx	brain_hypothalamus	UBERON_0001898	hypothalamus	brain (hypothalamus)	naive	tx	92	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_hypothalamus.all.tsv.gz
-GTEx	brain_hypothalamus	UBERON_0001898	hypothalamus	brain (hypothalamus)	naive	txrev	92	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_hypothalamus.all.tsv.gz
-GTEx	brain_nucleus_accumbens	UBERON_0001882	nucleus accumbens	brain (nucleus accumbens)	naive	ge	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_nucleus_accumbens.all.tsv.gz
-GTEx	brain_nucleus_accumbens	UBERON_0001882	nucleus accumbens	brain (nucleus accumbens)	naive	exon	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_nucleus_accumbens.all.tsv.gz
-GTEx	brain_nucleus_accumbens	UBERON_0001882	nucleus accumbens	brain (nucleus accumbens)	naive	tx	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_nucleus_accumbens.all.tsv.gz
-GTEx	brain_nucleus_accumbens	UBERON_0001882	nucleus accumbens	brain (nucleus accumbens)	naive	txrev	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_nucleus_accumbens.all.tsv.gz
-GTEx	brain_putamen	UBERON_0001874	putamen	brain (putamen)	naive	ge	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_putamen.all.tsv.gz
-GTEx	brain_putamen	UBERON_0001874	putamen	brain (putamen)	naive	exon	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_putamen.all.tsv.gz
-GTEx	brain_putamen	UBERON_0001874	putamen	brain (putamen)	naive	tx	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_putamen.all.tsv.gz
-GTEx	brain_putamen	UBERON_0001874	putamen	brain (putamen)	naive	txrev	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_putamen.all.tsv.gz
-GTEx	brain_spinal_cord	UBERON_0006469	C1 segment of cervical spinal cord	brain (spinal cord)	naive	ge	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_spinal_cord.all.tsv.gz
-GTEx	brain_spinal_cord	UBERON_0006469	C1 segment of cervical spinal cord	brain (spinal cord)	naive	exon	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_spinal_cord.all.tsv.gz
-GTEx	brain_spinal_cord	UBERON_0006469	C1 segment of cervical spinal cord	brain (spinal cord)	naive	tx	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_spinal_cord.all.tsv.gz
-GTEx	brain_spinal_cord	UBERON_0006469	C1 segment of cervical spinal cord	brain (spinal cord)	naive	txrev	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_spinal_cord.all.tsv.gz
-GTEx	brain_substantia_nigra	UBERON_0002038	substantia nigra	brain (substantia nigra)	naive	ge	64	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_brain_substantia_nigra.all.tsv.gz
-GTEx	brain_substantia_nigra	UBERON_0002038	substantia nigra	brain (substantia nigra)	naive	exon	64	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_brain_substantia_nigra.all.tsv.gz
-GTEx	brain_substantia_nigra	UBERON_0002038	substantia nigra	brain (substantia nigra)	naive	tx	64	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_brain_substantia_nigra.all.tsv.gz
-GTEx	brain_substantia_nigra	UBERON_0002038	substantia nigra	brain (substantia nigra)	naive	txrev	64	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_brain_substantia_nigra.all.tsv.gz
-GTEx	breast	UBERON_0008367	breast epithelium	breast	naive	ge	199	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_breast.all.tsv.gz
-GTEx	breast	UBERON_0008367	breast epithelium	breast	naive	exon	199	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_breast.all.tsv.gz
-GTEx	breast	UBERON_0008367	breast epithelium	breast	naive	tx	199	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_breast.all.tsv.gz
-GTEx	breast	UBERON_0008367	breast epithelium	breast	naive	txrev	199	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_breast.all.tsv.gz
-GTEx	colon_sigmoid	UBERON_0001159	sigmoid colon	sigmoid colon	naive	ge	164	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_colon_sigmoid.all.tsv.gz
-GTEx	colon_sigmoid	UBERON_0001159	sigmoid colon	sigmoid colon	naive	exon	164	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_colon_sigmoid.all.tsv.gz
-GTEx	colon_sigmoid	UBERON_0001159	sigmoid colon	sigmoid colon	naive	tx	164	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_colon_sigmoid.all.tsv.gz
-GTEx	colon_sigmoid	UBERON_0001159	sigmoid colon	sigmoid colon	naive	txrev	164	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_colon_sigmoid.all.tsv.gz
-GTEx	colon_transverse	UBERON_0001157	transverse colon	transverse colon	naive	ge	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_colon_transverse.all.tsv.gz
-GTEx	colon_transverse	UBERON_0001157	transverse colon	transverse colon	naive	exon	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_colon_transverse.all.tsv.gz
-GTEx	colon_transverse	UBERON_0001157	transverse colon	transverse colon	naive	tx	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_colon_transverse.all.tsv.gz
-GTEx	colon_transverse	UBERON_0001157	transverse colon	transverse colon	naive	txrev	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_colon_transverse.all.tsv.gz
-GTEx	esophagus_gej	UBERON_0004550	gastroesophageal sphincter	esophagus (gej)	naive	ge	168	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_esophagus_gej.all.tsv.gz
-GTEx	esophagus_gej	UBERON_0004550	gastroesophageal sphincter	esophagus (gej)	naive	exon	168	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_esophagus_gej.all.tsv.gz
-GTEx	esophagus_gej	UBERON_0004550	gastroesophageal sphincter	esophagus (gej)	naive	tx	168	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_esophagus_gej.all.tsv.gz
-GTEx	esophagus_gej	UBERON_0004550	gastroesophageal sphincter	esophagus (gej)	naive	txrev	168	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_esophagus_gej.all.tsv.gz
-GTEx	esophagus_mucosa	UBERON_0006920	esophagus squamous epithelium	esophagus (mucosa)	naive	ge	306	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_esophagus_mucosa.all.tsv.gz
-GTEx	esophagus_mucosa	UBERON_0006920	esophagus squamous epithelium	esophagus (mucosa)	naive	exon	306	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_esophagus_mucosa.all.tsv.gz
-GTEx	esophagus_mucosa	UBERON_0006920	esophagus squamous epithelium	esophagus (mucosa)	naive	tx	306	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_esophagus_mucosa.all.tsv.gz
-GTEx	esophagus_mucosa	UBERON_0006920	esophagus squamous epithelium	esophagus (mucosa)	naive	txrev	306	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_esophagus_mucosa.all.tsv.gz
-GTEx	esophagus_muscularis	UBERON_0004648	esophagus muscularis mucosa	esophagus (muscularis)	naive	ge	262	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_esophagus_muscularis.all.tsv.gz
-GTEx	esophagus_muscularis	UBERON_0004648	esophagus muscularis mucosa	esophagus (muscularis)	naive	exon	262	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_esophagus_muscularis.all.tsv.gz
-GTEx	esophagus_muscularis	UBERON_0004648	esophagus muscularis mucosa	esophagus (muscularis)	naive	tx	262	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_esophagus_muscularis.all.tsv.gz
-GTEx	esophagus_muscularis	UBERON_0004648	esophagus muscularis mucosa	esophagus (muscularis)	naive	txrev	262	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_esophagus_muscularis.all.tsv.gz
-GTEx	fibroblast	CL_0000057	fibroblast	fibroblast	naive	ge	282	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_fibroblast.all.tsv.gz
-GTEx	fibroblast	CL_0000057	fibroblast	fibroblast	naive	exon	282	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_fibroblast.all.tsv.gz
-GTEx	fibroblast	CL_0000057	fibroblast	fibroblast	naive	tx	282	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_fibroblast.all.tsv.gz
-GTEx	fibroblast	CL_0000057	fibroblast	fibroblast	naive	txrev	282	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_fibroblast.all.tsv.gz
-GTEx	heart_atrial_appendage	UBERON_0006631	right atrium auricular region	heart (atrial appendage)	naive	ge	204	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_heart_atrial_appendage.all.tsv.gz
-GTEx	heart_atrial_appendage	UBERON_0006631	right atrium auricular region	heart (atrial appendage)	naive	exon	204	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_heart_atrial_appendage.all.tsv.gz
-GTEx	heart_atrial_appendage	UBERON_0006631	right atrium auricular region	heart (atrial appendage)	naive	tx	204	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_heart_atrial_appendage.all.tsv.gz
-GTEx	heart_atrial_appendage	UBERON_0006631	right atrium auricular region	heart (atrial appendage)	naive	txrev	204	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_heart_atrial_appendage.all.tsv.gz
-GTEx	heart_left_ventricle	UBERON_0006566	left ventricle myocardium	heart (left ventricle)	naive	ge	220	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_heart_left_ventricle.all.tsv.gz
-GTEx	heart_left_ventricle	UBERON_0006566	left ventricle myocardium	heart (left ventricle)	naive	exon	220	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_heart_left_ventricle.all.tsv.gz
-GTEx	heart_left_ventricle	UBERON_0006566	left ventricle myocardium	heart (left ventricle)	naive	tx	220	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_heart_left_ventricle.all.tsv.gz
-GTEx	heart_left_ventricle	UBERON_0006566	left ventricle myocardium	heart (left ventricle)	naive	txrev	220	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_heart_left_ventricle.all.tsv.gz
-GTEx	kidney_cortex	UBERON_0001225	cortex of kidney	kidney (cortex)	naive	ge	32	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_kidney_cortex.all.tsv.gz
-GTEx	kidney_cortex	UBERON_0001225	cortex of kidney	kidney (cortex)	naive	exon	32	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_kidney_cortex.all.tsv.gz
-GTEx	kidney_cortex	UBERON_0001225	cortex of kidney	kidney (cortex)	naive	tx	32	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_kidney_cortex.all.tsv.gz
-GTEx	kidney_cortex	UBERON_0001225	cortex of kidney	kidney (cortex)	naive	txrev	32	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_kidney_cortex.all.tsv.gz
-GTEx	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	ge	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_LCL.all.tsv.gz
-GTEx	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	exon	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_LCL.all.tsv.gz
-GTEx	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	tx	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_LCL.all.tsv.gz
-GTEx	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	txrev	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_LCL.all.tsv.gz
-GTEx	liver	UBERON_0001114	right lobe of liver	liver	naive	ge	128	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_liver.all.tsv.gz
-GTEx	liver	UBERON_0001114	right lobe of liver	liver	naive	exon	128	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_liver.all.tsv.gz
-GTEx	liver	UBERON_0001114	right lobe of liver	liver	naive	tx	128	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_liver.all.tsv.gz
-GTEx	liver	UBERON_0001114	right lobe of liver	liver	naive	txrev	128	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_liver.all.tsv.gz
-GTEx	lung	UBERON_0008952	upper lobe of left lung	lung	naive	ge	310	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_lung.all.tsv.gz
-GTEx	lung	UBERON_0008952	upper lobe of left lung	lung	naive	exon	310	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_lung.all.tsv.gz
-GTEx	lung	UBERON_0008952	upper lobe of left lung	lung	naive	tx	310	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_lung.all.tsv.gz
-GTEx	lung	UBERON_0008952	upper lobe of left lung	lung	naive	txrev	310	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_lung.all.tsv.gz
-GTEx	minor_salivary_gland	UBERON_0006330	anterior lingual gland	minor salivary gland	naive	ge	67	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_minor_salivary_gland.all.tsv.gz
-GTEx	minor_salivary_gland	UBERON_0006330	anterior lingual gland	minor salivary gland	naive	exon	67	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_minor_salivary_gland.all.tsv.gz
-GTEx	minor_salivary_gland	UBERON_0006330	anterior lingual gland	minor salivary gland	naive	tx	67	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_minor_salivary_gland.all.tsv.gz
-GTEx	minor_salivary_gland	UBERON_0006330	anterior lingual gland	minor salivary gland	naive	txrev	67	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_minor_salivary_gland.all.tsv.gz
-GTEx	muscle	UBERON_0001134	skeletal muscle tissue	muscle	naive	ge	410	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_muscle.all.tsv.gz
-GTEx	muscle	UBERON_0001134	skeletal muscle tissue	muscle	naive	exon	410	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_muscle.all.tsv.gz
-GTEx	muscle	UBERON_0001134	skeletal muscle tissue	muscle	naive	tx	410	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_muscle.all.tsv.gz
-GTEx	muscle	UBERON_0001134	skeletal muscle tissue	muscle	naive	txrev	410	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_muscle.all.tsv.gz
-GTEx	nerve_tibial	UBERON_0001323	tibial nerve	tibial nerve	naive	ge	302	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_nerve_tibial.all.tsv.gz
-GTEx	nerve_tibial	UBERON_0001323	tibial nerve	tibial nerve	naive	exon	302	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_nerve_tibial.all.tsv.gz
-GTEx	nerve_tibial	UBERON_0001323	tibial nerve	tibial nerve	naive	tx	302	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_nerve_tibial.all.tsv.gz
-GTEx	nerve_tibial	UBERON_0001323	tibial nerve	tibial nerve	naive	txrev	302	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_nerve_tibial.all.tsv.gz
-GTEx	ovary	UBERON_0000992	female gonad	ovary	naive	ge	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_ovary.all.tsv.gz
-GTEx	ovary	UBERON_0000992	female gonad	ovary	naive	exon	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_ovary.all.tsv.gz
-GTEx	ovary	UBERON_0000992	female gonad	ovary	naive	tx	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_ovary.all.tsv.gz
-GTEx	ovary	UBERON_0000992	female gonad	ovary	naive	txrev	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_ovary.all.tsv.gz
-GTEx	pancreas	UBERON_0001150	body of pancreas	pancreas	naive	ge	177	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_pancreas.all.tsv.gz
-GTEx	pancreas	UBERON_0001150	body of pancreas	pancreas	naive	exon	177	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_pancreas.all.tsv.gz
-GTEx	pancreas	UBERON_0001150	body of pancreas	pancreas	naive	tx	177	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_pancreas.all.tsv.gz
-GTEx	pancreas	UBERON_0001150	body of pancreas	pancreas	naive	txrev	177	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_pancreas.all.tsv.gz
-GTEx	pituitary	UBERON_0000007	pituitary gland	pituitary	naive	ge	114	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_pituitary.all.tsv.gz
-GTEx	pituitary	UBERON_0000007	pituitary gland	pituitary	naive	exon	114	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_pituitary.all.tsv.gz
-GTEx	pituitary	UBERON_0000007	pituitary gland	pituitary	naive	tx	114	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_pituitary.all.tsv.gz
-GTEx	pituitary	UBERON_0000007	pituitary gland	pituitary	naive	txrev	114	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_pituitary.all.tsv.gz
-GTEx	prostate	UBERON_0002367	prostate gland	prostate	naive	ge	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_prostate.all.tsv.gz
-GTEx	prostate	UBERON_0002367	prostate gland	prostate	naive	exon	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_prostate.all.tsv.gz
-GTEx	prostate	UBERON_0002367	prostate gland	prostate	naive	tx	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_prostate.all.tsv.gz
-GTEx	prostate	UBERON_0002367	prostate gland	prostate	naive	txrev	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_prostate.all.tsv.gz
-GTEx	skin_not_sun_exposed	UBERON_0036149	suprapubic skin	skin (suprapubic)	naive	ge	248	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_skin_not_sun_exposed.all.tsv.gz
-GTEx	skin_not_sun_exposed	UBERON_0036149	suprapubic skin	skin (suprapubic)	naive	exon	248	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_skin_not_sun_exposed.all.tsv.gz
-GTEx	skin_not_sun_exposed	UBERON_0036149	suprapubic skin	skin (suprapubic)	naive	tx	248	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_skin_not_sun_exposed.all.tsv.gz
-GTEx	skin_not_sun_exposed	UBERON_0036149	suprapubic skin	skin (suprapubic)	naive	txrev	248	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_skin_not_sun_exposed.all.tsv.gz
-GTEx	skin_sun_exposed	UBERON_0002097	skin of body	skin	naive	ge	343	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_skin_sun_exposed.all.tsv.gz
-GTEx	skin_sun_exposed	UBERON_0002097	skin of body	skin	naive	exon	343	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_skin_sun_exposed.all.tsv.gz
-GTEx	skin_sun_exposed	UBERON_0002097	skin of body	skin	naive	tx	343	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_skin_sun_exposed.all.tsv.gz
-GTEx	skin_sun_exposed	UBERON_0002097	skin of body	skin	naive	txrev	343	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_skin_sun_exposed.all.tsv.gz
-GTEx	small_intestine	UBERON_0001211	Peyer's patch	small intestine	naive	ge	99	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_small_intestine.all.tsv.gz
-GTEx	small_intestine	UBERON_0001211	Peyer's patch	small intestine	naive	exon	99	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_small_intestine.all.tsv.gz
-GTEx	small_intestine	UBERON_0001211	Peyer's patch	small intestine	naive	tx	99	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_small_intestine.all.tsv.gz
-GTEx	small_intestine	UBERON_0001211	Peyer's patch	small intestine	naive	txrev	99	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_small_intestine.all.tsv.gz
-GTEx	spleen	UBERON_0002106	spleen	spleen	naive	ge	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_spleen.all.tsv.gz
-GTEx	spleen	UBERON_0002106	spleen	spleen	naive	exon	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_spleen.all.tsv.gz
-GTEx	spleen	UBERON_0002106	spleen	spleen	naive	tx	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_spleen.all.tsv.gz
-GTEx	spleen	UBERON_0002106	spleen	spleen	naive	txrev	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_spleen.all.tsv.gz
-GTEx	stomach	UBERON_0000945	stomach	stomach	naive	ge	188	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_stomach.all.tsv.gz
-GTEx	stomach	UBERON_0000945	stomach	stomach	naive	exon	188	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_stomach.all.tsv.gz
-GTEx	stomach	UBERON_0000945	stomach	stomach	naive	tx	188	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_stomach.all.tsv.gz
-GTEx	stomach	UBERON_0000945	stomach	stomach	naive	txrev	188	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_stomach.all.tsv.gz
-GTEx	testis	UBERON_0000473	testis	testis	naive	ge	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_testis.all.tsv.gz
-GTEx	testis	UBERON_0000473	testis	testis	naive	exon	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_testis.all.tsv.gz
-GTEx	testis	UBERON_0000473	testis	testis	naive	tx	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_testis.all.tsv.gz
-GTEx	testis	UBERON_0000473	testis	testis	naive	txrev	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_testis.all.tsv.gz
-GTEx	thyroid	UBERON_0002046	thyroid gland	thyroid	naive	ge	316	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_thyroid.all.tsv.gz
-GTEx	thyroid	UBERON_0002046	thyroid gland	thyroid	naive	exon	316	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_thyroid.all.tsv.gz
-GTEx	thyroid	UBERON_0002046	thyroid gland	thyroid	naive	tx	316	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_thyroid.all.tsv.gz
-GTEx	thyroid	UBERON_0002046	thyroid gland	thyroid	naive	txrev	316	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_thyroid.all.tsv.gz
-GTEx	uterus	UBERON_0000995	uterus	uterus	naive	ge	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_uterus.all.tsv.gz
-GTEx	uterus	UBERON_0000995	uterus	uterus	naive	exon	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_uterus.all.tsv.gz
-GTEx	uterus	UBERON_0000995	uterus	uterus	naive	tx	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_uterus.all.tsv.gz
-GTEx	uterus	UBERON_0000995	uterus	uterus	naive	txrev	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_uterus.all.tsv.gz
-GTEx	vagina	UBERON_0000996	vagina	vagina	naive	ge	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/ge/GTEx_ge_vagina.all.tsv.gz
-GTEx	vagina	UBERON_0000996	vagina	vagina	naive	exon	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/exon/GTEx_exon_vagina.all.tsv.gz
-GTEx	vagina	UBERON_0000996	vagina	vagina	naive	tx	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/tx/GTEx_tx_vagina.all.tsv.gz
-GTEx	vagina	UBERON_0000996	vagina	vagina	naive	txrev	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/GTEx/txrev/GTEx_txrev_vagina.all.tsv.gz
-Braineac2	putamen	UBERON_0001874	putamen	brain (putamen)	naive	ge	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/ge/Braineac2_ge_putamen.all.tsv.gz
-Braineac2	putamen	UBERON_0001874	putamen	brain (putamen)	naive	exon	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/exon/Braineac2_exon_putamen.all.tsv.gz
-Braineac2	putamen	UBERON_0001874	putamen	brain (putamen)	naive	tx	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/tx/Braineac2_tx_putamen.all.tsv.gz
-Braineac2	putamen	UBERON_0001874	putamen	brain (putamen)	naive	txrev	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/txrev/Braineac2_txrev_putamen.all.tsv.gz
-Braineac2	substantia_nigra	UBERON_0002038	substantia_nigra	brain (substantia_nigra)	naive	ge	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/ge/Braineac2_ge_substantia_nigra.all.tsv.gz
-Braineac2	substantia_nigra	UBERON_0002038	substantia_nigra	brain (substantia_nigra)	naive	exon	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/exon/Braineac2_exon_substantia_nigra.all.tsv.gz
-Braineac2	substantia_nigra	UBERON_0002038	substantia_nigra	brain (substantia_nigra)	naive	tx	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/tx/Braineac2_tx_substantia_nigra.all.tsv.gz
-Braineac2	substantia_nigra	UBERON_0002038	substantia_nigra	brain (substantia_nigra)	naive	txrev	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Braineac2/txrev/Braineac2_txrev_substantia_nigra.all.tsv.gz
-CommonMind	DLPFC_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	590	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CommonMind/ge/CommonMind_ge_DLPFC_naive.all.tsv.gz
-CommonMind	DLPFC_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	590	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CommonMind/exon/CommonMind_exon_DLPFC_naive.all.tsv.gz
-CommonMind	DLPFC_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	590	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CommonMind/tx/CommonMind_tx_DLPFC_naive.all.tsv.gz
-CommonMind	DLPFC_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	590	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CommonMind/txrev/CommonMind_txrev_DLPFC_naive.all.tsv.gz
-CAP	LCL_naive	EFO_0005292	lymphoblastoid cell line	LCL	naive	ge	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/ge/CAP_ge_LCL_naive.all.tsv.gz
-CAP	LCL_naive	EFO_0005292	lymphoblastoid cell line	LCL	naive	exon	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/exon/CAP_exon_LCL_naive.all.tsv.gz
-CAP	LCL_naive	EFO_0005292	lymphoblastoid cell line	LCL	naive	tx	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/tx/CAP_tx_LCL_naive.all.tsv.gz
-CAP	LCL_naive	EFO_0005292	lymphoblastoid cell line	LCL	naive	txrev	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/txrev/CAP_txrev_LCL_naive.all.tsv.gz
-CAP	LCL_statin	EFO_0005292	lymphoblastoid cell line	LCL	statin	ge	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/ge/CAP_ge_LCL_statin.all.tsv.gz
-CAP	LCL_statin	EFO_0005292	lymphoblastoid cell line	LCL	statin	exon	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/exon/CAP_exon_LCL_statin.all.tsv.gz
-CAP	LCL_statin	EFO_0005292	lymphoblastoid cell line	LCL	statin	tx	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/tx/CAP_tx_LCL_statin.all.tsv.gz
-CAP	LCL_statin	EFO_0005292	lymphoblastoid cell line	LCL	statin	txrev	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/CAP/txrev/CAP_txrev_LCL_statin.all.tsv.gz
-iPSCORE	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	ge	107	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/iPSCORE/ge/iPSCORE_ge_iPSC.all.tsv.gz
-iPSCORE	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	exon	107	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/iPSCORE/exon/iPSCORE_exon_iPSC.all.tsv.gz
-iPSCORE	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	tx	107	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/iPSCORE/tx/iPSCORE_tx_iPSC.all.tsv.gz
-iPSCORE	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	txrev	107	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/iPSCORE/txrev/iPSCORE_txrev_iPSC.all.tsv.gz
-Peng_2018	placenta_naive	UBERON_0001987	placenta	placenta	naive	ge	149	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Peng_2018/ge/Peng_2018_ge_placenta_naive.all.tsv.gz
-Peng_2018	placenta_naive	UBERON_0001987	placenta	placenta	naive	exon	149	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Peng_2018/exon/Peng_2018_exon_placenta_naive.all.tsv.gz
-Peng_2018	placenta_naive	UBERON_0001987	placenta	placenta	naive	tx	149	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Peng_2018/tx/Peng_2018_tx_placenta_naive.all.tsv.gz
-Peng_2018	placenta_naive	UBERON_0001987	placenta	placenta	naive	txrev	149	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Peng_2018/txrev/Peng_2018_txrev_placenta_naive.all.tsv.gz
-PhLiPS	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	ge	86	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/ge/PhLiPS_ge_iPSC.all.tsv.gz
-PhLiPS	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	exon	86	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/exon/PhLiPS_exon_iPSC.all.tsv.gz
-PhLiPS	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	tx	86	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/tx/PhLiPS_tx_iPSC.all.tsv.gz
-PhLiPS	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	txrev	86	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/txrev/PhLiPS_txrev_iPSC.all.tsv.gz
-PhLiPS	HLC	CL_0000182	HLC	hepatocyte	naive	ge	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/ge/PhLiPS_ge_HLC.all.tsv.gz
-PhLiPS	HLC	CL_0000182	HLC	hepatocyte	naive	exon	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/exon/PhLiPS_exon_HLC.all.tsv.gz
-PhLiPS	HLC	CL_0000182	HLC	hepatocyte	naive	tx	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/tx/PhLiPS_tx_HLC.all.tsv.gz
-PhLiPS	HLC	CL_0000182	HLC	hepatocyte	naive	txrev	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/PhLiPS/txrev/PhLiPS_txrev_HLC.all.tsv.gz
-Steinberg_2020	synovium_naive	UBERON_0007616	layer of synovial tissue	synovium	naive	ge	72	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/ge/Steinberg_2020_ge_synovium_naive.all.tsv.gz
-Steinberg_2020	synovium_naive	UBERON_0007616	layer of synovial tissue	synovium	naive	exon	72	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/exon/Steinberg_2020_exon_synovium_naive.all.tsv.gz
-Steinberg_2020	synovium_naive	UBERON_0007616	layer of synovial tissue	synovium	naive	tx	72	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/tx/Steinberg_2020_tx_synovium_naive.all.tsv.gz
-Steinberg_2020	synovium_naive	UBERON_0007616	layer of synovial tissue	synovium	naive	txrev	72	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/txrev/Steinberg_2020_txrev_synovium_naive.all.tsv.gz
-Steinberg_2020	low_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	ge	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/ge/Steinberg_2020_ge_low_grade_cartilage_naive.all.tsv.gz
-Steinberg_2020	low_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	exon	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/exon/Steinberg_2020_exon_low_grade_cartilage_naive.all.tsv.gz
-Steinberg_2020	low_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	tx	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/tx/Steinberg_2020_tx_low_grade_cartilage_naive.all.tsv.gz
-Steinberg_2020	low_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	txrev	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/txrev/Steinberg_2020_txrev_low_grade_cartilage_naive.all.tsv.gz
-Steinberg_2020	high_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	ge	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/ge/Steinberg_2020_ge_high_grade_cartilage_naive.all.tsv.gz
-Steinberg_2020	high_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	exon	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/exon/Steinberg_2020_exon_high_grade_cartilage_naive.all.tsv.gz
-Steinberg_2020	high_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	tx	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/tx/Steinberg_2020_tx_high_grade_cartilage_naive.all.tsv.gz
-Steinberg_2020	high_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	txrev	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Steinberg_2020/txrev/Steinberg_2020_txrev_high_grade_cartilage_naive.all.tsv.gz
-Young_2019	microglia_naive	CL_0000129	microglial cell	microglia	naive	ge	104	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Young_2019/ge/Young_2019_ge_microglia_naive.all.tsv.gz
-Young_2019	microglia_naive	CL_0000129	microglial cell	microglia	naive	exon	104	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Young_2019/exon/Young_2019_exon_microglia_naive.all.tsv.gz
-Young_2019	microglia_naive	CL_0000129	microglial cell	microglia	naive	tx	104	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Young_2019/tx/Young_2019_tx_microglia_naive.all.tsv.gz
-Young_2019	microglia_naive	CL_0000129	microglial cell	microglia	naive	txrev	104	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/csv/Young_2019/txrev/Young_2019_txrev_microglia_naive.all.tsv.gz
+Alasoo_2018	macrophage_naive	CL_0000235	macrophage	macrophage	naive	ge	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/ge/Alasoo_2018_ge_macrophage_naive.all.tsv.gz
+Alasoo_2018	macrophage_naive	CL_0000235	macrophage	macrophage	naive	exon	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/exon/Alasoo_2018_exon_macrophage_naive.all.tsv.gz
+Alasoo_2018	macrophage_naive	CL_0000235	macrophage	macrophage	naive	tx	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/tx/Alasoo_2018_tx_macrophage_naive.all.tsv.gz
+Alasoo_2018	macrophage_naive	CL_0000235	macrophage	macrophage	naive	txrev	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/txrev/Alasoo_2018_txrev_macrophage_naive.all.tsv.gz
+Alasoo_2018	macrophage_IFNg	CL_0000235	macrophage	macrophage	IFNg_18h	ge	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/ge/Alasoo_2018_ge_macrophage_IFNg.all.tsv.gz
+Alasoo_2018	macrophage_IFNg	CL_0000235	macrophage	macrophage	IFNg_18h	exon	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/exon/Alasoo_2018_exon_macrophage_IFNg.all.tsv.gz
+Alasoo_2018	macrophage_IFNg	CL_0000235	macrophage	macrophage	IFNg_18h	tx	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/tx/Alasoo_2018_tx_macrophage_IFNg.all.tsv.gz
+Alasoo_2018	macrophage_IFNg	CL_0000235	macrophage	macrophage	IFNg_18h	txrev	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/txrev/Alasoo_2018_txrev_macrophage_IFNg.all.tsv.gz
+Alasoo_2018	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	ge	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/ge/Alasoo_2018_ge_macrophage_Salmonella.all.tsv.gz
+Alasoo_2018	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	exon	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/exon/Alasoo_2018_exon_macrophage_Salmonella.all.tsv.gz
+Alasoo_2018	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	tx	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/tx/Alasoo_2018_tx_macrophage_Salmonella.all.tsv.gz
+Alasoo_2018	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	txrev	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/txrev/Alasoo_2018_txrev_macrophage_Salmonella.all.tsv.gz
+Alasoo_2018	macrophage_IFNg+Salmonella	CL_0000235	macrophage	macrophage	IFNg_18h+Salmonella_5h	ge	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/ge/Alasoo_2018_ge_macrophage_IFNg+Salmonella.all.tsv.gz
+Alasoo_2018	macrophage_IFNg+Salmonella	CL_0000235	macrophage	macrophage	IFNg_18h+Salmonella_5h	exon	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/exon/Alasoo_2018_exon_macrophage_IFNg+Salmonella.all.tsv.gz
+Alasoo_2018	macrophage_IFNg+Salmonella	CL_0000235	macrophage	macrophage	IFNg_18h+Salmonella_5h	tx	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/tx/Alasoo_2018_tx_macrophage_IFNg+Salmonella.all.tsv.gz
+Alasoo_2018	macrophage_IFNg+Salmonella	CL_0000235	macrophage	macrophage	IFNg_18h+Salmonella_5h	txrev	84	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Alasoo_2018/txrev/Alasoo_2018_txrev_macrophage_IFNg+Salmonella.all.tsv.gz
+BLUEPRINT	monocyte	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	ge	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BLUEPRINT/ge/BLUEPRINT_SE_ge_monocyte.all.tsv.gz
+BLUEPRINT	monocyte	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	exon	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BLUEPRINT/exon/BLUEPRINT_SE_exon_monocyte.all.tsv.gz
+BLUEPRINT	monocyte	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	tx	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BLUEPRINT/tx/BLUEPRINT_SE_tx_monocyte.all.tsv.gz
+BLUEPRINT	monocyte	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	txrev	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BLUEPRINT/txrev/BLUEPRINT_SE_txrev_monocyte.all.tsv.gz
+BLUEPRINT	neutrophil	CL_0000775	neutrophil	neutrophil	naive	ge	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BLUEPRINT/ge/BLUEPRINT_SE_ge_neutrophil.all.tsv.gz
+BLUEPRINT	neutrophil	CL_0000775	neutrophil	neutrophil	naive	exon	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BLUEPRINT/exon/BLUEPRINT_SE_exon_neutrophil.all.tsv.gz
+BLUEPRINT	neutrophil	CL_0000775	neutrophil	neutrophil	naive	tx	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BLUEPRINT/tx/BLUEPRINT_SE_tx_neutrophil.all.tsv.gz
+BLUEPRINT	neutrophil	CL_0000775	neutrophil	neutrophil	naive	txrev	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BLUEPRINT/txrev/BLUEPRINT_SE_txrev_neutrophil.all.tsv.gz
+BLUEPRINT	T-cell	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	ge	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BLUEPRINT/ge/BLUEPRINT_PE_ge_T-cell.all.tsv.gz
+BLUEPRINT	T-cell	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	exon	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BLUEPRINT/exon/BLUEPRINT_PE_exon_T-cell.all.tsv.gz
+BLUEPRINT	T-cell	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	tx	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BLUEPRINT/tx/BLUEPRINT_PE_tx_T-cell.all.tsv.gz
+BLUEPRINT	T-cell	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	txrev	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BLUEPRINT/txrev/BLUEPRINT_PE_txrev_T-cell.all.tsv.gz
+BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BrainSeq/ge/BrainSeq_ge_brain.all.tsv.gz
+BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BrainSeq/exon/BrainSeq_exon_brain.all.tsv.gz
+BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BrainSeq/tx/BrainSeq_tx_brain.all.tsv.gz
+BrainSeq	brain	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	479	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/BrainSeq/txrev/BrainSeq_txrev_brain.all.tsv.gz
+CEDAR	T-cell_CD8	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	microarray	277	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CEDAR/microarray/CEDAR_microarray_T-cell_CD8.all.tsv.gz
+CEDAR	T-cell_CD4	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	microarray	290	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CEDAR/microarray/CEDAR_microarray_T-cell_CD4.all.tsv.gz
+CEDAR	transverse_colon	UBERON_0001157	transverse colon	transverse colon	naive	microarray	286	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CEDAR/microarray/CEDAR_microarray_transverse_colon.all.tsv.gz
+CEDAR	monocyte_CD14	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	microarray	286	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CEDAR/microarray/CEDAR_microarray_monocyte_CD14.all.tsv.gz
+CEDAR	neutrophil_CD15	CL_0000775	neutrophil	neutrophil	naive	microarray	280	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CEDAR/microarray/CEDAR_microarray_neutrophil_CD15.all.tsv.gz
+CEDAR	platelet	CL_0000233	platelet	platelet	naive	microarray	205	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CEDAR/microarray/CEDAR_microarray_platelet.all.tsv.gz
+CEDAR	rectum	UBERON_0001052	rectum	rectum	naive	microarray	271	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CEDAR/microarray/CEDAR_microarray_rectum.all.tsv.gz
+CEDAR	B-cell_CD19	CL_0000236	B cell	B cell	naive	microarray	262	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CEDAR/microarray/CEDAR_microarray_B-cell_CD19.all.tsv.gz
+CEDAR	ileum	UBERON_0002116	ileum	ileum	naive	microarray	180	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CEDAR/microarray/CEDAR_microarray_ileum.all.tsv.gz
+Fairfax_2012	B-cell_CD19	CL_0000236	B cell	B cell	naive	microarray	281	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Fairfax_2012/microarray/Fairfax_2012_microarray_B-cell_CD19.all.tsv.gz
+Fairfax_2014	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	microarray	420	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Fairfax_2014/microarray/Fairfax_2014_microarray_monocyte_naive.all.tsv.gz
+Fairfax_2014	monocyte_IFN24	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	IFNg_24h	microarray	370	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Fairfax_2014/microarray/Fairfax_2014_microarray_monocyte_IFN24.all.tsv.gz
+Fairfax_2014	monocyte_LPS2	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_2h	microarray	256	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Fairfax_2014/microarray/Fairfax_2014_microarray_monocyte_LPS2.all.tsv.gz
+Fairfax_2014	monocyte_LPS24	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_24h	microarray	325	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Fairfax_2014/microarray/Fairfax_2014_microarray_monocyte_LPS24.all.tsv.gz
+GENCORD	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	ge	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GENCORD/ge/GENCORD_ge_LCL.all.tsv.gz
+GENCORD	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	exon	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GENCORD/exon/GENCORD_exon_LCL.all.tsv.gz
+GENCORD	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	tx	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GENCORD/tx/GENCORD_tx_LCL.all.tsv.gz
+GENCORD	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	txrev	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GENCORD/txrev/GENCORD_txrev_LCL.all.tsv.gz
+GENCORD	fibroblast	CL_0000057	fibroblast	fibroblast	naive	ge	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GENCORD/ge/GENCORD_ge_fibroblast.all.tsv.gz
+GENCORD	fibroblast	CL_0000057	fibroblast	fibroblast	naive	exon	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GENCORD/exon/GENCORD_exon_fibroblast.all.tsv.gz
+GENCORD	fibroblast	CL_0000057	fibroblast	fibroblast	naive	tx	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GENCORD/tx/GENCORD_tx_fibroblast.all.tsv.gz
+GENCORD	fibroblast	CL_0000057	fibroblast	fibroblast	naive	txrev	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GENCORD/txrev/GENCORD_txrev_fibroblast.all.tsv.gz
+GENCORD	T-cell	CL_0000084	T cell	T cell	naive	ge	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GENCORD/ge/GENCORD_ge_T-cell.all.tsv.gz
+GENCORD	T-cell	CL_0000084	T cell	T cell	naive	exon	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GENCORD/exon/GENCORD_exon_T-cell.all.tsv.gz
+GENCORD	T-cell	CL_0000084	T cell	T cell	naive	tx	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GENCORD/tx/GENCORD_tx_T-cell.all.tsv.gz
+GENCORD	T-cell	CL_0000084	T cell	T cell	naive	txrev	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GENCORD/txrev/GENCORD_txrev_T-cell.all.tsv.gz
+GEUVADIS	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	ge	445	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GEUVADIS/ge/GEUVADIS_ge_LCL.all.tsv.gz
+GEUVADIS	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	exon	445	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GEUVADIS/exon/GEUVADIS_exon_LCL.all.tsv.gz
+GEUVADIS	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	tx	445	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GEUVADIS/tx/GEUVADIS_tx_LCL.all.tsv.gz
+GEUVADIS	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	txrev	445	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GEUVADIS/txrev/GEUVADIS_txrev_LCL.all.tsv.gz
+HipSci	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	ge	322	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/HipSci/ge/HipSci_ge_iPSC.all.tsv.gz
+HipSci	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	exon	322	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/HipSci/exon/HipSci_exon_iPSC.all.tsv.gz
+HipSci	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	tx	322	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/HipSci/tx/HipSci_tx_iPSC.all.tsv.gz
+HipSci	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	txrev	322	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/HipSci/txrev/HipSci_txrev_iPSC.all.tsv.gz
+Kasela_2017	T-cell_CD4	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	microarray	280	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Kasela_2017/microarray/Kasela_2017_microarray_T-cell_CD4.all.tsv.gz
+Kasela_2017	T-cell_CD8	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	microarray	269	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Kasela_2017/microarray/Kasela_2017_microarray_T-cell_CD8.all.tsv.gz
+Lepik_2017	blood	UBERON_0000178	blood	blood	naive	ge	471	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Lepik_2017/ge/Lepik_2017_ge_blood.all.tsv.gz
+Lepik_2017	blood	UBERON_0000178	blood	blood	naive	exon	471	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Lepik_2017/exon/Lepik_2017_exon_blood.all.tsv.gz
+Lepik_2017	blood	UBERON_0000178	blood	blood	naive	tx	471	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Lepik_2017/tx/Lepik_2017_tx_blood.all.tsv.gz
+Lepik_2017	blood	UBERON_0000178	blood	blood	naive	txrev	471	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Lepik_2017/txrev/Lepik_2017_txrev_blood.all.tsv.gz
+Naranbhai_2015	neutrophil_CD16	CL_0000775	neutrophil	neutrophil	naive	microarray	93	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Naranbhai_2015/microarray/Naranbhai_2015_microarray_neutrophil_CD16.all.tsv.gz
+Nedelec_2016	macrophage_Listeria	CL_0000235	macrophage	macrophage	Listeria_5h	ge	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Nedelec_2016/ge/Nedelec_2016_ge_macrophage_Listeria.all.tsv.gz
+Nedelec_2016	macrophage_Listeria	CL_0000235	macrophage	macrophage	Listeria_5h	exon	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Nedelec_2016/exon/Nedelec_2016_exon_macrophage_Listeria.all.tsv.gz
+Nedelec_2016	macrophage_Listeria	CL_0000235	macrophage	macrophage	Listeria_5h	tx	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Nedelec_2016/tx/Nedelec_2016_tx_macrophage_Listeria.all.tsv.gz
+Nedelec_2016	macrophage_Listeria	CL_0000235	macrophage	macrophage	Listeria_5h	txrev	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Nedelec_2016/txrev/Nedelec_2016_txrev_macrophage_Listeria.all.tsv.gz
+Nedelec_2016	macrophage_naive	CL_0000235	macrophage	macrophage	naive	ge	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Nedelec_2016/ge/Nedelec_2016_ge_macrophage_naive.all.tsv.gz
+Nedelec_2016	macrophage_naive	CL_0000235	macrophage	macrophage	naive	exon	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Nedelec_2016/exon/Nedelec_2016_exon_macrophage_naive.all.tsv.gz
+Nedelec_2016	macrophage_naive	CL_0000235	macrophage	macrophage	naive	tx	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Nedelec_2016/tx/Nedelec_2016_tx_macrophage_naive.all.tsv.gz
+Nedelec_2016	macrophage_naive	CL_0000235	macrophage	macrophage	naive	txrev	163	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Nedelec_2016/txrev/Nedelec_2016_txrev_macrophage_naive.all.tsv.gz
+Nedelec_2016	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	ge	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Nedelec_2016/ge/Nedelec_2016_ge_macrophage_Salmonella.all.tsv.gz
+Nedelec_2016	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	exon	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Nedelec_2016/exon/Nedelec_2016_exon_macrophage_Salmonella.all.tsv.gz
+Nedelec_2016	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	tx	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Nedelec_2016/tx/Nedelec_2016_tx_macrophage_Salmonella.all.tsv.gz
+Nedelec_2016	macrophage_Salmonella	CL_0000235	macrophage	macrophage	Salmonella_5h	txrev	167	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Nedelec_2016/txrev/Nedelec_2016_txrev_macrophage_Salmonella.all.tsv.gz
+Quach_2016	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	ge	200	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/ge/Quach_2016_ge_monocyte_naive.all.tsv.gz
+Quach_2016	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	exon	200	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/exon/Quach_2016_exon_monocyte_naive.all.tsv.gz
+Quach_2016	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	tx	200	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/tx/Quach_2016_tx_monocyte_naive.all.tsv.gz
+Quach_2016	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	txrev	200	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/txrev/Quach_2016_txrev_monocyte_naive.all.tsv.gz
+Quach_2016	monocyte_LPS	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_6h	ge	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/ge/Quach_2016_ge_monocyte_LPS.all.tsv.gz
+Quach_2016	monocyte_LPS	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_6h	exon	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/exon/Quach_2016_exon_monocyte_LPS.all.tsv.gz
+Quach_2016	monocyte_LPS	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_6h	tx	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/tx/Quach_2016_tx_monocyte_LPS.all.tsv.gz
+Quach_2016	monocyte_LPS	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_6h	txrev	184	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/txrev/Quach_2016_txrev_monocyte_LPS.all.tsv.gz
+Quach_2016	monocyte_Pam3CSK4	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Pam3CSK4_6h	ge	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/ge/Quach_2016_ge_monocyte_Pam3CSK4.all.tsv.gz
+Quach_2016	monocyte_Pam3CSK4	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Pam3CSK4_6h	exon	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/exon/Quach_2016_exon_monocyte_Pam3CSK4.all.tsv.gz
+Quach_2016	monocyte_Pam3CSK4	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Pam3CSK4_6h	tx	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/tx/Quach_2016_tx_monocyte_Pam3CSK4.all.tsv.gz
+Quach_2016	monocyte_Pam3CSK4	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Pam3CSK4_6h	txrev	196	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/txrev/Quach_2016_txrev_monocyte_Pam3CSK4.all.tsv.gz
+Quach_2016	monocyte_R848	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	R848_6h	ge	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/ge/Quach_2016_ge_monocyte_R848.all.tsv.gz
+Quach_2016	monocyte_R848	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	R848_6h	exon	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/exon/Quach_2016_exon_monocyte_R848.all.tsv.gz
+Quach_2016	monocyte_R848	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	R848_6h	tx	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/tx/Quach_2016_tx_monocyte_R848.all.tsv.gz
+Quach_2016	monocyte_R848	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	R848_6h	txrev	191	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/txrev/Quach_2016_txrev_monocyte_R848.all.tsv.gz
+Quach_2016	monocyte_IAV	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	ge	198	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/ge/Quach_2016_ge_monocyte_IAV.all.tsv.gz
+Quach_2016	monocyte_IAV	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	exon	198	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/exon/Quach_2016_exon_monocyte_IAV.all.tsv.gz
+Quach_2016	monocyte_IAV	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	tx	198	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/tx/Quach_2016_tx_monocyte_IAV.all.tsv.gz
+Quach_2016	monocyte_IAV	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	txrev	198	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Quach_2016/txrev/Quach_2016_txrev_monocyte_IAV.all.tsv.gz
+ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/ROSMAP/ge/ROSMAP_ge_brain_naive.all.tsv.gz
+ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/ROSMAP/exon/ROSMAP_exon_brain_naive.all.tsv.gz
+ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/ROSMAP/tx/ROSMAP_tx_brain_naive.all.tsv.gz
+ROSMAP	brain_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	576	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/ROSMAP/txrev/ROSMAP_txrev_brain_naive.all.tsv.gz
+Schmiedel_2018	Tfh_memory	CL_0002038	T follicular helper cell	Tfh cell	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/ge/Schmiedel_2018_ge_Tfh_memory.all.tsv.gz
+Schmiedel_2018	Tfh_memory	CL_0002038	T follicular helper cell	Tfh cell	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/exon/Schmiedel_2018_exon_Tfh_memory.all.tsv.gz
+Schmiedel_2018	Tfh_memory	CL_0002038	T follicular helper cell	Tfh cell	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/tx/Schmiedel_2018_tx_Tfh_memory.all.tsv.gz
+Schmiedel_2018	Tfh_memory	CL_0002038	T follicular helper cell	Tfh cell	naive	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Tfh_memory.all.tsv.gz
+Schmiedel_2018	Th17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/ge/Schmiedel_2018_ge_Th17_memory.all.tsv.gz
+Schmiedel_2018	Th17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/exon/Schmiedel_2018_exon_Th17_memory.all.tsv.gz
+Schmiedel_2018	Th17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/tx/Schmiedel_2018_tx_Th17_memory.all.tsv.gz
+Schmiedel_2018	Th17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Th17_memory.all.tsv.gz
+Schmiedel_2018	Th1_memory	CL_0000545	T-helper 1 cell	Th1 cell	naive	ge	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/ge/Schmiedel_2018_ge_Th1_memory.all.tsv.gz
+Schmiedel_2018	Th1_memory	CL_0000545	T-helper 1 cell	Th1 cell	naive	exon	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/exon/Schmiedel_2018_exon_Th1_memory.all.tsv.gz
+Schmiedel_2018	Th1_memory	CL_0000545	T-helper 1 cell	Th1 cell	naive	tx	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/tx/Schmiedel_2018_tx_Th1_memory.all.tsv.gz
+Schmiedel_2018	Th1_memory	CL_0000545	T-helper 1 cell	Th1 cell	naive	txrev	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Th1_memory.all.tsv.gz
+Schmiedel_2018	Th2_memory	CL_0000546	T-helper 2 cell	Th2 cell	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/ge/Schmiedel_2018_ge_Th2_memory.all.tsv.gz
+Schmiedel_2018	Th2_memory	CL_0000546	T-helper 2 cell	Th2 cell	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/exon/Schmiedel_2018_exon_Th2_memory.all.tsv.gz
+Schmiedel_2018	Th2_memory	CL_0000546	T-helper 2 cell	Th2 cell	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/tx/Schmiedel_2018_tx_Th2_memory.all.tsv.gz
+Schmiedel_2018	Th2_memory	CL_0000546	T-helper 2 cell	Th2 cell	naive	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Th2_memory.all.tsv.gz
+Schmiedel_2018	Th1-17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	ge	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/ge/Schmiedel_2018_ge_Th1-17_memory.all.tsv.gz
+Schmiedel_2018	Th1-17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	exon	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/exon/Schmiedel_2018_exon_Th1-17_memory.all.tsv.gz
+Schmiedel_2018	Th1-17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	tx	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/tx/Schmiedel_2018_tx_Th1-17_memory.all.tsv.gz
+Schmiedel_2018	Th1-17_memory	CL_0000899	T-helper 17 cell	Th17 cell	naive	txrev	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Th1-17_memory.all.tsv.gz
+Schmiedel_2018	Treg_memory	CL_0002678	memory regulatory T cell	Treg naive	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/ge/Schmiedel_2018_ge_Treg_memory.all.tsv.gz
+Schmiedel_2018	Treg_memory	CL_0002678	memory regulatory T cell	Treg naive	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/exon/Schmiedel_2018_exon_Treg_memory.all.tsv.gz
+Schmiedel_2018	Treg_memory	CL_0002678	memory regulatory T cell	Treg naive	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/tx/Schmiedel_2018_tx_Treg_memory.all.tsv.gz
+Schmiedel_2018	Treg_memory	CL_0002678	memory regulatory T cell	Treg naive	naive	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Treg_memory.all.tsv.gz
+Schmiedel_2018	Treg_naive	CL_0002677	naive regulatory T cell	Treg memory	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/ge/Schmiedel_2018_ge_Treg_naive.all.tsv.gz
+Schmiedel_2018	Treg_naive	CL_0002677	naive regulatory T cell	Treg memory	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/exon/Schmiedel_2018_exon_Treg_naive.all.tsv.gz
+Schmiedel_2018	Treg_naive	CL_0002677	naive regulatory T cell	Treg memory	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/tx/Schmiedel_2018_tx_Treg_naive.all.tsv.gz
+Schmiedel_2018	Treg_naive	CL_0002677	naive regulatory T cell	Treg memory	naive	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/txrev/Schmiedel_2018_txrev_Treg_naive.all.tsv.gz
+Schmiedel_2018	B-cell_naive	CL_0000236	B cell	B cell	naive	ge	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/ge/Schmiedel_2018_ge_B-cell_naive.all.tsv.gz
+Schmiedel_2018	B-cell_naive	CL_0000236	B cell	B cell	naive	exon	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/exon/Schmiedel_2018_exon_B-cell_naive.all.tsv.gz
+Schmiedel_2018	B-cell_naive	CL_0000236	B cell	B cell	naive	tx	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/tx/Schmiedel_2018_tx_B-cell_naive.all.tsv.gz
+Schmiedel_2018	B-cell_naive	CL_0000236	B cell	B cell	naive	txrev	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/txrev/Schmiedel_2018_txrev_B-cell_naive.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_naive	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	ge	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/ge/Schmiedel_2018_ge_CD4_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_naive	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	exon	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/exon/Schmiedel_2018_exon_CD4_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_naive	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	tx	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/tx/Schmiedel_2018_tx_CD4_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_naive	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	txrev	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/txrev/Schmiedel_2018_txrev_CD4_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	anti-CD3-CD28_4h	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/ge/Schmiedel_2018_ge_CD4_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	anti-CD3-CD28_4h	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/exon/Schmiedel_2018_exon_CD4_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	anti-CD3-CD28_4h	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/tx/Schmiedel_2018_tx_CD4_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	CL_0000624	CD4-positive, alpha-beta T cell	CD4+ T cell	anti-CD3-CD28_4h	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/txrev/Schmiedel_2018_txrev_CD4_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_naive	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/ge/Schmiedel_2018_ge_CD8_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_naive	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/exon/Schmiedel_2018_exon_CD8_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_naive	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/tx/Schmiedel_2018_tx_CD8_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_naive	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/txrev/Schmiedel_2018_txrev_CD8_T-cell_naive.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	anti-CD3-CD28_4h	ge	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/ge/Schmiedel_2018_ge_CD8_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	anti-CD3-CD28_4h	exon	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/exon/Schmiedel_2018_exon_CD8_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	anti-CD3-CD28_4h	tx	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/tx/Schmiedel_2018_tx_CD8_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	CL_0000625	CD8-positive, alpha-beta T cell	CD8+ T cell	anti-CD3-CD28_4h	txrev	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/txrev/Schmiedel_2018_txrev_CD8_T-cell_anti-CD3-CD28.all.tsv.gz
+Schmiedel_2018	monocyte_CD16_naive	CL_0002396	CD14-low, CD16-positive monocyte	CD16+ monocyte	naive	ge	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/ge/Schmiedel_2018_ge_monocyte_CD16_naive.all.tsv.gz
+Schmiedel_2018	monocyte_CD16_naive	CL_0002396	CD14-low, CD16-positive monocyte	CD16+ monocyte	naive	exon	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/exon/Schmiedel_2018_exon_monocyte_CD16_naive.all.tsv.gz
+Schmiedel_2018	monocyte_CD16_naive	CL_0002396	CD14-low, CD16-positive monocyte	CD16+ monocyte	naive	tx	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/tx/Schmiedel_2018_tx_monocyte_CD16_naive.all.tsv.gz
+Schmiedel_2018	monocyte_CD16_naive	CL_0002396	CD14-low, CD16-positive monocyte	CD16+ monocyte	naive	txrev	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/txrev/Schmiedel_2018_txrev_monocyte_CD16_naive.all.tsv.gz
+Schmiedel_2018	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	ge	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/ge/Schmiedel_2018_ge_monocyte_naive.all.tsv.gz
+Schmiedel_2018	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	exon	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/exon/Schmiedel_2018_exon_monocyte_naive.all.tsv.gz
+Schmiedel_2018	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	tx	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/tx/Schmiedel_2018_tx_monocyte_naive.all.tsv.gz
+Schmiedel_2018	monocyte_naive	CL_0002057	CD14-positive, CD16-negative classical monocyte	monocyte	naive	txrev	91	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/txrev/Schmiedel_2018_txrev_monocyte_naive.all.tsv.gz
+Schmiedel_2018	NK-cell_naive	CL_0000623	natural killer cell	NK cell	naive	ge	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/ge/Schmiedel_2018_ge_NK-cell_naive.all.tsv.gz
+Schmiedel_2018	NK-cell_naive	CL_0000623	natural killer cell	NK cell	naive	exon	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/exon/Schmiedel_2018_exon_NK-cell_naive.all.tsv.gz
+Schmiedel_2018	NK-cell_naive	CL_0000623	natural killer cell	NK cell	naive	tx	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/tx/Schmiedel_2018_tx_NK-cell_naive.all.tsv.gz
+Schmiedel_2018	NK-cell_naive	CL_0000623	natural killer cell	NK cell	naive	txrev	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schmiedel_2018/txrev/Schmiedel_2018_txrev_NK-cell_naive.all.tsv.gz
+Schwartzentruber_2018	sensory_neuron	CL_0000101	sensory neuron	sensory neuron	naive	ge	98	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schwartzentruber_2018/ge/Schwartzentruber_2018_ge_sensory_neuron.all.tsv.gz
+Schwartzentruber_2018	sensory_neuron	CL_0000101	sensory neuron	sensory neuron	naive	exon	98	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schwartzentruber_2018/exon/Schwartzentruber_2018_exon_sensory_neuron.all.tsv.gz
+Schwartzentruber_2018	sensory_neuron	CL_0000101	sensory neuron	sensory neuron	naive	tx	98	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schwartzentruber_2018/tx/Schwartzentruber_2018_tx_sensory_neuron.all.tsv.gz
+Schwartzentruber_2018	sensory_neuron	CL_0000101	sensory neuron	sensory neuron	naive	txrev	98	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Schwartzentruber_2018/txrev/Schwartzentruber_2018_txrev_sensory_neuron.all.tsv.gz
+TwinsUK	fat	UBERON_0001013	adipose tissue	adipose	naive	ge	381	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/ge/TwinsUK_ge_fat.all.tsv.gz
+TwinsUK	fat	UBERON_0001013	adipose tissue	adipose	naive	exon	381	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/exon/TwinsUK_exon_fat.all.tsv.gz
+TwinsUK	fat	UBERON_0001013	adipose tissue	adipose	naive	tx	381	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/tx/TwinsUK_tx_fat.all.tsv.gz
+TwinsUK	fat	UBERON_0001013	adipose tissue	adipose	naive	txrev	381	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/txrev/TwinsUK_txrev_fat.all.tsv.gz
+TwinsUK	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	ge	418	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/ge/TwinsUK_ge_LCL.all.tsv.gz
+TwinsUK	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	exon	418	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/exon/TwinsUK_exon_LCL.all.tsv.gz
+TwinsUK	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	tx	418	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/tx/TwinsUK_tx_LCL.all.tsv.gz
+TwinsUK	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	txrev	418	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/txrev/TwinsUK_txrev_LCL.all.tsv.gz
+TwinsUK	skin	UBERON_0002097	skin of body	skin	naive	ge	370	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/ge/TwinsUK_ge_skin.all.tsv.gz
+TwinsUK	skin	UBERON_0002097	skin of body	skin	naive	exon	370	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/exon/TwinsUK_exon_skin.all.tsv.gz
+TwinsUK	skin	UBERON_0002097	skin of body	skin	naive	tx	370	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/tx/TwinsUK_tx_skin.all.tsv.gz
+TwinsUK	skin	UBERON_0002097	skin of body	skin	naive	txrev	370	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/txrev/TwinsUK_txrev_skin.all.tsv.gz
+TwinsUK	blood	UBERON_0000178	blood	blood	naive	ge	195	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/ge/TwinsUK_ge_blood.all.tsv.gz
+TwinsUK	blood	UBERON_0000178	blood	blood	naive	exon	195	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/exon/TwinsUK_exon_blood.all.tsv.gz
+TwinsUK	blood	UBERON_0000178	blood	blood	naive	tx	195	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/tx/TwinsUK_tx_blood.all.tsv.gz
+TwinsUK	blood	UBERON_0000178	blood	blood	naive	txrev	195	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/TwinsUK/txrev/TwinsUK_txrev_blood.all.tsv.gz
+van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	islet of Langerhans	pancreatic islet	naive	ge	117	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/van_de_Bunt_2015/ge/van_de_Bunt_2015_ge_pancreatic_islet.all.tsv.gz
+van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	islet of Langerhans	pancreatic islet	naive	exon	117	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/van_de_Bunt_2015/exon/van_de_Bunt_2015_exon_pancreatic_islet.all.tsv.gz
+van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	islet of Langerhans	pancreatic islet	naive	tx	117	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/van_de_Bunt_2015/tx/van_de_Bunt_2015_tx_pancreatic_islet.all.tsv.gz
+van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	islet of Langerhans	pancreatic islet	naive	txrev	117	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/van_de_Bunt_2015/txrev/van_de_Bunt_2015_txrev_pancreatic_islet.all.tsv.gz
+FUSION	adipose_naive	UBERON_0001013	adipose tissue	adipose	naive	exon	271	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/FUSION/exon/FUSION_exon_adipose_naive.all.tsv.gz
+FUSION	adipose_naive	UBERON_0001013	adipose tissue	adipose	naive	ge	271	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/FUSION/ge/FUSION_ge_adipose_naive.all.tsv.gz
+FUSION	adipose_naive	UBERON_0001013	adipose tissue	adipose	naive	tx	271	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/FUSION/tx/FUSION_tx_adipose_naive.all.tsv.gz
+FUSION	adipose_naive	UBERON_0001013	adipose tissue	adipose	naive	txrev	271	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/FUSION/txrev/FUSION_txrev_adipose_naive.all.tsv.gz
+FUSION	muscle_naive	UBERON_0001134	skeletal muscle tissue	muscle	naive	exon	288	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/FUSION/exon/FUSION_exon_muscle_naive.all.tsv.gz
+FUSION	muscle_naive	UBERON_0001134	skeletal muscle tissue	muscle	naive	ge	288	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/FUSION/ge/FUSION_ge_muscle_naive.all.tsv.gz
+FUSION	muscle_naive	UBERON_0001134	skeletal muscle tissue	muscle	naive	tx	288	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/FUSION/tx/FUSION_tx_muscle_naive.all.tsv.gz
+FUSION	muscle_naive	UBERON_0001134	skeletal muscle tissue	muscle	naive	txrev	288	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/FUSION/txrev/FUSION_txrev_muscle_naive.all.tsv.gz
+GTEx	adipose_subcutaneous	UBERON_0001013	adipose tissue	adipose	naive	ge	335	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_adipose_subcutaneous.all.tsv.gz
+GTEx	adipose_subcutaneous	UBERON_0001013	adipose tissue	adipose	naive	exon	335	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_adipose_subcutaneous.all.tsv.gz
+GTEx	adipose_subcutaneous	UBERON_0001013	adipose tissue	adipose	naive	tx	335	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_adipose_subcutaneous.all.tsv.gz
+GTEx	adipose_subcutaneous	UBERON_0001013	adipose tissue	adipose	naive	txrev	335	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_adipose_subcutaneous.all.tsv.gz
+GTEx	adipose_visceral	UBERON_0010414	omental fat pad	adipose (visceral)	naive	ge	219	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_adipose_visceral.all.tsv.gz
+GTEx	adipose_visceral	UBERON_0010414	omental fat pad	adipose (visceral)	naive	exon	219	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_adipose_visceral.all.tsv.gz
+GTEx	adipose_visceral	UBERON_0010414	omental fat pad	adipose (visceral)	naive	tx	219	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_adipose_visceral.all.tsv.gz
+GTEx	adipose_visceral	UBERON_0010414	omental fat pad	adipose (visceral)	naive	txrev	219	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_adipose_visceral.all.tsv.gz
+GTEx	adrenal_gland	UBERON_0002369	adrenal gland	adrenal gland	naive	ge	147	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_adrenal_gland.all.tsv.gz
+GTEx	adrenal_gland	UBERON_0002369	adrenal gland	adrenal gland	naive	exon	147	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_adrenal_gland.all.tsv.gz
+GTEx	adrenal_gland	UBERON_0002369	adrenal gland	adrenal gland	naive	tx	147	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_adrenal_gland.all.tsv.gz
+GTEx	adrenal_gland	UBERON_0002369	adrenal gland	adrenal gland	naive	txrev	147	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_adrenal_gland.all.tsv.gz
+GTEx	artery_aorta	UBERON_0001496	ascending aorta	artery (aorta)	naive	ge	234	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_artery_aorta.all.tsv.gz
+GTEx	artery_aorta	UBERON_0001496	ascending aorta	artery (aorta)	naive	exon	234	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_artery_aorta.all.tsv.gz
+GTEx	artery_aorta	UBERON_0001496	ascending aorta	artery (aorta)	naive	tx	234	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_artery_aorta.all.tsv.gz
+GTEx	artery_aorta	UBERON_0001496	ascending aorta	artery (aorta)	naive	txrev	234	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_artery_aorta.all.tsv.gz
+GTEx	artery_coronary	UBERON_0001621	coronary artery	artery (coronary)	naive	ge	133	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_artery_coronary.all.tsv.gz
+GTEx	artery_coronary	UBERON_0001621	coronary artery	artery (coronary)	naive	exon	133	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_artery_coronary.all.tsv.gz
+GTEx	artery_coronary	UBERON_0001621	coronary artery	artery (coronary)	naive	tx	133	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_artery_coronary.all.tsv.gz
+GTEx	artery_coronary	UBERON_0001621	coronary artery	artery (coronary)	naive	txrev	133	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_artery_coronary.all.tsv.gz
+GTEx	artery_tibial	UBERON_0007610	tibial artery	artery (tibial)	naive	ge	332	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_artery_tibial.all.tsv.gz
+GTEx	artery_tibial	UBERON_0007610	tibial artery	artery (tibial)	naive	exon	332	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_artery_tibial.all.tsv.gz
+GTEx	artery_tibial	UBERON_0007610	tibial artery	artery (tibial)	naive	tx	332	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_artery_tibial.all.tsv.gz
+GTEx	artery_tibial	UBERON_0007610	tibial artery	artery (tibial)	naive	txrev	332	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_artery_tibial.all.tsv.gz
+GTEx	blood	UBERON_0000178	blood	blood	naive	ge	379	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_blood.all.tsv.gz
+GTEx	blood	UBERON_0000178	blood	blood	naive	exon	379	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_blood.all.tsv.gz
+GTEx	blood	UBERON_0000178	blood	blood	naive	tx	379	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_blood.all.tsv.gz
+GTEx	blood	UBERON_0000178	blood	blood	naive	txrev	379	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_blood.all.tsv.gz
+GTEx	brain_amygdala	UBERON_0001876	amygdala	brain (amygdala)	naive	ge	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_brain_amygdala.all.tsv.gz
+GTEx	brain_amygdala	UBERON_0001876	amygdala	brain (amygdala)	naive	exon	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_brain_amygdala.all.tsv.gz
+GTEx	brain_amygdala	UBERON_0001876	amygdala	brain (amygdala)	naive	tx	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_brain_amygdala.all.tsv.gz
+GTEx	brain_amygdala	UBERON_0001876	amygdala	brain (amygdala)	naive	txrev	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_brain_amygdala.all.tsv.gz
+GTEx	brain_anterior_cingulate_cortex	UBERON_0009835	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	ge	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_brain_anterior_cingulate_cortex.all.tsv.gz
+GTEx	brain_anterior_cingulate_cortex	UBERON_0009835	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	exon	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_brain_anterior_cingulate_cortex.all.tsv.gz
+GTEx	brain_anterior_cingulate_cortex	UBERON_0009835	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	tx	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_brain_anterior_cingulate_cortex.all.tsv.gz
+GTEx	brain_anterior_cingulate_cortex	UBERON_0009835	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	txrev	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_brain_anterior_cingulate_cortex.all.tsv.gz
+GTEx	brain_caudate	UBERON_0001873	caudate nucleus	brain (caudate)	naive	ge	116	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_brain_caudate.all.tsv.gz
+GTEx	brain_caudate	UBERON_0001873	caudate nucleus	brain (caudate)	naive	exon	116	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_brain_caudate.all.tsv.gz
+GTEx	brain_caudate	UBERON_0001873	caudate nucleus	brain (caudate)	naive	tx	116	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_brain_caudate.all.tsv.gz
+GTEx	brain_caudate	UBERON_0001873	caudate nucleus	brain (caudate)	naive	txrev	116	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_brain_caudate.all.tsv.gz
+GTEx	brain_cerebellar_hemisphere	UBERON_0002037	cerebellum	brain (cerebellum)	naive	ge	105	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_brain_cerebellar_hemisphere.all.tsv.gz
+GTEx	brain_cerebellar_hemisphere	UBERON_0002037	cerebellum	brain (cerebellum)	naive	exon	105	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_brain_cerebellar_hemisphere.all.tsv.gz
+GTEx	brain_cerebellar_hemisphere	UBERON_0002037	cerebellum	brain (cerebellum)	naive	tx	105	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_brain_cerebellar_hemisphere.all.tsv.gz
+GTEx	brain_cerebellar_hemisphere	UBERON_0002037	cerebellum	brain (cerebellum)	naive	txrev	105	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_brain_cerebellar_hemisphere.all.tsv.gz
+GTEx	brain_cerebellum	UBERON_0002037	cerebellum	brain (cerebellum)	naive	ge	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_brain_cerebellum.all.tsv.gz
+GTEx	brain_cerebellum	UBERON_0002037	cerebellum	brain (cerebellum)	naive	exon	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_brain_cerebellum.all.tsv.gz
+GTEx	brain_cerebellum	UBERON_0002037	cerebellum	brain (cerebellum)	naive	tx	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_brain_cerebellum.all.tsv.gz
+GTEx	brain_cerebellum	UBERON_0002037	cerebellum	brain (cerebellum)	naive	txrev	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_brain_cerebellum.all.tsv.gz
+GTEx	brain_cortex	UBERON_0001870	frontal cortex	brain (cortex)	naive	ge	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_brain_cortex.all.tsv.gz
+GTEx	brain_cortex	UBERON_0001870	frontal cortex	brain (cortex)	naive	exon	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_brain_cortex.all.tsv.gz
+GTEx	brain_cortex	UBERON_0001870	frontal cortex	brain (cortex)	naive	tx	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_brain_cortex.all.tsv.gz
+GTEx	brain_cortex	UBERON_0001870	frontal cortex	brain (cortex)	naive	txrev	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_brain_cortex.all.tsv.gz
+GTEx	brain_frontal_cortex	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	106	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_brain_frontal_cortex.all.tsv.gz
+GTEx	brain_frontal_cortex	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	106	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_brain_frontal_cortex.all.tsv.gz
+GTEx	brain_frontal_cortex	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	106	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_brain_frontal_cortex.all.tsv.gz
+GTEx	brain_frontal_cortex	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	106	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_brain_frontal_cortex.all.tsv.gz
+GTEx	brain_hippocampus	UBERON_0001954	Ammon's horn	brain (hippocampus)	naive	ge	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_brain_hippocampus.all.tsv.gz
+GTEx	brain_hippocampus	UBERON_0001954	Ammon's horn	brain (hippocampus)	naive	exon	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_brain_hippocampus.all.tsv.gz
+GTEx	brain_hippocampus	UBERON_0001954	Ammon's horn	brain (hippocampus)	naive	tx	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_brain_hippocampus.all.tsv.gz
+GTEx	brain_hippocampus	UBERON_0001954	Ammon's horn	brain (hippocampus)	naive	txrev	89	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_brain_hippocampus.all.tsv.gz
+GTEx	brain_hypothalamus	UBERON_0001898	hypothalamus	brain (hypothalamus)	naive	ge	92	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_brain_hypothalamus.all.tsv.gz
+GTEx	brain_hypothalamus	UBERON_0001898	hypothalamus	brain (hypothalamus)	naive	exon	92	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_brain_hypothalamus.all.tsv.gz
+GTEx	brain_hypothalamus	UBERON_0001898	hypothalamus	brain (hypothalamus)	naive	tx	92	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_brain_hypothalamus.all.tsv.gz
+GTEx	brain_hypothalamus	UBERON_0001898	hypothalamus	brain (hypothalamus)	naive	txrev	92	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_brain_hypothalamus.all.tsv.gz
+GTEx	brain_nucleus_accumbens	UBERON_0001882	nucleus accumbens	brain (nucleus accumbens)	naive	ge	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_brain_nucleus_accumbens.all.tsv.gz
+GTEx	brain_nucleus_accumbens	UBERON_0001882	nucleus accumbens	brain (nucleus accumbens)	naive	exon	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_brain_nucleus_accumbens.all.tsv.gz
+GTEx	brain_nucleus_accumbens	UBERON_0001882	nucleus accumbens	brain (nucleus accumbens)	naive	tx	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_brain_nucleus_accumbens.all.tsv.gz
+GTEx	brain_nucleus_accumbens	UBERON_0001882	nucleus accumbens	brain (nucleus accumbens)	naive	txrev	110	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_brain_nucleus_accumbens.all.tsv.gz
+GTEx	brain_putamen	UBERON_0001874	putamen	brain (putamen)	naive	ge	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_brain_putamen.all.tsv.gz
+GTEx	brain_putamen	UBERON_0001874	putamen	brain (putamen)	naive	exon	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_brain_putamen.all.tsv.gz
+GTEx	brain_putamen	UBERON_0001874	putamen	brain (putamen)	naive	tx	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_brain_putamen.all.tsv.gz
+GTEx	brain_putamen	UBERON_0001874	putamen	brain (putamen)	naive	txrev	90	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_brain_putamen.all.tsv.gz
+GTEx	brain_spinal_cord	UBERON_0006469	C1 segment of cervical spinal cord	brain (spinal cord)	naive	ge	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_brain_spinal_cord.all.tsv.gz
+GTEx	brain_spinal_cord	UBERON_0006469	C1 segment of cervical spinal cord	brain (spinal cord)	naive	exon	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_brain_spinal_cord.all.tsv.gz
+GTEx	brain_spinal_cord	UBERON_0006469	C1 segment of cervical spinal cord	brain (spinal cord)	naive	tx	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_brain_spinal_cord.all.tsv.gz
+GTEx	brain_spinal_cord	UBERON_0006469	C1 segment of cervical spinal cord	brain (spinal cord)	naive	txrev	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_brain_spinal_cord.all.tsv.gz
+GTEx	brain_substantia_nigra	UBERON_0002038	substantia nigra	brain (substantia nigra)	naive	ge	64	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_brain_substantia_nigra.all.tsv.gz
+GTEx	brain_substantia_nigra	UBERON_0002038	substantia nigra	brain (substantia nigra)	naive	exon	64	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_brain_substantia_nigra.all.tsv.gz
+GTEx	brain_substantia_nigra	UBERON_0002038	substantia nigra	brain (substantia nigra)	naive	tx	64	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_brain_substantia_nigra.all.tsv.gz
+GTEx	brain_substantia_nigra	UBERON_0002038	substantia nigra	brain (substantia nigra)	naive	txrev	64	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_brain_substantia_nigra.all.tsv.gz
+GTEx	breast	UBERON_0008367	breast epithelium	breast	naive	ge	199	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_breast.all.tsv.gz
+GTEx	breast	UBERON_0008367	breast epithelium	breast	naive	exon	199	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_breast.all.tsv.gz
+GTEx	breast	UBERON_0008367	breast epithelium	breast	naive	tx	199	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_breast.all.tsv.gz
+GTEx	breast	UBERON_0008367	breast epithelium	breast	naive	txrev	199	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_breast.all.tsv.gz
+GTEx	colon_sigmoid	UBERON_0001159	sigmoid colon	sigmoid colon	naive	ge	164	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_colon_sigmoid.all.tsv.gz
+GTEx	colon_sigmoid	UBERON_0001159	sigmoid colon	sigmoid colon	naive	exon	164	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_colon_sigmoid.all.tsv.gz
+GTEx	colon_sigmoid	UBERON_0001159	sigmoid colon	sigmoid colon	naive	tx	164	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_colon_sigmoid.all.tsv.gz
+GTEx	colon_sigmoid	UBERON_0001159	sigmoid colon	sigmoid colon	naive	txrev	164	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_colon_sigmoid.all.tsv.gz
+GTEx	colon_transverse	UBERON_0001157	transverse colon	transverse colon	naive	ge	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_colon_transverse.all.tsv.gz
+GTEx	colon_transverse	UBERON_0001157	transverse colon	transverse colon	naive	exon	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_colon_transverse.all.tsv.gz
+GTEx	colon_transverse	UBERON_0001157	transverse colon	transverse colon	naive	tx	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_colon_transverse.all.tsv.gz
+GTEx	colon_transverse	UBERON_0001157	transverse colon	transverse colon	naive	txrev	190	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_colon_transverse.all.tsv.gz
+GTEx	esophagus_gej	UBERON_0004550	gastroesophageal sphincter	esophagus (gej)	naive	ge	168	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_esophagus_gej.all.tsv.gz
+GTEx	esophagus_gej	UBERON_0004550	gastroesophageal sphincter	esophagus (gej)	naive	exon	168	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_esophagus_gej.all.tsv.gz
+GTEx	esophagus_gej	UBERON_0004550	gastroesophageal sphincter	esophagus (gej)	naive	tx	168	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_esophagus_gej.all.tsv.gz
+GTEx	esophagus_gej	UBERON_0004550	gastroesophageal sphincter	esophagus (gej)	naive	txrev	168	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_esophagus_gej.all.tsv.gz
+GTEx	esophagus_mucosa	UBERON_0006920	esophagus squamous epithelium	esophagus (mucosa)	naive	ge	306	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_esophagus_mucosa.all.tsv.gz
+GTEx	esophagus_mucosa	UBERON_0006920	esophagus squamous epithelium	esophagus (mucosa)	naive	exon	306	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_esophagus_mucosa.all.tsv.gz
+GTEx	esophagus_mucosa	UBERON_0006920	esophagus squamous epithelium	esophagus (mucosa)	naive	tx	306	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_esophagus_mucosa.all.tsv.gz
+GTEx	esophagus_mucosa	UBERON_0006920	esophagus squamous epithelium	esophagus (mucosa)	naive	txrev	306	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_esophagus_mucosa.all.tsv.gz
+GTEx	esophagus_muscularis	UBERON_0004648	esophagus muscularis mucosa	esophagus (muscularis)	naive	ge	262	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_esophagus_muscularis.all.tsv.gz
+GTEx	esophagus_muscularis	UBERON_0004648	esophagus muscularis mucosa	esophagus (muscularis)	naive	exon	262	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_esophagus_muscularis.all.tsv.gz
+GTEx	esophagus_muscularis	UBERON_0004648	esophagus muscularis mucosa	esophagus (muscularis)	naive	tx	262	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_esophagus_muscularis.all.tsv.gz
+GTEx	esophagus_muscularis	UBERON_0004648	esophagus muscularis mucosa	esophagus (muscularis)	naive	txrev	262	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_esophagus_muscularis.all.tsv.gz
+GTEx	fibroblast	CL_0000057	fibroblast	fibroblast	naive	ge	282	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_fibroblast.all.tsv.gz
+GTEx	fibroblast	CL_0000057	fibroblast	fibroblast	naive	exon	282	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_fibroblast.all.tsv.gz
+GTEx	fibroblast	CL_0000057	fibroblast	fibroblast	naive	tx	282	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_fibroblast.all.tsv.gz
+GTEx	fibroblast	CL_0000057	fibroblast	fibroblast	naive	txrev	282	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_fibroblast.all.tsv.gz
+GTEx	heart_atrial_appendage	UBERON_0006631	right atrium auricular region	heart (atrial appendage)	naive	ge	204	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_heart_atrial_appendage.all.tsv.gz
+GTEx	heart_atrial_appendage	UBERON_0006631	right atrium auricular region	heart (atrial appendage)	naive	exon	204	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_heart_atrial_appendage.all.tsv.gz
+GTEx	heart_atrial_appendage	UBERON_0006631	right atrium auricular region	heart (atrial appendage)	naive	tx	204	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_heart_atrial_appendage.all.tsv.gz
+GTEx	heart_atrial_appendage	UBERON_0006631	right atrium auricular region	heart (atrial appendage)	naive	txrev	204	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_heart_atrial_appendage.all.tsv.gz
+GTEx	heart_left_ventricle	UBERON_0006566	left ventricle myocardium	heart (left ventricle)	naive	ge	220	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_heart_left_ventricle.all.tsv.gz
+GTEx	heart_left_ventricle	UBERON_0006566	left ventricle myocardium	heart (left ventricle)	naive	exon	220	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_heart_left_ventricle.all.tsv.gz
+GTEx	heart_left_ventricle	UBERON_0006566	left ventricle myocardium	heart (left ventricle)	naive	tx	220	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_heart_left_ventricle.all.tsv.gz
+GTEx	heart_left_ventricle	UBERON_0006566	left ventricle myocardium	heart (left ventricle)	naive	txrev	220	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_heart_left_ventricle.all.tsv.gz
+GTEx	kidney_cortex	UBERON_0001225	cortex of kidney	kidney (cortex)	naive	ge	32	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_kidney_cortex.all.tsv.gz
+GTEx	kidney_cortex	UBERON_0001225	cortex of kidney	kidney (cortex)	naive	exon	32	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_kidney_cortex.all.tsv.gz
+GTEx	kidney_cortex	UBERON_0001225	cortex of kidney	kidney (cortex)	naive	tx	32	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_kidney_cortex.all.tsv.gz
+GTEx	kidney_cortex	UBERON_0001225	cortex of kidney	kidney (cortex)	naive	txrev	32	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_kidney_cortex.all.tsv.gz
+GTEx	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	ge	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_LCL.all.tsv.gz
+GTEx	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	exon	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_LCL.all.tsv.gz
+GTEx	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	tx	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_LCL.all.tsv.gz
+GTEx	LCL	EFO_0005292	lymphoblastoid cell line	LCL	naive	txrev	124	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_LCL.all.tsv.gz
+GTEx	liver	UBERON_0001114	right lobe of liver	liver	naive	ge	128	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_liver.all.tsv.gz
+GTEx	liver	UBERON_0001114	right lobe of liver	liver	naive	exon	128	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_liver.all.tsv.gz
+GTEx	liver	UBERON_0001114	right lobe of liver	liver	naive	tx	128	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_liver.all.tsv.gz
+GTEx	liver	UBERON_0001114	right lobe of liver	liver	naive	txrev	128	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_liver.all.tsv.gz
+GTEx	lung	UBERON_0008952	upper lobe of left lung	lung	naive	ge	310	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_lung.all.tsv.gz
+GTEx	lung	UBERON_0008952	upper lobe of left lung	lung	naive	exon	310	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_lung.all.tsv.gz
+GTEx	lung	UBERON_0008952	upper lobe of left lung	lung	naive	tx	310	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_lung.all.tsv.gz
+GTEx	lung	UBERON_0008952	upper lobe of left lung	lung	naive	txrev	310	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_lung.all.tsv.gz
+GTEx	minor_salivary_gland	UBERON_0006330	anterior lingual gland	minor salivary gland	naive	ge	67	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_minor_salivary_gland.all.tsv.gz
+GTEx	minor_salivary_gland	UBERON_0006330	anterior lingual gland	minor salivary gland	naive	exon	67	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_minor_salivary_gland.all.tsv.gz
+GTEx	minor_salivary_gland	UBERON_0006330	anterior lingual gland	minor salivary gland	naive	tx	67	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_minor_salivary_gland.all.tsv.gz
+GTEx	minor_salivary_gland	UBERON_0006330	anterior lingual gland	minor salivary gland	naive	txrev	67	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_minor_salivary_gland.all.tsv.gz
+GTEx	muscle	UBERON_0001134	skeletal muscle tissue	muscle	naive	ge	410	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_muscle.all.tsv.gz
+GTEx	muscle	UBERON_0001134	skeletal muscle tissue	muscle	naive	exon	410	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_muscle.all.tsv.gz
+GTEx	muscle	UBERON_0001134	skeletal muscle tissue	muscle	naive	tx	410	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_muscle.all.tsv.gz
+GTEx	muscle	UBERON_0001134	skeletal muscle tissue	muscle	naive	txrev	410	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_muscle.all.tsv.gz
+GTEx	nerve_tibial	UBERON_0001323	tibial nerve	tibial nerve	naive	ge	302	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_nerve_tibial.all.tsv.gz
+GTEx	nerve_tibial	UBERON_0001323	tibial nerve	tibial nerve	naive	exon	302	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_nerve_tibial.all.tsv.gz
+GTEx	nerve_tibial	UBERON_0001323	tibial nerve	tibial nerve	naive	tx	302	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_nerve_tibial.all.tsv.gz
+GTEx	nerve_tibial	UBERON_0001323	tibial nerve	tibial nerve	naive	txrev	302	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_nerve_tibial.all.tsv.gz
+GTEx	ovary	UBERON_0000992	female gonad	ovary	naive	ge	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_ovary.all.tsv.gz
+GTEx	ovary	UBERON_0000992	female gonad	ovary	naive	exon	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_ovary.all.tsv.gz
+GTEx	ovary	UBERON_0000992	female gonad	ovary	naive	tx	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_ovary.all.tsv.gz
+GTEx	ovary	UBERON_0000992	female gonad	ovary	naive	txrev	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_ovary.all.tsv.gz
+GTEx	pancreas	UBERON_0001150	body of pancreas	pancreas	naive	ge	177	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_pancreas.all.tsv.gz
+GTEx	pancreas	UBERON_0001150	body of pancreas	pancreas	naive	exon	177	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_pancreas.all.tsv.gz
+GTEx	pancreas	UBERON_0001150	body of pancreas	pancreas	naive	tx	177	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_pancreas.all.tsv.gz
+GTEx	pancreas	UBERON_0001150	body of pancreas	pancreas	naive	txrev	177	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_pancreas.all.tsv.gz
+GTEx	pituitary	UBERON_0000007	pituitary gland	pituitary	naive	ge	114	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_pituitary.all.tsv.gz
+GTEx	pituitary	UBERON_0000007	pituitary gland	pituitary	naive	exon	114	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_pituitary.all.tsv.gz
+GTEx	pituitary	UBERON_0000007	pituitary gland	pituitary	naive	tx	114	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_pituitary.all.tsv.gz
+GTEx	pituitary	UBERON_0000007	pituitary gland	pituitary	naive	txrev	114	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_pituitary.all.tsv.gz
+GTEx	prostate	UBERON_0002367	prostate gland	prostate	naive	ge	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_prostate.all.tsv.gz
+GTEx	prostate	UBERON_0002367	prostate gland	prostate	naive	exon	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_prostate.all.tsv.gz
+GTEx	prostate	UBERON_0002367	prostate gland	prostate	naive	tx	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_prostate.all.tsv.gz
+GTEx	prostate	UBERON_0002367	prostate gland	prostate	naive	txrev	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_prostate.all.tsv.gz
+GTEx	skin_not_sun_exposed	UBERON_0036149	suprapubic skin	skin (suprapubic)	naive	ge	248	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_skin_not_sun_exposed.all.tsv.gz
+GTEx	skin_not_sun_exposed	UBERON_0036149	suprapubic skin	skin (suprapubic)	naive	exon	248	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_skin_not_sun_exposed.all.tsv.gz
+GTEx	skin_not_sun_exposed	UBERON_0036149	suprapubic skin	skin (suprapubic)	naive	tx	248	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_skin_not_sun_exposed.all.tsv.gz
+GTEx	skin_not_sun_exposed	UBERON_0036149	suprapubic skin	skin (suprapubic)	naive	txrev	248	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_skin_not_sun_exposed.all.tsv.gz
+GTEx	skin_sun_exposed	UBERON_0002097	skin of body	skin	naive	ge	343	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_skin_sun_exposed.all.tsv.gz
+GTEx	skin_sun_exposed	UBERON_0002097	skin of body	skin	naive	exon	343	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_skin_sun_exposed.all.tsv.gz
+GTEx	skin_sun_exposed	UBERON_0002097	skin of body	skin	naive	tx	343	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_skin_sun_exposed.all.tsv.gz
+GTEx	skin_sun_exposed	UBERON_0002097	skin of body	skin	naive	txrev	343	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_skin_sun_exposed.all.tsv.gz
+GTEx	small_intestine	UBERON_0001211	Peyer's patch	small intestine	naive	ge	99	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_small_intestine.all.tsv.gz
+GTEx	small_intestine	UBERON_0001211	Peyer's patch	small intestine	naive	exon	99	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_small_intestine.all.tsv.gz
+GTEx	small_intestine	UBERON_0001211	Peyer's patch	small intestine	naive	tx	99	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_small_intestine.all.tsv.gz
+GTEx	small_intestine	UBERON_0001211	Peyer's patch	small intestine	naive	txrev	99	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_small_intestine.all.tsv.gz
+GTEx	spleen	UBERON_0002106	spleen	spleen	naive	ge	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_spleen.all.tsv.gz
+GTEx	spleen	UBERON_0002106	spleen	spleen	naive	exon	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_spleen.all.tsv.gz
+GTEx	spleen	UBERON_0002106	spleen	spleen	naive	tx	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_spleen.all.tsv.gz
+GTEx	spleen	UBERON_0002106	spleen	spleen	naive	txrev	111	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_spleen.all.tsv.gz
+GTEx	stomach	UBERON_0000945	stomach	stomach	naive	ge	188	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_stomach.all.tsv.gz
+GTEx	stomach	UBERON_0000945	stomach	stomach	naive	exon	188	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_stomach.all.tsv.gz
+GTEx	stomach	UBERON_0000945	stomach	stomach	naive	tx	188	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_stomach.all.tsv.gz
+GTEx	stomach	UBERON_0000945	stomach	stomach	naive	txrev	188	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_stomach.all.tsv.gz
+GTEx	testis	UBERON_0000473	testis	testis	naive	ge	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_testis.all.tsv.gz
+GTEx	testis	UBERON_0000473	testis	testis	naive	exon	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_testis.all.tsv.gz
+GTEx	testis	UBERON_0000473	testis	testis	naive	tx	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_testis.all.tsv.gz
+GTEx	testis	UBERON_0000473	testis	testis	naive	txrev	186	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_testis.all.tsv.gz
+GTEx	thyroid	UBERON_0002046	thyroid gland	thyroid	naive	ge	316	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_thyroid.all.tsv.gz
+GTEx	thyroid	UBERON_0002046	thyroid gland	thyroid	naive	exon	316	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_thyroid.all.tsv.gz
+GTEx	thyroid	UBERON_0002046	thyroid gland	thyroid	naive	tx	316	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_thyroid.all.tsv.gz
+GTEx	thyroid	UBERON_0002046	thyroid gland	thyroid	naive	txrev	316	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_thyroid.all.tsv.gz
+GTEx	uterus	UBERON_0000995	uterus	uterus	naive	ge	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_uterus.all.tsv.gz
+GTEx	uterus	UBERON_0000995	uterus	uterus	naive	exon	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_uterus.all.tsv.gz
+GTEx	uterus	UBERON_0000995	uterus	uterus	naive	tx	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_uterus.all.tsv.gz
+GTEx	uterus	UBERON_0000995	uterus	uterus	naive	txrev	83	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_uterus.all.tsv.gz
+GTEx	vagina	UBERON_0000996	vagina	vagina	naive	ge	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/ge/GTEx_ge_vagina.all.tsv.gz
+GTEx	vagina	UBERON_0000996	vagina	vagina	naive	exon	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/exon/GTEx_exon_vagina.all.tsv.gz
+GTEx	vagina	UBERON_0000996	vagina	vagina	naive	tx	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/tx/GTEx_tx_vagina.all.tsv.gz
+GTEx	vagina	UBERON_0000996	vagina	vagina	naive	txrev	88	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/GTEx/txrev/GTEx_txrev_vagina.all.tsv.gz
+Braineac2	putamen	UBERON_0001874	putamen	brain (putamen)	naive	ge	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Braineac2/ge/Braineac2_ge_putamen.all.tsv.gz
+Braineac2	putamen	UBERON_0001874	putamen	brain (putamen)	naive	exon	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Braineac2/exon/Braineac2_exon_putamen.all.tsv.gz
+Braineac2	putamen	UBERON_0001874	putamen	brain (putamen)	naive	tx	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Braineac2/tx/Braineac2_tx_putamen.all.tsv.gz
+Braineac2	putamen	UBERON_0001874	putamen	brain (putamen)	naive	txrev	102	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Braineac2/txrev/Braineac2_txrev_putamen.all.tsv.gz
+Braineac2	substantia_nigra	UBERON_0002038	substantia_nigra	brain (substantia_nigra)	naive	ge	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Braineac2/ge/Braineac2_ge_substantia_nigra.all.tsv.gz
+Braineac2	substantia_nigra	UBERON_0002038	substantia_nigra	brain (substantia_nigra)	naive	exon	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Braineac2/exon/Braineac2_exon_substantia_nigra.all.tsv.gz
+Braineac2	substantia_nigra	UBERON_0002038	substantia_nigra	brain (substantia_nigra)	naive	tx	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Braineac2/tx/Braineac2_tx_substantia_nigra.all.tsv.gz
+Braineac2	substantia_nigra	UBERON_0002038	substantia_nigra	brain (substantia_nigra)	naive	txrev	65	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Braineac2/txrev/Braineac2_txrev_substantia_nigra.all.tsv.gz
+CommonMind	DLPFC_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	590	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CommonMind/ge/CommonMind_ge_DLPFC_naive.all.tsv.gz
+CommonMind	DLPFC_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	590	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CommonMind/exon/CommonMind_exon_DLPFC_naive.all.tsv.gz
+CommonMind	DLPFC_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	590	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CommonMind/tx/CommonMind_tx_DLPFC_naive.all.tsv.gz
+CommonMind	DLPFC_naive	UBERON_0009834	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	590	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CommonMind/txrev/CommonMind_txrev_DLPFC_naive.all.tsv.gz
+CAP	LCL_naive	EFO_0005292	lymphoblastoid cell line	LCL	naive	ge	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CAP/ge/CAP_ge_LCL_naive.all.tsv.gz
+CAP	LCL_naive	EFO_0005292	lymphoblastoid cell line	LCL	naive	exon	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CAP/exon/CAP_exon_LCL_naive.all.tsv.gz
+CAP	LCL_naive	EFO_0005292	lymphoblastoid cell line	LCL	naive	tx	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CAP/tx/CAP_tx_LCL_naive.all.tsv.gz
+CAP	LCL_naive	EFO_0005292	lymphoblastoid cell line	LCL	naive	txrev	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CAP/txrev/CAP_txrev_LCL_naive.all.tsv.gz
+CAP	LCL_statin	EFO_0005292	lymphoblastoid cell line	LCL	statin	ge	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CAP/ge/CAP_ge_LCL_statin.all.tsv.gz
+CAP	LCL_statin	EFO_0005292	lymphoblastoid cell line	LCL	statin	exon	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CAP/exon/CAP_exon_LCL_statin.all.tsv.gz
+CAP	LCL_statin	EFO_0005292	lymphoblastoid cell line	LCL	statin	tx	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CAP/tx/CAP_tx_LCL_statin.all.tsv.gz
+CAP	LCL_statin	EFO_0005292	lymphoblastoid cell line	LCL	statin	txrev	148	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/CAP/txrev/CAP_txrev_LCL_statin.all.tsv.gz
+iPSCORE	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	ge	107	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/iPSCORE/ge/iPSCORE_ge_iPSC.all.tsv.gz
+iPSCORE	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	exon	107	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/iPSCORE/exon/iPSCORE_exon_iPSC.all.tsv.gz
+iPSCORE	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	tx	107	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/iPSCORE/tx/iPSCORE_tx_iPSC.all.tsv.gz
+iPSCORE	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	txrev	107	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/iPSCORE/txrev/iPSCORE_txrev_iPSC.all.tsv.gz
+Peng_2018	placenta_naive	UBERON_0001987	placenta	placenta	naive	ge	149	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Peng_2018/ge/Peng_2018_ge_placenta_naive.all.tsv.gz
+Peng_2018	placenta_naive	UBERON_0001987	placenta	placenta	naive	exon	149	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Peng_2018/exon/Peng_2018_exon_placenta_naive.all.tsv.gz
+Peng_2018	placenta_naive	UBERON_0001987	placenta	placenta	naive	tx	149	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Peng_2018/tx/Peng_2018_tx_placenta_naive.all.tsv.gz
+Peng_2018	placenta_naive	UBERON_0001987	placenta	placenta	naive	txrev	149	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Peng_2018/txrev/Peng_2018_txrev_placenta_naive.all.tsv.gz
+PhLiPS	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	ge	86	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/PhLiPS/ge/PhLiPS_ge_iPSC.all.tsv.gz
+PhLiPS	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	exon	86	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/PhLiPS/exon/PhLiPS_exon_iPSC.all.tsv.gz
+PhLiPS	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	tx	86	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/PhLiPS/tx/PhLiPS_tx_iPSC.all.tsv.gz
+PhLiPS	iPSC	EFO_0004905	induced pluripotent stem cell	iPSC	naive	txrev	86	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/PhLiPS/txrev/PhLiPS_txrev_iPSC.all.tsv.gz
+PhLiPS	HLC	CL_0000182	HLC	hepatocyte	naive	ge	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/PhLiPS/ge/PhLiPS_ge_HLC.all.tsv.gz
+PhLiPS	HLC	CL_0000182	HLC	hepatocyte	naive	exon	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/PhLiPS/exon/PhLiPS_exon_HLC.all.tsv.gz
+PhLiPS	HLC	CL_0000182	HLC	hepatocyte	naive	tx	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/PhLiPS/tx/PhLiPS_tx_HLC.all.tsv.gz
+PhLiPS	HLC	CL_0000182	HLC	hepatocyte	naive	txrev	82	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/PhLiPS/txrev/PhLiPS_txrev_HLC.all.tsv.gz
+Steinberg_2020	synovium_naive	UBERON_0007616	layer of synovial tissue	synovium	naive	ge	72	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Steinberg_2020/ge/Steinberg_2020_ge_synovium_naive.all.tsv.gz
+Steinberg_2020	synovium_naive	UBERON_0007616	layer of synovial tissue	synovium	naive	exon	72	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Steinberg_2020/exon/Steinberg_2020_exon_synovium_naive.all.tsv.gz
+Steinberg_2020	synovium_naive	UBERON_0007616	layer of synovial tissue	synovium	naive	tx	72	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Steinberg_2020/tx/Steinberg_2020_tx_synovium_naive.all.tsv.gz
+Steinberg_2020	synovium_naive	UBERON_0007616	layer of synovial tissue	synovium	naive	txrev	72	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Steinberg_2020/txrev/Steinberg_2020_txrev_synovium_naive.all.tsv.gz
+Steinberg_2020	low_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	ge	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Steinberg_2020/ge/Steinberg_2020_ge_low_grade_cartilage_naive.all.tsv.gz
+Steinberg_2020	low_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	exon	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Steinberg_2020/exon/Steinberg_2020_exon_low_grade_cartilage_naive.all.tsv.gz
+Steinberg_2020	low_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	tx	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Steinberg_2020/tx/Steinberg_2020_tx_low_grade_cartilage_naive.all.tsv.gz
+Steinberg_2020	low_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	txrev	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Steinberg_2020/txrev/Steinberg_2020_txrev_low_grade_cartilage_naive.all.tsv.gz
+Steinberg_2020	high_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	ge	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Steinberg_2020/ge/Steinberg_2020_ge_high_grade_cartilage_naive.all.tsv.gz
+Steinberg_2020	high_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	exon	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Steinberg_2020/exon/Steinberg_2020_exon_high_grade_cartilage_naive.all.tsv.gz
+Steinberg_2020	high_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	tx	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Steinberg_2020/tx/Steinberg_2020_tx_high_grade_cartilage_naive.all.tsv.gz
+Steinberg_2020	high_grade_cartilage_naive	UBERON_0002418	cartilage tissue	cartilage	naive	txrev	69	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Steinberg_2020/txrev/Steinberg_2020_txrev_high_grade_cartilage_naive.all.tsv.gz
+Young_2019	microglia_naive	CL_0000129	microglial cell	microglia	naive	ge	104	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Young_2019/ge/Young_2019_ge_microglia_naive.all.tsv.gz
+Young_2019	microglia_naive	CL_0000129	microglial cell	microglia	naive	exon	104	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Young_2019/exon/Young_2019_exon_microglia_naive.all.tsv.gz
+Young_2019	microglia_naive	CL_0000129	microglial cell	microglia	naive	tx	104	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Young_2019/tx/Young_2019_tx_microglia_naive.all.tsv.gz
+Young_2019	microglia_naive	CL_0000129	microglial cell	microglia	naive	txrev	104	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Young_2019/txrev/Young_2019_txrev_microglia_naive.all.tsv.gz
+Bossini-Castillo_2019	Treg_naive	CL_0002677	naive regulatory T cell	Treg memory	naive	exon	119	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Bossini-Castillo_2019/exon/Bossini-Castillo_2019_exon_Treg_naive.all.tsv.gz
+Bossini-Castillo_2019	Treg_naive	CL_0002677	naive regulatory T cell	Treg memory	naive	ge	119	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Bossini-Castillo_2019/ge/Bossini-Castillo_2019_ge_Treg_naive.all.tsv.gz
+Bossini-Castillo_2019	Treg_naive	CL_0002677	naive regulatory T cell	Treg memory	naive	tx	119	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Bossini-Castillo_2019/tx/Bossini-Castillo_2019_tx_Treg_naive.all.tsv.gz
+Bossini-Castillo_2019	Treg_naive	CL_0002677	naive regulatory T cell	Treg memory	naive	txrev	119	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Bossini-Castillo_2019/txrev/Bossini-Castillo_2019_txrev_Treg_naive.all.tsv.gz
+Gilchrist_2021	NK-cell_naive	CL_0000623	natural killer cell	NK cell	naive	microarray	247	ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats/Gilchrist_2021/microarray/Gilchrist_2021_microarray_NK-cell_naive.all.tsv.gz
