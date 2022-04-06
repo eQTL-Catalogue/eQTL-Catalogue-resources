@@ -1,0 +1,32 @@
+study_id	chrX present	comment
+Fairfax_2014	Yes	
+Fairfax_2012	Yes	
+Naranbhai_2015	Yes	
+Gilchrist_2021	Yes	
+Kasela_2017	Yes	
+CEDAR	Yes	
+CommonMind	Yes	
+Young_2019	Yes	
+GTEx	Yes	WGS data
+GEUVADIS	Yes	WGS data
+Braineac2	Yes	
+HipSci	nonPAR	
+Alasoo_2018	nonPAR	
+Schwartzentruber_2018	nonPAR	
+FUSION	nonPAR	
+iPSCORE	nonPAR	
+PhLiPS	nonPAR	
+Bossini-Castillo_2019	nonPAR	
+Nedelec_2016	No	Male samples only
+Schmiedel_2018	No	Male samples diploid
+Peng_2018	No	Male samples diploid
+van_de_Bunt_2015	No	chrX missing
+Quach_2016	No	chrX missing
+BrainSeq	No	chrX missing
+CAP	No	chrX missing
+TwinsUK	No	chrX missing
+BLUEPRINT	No	chrX missing
+GENCORD	No	chrX missing
+Lepik_2017	No	chrX missing
+ROSMAP	No	chrX QC failed
+Steinberg_2020	No	plink sex imputation failed
