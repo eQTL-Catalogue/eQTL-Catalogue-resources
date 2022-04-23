@@ -67,11 +67,25 @@ nextflow run main.nf \
 ## Step 2: RNA-seq quantification with [eQTL-Catalogue/rnaseq](https://github.com/eQTL-Catalogue/rnaseq)
 
 #### Input
-1. Raw RNA-seq data in fastq format. 
+1. Trenscriptome reference annotations
+
+You can download the complete set of eQTL-Catalogue/rnaseq reference annotations corresponding to Ensembl 105/GENCODE 39 from here:
+
+```bash
+wget ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/references/rnaseq_complete_reference_290322.tar.gz
+```
+
+2. Raw RNA-seq data in fastq format. 
   - Is it paired-end or single-end? (Do you have one or two fastq files per sample?)
   - Is it stranded or unstranded?
   - Paths to the fastq files can be passed with the readPathsFile parameter. See example files for [paired-end](https://github.com/eQTL-Catalogue/rnaseq/blob/master/data/readPathsFile_macrophages_PE.tsv) and [single-end](https://github.com/eQTL-Catalogue/rnaseq/blob/master/data/readPathsFile_macrophages_SE.tsv) data.
-2. Imputed genotypes in VCF format (from the genimpute workflow). These are required to check genotype condordance between the VCF files and the RNA-seq data using the [MBV](https://doi.org/10.1093/bioinformatics/btx074) method.
+3. Imputed genotypes in VCF format (from the genimpute workflow). These are required to check genotype condordance between the VCF files and the RNA-seq data using the [MBV](https://doi.org/10.1093/bioinformatics/btx074) method.
+
+You can dowload an example VCF containing genotypes for 20 GBR samples of the GEUVADIS stusy from here
+
+```bash
+wget https://zenodo.org/record/6391156/files/GEUVADIS_GBR20.vcf.gz
+```
 
 #### Output
 Raw gene expression, exon expression, transcript expression and event expression matrices in a format suitable for the eQTL-Catalogue/qcnorm workflow.
