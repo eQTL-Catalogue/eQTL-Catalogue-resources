@@ -25,6 +25,11 @@ plink --vcf <path_to_vcf_file> --make-bed --out <plink_file_prefix>
 
 ```
 
+Finally, The PAR and non-PAR regions of the X chromosome should be merged together and the name of the X chromsome should be 'X'. This can be achieved with PLINK:
+```bash
+plink --bfile <plink_input_prefix> --merge-x --make-bed --output-chr MT --out <plink_output_prefix>
+```
+
 Optionally, you can also immediately check if there are some individual with many missing genotypes (see manual QC steps below). Individual samples with high levels of missingness (e.g. > 5%) should be excluded, because their presence can cause the imputation workflow to fail.
 
 ```bash
@@ -36,8 +41,8 @@ plink --bfile <plink_file_prefix> --missing
 You can download eQTL Catalogue [1000 Genomes 30x on GRCh38](https://www.internationalgenome.org/data-portal/data-collection/30x-grch38) reference panel from Zenodo:
 
 ```bash
-wget <zenodo_path>/genimpute_complete_reference.tar.gz
-tar -xzfv genimpute_complete_reference.tar.gz
+wget ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/references/genimpute_complete_reference_150322.tar.gz
+tar -xzfv genimpute_complete_reference_150322.tar.gz
 ```
 Note that the default paths to the phasing and imputation reference panels are specified in the `nextflow.config` file. If you place the `genimpute_complete_reference` folder into the genimpute workflow directory, then the paths should already be correct. If you decide to put the reference panel files somewhere else then you also need to modiy the corresponding paths in the `nextflow.config` file. 
 
