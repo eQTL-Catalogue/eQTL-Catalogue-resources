@@ -15,7 +15,7 @@ For an example, you can download the raw genotypes from the [CEDAR](https://doi.
 
 ```bash
 wget https://zenodo.org/record/6171348/files/CEDAR_HumanOmniExpress-12v1.tar.gz
-tar -xzfv CEDAR_HumanOmniExpress-12v1.tar.gz
+tar -xzvf CEDAR_HumanOmniExpress-12v1.tar.gz
 ```
 
 If your data is in VCF format, then you need to first convert it to PLINK format with:
@@ -42,7 +42,7 @@ You can download eQTL Catalogue [1000 Genomes 30x on GRCh38](https://www.interna
 
 ```bash
 wget ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/references/genimpute_complete_reference_150322.tar.gz
-tar -xzfv genimpute_complete_reference_150322.tar.gz
+tar -xzvf genimpute_complete_reference_150322.tar.gz
 ```
 Note that the default paths to the phasing and imputation reference panels are specified in the `nextflow.config` file. If you place the `genimpute_complete_reference` folder into the genimpute workflow directory, then the paths should already be correct. If you decide to put the reference panel files somewhere else then you also need to modiy the corresponding paths in the `nextflow.config` file. 
 
@@ -66,40 +66,82 @@ nextflow run main.nf \
 
 ## Step 2: RNA-seq quantification with [eQTL-Catalogue/rnaseq](https://github.com/eQTL-Catalogue/rnaseq)
 
-#### Input
-1. Trenscriptome reference annotations
+You can download the workflow directly from GitHub:
 
-You can download the complete set of eQTL-Catalogue/rnaseq reference annotations corresponding to Ensembl 105/GENCODE 39 from here:
+```bash
+git clone https://github.com/eQTL-Catalogue/rnaseq.git
+cd rnaseq
+```
+
+#### Input
+1. Transcriptome reference annotations
+
+Inside the rnaseq workflow directory, you first need to download the reference annotations corresponding to Ensembl 105/GENCODE 39 from here:
 
 ```bash
 wget ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/references/rnaseq_complete_reference_290322.tar.gz
+tar -xzvf rnaseq_complete_reference_290322.tar.gz
 ```
+
+This will create the rnaseq_complete_reference dirctory containing the following files:
+ - HISAT2 index (GRCh38/Ensembl 105)
+ - GENCODE v39 transriptome annotations for gene-level, exon-level and trancriptome-level quantification.
+ - Pre-computed txrevise annotations based on Ensembl 105 and FANTOM5 CAGE data.
+ - Molecular trait metadata for gene expression, exon expression, transcript usage and txrevise phenotypes.
 
 2. Raw RNA-seq data in fastq format. 
   - Is it paired-end or single-end? (Do you have one or two fastq files per sample?)
   - Is it stranded or unstranded?
-  - Paths to the fastq files can be passed with the readPathsFile parameter. See example files for [paired-end](https://github.com/eQTL-Catalogue/rnaseq/blob/master/data/readPathsFile_macrophages_PE.tsv) and [single-end](https://github.com/eQTL-Catalogue/rnaseq/blob/master/data/readPathsFile_macrophages_SE.tsv) data.
-3. Imputed genotypes in VCF format (from the genimpute workflow). These are required to check genotype condordance between the VCF files and the RNA-seq data using the [MBV](https://doi.org/10.1093/bioinformatics/btx074) method.
+  - Paths to the fastq files can be passed with the readPathsFile parameter. See example files for [paired-end](https://github.com/eQTL-Catalogue/rnaseq/blob/master/data/read_paths_GEUVADIS_GBR20.tsv) and [single-end](https://github.com/eQTL-Catalogue/rnaseq/blob/master/data/read_paths_GEUVADIS_GBR20_singleEnd.tsv) data from the GEUVADIS_GBR20 test dataset.
 
-You can dowload an example VCF containing genotypes for 20 GBR samples of the GEUVADIS stusy from here
+3. Imputed genotypes in VCF format (from the genimpute workflow). These are required to check genotype condordance between the VCF files and the RNA-seq data using the [QTLtools MBV](https://doi.org/10.1093/bioinformatics/btx074) method.
+
+If you have genotyping microarray data, you can obtain the imputed VCF in correct format using the genimpute workflow from Step 1 of this tutorial. 
+
+To run the workflow on the [GEUVADIS_GBR20](https://doi.org/10.5281/zenodo.6391156) test dataset, you can obtain the corresponding VCF from Zenodo:
 
 ```bash
 wget https://zenodo.org/record/6391156/files/GEUVADIS_GBR20.vcf.gz
 ```
 
 #### Output
-Raw gene expression, exon expression, transcript expression and event expression matrices in a format suitable for the eQTL-Catalogue/qcnorm workflow.
+Raw gene expression, exon expression, transcript usage, txevise event usage and leafcutter splice-junction usage matrices in a format suitable for the eQTL-Catalogue/qcnorm workflow (Step 3).
 
 #### Running the workflow
+
+##### Paired-end, unstranded
 ```bash
 nextflow run main.nf\
- -profile eqtl_catalogue\
- --readPathsFile <path_to_readPathsFile.tsv>\
+ -profile tartu_hpc\
+  -resume \
+ --readPathsFile data/read_paths_GEUVADIS_GBR20.tsv\
+ --unstranded\
+ --run_mbv\
+ --mbv_vcf GEUVADIS_GBR20.vcf.gz
+```
+
+##### Single-end, unstranded
+```bash
+nextflow run main.nf\
+ -profile tartu_hpc\
+  -resume \
+ --readPathsFile data/read_paths_GEUVADIS_GBR20_SE.tsv\
+ --unstranded\
+ --singleEnd\
+ --run_mbv\
+ --mbv_vcf GEUVADIS_GBR20.vcf.gz
+```
+
+##### Paired-end, stranded
+(Note that this example will complete, but ignores ~50% of the reads because the GEUVADIS dataset is unstranded)
+```bash
+nextflow run main.nf\
+ -profile tartu_hpc\
+  -resume \
+ --readPathsFile data/read_paths_GEUVADIS_GBR20.tsv\
  --reverse_stranded\
  --run_mbv\
- --mbv_vcf <path_to_imputed_genotypes_from_the_genimpute_workflow.vcf.gz>\
- -process.queue main\
- -resume
+ --mbv_vcf GEUVADIS_GBR20.vcf.gz
 ```
 
 #### Other useful options
