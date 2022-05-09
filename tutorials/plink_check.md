@@ -1,5 +1,5 @@
 
-#Checking raw genotype files prior to imputation
+# Checking raw genotype files prior to imputation
 
 ## VCF to PLINK conversion
 
@@ -9,6 +9,9 @@ If your genotypes are in VCF format, then you need to first convert them to the 
 plink --vcf <path_to_vcf_file> --make-bed --out <plink_file_prefix>
 
 ```
+
+## Checking the X chromosome name
+
 The eQTL-Catalogue/genimpute workflow assumes that the input genotypes are in the binary plink format (.bed/.bim/.fam),
 use GRCh37 coordinates and the name of the X chromosome is 'X' with PAR and non-PAR regions merged. You can use to following command to check the chromosome names in a plink file:
 
@@ -79,9 +82,4 @@ And now the chromosome names are correct:
   33399 X
     494 Y
      46 MT
-```
-
-Finally, The PAR and non-PAR regions of the X chromosome should be merged together and the name of the X chromsome should be 'X'. This can be achieved with PLINK:
-```bash
-plink --bfile <plink_input_prefix> --merge-x --make-bed --output-chr MT --out <plink_output_prefix>
 ```
