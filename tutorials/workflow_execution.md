@@ -17,6 +17,7 @@ For an example, you can download the raw genotypes from the [CEDAR](https://doi.
 wget https://zenodo.org/record/6171348/files/CEDAR_HumanOmniExpress-12v1.tar.gz
 tar -xzvf CEDAR_HumanOmniExpress-12v1.tar.gz
 ```
+The eQTL-Catalogue/genimpute workflow assumes that the input genotypes are in the binary plink format (.bed/.bim/.fam), use GRCh37 coordinates and the name of the X chromosome is 'X' with PAr and non-PAR regions merged. To check that your plink files corresponds to these standards and to fix common issues, please see [here](plink_check.md).
 
 If your data is in VCF format, then you need to first convert it to PLINK format with:
 
@@ -38,7 +39,7 @@ plink --bfile <plink_file_prefix> --missing
 
 2. Imputation and phasing reference panel.
 
-You can download eQTL Catalogue [1000 Genomes 30x on GRCh38](https://www.internationalgenome.org/data-portal/data-collection/30x-grch38) reference panel from Zenodo:
+You can download eQTL Catalogue [1000 Genomes 30x on GRCh38](https://www.internationalgenome.org/data-portal/data-collection/30x-grch38) reference panel from the eQTL Catalogue FTP server:
 
 ```bash
 wget ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/references/genimpute_complete_reference_150322.tar.gz
