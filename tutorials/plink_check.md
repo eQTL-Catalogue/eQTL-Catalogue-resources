@@ -84,7 +84,7 @@ And now the chromosome names are correct:
      46 MT
 ```
 
-# Checking for individuals with high levels of missingness
+## Checking for individuals with high levels of missingness
 
 Optionally, you can also immediately check if there are some individual with many missing genotypes (see manual QC steps below). Individual samples with high levels of missingness (e.g. > 5%) should be excluded, because their presence can cause the imputation workflow to fail.
 
