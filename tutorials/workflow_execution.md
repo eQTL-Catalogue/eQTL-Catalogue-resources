@@ -19,18 +19,6 @@ tar -xzvf CEDAR_HumanOmniExpress-12v1.tar.gz
 ```
 The eQTL-Catalogue/genimpute workflow assumes that the input genotypes are in the binary plink format (.bed/.bim/.fam), use GRCh37 coordinates and the name of the X chromosome is 'X' with PAr and non-PAR regions merged. To check that your plink files corresponds to these standards and to fix common issues, please see [here](plink_check.md).
 
-If your data is in VCF format, then you need to first convert it to PLINK format with:
-
-```bash
-plink --vcf <path_to_vcf_file> --make-bed --out <plink_file_prefix>
-
-```
-
-Finally, The PAR and non-PAR regions of the X chromosome should be merged together and the name of the X chromsome should be 'X'. This can be achieved with PLINK:
-```bash
-plink --bfile <plink_input_prefix> --merge-x --make-bed --output-chr MT --out <plink_output_prefix>
-```
-
 Optionally, you can also immediately check if there are some individual with many missing genotypes (see manual QC steps below). Individual samples with high levels of missingness (e.g. > 5%) should be excluded, because their presence can cause the imputation workflow to fail.
 
 ```bash
