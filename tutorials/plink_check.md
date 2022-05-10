@@ -91,3 +91,62 @@ Optionally, you can also immediately check if there are some individual with man
 ```bash
 plink --bfile <plink_file_prefix> --missing
 ```
+
+We can then sort the the output file by the 6th column.
+
+```bash
+(base) [a72094@rocket plink_raw]$ sort -k6n plink.imiss | tail -n 10
+ 565     566          Y    17028   759993  0.02241
+ 553     554          Y    19595   759993  0.02578
+ 241     242          Y    22634   752646  0.03007
+ 155     155          Y    22967   759993  0.03022
+1086   155_2          Y    24584   759993  0.03235
+ 931     932          Y    43064   752646  0.05722
+ 919     920          Y    45395   752646  0.06031
+ 913     914          Y    73313   752646  0.09741
+ 925     926          Y    90780   752646   0.1206
+ 844     845          Y   176952   752646   0.2351
+ ```
+ In this case, we can see that there are five samples with more than 5% of the genotypes missing.
+ 
+ To remove those samples, we first need to make text file with corresponding sample ids:
+
+```bash
+(base) [a72094@rocket plink_raw]$ cat remove_list.txt
+931 932
+919 920
+913 914
+925 926
+844 845
+```
+
+We can then use the --remove option to remove those samples from the plink file
+
+```bash
+plink -bfile OneK1K_AllChr --remove remove_list.txt --make-bed --out OneK1K_nonmissing
+```
+
+## Avoding numerical sample ids
+
+While numerical sample ids are allowed both in plink and VCF formats, they can cause potential downstream problems when loading genotype matrices into R. Thus it's a good practice to make sure that genotype ids start with a character. We also do not need family ids (fid) in our analysis.
+
+If the original .fam file looks something like this:
+```bash
+(base) [a72094@rocket plink_raw]$ head -n5 OneK1K_AllChr.fam
+1 1 0 0 2 -9
+2 2 0 0 2 -9
+3 3 0 0 2 -9
+4 4 0 0 2 -9
+5 5 0 0 2 -9
+```
+
+We could change it to something like this:
+
+```bash
+(base) [a72094@rocket plink_raw]$ head -n5 OneK1K_nonmissing.fam
+0 OneK1K_1 0 0 2 -9
+0 OneK1K_2 0 0 2 -9
+0 OneK1K_3 0 0 2 -9
+0 OneK1K_4 0 0 2 -9
+0 OneK1K_5 0 0 2 -9
+```
