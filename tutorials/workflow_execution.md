@@ -8,6 +8,13 @@ Data processing for the eQTL Catalogue is based on the four main workflows:
 
 ## Step 1: Genotype imputation with [eQTL-Catalogue/genimpute](https://github.com/eQTL-Catalogue/genimpute)
 
+#### Dowload the workflow from GitHub
+
+```bash
+git clone https://github.com/eQTL-Catalogue/genimpute.git
+cd genimpute
+```
+
 #### Input
 1. Raw genotype data in PLINK binary format (.bed, .bim, .fam) and using GRCh37 coordinates. 
 
