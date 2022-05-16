@@ -18,6 +18,7 @@
 -  **rna_qc_passed** - Sample has passed RNA QC (TRUE/FALSE)
 -  **genotype_qc_passed** - Sample has passed genotype QC (TRUE/FALSE) 
 -  **study** - unique identifier for the study, usually last name of the first author + year of publication (e.g. Fairfax_2014). The exceptions are studies with established well-known names (GTEx, HipSci, GEUVADIS).
+-  **qc_comment** - a reason for why the sample was excluded in QC step.
     
 ### Optional columns
 -  **batch** - batch of the RNA-seq or microarray experiment. Used for regressing out batch effects in the microarray datasets.
