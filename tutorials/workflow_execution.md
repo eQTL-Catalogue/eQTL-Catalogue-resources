@@ -197,6 +197,13 @@ nextflow run main.nf -profile tartu_hpc \
 
 ## Step 4: QTL analysis and fine mapping with [eQTL-Catalogue/qtlmap](https://github.com/eQTL-Catalogue/qtlmap)
 
+#### Dowload the workflow from GitHub
+
+```bash
+git clone https://github.com/eQTL-Catalogue/genimpute.git
+cd genimpute
+```
+
 #### Input
 1. Normalised moleocular trait files from the qcnorm workflow. **NOTE:** The studyFile from qcnorm `(qcnorm_output_directory>/<study_name>/<study_name>_qtlmap_inputs.tsv)` contains relative paths. You should either copy the qcnorm output directory to the qtlmap directory or create a symlink with the same name. 
 
