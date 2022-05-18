@@ -25,7 +25,7 @@ wget https://zenodo.org/record/6171348/files/CEDAR_HumanOmniExpress-12v1.tar.gz
 tar -xzvf CEDAR_HumanOmniExpress-12v1.tar.gz
 ```
 The eQTL-Catalogue/genimpute workflow assumes that the input genotypes are in the binary plink format (.bed/.bim/.fam), use GRCh37 coordinates and the name of the X chromosome is 'X' with PAR and non-PAR regions merged. To check that your plink files corresponds to these standards and to fix common issues, please see:
-* [Checking raw genotype files prior to imputation](plink_check.md).
+* [Checking raw genotype files prior to imputation](plink_check.md)
 
 2. Imputation and phasing reference panel.
 
