@@ -24,7 +24,8 @@ For an example, you can download the raw genotypes from the [CEDAR](https://doi.
 wget https://zenodo.org/record/6171348/files/CEDAR_HumanOmniExpress-12v1.tar.gz
 tar -xzvf CEDAR_HumanOmniExpress-12v1.tar.gz
 ```
-The eQTL-Catalogue/genimpute workflow assumes that the input genotypes are in the binary plink format (.bed/.bim/.fam), use GRCh37 coordinates and the name of the X chromosome is 'X' with PAR and non-PAR regions merged. To check that your plink files corresponds to these standards and to fix common issues, please see [here](plink_check.md).
+The eQTL-Catalogue/genimpute workflow assumes that the input genotypes are in the binary plink format (.bed/.bim/.fam), use GRCh37 coordinates and the name of the X chromosome is 'X' with PAR and non-PAR regions merged. To check that your plink files corresponds to these standards and to fix common issues, please see:
+* [Checking raw genotype files prior to imputation](plink_check.md).
 
 2. Imputation and phasing reference panel.
 
@@ -56,7 +57,7 @@ nextflow run main.nf \
 
 ## Step 2: RNA-seq quantification with [eQTL-Catalogue/rnaseq](https://github.com/eQTL-Catalogue/rnaseq)
 
-You can download the workflow directly from GitHub:
+#### Dowload the workflow from GitHub
 
 ```bash
 git clone https://github.com/eQTL-Catalogue/rnaseq.git
@@ -139,6 +140,13 @@ Use the `-executor.queueSize` option to limit the number alignment jobs running 
 
 
 ## Step 3: Gene expression and genotype data normalisation and QC with [eQTL-Catalogue/qcnorm](https://github.com/eQTL-Catalogue/qcnorm)
+
+#### Dowload the workflow from GitHub
+
+```bash
+git clone https://github.com/eQTL-Catalogue/qcnorm.git
+cd qcnorm
+```
 
 #### Input
 1. Imputed genotypes from the genimpute workflow
