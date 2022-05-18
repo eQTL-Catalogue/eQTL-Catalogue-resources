@@ -162,7 +162,7 @@ tar -xzvf rnaseq_complete_reference_290322.tar.gz
 ```
 
 #### Output
-Normalised molecular trait (gene expression, exon expression, transcript usage, event usage) matrices in a format suitable for the qtlmap workflow.
+Normalised molecular trait matrices in a format suitable for the qtlmap workflow. Note that the `--quant_results_path` needs to be an **absolute path** to the [eQTL-Catalogue/rnaseq] results folder. Relative path will not work.
 
 #### Running the workflow
 ```bash
@@ -170,7 +170,7 @@ nextflow run main.nf -profile tartu_hpc \
  -resume\
  --study_name GEUVADIS_GBR20\
  --vcf_file ../rnaseq/GEUVADIS_GBR20.vcf.gz\
- --quant_results_path ../rnaseq/results\
+ --quant_results_path /<absolute_path_to>/rnaseq/results\
  --sample_meta_path GEUVADIS_GBR20_sample_metadata.tsv\
  --skip_exon_norm true\
  --skip_tx_norm true\
