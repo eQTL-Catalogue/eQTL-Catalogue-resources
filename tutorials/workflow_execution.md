@@ -143,24 +143,40 @@ Use the `-executor.queueSize` option to limit the number alignment jobs running 
 #### Input
 1. Imputed genotypes from the genimpute workflow
 2. RNA-seq quantification results from the rnaseq workflow.
-3. Sample metadata file. See here for an example from the [GEUVADIS dataset](workflow_execution_files/GEUVADIS.tsv). Required columns:
+3. Sample metadata file. See here for an example from the [GEUVADIS_GBR20 dataset](workflow_execution_files/GEUVADIS_GBR20_sample_metadata.tsv). 
+Required columns: sample_id, genotype_id, qtl_group, sex.
+
+For the GEUVADIS_GBR20 dataset, you can download the sample metadata file from Zenodo:
+
+```bash
+wget https://zenodo.org/record/6391156/files/GEUVADIS_GBR20_sample_metadata.tsv
+```
+
+4. Molecular trait metadata files 
+
+These can be downloaded as part of the eQTL-Caltalogue/rnaseq workflow reference dataset:
+
+```bash
+wget ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/references/rnaseq_complete_reference_290322.tar.gz
+tar -xzvf rnaseq_complete_reference_290322.tar.gz
+```
 
 #### Output
 Normalised molecular trait (gene expression, exon expression, transcript usage, event usage) matrices in a format suitable for the qtlmap workflow.
 
 #### Running the workflow
 ```bash
-nextflow run main.nf\
-  -profile tartu_hpc\
-  --study_name <study_name>\
-  --vcf_file <path_to_imputed_genotypes_from_the_genimpute_workflow.vcf.gz>\
-  --exclude_population\
-  --quant_results_path <rnaseq_workfow_output_folder_path>\
-  --sample_meta_path <path_to_sample_metadata_file>\
-  --skip_leafcutter_norm\
-  --outdir <path_to_output_directory>\
-  -process.queue amd\
-  -resume
+nextflow run main.nf -profile tartu_hpc \
+ -resume\
+ --study_name GEUVADIS_GBR20\
+ --vcf_file ../rnaseq/GEUVADIS_GBR20.vcf.gz\
+ --quant_results_path ../rnaseq/results\
+ --sample_meta_path GEUVADIS_GBR20_sample_metadata.tsv\
+ --skip_exon_norm true\
+ --skip_tx_norm true\
+ --skip_txrev_norm true\
+ --skip_leafcutter_norm \
+ --outdir ./GEUVADIS_GBR20_qcnorm
 ```
 
 #### Manual QC steps
