@@ -1,4 +1,4 @@
-# Tutorial on running all eQTL Catalogue workflows from start to finisih
+# Tutorial on running all eQTL Catalogue workflows from start to finish
 
 Data processing for the eQTL Catalogue is based on the four main workflows:
 * [eQTL-Catalogue/genimpute](https://github.com/eQTL-Catalogue/genimpute)
