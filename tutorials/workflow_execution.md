@@ -152,7 +152,7 @@ cd qcnorm
 1. Imputed genotypes from the genimpute workflow
 2. RNA-seq quantification results from the rnaseq workflow.
 3. Sample metadata file. See here for an example from the [GEUVADIS_GBR20 dataset](workflow_execution_files/GEUVADIS_GBR20_sample_metadata.tsv). 
-Required columns: sample_id, genotype_id, qtl_group, sex.
+Required columns: sample_id, genotype_id, qtl_group, sex, genotype_qc_passed, rna_qc_passed, study.
 
 For the GEUVADIS_GBR20 dataset, you can download the sample metadata file from Zenodo:
 
