@@ -195,6 +195,31 @@ nextflow run main.nf -profile tartu_hpc \
 4. Check of the expression of sex-specific genes is consistent with the annotated sex of the samples. Fix missing or mis-annotated sex in the sample metadata file. Note that high simultaneous expression of both XIST (female-specifc) and Y chromosome genes (male-specifc) can be a good indiciation of RNA cross-contamination between two samples. This is often concordant with the results seen in the RNA-seq analysis.
 
 
+### Normalising gene expression data only
+
+If you already have an RNA-seq read count matrix and do not want to re-run the rnaseq workflow, then you can use the qcorm to just obtain the normalised gene expression matrix (cqn normlisation followed by inverse normal transformation).
+
+An example count matrix from the GEUVADIS_GBR20 dataset can be downloaded from Zenodo:
+
+```bash
+wget https://zenodo.org/record/6631875/files/GEUVADIS_GBR20_gene_counts.tsv.gz
+```
+
+And then, qcnorm can be run like this:
+
+```bash
+nextflow run main.nf -profile tartu_hpc -resume\
+ -entry norm_only\
+ --study_name GEUVADIS_GBR20\
+ --ge_exp_matrix_path GEUVADIS_GBR20_gene_counts.tsv.gz\
+ --sample_meta_path GEUVADIS_GBR20_sample_metadata.tsv\
+ --skip_exon_norm true\
+ --skip_tx_norm true\
+ --skip_txrev_norm true\
+ --skip_leafcutter_norm \
+ --outdir GEUVADIS_GBR20_qcnorm_ge
+```
+
 ## Step 4: QTL analysis and fine mapping with [eQTL-Catalogue/qtlmap](https://github.com/eQTL-Catalogue/qtlmap)
 
 #### Dowload the workflow from GitHub
