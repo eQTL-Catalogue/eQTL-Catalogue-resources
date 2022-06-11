@@ -225,8 +225,8 @@ nextflow run main.nf -profile tartu_hpc -resume\
 #### Dowload the workflow from GitHub
 
 ```bash
-git clone https://github.com/eQTL-Catalogue/genimpute.git
-cd genimpute
+git clone https://github.com/eQTL-Catalogue/qtlmap.git
+cd qtlmap
 ```
 
 #### Input
