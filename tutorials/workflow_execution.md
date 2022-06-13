@@ -232,6 +232,8 @@ cd qtlmap
 #### Input
 1. Normalised moleocular trait files from the qcnorm workflow. **NOTE:** The studyFile from qcnorm `(qcnorm_output_directory>/<study_name>/<study_name>_qtlmap_inputs.tsv)` contains relative paths. You should either copy the qcnorm output directory to the qtlmap directory or create a symlink with the same name. 
 
+Note that if you did not impute the genotypes with genimpute workflow then you should make sure that VCF file contains bi-allelic variants only (bcftools view -m2 -M2). 
+
 2. Mapping file form unique variant ids (CHR_POS_REF_ALT) to rsids (--varid_rsid_map_file parameter).
 
 The mapping file can be downloaded from Zenodo:
