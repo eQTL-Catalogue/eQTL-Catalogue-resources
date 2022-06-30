@@ -60,3 +60,5 @@ Schmiedel_2018	NK-cell_naive	naive	naive	NK-cell	CL_0000623	natural killer cell
 ROSMAP	brain_naive	naive	naive	brain	UBERON_0009834	dorsolateral prefrontal cortex
 BrainSeq	brain	naive	naive	brain	UBERON_0009834	dorsolateral prefrontal cortex
 Lepik_2017	blood	naive	naive	blood	UBERON_0000178	blood
+Gilchrist_2021	NK-cell_naive	naive	naive	NK-cell	CL_0000623	natural killer cell
+Bossini-Castillo_2019	Treg_naive	naive	naive	Treg	CL_0002677	naive regulatory T cell
