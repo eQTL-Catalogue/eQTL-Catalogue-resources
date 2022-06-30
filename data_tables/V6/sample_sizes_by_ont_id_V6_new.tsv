@@ -1,0 +1,13 @@
+tissue_ontology_id	tissue_ontology_term	sample_size_by_ontology	studies
+CL_0000129	microglial cell	104	Young_2019
+CL_0000182	hepatocyte	79	PhLiPS
+CL_0000623	natural killer cell	247	Gilchrist_2021
+CL_0002677	naive regulatory T cell	119	Bossini-Castillo_2019
+EFO_0004905	induced pluripotent stem cell	184	PhLiPS, iPSCORE
+EFO_0005292	lymphoblastoid cell line	296	CAP
+UBERON_0001874	putamen	102	Braineac2
+UBERON_0001987	placenta	149	Peng_2018
+UBERON_0002038	substantia nigra	65	Braineac2
+UBERON_0002418	cartilage tissue	138	Steinberg_2020
+UBERON_0007616	layer of synovial tissue	72	Steinberg_2020
+UBERON_0009834	dorsolateral prefrontal cortex	586	CommonMind

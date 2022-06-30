@@ -117,6 +117,7 @@ sample_size_by_dataset <- all_studies_studies %>%
 sample_size_by_dataset <- sample_size_by_dataset %>% left_join(tissue_ontology_mapping, by = c("study", "qtl_group", "cell_type"))
 
 readr::write_tsv(sample_size_by_dataset, "/Users/kerimov/Work/GitHub/eQTL-Catalogue-resources/data_tables/V6/sample_size_by_dataset.tsv")
+sample_size_by_dataset$sample_size %>% sum()
 ```
 
 ```{r}
@@ -127,10 +128,33 @@ sample_sizes_by_ont_id <- all_studies_studies %>%
 
 readr::write_tsv(sample_sizes_by_ont_id, "/Users/kerimov/Work/GitHub/eQTL-Catalogue-resources/data_tables/V6/sample_sizes_by_ont_id.tsv")
 ```
+## Write newly added study stats only
+
+```{r}
+V6_new_studies <- c("CAP","Peng_2018","PhLiPS","iPSCORE","CommonMind","Braineac2","Steinberg_2020","Young_2019","Bossini-Castillo_2019","Gilchrist_2021")
+v6_new_studies_meta <- all_studies_studies %>% 
+  dplyr::filter(study %in% V6_new_studies)
+
+sample_size_by_dataset_V6 <- v6_new_studies_meta %>%
+  dplyr::group_by(study, qtl_group, cell_type, condition) %>% 
+  dplyr::summarise(sample_size = n())
+
+sample_size_by_dataset_V6 <- sample_size_by_dataset_V6 %>% left_join(tissue_ontology_mapping, by = c("study", "qtl_group", "cell_type"))
+
+readr::write_tsv(sample_size_by_dataset_V6, "/Users/kerimov/Work/GitHub/eQTL-Catalogue-resources/data_tables/V6/sample_size_by_dataset_V6_new.tsv")
+sample_size_by_dataset_V6$sample_size %>% sum()
+```
 
 
 
+```{r}
+sample_sizes_by_ont_id_V6_new <- v6_new_studies_meta %>% 
+  dplyr::left_join(tissue_ontology_mapping, by = c("study", "qtl_group", "cell_type")) %>% 
+  dplyr::group_by(tissue_ontology_id, tissue_ontology_term) %>% 
+  dplyr::summarise(sample_size_by_ontology = n(), studies = paste(unique(study), collapse = ", "))
 
+readr::write_tsv(sample_sizes_by_ont_id_V6_new, "/Users/kerimov/Work/GitHub/eQTL-Catalogue-resources/data_tables/V6/sample_sizes_by_ont_id_V6_new.tsv")
+```
 
 
 
