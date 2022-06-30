@@ -1,0 +1,145 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r}
+library(dplyr)
+library(readr)
+library(stringr)
+```
+
+```{r}
+studies_df <- readr::read_tsv("/Users/kerimov/Work/GitHub/eQTL-Catalogue-resources/data_tables/V6/V6_studies.tsv")
+rnaseq_studies = studies_df %>% 
+  dplyr::filter(Type == "RNAseq") %>% 
+  dplyr::pull(Study)
+mandatory_columns = c("sample_id", "genotype_id", "sex", "cell_type", "condition", "qtl_group", "study")
+all_rnaseq_studies <- data.frame()
+
+for (study in rnaseq_studies) {
+  sample_meta <- readr::read_tsv(str_interp("/Users/kerimov/Work/GitHub/SampleArcheology/studies/cleaned/${study}.tsv")) %>% 
+    dplyr::filter(genotype_qc_passed, rna_qc_passed) %>% 
+    dplyr::select(mandatory_columns)
+  
+  all_rnaseq_studies <- all_rnaseq_studies %>% rbind(sample_meta)
+}
+```
+
+```{r}
+sample_size_by_dataset_rnaseq <- all_rnaseq_studies %>% 
+  dplyr::group_by(study, qtl_group, cell_type, condition) %>% 
+  dplyr::summarise(sample_size = n())
+  
+# readr::write_tsv(sample_size_by_dataset_rnaseq, "/Users/kerimov/Work/GitHub/eQTL-Catalogue-resources/data_tables/V6/sample_size_by_dataset_rnaseq.tsv")
+
+```
+
+
+```{r}
+tissue_ontology_mapping <- readr::read_tsv("/Users/kerimov/Work/GitHub/eQTL-Catalogue-resources/ontology_mappings/tissue_ontology_mapping.tsv")
+tissue_ontology_mapping <- tissue_ontology_mapping %>% 
+  dplyr::mutate(study = ifelse((study == "BLUEPRINT" & cell_type=="T-cell"), "BLUEPRINT_PE", study)) %>% 
+  dplyr::mutate(study = ifelse((study == "BLUEPRINT"), "BLUEPRINT_SE", study)) 
+
+sample_size_by_dataset_rnaseq <- sample_size_by_dataset_rnaseq %>% left_join(tissue_ontology_mapping, by = c("study", "qtl_group", "cell_type"))
+
+readr::write_tsv(sample_size_by_dataset_rnaseq, "/Users/kerimov/Work/GitHub/eQTL-Catalogue-resources/data_tables/V6/sample_size_by_dataset_rnaseq.tsv")
+```
+
+```{r}
+sample_sizes_by_ont_id_rnaseq <- all_rnaseq_studies %>% 
+  dplyr::left_join(tissue_ontology_mapping, by = c("study", "qtl_group", "cell_type")) %>% 
+  dplyr::group_by(tissue_ontology_id, tissue_ontology_term) %>% 
+  dplyr::summarise(sample_size_by_ontology = n(), studies = paste(unique(study), collapse = ", "))
+
+readr::write_tsv(sample_sizes_by_ont_id_rnaseq, "/Users/kerimov/Work/GitHub/eQTL-Catalogue-resources/data_tables/V6/sample_sizes_by_ont_id_rnaseq.tsv")
+```
+
+
+```{r}
+microarray_studies = studies_df %>% 
+  dplyr::filter(Type == "microarray") %>% 
+  dplyr::pull(Study)
+
+all_microarray_studies <- data.frame()
+
+for (study in microarray_studies) {
+  sample_meta <- readr::read_tsv(str_interp("/Users/kerimov/Work/GitHub/SampleArcheology/studies/cleaned/${study}.tsv")) %>% 
+    dplyr::filter(genotype_qc_passed, rna_qc_passed) %>% 
+    dplyr::select(mandatory_columns)
+  
+  all_microarray_studies <- all_microarray_studies %>% rbind(sample_meta)
+}
+```
+
+```{r}
+sample_size_by_dataset_microrray <- all_microarray_studies %>% 
+  dplyr::group_by(study, qtl_group, cell_type, condition) %>% 
+  dplyr::summarise(sample_size = n())
+
+sample_size_by_dataset_microrray <- sample_size_by_dataset_microrray %>% left_join(tissue_ontology_mapping, by = c("study", "qtl_group", "cell_type"))
+
+readr::write_tsv(sample_size_by_dataset_microrray, "/Users/kerimov/Work/GitHub/eQTL-Catalogue-resources/data_tables/V6/sample_size_by_dataset_microarray.tsv")
+```
+
+```{r}
+sample_sizes_by_ont_id_microarray <- all_microarray_studies %>% 
+  dplyr::left_join(tissue_ontology_mapping, by = c("study", "qtl_group", "cell_type")) %>% 
+  dplyr::group_by(tissue_ontology_id, tissue_ontology_term) %>% 
+  dplyr::summarise(sample_size_by_ontology = n(), studies = paste(unique(study), collapse = ", "))
+
+readr::write_tsv(sample_sizes_by_ont_id_microarray, "/Users/kerimov/Work/GitHub/eQTL-Catalogue-resources/data_tables/V6/sample_sizes_by_ont_id_microarray.tsv")
+```
+
+
+## All Studies
+
+```{r}
+
+all_studies_studies <- data.frame()
+
+for (study in studies_df$Study) {
+  sample_meta <- readr::read_tsv(str_interp("/Users/kerimov/Work/GitHub/SampleArcheology/studies/cleaned/${study}.tsv")) %>% 
+    dplyr::filter(genotype_qc_passed, rna_qc_passed) %>% 
+    dplyr::select(mandatory_columns)
+  
+  all_studies_studies <- all_studies_studies %>% rbind(sample_meta)
+}
+```
+
+```{r}
+sample_size_by_dataset <- all_studies_studies %>%
+  dplyr::group_by(study, qtl_group, cell_type, condition) %>% 
+  dplyr::summarise(sample_size = n())
+
+sample_size_by_dataset <- sample_size_by_dataset %>% left_join(tissue_ontology_mapping, by = c("study", "qtl_group", "cell_type"))
+
+readr::write_tsv(sample_size_by_dataset, "/Users/kerimov/Work/GitHub/eQTL-Catalogue-resources/data_tables/V6/sample_size_by_dataset.tsv")
+```
+
+```{r}
+sample_sizes_by_ont_id <- all_studies_studies %>% 
+  dplyr::left_join(tissue_ontology_mapping, by = c("study", "qtl_group", "cell_type")) %>% 
+  dplyr::group_by(tissue_ontology_id, tissue_ontology_term) %>% 
+  dplyr::summarise(sample_size_by_ontology = n(), studies = paste(unique(study), collapse = ", "))
+
+readr::write_tsv(sample_sizes_by_ont_id, "/Users/kerimov/Work/GitHub/eQTL-Catalogue-resources/data_tables/V6/sample_sizes_by_ont_id.tsv")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
