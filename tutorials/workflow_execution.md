@@ -183,9 +183,22 @@ nextflow run main.nf -profile tartu_hpc \
  --skip_exon_norm true\
  --skip_tx_norm true\
  --skip_txrev_norm true\
- --skip_leafcutter_norm \
+ --skip_leafcutter_norm true\
  --outdir ./GEUVADIS_GBR20_qcnorm
 ```
+
+To include all quantification methods into the normalisation, just remove the `--skip_XXX_norm` parameters:
+
+```bash
+nextflow run main.nf -profile tartu_hpc \
+ -resume\
+ --study_name GEUVADIS_GBR20\
+ --vcf_file ../rnaseq/GEUVADIS_GBR20.vcf.gz\
+ --quant_results_path /<absolute_path_to>/rnaseq/results\
+ --sample_meta_path GEUVADIS_GBR20_sample_metadata.tsv\
+ --outdir ./GEUVADIS_GBR20_qcnorm
+```
+
 
 #### Manual QC steps
 
