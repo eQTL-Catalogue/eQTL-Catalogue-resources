@@ -187,7 +187,7 @@ nextflow run main.nf -profile tartu_hpc \
  --skip_tx_norm true\
  --skip_txrev_norm true\
  --skip_leafcutter_norm true\
- --outdir ./GEUVADIS_GBR20_qcnorm
+ --outdir /<absolute_path_to>/GEUVADIS_GBR20_qcnorm
 ```
 
 To include all quantification methods into the normalisation, just remove the `--skip_XXX_norm` parameters:
@@ -199,7 +199,7 @@ nextflow run main.nf -profile tartu_hpc \
  --vcf_file /<absolute_path_to>/GEUVADIS_GBR20.vcf.gz\
  --quant_results_path /<absolute_path_to>/rnaseq/results\
  --sample_meta_path /<absolute_path_to>/GEUVADIS_GBR20_sample_metadata.tsv\
- --outdir ./GEUVADIS_GBR20_qcnorm
+ --outdir /<absolute_path_to>/GEUVADIS_GBR20_qcnorm
 ```
 
 
@@ -246,11 +246,20 @@ cd qtlmap
 ```
 
 #### Input
-1. Normalised moleocular trait files from the qcnorm workflow. **NOTE:** The studyFile from qcnorm `(qcnorm_output_directory>/<study_name>/<study_name>_qtlmap_inputs.tsv)` contains relative paths. You should either copy the qcnorm output directory to the qtlmap directory or create a symlink with the same name. 
+1. Normalised moleocular trait files from the qcnorm workflow. **NOTE:** The studyFile from qcnorm `(qcnorm_output_directory>/<study_name>/<study_name>_qtlmap_inputs.tsv)` contains paths relative to the `--outdir` parameter. If you specified `--outdir` with absolute path, then most paths in the studyFile should also be ansolute paths.
+
+2. The same molecular trait metadata files that were used by the rnaseq and qcnorm workflows. 
+
+Either create a symlink to existing rnaseq_complete_reference folder or download again from the eQTL Catalogue FTP server:
+
+```bash
+wget ftp://ftp.ebi.ac.uk/pub/databases/spot/eQTL/references/rnaseq_complete_reference_290322.tar.gz
+tar -xzvf rnaseq_complete_reference_290322.tar.gz
+```
 
 Note that if you did not impute the genotypes with genimpute workflow then you should make sure that VCF file contains bi-allelic variants only (bcftools view -m2 -M2). 
 
-2. Mapping file form unique variant ids (CHR_POS_REF_ALT) to rsids (--varid_rsid_map_file parameter).
+3. Mapping file form unique variant ids (CHR_POS_REF_ALT) to rsids (--varid_rsid_map_file parameter).
 
 The mapping file can be downloaded from Zenodo:
 
