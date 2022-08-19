@@ -149,10 +149,12 @@ cd qcnorm
 ```
 
 #### Input
-1. Imputed genotypes from the genimpute workflow
-2. RNA-seq quantification results from the rnaseq workflow.
-3. Sample metadata file. See here for an example from the [GEUVADIS_GBR20 dataset](workflow_execution_files/GEUVADIS_GBR20_sample_metadata.tsv). 
+1. `--vcf_file`: **Absolute path** to mputed genotypes from the genimpute workflow
+2. `--quant_results_path`: **Absolute path** to RNA-seq quantification results from the [eQTL-Catalogue/rnaseq] workflow.
+3. `--sample_meta_path`: **Absolute path** to the sample metadata file. See here for an example from the [GEUVADIS_GBR20 dataset](workflow_execution_files/GEUVADIS_GBR20_sample_metadata.tsv). 
 Required columns: sample_id, genotype_id, qtl_group, sex, genotype_qc_passed, rna_qc_passed, study.
+
+Note that all of the three main inputs (`--quant_results_path`,`--vcf_file` and `--sample_meta_path`) should be **absolute paths** to the corresponding files or folders. This ensures that in Step 4, the [eQTL-Catalogue/qtlmap] workflow is also able to find these files. 
 
 For the GEUVADIS_GBR20 dataset, you can download the sample metadata file from Zenodo:
 
@@ -170,7 +172,7 @@ tar -xzvf rnaseq_complete_reference_290322.tar.gz
 ```
 
 #### Output
-Normalised molecular trait matrices in a format suitable for the qtlmap workflow. Note that the `--quant_results_path` needs to be an **absolute path** to the [eQTL-Catalogue/rnaseq] results folder. Relative path will not work.
+Normalised molecular trait matrices in a format suitable for the qtlmap workflow. 
 
 #### Running the workflow
 ```bash
