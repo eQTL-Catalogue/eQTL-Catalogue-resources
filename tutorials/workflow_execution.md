@@ -154,13 +154,14 @@ cd qcnorm
 3. `--sample_meta_path`: **Absolute path** to the sample metadata file. See here for an example from the [GEUVADIS_GBR20 dataset](workflow_execution_files/GEUVADIS_GBR20_sample_metadata.tsv). 
 Required columns: sample_id, genotype_id, qtl_group, sex, genotype_qc_passed, rna_qc_passed, study.
 
-Note that all of the three main inputs (`--quant_results_path`,`--vcf_file` and `--sample_meta_path`) should be **absolute paths** to the corresponding files or folders. This ensures that in Step 4, the [eQTL-Catalogue/qtlmap] workflow is also able to find these files. 
-
 For the GEUVADIS_GBR20 dataset, you can download the sample metadata file from Zenodo:
 
 ```bash
 wget https://zenodo.org/record/6391156/files/GEUVADIS_GBR20_sample_metadata.tsv
 ```
+
+Note that all three main inputs (`--quant_results_path`,`--vcf_file` and `--sample_meta_path`) should be **absolute paths** to the corresponding files or folders. This ensures that in Step 4, the [eQTL-Catalogue/qtlmap] workflow is also able to find these files. 
+
 
 4. Molecular trait metadata files 
 
