@@ -173,7 +173,7 @@ tar -xzvf rnaseq_complete_reference_290322.tar.gz
 ```
 
 #### Output
-Normalised molecular trait matrices in a format suitable for the qtlmap workflow. 
+ `--outdir`: Absolute path to qcnorm output folder containing normalised molecular trait matrices in a format suitable for the qtlmap workflow. Relative path will also work here, but makes it more difficult to run qltmap workflow in the next step.
 
 #### Running the workflow
 ```bash
