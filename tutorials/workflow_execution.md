@@ -177,9 +177,9 @@ Normalised molecular trait matrices in a format suitable for the qtlmap workflow
 nextflow run main.nf -profile tartu_hpc \
  -resume\
  --study_name GEUVADIS_GBR20\
- --vcf_file ../rnaseq/GEUVADIS_GBR20.vcf.gz\
+ --vcf_file /<absolute_path_to>/GEUVADIS_GBR20.vcf.gz\
  --quant_results_path /<absolute_path_to>/rnaseq/results\
- --sample_meta_path GEUVADIS_GBR20_sample_metadata.tsv\
+ --sample_meta_path /<absolute_path_to>/GEUVADIS_GBR20_sample_metadata.tsv\
  --skip_exon_norm true\
  --skip_tx_norm true\
  --skip_txrev_norm true\
@@ -193,9 +193,9 @@ To include all quantification methods into the normalisation, just remove the `-
 nextflow run main.nf -profile tartu_hpc \
  -resume\
  --study_name GEUVADIS_GBR20\
- --vcf_file ../rnaseq/GEUVADIS_GBR20.vcf.gz\
+ --vcf_file /<absolute_path_to>/GEUVADIS_GBR20.vcf.gz\
  --quant_results_path /<absolute_path_to>/rnaseq/results\
- --sample_meta_path GEUVADIS_GBR20_sample_metadata.tsv\
+ --sample_meta_path /<absolute_path_to>/GEUVADIS_GBR20_sample_metadata.tsv\
  --outdir ./GEUVADIS_GBR20_qcnorm
 ```
 
