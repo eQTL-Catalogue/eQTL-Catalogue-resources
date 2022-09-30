@@ -54,7 +54,8 @@ message("Number of cell types and tissues: ", length(unique(dataset_table$tissue
 studies = dplyr::select(dataset_table, study) %>% 
   dplyr::distinct() %>% dplyr::arrange(study)
 study_ids = dplyr::mutate(studies, study_index = c(1:length(study))) %>% 
-  dplyr::mutate(study_id = ifelse(study_index < 10, paste0("QTS", "00000", study_index), paste0("QTS", "0000", study_index))) %>%
+  dplyr::mutate(padded_study_idx = stringr::str_pad(study_index, 6, "0", side = "left")) %>%
+  dplyr::mutate(study_id = paste0("QTS", padded_study_idx)) %>%
   dplyr::select(study, study_id)
 write.table(study_ids, "data_tables/study_id_map.tsv", sep = "\t", row.names = F, quote = F)
 
