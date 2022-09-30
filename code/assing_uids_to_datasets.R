@@ -29,16 +29,25 @@ message("Number of studies: ", length(unique(final_meta$study)))
 message("Number of datasets: ", length(unique(final_meta$dataset_name)))
 message("Number of donors:", length(unique(final_meta$genotype_id)))
 
+#Calculate sample sizes
+sample_sizes = dplyr::group_by(final_meta, study, qtl_group) %>% 
+  dplyr::summarise(sample_size = length(sample_id)) %>% 
+  dplyr::ungroup()
+
 #Map to tissues
 friendly_names = readr::read_tsv("ontology_mappings/friendly_names.tsv") %>%
   dplyr::select(tissue_ontology_id, tissue_label)
 tissue_map = readr::read_tsv("ontology_mappings/tissue_ontology_mapping.tsv") %>%
   dplyr::select(study, qtl_group, tissue_ontology_id, tissue_ontology_term) %>%
   dplyr::left_join(friendly_names)
+condition_labels = readr::read_tsv("ontology_mappings/condition_labels.tsv") 
 
-dataset_table = dplyr::select(final_meta, study, study_file, qtl_group) %>% 
+dataset_table = dplyr::select(final_meta, study, study_file, qtl_group, protocol) %>% 
   dplyr::distinct() %>%
-  dplyr::left_join(tissue_map)
+  dplyr::left_join(tissue_map) %>%
+  dplyr::left_join(sample_sizes, by = c("study", "qtl_group")) %>%
+  dplyr::left_join(condition_labels, by = c("study", "qtl_group")) %>%
+  dplyr::mutate(condition_label = ifelse(is.na(condition_label), "naive", condition_label))
 message("Number of cell types and tissues: ", length(unique(dataset_table$tissue_label)))
 
 #Assign study ids
@@ -49,11 +58,18 @@ study_ids = dplyr::mutate(studies, study_index = c(1:length(study))) %>%
   dplyr::select(study, study_id)
 write.table(study_ids, "data_tables/study_id_map.tsv", sep = "\t", row.names = F, quote = F)
 
+#Add quantification methods to datasets
+quant_methods = dplyr::tibble(quant_method = c("ge","exon","tx","txrev","leafcutter"))
+rnaseq_datasets = dplyr::filter(dataset_table, protocol %in% c("total", "poly(A)")) %>%
+  dplyr::left_join(quant_methods, by = character())
+other_datasets = dplyr::filter(dataset_table, !(protocol %in% c("total", "poly(A)")))
+all_datasets = dplyr::bind_rows(rnaseq_datasets, other_datasets)
+
 #Assign dataset ids
-dataset_ids = dplyr::left_join(dataset_table, study_ids) %>%
+dataset_ids = dplyr::left_join(all_datasets, study_ids) %>%
   dplyr::arrange(study) %>%
   dplyr::mutate(study_index = c(1:length(study))) %>%
   dplyr::mutate(padded_study_idx = stringr::str_pad(study_index, 6, "0", side = "left")) %>%
   dplyr::mutate(dataset_id = paste0("QTD", padded_study_idx)) %>%
-  dplyr::select(study, qtl_group, study_id, dataset_id)
+  dplyr::select(study, qtl_group, study_id, dataset_id, tissue_ontology_term, tissue_label, condition_label, quant_method, sample_size)
 write.table(dataset_ids, "data_tables/dataset_id_map.tsv", sep = "\t", row.names = F, quote = F)
