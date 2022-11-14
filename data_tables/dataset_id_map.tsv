@@ -1,564 +1,564 @@
-study	qtl_group	study_id	dataset_id	tissue_ontology_term	tissue_label	condition_label	quant_method	sample_size
-Alasoo_2018	macrophage_naive	QTS000001	QTD000001	macrophage	macrophage	naive	ge	84
-Alasoo_2018	macrophage_naive	QTS000001	QTD000002	macrophage	macrophage	naive	exon	84
-Alasoo_2018	macrophage_naive	QTS000001	QTD000003	macrophage	macrophage	naive	tx	84
-Alasoo_2018	macrophage_naive	QTS000001	QTD000004	macrophage	macrophage	naive	txrev	84
-Alasoo_2018	macrophage_naive	QTS000001	QTD000005	macrophage	macrophage	naive	leafcutter	84
-Alasoo_2018	macrophage_IFNg	QTS000001	QTD000006	macrophage	macrophage	IFNg_18h	ge	84
-Alasoo_2018	macrophage_IFNg	QTS000001	QTD000007	macrophage	macrophage	IFNg_18h	exon	84
-Alasoo_2018	macrophage_IFNg	QTS000001	QTD000008	macrophage	macrophage	IFNg_18h	tx	84
-Alasoo_2018	macrophage_IFNg	QTS000001	QTD000009	macrophage	macrophage	IFNg_18h	txrev	84
-Alasoo_2018	macrophage_IFNg	QTS000001	QTD000010	macrophage	macrophage	IFNg_18h	leafcutter	84
-Alasoo_2018	macrophage_Salmonella	QTS000001	QTD000011	macrophage	macrophage	Salmonella_5h	ge	84
-Alasoo_2018	macrophage_Salmonella	QTS000001	QTD000012	macrophage	macrophage	Salmonella_5h	exon	84
-Alasoo_2018	macrophage_Salmonella	QTS000001	QTD000013	macrophage	macrophage	Salmonella_5h	tx	84
-Alasoo_2018	macrophage_Salmonella	QTS000001	QTD000014	macrophage	macrophage	Salmonella_5h	txrev	84
-Alasoo_2018	macrophage_Salmonella	QTS000001	QTD000015	macrophage	macrophage	Salmonella_5h	leafcutter	84
-Alasoo_2018	macrophage_IFNg+Salmonella	QTS000001	QTD000016	macrophage	macrophage	IFNg_18h+Salmonella_5h	ge	84
-Alasoo_2018	macrophage_IFNg+Salmonella	QTS000001	QTD000017	macrophage	macrophage	IFNg_18h+Salmonella_5h	exon	84
-Alasoo_2018	macrophage_IFNg+Salmonella	QTS000001	QTD000018	macrophage	macrophage	IFNg_18h+Salmonella_5h	tx	84
-Alasoo_2018	macrophage_IFNg+Salmonella	QTS000001	QTD000019	macrophage	macrophage	IFNg_18h+Salmonella_5h	txrev	84
-Alasoo_2018	macrophage_IFNg+Salmonella	QTS000001	QTD000020	macrophage	macrophage	IFNg_18h+Salmonella_5h	leafcutter	84
-BLUEPRINT	monocyte	QTS000002	QTD000021	CD14-positive, CD16-negative classical monocyte	monocyte	naive	ge	191
-BLUEPRINT	monocyte	QTS000002	QTD000022	CD14-positive, CD16-negative classical monocyte	monocyte	naive	exon	191
-BLUEPRINT	monocyte	QTS000002	QTD000023	CD14-positive, CD16-negative classical monocyte	monocyte	naive	tx	191
-BLUEPRINT	monocyte	QTS000002	QTD000024	CD14-positive, CD16-negative classical monocyte	monocyte	naive	txrev	191
-BLUEPRINT	monocyte	QTS000002	QTD000025	CD14-positive, CD16-negative classical monocyte	monocyte	naive	leafcutter	191
-BLUEPRINT	neutrophil	QTS000002	QTD000026	neutrophil	neutrophil	naive	ge	196
-BLUEPRINT	neutrophil	QTS000002	QTD000027	neutrophil	neutrophil	naive	exon	196
-BLUEPRINT	neutrophil	QTS000002	QTD000028	neutrophil	neutrophil	naive	tx	196
-BLUEPRINT	neutrophil	QTS000002	QTD000029	neutrophil	neutrophil	naive	txrev	196
-BLUEPRINT	neutrophil	QTS000002	QTD000030	neutrophil	neutrophil	naive	leafcutter	196
-BLUEPRINT	T-cell	QTS000002	QTD000031	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	ge	167
-BLUEPRINT	T-cell	QTS000002	QTD000032	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	exon	167
-BLUEPRINT	T-cell	QTS000002	QTD000033	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	tx	167
-BLUEPRINT	T-cell	QTS000002	QTD000034	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	txrev	167
-BLUEPRINT	T-cell	QTS000002	QTD000035	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	leafcutter	167
-Bossini-Castillo_2019	Treg_naive	QTS000003	QTD000036	naive regulatory T cell	Treg memory	naive	ge	119
-Bossini-Castillo_2019	Treg_naive	QTS000003	QTD000037	naive regulatory T cell	Treg memory	naive	exon	119
-Bossini-Castillo_2019	Treg_naive	QTS000003	QTD000038	naive regulatory T cell	Treg memory	naive	tx	119
-Bossini-Castillo_2019	Treg_naive	QTS000003	QTD000039	naive regulatory T cell	Treg memory	naive	txrev	119
-Bossini-Castillo_2019	Treg_naive	QTS000003	QTD000040	naive regulatory T cell	Treg memory	naive	leafcutter	119
-Braineac2	putamen	QTS000004	QTD000041	putamen	brain (putamen)	naive	ge	102
-Braineac2	putamen	QTS000004	QTD000042	putamen	brain (putamen)	naive	exon	102
-Braineac2	putamen	QTS000004	QTD000043	putamen	brain (putamen)	naive	tx	102
-Braineac2	putamen	QTS000004	QTD000044	putamen	brain (putamen)	naive	txrev	102
-Braineac2	putamen	QTS000004	QTD000045	putamen	brain (putamen)	naive	leafcutter	102
-Braineac2	substantia_nigra	QTS000004	QTD000046	substantia nigra	brain (substantia nigra)	naive	ge	65
-Braineac2	substantia_nigra	QTS000004	QTD000047	substantia nigra	brain (substantia nigra)	naive	exon	65
-Braineac2	substantia_nigra	QTS000004	QTD000048	substantia nigra	brain (substantia nigra)	naive	tx	65
-Braineac2	substantia_nigra	QTS000004	QTD000049	substantia nigra	brain (substantia nigra)	naive	txrev	65
-Braineac2	substantia_nigra	QTS000004	QTD000050	substantia nigra	brain (substantia nigra)	naive	leafcutter	65
-BrainSeq	brain	QTS000005	QTD000051	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	479
-BrainSeq	brain	QTS000005	QTD000052	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	479
-BrainSeq	brain	QTS000005	QTD000053	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	479
-BrainSeq	brain	QTS000005	QTD000054	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	479
-BrainSeq	brain	QTS000005	QTD000055	dorsolateral prefrontal cortex	brain (DLPFC)	naive	leafcutter	479
-CAP	LCL_naive	QTS000006	QTD000056	lymphoblastoid cell line	LCL	naive	ge	148
-CAP	LCL_naive	QTS000006	QTD000057	lymphoblastoid cell line	LCL	naive	exon	148
-CAP	LCL_naive	QTS000006	QTD000058	lymphoblastoid cell line	LCL	naive	tx	148
-CAP	LCL_naive	QTS000006	QTD000059	lymphoblastoid cell line	LCL	naive	txrev	148
-CAP	LCL_naive	QTS000006	QTD000060	lymphoblastoid cell line	LCL	naive	leafcutter	148
-CAP	LCL_statin	QTS000006	QTD000061	lymphoblastoid cell line	LCL	statin	ge	148
-CAP	LCL_statin	QTS000006	QTD000062	lymphoblastoid cell line	LCL	statin	exon	148
-CAP	LCL_statin	QTS000006	QTD000063	lymphoblastoid cell line	LCL	statin	tx	148
-CAP	LCL_statin	QTS000006	QTD000064	lymphoblastoid cell line	LCL	statin	txrev	148
-CAP	LCL_statin	QTS000006	QTD000065	lymphoblastoid cell line	LCL	statin	leafcutter	148
-CEDAR	T-cell_CD8	QTS000007	QTD000066	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	NA	277
-CEDAR	T-cell_CD4	QTS000007	QTD000067	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	NA	290
-CEDAR	transverse_colon	QTS000007	QTD000068	transverse colon	transverse colon	naive	NA	286
-CEDAR	monocyte_CD14	QTS000007	QTD000069	CD14-positive, CD16-negative classical monocyte	monocyte	naive	NA	286
-CEDAR	neutrophil_CD15	QTS000007	QTD000070	neutrophil	neutrophil	naive	NA	280
-CEDAR	platelet	QTS000007	QTD000071	platelet	platelet	naive	NA	205
-CEDAR	rectum	QTS000007	QTD000072	rectum	rectum	naive	NA	271
-CEDAR	B-cell_CD19	QTS000007	QTD000073	B cell	B cell	naive	NA	262
-CEDAR	ileum	QTS000007	QTD000074	ileum	ileum	naive	NA	180
-CommonMind	DLPFC_naive	QTS000008	QTD000075	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	586
-CommonMind	DLPFC_naive	QTS000008	QTD000076	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	586
-CommonMind	DLPFC_naive	QTS000008	QTD000077	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	586
-CommonMind	DLPFC_naive	QTS000008	QTD000078	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	586
-CommonMind	DLPFC_naive	QTS000008	QTD000079	dorsolateral prefrontal cortex	brain (DLPFC)	naive	leafcutter	586
-Fairfax_2012	B-cell_CD19	QTS000009	QTD000080	B cell	B cell	naive	NA	281
-Fairfax_2014	monocyte_naive	QTS000010	QTD000081	CD14-positive, CD16-negative classical monocyte	monocyte	naive	NA	420
-Fairfax_2014	monocyte_IFN24	QTS000010	QTD000082	CD14-positive, CD16-negative classical monocyte	monocyte	IFNg_24h	NA	370
-Fairfax_2014	monocyte_LPS2	QTS000010	QTD000083	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_2h	NA	256
-Fairfax_2014	monocyte_LPS24	QTS000010	QTD000084	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_24h	NA	325
-FUSION	muscle_naive	QTS000011	QTD000085	skeletal muscle tissue	muscle	naive	ge	288
-FUSION	muscle_naive	QTS000011	QTD000086	skeletal muscle tissue	muscle	naive	exon	288
-FUSION	muscle_naive	QTS000011	QTD000087	skeletal muscle tissue	muscle	naive	tx	288
-FUSION	muscle_naive	QTS000011	QTD000088	skeletal muscle tissue	muscle	naive	txrev	288
-FUSION	muscle_naive	QTS000011	QTD000089	skeletal muscle tissue	muscle	naive	leafcutter	288
-FUSION	adipose_naive	QTS000011	QTD000090	adipose tissue	adipose	naive	ge	271
-FUSION	adipose_naive	QTS000011	QTD000091	adipose tissue	adipose	naive	exon	271
-FUSION	adipose_naive	QTS000011	QTD000092	adipose tissue	adipose	naive	tx	271
-FUSION	adipose_naive	QTS000011	QTD000093	adipose tissue	adipose	naive	txrev	271
-FUSION	adipose_naive	QTS000011	QTD000094	adipose tissue	adipose	naive	leafcutter	271
-GENCORD	LCL	QTS000012	QTD000095	lymphoblastoid cell line	LCL	naive	ge	190
-GENCORD	LCL	QTS000012	QTD000096	lymphoblastoid cell line	LCL	naive	exon	190
-GENCORD	LCL	QTS000012	QTD000097	lymphoblastoid cell line	LCL	naive	tx	190
-GENCORD	LCL	QTS000012	QTD000098	lymphoblastoid cell line	LCL	naive	txrev	190
-GENCORD	LCL	QTS000012	QTD000099	lymphoblastoid cell line	LCL	naive	leafcutter	190
-GENCORD	fibroblast	QTS000012	QTD000100	fibroblast	fibroblast	naive	ge	186
-GENCORD	fibroblast	QTS000012	QTD000101	fibroblast	fibroblast	naive	exon	186
-GENCORD	fibroblast	QTS000012	QTD000102	fibroblast	fibroblast	naive	tx	186
-GENCORD	fibroblast	QTS000012	QTD000103	fibroblast	fibroblast	naive	txrev	186
-GENCORD	fibroblast	QTS000012	QTD000104	fibroblast	fibroblast	naive	leafcutter	186
-GENCORD	T-cell	QTS000012	QTD000105	T cell	T cell	naive	ge	184
-GENCORD	T-cell	QTS000012	QTD000106	T cell	T cell	naive	exon	184
-GENCORD	T-cell	QTS000012	QTD000107	T cell	T cell	naive	tx	184
-GENCORD	T-cell	QTS000012	QTD000108	T cell	T cell	naive	txrev	184
-GENCORD	T-cell	QTS000012	QTD000109	T cell	T cell	naive	leafcutter	184
-GEUVADIS	LCL	QTS000013	QTD000110	lymphoblastoid cell line	LCL	naive	ge	445
-GEUVADIS	LCL	QTS000013	QTD000111	lymphoblastoid cell line	LCL	naive	exon	445
-GEUVADIS	LCL	QTS000013	QTD000112	lymphoblastoid cell line	LCL	naive	tx	445
-GEUVADIS	LCL	QTS000013	QTD000113	lymphoblastoid cell line	LCL	naive	txrev	445
-GEUVADIS	LCL	QTS000013	QTD000114	lymphoblastoid cell line	LCL	naive	leafcutter	445
-Gilchrist_2021	NK-cell_naive	QTS000014	QTD000115	natural killer cell	NK cell	naive	NA	247
-GTEx	adipose_subcutaneous	QTS000015	QTD000116	adipose tissue	adipose	naive	ge	581
-GTEx	adipose_subcutaneous	QTS000015	QTD000117	adipose tissue	adipose	naive	exon	581
-GTEx	adipose_subcutaneous	QTS000015	QTD000118	adipose tissue	adipose	naive	tx	581
-GTEx	adipose_subcutaneous	QTS000015	QTD000119	adipose tissue	adipose	naive	txrev	581
-GTEx	adipose_subcutaneous	QTS000015	QTD000120	adipose tissue	adipose	naive	leafcutter	581
-GTEx	adipose_visceral	QTS000015	QTD000121	omental fat pad	adipose (visceral)	naive	ge	469
-GTEx	adipose_visceral	QTS000015	QTD000122	omental fat pad	adipose (visceral)	naive	exon	469
-GTEx	adipose_visceral	QTS000015	QTD000123	omental fat pad	adipose (visceral)	naive	tx	469
-GTEx	adipose_visceral	QTS000015	QTD000124	omental fat pad	adipose (visceral)	naive	txrev	469
-GTEx	adipose_visceral	QTS000015	QTD000125	omental fat pad	adipose (visceral)	naive	leafcutter	469
-GTEx	adrenal_gland	QTS000015	QTD000126	adrenal gland	adrenal gland	naive	ge	233
-GTEx	adrenal_gland	QTS000015	QTD000127	adrenal gland	adrenal gland	naive	exon	233
-GTEx	adrenal_gland	QTS000015	QTD000128	adrenal gland	adrenal gland	naive	tx	233
-GTEx	adrenal_gland	QTS000015	QTD000129	adrenal gland	adrenal gland	naive	txrev	233
-GTEx	adrenal_gland	QTS000015	QTD000130	adrenal gland	adrenal gland	naive	leafcutter	233
-GTEx	artery_aorta	QTS000015	QTD000131	ascending aorta	artery (aorta)	naive	ge	387
-GTEx	artery_aorta	QTS000015	QTD000132	ascending aorta	artery (aorta)	naive	exon	387
-GTEx	artery_aorta	QTS000015	QTD000133	ascending aorta	artery (aorta)	naive	tx	387
-GTEx	artery_aorta	QTS000015	QTD000134	ascending aorta	artery (aorta)	naive	txrev	387
-GTEx	artery_aorta	QTS000015	QTD000135	ascending aorta	artery (aorta)	naive	leafcutter	387
-GTEx	artery_coronary	QTS000015	QTD000136	coronary artery	artery (coronary)	naive	ge	213
-GTEx	artery_coronary	QTS000015	QTD000137	coronary artery	artery (coronary)	naive	exon	213
-GTEx	artery_coronary	QTS000015	QTD000138	coronary artery	artery (coronary)	naive	tx	213
-GTEx	artery_coronary	QTS000015	QTD000139	coronary artery	artery (coronary)	naive	txrev	213
-GTEx	artery_coronary	QTS000015	QTD000140	coronary artery	artery (coronary)	naive	leafcutter	213
-GTEx	artery_tibial	QTS000015	QTD000141	tibial artery	artery (tibial)	naive	ge	584
-GTEx	artery_tibial	QTS000015	QTD000142	tibial artery	artery (tibial)	naive	exon	584
-GTEx	artery_tibial	QTS000015	QTD000143	tibial artery	artery (tibial)	naive	tx	584
-GTEx	artery_tibial	QTS000015	QTD000144	tibial artery	artery (tibial)	naive	txrev	584
-GTEx	artery_tibial	QTS000015	QTD000145	tibial artery	artery (tibial)	naive	leafcutter	584
-GTEx	brain_amygdala	QTS000015	QTD000146	amygdala	brain (amygdala)	naive	ge	129
-GTEx	brain_amygdala	QTS000015	QTD000147	amygdala	brain (amygdala)	naive	exon	129
-GTEx	brain_amygdala	QTS000015	QTD000148	amygdala	brain (amygdala)	naive	tx	129
-GTEx	brain_amygdala	QTS000015	QTD000149	amygdala	brain (amygdala)	naive	txrev	129
-GTEx	brain_amygdala	QTS000015	QTD000150	amygdala	brain (amygdala)	naive	leafcutter	129
-GTEx	brain_anterior_cingulate_cortex	QTS000015	QTD000151	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	ge	147
-GTEx	brain_anterior_cingulate_cortex	QTS000015	QTD000152	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	exon	147
-GTEx	brain_anterior_cingulate_cortex	QTS000015	QTD000153	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	tx	147
-GTEx	brain_anterior_cingulate_cortex	QTS000015	QTD000154	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	txrev	147
-GTEx	brain_anterior_cingulate_cortex	QTS000015	QTD000155	anterior cingulate cortex	brain (anterior cingulate cortex)	naive	leafcutter	147
-GTEx	brain_caudate	QTS000015	QTD000156	caudate nucleus	brain (caudate)	naive	ge	194
-GTEx	brain_caudate	QTS000015	QTD000157	caudate nucleus	brain (caudate)	naive	exon	194
-GTEx	brain_caudate	QTS000015	QTD000158	caudate nucleus	brain (caudate)	naive	tx	194
-GTEx	brain_caudate	QTS000015	QTD000159	caudate nucleus	brain (caudate)	naive	txrev	194
-GTEx	brain_caudate	QTS000015	QTD000160	caudate nucleus	brain (caudate)	naive	leafcutter	194
-GTEx	brain_cerebellar_hemisphere	QTS000015	QTD000161	cerebellum	brain (cerebellum)	naive	ge	175
-GTEx	brain_cerebellar_hemisphere	QTS000015	QTD000162	cerebellum	brain (cerebellum)	naive	exon	175
-GTEx	brain_cerebellar_hemisphere	QTS000015	QTD000163	cerebellum	brain (cerebellum)	naive	tx	175
-GTEx	brain_cerebellar_hemisphere	QTS000015	QTD000164	cerebellum	brain (cerebellum)	naive	txrev	175
-GTEx	brain_cerebellar_hemisphere	QTS000015	QTD000165	cerebellum	brain (cerebellum)	naive	leafcutter	175
-GTEx	brain_cerebellum	QTS000015	QTD000166	cerebellum	brain (cerebellum)	naive	ge	209
-GTEx	brain_cerebellum	QTS000015	QTD000167	cerebellum	brain (cerebellum)	naive	exon	209
-GTEx	brain_cerebellum	QTS000015	QTD000168	cerebellum	brain (cerebellum)	naive	tx	209
-GTEx	brain_cerebellum	QTS000015	QTD000169	cerebellum	brain (cerebellum)	naive	txrev	209
-GTEx	brain_cerebellum	QTS000015	QTD000170	cerebellum	brain (cerebellum)	naive	leafcutter	209
-GTEx	brain_cortex	QTS000015	QTD000171	frontal cortex	brain (cortex)	naive	ge	205
-GTEx	brain_cortex	QTS000015	QTD000172	frontal cortex	brain (cortex)	naive	exon	205
-GTEx	brain_cortex	QTS000015	QTD000173	frontal cortex	brain (cortex)	naive	tx	205
-GTEx	brain_cortex	QTS000015	QTD000174	frontal cortex	brain (cortex)	naive	txrev	205
-GTEx	brain_cortex	QTS000015	QTD000175	frontal cortex	brain (cortex)	naive	leafcutter	205
-GTEx	brain_frontal_cortex	QTS000015	QTD000176	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	175
-GTEx	brain_frontal_cortex	QTS000015	QTD000177	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	175
-GTEx	brain_frontal_cortex	QTS000015	QTD000178	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	175
-GTEx	brain_frontal_cortex	QTS000015	QTD000179	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	175
-GTEx	brain_frontal_cortex	QTS000015	QTD000180	dorsolateral prefrontal cortex	brain (DLPFC)	naive	leafcutter	175
-GTEx	brain_hippocampus	QTS000015	QTD000181	Ammon's horn	brain (hippocampus)	naive	ge	165
-GTEx	brain_hippocampus	QTS000015	QTD000182	Ammon's horn	brain (hippocampus)	naive	exon	165
-GTEx	brain_hippocampus	QTS000015	QTD000183	Ammon's horn	brain (hippocampus)	naive	tx	165
-GTEx	brain_hippocampus	QTS000015	QTD000184	Ammon's horn	brain (hippocampus)	naive	txrev	165
-GTEx	brain_hippocampus	QTS000015	QTD000185	Ammon's horn	brain (hippocampus)	naive	leafcutter	165
-GTEx	brain_hypothalamus	QTS000015	QTD000186	hypothalamus	brain (hypothalamus)	naive	ge	170
-GTEx	brain_hypothalamus	QTS000015	QTD000187	hypothalamus	brain (hypothalamus)	naive	exon	170
-GTEx	brain_hypothalamus	QTS000015	QTD000188	hypothalamus	brain (hypothalamus)	naive	tx	170
-GTEx	brain_hypothalamus	QTS000015	QTD000189	hypothalamus	brain (hypothalamus)	naive	txrev	170
-GTEx	brain_hypothalamus	QTS000015	QTD000190	hypothalamus	brain (hypothalamus)	naive	leafcutter	170
-GTEx	brain_nucleus_accumbens	QTS000015	QTD000191	nucleus accumbens	brain (nucleus accumbens)	naive	ge	202
-GTEx	brain_nucleus_accumbens	QTS000015	QTD000192	nucleus accumbens	brain (nucleus accumbens)	naive	exon	202
-GTEx	brain_nucleus_accumbens	QTS000015	QTD000193	nucleus accumbens	brain (nucleus accumbens)	naive	tx	202
-GTEx	brain_nucleus_accumbens	QTS000015	QTD000194	nucleus accumbens	brain (nucleus accumbens)	naive	txrev	202
-GTEx	brain_nucleus_accumbens	QTS000015	QTD000195	nucleus accumbens	brain (nucleus accumbens)	naive	leafcutter	202
-GTEx	brain_putamen	QTS000015	QTD000196	putamen	brain (putamen)	naive	ge	170
-GTEx	brain_putamen	QTS000015	QTD000197	putamen	brain (putamen)	naive	exon	170
-GTEx	brain_putamen	QTS000015	QTD000198	putamen	brain (putamen)	naive	tx	170
-GTEx	brain_putamen	QTS000015	QTD000199	putamen	brain (putamen)	naive	txrev	170
-GTEx	brain_putamen	QTS000015	QTD000200	putamen	brain (putamen)	naive	leafcutter	170
-GTEx	brain_spinal_cord	QTS000015	QTD000201	C1 segment of cervical spinal cord	brain (spinal cord)	naive	ge	126
-GTEx	brain_spinal_cord	QTS000015	QTD000202	C1 segment of cervical spinal cord	brain (spinal cord)	naive	exon	126
-GTEx	brain_spinal_cord	QTS000015	QTD000203	C1 segment of cervical spinal cord	brain (spinal cord)	naive	tx	126
-GTEx	brain_spinal_cord	QTS000015	QTD000204	C1 segment of cervical spinal cord	brain (spinal cord)	naive	txrev	126
-GTEx	brain_spinal_cord	QTS000015	QTD000205	C1 segment of cervical spinal cord	brain (spinal cord)	naive	leafcutter	126
-GTEx	brain_substantia_nigra	QTS000015	QTD000206	substantia nigra	brain (substantia nigra)	naive	ge	114
-GTEx	brain_substantia_nigra	QTS000015	QTD000207	substantia nigra	brain (substantia nigra)	naive	exon	114
-GTEx	brain_substantia_nigra	QTS000015	QTD000208	substantia nigra	brain (substantia nigra)	naive	tx	114
-GTEx	brain_substantia_nigra	QTS000015	QTD000209	substantia nigra	brain (substantia nigra)	naive	txrev	114
-GTEx	brain_substantia_nigra	QTS000015	QTD000210	substantia nigra	brain (substantia nigra)	naive	leafcutter	114
-GTEx	breast	QTS000015	QTD000211	breast epithelium	breast	naive	ge	394
-GTEx	breast	QTS000015	QTD000212	breast epithelium	breast	naive	exon	394
-GTEx	breast	QTS000015	QTD000213	breast epithelium	breast	naive	tx	394
-GTEx	breast	QTS000015	QTD000214	breast epithelium	breast	naive	txrev	394
-GTEx	breast	QTS000015	QTD000215	breast epithelium	breast	naive	leafcutter	394
-GTEx	fibroblast	QTS000015	QTD000216	fibroblast	fibroblast	naive	ge	483
-GTEx	fibroblast	QTS000015	QTD000217	fibroblast	fibroblast	naive	exon	483
-GTEx	fibroblast	QTS000015	QTD000218	fibroblast	fibroblast	naive	tx	483
-GTEx	fibroblast	QTS000015	QTD000219	fibroblast	fibroblast	naive	txrev	483
-GTEx	fibroblast	QTS000015	QTD000220	fibroblast	fibroblast	naive	leafcutter	483
-GTEx	LCL	QTS000015	QTD000221	lymphoblastoid cell line	LCL	naive	ge	147
-GTEx	LCL	QTS000015	QTD000222	lymphoblastoid cell line	LCL	naive	exon	147
-GTEx	LCL	QTS000015	QTD000223	lymphoblastoid cell line	LCL	naive	tx	147
-GTEx	LCL	QTS000015	QTD000224	lymphoblastoid cell line	LCL	naive	txrev	147
-GTEx	LCL	QTS000015	QTD000225	lymphoblastoid cell line	LCL	naive	leafcutter	147
-GTEx	colon_sigmoid	QTS000015	QTD000226	sigmoid colon	sigmoid colon	naive	ge	318
-GTEx	colon_sigmoid	QTS000015	QTD000227	sigmoid colon	sigmoid colon	naive	exon	318
-GTEx	colon_sigmoid	QTS000015	QTD000228	sigmoid colon	sigmoid colon	naive	tx	318
-GTEx	colon_sigmoid	QTS000015	QTD000229	sigmoid colon	sigmoid colon	naive	txrev	318
-GTEx	colon_sigmoid	QTS000015	QTD000230	sigmoid colon	sigmoid colon	naive	leafcutter	318
-GTEx	colon_transverse	QTS000015	QTD000231	transverse colon	transverse colon	naive	ge	368
-GTEx	colon_transverse	QTS000015	QTD000232	transverse colon	transverse colon	naive	exon	368
-GTEx	colon_transverse	QTS000015	QTD000233	transverse colon	transverse colon	naive	tx	368
-GTEx	colon_transverse	QTS000015	QTD000234	transverse colon	transverse colon	naive	txrev	368
-GTEx	colon_transverse	QTS000015	QTD000235	transverse colon	transverse colon	naive	leafcutter	368
-GTEx	esophagus_gej	QTS000015	QTD000236	gastroesophageal sphincter	esophagus (gej)	naive	ge	330
-GTEx	esophagus_gej	QTS000015	QTD000237	gastroesophageal sphincter	esophagus (gej)	naive	exon	330
-GTEx	esophagus_gej	QTS000015	QTD000238	gastroesophageal sphincter	esophagus (gej)	naive	tx	330
-GTEx	esophagus_gej	QTS000015	QTD000239	gastroesophageal sphincter	esophagus (gej)	naive	txrev	330
-GTEx	esophagus_gej	QTS000015	QTD000240	gastroesophageal sphincter	esophagus (gej)	naive	leafcutter	330
-GTEx	esophagus_mucosa	QTS000015	QTD000241	esophagus squamous epithelium	esophagus (mucosa)	naive	ge	493
-GTEx	esophagus_mucosa	QTS000015	QTD000242	esophagus squamous epithelium	esophagus (mucosa)	naive	exon	493
-GTEx	esophagus_mucosa	QTS000015	QTD000243	esophagus squamous epithelium	esophagus (mucosa)	naive	tx	493
-GTEx	esophagus_mucosa	QTS000015	QTD000244	esophagus squamous epithelium	esophagus (mucosa)	naive	txrev	493
-GTEx	esophagus_mucosa	QTS000015	QTD000245	esophagus squamous epithelium	esophagus (mucosa)	naive	leafcutter	493
-GTEx	esophagus_muscularis	QTS000015	QTD000246	esophagus muscularis mucosa	esophagus (muscularis)	naive	ge	461
-GTEx	esophagus_muscularis	QTS000015	QTD000247	esophagus muscularis mucosa	esophagus (muscularis)	naive	exon	461
-GTEx	esophagus_muscularis	QTS000015	QTD000248	esophagus muscularis mucosa	esophagus (muscularis)	naive	tx	461
-GTEx	esophagus_muscularis	QTS000015	QTD000249	esophagus muscularis mucosa	esophagus (muscularis)	naive	txrev	461
-GTEx	esophagus_muscularis	QTS000015	QTD000250	esophagus muscularis mucosa	esophagus (muscularis)	naive	leafcutter	461
-GTEx	heart_atrial_appendage	QTS000015	QTD000251	right atrium auricular region	heart (atrial appendage)	naive	ge	372
-GTEx	heart_atrial_appendage	QTS000015	QTD000252	right atrium auricular region	heart (atrial appendage)	naive	exon	372
-GTEx	heart_atrial_appendage	QTS000015	QTD000253	right atrium auricular region	heart (atrial appendage)	naive	tx	372
-GTEx	heart_atrial_appendage	QTS000015	QTD000254	right atrium auricular region	heart (atrial appendage)	naive	txrev	372
-GTEx	heart_atrial_appendage	QTS000015	QTD000255	right atrium auricular region	heart (atrial appendage)	naive	leafcutter	372
-GTEx	heart_left_ventricle	QTS000015	QTD000256	left ventricle myocardium	heart (left ventricle)	naive	ge	382
-GTEx	heart_left_ventricle	QTS000015	QTD000257	left ventricle myocardium	heart (left ventricle)	naive	exon	382
-GTEx	heart_left_ventricle	QTS000015	QTD000258	left ventricle myocardium	heart (left ventricle)	naive	tx	382
-GTEx	heart_left_ventricle	QTS000015	QTD000259	left ventricle myocardium	heart (left ventricle)	naive	txrev	382
-GTEx	heart_left_ventricle	QTS000015	QTD000260	left ventricle myocardium	heart (left ventricle)	naive	leafcutter	382
-GTEx	kidney_cortex	QTS000015	QTD000261	cortex of kidney	kidney (cortex)	naive	ge	73
-GTEx	kidney_cortex	QTS000015	QTD000262	cortex of kidney	kidney (cortex)	naive	exon	73
-GTEx	kidney_cortex	QTS000015	QTD000263	cortex of kidney	kidney (cortex)	naive	tx	73
-GTEx	kidney_cortex	QTS000015	QTD000264	cortex of kidney	kidney (cortex)	naive	txrev	73
-GTEx	kidney_cortex	QTS000015	QTD000265	cortex of kidney	kidney (cortex)	naive	leafcutter	73
-GTEx	liver	QTS000015	QTD000266	right lobe of liver	liver	naive	ge	208
-GTEx	liver	QTS000015	QTD000267	right lobe of liver	liver	naive	exon	208
-GTEx	liver	QTS000015	QTD000268	right lobe of liver	liver	naive	tx	208
-GTEx	liver	QTS000015	QTD000269	right lobe of liver	liver	naive	txrev	208
-GTEx	liver	QTS000015	QTD000270	right lobe of liver	liver	naive	leafcutter	208
-GTEx	lung	QTS000015	QTD000271	upper lobe of left lung	lung	naive	ge	510
-GTEx	lung	QTS000015	QTD000272	upper lobe of left lung	lung	naive	exon	510
-GTEx	lung	QTS000015	QTD000273	upper lobe of left lung	lung	naive	tx	510
-GTEx	lung	QTS000015	QTD000274	upper lobe of left lung	lung	naive	txrev	510
-GTEx	lung	QTS000015	QTD000275	upper lobe of left lung	lung	naive	leafcutter	510
-GTEx	minor_salivary_gland	QTS000015	QTD000276	anterior lingual gland	minor salivary gland	naive	ge	144
-GTEx	minor_salivary_gland	QTS000015	QTD000277	anterior lingual gland	minor salivary gland	naive	exon	144
-GTEx	minor_salivary_gland	QTS000015	QTD000278	anterior lingual gland	minor salivary gland	naive	tx	144
-GTEx	minor_salivary_gland	QTS000015	QTD000279	anterior lingual gland	minor salivary gland	naive	txrev	144
-GTEx	minor_salivary_gland	QTS000015	QTD000280	anterior lingual gland	minor salivary gland	naive	leafcutter	144
-GTEx	muscle	QTS000015	QTD000281	skeletal muscle tissue	muscle	naive	ge	702
-GTEx	muscle	QTS000015	QTD000282	skeletal muscle tissue	muscle	naive	exon	702
-GTEx	muscle	QTS000015	QTD000283	skeletal muscle tissue	muscle	naive	tx	702
-GTEx	muscle	QTS000015	QTD000284	skeletal muscle tissue	muscle	naive	txrev	702
-GTEx	muscle	QTS000015	QTD000285	skeletal muscle tissue	muscle	naive	leafcutter	702
-GTEx	nerve_tibial	QTS000015	QTD000286	tibial nerve	tibial nerve	naive	ge	532
-GTEx	nerve_tibial	QTS000015	QTD000287	tibial nerve	tibial nerve	naive	exon	532
-GTEx	nerve_tibial	QTS000015	QTD000288	tibial nerve	tibial nerve	naive	tx	532
-GTEx	nerve_tibial	QTS000015	QTD000289	tibial nerve	tibial nerve	naive	txrev	532
-GTEx	nerve_tibial	QTS000015	QTD000290	tibial nerve	tibial nerve	naive	leafcutter	532
-GTEx	ovary	QTS000015	QTD000291	female gonad	ovary	naive	ge	167
-GTEx	ovary	QTS000015	QTD000292	female gonad	ovary	naive	exon	167
-GTEx	ovary	QTS000015	QTD000293	female gonad	ovary	naive	tx	167
-GTEx	ovary	QTS000015	QTD000294	female gonad	ovary	naive	txrev	167
-GTEx	ovary	QTS000015	QTD000295	female gonad	ovary	naive	leafcutter	167
-GTEx	pancreas	QTS000015	QTD000296	body of pancreas	pancreas	naive	ge	305
-GTEx	pancreas	QTS000015	QTD000297	body of pancreas	pancreas	naive	exon	305
-GTEx	pancreas	QTS000015	QTD000298	body of pancreas	pancreas	naive	tx	305
-GTEx	pancreas	QTS000015	QTD000299	body of pancreas	pancreas	naive	txrev	305
-GTEx	pancreas	QTS000015	QTD000300	body of pancreas	pancreas	naive	leafcutter	305
-GTEx	pituitary	QTS000015	QTD000301	pituitary gland	pituitary	naive	ge	237
-GTEx	pituitary	QTS000015	QTD000302	pituitary gland	pituitary	naive	exon	237
-GTEx	pituitary	QTS000015	QTD000303	pituitary gland	pituitary	naive	tx	237
-GTEx	pituitary	QTS000015	QTD000304	pituitary gland	pituitary	naive	txrev	237
-GTEx	pituitary	QTS000015	QTD000305	pituitary gland	pituitary	naive	leafcutter	237
-GTEx	prostate	QTS000015	QTD000306	prostate gland	prostate	naive	ge	218
-GTEx	prostate	QTS000015	QTD000307	prostate gland	prostate	naive	exon	218
-GTEx	prostate	QTS000015	QTD000308	prostate gland	prostate	naive	tx	218
-GTEx	prostate	QTS000015	QTD000309	prostate gland	prostate	naive	txrev	218
-GTEx	prostate	QTS000015	QTD000310	prostate gland	prostate	naive	leafcutter	218
-GTEx	skin_not_sun_exposed	QTS000015	QTD000311	suprapubic skin	skin (suprapubic)	naive	ge	517
-GTEx	skin_not_sun_exposed	QTS000015	QTD000312	suprapubic skin	skin (suprapubic)	naive	exon	517
-GTEx	skin_not_sun_exposed	QTS000015	QTD000313	suprapubic skin	skin (suprapubic)	naive	tx	517
-GTEx	skin_not_sun_exposed	QTS000015	QTD000314	suprapubic skin	skin (suprapubic)	naive	txrev	517
-GTEx	skin_not_sun_exposed	QTS000015	QTD000315	suprapubic skin	skin (suprapubic)	naive	leafcutter	517
-GTEx	skin_sun_exposed	QTS000015	QTD000316	skin of body	skin	naive	ge	602
-GTEx	skin_sun_exposed	QTS000015	QTD000317	skin of body	skin	naive	exon	602
-GTEx	skin_sun_exposed	QTS000015	QTD000318	skin of body	skin	naive	tx	602
-GTEx	skin_sun_exposed	QTS000015	QTD000319	skin of body	skin	naive	txrev	602
-GTEx	skin_sun_exposed	QTS000015	QTD000320	skin of body	skin	naive	leafcutter	602
-GTEx	small_intestine	QTS000015	QTD000321	Peyer's patch	small intestine	naive	ge	174
-GTEx	small_intestine	QTS000015	QTD000322	Peyer's patch	small intestine	naive	exon	174
-GTEx	small_intestine	QTS000015	QTD000323	Peyer's patch	small intestine	naive	tx	174
-GTEx	small_intestine	QTS000015	QTD000324	Peyer's patch	small intestine	naive	txrev	174
-GTEx	small_intestine	QTS000015	QTD000325	Peyer's patch	small intestine	naive	leafcutter	174
-GTEx	spleen	QTS000015	QTD000326	spleen	spleen	naive	ge	227
-GTEx	spleen	QTS000015	QTD000327	spleen	spleen	naive	exon	227
-GTEx	spleen	QTS000015	QTD000328	spleen	spleen	naive	tx	227
-GTEx	spleen	QTS000015	QTD000329	spleen	spleen	naive	txrev	227
-GTEx	spleen	QTS000015	QTD000330	spleen	spleen	naive	leafcutter	227
-GTEx	stomach	QTS000015	QTD000331	stomach	stomach	naive	ge	324
-GTEx	stomach	QTS000015	QTD000332	stomach	stomach	naive	exon	324
-GTEx	stomach	QTS000015	QTD000333	stomach	stomach	naive	tx	324
-GTEx	stomach	QTS000015	QTD000334	stomach	stomach	naive	txrev	324
-GTEx	stomach	QTS000015	QTD000335	stomach	stomach	naive	leafcutter	324
-GTEx	testis	QTS000015	QTD000336	testis	testis	naive	ge	322
-GTEx	testis	QTS000015	QTD000337	testis	testis	naive	exon	322
-GTEx	testis	QTS000015	QTD000338	testis	testis	naive	tx	322
-GTEx	testis	QTS000015	QTD000339	testis	testis	naive	txrev	322
-GTEx	testis	QTS000015	QTD000340	testis	testis	naive	leafcutter	322
-GTEx	thyroid	QTS000015	QTD000341	thyroid gland	thyroid	naive	ge	574
-GTEx	thyroid	QTS000015	QTD000342	thyroid gland	thyroid	naive	exon	574
-GTEx	thyroid	QTS000015	QTD000343	thyroid gland	thyroid	naive	tx	574
-GTEx	thyroid	QTS000015	QTD000344	thyroid gland	thyroid	naive	txrev	574
-GTEx	thyroid	QTS000015	QTD000345	thyroid gland	thyroid	naive	leafcutter	574
-GTEx	uterus	QTS000015	QTD000346	uterus	uterus	naive	ge	129
-GTEx	uterus	QTS000015	QTD000347	uterus	uterus	naive	exon	129
-GTEx	uterus	QTS000015	QTD000348	uterus	uterus	naive	tx	129
-GTEx	uterus	QTS000015	QTD000349	uterus	uterus	naive	txrev	129
-GTEx	uterus	QTS000015	QTD000350	uterus	uterus	naive	leafcutter	129
-GTEx	vagina	QTS000015	QTD000351	vagina	vagina	naive	ge	141
-GTEx	vagina	QTS000015	QTD000352	vagina	vagina	naive	exon	141
-GTEx	vagina	QTS000015	QTD000353	vagina	vagina	naive	tx	141
-GTEx	vagina	QTS000015	QTD000354	vagina	vagina	naive	txrev	141
-GTEx	vagina	QTS000015	QTD000355	vagina	vagina	naive	leafcutter	141
-GTEx	blood	QTS000015	QTD000356	blood	blood	naive	ge	670
-GTEx	blood	QTS000015	QTD000357	blood	blood	naive	exon	670
-GTEx	blood	QTS000015	QTD000358	blood	blood	naive	tx	670
-GTEx	blood	QTS000015	QTD000359	blood	blood	naive	txrev	670
-GTEx	blood	QTS000015	QTD000360	blood	blood	naive	leafcutter	670
-HipSci	iPSC	QTS000016	QTD000361	induced pluripotent stem cell	iPSC	naive	ge	322
-HipSci	iPSC	QTS000016	QTD000362	induced pluripotent stem cell	iPSC	naive	exon	322
-HipSci	iPSC	QTS000016	QTD000363	induced pluripotent stem cell	iPSC	naive	tx	322
-HipSci	iPSC	QTS000016	QTD000364	induced pluripotent stem cell	iPSC	naive	txrev	322
-HipSci	iPSC	QTS000016	QTD000365	induced pluripotent stem cell	iPSC	naive	leafcutter	322
-iPSCORE	iPSC	QTS000017	QTD000366	induced pluripotent stem cell	iPSC	naive	ge	101
-iPSCORE	iPSC	QTS000017	QTD000367	induced pluripotent stem cell	iPSC	naive	exon	101
-iPSCORE	iPSC	QTS000017	QTD000368	induced pluripotent stem cell	iPSC	naive	tx	101
-iPSCORE	iPSC	QTS000017	QTD000369	induced pluripotent stem cell	iPSC	naive	txrev	101
-iPSCORE	iPSC	QTS000017	QTD000370	induced pluripotent stem cell	iPSC	naive	leafcutter	101
-Kasela_2017	T-cell_CD4	QTS000018	QTD000371	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	NA	280
-Kasela_2017	T-cell_CD8	QTS000018	QTD000372	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	NA	269
-Lepik_2017	blood	QTS000019	QTD000373	blood	blood	naive	ge	471
-Lepik_2017	blood	QTS000019	QTD000374	blood	blood	naive	exon	471
-Lepik_2017	blood	QTS000019	QTD000375	blood	blood	naive	tx	471
-Lepik_2017	blood	QTS000019	QTD000376	blood	blood	naive	txrev	471
-Lepik_2017	blood	QTS000019	QTD000377	blood	blood	naive	leafcutter	471
-Naranbhai_2015	neutrophil_CD16	QTS000020	QTD000378	neutrophil	neutrophil	naive	NA	93
-Nedelec_2016	macrophage_Listeria	QTS000021	QTD000379	macrophage	macrophage	Listeria_5h	ge	163
-Nedelec_2016	macrophage_Listeria	QTS000021	QTD000380	macrophage	macrophage	Listeria_5h	exon	163
-Nedelec_2016	macrophage_Listeria	QTS000021	QTD000381	macrophage	macrophage	Listeria_5h	tx	163
-Nedelec_2016	macrophage_Listeria	QTS000021	QTD000382	macrophage	macrophage	Listeria_5h	txrev	163
-Nedelec_2016	macrophage_Listeria	QTS000021	QTD000383	macrophage	macrophage	Listeria_5h	leafcutter	163
-Nedelec_2016	macrophage_naive	QTS000021	QTD000384	macrophage	macrophage	naive	ge	163
-Nedelec_2016	macrophage_naive	QTS000021	QTD000385	macrophage	macrophage	naive	exon	163
-Nedelec_2016	macrophage_naive	QTS000021	QTD000386	macrophage	macrophage	naive	tx	163
-Nedelec_2016	macrophage_naive	QTS000021	QTD000387	macrophage	macrophage	naive	txrev	163
-Nedelec_2016	macrophage_naive	QTS000021	QTD000388	macrophage	macrophage	naive	leafcutter	163
-Nedelec_2016	macrophage_Salmonella	QTS000021	QTD000389	macrophage	macrophage	Salmonella_5h	ge	167
-Nedelec_2016	macrophage_Salmonella	QTS000021	QTD000390	macrophage	macrophage	Salmonella_5h	exon	167
-Nedelec_2016	macrophage_Salmonella	QTS000021	QTD000391	macrophage	macrophage	Salmonella_5h	tx	167
-Nedelec_2016	macrophage_Salmonella	QTS000021	QTD000392	macrophage	macrophage	Salmonella_5h	txrev	167
-Nedelec_2016	macrophage_Salmonella	QTS000021	QTD000393	macrophage	macrophage	Salmonella_5h	leafcutter	167
-Peng_2018	placenta_naive	QTS000022	QTD000394	placenta	placenta	naive	ge	149
-Peng_2018	placenta_naive	QTS000022	QTD000395	placenta	placenta	naive	exon	149
-Peng_2018	placenta_naive	QTS000022	QTD000396	placenta	placenta	naive	tx	149
-Peng_2018	placenta_naive	QTS000022	QTD000397	placenta	placenta	naive	txrev	149
-Peng_2018	placenta_naive	QTS000022	QTD000398	placenta	placenta	naive	leafcutter	149
-PhLiPS	iPSC	QTS000023	QTD000399	induced pluripotent stem cell	iPSC	naive	ge	83
-PhLiPS	iPSC	QTS000023	QTD000400	induced pluripotent stem cell	iPSC	naive	exon	83
-PhLiPS	iPSC	QTS000023	QTD000401	induced pluripotent stem cell	iPSC	naive	tx	83
-PhLiPS	iPSC	QTS000023	QTD000402	induced pluripotent stem cell	iPSC	naive	txrev	83
-PhLiPS	iPSC	QTS000023	QTD000403	induced pluripotent stem cell	iPSC	naive	leafcutter	83
-PhLiPS	HLC	QTS000023	QTD000404	hepatocyte	hepatocyte	naive	ge	79
-PhLiPS	HLC	QTS000023	QTD000405	hepatocyte	hepatocyte	naive	exon	79
-PhLiPS	HLC	QTS000023	QTD000406	hepatocyte	hepatocyte	naive	tx	79
-PhLiPS	HLC	QTS000023	QTD000407	hepatocyte	hepatocyte	naive	txrev	79
-PhLiPS	HLC	QTS000023	QTD000408	hepatocyte	hepatocyte	naive	leafcutter	79
-Quach_2016	monocyte_naive	QTS000024	QTD000409	CD14-positive, CD16-negative classical monocyte	monocyte	naive	ge	200
-Quach_2016	monocyte_naive	QTS000024	QTD000410	CD14-positive, CD16-negative classical monocyte	monocyte	naive	exon	200
-Quach_2016	monocyte_naive	QTS000024	QTD000411	CD14-positive, CD16-negative classical monocyte	monocyte	naive	tx	200
-Quach_2016	monocyte_naive	QTS000024	QTD000412	CD14-positive, CD16-negative classical monocyte	monocyte	naive	txrev	200
-Quach_2016	monocyte_naive	QTS000024	QTD000413	CD14-positive, CD16-negative classical monocyte	monocyte	naive	leafcutter	200
-Quach_2016	monocyte_LPS	QTS000024	QTD000414	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_6h	ge	184
-Quach_2016	monocyte_LPS	QTS000024	QTD000415	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_6h	exon	184
-Quach_2016	monocyte_LPS	QTS000024	QTD000416	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_6h	tx	184
-Quach_2016	monocyte_LPS	QTS000024	QTD000417	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_6h	txrev	184
-Quach_2016	monocyte_LPS	QTS000024	QTD000418	CD14-positive, CD16-negative classical monocyte	monocyte	LPS_6h	leafcutter	184
-Quach_2016	monocyte_Pam3CSK4	QTS000024	QTD000419	CD14-positive, CD16-negative classical monocyte	monocyte	Pam3CSK4_6h	ge	196
-Quach_2016	monocyte_Pam3CSK4	QTS000024	QTD000420	CD14-positive, CD16-negative classical monocyte	monocyte	Pam3CSK4_6h	exon	196
-Quach_2016	monocyte_Pam3CSK4	QTS000024	QTD000421	CD14-positive, CD16-negative classical monocyte	monocyte	Pam3CSK4_6h	tx	196
-Quach_2016	monocyte_Pam3CSK4	QTS000024	QTD000422	CD14-positive, CD16-negative classical monocyte	monocyte	Pam3CSK4_6h	txrev	196
-Quach_2016	monocyte_Pam3CSK4	QTS000024	QTD000423	CD14-positive, CD16-negative classical monocyte	monocyte	Pam3CSK4_6h	leafcutter	196
-Quach_2016	monocyte_R848	QTS000024	QTD000424	CD14-positive, CD16-negative classical monocyte	monocyte	R848_6h	ge	191
-Quach_2016	monocyte_R848	QTS000024	QTD000425	CD14-positive, CD16-negative classical monocyte	monocyte	R848_6h	exon	191
-Quach_2016	monocyte_R848	QTS000024	QTD000426	CD14-positive, CD16-negative classical monocyte	monocyte	R848_6h	tx	191
-Quach_2016	monocyte_R848	QTS000024	QTD000427	CD14-positive, CD16-negative classical monocyte	monocyte	R848_6h	txrev	191
-Quach_2016	monocyte_R848	QTS000024	QTD000428	CD14-positive, CD16-negative classical monocyte	monocyte	R848_6h	leafcutter	191
-Quach_2016	monocyte_IAV	QTS000024	QTD000429	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	ge	198
-Quach_2016	monocyte_IAV	QTS000024	QTD000430	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	exon	198
-Quach_2016	monocyte_IAV	QTS000024	QTD000431	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	tx	198
-Quach_2016	monocyte_IAV	QTS000024	QTD000432	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	txrev	198
-Quach_2016	monocyte_IAV	QTS000024	QTD000433	CD14-positive, CD16-negative classical monocyte	monocyte	Influenza_6h	leafcutter	198
-ROSMAP	brain_naive	QTS000025	QTD000434	dorsolateral prefrontal cortex	brain (DLPFC)	naive	ge	560
-ROSMAP	brain_naive	QTS000025	QTD000435	dorsolateral prefrontal cortex	brain (DLPFC)	naive	exon	560
-ROSMAP	brain_naive	QTS000025	QTD000436	dorsolateral prefrontal cortex	brain (DLPFC)	naive	tx	560
-ROSMAP	brain_naive	QTS000025	QTD000437	dorsolateral prefrontal cortex	brain (DLPFC)	naive	txrev	560
-ROSMAP	brain_naive	QTS000025	QTD000438	dorsolateral prefrontal cortex	brain (DLPFC)	naive	leafcutter	560
-Schmiedel_2018	Tfh_memory	QTS000026	QTD000439	T follicular helper cell	Tfh cell	naive	ge	89
-Schmiedel_2018	Tfh_memory	QTS000026	QTD000440	T follicular helper cell	Tfh cell	naive	exon	89
-Schmiedel_2018	Tfh_memory	QTS000026	QTD000441	T follicular helper cell	Tfh cell	naive	tx	89
-Schmiedel_2018	Tfh_memory	QTS000026	QTD000442	T follicular helper cell	Tfh cell	naive	txrev	89
-Schmiedel_2018	Tfh_memory	QTS000026	QTD000443	T follicular helper cell	Tfh cell	naive	leafcutter	89
-Schmiedel_2018	Th17_memory	QTS000026	QTD000444	T-helper 17 cell	Th17 cell	naive	ge	89
-Schmiedel_2018	Th17_memory	QTS000026	QTD000445	T-helper 17 cell	Th17 cell	naive	exon	89
-Schmiedel_2018	Th17_memory	QTS000026	QTD000446	T-helper 17 cell	Th17 cell	naive	tx	89
-Schmiedel_2018	Th17_memory	QTS000026	QTD000447	T-helper 17 cell	Th17 cell	naive	txrev	89
-Schmiedel_2018	Th17_memory	QTS000026	QTD000448	T-helper 17 cell	Th17 cell	naive	leafcutter	89
-Schmiedel_2018	Th1_memory	QTS000026	QTD000449	T-helper 1 cell	Th1 cell	naive	ge	82
-Schmiedel_2018	Th1_memory	QTS000026	QTD000450	T-helper 1 cell	Th1 cell	naive	exon	82
-Schmiedel_2018	Th1_memory	QTS000026	QTD000451	T-helper 1 cell	Th1 cell	naive	tx	82
-Schmiedel_2018	Th1_memory	QTS000026	QTD000452	T-helper 1 cell	Th1 cell	naive	txrev	82
-Schmiedel_2018	Th1_memory	QTS000026	QTD000453	T-helper 1 cell	Th1 cell	naive	leafcutter	82
-Schmiedel_2018	Th2_memory	QTS000026	QTD000454	T-helper 2 cell	Th2 cell	naive	ge	89
-Schmiedel_2018	Th2_memory	QTS000026	QTD000455	T-helper 2 cell	Th2 cell	naive	exon	89
-Schmiedel_2018	Th2_memory	QTS000026	QTD000456	T-helper 2 cell	Th2 cell	naive	tx	89
-Schmiedel_2018	Th2_memory	QTS000026	QTD000457	T-helper 2 cell	Th2 cell	naive	txrev	89
-Schmiedel_2018	Th2_memory	QTS000026	QTD000458	T-helper 2 cell	Th2 cell	naive	leafcutter	89
-Schmiedel_2018	Th1-17_memory	QTS000026	QTD000459	T-helper 17 cell	Th17 cell	naive	ge	88
-Schmiedel_2018	Th1-17_memory	QTS000026	QTD000460	T-helper 17 cell	Th17 cell	naive	exon	88
-Schmiedel_2018	Th1-17_memory	QTS000026	QTD000461	T-helper 17 cell	Th17 cell	naive	tx	88
-Schmiedel_2018	Th1-17_memory	QTS000026	QTD000462	T-helper 17 cell	Th17 cell	naive	txrev	88
-Schmiedel_2018	Th1-17_memory	QTS000026	QTD000463	T-helper 17 cell	Th17 cell	naive	leafcutter	88
-Schmiedel_2018	Treg_memory	QTS000026	QTD000464	memory regulatory T cell	Treg naive	naive	ge	89
-Schmiedel_2018	Treg_memory	QTS000026	QTD000465	memory regulatory T cell	Treg naive	naive	exon	89
-Schmiedel_2018	Treg_memory	QTS000026	QTD000466	memory regulatory T cell	Treg naive	naive	tx	89
-Schmiedel_2018	Treg_memory	QTS000026	QTD000467	memory regulatory T cell	Treg naive	naive	txrev	89
-Schmiedel_2018	Treg_memory	QTS000026	QTD000468	memory regulatory T cell	Treg naive	naive	leafcutter	89
-Schmiedel_2018	Treg_naive	QTS000026	QTD000469	naive regulatory T cell	Treg memory	naive	ge	89
-Schmiedel_2018	Treg_naive	QTS000026	QTD000470	naive regulatory T cell	Treg memory	naive	exon	89
-Schmiedel_2018	Treg_naive	QTS000026	QTD000471	naive regulatory T cell	Treg memory	naive	tx	89
-Schmiedel_2018	Treg_naive	QTS000026	QTD000472	naive regulatory T cell	Treg memory	naive	txrev	89
-Schmiedel_2018	Treg_naive	QTS000026	QTD000473	naive regulatory T cell	Treg memory	naive	leafcutter	89
-Schmiedel_2018	B-cell_naive	QTS000026	QTD000474	B cell	B cell	naive	ge	91
-Schmiedel_2018	B-cell_naive	QTS000026	QTD000475	B cell	B cell	naive	exon	91
-Schmiedel_2018	B-cell_naive	QTS000026	QTD000476	B cell	B cell	naive	tx	91
-Schmiedel_2018	B-cell_naive	QTS000026	QTD000477	B cell	B cell	naive	txrev	91
-Schmiedel_2018	B-cell_naive	QTS000026	QTD000478	B cell	B cell	naive	leafcutter	91
-Schmiedel_2018	CD4_T-cell_naive	QTS000026	QTD000479	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	ge	88
-Schmiedel_2018	CD4_T-cell_naive	QTS000026	QTD000480	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	exon	88
-Schmiedel_2018	CD4_T-cell_naive	QTS000026	QTD000481	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	tx	88
-Schmiedel_2018	CD4_T-cell_naive	QTS000026	QTD000482	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	txrev	88
-Schmiedel_2018	CD4_T-cell_naive	QTS000026	QTD000483	CD4-positive, alpha-beta T cell	CD4+ T cell	naive	leafcutter	88
-Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	QTS000026	QTD000484	CD4-positive, alpha-beta T cell	CD4+ T cell	anti-CD3-CD28_4h	ge	89
-Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	QTS000026	QTD000485	CD4-positive, alpha-beta T cell	CD4+ T cell	anti-CD3-CD28_4h	exon	89
-Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	QTS000026	QTD000486	CD4-positive, alpha-beta T cell	CD4+ T cell	anti-CD3-CD28_4h	tx	89
-Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	QTS000026	QTD000487	CD4-positive, alpha-beta T cell	CD4+ T cell	anti-CD3-CD28_4h	txrev	89
-Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	QTS000026	QTD000488	CD4-positive, alpha-beta T cell	CD4+ T cell	anti-CD3-CD28_4h	leafcutter	89
-Schmiedel_2018	CD8_T-cell_naive	QTS000026	QTD000489	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	ge	89
-Schmiedel_2018	CD8_T-cell_naive	QTS000026	QTD000490	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	exon	89
-Schmiedel_2018	CD8_T-cell_naive	QTS000026	QTD000491	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	tx	89
-Schmiedel_2018	CD8_T-cell_naive	QTS000026	QTD000492	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	txrev	89
-Schmiedel_2018	CD8_T-cell_naive	QTS000026	QTD000493	CD8-positive, alpha-beta T cell	CD8+ T cell	naive	leafcutter	89
-Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	QTS000026	QTD000494	CD8-positive, alpha-beta T cell	CD8+ T cell	anti-CD3-CD28_4h	ge	88
-Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	QTS000026	QTD000495	CD8-positive, alpha-beta T cell	CD8+ T cell	anti-CD3-CD28_4h	exon	88
-Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	QTS000026	QTD000496	CD8-positive, alpha-beta T cell	CD8+ T cell	anti-CD3-CD28_4h	tx	88
-Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	QTS000026	QTD000497	CD8-positive, alpha-beta T cell	CD8+ T cell	anti-CD3-CD28_4h	txrev	88
-Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	QTS000026	QTD000498	CD8-positive, alpha-beta T cell	CD8+ T cell	anti-CD3-CD28_4h	leafcutter	88
-Schmiedel_2018	monocyte_CD16_naive	QTS000026	QTD000499	CD14-low, CD16-positive monocyte	CD16+ monocyte	naive	ge	90
-Schmiedel_2018	monocyte_CD16_naive	QTS000026	QTD000500	CD14-low, CD16-positive monocyte	CD16+ monocyte	naive	exon	90
-Schmiedel_2018	monocyte_CD16_naive	QTS000026	QTD000501	CD14-low, CD16-positive monocyte	CD16+ monocyte	naive	tx	90
-Schmiedel_2018	monocyte_CD16_naive	QTS000026	QTD000502	CD14-low, CD16-positive monocyte	CD16+ monocyte	naive	txrev	90
-Schmiedel_2018	monocyte_CD16_naive	QTS000026	QTD000503	CD14-low, CD16-positive monocyte	CD16+ monocyte	naive	leafcutter	90
-Schmiedel_2018	monocyte_naive	QTS000026	QTD000504	CD14-positive, CD16-negative classical monocyte	monocyte	naive	ge	91
-Schmiedel_2018	monocyte_naive	QTS000026	QTD000505	CD14-positive, CD16-negative classical monocyte	monocyte	naive	exon	91
-Schmiedel_2018	monocyte_naive	QTS000026	QTD000506	CD14-positive, CD16-negative classical monocyte	monocyte	naive	tx	91
-Schmiedel_2018	monocyte_naive	QTS000026	QTD000507	CD14-positive, CD16-negative classical monocyte	monocyte	naive	txrev	91
-Schmiedel_2018	monocyte_naive	QTS000026	QTD000508	CD14-positive, CD16-negative classical monocyte	monocyte	naive	leafcutter	91
-Schmiedel_2018	NK-cell_naive	QTS000026	QTD000509	natural killer cell	NK cell	naive	ge	90
-Schmiedel_2018	NK-cell_naive	QTS000026	QTD000510	natural killer cell	NK cell	naive	exon	90
-Schmiedel_2018	NK-cell_naive	QTS000026	QTD000511	natural killer cell	NK cell	naive	tx	90
-Schmiedel_2018	NK-cell_naive	QTS000026	QTD000512	natural killer cell	NK cell	naive	txrev	90
-Schmiedel_2018	NK-cell_naive	QTS000026	QTD000513	natural killer cell	NK cell	naive	leafcutter	90
-Schwartzentruber_2018	sensory_neuron	QTS000027	QTD000514	sensory neuron	sensory neuron	naive	ge	98
-Schwartzentruber_2018	sensory_neuron	QTS000027	QTD000515	sensory neuron	sensory neuron	naive	exon	98
-Schwartzentruber_2018	sensory_neuron	QTS000027	QTD000516	sensory neuron	sensory neuron	naive	tx	98
-Schwartzentruber_2018	sensory_neuron	QTS000027	QTD000517	sensory neuron	sensory neuron	naive	txrev	98
-Schwartzentruber_2018	sensory_neuron	QTS000027	QTD000518	sensory neuron	sensory neuron	naive	leafcutter	98
-Steinberg_2020	synovium_naive	QTS000028	QTD000519	layer of synovial tissue	synovium	naive	ge	72
-Steinberg_2020	synovium_naive	QTS000028	QTD000520	layer of synovial tissue	synovium	naive	exon	72
-Steinberg_2020	synovium_naive	QTS000028	QTD000521	layer of synovial tissue	synovium	naive	tx	72
-Steinberg_2020	synovium_naive	QTS000028	QTD000522	layer of synovial tissue	synovium	naive	txrev	72
-Steinberg_2020	synovium_naive	QTS000028	QTD000523	layer of synovial tissue	synovium	naive	leafcutter	72
-Steinberg_2020	low_grade_cartilage_naive	QTS000028	QTD000524	cartilage tissue	cartilage	naive	ge	69
-Steinberg_2020	low_grade_cartilage_naive	QTS000028	QTD000525	cartilage tissue	cartilage	naive	exon	69
-Steinberg_2020	low_grade_cartilage_naive	QTS000028	QTD000526	cartilage tissue	cartilage	naive	tx	69
-Steinberg_2020	low_grade_cartilage_naive	QTS000028	QTD000527	cartilage tissue	cartilage	naive	txrev	69
-Steinberg_2020	low_grade_cartilage_naive	QTS000028	QTD000528	cartilage tissue	cartilage	naive	leafcutter	69
-Steinberg_2020	high_grade_cartilage_naive	QTS000028	QTD000529	cartilage tissue	cartilage	naive	ge	69
-Steinberg_2020	high_grade_cartilage_naive	QTS000028	QTD000530	cartilage tissue	cartilage	naive	exon	69
-Steinberg_2020	high_grade_cartilage_naive	QTS000028	QTD000531	cartilage tissue	cartilage	naive	tx	69
-Steinberg_2020	high_grade_cartilage_naive	QTS000028	QTD000532	cartilage tissue	cartilage	naive	txrev	69
-Steinberg_2020	high_grade_cartilage_naive	QTS000028	QTD000533	cartilage tissue	cartilage	naive	leafcutter	69
-TwinsUK	fat	QTS000029	QTD000534	adipose tissue	adipose	naive	ge	381
-TwinsUK	fat	QTS000029	QTD000535	adipose tissue	adipose	naive	exon	381
-TwinsUK	fat	QTS000029	QTD000536	adipose tissue	adipose	naive	tx	381
-TwinsUK	fat	QTS000029	QTD000537	adipose tissue	adipose	naive	txrev	381
-TwinsUK	fat	QTS000029	QTD000538	adipose tissue	adipose	naive	leafcutter	381
-TwinsUK	LCL	QTS000029	QTD000539	lymphoblastoid cell line	LCL	naive	ge	418
-TwinsUK	LCL	QTS000029	QTD000540	lymphoblastoid cell line	LCL	naive	exon	418
-TwinsUK	LCL	QTS000029	QTD000541	lymphoblastoid cell line	LCL	naive	tx	418
-TwinsUK	LCL	QTS000029	QTD000542	lymphoblastoid cell line	LCL	naive	txrev	418
-TwinsUK	LCL	QTS000029	QTD000543	lymphoblastoid cell line	LCL	naive	leafcutter	418
-TwinsUK	skin	QTS000029	QTD000544	skin of body	skin	naive	ge	370
-TwinsUK	skin	QTS000029	QTD000545	skin of body	skin	naive	exon	370
-TwinsUK	skin	QTS000029	QTD000546	skin of body	skin	naive	tx	370
-TwinsUK	skin	QTS000029	QTD000547	skin of body	skin	naive	txrev	370
-TwinsUK	skin	QTS000029	QTD000548	skin of body	skin	naive	leafcutter	370
-TwinsUK	blood	QTS000029	QTD000549	blood	blood	naive	ge	195
-TwinsUK	blood	QTS000029	QTD000550	blood	blood	naive	exon	195
-TwinsUK	blood	QTS000029	QTD000551	blood	blood	naive	tx	195
-TwinsUK	blood	QTS000029	QTD000552	blood	blood	naive	txrev	195
-TwinsUK	blood	QTS000029	QTD000553	blood	blood	naive	leafcutter	195
-van_de_Bunt_2015	pancreatic_islet	QTS000030	QTD000554	islet of Langerhans	pancreatic islet	naive	ge	117
-van_de_Bunt_2015	pancreatic_islet	QTS000030	QTD000555	islet of Langerhans	pancreatic islet	naive	exon	117
-van_de_Bunt_2015	pancreatic_islet	QTS000030	QTD000556	islet of Langerhans	pancreatic islet	naive	tx	117
-van_de_Bunt_2015	pancreatic_islet	QTS000030	QTD000557	islet of Langerhans	pancreatic islet	naive	txrev	117
-van_de_Bunt_2015	pancreatic_islet	QTS000030	QTD000558	islet of Langerhans	pancreatic islet	naive	leafcutter	117
-Young_2019	microglia_naive	QTS000031	QTD000559	microglial cell	microglia	naive	ge	104
-Young_2019	microglia_naive	QTS000031	QTD000560	microglial cell	microglia	naive	exon	104
-Young_2019	microglia_naive	QTS000031	QTD000561	microglial cell	microglia	naive	tx	104
-Young_2019	microglia_naive	QTS000031	QTD000562	microglial cell	microglia	naive	txrev	104
-Young_2019	microglia_naive	QTS000031	QTD000563	microglial cell	microglia	naive	leafcutter	104
+study_label	sample_group	quant_method	study_id	dataset_id
+Alasoo_2018	macrophage_naive	ge	QTS000001	QTD000001
+Alasoo_2018	macrophage_naive	exon	QTS000001	QTD000002
+Alasoo_2018	macrophage_naive	tx	QTS000001	QTD000003
+Alasoo_2018	macrophage_naive	txrev	QTS000001	QTD000004
+Alasoo_2018	macrophage_naive	leafcutter	QTS000001	QTD000005
+Alasoo_2018	macrophage_IFNg	ge	QTS000001	QTD000006
+Alasoo_2018	macrophage_IFNg	exon	QTS000001	QTD000007
+Alasoo_2018	macrophage_IFNg	tx	QTS000001	QTD000008
+Alasoo_2018	macrophage_IFNg	txrev	QTS000001	QTD000009
+Alasoo_2018	macrophage_IFNg	leafcutter	QTS000001	QTD000010
+Alasoo_2018	macrophage_Salmonella	ge	QTS000001	QTD000011
+Alasoo_2018	macrophage_Salmonella	exon	QTS000001	QTD000012
+Alasoo_2018	macrophage_Salmonella	tx	QTS000001	QTD000013
+Alasoo_2018	macrophage_Salmonella	txrev	QTS000001	QTD000014
+Alasoo_2018	macrophage_Salmonella	leafcutter	QTS000001	QTD000015
+Alasoo_2018	macrophage_IFNg+Salmonella	ge	QTS000001	QTD000016
+Alasoo_2018	macrophage_IFNg+Salmonella	exon	QTS000001	QTD000017
+Alasoo_2018	macrophage_IFNg+Salmonella	tx	QTS000001	QTD000018
+Alasoo_2018	macrophage_IFNg+Salmonella	txrev	QTS000001	QTD000019
+Alasoo_2018	macrophage_IFNg+Salmonella	leafcutter	QTS000001	QTD000020
+BLUEPRINT	monocyte	ge	QTS000002	QTD000021
+BLUEPRINT	monocyte	exon	QTS000002	QTD000022
+BLUEPRINT	monocyte	tx	QTS000002	QTD000023
+BLUEPRINT	monocyte	txrev	QTS000002	QTD000024
+BLUEPRINT	monocyte	leafcutter	QTS000002	QTD000025
+BLUEPRINT	neutrophil	ge	QTS000002	QTD000026
+BLUEPRINT	neutrophil	exon	QTS000002	QTD000027
+BLUEPRINT	neutrophil	tx	QTS000002	QTD000028
+BLUEPRINT	neutrophil	txrev	QTS000002	QTD000029
+BLUEPRINT	neutrophil	leafcutter	QTS000002	QTD000030
+BLUEPRINT	T-cell	ge	QTS000002	QTD000031
+BLUEPRINT	T-cell	exon	QTS000002	QTD000032
+BLUEPRINT	T-cell	tx	QTS000002	QTD000033
+BLUEPRINT	T-cell	txrev	QTS000002	QTD000034
+BLUEPRINT	T-cell	leafcutter	QTS000002	QTD000035
+Bossini-Castillo_2019	Treg_naive	ge	QTS000003	QTD000036
+Bossini-Castillo_2019	Treg_naive	exon	QTS000003	QTD000037
+Bossini-Castillo_2019	Treg_naive	tx	QTS000003	QTD000038
+Bossini-Castillo_2019	Treg_naive	txrev	QTS000003	QTD000039
+Bossini-Castillo_2019	Treg_naive	leafcutter	QTS000003	QTD000040
+Braineac2	putamen	ge	QTS000004	QTD000041
+Braineac2	putamen	exon	QTS000004	QTD000042
+Braineac2	putamen	tx	QTS000004	QTD000043
+Braineac2	putamen	txrev	QTS000004	QTD000044
+Braineac2	putamen	leafcutter	QTS000004	QTD000045
+Braineac2	substantia_nigra	ge	QTS000004	QTD000046
+Braineac2	substantia_nigra	exon	QTS000004	QTD000047
+Braineac2	substantia_nigra	tx	QTS000004	QTD000048
+Braineac2	substantia_nigra	txrev	QTS000004	QTD000049
+Braineac2	substantia_nigra	leafcutter	QTS000004	QTD000050
+BrainSeq	brain	ge	QTS000005	QTD000051
+BrainSeq	brain	exon	QTS000005	QTD000052
+BrainSeq	brain	tx	QTS000005	QTD000053
+BrainSeq	brain	txrev	QTS000005	QTD000054
+BrainSeq	brain	leafcutter	QTS000005	QTD000055
+CAP	LCL_naive	ge	QTS000006	QTD000056
+CAP	LCL_naive	exon	QTS000006	QTD000057
+CAP	LCL_naive	tx	QTS000006	QTD000058
+CAP	LCL_naive	txrev	QTS000006	QTD000059
+CAP	LCL_naive	leafcutter	QTS000006	QTD000060
+CAP	LCL_statin	ge	QTS000006	QTD000061
+CAP	LCL_statin	exon	QTS000006	QTD000062
+CAP	LCL_statin	tx	QTS000006	QTD000063
+CAP	LCL_statin	txrev	QTS000006	QTD000064
+CAP	LCL_statin	leafcutter	QTS000006	QTD000065
+CEDAR	T-cell_CD8	microarray	QTS000007	QTD000066
+CEDAR	T-cell_CD4	microarray	QTS000007	QTD000067
+CEDAR	transverse_colon	microarray	QTS000007	QTD000068
+CEDAR	monocyte_CD14	microarray	QTS000007	QTD000069
+CEDAR	neutrophil_CD15	microarray	QTS000007	QTD000070
+CEDAR	platelet	microarray	QTS000007	QTD000071
+CEDAR	rectum	microarray	QTS000007	QTD000072
+CEDAR	B-cell_CD19	microarray	QTS000007	QTD000073
+CEDAR	ileum	microarray	QTS000007	QTD000074
+CommonMind	DLPFC_naive	ge	QTS000008	QTD000075
+CommonMind	DLPFC_naive	exon	QTS000008	QTD000076
+CommonMind	DLPFC_naive	tx	QTS000008	QTD000077
+CommonMind	DLPFC_naive	txrev	QTS000008	QTD000078
+CommonMind	DLPFC_naive	leafcutter	QTS000008	QTD000079
+Fairfax_2012	B-cell_CD19	microarray	QTS000009	QTD000080
+Fairfax_2014	monocyte_naive	microarray	QTS000010	QTD000081
+Fairfax_2014	monocyte_IFN24	microarray	QTS000010	QTD000082
+Fairfax_2014	monocyte_LPS2	microarray	QTS000010	QTD000083
+Fairfax_2014	monocyte_LPS24	microarray	QTS000010	QTD000084
+FUSION	muscle_naive	ge	QTS000011	QTD000085
+FUSION	muscle_naive	exon	QTS000011	QTD000086
+FUSION	muscle_naive	tx	QTS000011	QTD000087
+FUSION	muscle_naive	txrev	QTS000011	QTD000088
+FUSION	muscle_naive	leafcutter	QTS000011	QTD000089
+FUSION	adipose_naive	ge	QTS000011	QTD000090
+FUSION	adipose_naive	exon	QTS000011	QTD000091
+FUSION	adipose_naive	tx	QTS000011	QTD000092
+FUSION	adipose_naive	txrev	QTS000011	QTD000093
+FUSION	adipose_naive	leafcutter	QTS000011	QTD000094
+GENCORD	LCL	ge	QTS000012	QTD000095
+GENCORD	LCL	exon	QTS000012	QTD000096
+GENCORD	LCL	tx	QTS000012	QTD000097
+GENCORD	LCL	txrev	QTS000012	QTD000098
+GENCORD	LCL	leafcutter	QTS000012	QTD000099
+GENCORD	fibroblast	ge	QTS000012	QTD000100
+GENCORD	fibroblast	exon	QTS000012	QTD000101
+GENCORD	fibroblast	tx	QTS000012	QTD000102
+GENCORD	fibroblast	txrev	QTS000012	QTD000103
+GENCORD	fibroblast	leafcutter	QTS000012	QTD000104
+GENCORD	T-cell	ge	QTS000012	QTD000105
+GENCORD	T-cell	exon	QTS000012	QTD000106
+GENCORD	T-cell	tx	QTS000012	QTD000107
+GENCORD	T-cell	txrev	QTS000012	QTD000108
+GENCORD	T-cell	leafcutter	QTS000012	QTD000109
+GEUVADIS	LCL	ge	QTS000013	QTD000110
+GEUVADIS	LCL	exon	QTS000013	QTD000111
+GEUVADIS	LCL	tx	QTS000013	QTD000112
+GEUVADIS	LCL	txrev	QTS000013	QTD000113
+GEUVADIS	LCL	leafcutter	QTS000013	QTD000114
+Gilchrist_2021	NK-cell_naive	microarray	QTS000014	QTD000115
+GTEx	adipose_subcutaneous	ge	QTS000015	QTD000116
+GTEx	adipose_subcutaneous	exon	QTS000015	QTD000117
+GTEx	adipose_subcutaneous	tx	QTS000015	QTD000118
+GTEx	adipose_subcutaneous	txrev	QTS000015	QTD000119
+GTEx	adipose_subcutaneous	leafcutter	QTS000015	QTD000120
+GTEx	adipose_visceral	ge	QTS000015	QTD000121
+GTEx	adipose_visceral	exon	QTS000015	QTD000122
+GTEx	adipose_visceral	tx	QTS000015	QTD000123
+GTEx	adipose_visceral	txrev	QTS000015	QTD000124
+GTEx	adipose_visceral	leafcutter	QTS000015	QTD000125
+GTEx	adrenal_gland	ge	QTS000015	QTD000126
+GTEx	adrenal_gland	exon	QTS000015	QTD000127
+GTEx	adrenal_gland	tx	QTS000015	QTD000128
+GTEx	adrenal_gland	txrev	QTS000015	QTD000129
+GTEx	adrenal_gland	leafcutter	QTS000015	QTD000130
+GTEx	artery_aorta	ge	QTS000015	QTD000131
+GTEx	artery_aorta	exon	QTS000015	QTD000132
+GTEx	artery_aorta	tx	QTS000015	QTD000133
+GTEx	artery_aorta	txrev	QTS000015	QTD000134
+GTEx	artery_aorta	leafcutter	QTS000015	QTD000135
+GTEx	artery_coronary	ge	QTS000015	QTD000136
+GTEx	artery_coronary	exon	QTS000015	QTD000137
+GTEx	artery_coronary	tx	QTS000015	QTD000138
+GTEx	artery_coronary	txrev	QTS000015	QTD000139
+GTEx	artery_coronary	leafcutter	QTS000015	QTD000140
+GTEx	artery_tibial	ge	QTS000015	QTD000141
+GTEx	artery_tibial	exon	QTS000015	QTD000142
+GTEx	artery_tibial	tx	QTS000015	QTD000143
+GTEx	artery_tibial	txrev	QTS000015	QTD000144
+GTEx	artery_tibial	leafcutter	QTS000015	QTD000145
+GTEx	brain_amygdala	ge	QTS000015	QTD000146
+GTEx	brain_amygdala	exon	QTS000015	QTD000147
+GTEx	brain_amygdala	tx	QTS000015	QTD000148
+GTEx	brain_amygdala	txrev	QTS000015	QTD000149
+GTEx	brain_amygdala	leafcutter	QTS000015	QTD000150
+GTEx	brain_anterior_cingulate_cortex	ge	QTS000015	QTD000151
+GTEx	brain_anterior_cingulate_cortex	exon	QTS000015	QTD000152
+GTEx	brain_anterior_cingulate_cortex	tx	QTS000015	QTD000153
+GTEx	brain_anterior_cingulate_cortex	txrev	QTS000015	QTD000154
+GTEx	brain_anterior_cingulate_cortex	leafcutter	QTS000015	QTD000155
+GTEx	brain_caudate	ge	QTS000015	QTD000156
+GTEx	brain_caudate	exon	QTS000015	QTD000157
+GTEx	brain_caudate	tx	QTS000015	QTD000158
+GTEx	brain_caudate	txrev	QTS000015	QTD000159
+GTEx	brain_caudate	leafcutter	QTS000015	QTD000160
+GTEx	brain_cerebellar_hemisphere	ge	QTS000015	QTD000161
+GTEx	brain_cerebellar_hemisphere	exon	QTS000015	QTD000162
+GTEx	brain_cerebellar_hemisphere	tx	QTS000015	QTD000163
+GTEx	brain_cerebellar_hemisphere	txrev	QTS000015	QTD000164
+GTEx	brain_cerebellar_hemisphere	leafcutter	QTS000015	QTD000165
+GTEx	brain_cerebellum	ge	QTS000015	QTD000166
+GTEx	brain_cerebellum	exon	QTS000015	QTD000167
+GTEx	brain_cerebellum	tx	QTS000015	QTD000168
+GTEx	brain_cerebellum	txrev	QTS000015	QTD000169
+GTEx	brain_cerebellum	leafcutter	QTS000015	QTD000170
+GTEx	brain_cortex	ge	QTS000015	QTD000171
+GTEx	brain_cortex	exon	QTS000015	QTD000172
+GTEx	brain_cortex	tx	QTS000015	QTD000173
+GTEx	brain_cortex	txrev	QTS000015	QTD000174
+GTEx	brain_cortex	leafcutter	QTS000015	QTD000175
+GTEx	brain_frontal_cortex	ge	QTS000015	QTD000176
+GTEx	brain_frontal_cortex	exon	QTS000015	QTD000177
+GTEx	brain_frontal_cortex	tx	QTS000015	QTD000178
+GTEx	brain_frontal_cortex	txrev	QTS000015	QTD000179
+GTEx	brain_frontal_cortex	leafcutter	QTS000015	QTD000180
+GTEx	brain_hippocampus	ge	QTS000015	QTD000181
+GTEx	brain_hippocampus	exon	QTS000015	QTD000182
+GTEx	brain_hippocampus	tx	QTS000015	QTD000183
+GTEx	brain_hippocampus	txrev	QTS000015	QTD000184
+GTEx	brain_hippocampus	leafcutter	QTS000015	QTD000185
+GTEx	brain_hypothalamus	ge	QTS000015	QTD000186
+GTEx	brain_hypothalamus	exon	QTS000015	QTD000187
+GTEx	brain_hypothalamus	tx	QTS000015	QTD000188
+GTEx	brain_hypothalamus	txrev	QTS000015	QTD000189
+GTEx	brain_hypothalamus	leafcutter	QTS000015	QTD000190
+GTEx	brain_nucleus_accumbens	ge	QTS000015	QTD000191
+GTEx	brain_nucleus_accumbens	exon	QTS000015	QTD000192
+GTEx	brain_nucleus_accumbens	tx	QTS000015	QTD000193
+GTEx	brain_nucleus_accumbens	txrev	QTS000015	QTD000194
+GTEx	brain_nucleus_accumbens	leafcutter	QTS000015	QTD000195
+GTEx	brain_putamen	ge	QTS000015	QTD000196
+GTEx	brain_putamen	exon	QTS000015	QTD000197
+GTEx	brain_putamen	tx	QTS000015	QTD000198
+GTEx	brain_putamen	txrev	QTS000015	QTD000199
+GTEx	brain_putamen	leafcutter	QTS000015	QTD000200
+GTEx	brain_spinal_cord	ge	QTS000015	QTD000201
+GTEx	brain_spinal_cord	exon	QTS000015	QTD000202
+GTEx	brain_spinal_cord	tx	QTS000015	QTD000203
+GTEx	brain_spinal_cord	txrev	QTS000015	QTD000204
+GTEx	brain_spinal_cord	leafcutter	QTS000015	QTD000205
+GTEx	brain_substantia_nigra	ge	QTS000015	QTD000206
+GTEx	brain_substantia_nigra	exon	QTS000015	QTD000207
+GTEx	brain_substantia_nigra	tx	QTS000015	QTD000208
+GTEx	brain_substantia_nigra	txrev	QTS000015	QTD000209
+GTEx	brain_substantia_nigra	leafcutter	QTS000015	QTD000210
+GTEx	breast	ge	QTS000015	QTD000211
+GTEx	breast	exon	QTS000015	QTD000212
+GTEx	breast	tx	QTS000015	QTD000213
+GTEx	breast	txrev	QTS000015	QTD000214
+GTEx	breast	leafcutter	QTS000015	QTD000215
+GTEx	fibroblast	ge	QTS000015	QTD000216
+GTEx	fibroblast	exon	QTS000015	QTD000217
+GTEx	fibroblast	tx	QTS000015	QTD000218
+GTEx	fibroblast	txrev	QTS000015	QTD000219
+GTEx	fibroblast	leafcutter	QTS000015	QTD000220
+GTEx	LCL	ge	QTS000015	QTD000221
+GTEx	LCL	exon	QTS000015	QTD000222
+GTEx	LCL	tx	QTS000015	QTD000223
+GTEx	LCL	txrev	QTS000015	QTD000224
+GTEx	LCL	leafcutter	QTS000015	QTD000225
+GTEx	colon_sigmoid	ge	QTS000015	QTD000226
+GTEx	colon_sigmoid	exon	QTS000015	QTD000227
+GTEx	colon_sigmoid	tx	QTS000015	QTD000228
+GTEx	colon_sigmoid	txrev	QTS000015	QTD000229
+GTEx	colon_sigmoid	leafcutter	QTS000015	QTD000230
+GTEx	colon_transverse	ge	QTS000015	QTD000231
+GTEx	colon_transverse	exon	QTS000015	QTD000232
+GTEx	colon_transverse	tx	QTS000015	QTD000233
+GTEx	colon_transverse	txrev	QTS000015	QTD000234
+GTEx	colon_transverse	leafcutter	QTS000015	QTD000235
+GTEx	esophagus_gej	ge	QTS000015	QTD000236
+GTEx	esophagus_gej	exon	QTS000015	QTD000237
+GTEx	esophagus_gej	tx	QTS000015	QTD000238
+GTEx	esophagus_gej	txrev	QTS000015	QTD000239
+GTEx	esophagus_gej	leafcutter	QTS000015	QTD000240
+GTEx	esophagus_mucosa	ge	QTS000015	QTD000241
+GTEx	esophagus_mucosa	exon	QTS000015	QTD000242
+GTEx	esophagus_mucosa	tx	QTS000015	QTD000243
+GTEx	esophagus_mucosa	txrev	QTS000015	QTD000244
+GTEx	esophagus_mucosa	leafcutter	QTS000015	QTD000245
+GTEx	esophagus_muscularis	ge	QTS000015	QTD000246
+GTEx	esophagus_muscularis	exon	QTS000015	QTD000247
+GTEx	esophagus_muscularis	tx	QTS000015	QTD000248
+GTEx	esophagus_muscularis	txrev	QTS000015	QTD000249
+GTEx	esophagus_muscularis	leafcutter	QTS000015	QTD000250
+GTEx	heart_atrial_appendage	ge	QTS000015	QTD000251
+GTEx	heart_atrial_appendage	exon	QTS000015	QTD000252
+GTEx	heart_atrial_appendage	tx	QTS000015	QTD000253
+GTEx	heart_atrial_appendage	txrev	QTS000015	QTD000254
+GTEx	heart_atrial_appendage	leafcutter	QTS000015	QTD000255
+GTEx	heart_left_ventricle	ge	QTS000015	QTD000256
+GTEx	heart_left_ventricle	exon	QTS000015	QTD000257
+GTEx	heart_left_ventricle	tx	QTS000015	QTD000258
+GTEx	heart_left_ventricle	txrev	QTS000015	QTD000259
+GTEx	heart_left_ventricle	leafcutter	QTS000015	QTD000260
+GTEx	kidney_cortex	ge	QTS000015	QTD000261
+GTEx	kidney_cortex	exon	QTS000015	QTD000262
+GTEx	kidney_cortex	tx	QTS000015	QTD000263
+GTEx	kidney_cortex	txrev	QTS000015	QTD000264
+GTEx	kidney_cortex	leafcutter	QTS000015	QTD000265
+GTEx	liver	ge	QTS000015	QTD000266
+GTEx	liver	exon	QTS000015	QTD000267
+GTEx	liver	tx	QTS000015	QTD000268
+GTEx	liver	txrev	QTS000015	QTD000269
+GTEx	liver	leafcutter	QTS000015	QTD000270
+GTEx	lung	ge	QTS000015	QTD000271
+GTEx	lung	exon	QTS000015	QTD000272
+GTEx	lung	tx	QTS000015	QTD000273
+GTEx	lung	txrev	QTS000015	QTD000274
+GTEx	lung	leafcutter	QTS000015	QTD000275
+GTEx	minor_salivary_gland	ge	QTS000015	QTD000276
+GTEx	minor_salivary_gland	exon	QTS000015	QTD000277
+GTEx	minor_salivary_gland	tx	QTS000015	QTD000278
+GTEx	minor_salivary_gland	txrev	QTS000015	QTD000279
+GTEx	minor_salivary_gland	leafcutter	QTS000015	QTD000280
+GTEx	muscle	ge	QTS000015	QTD000281
+GTEx	muscle	exon	QTS000015	QTD000282
+GTEx	muscle	tx	QTS000015	QTD000283
+GTEx	muscle	txrev	QTS000015	QTD000284
+GTEx	muscle	leafcutter	QTS000015	QTD000285
+GTEx	nerve_tibial	ge	QTS000015	QTD000286
+GTEx	nerve_tibial	exon	QTS000015	QTD000287
+GTEx	nerve_tibial	tx	QTS000015	QTD000288
+GTEx	nerve_tibial	txrev	QTS000015	QTD000289
+GTEx	nerve_tibial	leafcutter	QTS000015	QTD000290
+GTEx	ovary	ge	QTS000015	QTD000291
+GTEx	ovary	exon	QTS000015	QTD000292
+GTEx	ovary	tx	QTS000015	QTD000293
+GTEx	ovary	txrev	QTS000015	QTD000294
+GTEx	ovary	leafcutter	QTS000015	QTD000295
+GTEx	pancreas	ge	QTS000015	QTD000296
+GTEx	pancreas	exon	QTS000015	QTD000297
+GTEx	pancreas	tx	QTS000015	QTD000298
+GTEx	pancreas	txrev	QTS000015	QTD000299
+GTEx	pancreas	leafcutter	QTS000015	QTD000300
+GTEx	pituitary	ge	QTS000015	QTD000301
+GTEx	pituitary	exon	QTS000015	QTD000302
+GTEx	pituitary	tx	QTS000015	QTD000303
+GTEx	pituitary	txrev	QTS000015	QTD000304
+GTEx	pituitary	leafcutter	QTS000015	QTD000305
+GTEx	prostate	ge	QTS000015	QTD000306
+GTEx	prostate	exon	QTS000015	QTD000307
+GTEx	prostate	tx	QTS000015	QTD000308
+GTEx	prostate	txrev	QTS000015	QTD000309
+GTEx	prostate	leafcutter	QTS000015	QTD000310
+GTEx	skin_not_sun_exposed	ge	QTS000015	QTD000311
+GTEx	skin_not_sun_exposed	exon	QTS000015	QTD000312
+GTEx	skin_not_sun_exposed	tx	QTS000015	QTD000313
+GTEx	skin_not_sun_exposed	txrev	QTS000015	QTD000314
+GTEx	skin_not_sun_exposed	leafcutter	QTS000015	QTD000315
+GTEx	skin_sun_exposed	ge	QTS000015	QTD000316
+GTEx	skin_sun_exposed	exon	QTS000015	QTD000317
+GTEx	skin_sun_exposed	tx	QTS000015	QTD000318
+GTEx	skin_sun_exposed	txrev	QTS000015	QTD000319
+GTEx	skin_sun_exposed	leafcutter	QTS000015	QTD000320
+GTEx	small_intestine	ge	QTS000015	QTD000321
+GTEx	small_intestine	exon	QTS000015	QTD000322
+GTEx	small_intestine	tx	QTS000015	QTD000323
+GTEx	small_intestine	txrev	QTS000015	QTD000324
+GTEx	small_intestine	leafcutter	QTS000015	QTD000325
+GTEx	spleen	ge	QTS000015	QTD000326
+GTEx	spleen	exon	QTS000015	QTD000327
+GTEx	spleen	tx	QTS000015	QTD000328
+GTEx	spleen	txrev	QTS000015	QTD000329
+GTEx	spleen	leafcutter	QTS000015	QTD000330
+GTEx	stomach	ge	QTS000015	QTD000331
+GTEx	stomach	exon	QTS000015	QTD000332
+GTEx	stomach	tx	QTS000015	QTD000333
+GTEx	stomach	txrev	QTS000015	QTD000334
+GTEx	stomach	leafcutter	QTS000015	QTD000335
+GTEx	testis	ge	QTS000015	QTD000336
+GTEx	testis	exon	QTS000015	QTD000337
+GTEx	testis	tx	QTS000015	QTD000338
+GTEx	testis	txrev	QTS000015	QTD000339
+GTEx	testis	leafcutter	QTS000015	QTD000340
+GTEx	thyroid	ge	QTS000015	QTD000341
+GTEx	thyroid	exon	QTS000015	QTD000342
+GTEx	thyroid	tx	QTS000015	QTD000343
+GTEx	thyroid	txrev	QTS000015	QTD000344
+GTEx	thyroid	leafcutter	QTS000015	QTD000345
+GTEx	uterus	ge	QTS000015	QTD000346
+GTEx	uterus	exon	QTS000015	QTD000347
+GTEx	uterus	tx	QTS000015	QTD000348
+GTEx	uterus	txrev	QTS000015	QTD000349
+GTEx	uterus	leafcutter	QTS000015	QTD000350
+GTEx	vagina	ge	QTS000015	QTD000351
+GTEx	vagina	exon	QTS000015	QTD000352
+GTEx	vagina	tx	QTS000015	QTD000353
+GTEx	vagina	txrev	QTS000015	QTD000354
+GTEx	vagina	leafcutter	QTS000015	QTD000355
+GTEx	blood	ge	QTS000015	QTD000356
+GTEx	blood	exon	QTS000015	QTD000357
+GTEx	blood	tx	QTS000015	QTD000358
+GTEx	blood	txrev	QTS000015	QTD000359
+GTEx	blood	leafcutter	QTS000015	QTD000360
+HipSci	iPSC	ge	QTS000016	QTD000361
+HipSci	iPSC	exon	QTS000016	QTD000362
+HipSci	iPSC	tx	QTS000016	QTD000363
+HipSci	iPSC	txrev	QTS000016	QTD000364
+HipSci	iPSC	leafcutter	QTS000016	QTD000365
+iPSCORE	iPSC	ge	QTS000017	QTD000366
+iPSCORE	iPSC	exon	QTS000017	QTD000367
+iPSCORE	iPSC	tx	QTS000017	QTD000368
+iPSCORE	iPSC	txrev	QTS000017	QTD000369
+iPSCORE	iPSC	leafcutter	QTS000017	QTD000370
+Kasela_2017	T-cell_CD4	microarray	QTS000018	QTD000371
+Kasela_2017	T-cell_CD8	microarray	QTS000018	QTD000372
+Lepik_2017	blood	ge	QTS000019	QTD000373
+Lepik_2017	blood	exon	QTS000019	QTD000374
+Lepik_2017	blood	tx	QTS000019	QTD000375
+Lepik_2017	blood	txrev	QTS000019	QTD000376
+Lepik_2017	blood	leafcutter	QTS000019	QTD000377
+Naranbhai_2015	neutrophil_CD16	microarray	QTS000020	QTD000378
+Nedelec_2016	macrophage_Listeria	ge	QTS000021	QTD000379
+Nedelec_2016	macrophage_Listeria	exon	QTS000021	QTD000380
+Nedelec_2016	macrophage_Listeria	tx	QTS000021	QTD000381
+Nedelec_2016	macrophage_Listeria	txrev	QTS000021	QTD000382
+Nedelec_2016	macrophage_Listeria	leafcutter	QTS000021	QTD000383
+Nedelec_2016	macrophage_naive	ge	QTS000021	QTD000384
+Nedelec_2016	macrophage_naive	exon	QTS000021	QTD000385
+Nedelec_2016	macrophage_naive	tx	QTS000021	QTD000386
+Nedelec_2016	macrophage_naive	txrev	QTS000021	QTD000387
+Nedelec_2016	macrophage_naive	leafcutter	QTS000021	QTD000388
+Nedelec_2016	macrophage_Salmonella	ge	QTS000021	QTD000389
+Nedelec_2016	macrophage_Salmonella	exon	QTS000021	QTD000390
+Nedelec_2016	macrophage_Salmonella	tx	QTS000021	QTD000391
+Nedelec_2016	macrophage_Salmonella	txrev	QTS000021	QTD000392
+Nedelec_2016	macrophage_Salmonella	leafcutter	QTS000021	QTD000393
+Peng_2018	placenta_naive	ge	QTS000022	QTD000394
+Peng_2018	placenta_naive	exon	QTS000022	QTD000395
+Peng_2018	placenta_naive	tx	QTS000022	QTD000396
+Peng_2018	placenta_naive	txrev	QTS000022	QTD000397
+Peng_2018	placenta_naive	leafcutter	QTS000022	QTD000398
+PhLiPS	iPSC	ge	QTS000023	QTD000399
+PhLiPS	iPSC	exon	QTS000023	QTD000400
+PhLiPS	iPSC	tx	QTS000023	QTD000401
+PhLiPS	iPSC	txrev	QTS000023	QTD000402
+PhLiPS	iPSC	leafcutter	QTS000023	QTD000403
+PhLiPS	HLC	ge	QTS000023	QTD000404
+PhLiPS	HLC	exon	QTS000023	QTD000405
+PhLiPS	HLC	tx	QTS000023	QTD000406
+PhLiPS	HLC	txrev	QTS000023	QTD000407
+PhLiPS	HLC	leafcutter	QTS000023	QTD000408
+Quach_2016	monocyte_naive	ge	QTS000024	QTD000409
+Quach_2016	monocyte_naive	exon	QTS000024	QTD000410
+Quach_2016	monocyte_naive	tx	QTS000024	QTD000411
+Quach_2016	monocyte_naive	txrev	QTS000024	QTD000412
+Quach_2016	monocyte_naive	leafcutter	QTS000024	QTD000413
+Quach_2016	monocyte_LPS	ge	QTS000024	QTD000414
+Quach_2016	monocyte_LPS	exon	QTS000024	QTD000415
+Quach_2016	monocyte_LPS	tx	QTS000024	QTD000416
+Quach_2016	monocyte_LPS	txrev	QTS000024	QTD000417
+Quach_2016	monocyte_LPS	leafcutter	QTS000024	QTD000418
+Quach_2016	monocyte_Pam3CSK4	ge	QTS000024	QTD000419
+Quach_2016	monocyte_Pam3CSK4	exon	QTS000024	QTD000420
+Quach_2016	monocyte_Pam3CSK4	tx	QTS000024	QTD000421
+Quach_2016	monocyte_Pam3CSK4	txrev	QTS000024	QTD000422
+Quach_2016	monocyte_Pam3CSK4	leafcutter	QTS000024	QTD000423
+Quach_2016	monocyte_R848	ge	QTS000024	QTD000424
+Quach_2016	monocyte_R848	exon	QTS000024	QTD000425
+Quach_2016	monocyte_R848	tx	QTS000024	QTD000426
+Quach_2016	monocyte_R848	txrev	QTS000024	QTD000427
+Quach_2016	monocyte_R848	leafcutter	QTS000024	QTD000428
+Quach_2016	monocyte_IAV	ge	QTS000024	QTD000429
+Quach_2016	monocyte_IAV	exon	QTS000024	QTD000430
+Quach_2016	monocyte_IAV	tx	QTS000024	QTD000431
+Quach_2016	monocyte_IAV	txrev	QTS000024	QTD000432
+Quach_2016	monocyte_IAV	leafcutter	QTS000024	QTD000433
+ROSMAP	brain_naive	ge	QTS000025	QTD000434
+ROSMAP	brain_naive	exon	QTS000025	QTD000435
+ROSMAP	brain_naive	tx	QTS000025	QTD000436
+ROSMAP	brain_naive	txrev	QTS000025	QTD000437
+ROSMAP	brain_naive	leafcutter	QTS000025	QTD000438
+Schmiedel_2018	Tfh_memory	ge	QTS000026	QTD000439
+Schmiedel_2018	Tfh_memory	exon	QTS000026	QTD000440
+Schmiedel_2018	Tfh_memory	tx	QTS000026	QTD000441
+Schmiedel_2018	Tfh_memory	txrev	QTS000026	QTD000442
+Schmiedel_2018	Tfh_memory	leafcutter	QTS000026	QTD000443
+Schmiedel_2018	Th17_memory	ge	QTS000026	QTD000444
+Schmiedel_2018	Th17_memory	exon	QTS000026	QTD000445
+Schmiedel_2018	Th17_memory	tx	QTS000026	QTD000446
+Schmiedel_2018	Th17_memory	txrev	QTS000026	QTD000447
+Schmiedel_2018	Th17_memory	leafcutter	QTS000026	QTD000448
+Schmiedel_2018	Th1_memory	ge	QTS000026	QTD000449
+Schmiedel_2018	Th1_memory	exon	QTS000026	QTD000450
+Schmiedel_2018	Th1_memory	tx	QTS000026	QTD000451
+Schmiedel_2018	Th1_memory	txrev	QTS000026	QTD000452
+Schmiedel_2018	Th1_memory	leafcutter	QTS000026	QTD000453
+Schmiedel_2018	Th2_memory	ge	QTS000026	QTD000454
+Schmiedel_2018	Th2_memory	exon	QTS000026	QTD000455
+Schmiedel_2018	Th2_memory	tx	QTS000026	QTD000456
+Schmiedel_2018	Th2_memory	txrev	QTS000026	QTD000457
+Schmiedel_2018	Th2_memory	leafcutter	QTS000026	QTD000458
+Schmiedel_2018	Th1-17_memory	ge	QTS000026	QTD000459
+Schmiedel_2018	Th1-17_memory	exon	QTS000026	QTD000460
+Schmiedel_2018	Th1-17_memory	tx	QTS000026	QTD000461
+Schmiedel_2018	Th1-17_memory	txrev	QTS000026	QTD000462
+Schmiedel_2018	Th1-17_memory	leafcutter	QTS000026	QTD000463
+Schmiedel_2018	Treg_memory	ge	QTS000026	QTD000464
+Schmiedel_2018	Treg_memory	exon	QTS000026	QTD000465
+Schmiedel_2018	Treg_memory	tx	QTS000026	QTD000466
+Schmiedel_2018	Treg_memory	txrev	QTS000026	QTD000467
+Schmiedel_2018	Treg_memory	leafcutter	QTS000026	QTD000468
+Schmiedel_2018	Treg_naive	ge	QTS000026	QTD000469
+Schmiedel_2018	Treg_naive	exon	QTS000026	QTD000470
+Schmiedel_2018	Treg_naive	tx	QTS000026	QTD000471
+Schmiedel_2018	Treg_naive	txrev	QTS000026	QTD000472
+Schmiedel_2018	Treg_naive	leafcutter	QTS000026	QTD000473
+Schmiedel_2018	B-cell_naive	ge	QTS000026	QTD000474
+Schmiedel_2018	B-cell_naive	exon	QTS000026	QTD000475
+Schmiedel_2018	B-cell_naive	tx	QTS000026	QTD000476
+Schmiedel_2018	B-cell_naive	txrev	QTS000026	QTD000477
+Schmiedel_2018	B-cell_naive	leafcutter	QTS000026	QTD000478
+Schmiedel_2018	CD4_T-cell_naive	ge	QTS000026	QTD000479
+Schmiedel_2018	CD4_T-cell_naive	exon	QTS000026	QTD000480
+Schmiedel_2018	CD4_T-cell_naive	tx	QTS000026	QTD000481
+Schmiedel_2018	CD4_T-cell_naive	txrev	QTS000026	QTD000482
+Schmiedel_2018	CD4_T-cell_naive	leafcutter	QTS000026	QTD000483
+Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	ge	QTS000026	QTD000484
+Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	exon	QTS000026	QTD000485
+Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	tx	QTS000026	QTD000486
+Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	txrev	QTS000026	QTD000487
+Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	leafcutter	QTS000026	QTD000488
+Schmiedel_2018	CD8_T-cell_naive	ge	QTS000026	QTD000489
+Schmiedel_2018	CD8_T-cell_naive	exon	QTS000026	QTD000490
+Schmiedel_2018	CD8_T-cell_naive	tx	QTS000026	QTD000491
+Schmiedel_2018	CD8_T-cell_naive	txrev	QTS000026	QTD000492
+Schmiedel_2018	CD8_T-cell_naive	leafcutter	QTS000026	QTD000493
+Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	ge	QTS000026	QTD000494
+Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	exon	QTS000026	QTD000495
+Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	tx	QTS000026	QTD000496
+Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	txrev	QTS000026	QTD000497
+Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	leafcutter	QTS000026	QTD000498
+Schmiedel_2018	monocyte_CD16_naive	ge	QTS000026	QTD000499
+Schmiedel_2018	monocyte_CD16_naive	exon	QTS000026	QTD000500
+Schmiedel_2018	monocyte_CD16_naive	tx	QTS000026	QTD000501
+Schmiedel_2018	monocyte_CD16_naive	txrev	QTS000026	QTD000502
+Schmiedel_2018	monocyte_CD16_naive	leafcutter	QTS000026	QTD000503
+Schmiedel_2018	monocyte_naive	ge	QTS000026	QTD000504
+Schmiedel_2018	monocyte_naive	exon	QTS000026	QTD000505
+Schmiedel_2018	monocyte_naive	tx	QTS000026	QTD000506
+Schmiedel_2018	monocyte_naive	txrev	QTS000026	QTD000507
+Schmiedel_2018	monocyte_naive	leafcutter	QTS000026	QTD000508
+Schmiedel_2018	NK-cell_naive	ge	QTS000026	QTD000509
+Schmiedel_2018	NK-cell_naive	exon	QTS000026	QTD000510
+Schmiedel_2018	NK-cell_naive	tx	QTS000026	QTD000511
+Schmiedel_2018	NK-cell_naive	txrev	QTS000026	QTD000512
+Schmiedel_2018	NK-cell_naive	leafcutter	QTS000026	QTD000513
+Schwartzentruber_2018	sensory_neuron	ge	QTS000027	QTD000514
+Schwartzentruber_2018	sensory_neuron	exon	QTS000027	QTD000515
+Schwartzentruber_2018	sensory_neuron	tx	QTS000027	QTD000516
+Schwartzentruber_2018	sensory_neuron	txrev	QTS000027	QTD000517
+Schwartzentruber_2018	sensory_neuron	leafcutter	QTS000027	QTD000518
+Steinberg_2020	synovium_naive	ge	QTS000028	QTD000519
+Steinberg_2020	synovium_naive	exon	QTS000028	QTD000520
+Steinberg_2020	synovium_naive	tx	QTS000028	QTD000521
+Steinberg_2020	synovium_naive	txrev	QTS000028	QTD000522
+Steinberg_2020	synovium_naive	leafcutter	QTS000028	QTD000523
+Steinberg_2020	low_grade_cartilage_naive	ge	QTS000028	QTD000524
+Steinberg_2020	low_grade_cartilage_naive	exon	QTS000028	QTD000525
+Steinberg_2020	low_grade_cartilage_naive	tx	QTS000028	QTD000526
+Steinberg_2020	low_grade_cartilage_naive	txrev	QTS000028	QTD000527
+Steinberg_2020	low_grade_cartilage_naive	leafcutter	QTS000028	QTD000528
+Steinberg_2020	high_grade_cartilage_naive	ge	QTS000028	QTD000529
+Steinberg_2020	high_grade_cartilage_naive	exon	QTS000028	QTD000530
+Steinberg_2020	high_grade_cartilage_naive	tx	QTS000028	QTD000531
+Steinberg_2020	high_grade_cartilage_naive	txrev	QTS000028	QTD000532
+Steinberg_2020	high_grade_cartilage_naive	leafcutter	QTS000028	QTD000533
+TwinsUK	fat	ge	QTS000029	QTD000534
+TwinsUK	fat	exon	QTS000029	QTD000535
+TwinsUK	fat	tx	QTS000029	QTD000536
+TwinsUK	fat	txrev	QTS000029	QTD000537
+TwinsUK	fat	leafcutter	QTS000029	QTD000538
+TwinsUK	LCL	ge	QTS000029	QTD000539
+TwinsUK	LCL	exon	QTS000029	QTD000540
+TwinsUK	LCL	tx	QTS000029	QTD000541
+TwinsUK	LCL	txrev	QTS000029	QTD000542
+TwinsUK	LCL	leafcutter	QTS000029	QTD000543
+TwinsUK	skin	ge	QTS000029	QTD000544
+TwinsUK	skin	exon	QTS000029	QTD000545
+TwinsUK	skin	tx	QTS000029	QTD000546
+TwinsUK	skin	txrev	QTS000029	QTD000547
+TwinsUK	skin	leafcutter	QTS000029	QTD000548
+TwinsUK	blood	ge	QTS000029	QTD000549
+TwinsUK	blood	exon	QTS000029	QTD000550
+TwinsUK	blood	tx	QTS000029	QTD000551
+TwinsUK	blood	txrev	QTS000029	QTD000552
+TwinsUK	blood	leafcutter	QTS000029	QTD000553
+van_de_Bunt_2015	pancreatic_islet	ge	QTS000030	QTD000554
+van_de_Bunt_2015	pancreatic_islet	exon	QTS000030	QTD000555
+van_de_Bunt_2015	pancreatic_islet	tx	QTS000030	QTD000556
+van_de_Bunt_2015	pancreatic_islet	txrev	QTS000030	QTD000557
+van_de_Bunt_2015	pancreatic_islet	leafcutter	QTS000030	QTD000558
+Young_2019	microglia_naive	ge	QTS000031	QTD000559
+Young_2019	microglia_naive	exon	QTS000031	QTD000560
+Young_2019	microglia_naive	tx	QTS000031	QTD000561
+Young_2019	microglia_naive	txrev	QTS000031	QTD000562
+Young_2019	microglia_naive	leafcutter	QTS000031	QTD000563
