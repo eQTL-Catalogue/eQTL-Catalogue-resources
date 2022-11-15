@@ -1,4 +1,4 @@
-
+library("dplyr")
 makeDatasetMetadata <- function(study_label, sample_groups, quant_methods = c("ge","exon","tx","txrev","leafcutter"), study_index_start, dataset_index_start){
   
   quant_methods = dplyr::tibble(quant_method = quant_methods)
@@ -15,5 +15,10 @@ makeDatasetMetadata <- function(study_label, sample_groups, quant_methods = c("g
   return(df)
 }
 
-id_map = makeDatasetMetadata("Aygun_2021", c("Progenitor", "Neuron"), study_index_start = 32, dataset_index_start = 564)
+aygun_map = makeDatasetMetadata("Aygun_2021", c("Progenitor", "Neuron"), study_index_start = 32, dataset_index_start = 564)
+pisa_map = makeDatasetMetadata("PISA", c("pancreatic_islet"), study_index_start = 33, dataset_index_start = 574)
+walker_map = makeDatasetMetadata("Walker_2019", c("Neocortex"), study_index_start = 34, dataset_index_start = 579)
+sun_map = makeDatasetMetadata("Sun_2018", c("plasma"), quant_methods = "somalogic", study_index_start = 35, dataset_index_start = 584)
+new_meta = dplyr::bind_rows(aygun_map, pisa_map, walker_map, sun_map)
+
 write.table(id_map, "data_tables/new_dataset_id_map.tsv", sep = "\t", row.names = F, quote = F)
