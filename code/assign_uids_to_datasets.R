@@ -21,4 +21,4 @@ walker_map = makeDatasetMetadata("Walker_2019", c("Neocortex"), study_index_star
 sun_map = makeDatasetMetadata("Sun_2018", c("plasma"), quant_methods = "somalogic", study_index_start = 35, dataset_index_start = 584)
 new_meta = dplyr::bind_rows(aygun_map, pisa_map, walker_map, sun_map)
 
-write.table(id_map, "data_tables/new_dataset_id_map.tsv", sep = "\t", row.names = F, quote = F)
+write.table(new_meta, "data_tables/new_dataset_id_map.tsv", sep = "\t", row.names = F, quote = F)
