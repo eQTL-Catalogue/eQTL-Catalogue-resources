@@ -74,3 +74,7 @@ CL_0000182	hepatocyte	hepatocyte
 UBERON_0007616	layer of synovial tissue	synovium
 UBERON_0002418	cartilage tissue	cartilage
 CL_0000129	microglial cell	microglia
+UBERON_0001950	neocortex	neocortex
+CL_0000540	neuron	neuron
+CL_0011020	neural progenitor cell	neural progenitor
+UBERON_0001969	blood plasma	plasma

@@ -3,9 +3,10 @@ library("dplyr")
 rnaseq_study_names <- c("Alasoo_2018", "BLUEPRINT_SE", "BLUEPRINT_PE", "BrainSeq", "GTEx", "FUSION", "GENCORD", "GEUVADIS", 
                         "HipSci", "Lepik_2017", "Nedelec_2016", "Quach_2016", "ROSMAP", "Schmiedel_2018", "Schwartzentruber_2018", 
                         "TwinsUK", "van_de_Bunt_2015", "Bossini-Castillo_2019", "CAP", "CommonMind", "Peng_2018", "PhLiPS", 
-                        "iPSCORE","Braineac2","Steinberg_2020","Young_2019")
+                        "iPSCORE","Braineac2","Steinberg_2020","Young_2019","Aygun_2021", "PISA","Walker_2019")
 microarray_study_names <- c("CEDAR", "Fairfax_2014", "Kasela_2017", "Naranbhai_2015", "Fairfax_2012", "Gilchrist_2021")
-file_names = c(rnaseq_study_names, microarray_study_names)
+protein_study_names <- c("Sun_2018")
+file_names = c(rnaseq_study_names, microarray_study_names, protein_study_names)
 meta_path = "../SampleArcheology/studies/cleaned/"
 
 
@@ -27,7 +28,7 @@ final_meta = dplyr::mutate(merged_meta, study_file = study) %>%
 
 message("Number of studies: ", length(unique(final_meta$study)))
 message("Number of datasets: ", length(unique(final_meta$dataset_name)))
-message("Number of donors:", length(unique(final_meta$genotype_id)))
+message("Number of donors: ", length(unique(final_meta$genotype_id)))
 
 #Calculate sample sizes
 sample_sizes = dplyr::group_by(final_meta, study, qtl_group) %>% 
@@ -56,7 +57,9 @@ rnaseq_datasets = dplyr::filter(dataset_table, protocol %in% c("total", "poly(A)
   dplyr::left_join(quant_methods, by = character())
 microarray_datasets = dplyr::filter(dataset_table, protocol %in% c("HumanHT-12_V4")) %>%
   dplyr::mutate(quant_method = "microarray")
-all_datasets = dplyr::bind_rows(rnaseq_datasets, microarray_datasets)
+protein_datasets = dplyr::filter(dataset_table, protocol %in% c("SomaLogic")) %>%
+  dplyr::mutate(quant_method = "aptamer")
+all_datasets = dplyr::bind_rows(rnaseq_datasets, microarray_datasets, protein_datasets)
 
 #Assing study and dataset ids
 dataset_id_map = readr::read_tsv("data_tables/dataset_id_map.tsv")
