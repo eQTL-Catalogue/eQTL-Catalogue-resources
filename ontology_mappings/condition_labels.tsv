@@ -32,3 +32,15 @@ Schmiedel_2018	monocyte_naive	naive
 Schmiedel_2018	NK-cell_naive	naive
 CAP	LCL_naive	naive
 CAP	LCL_statin	statin
+Randolph_2021	B_NI	naive
+Randolph_2021	B_flu	Influenza_6h
+Randolph_2021	CD4_T_NI	naive
+Randolph_2021	CD4_T_flu	Influenza_6h
+Randolph_2021	CD8_T_NI	naive
+Randolph_2021	CD8_T_flu	Influenza_6h
+Randolph_2021	NK_NI	naive
+Randolph_2021	NK_flu	Influenza_6h
+Randolph_2021	highly_infected_flu	Influenza_6h
+Randolph_2021	infected_monocytes_flu	Influenza_6h
+Randolph_2021	monocytes_NI	naive
+Randolph_2021	monocytes_flu	Influenza_6h

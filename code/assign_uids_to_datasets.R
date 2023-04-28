@@ -22,3 +22,11 @@ sun_map = makeDatasetMetadata("Sun_2018", c("plasma"), quant_methods = "somalogi
 new_meta = dplyr::bind_rows(aygun_map, pisa_map, walker_map, sun_map)
 
 write.table(new_meta, "data_tables/new_dataset_id_map.tsv", sep = "\t", row.names = F, quote = F)
+
+#Add single-cell datasets
+randolph_map = makeDatasetMetadata("Randolph_2021", c("B_NI","B_flu","CD4_T_NI","CD4_T_flu","CD8_T_NI","CD8_T_flu","NK_NI","NK_flu","highly_infected_flu","infected_monocytes_flu","monocytes_NI","monocytes_flu"), quant_methods = "ge", study_index_start = 36, dataset_index_start = 585)
+perez_map = makeDatasetMetadata("Perez_2022", c("B","NK","Prolif","T4","T8","cDC","cM","ncM","pDC"), quant_methods = "ge", study_index_start = 37, dataset_index_start = 597)
+onek1k_map = makeDatasetMetadata("OneK1K", c("B_intermediate","B_memory","B_naive","CD14_Mono","CD16_Mono","CD4_CTL","CD4_Naive","CD4_TCM","CD4_TEM","CD8_Naive","CD8_TCM","CD8_TEM","HSPC","MAIT","NK","NK_CD56bright","NK_Proliferating","Plasmablast","Platelet","Treg","cDC2","dnT","gdT","pDC"), quant_methods = "ge", study_index_start = 38, dataset_index_start = 606)
+new_meta = dplyr::bind_rows(randolph_map, perez_map, onek1k_map)
+write.table(new_meta, "data_tables/new_dataset_id_map.tsv", sep = "\t", row.names = F, quote = F)
+

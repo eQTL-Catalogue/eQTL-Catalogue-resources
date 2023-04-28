@@ -136,3 +136,48 @@ Walker_2019	Neocortex	Neocortex	UBERON_0001950	neocortex
 Aygun_2021	Neuron	Neuron	CL_0000540	neuron
 Aygun_2021	Progenitor	Progenitor	CL_0011020	neural progenitor cell
 Sun_2018	plasma	plasma	UBERON_0001969	blood plasma
+Randolph_2021	B	B_NI	CL_0000236	B cell
+Randolph_2021	B	B_flu	CL_0000236	B cell
+Randolph_2021	CD4_T	CD4_T_NI	CL_0000624	"CD4-positive, alpha-beta T cell"
+Randolph_2021	CD4_T	CD4_T_flu	CL_0000624	"CD4-positive, alpha-beta T cell"
+Randolph_2021	CD8_T	CD8_T_NI	CL_0000625	"CD8-positive, alpha-beta T cell"
+Randolph_2021	CD8_T	CD8_T_flu	CL_0000625	"CD8-positive, alpha-beta T cell"
+Randolph_2021	NK	NK_NI	CL_0000623	natural killer cell
+Randolph_2021	NK	NK_flu	CL_0000623	natural killer cell
+Randolph_2021	highly_infected	highly_infected_flu	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Randolph_2021	infected_monocytes	infected_monocytes_flu	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Randolph_2021	monocytes	monocytes_NI	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Randolph_2021	monocytes	monocytes_flu	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Perez_2022	B	B	CL_0000236	B cell
+Perez_2022	NK	NK	CL_0000623	natural killer cell
+Perez_2022	Prolif	Prolif	CL_0000623	natural killer cell
+Perez_2022	T4	T4	CL_0000624	"CD4-positive, alpha-beta T cell"
+Perez_2022	T8	T8	CL_0000625	"CD8-positive, alpha-beta T cell"
+Perez_2022	cDC	cDC	CL_0000451	dendritic cell
+Perez_2022	cM	cM	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Perez_2022	ncM	ncM	CL_0002396	"CD14-low, CD16-positive monocyte"
+Perez_2022	pDC	pDC	CL_0000784	plasmacytoid dendritic cell
+OneK1K	B_intermediate	B_intermediate	CL_0000236	B cell
+OneK1K	B_memory	B_memory	CL_0000787	memory B cell
+OneK1K	B_naive	B_naive	CL_0000236	B cell
+OneK1K	CD14_Mono	CD14_Mono	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+OneK1K	CD16_Mono	CD16_Mono	CL_0002396	"CD14-low, CD16-positive monocyte"
+OneK1K	CD4_CTL	CD4_CTL	CL_0000934	"CD4-positive, alpha-beta cytotoxic T cell"
+OneK1K	CD4_Naive	CD4_Naive	CL_0000624	"CD4-positive, alpha-beta T cell"
+OneK1K	CD4_TCM	CD4_TCM	CL_0000904	"central memory CD4-positive, alpha-beta T cell"
+OneK1K	CD4_TEM	CD4_TEM	CL_0000905	"effector memory CD4-positive, alpha-beta T cell"	
+OneK1K	CD8_Naive	CD8_Naive	CL_0000625	"CD8-positive, alpha-beta T cell"
+OneK1K	CD8_TCM	CD8_TCM	CL_0000907	"central memory CD8-positive, alpha-beta T cell"
+OneK1K	CD8_TEM	CD8_TEM	CL_0000913	"effector memory CD8-positive, alpha-beta T cell"
+OneK1K	HSPC	HSPC	CL_0008001	hematopoietic precursor cell
+OneK1K	MAIT	MAIT	CL_0000940	mucosal invariant T cell
+OneK1K	NK	NK	CL_0000623	natural killer cell
+OneK1K	NK_CD56bright	NK_CD56bright	CL_0000938	"CD16-negative, CD56-bright natural killer cell"
+OneK1K	NK_Proliferating	NK_Proliferating	CL_0000623	natural killer cell
+OneK1K	Plasmablast	Plasmablast	CL_0000980 plasmablast
+OneK1K	Platelet	Platelet	CL_0000233	platelet
+OneK1K	Treg	Treg	CL_0002677	naive regulatory T cell
+OneK1K	cDC2	cDC2	CL_0000451	dendritic cell
+OneK1K	dnT	dnT	CL_0002489	double negative thymocyte
+OneK1K	gdT gdT	CL_0000798	gamma-delta T cell	
+OneK1K	pDC	pDC	CL_0000784	plasmacytoid dendritic cell

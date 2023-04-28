@@ -78,3 +78,16 @@ UBERON_0001950	neocortex	neocortex
 CL_0000540	neuron	neuron
 CL_0011020	neural progenitor cell	neural progenitor
 UBERON_0001969	blood plasma	plasma
+CL_0000784	plasmacytoid dendritic cell	plasmacytoid dendritic cell
+CL_0000938	CD16-negative, CD56-bright natural killer cell	CD56+ NK cell
+CL_0000798	gamma-delta T cell	gdT cell
+CL_0002489	double negative thymocyte	dnT cell
+CL_0000980	plasmablast	plasmablast
+CL_0000787	memory B cell	memory B cell
+CL_0000934	"CD4-positive, alpha-beta cytotoxic T cell"	CD4+ CTL cell
+CL_0008001	hematopoietic precursor cell	hematopoietic precursor cell
+CL_0000940	mucosal invariant T cell	MAIT cell
+CL_0000904	"central memory CD4-positive, alpha-beta T cell"	CD4+ TCM cell
+CL_0000905	"effector memory CD4-positive, alpha-beta T cell"	CD4+ TEM cell
+CL_0000907	"central memory CD8-positive, alpha-beta T cell"	CD8+ TCM cell
+CL_0000913	"effector memory CD8-positive, alpha-beta T cell"	CD8+ TEM cell
