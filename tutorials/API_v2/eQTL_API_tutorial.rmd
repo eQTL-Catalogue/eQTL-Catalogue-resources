@@ -1,0 +1,436 @@
+---
+title: "eQTL API v2 tutorial: colocalisation-visualisation"
+author: "Ines Anett Nigol, Ellen Leib"
+output:
+  html_document: 
+    keep_md: yes
+---
+
+## Introduction
+
+This notebook acts as a tutorial on how to use the eQTL Catalogue RESTful API v2 to make filtered requests. We will also perform colocalisation analysis in the end and visualise the results.
+
+The eQTL API documentation can be seen here: <https://www.ebi.ac.uk/eqtl/api/docs>
+
+## Importing libraries
+
+```{r}
+# If you do not already have all packages installed you can use this syntax to install them:
+#install.packages(c("tidyverse", "httr", "jsonlite", "dplyr", "coloc", "ggrepel", "glue"))
+```
+
+```{r}
+library("tidyverse")
+library("httr")
+library("glue")
+library("dplyr")
+library("coloc")
+library("jsonlite")
+library("ggrepel")
+```
+
+## Making requests straight from the R notebook
+
+We will use httr package to make requests straight from the R notebook. Here is the documentation of this package:
+
+<https://cran.r-project.org/web/packages/httr/httr.pdf>
+
+## What datasets are available in the API?
+
+### Requesting all dataset_id-s from the API
+
+In the API there is information given about many different datasets. If you want to see all of the datasets that exist in the API you can use the following syntax.
+
+-   You can make a request by specifying an url in the GET(url) function.
+
+-   We will use the "glue" package that is an equivalent to f-strings in python. It means that you can add values inside of strings.
+
+-   status_code(request) can be used to check the status code of the request. If it is 200, the request was successful. Otherwise the request was unsuccessful.
+
+-   Content can be extracted from the request. This can be converted to a dataframe.
+
+-   Maximum number of rows pulled with the same request (size parameter) can be 1000.
+
+```{r}
+# Change parameters
+max_pulled_rows = 1000 #All datasets will be pulled if this parameter is bigger than the actual number of datasets
+
+URL = glue("https://www.ebi.ac.uk/eqtl/api/v2/datasets/?size={max_pulled_rows}")
+
+# Make a request
+r <- GET(URL, accept_json())
+# Check status
+status_code(r)
+# Extract content
+cont <- content(r, "text", encoding = "UTF-8")
+# Convert content to dataframe
+datasets <- fromJSON(cont)
+knitr::kable(head(datasets, n = 20), format="markdown")
+```
+
+### Requesting only relevant dataset_ids by adding filters to our requests.
+
+We can see that there were 564 possible datasets to choose from. It is also possible to add different filters to this request, to get relevant datasets. The filters can be added straight to the request url. The first filter has to start with a question mark (?param=value) and the next ones can be added with "and" (&param=value). Here we filter out all the datasets that have quant_method=ge and tissue_label=liver.
+
+```{r}
+# Change parameters
+set_quant_method = "ge"
+set_tissue_label = "liver"
+
+URL = glue("https://www.ebi.ac.uk/eqtl/api/v2/datasets/?quant_method={set_quant_method}&tissue_label={set_tissue_label}")
+
+r <- GET(URL, accept_json())
+cont <- content(r, "text", encoding = "UTF-8")
+datasets_filtered <- fromJSON(cont)
+datasets_filtered
+```
+
+### Function to filter relevant datasets
+
+Possible parameters:
+
+-   study_id (string) - Study ID, e.g. QTS000001
+
+-   quant_method (string) - Quantification method
+
+    -   Available values : ge, exon, microarray, tx, txrev, leafcutter, aptamer
+
+-   sample_group (string) - Controlled vocabulary for the QTL group
+
+    -   Example : macrophage_naive
+
+-   tissue_id (string) - Ontology term for the tissue/cell type
+
+    -   Example : CL_0000235
+
+-   study_label (string) - *Example* : Alasoo_2018
+
+-   tissue_label (string) - Controlled vocabulary for the tissue/cell type
+
+    -   *Example* : macrophage
+
+-   condition_label (string) - More verbose condition description
+
+    -   *Example* : naive
+
+```{r}
+request_datasets_from_api <- function(study_id = "",
+                                      quant_method = "",
+                                      sample_group = "",
+                                      tissue_id = "",
+                                      study_label = "",
+                                      tissue_label = "",
+                                      condition_label = "") {
+  size = 1000 #Page size
+  start = 0 #Page start
+  
+  parameter_values = c(study_id,quant_method,sample_group,tissue_id,study_label, 
+                       tissue_label,condition_label)
+  parameter_names = c('study_id','quant_method','sample_group','tissue_id',
+                      'study_label','tissue_label','condition_label')
+  
+  while (T) {
+    URL = glue("https://www.ebi.ac.uk/eqtl/api/v2/datasets/?size={size}&start={start}")
+    
+    #Adding defined parameters to the request
+    for (i in 1:length(parameter_values)) {
+      par = parameter_values[i]
+      par_name = parameter_names[i]
+      if (par != "")
+        URL = glue("{URL}&{par_name}={par}")
+    }
+    
+    r <- GET(URL, accept_json())
+    cont <- content(r, "text", encoding = "UTF-8")
+    
+    # If the request was unsuccessful
+    if (status_code(r) != 200) {
+      #If we get no results at all, print error
+      if (start == 0) {
+        print(glue("Error {status_code(r)}"))
+        print(cont)
+        return ()
+      }
+      #else just break
+      break
+    }
+    
+    cont_df <- fromJSON(cont)
+    
+    if (start == 0) {
+      responses <- cont_df
+    }
+    else{
+      responses <- rbind(responses, cont_df)
+    }
+    start <- start + size
+  }
+  return(responses)
+}
+```
+
+Examples:
+
+```{r}
+request_datasets_from_api(quant_method = "ge", tissue_label = "liver")
+```
+
+```{r}
+request_datasets_from_api(quant_method = "ge", study_label = "Alasoo_2018")
+```
+
+## What kind of metadata do we have about each dataset?
+
+It is possible to get the metadata for each dataset that is available in the API. In this example we use the only dataset that we got when quant_method=ge and tissue_label=liver.
+
+```{r}
+# Change parameters
+set_dataset_id = 'QTD000266'
+  
+URL = glue("https://www.ebi.ac.uk/eqtl/api/v2/datasets/{set_dataset_id}")
+
+r <- GET(URL, accept_json())
+cont <- content(r, "text", encoding = "UTF-8")
+dataset_metadata <- fromJSON(cont)
+dataset_metadata
+```
+
+## What associations exist in a given region?
+
+There are many parameters that can be specified while making a request for associations. They are all described in the API documentation. We will define a function that requests a region around given chromosome and position and return the results as a data frame.
+
+```{r}
+request_associations_around_position <- function(dataset_id, position, chromosome_id, gene_id, offset = 500000){
+  size = 1000
+  start = 0
+  range_start = position - offset
+  range_end = position + offset
+  
+  
+  while (TRUE){
+    URL = glue("https://www.ebi.ac.uk/eqtl/api/v2/datasets/{dataset_id}/associations?size={size}&start={start}&pos={chromosome_id}:{range_start}-{range_end}&gene_id={gene_id}")
+    
+    r <- GET(URL, accept_json())
+    cont <- content(r, "text", encoding = "UTF-8")
+    
+    if (status_code(r) != 200) {
+      # Loop will break if the request was unsuccessful
+      if(start==0) {
+        print(glue("Error {status_code(r)}"))
+        print(cont)
+        return()}
+      break
+    }
+    
+   
+    cont_df <- fromJSON(cont)
+    
+    if (start == 0){
+      responses <- cont_df
+    }
+    else{
+      responses <- rbind(responses, cont_df)
+    }
+    start <- start + size
+  }
+  return(responses)
+}
+```
+
+```{r}
+# Change parameters
+dataset_id = "QTD000266"
+position = 109274570
+chromosome_id = 1
+gene_id = "ENSG00000134243" #SORT1 gene
+
+associations <- request_associations_around_position(dataset_id, position, chromosome_id, gene_id)
+knitr::kable(head(associations), format="markdown")
+```
+
+## Function for requesting associations from a dataset with all possible parameters
+
+-   dataset_id (string, required) - Dataset ID. A dataset represents a study & QTL context for a single quantification method
+
+-   pos (string) - Genomic region to filter, e.g 19:80000-90000
+
+-   variant (string) - The variant ID (CHR_BP_REF_ALT), e.g. chr19_80901_G\_T
+
+-   rsid (string) - The rsID, if given, for the variant, e.g. rs879890648
+
+-   molecular_traint_id (string) - ID of the molecular trait used for QTL mapping, e.g. ENSG00000282458
+
+-   gene_id (string) - Ensembl gene ID of the molecular trait, e.g. ENSG00000282458
+
+-   nlog10p (number) - P-value cutoff, in -Log10 format, e.g. 10.0
+
+```{r}
+request_associations_from_api <- function(
+    dataset_id, 
+    pos="",
+    variant="", 
+    rsid="",
+    molecular_trait_id="",
+    gene_id="",
+    nlog10p=""){
+  
+  size = 1000
+  start = 0
+  
+  parameter_values = c(dataset_id,pos,variant,rsid,molecular_trait_id, 
+                       gene_id,nlog10p)
+  parameter_names = c('dataset_id','pos','variant','rsid','molecular_trait_id', 
+                       'gene_id','nlog10p')
+  
+  while (T) {
+    URL = glue("https://www.ebi.ac.uk/eqtl/api/v2/datasets/{dataset_id}/associations?size={size}&start={start}")
+    
+    #Adding defined parameters to the request
+    for (i in 1:length(parameter_values)) {
+      par = parameter_values[i]
+      par_name = parameter_names[i]
+      if (par != "")
+        URL = glue("{URL}&{par_name}={par}")
+    }
+    
+    r <- GET(URL, accept_json())
+    cont <- content(r, "text", encoding = "UTF-8")
+    
+    # If the request was unsuccessful
+    if (status_code(r) != 200) {
+      #If we get no results at all, print error
+      if (start == 0) {
+        print(glue("Error {status_code(r)}"))
+        print(cont)
+        return ()
+      }
+      #else just break
+      break
+    }
+    
+    cont_df <- fromJSON(cont)
+    
+    if (start == 0) {
+      responses <- cont_df
+    }
+    else{
+      responses <- rbind(responses, cont_df)
+    }
+    start <- start + size
+  }
+  return(responses)
+}
+```
+
+```{r}
+#Examples
+assoc = request_associations_from_api(dataset_id="QTD000266", gene_id = "ENSG00000134243",  nlog10p=10)
+knitr::kable(assoc, format="markdown")
+```
+
+## Colocalisation: SORT1 eQTL and VitD GWAS
+
+Here we will test the colocalisation between the pulled SORT1 eQTL dataset and Vitamin D GWAS statistics.
+
+```{r}
+dataset_id = "QTD000266"
+position = 109274570
+chromosome_id = 1
+gene_id = "ENSG00000134243" #SORT1 gene
+gwas_region="chr1_107774781-110774507"
+
+sort1 = request_associations_around_position(dataset_id, position, chromosome_id, gene_id) %>%
+  dplyr::select(-rsid) %>%
+  dplyr::distinct()
+
+# Import VitD 
+VitD = readr::read_tsv("https://zenodo.org/record/7901534/files/VitD.coloc3_combined.tsv.gz") 
+VitD = VitD %>%
+  dplyr::filter(region == gwas_region) %>%
+  dplyr::filter(maf > 0 & maf < 1)
+
+# Run coloc.abf
+sort1_list = list(beta = sort1$beta, 
+                varbeta = sort1$se^2, 
+                N = sort1$an/2, 
+                MAF = sort1$maf, 
+                snp = sort1$variant, 
+                type = "quant")
+coloc::check_dataset(sort1_list)
+
+vitd_list = list(beta = VitD$beta, 
+                varbeta = VitD$se^2, 
+                N = VitD$an/2, 
+                MAF = VitD$maf, 
+                snp = VitD$variant, 
+                type = "quant")
+coloc::check_dataset(vitd_list)
+
+sort1_coloc_abf = coloc.abf(sort1_list, vitd_list)
+```
+
+```{r}
+sort1_coloc_abf
+```
+
+## chr1_109274570_A\_G effect on SORT1 expression
+
+Here we will test the chr1_109274570_A\_G effect on SORT1 expression across all gene expression QTL datasets and visualise the results. Note that this step can be quite slow.
+
+```{r}
+# Filtering out variant statistics from all given datasets and merging the information with dataset metadata
+
+get_assoc_over_datasets <- function(datasets, variant, gene_id) {
+  size = 1000
+  first = T
+  for (i in rownames(datasets)) {
+    row = datasets[i, ]
+    dataset_id = row$dataset_id
+    
+    URL = glue(
+      "https://www.ebi.ac.uk/eqtl/api/v2/datasets/{dataset_id}/associations?size={size}&variant={variant}&gene_id={gene_id}"
+    )
+    
+    r <- GET(URL, accept_json())
+    
+    if (status_code(r) != 200) {
+      next
+    }
+    
+    cont <- content(r, "text", encoding = "UTF-8")
+    cont_df <- fromJSON(cont)
+    cont_with_metadata <- cbind(cont_df, row)
+    
+    if (first) {
+      final_df <- cont_with_metadata
+      first = F
+    }
+    else{
+      final_df <- rbind(final_df, cont_with_metadata)
+    }
+  }
+  return (final_df)
+}
+```
+
+```{r}
+# Change parameters
+variant = "chr1_109274570_A_G"
+gene_id = "ENSG00000134243"
+
+#Filtering out all gene expression studies
+datasets_ge = request_datasets_from_api(quant_method = "ge")
+
+associations <- get_assoc_over_datasets(datasets=datasets_ge, variant=variant, gene_id=gene_id)
+associations
+```
+
+```{r}
+# Visualising the result
+associations %>%
+  unite(study, study_label, tissue_label, sep = " ", remove = FALSE) %>%
+ggplot(aes(x = beta, y = nlog10p, label = study)) +
+  geom_point() +
+  geom_text_repel() +
+  ggtitle("chr1_109274570_A_G effect on SORT1 expression")
+```
