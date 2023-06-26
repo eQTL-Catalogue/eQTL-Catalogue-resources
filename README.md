@@ -2,7 +2,7 @@
 This repository contains various resources related to the [eQTL Catalogue](https://www.ebi.ac.uk/eqtl/).
 
 ## Tutorials
- * [Performing colocalisation using the eQTL Catalogue and GWAS Catalog APIs](http://htmlpreview.github.io/?https://github.com/eQTL-Catalogue/eQTL-Catalogue-resources/blob/master/tutorials/eQTL_API_usecase.html). 
+ * [Fetching summary statistics and performing colocalisation with eQTL Catalogue API v2](https://github.com/eQTL-Catalogue/eQTL-Catalogue-resources/blob/master/tutorials/API_v2/eQTL_API_tutorial.md). 
  * [Using tabix in R to fetch summary statistics and perform colocalisation](http://htmlpreview.github.io/?https://github.com/kauralasoo/eQTL-Catalogue-resources/blob/master/tutorials/tabix_use_case.html)
  * [Performing end-to-end molecular QTLs analysis with the eQTL Catalogue workflows](tutorials/workflow_execution.md)
 
