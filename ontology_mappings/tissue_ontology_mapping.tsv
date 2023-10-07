@@ -179,5 +179,5 @@ OneK1K	Platelet	Platelet	CL_0000233	platelet
 OneK1K	Treg	Treg	CL_0002677	naive regulatory T cell
 OneK1K	cDC2	cDC2	CL_0000451	dendritic cell
 OneK1K	dnT	dnT	CL_0002489	double negative thymocyte
-OneK1K	gdT gdT	CL_0000798	gamma-delta T cell	
+OneK1K	gdT	gdT	CL_0000798	gamma-delta T cell	
 OneK1K	pDC	pDC	CL_0000784	plasmacytoid dendritic cell
