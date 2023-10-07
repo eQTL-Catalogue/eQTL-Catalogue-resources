@@ -174,7 +174,7 @@ OneK1K	MAIT	MAIT	CL_0000940	mucosal invariant T cell
 OneK1K	NK	NK	CL_0000623	natural killer cell
 OneK1K	NK_CD56bright	NK_CD56bright	CL_0000938	"CD16-negative, CD56-bright natural killer cell"
 OneK1K	NK_Proliferating	NK_Proliferating	CL_0000623	natural killer cell
-OneK1K	Plasmablast	Plasmablast	CL_0000980 plasmablast
+OneK1K	Plasmablast	Plasmablast	CL_0000980	plasmablast
 OneK1K	Platelet	Platelet	CL_0000233	platelet
 OneK1K	Treg	Treg	CL_0002677	naive regulatory T cell
 OneK1K	cDC2	cDC2	CL_0000451	dendritic cell
