@@ -34,6 +34,7 @@ write.table(new_meta, "data_tables/new_dataset_id_map.tsv", sep = "\t", row.name
 jerber_celltypes = readr::read_tsv("~/Downloads/celltype_cell_counts.Jerber_2021.tsv")
 jerber_map = makeDatasetMetadata("Jerber_2021", sample_groups = jerber_celltypes$celltype, quant_methods = "ge", study_index_start = 39, dataset_index_start = 630)
 nathan_celltypes = readr::read_tsv("~/Downloads/celltype_cell_counts.Nathan_2022.tsv")
+nathan_map = makeDatasetMetadata("Nathan_2022", sample_groups = nathan_celltypes$celltype, quant_methods = "ge", study_index_start = 40, dataset_index_start = 660)
 cytoimmgen_celltypes = readr::read_tsv("~/Downloads/celltype_cell_counts.Cytoimmgen.tsv")
 cytoimmgen_map = makeDatasetMetadata("Cytoimmgen", sample_groups = cytoimmgen_celltypes$celltype, quant_methods = "ge", study_index_start = 41, dataset_index_start = 689)
 new_meta = dplyr::bind_rows(jerber_map, nathan_map, cytoimmgen_map)
