@@ -30,11 +30,13 @@ onek1k_map = makeDatasetMetadata("OneK1K", c("B_intermediate","B_memory","B_naiv
 new_meta = dplyr::bind_rows(randolph_map, perez_map, onek1k_map)
 write.table(new_meta, "data_tables/new_dataset_id_map.tsv", sep = "\t", row.names = F, quote = F)
 
-#Add Jerber_2021 and Nathan_2022
+#Add Jerber_2021, Nathan_2022, Cytoimmgen
 jerber_celltypes = readr::read_tsv("~/Downloads/celltype_cell_counts.Jerber_2021.tsv")
 jerber_map = makeDatasetMetadata("Jerber_2021", sample_groups = jerber_celltypes$celltype, quant_methods = "ge", study_index_start = 39, dataset_index_start = 630)
 nathan_celltypes = readr::read_tsv("~/Downloads/celltype_cell_counts.Nathan_2022.tsv")
-nathan_map = makeDatasetMetadata("Nathan_2022", sample_groups = nathan_celltypes$celltype, quant_methods = "ge", study_index_start = 40, dataset_index_start = 651)
-new_meta = dplyr::bind_rows(jerber_map, nathan_map)
+nathan_map = makeDatasetMetadata("Nathan_2022", sample_groups = nathan_celltypes$celltype, quant_methods = "ge", study_index_start = 40, dataset_index_start = 660)
+cytoimmgen_celltypes = readr::read_tsv("~/Downloads/celltype_cell_counts.Cytoimmgen.tsv")
+cytoimmgen_map = makeDatasetMetadata("Cytoimmgen", sample_groups = cytoimmgen_celltypes$celltype, quant_methods = "ge", study_index_start = 41, dataset_index_start = 689)
+new_meta = dplyr::bind_rows(jerber_map, nathan_map, cytoimmgen_map)
 write.table(new_meta, "data_tables/new_dataset_id_map.tsv", sep = "\t", row.names = F, quote = F)
 
