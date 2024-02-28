@@ -750,3 +750,10 @@ Cytoimmgen	TN_IFN_Lowly_Active_STIM_16H	ge	QTS000041	QTD000748
 Cytoimmgen	TN-TCM_CXCR4+_STIM_40H	ge	QTS000041	QTD000749
 Cytoimmgen	TEMRA_STIM_40H	ge	QTS000041	QTD000750
 Cytoimmgen	TN1_Lowly_Active_STIM_16H	ge	QTS000041	QTD000751
+Kim-Hellmuth_2017	monocyte_naive	microarray	QTS000042	QTD000752
+Kim-Hellmuth_2017	monocyte_IVT_6h	microarray	QTS000042	QTD000753
+Kim-Hellmuth_2017	monocyte_IVT_90min	microarray	QTS000042	QTD000754
+Kim-Hellmuth_2017	monocyte_LPS_6h	microarray	QTS000042	QTD000755
+Kim-Hellmuth_2017	monocyte_LPS_90min	microarray	QTS000042	QTD000756
+Kim-Hellmuth_2017	monocyte_MDP_6h	microarray	QTS000042	QTD000757
+Kim-Hellmuth_2017	monocyte_MDP_90min	microarray	QTS000042	QTD000758
