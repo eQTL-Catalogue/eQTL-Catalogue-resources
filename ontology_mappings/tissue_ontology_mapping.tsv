@@ -181,3 +181,41 @@ OneK1K	cDC2	cDC2	CL_0000451	dendritic cell
 OneK1K	dnT	dnT	CL_0002489	double negative thymocyte
 OneK1K	gdT	gdT	CL_0000798	gamma-delta T cell
 OneK1K	pDC	pDC	CL_0000784	plasmacytoid dendritic cell
+FreshMicro	microglia	microglia	CL_0000129	microglial cell
+Kim-Hellmuth_2017	monocyte	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Kim-Hellmuth_2017	monocyte	monocyte_IVT_6h	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Kim-Hellmuth_2017	monocyte	monocyte_IVT_90min	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Kim-Hellmuth_2017	monocyte	monocyte_LPS_6h	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Kim-Hellmuth_2017	monocyte	monocyte_LPS_90min	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Kim-Hellmuth_2017	monocyte	monocyte_MDP_6h	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Kim-Hellmuth_2017	monocyte	monocyte_MDP_90min	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+Jerber_2021	neuroblast	NB_Naive_D11	BTO_0000930	neuroblast
+Jerber_2021	neuron	U_Neur1_ROT_D52	CL_0000540	neuron
+Jerber_2021	proliferating floor plate progenitors	P_FPP_ROT_D52	UBERON_0003079	floor plate
+Jerber_2021	dopaminergic neuron	DA_ROT_D52	CL_0000700	dopaminergic neuron
+Jerber_2021	ependymal cell	Epen1_ROT_D52	CL_0000065	ependymal cell
+Jerber_2021	proliferating floor plate progenitors	P_FPP_Naive_D30	UBERON_0003079	floor plate
+Jerber_2021	neuron	U_Neur1_Naive_D30	CL_0000540	neuron
+Jerber_2021	floor plate progenitors	FPP_Naive_D11	UBERON_0003079	floor plate
+Jerber_2021	floor plate progenitors	FPP_Naive_D30	UBERON_0003079	floor plate
+Jerber_2021	serotonergic neuron	P_Sert_Naive_D52	CL_0000850	serotonergic neuron
+Jerber_2021	astrocyte	Astro_Naive_D52	CL_0000127	astrocyte
+Jerber_2021	ependymal cell	Epen2_Naive_D52	CL_0000065	ependymal cell
+Jerber_2021	floor plate progenitors	FPP_Naive_D52	UBERON_0003079	floor plate
+Jerber_2021	Sert_Naive_D52	CL_0000850	serotonergic neuron
+Jerber_2021	proliferating floor plate progenitors	P_FPP_Naive_D11	UBERON_0003079	floor plate
+Jerber_2021	astrocyte	Astro_ROT_D52	CL_0000127	astrocyte
+Jerber_2021	floor plate progenitors	FPP_ROT_D52	UBERON_0003079	floor plate
+Jerber_2021	neuron	U_Neur3_ROT_D52	CL_0000540	neuron
+Jerber_2021	serotonergic neuron	Sert_ROT_D52	CL_0000850	serotonergic neuron
+Jerber_2021	ependymal cell	Epen1_Naive_D30	CL_0000065	ependymal cell
+Jerber_2021	proliferating floor plate progenitors	P_FPP_Naive_D52	UBERON_0003079	floor plate
+Jerber_2021	serotonergic neuron	Sert_Naive_D30	CL_0000850	serotonergic neuron
+Jerber_2021	neuron	U_Neur1_Naive_D52	CL_0000540	neuron
+Jerber_2021	ependymal cell	Epen2_ROT_D52	CL_0000065	ependymal cell
+Jerber_2021	neuron	U_Neur2_Naive_D30	CL_0000540	neuron
+Jerber_2021	serotonergic neuron	P_Sert_ROT_D52	CL_0000850	serotonergic neuron
+Jerber_2021	neuron	U_Neur3_Naive_D52	CL_0000540	neuron
+Jerber_2021	dopaminergic neuron	DA_Naive_D30	CL_0000700	dopaminergic neuron
+Jerber_2021	ependymal cell	Epen1_Naive_D52	CL_0000065	ependymal cell
+Jerber_2021	dopaminergic neuron	DA_Naive_D52	CL_0000700	dopaminergic neuron
