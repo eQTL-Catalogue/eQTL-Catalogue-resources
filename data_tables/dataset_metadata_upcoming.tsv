@@ -750,3 +750,10 @@ QTS000041	QTD000748	Cytoimmgen	TN_IFN_Lowly_Active_STIM_16H	CL_0000624	CD4+ T ce
 QTS000041	QTD000749	Cytoimmgen	TN-TCM_CXCR4+_STIM_40H	CL_0000624	CD4+ T cell	anti-CD3-CD28_40h	93	ge
 QTS000041	QTD000750	Cytoimmgen	TEMRA_STIM_40H	CL_0000624	CD4+ T cell	anti-CD3-CD28_40h	91	ge
 QTS000041	QTD000751	Cytoimmgen	TN1_Lowly_Active_STIM_16H	CL_0000624	CD4+ T cell	anti-CD3-CD28_16h	97	ge
+QTS000042	QTD000752	Kim-Hellmuth_2017	monocyte_naive	CL_0002057	monocyte	naive	96	microarray
+QTS000042	QTD000753	Kim-Hellmuth_2017	monocyte_IVT_6h	CL_0002057	monocyte	IVT_6h	96	microarray
+QTS000042	QTD000754	Kim-Hellmuth_2017	monocyte_IVT_90min	CL_0002057	monocyte	IVT_90min	96	microarray
+QTS000042	QTD000755	Kim-Hellmuth_2017	monocyte_LPS_6h	CL_0002057	monocyte	LPS_6h	96	microarray
+QTS000042	QTD000756	Kim-Hellmuth_2017	monocyte_LPS_90min	CL_0002057	monocyte	LPS_90min	96	microarray
+QTS000042	QTD000757	Kim-Hellmuth_2017	monocyte_MDP_6h	CL_0002057	monocyte	MDP_6h	96	microarray
+QTS000042	QTD000758	Kim-Hellmuth_2017	monocyte_MDP_90min	CL_0002057	monocyte	MDP_90min	96	microarray
