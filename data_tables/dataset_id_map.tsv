@@ -757,8 +757,8 @@ Kim-Hellmuth_2017	monocyte_LPS_6h	microarray	QTS000042	QTD000755
 Kim-Hellmuth_2017	monocyte_LPS_90min	microarray	QTS000042	QTD000756
 Kim-Hellmuth_2017	monocyte_MDP_6h	microarray	QTS000042	QTD000757
 Kim-Hellmuth_2017	monocyte_MDP_90min	microarray	QTS000042	QTD000758
-FreshMicro	microglia	ge	QTS000042	QTD000759
-FreshMicro	microglia	exon	QTS000042	QTD000760
-FreshMicro	microglia	tx	QTS000042	QTD000761
-FreshMicro	microglia	txrev	QTS000042	QTD000762
-FreshMicro	microglia	leafcutter	QTS000042	QTD000763
+FreshMicro	microglia	ge	QTS000043	QTD000759
+FreshMicro	microglia	exon	QTS000043	QTD000760
+FreshMicro	microglia	tx	QTS000043	QTD000761
+FreshMicro	microglia	txrev	QTS000043	QTD000762
+FreshMicro	microglia	leafcutter	QTS000043	QTD000763
