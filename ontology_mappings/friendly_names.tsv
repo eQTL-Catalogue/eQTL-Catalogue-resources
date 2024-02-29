@@ -91,3 +91,10 @@ CL_0000904	"central memory CD4-positive, alpha-beta T cell"	CD4+ TCM cell
 CL_0000905	"effector memory CD4-positive, alpha-beta T cell"	CD4+ TEM cell
 CL_0000907	"central memory CD8-positive, alpha-beta T cell"	CD8+ TCM cell
 CL_0000913	"effector memory CD8-positive, alpha-beta T cell"	CD8+ TEM cell
+CL_0000897	"CD4-positive, alpha-beta memory T cell"	CD4+ memory T cell
+CL_0000850	serotonergic neuron	serotonergic neuron
+CL_0000700	dopaminergic neuron	dopaminergic neuron
+UBERON_0003079	floor plate	floor plate progenitor
+CL_0000065	ependymal cell	ependymal cell
+BTO_0000930	neuroblast	neuroblast
+CL_0000127	astrocyte	astrocyte
