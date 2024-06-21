@@ -1,0 +1,81 @@
+---
+title: "eQTL Catalogue coloc.susie example"
+output: 
+  html_document: 
+    keep_md: yes
+date: "2024-06-21"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Perform colocalisation with coloc.susie and lbf_variable files from the QTL Catalogue
+
+Load required pacakges:
+```{r}
+library("coloc")
+library("readr")
+library("dplyr")
+```
+
+Extract BPI eQTL and pQTL LBF variables from eQTL Catalogue
+```{bash}
+#gunzip -c QTD000021.lbf_variable.txt.gz | head -n1 > QTD000021_ENSG00000101425.tsv && gunzip -c QTD000021.lbf_variable.txt.gz | grep ENSG00000101425 >> QTD000021_ENSG00000101425.tsv
+#gunzip -c QTD000026.lbf_variable.txt.gz | head -n1 > QTD000026_ENSG00000101425.tsv && gunzip -c QTD000026.lbf_variable.txt.gz | grep ENSG00000101425 >> QTD000026_ENSG00000101425.tsv
+#gunzip -c QTD000584.lbf_variable.txt.gz | head -n1 > QTD000584_BPI.tsv && gunzip -c QTD000584.lbf_variable.txt.gz | grep "BPI.4126.22.1..1" >> QTD000584_BPI.tsv
+```
+
+Import lbf variable values into R
+```{r}
+#BLUEPRINT monocytes
+mono_lbf = readr::read_tsv("data/QTD000026_ENSG00000101425.tsv.gz", show_col_types = FALSE)
+
+#BLUEPRINT neutrophils
+neutrophil_lbf = readr::read_tsv("data/QTD000021_ENSG00000101425.tsv.gz", show_col_types = FALSE)
+
+#INTERVAL plasma pQTLs
+interval_lbf = readr::read_tsv("data/QTD000584_BPI.tsv.gz", show_col_types = FALSE)
+```
+
+Convert LBF data frames into matrixes suitable for the coloc.bf_bf() method
+
+```{r}
+#BLUEPRINT monocytes
+mono_mat = as.matrix(dplyr::select(mono_lbf, lbf_variable1:lbf_variable10))
+row.names(mono_mat) = mono_lbf$variant
+mono_mat = t(mono_mat)
+
+#BLUEPRINT neutrophils
+neutro_mat = as.matrix(dplyr::select(neutrophil_lbf, lbf_variable1:lbf_variable10))
+row.names(neutro_mat) = neutrophil_lbf$variant
+neutro_mat = t(neutro_mat)
+
+#INTERVAL plasma pQTLs
+interval_mat = as.matrix(dplyr::select(interval_lbf, lbf_variable1:lbf_variable10))
+row.names(interval_mat) = interval_lbf$variant
+interval_mat = t(interval_mat)
+```
+
+### Perform all pairwise colocalisations
+
+BLUEPRINT neutrophils eQTL vs INTERVAL plasma pQTL
+```{r}
+neutro_coloc = coloc::coloc.bf_bf(neutro_mat, interval_mat)
+dplyr::as_tibble(neutro_coloc$summary) %>% dplyr::filter(PP.H4.abf > 0.8)
+```
+
+
+BLUEPRINT monocytes eQTL vs INTERVAL plasma pQTL
+```{r}
+mono_coloc = coloc::coloc.bf_bf(mono_mat, interval_mat)
+dplyr::as_tibble(mono_coloc$summary) %>% dplyr::filter(PP.H4.abf > 0.8)
+```
+
+
+BLUEPRINT monocytes eQTL vs BLUEPRINT neutrophils eQTL
+```{r}
+eQTL_coloc = coloc::coloc.bf_bf(neutro_mat, mono_mat)
+dplyr::as_tibble(eQTL_coloc$summary) %>% dplyr::filter(PP.H4.abf > 0.8)
+```
+
