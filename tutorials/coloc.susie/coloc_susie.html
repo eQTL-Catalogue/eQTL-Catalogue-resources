@@ -377,13 +377,13 @@ library(&quot;dplyr&quot;)</code></pre>
 #gunzip -c QTD000584.lbf_variable.txt.gz | head -n1 &gt; QTD000584_BPI.tsv &amp;&amp; gunzip -c QTD000584.lbf_variable.txt.gz | grep &quot;BPI.4126.22.1..1&quot; &gt;&gt; QTD000584_BPI.tsv</code></pre>
 <p>Import lbf variable values into R</p>
 <pre class="r"><code>#BLUEPRINT monocytes
-mono_lbf = readr::read_tsv(&quot;data/QTD000026_ENSG00000101425.tsv.gz&quot;, show_col_types = FALSE)
+mono_lbf = readr::read_tsv(&quot;input_data/QTD000026_ENSG00000101425.tsv.gz&quot;, show_col_types = FALSE)
 
 #BLUEPRINT neutrophils
-neutrophil_lbf = readr::read_tsv(&quot;data/QTD000021_ENSG00000101425.tsv.gz&quot;, show_col_types = FALSE)
+neutrophil_lbf = readr::read_tsv(&quot;input_data/QTD000021_ENSG00000101425.tsv.gz&quot;, show_col_types = FALSE)
 
 #INTERVAL plasma pQTLs
-interval_lbf = readr::read_tsv(&quot;data/QTD000584_BPI.tsv.gz&quot;, show_col_types = FALSE)</code></pre>
+interval_lbf = readr::read_tsv(&quot;input_data/QTD000584_BPI.tsv.gz&quot;, show_col_types = FALSE)</code></pre>
 <p>Convert LBF data frames into matrixes suitable for the coloc.bf_bf()
 method</p>
 <pre class="r"><code>#BLUEPRINT monocytes

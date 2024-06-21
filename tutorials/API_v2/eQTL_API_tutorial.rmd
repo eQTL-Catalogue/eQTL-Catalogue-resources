@@ -248,6 +248,17 @@ associations <- request_associations_around_position(dataset_id, position, chrom
 knitr::kable(head(associations), format="markdown")
 ```
 
+```{r}
+# Change parameters
+dataset_id = "QTD000608" #OneK1K naive B cells
+position = 111531594
+chromosome_id = 3
+gene_id = "ENSG00000153283" #CD96 gene
+
+associations <- request_associations_around_position(dataset_id, position, chromosome_id, gene_id)
+knitr::kable(head(associations), format="markdown")
+```
+
 ## Function for requesting associations from a dataset with all possible parameters
 
 -   dataset_id (string, required) - Dataset ID. A dataset represents a study & QTL context for a single quantification method

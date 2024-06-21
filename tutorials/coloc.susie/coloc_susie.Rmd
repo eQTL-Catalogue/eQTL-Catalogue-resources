@@ -29,13 +29,13 @@ Extract BPI eQTL and pQTL LBF variables from eQTL Catalogue
 Import lbf variable values into R
 ```{r}
 #BLUEPRINT monocytes
-mono_lbf = readr::read_tsv("data/QTD000026_ENSG00000101425.tsv.gz", show_col_types = FALSE)
+mono_lbf = readr::read_tsv("input_data/QTD000026_ENSG00000101425.tsv.gz", show_col_types = FALSE)
 
 #BLUEPRINT neutrophils
-neutrophil_lbf = readr::read_tsv("data/QTD000021_ENSG00000101425.tsv.gz", show_col_types = FALSE)
+neutrophil_lbf = readr::read_tsv("input_data/QTD000021_ENSG00000101425.tsv.gz", show_col_types = FALSE)
 
 #INTERVAL plasma pQTLs
-interval_lbf = readr::read_tsv("data/QTD000584_BPI.tsv.gz", show_col_types = FALSE)
+interval_lbf = readr::read_tsv("input_data/QTD000584_BPI.tsv.gz", show_col_types = FALSE)
 ```
 
 Convert LBF data frames into matrixes suitable for the coloc.bf_bf() method
