@@ -311,3 +311,4 @@ Nathan_2022	CD4+_CD27+	CD4+_CD27+	CL_0000624	"CD4-positive, alpha-beta T cell"
 Nathan_2022	CD4+_lncRNA	CD4+_lncRNA	CL_0000624	"CD4-positive, alpha-beta T cell"
 Nathan_2022	CD4+_Treg	CD4+_Treg	CL_0000624	"CD4-positive, alpha-beta T cell"
 Nathan_2022	CD4+_Th17	CD4+_Th17	CL_0000624	"CD4-positive, alpha-beta T cell"
+MAGE	LCL	LCL	EFO_0005292	lymphoblastoid cell line
