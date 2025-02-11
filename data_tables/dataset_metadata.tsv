@@ -757,3 +757,85 @@ QTS000042	QTD000755	Kim-Hellmuth_2017	monocyte_LPS_6h	CL_0002057	monocyte	LPS_6h
 QTS000042	QTD000756	Kim-Hellmuth_2017	monocyte_LPS_90min	CL_0002057	monocyte	LPS_90min	96	microarray	28814792	bulk
 QTS000042	QTD000757	Kim-Hellmuth_2017	monocyte_MDP_6h	CL_0002057	monocyte	MDP_6h	96	microarray	28814792	bulk
 QTS000042	QTD000758	Kim-Hellmuth_2017	monocyte_MDP_90min	CL_0002057	monocyte	MDP_90min	96	microarray	28814792	bulk
+QTS000043	QTD000759	microglia	microglia_IFN_nonProlif	NA	NA	IFN	211	ge	NA	single-cell
+QTS000043	QTD000760	microglia	microglia_LPS_Prolif	NA	NA	LPS	131	ge	NA	single-cell
+QTS000043	QTD000761	microglia	microglia_LPS_nonProlif	NA	NA	LPS	207	ge	NA	single-cell
+QTS000043	QTD000762	microglia	microglia_untreated_Prolif	NA	NA	untreated	149	ge	NA	single-cell
+QTS000043	QTD000763	microglia	microglia_untreated_nonProlif	NA	NA	untreated	208	ge	NA	single-cell
+QTS000044	QTD000764	MAGE	NA	NA	NA	NA	NA	NA	NA	NA
+QTS000044	QTD000765	MAGE	NA	NA	NA	NA	NA	NA	NA	NA
+QTS000044	QTD000766	MAGE	NA	NA	NA	NA	NA	NA	NA	NA
+QTS000044	QTD000767	MAGE	NA	NA	NA	NA	NA	NA	NA	NA
+QTS000044	QTD000768	MAGE	NA	NA	NA	NA	NA	NA	NA	NA
+QTS000045	QTD000769	IBD	Blood_CD4+_CRM/Naive	NA	NA	NA	230	ge	NA	single-cell
+QTS000045	QTD000770	IBD	Blood_CD4+_CRM 	NA	NA	NA	133	ge	NA	single-cell
+QTS000045	QTD000771	IBD	Blood_CD8+_EM_THEMIS+	NA	NA	NA	86	ge	NA	single-cell
+QTS000045	QTD000772	IBD	Blood_CD8+_EM_TIGIT+	NA	NA	NA	79	ge	NA	single-cell
+QTS000045	QTD000773	IBD	Blood_Classical monocytes	NA	NA	NA	95	ge	NA	single-cell
+QTS000045	QTD000774	IBD	Blood_Intermediate monocytes	NA	NA	NA	93	ge	NA	single-cell
+QTS000045	QTD000775	IBD	Blood_NK1	NA	NA	NA	82	ge	NA	single-cell
+QTS000045	QTD000776	IBD	Blood_Non-classical monocytes	NA	NA	NA	92	ge	NA	single-cell
+QTS000045	QTD000777	IBD	Blood_atypical_B_Cells	NA	NA	NA	121	ge	NA	single-cell
+QTS000045	QTD000778	IBD	Blood_pDCs	NA	NA	NA	90	ge	NA	single-cell
+QTS000045	QTD000779	IBD	CD3+CD4-CD8-_TRGC1lo TRDC+	NA	NA	NA	91	ge	NA	single-cell
+QTS000045	QTD000780	IBD	CD4+_Treg	NA	NA	NA	149	ge	NA	single-cell
+QTS000045	QTD000781	IBD	CD4+_memory	NA	NA	NA	318	ge	NA	single-cell
+QTS000045	QTD000782	IBD	CD8+_GZMK+	NA	NA	NA	260	ge	NA	single-cell
+QTS000045	QTD000783	IBD	CD8+_Naive	NA	NA	NA	144	ge	NA	single-cell
+QTS000045	QTD000784	IBD	Colon_Goblet_ATOH1 (MUC2_Lo)	NA	NA	NA	210	ge	NA	single-cell
+QTS000045	QTD000785	IBD	Colon_Goblet_MUC2++ BCAS1+	NA	NA	NA	53	ge	NA	single-cell
+QTS000045	QTD000786	IBD	Colon_Goblet_MUC2+ SPDEF+	NA	NA	NA	255	ge	NA	single-cell
+QTS000045	QTD000787	IBD	Colon_Progenitor_OLMF4+	NA	NA	NA	253	ge	NA	single-cell
+QTS000045	QTD000788	IBD	Colon_Progenitor_OLMF4++	NA	NA	NA	88	ge	NA	single-cell
+QTS000045	QTD000789	IBD	Colon_Progenitor_OLMF4+Ki67+	NA	NA	NA	230	ge	NA	single-cell
+QTS000045	QTD000790	IBD	Colon_ileum_Enterochromaffin_TPH1_CES1+	NA	NA	NA	229	ge	NA	single-cell
+QTS000045	QTD000791	IBD	Colon_ileum_Enteroendocrine_NTS_PYY_GCG_ISL1+	NA	NA	NA	231	ge	NA	single-cell
+QTS000045	QTD000792	IBD	Colonocyte BEST4+	NA	NA	NA	224	ge	NA	single-cell
+QTS000045	QTD000793	IBD	Colonocyte_CAECAM7++_KRT20++ IFI27++	NA	NA	NA	197	ge	NA	single-cell
+QTS000045	QTD000794	IBD	Colonocyte_CAECAM7+_KRT20+ IFI27+	NA	NA	NA	255	ge	NA	single-cell
+QTS000045	QTD000795	IBD	Colonocyte_Progenitor_OLMF4++Ki67+	NA	NA	NA	233	ge	NA	single-cell
+QTS000045	QTD000796	IBD	Colonocyte RBFOX1+	NA	NA	NA	257	ge	NA	single-cell
+QTS000045	QTD000797	IBD	Colonocyte stem cell  LGR5+	NA	NA	NA	239	ge	NA	single-cell
+QTS000045	QTD000798	IBD	Enterocyte BEST4+ 	NA	NA	NA	166	ge	NA	single-cell
+QTS000045	QTD000799	IBD	Enterocyte _Progenitor_OLMF4++Ki67+	NA	NA	NA	220	ge	NA	single-cell
+QTS000045	QTD000800	IBD	Enterocyte progenitor/precursor crypt OLFM4+	NA	NA	NA	324	ge	NA	single-cell
+QTS000045	QTD000801	IBD	Enterocyte progenitor/precursor crypt OLFM4++	NA	NA	NA	182	ge	NA	single-cell
+QTS000045	QTD000802	IBD	Enterocyte stem cell MKI67+	NA	NA	NA	280	ge	NA	single-cell
+QTS000045	QTD000803	IBD	Enterocyte stem cell OLFM4+ LGR5+	NA	NA	NA	273	ge	NA	single-cell
+QTS000045	QTD000804	IBD	Enterocyte top Villus	NA	NA	NA	328	ge	NA	single-cell
+QTS000045	QTD000805	IBD	Enterocytes progenitor crypt OLFM4++	NA	NA	NA	303	ge	NA	single-cell
+QTS000045	QTD000806	IBD	Fibroblast_CPM+	NA	NA	NA	131	ge	NA	single-cell
+QTS000045	QTD000807	IBD	ILCs_Nkp44	NA	NA	NA	197	ge	NA	single-cell
+QTS000045	QTD000808	IBD	Ileum_Goblet_MUC2+	NA	NA	NA	189	ge	NA	single-cell
+QTS000045	QTD000809	IBD	Ileum_Goblet_MUC2++_BCAS1++	NA	NA	NA	286	ge	NA	single-cell
+QTS000045	QTD000810	IBD	Ileum_Goblet_MUC2+_BCAS1+	NA	NA	NA	346	ge	NA	single-cell
+QTS000045	QTD000811	IBD	Ileum_Goblet_MUC2+_SPINK4++	NA	NA	NA	291	ge	NA	single-cell
+QTS000045	QTD000812	IBD	Ileum_Paneth_DEF6A	NA	NA	NA	130	ge	NA	single-cell
+QTS000045	QTD000813	IBD	Ileum_goblet_Ki67+	NA	NA	NA	185	ge	NA	single-cell
+QTS000045	QTD000814	IBD	LP fibroblast ADAMDEC1	NA	NA	NA	90	ge	NA	single-cell
+QTS000045	QTD000815	IBD	Mast	NA	NA	NA	243	ge	NA	single-cell
+QTS000045	QTD000816	IBD	Myofibroblast_ADGRL3	NA	NA	NA	50	ge	NA	single-cell
+QTS000045	QTD000817	IBD	NK2	NA	NA	NA	188	ge	NA	single-cell
+QTS000045	QTD000818	IBD	Platelet	NA	NA	NA	83	ge	NA	single-cell
+QTS000045	QTD000819	IBD	Tcell_GD	NA	NA	NA	100	ge	NA	single-cell
+QTS000045	QTD000820	IBD	Tissue_B_Cell germinal centre/plasmablast	NA	NA	NA	135	ge	NA	single-cell
+QTS000045	QTD000821	IBD	Tissue_B_Cell germinal centre/plasmablast_proliferating	NA	NA	NA	114	ge	NA	single-cell
+QTS000045	QTD000822	IBD	Tissue_CCL3/CCL4_CXCL9/10_Macrophages	NA	NA	NA	45	ge	NA	single-cell
+QTS000045	QTD000823	IBD	Tissue_CD4+_PASK	NA	NA	NA	286	ge	NA	single-cell
+QTS000045	QTD000824	IBD	Tissue_CD4+_Treg	NA	NA	NA	173	ge	NA	single-cell
+QTS000045	QTD000825	IBD	Tissue_CD4+_memory_CXCR6+	NA	NA	NA	295	ge	NA	single-cell
+QTS000045	QTD000826	IBD	Tissue_CD8+_TRM_TGCR2+	NA	NA	NA	339	ge	NA	single-cell
+QTS000045	QTD000827	IBD	Tissue_Macrophages_CD163+	NA	NA	NA	298	ge	NA	single-cell
+QTS000045	QTD000828	IBD	Tissue_Macrophages_CD163++	NA	NA	NA	218	ge	NA	single-cell
+QTS000045	QTD000829	IBD	Tissue_Macrophages_Proliferating	NA	NA	NA	125	ge	NA	single-cell
+QTS000045	QTD000830	IBD	Tissue_Memory B_CD27Lo_	NA	NA	NA	227	ge	NA	single-cell
+QTS000045	QTD000831	IBD	Tissue_Memory B_PDE4D_TEX9	NA	NA	NA	301	ge	NA	single-cell
+QTS000045	QTD000832	IBD	Tissue_Memory B_PTPRJ	NA	NA	NA	313	ge	NA	single-cell
+QTS000045	QTD000833	IBD	Tissue_Monocytes_S100A8/9+	NA	NA	NA	65	ge	NA	single-cell
+QTS000045	QTD000834	IBD	Tissue_Naive B cells	NA	NA	NA	307	ge	NA	single-cell
+QTS000045	QTD000835	IBD	Tissue_PlasmaB_CD38++	NA	NA	NA	162	ge	NA	single-cell
+QTS000045	QTD000836	IBD	Tissue_PlasmaB_CD38+++	NA	NA	NA	359	ge	NA	single-cell
+QTS000045	QTD000837	IBD	Tissue_PlasmaB_CD38++++,IgG+ IgA+	NA	NA	NA	147	ge	NA	single-cell
+QTS000045	QTD000838	IBD	Tissue_Tcell_GD	NA	NA	NA	272	ge	NA	single-cell
+QTS000045	QTD000839	IBD	Tuft	NA	NA	NA	245	ge	NA	single-cell
+QTS000045	QTD000840	IBD	cDC2	NA	NA	NA	127	ge	NA	single-cell
