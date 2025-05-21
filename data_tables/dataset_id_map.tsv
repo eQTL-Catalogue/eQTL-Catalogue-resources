@@ -757,11 +757,11 @@ Kim-Hellmuth_2017	monocyte_LPS_6h	microarray	QTS000042	QTD000755
 Kim-Hellmuth_2017	monocyte_LPS_90min	microarray	QTS000042	QTD000756
 Kim-Hellmuth_2017	monocyte_MDP_6h	microarray	QTS000042	QTD000757
 Kim-Hellmuth_2017	monocyte_MDP_90min	microarray	QTS000042	QTD000758
-FreshMicro	microglia	ge	QTS000043	QTD000759
-FreshMicro	microglia	exon	QTS000043	QTD000760
-FreshMicro	microglia	tx	QTS000043	QTD000761
-FreshMicro	microglia	txrev	QTS000043	QTD000762
-FreshMicro	microglia	leafcutter	QTS000043	QTD000763
+OTAR2065_neuroinflammation	microglia_IFN_nonProlif	ge	QTS000043	QTD000759
+OTAR2065_neuroinflammation	microglia_LPS_Prolif	ge	QTS000043	QTD000760
+OTAR2065_neuroinflammation	microglia_LPS_nonProlif	ge	QTS000043	QTD000761
+OTAR2065_neuroinflammation	microglia_untreated_Prolif	ge	QTS000043	QTD000762
+OTAR2065_neuroinflammation	microglia_untreated_nonProlif	ge	QTS000043	QTD000763
 MAGE	LCL	ge	QTS000044	QTD000764
 MAGE	LCL	exon	QTS000044	QTD000765
 MAGE	LCL	tx	QTS000044	QTD000766
