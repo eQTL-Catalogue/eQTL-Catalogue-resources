@@ -839,3 +839,79 @@ QTS000045	QTD000837	OTAR2057_IBDverse	PlasmaB_CD38++++_IgG+_IgA+	CL_0000786	plas
 QTS000045	QTD000838	OTAR2057_IBDverse	Tissue_Tcell_GD	CL_0000798	gamma-delta T cell	naive	272	ge	NA	single-cell
 QTS000045	QTD000839	OTAR2057_IBDverse	Tuft	CL_0019032	intestinal tuft cell	naive	245	ge	NA	single-cell
 QTS000045	QTD000840	OTAR2057_IBDverse	cDC2	CL_0000990	conventional dendritic cell	naive	127	ge	NA	single-cell
+QTS000046	QTD000841	Randolph_2021_reannotated	Alveolar_macrophages_NI	CL_0000583	alveolar macrophage	naive	65	ge	34822289	single-cell
+QTS000046	QTD000842	Randolph_2021_reannotated	CD16+_NK_cells_NI	CL_0000623	NK cell	naive	56	ge	34822289	single-cell
+QTS000046	QTD000843	Randolph_2021_reannotated	CD16+_NK_cells_flu	CL_0000623	NK cell	Influenza_6h	60	ge	34822289	single-cell
+QTS000046	QTD000844	Randolph_2021_reannotated	Classical_monocytes_NI	CL_0000860	classical monocyte	naive	71	ge	34822289	single-cell
+QTS000046	QTD000845	Randolph_2021_reannotated	Intermediate_macrophages_flu	CL_0000235	macrophage	Influenza_6h	83	ge	34822289	single-cell
+QTS000046	QTD000846	Randolph_2021_reannotated	MAIT_cells_NI	CL_0000940	MAIT cell	naive	55	ge	34822289	single-cell
+QTS000046	QTD000847	Randolph_2021_reannotated	Memory_B_cells_NI	CL_0000787	memory B cell	naive	79	ge	34822289	single-cell
+QTS000046	QTD000848	Randolph_2021_reannotated	Memory_B_cells_flu	CL_0000787	memory B cell	Influenza_6h	57	ge	34822289	single-cell
+QTS000046	QTD000849	Randolph_2021_reannotated	Naive_B_cells_NI	CL_0000788	naive B cell	naive	81	ge	34822289	single-cell
+QTS000046	QTD000850	Randolph_2021_reannotated	Naive_B_cells_flu	CL_0000788	naive B cell	Influenza_6h	82	ge	34822289	single-cell
+QTS000046	QTD000851	Randolph_2021_reannotated	Regulatory_T_cells_NI	CL_0000815	regulatory T cell	naive	70	ge	34822289	single-cell
+QTS000046	QTD000852	Randolph_2021_reannotated	Regulatory_T_cells_flu	CL_0000815	regulatory T cell	Influenza_6h	79	ge	34822289	single-cell
+QTS000046	QTD000853	Randolph_2021_reannotated	Tcm_Naive_cytotoxic_T_cells_NI	CL_0000907	CD8+ TCM cell	naive	88	ge	34822289	single-cell
+QTS000046	QTD000854	Randolph_2021_reannotated	Tcm_Naive_cytotoxic_T_cells_flu	CL_0000907	CD8+ TCM cell	Influenza_6h	72	ge	34822289	single-cell
+QTS000046	QTD000855	Randolph_2021_reannotated	Tcm_Naive_helper_T_cells_NI	CL_0000904	CD4+ TCM cell	naive	89	ge	34822289	single-cell
+QTS000046	QTD000856	Randolph_2021_reannotated	Tcm_Naive_helper_T_cells_flu	CL_0000904	CD4+ TCM cell	Influenza_6h	89	ge	34822289	single-cell
+QTS000046	QTD000857	Randolph_2021_reannotated	Tem_Effector_helper_T_cells_NI	CL_0000905	CD4+ TEM cell	naive	89	ge	34822289	single-cell
+QTS000046	QTD000858	Randolph_2021_reannotated	Tem_Effector_helper_T_cells_flu	CL_0000905	CD4+ TEM cell	Influenza_6h	89	ge	34822289	single-cell
+QTS000046	QTD000859	Randolph_2021_reannotated	Tem_Temra_cytotoxic_T_cells_NI	CL_0001062	Tem/Temra cytotoxic T cell	naive	72	ge	34822289	single-cell
+QTS000046	QTD000860	Randolph_2021_reannotated	Tem_Temra_cytotoxic_T_cells_flu	CL_0001062	Tem/Temra cytotoxic T cell	Influenza_6h	59	ge	34822289	single-cell
+QTS000046	QTD000861	Randolph_2021_reannotated	Tem_Trm_cytotoxic_T_cells_NI	CL_0000913	CD8+ TEM cell	naive	87	ge	34822289	single-cell
+QTS000046	QTD000862	Randolph_2021_reannotated	Tem_Trm_cytotoxic_T_cells_flu	CL_0000913	CD8+ TEM cell	Influenza_6h	75	ge	34822289	single-cell
+QTS000047	QTD000863	Perez_2022_reannotated	Age-associated_B_cells	CL_0000787	memory B cell	naive	78	ge	35389781	single-cell
+QTS000047	QTD000864	Perez_2022_reannotated	CD16+_NK_cells	CL_0000623	NK cell	naive	156	ge	35389781	single-cell
+QTS000047	QTD000865	Perez_2022_reannotated	CD16-_NK_cells	CL_0000623	NK cell	naive	72	ge	35389781	single-cell
+QTS000047	QTD000866	Perez_2022_reannotated	Classical_monocytes	CL_0000860	classical monocyte	naive	155	ge	35389781	single-cell
+QTS000047	QTD000867	Perez_2022_reannotated	DC2	CL_0000990	conventional dendritic cell	naive	142	ge	35389781	single-cell
+QTS000047	QTD000868	Perez_2022_reannotated	MAIT_cells	CL_0000940	MAIT cell	naive	96	ge	35389781	single-cell
+QTS000047	QTD000869	Perez_2022_reannotated	Megakaryocytes_platelets	CL_0000556	megakaryocyte	naive	72	ge	35389781	single-cell
+QTS000047	QTD000870	Perez_2022_reannotated	Memory_B_cells	CL_0000787	memory B cell	naive	147	ge	35389781	single-cell
+QTS000047	QTD000871	Perez_2022_reannotated	NK_cells	CL_0000623	NK cell	naive	119	ge	35389781	single-cell
+QTS000047	QTD000872	Perez_2022_reannotated	Naive_B_cells	CL_0000788	naive B cell	naive	146	ge	35389781	single-cell
+QTS000047	QTD000873	Perez_2022_reannotated	Non-classical_monocytes	CL_0000875	non-classical monocyte	naive	152	ge	35389781	single-cell
+QTS000047	QTD000874	Perez_2022_reannotated	Regulatory_T_cells	CL_0000815	regulatory T cell	naive	142	ge	35389781	single-cell
+QTS000047	QTD000875	Perez_2022_reannotated	Tcm_Naive_cytotoxic_T_cells	CL_0000907	CD8+ TCM cell	naive	153	ge	35389781	single-cell
+QTS000047	QTD000876	Perez_2022_reannotated	Tcm_Naive_helper_T_cells	CL_0000904	CD4+ TCM cell	naive	157	ge	35389781	single-cell
+QTS000047	QTD000877	Perez_2022_reannotated	Tem_Effector_helper_T_cells	CL_0000905	CD4+ TEM cell	naive	151	ge	35389781	single-cell
+QTS000047	QTD000878	Perez_2022_reannotated	Tem_Temra_cytotoxic_T_cells	CL_0001062	Tem/Temra cytotoxic T cell	naive	148	ge	35389781	single-cell
+QTS000047	QTD000879	Perez_2022_reannotated	Tem_Trm_cytotoxic_T_cells	CL_0000913	CD8+ TEM cell	naive	154	ge	35389781	single-cell
+QTS000048	QTD000880	OneK1K_reannotated	Age-associated_B_cells	CL_0000787	memory B cell	naive	132	ge	35389779	single-cell
+QTS000048	QTD000881	OneK1K_reannotated	CD16+_NK_cells	CL_0000623	NK cell	naive	991	ge	35389779	single-cell
+QTS000048	QTD000882	OneK1K_reannotated	CD16-_NK_cells	CL_0000623	NK cell	naive	128	ge	35389779	single-cell
+QTS000048	QTD000883	OneK1K_reannotated	Classical_monocytes	CL_0000860	classical monocyte	naive	596	ge	35389779	single-cell
+QTS000048	QTD000884	OneK1K_reannotated	MAIT_cells	CL_0000940	MAIT cell	naive	393	ge	35389779	single-cell
+QTS000048	QTD000885	OneK1K_reannotated	Memory_B_cells	CL_0000787	memory B cell	naive	849	ge	35389779	single-cell
+QTS000048	QTD000886	OneK1K_reannotated	NK_cells	CL_0000623	NK cell	naive	89	ge	35389779	single-cell
+QTS000048	QTD000887	OneK1K_reannotated	Naive_B_cells	CL_0000788	naive B cell	naive	889	ge	35389779	single-cell
+QTS000048	QTD000888	OneK1K_reannotated	Non-classical_monocytes	CL_0000875	non-classical monocyte	naive	367	ge	35389779	single-cell
+QTS000048	QTD000889	OneK1K_reannotated	Regulatory_T_cells	CL_0000815	regulatory T cell	naive	528	ge	35389779	single-cell
+QTS000048	QTD000890	OneK1K_reannotated	Tcm_Naive_cytotoxic_T_cells	CL_0000907	CD8+ TCM cell	naive	720	ge	35389779	single-cell
+QTS000048	QTD000891	OneK1K_reannotated	Tcm_Naive_helper_T_cells	CL_0000904	CD4+ TCM cell	naive	997	ge	35389779	single-cell
+QTS000048	QTD000892	OneK1K_reannotated	Tem_Effector_helper_T_cells	CL_0000905	CD4+ TEM cell	naive	653	ge	35389779	single-cell
+QTS000048	QTD000893	OneK1K_reannotated	Tem_Temra_cytotoxic_T_cells	CL_0001062	Tem/Temra cytotoxic T cell	naive	934	ge	35389779	single-cell
+QTS000048	QTD000894	OneK1K_reannotated	Tem_Trm_cytotoxic_T_cells	CL_0000913	CD8+ TEM cell	naive	905	ge	35389779	single-cell
+QTS000049	QTD000895	Nathan_2022_reannotated	MAIT_cells	CL_0000940	MAIT cell	naive	111	ge	35545678	single-cell
+QTS000049	QTD000896	Nathan_2022_reannotated	Megakaryocyte_precursor	CL_0000553	megakaryocyte progenitor cell	naive	64	ge	35545678	single-cell
+QTS000049	QTD000897	Nathan_2022_reannotated	Regulatory_T_cells	CL_0000815	regulatory T cell	naive	195	ge	35545678	single-cell
+QTS000049	QTD000898	Nathan_2022_reannotated	Tcm_Naive_helper_T_cells	CL_0000904	CD4+ TCM cell	naive	205	ge	35545678	single-cell
+QTS000049	QTD000899	Nathan_2022_reannotated	Tem_Effector_helper_T_cells	CL_0000905	CD4+ TEM cell	naive	199	ge	35545678	single-cell
+QTS000049	QTD000900	Nathan_2022_reannotated	Tem_Temra_cytotoxic_T_cells	CL_0001062	Tem/Temra cytotoxic T cell	naive	193	ge	35545678	single-cell
+QTS000049	QTD000901	Nathan_2022_reannotated	Tem_Trm_cytotoxic_T_cells	CL_0000913	CD8+ TEM cell	naive	196	ge	35545678	single-cell
+QTS000050	QTD000902	Cytoimmgen_reannotated	Cycling_T_cells_STIM_40H	CL_0000084	T cell	anti-CD3-CD28_40H	94	ge	35618845	single-cell
+QTS000050	QTD000903	Cytoimmgen_reannotated	Cycling_T_cells_STIM_5D	CL_0000084	T cell	anti-CD3-CD28_5D	91	ge	35618845	single-cell
+QTS000050	QTD000904	Cytoimmgen_reannotated	Regulatory_T_cells_STIM_16H	CL_0000815	regulatory T cell	anti-CD3-CD28_16H	97	ge	35618845	single-cell
+QTS000050	QTD000905	Cytoimmgen_reannotated	Regulatory_T_cells_STIM_40H	CL_0000815	regulatory T cell	anti-CD3-CD28_40H	95	ge	35618845	single-cell
+QTS000050	QTD000906	Cytoimmgen_reannotated	Regulatory_T_cells_STIM_5D	CL_0000815	regulatory T cell	anti-CD3-CD28_5D	94	ge	35618845	single-cell
+QTS000050	QTD000907	Cytoimmgen_reannotated	Regulatory_T_cells_UNS_16H	CL_0000815	regulatory T cell	naive_16H	96	ge	35618845	single-cell
+QTS000050	QTD000908	Cytoimmgen_reannotated	T_agonist__STIM_16H	CL_0000815	regulatory T cell	anti-CD3-CD28_16H	100	ge	35618845	single-cell
+QTS000050	QTD000909	Cytoimmgen_reannotated	T_agonist__STIM_40H	CL_0000815	regulatory T cell	anti-CD3-CD28_40H	94	ge	35618845	single-cell
+QTS000050	QTD000910	Cytoimmgen_reannotated	T_agonist__STIM_5D	CL_0000815	regulatory T cell	anti-CD3-CD28_5D	59	ge	35618845	single-cell
+QTS000050	QTD000911	Cytoimmgen_reannotated	Tcm_Naive_helper_T_cells_STIM_16H	CL_0000904	CD4+ TCM cell	anti-CD3-CD28_16H	99	ge	35618845	single-cell
+QTS000050	QTD000912	Cytoimmgen_reannotated	Tcm_Naive_helper_T_cells_STIM_40H	CL_0000904	CD4+ TCM cell	anti-CD3-CD28_40H	84	ge	35618845	single-cell
+QTS000050	QTD000913	Cytoimmgen_reannotated	Tcm_Naive_helper_T_cells_STIM_5D	CL_0000904	CD4+ TCM cell	anti-CD3-CD28_5D	84	ge	35618845	single-cell
+QTS000050	QTD000914	Cytoimmgen_reannotated	Tcm_Naive_helper_T_cells_UNS_16H	CL_0000904	CD4+ TCM cell	naive_16H	106	ge	35618845	single-cell
+QTS000050	QTD000915	Cytoimmgen_reannotated	Tem_Effector_helper_T_cells_STIM_16H	CL_0000905	CD4+ TEM cell	anti-CD3-CD28_16H	59	ge	35618845	single-cell
+QTS000050	QTD000916	Cytoimmgen_reannotated	Tem_Effector_helper_T_cells_UNS_16H	CL_0000905	CD4+ TEM cell	naive_16H	93	ge	35618845	single-cell
