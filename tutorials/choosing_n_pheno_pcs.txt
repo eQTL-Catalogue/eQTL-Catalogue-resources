@@ -1,0 +1,3 @@
+#If n < 150, ge, exon n_pheno_pcs = 15, tx, txrev,leafcutter n_pheno_pcs = 6
+#If 150 < n < 350, ge, exon n_pheno_pcs = 30, tx, txrev,leafcutter n_pheno_pcs = 15
+#if 350 < n, ge, exon n_pheno_pcs = 50, tx, txrev,leafcutter n_pheno_pcs = 30
