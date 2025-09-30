@@ -98,3 +98,12 @@ UBERON_0003079	floor plate	floor plate progenitor
 CL_0000065	ependymal cell	ependymal cell
 BTO_0000930	neuroblast	neuroblast
 CL_0000127	astrocyte	astrocyte
+CL_0000583	alveolar macrophage	alveolar macrophage
+CL_0000860	classical monocyte	classical monocyte
+CL_0000788	naive B cell	naive B cell
+CL_0000815	regulatory T cell	regulatory T cell
+CL_0001062	effector memory CD8-positive, alpha-beta T cell, terminally differentiated	Tem/Temra cytotoxic T cell
+CL_0000990	conventional dendritic cell	conventional dendritic cell
+CL_0000556	megakaryocyte	megakaryocyte
+CL_0000875	non-classical monocyte	non-classical monocyte
+CL_0000553	megakaryocyte progenitor cell	megakaryocyte progenitor cell
