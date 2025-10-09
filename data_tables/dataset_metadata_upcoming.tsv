@@ -915,3 +915,37 @@ QTS000050	QTD000913	Cytoimmgen_reannotated	Tcm_Naive_helper_T_cells_STIM_5D	CL_0
 QTS000050	QTD000914	Cytoimmgen_reannotated	Tcm_Naive_helper_T_cells_UNS_16H	CL_0000904	CD4+ TCM cell	naive_16H	106	ge	35618845	single-cell
 QTS000050	QTD000915	Cytoimmgen_reannotated	Tem_Effector_helper_T_cells_STIM_16H	CL_0000905	CD4+ TEM cell	anti-CD3-CD28_16H	59	ge	35618845	single-cell
 QTS000050	QTD000916	Cytoimmgen_reannotated	Tem_Effector_helper_T_cells_UNS_16H	CL_0000905	CD4+ TEM cell	naive_16H	93	ge	35618845	single-cell
+QTS000051	QTD000917	Natri_2024	AT2	CL_0002063	alveolar type 2 cell	naive	88	ge	38548990	single-cell
+QTS000051	QTD000918	Natri_2024	Alveolar_macrophage	CL_0000583	alveolar macrophage	naive	65	ge	38548990	single-cell
+QTS000051	QTD000919	Natri_2024	Arteriole	CL_1000412	arteriole endothelial cell	naive	73	ge	38548990	single-cell
+QTS000051	QTD000920	Natri_2024	Basal	CL_0000646	basal cell	naive	53	ge	38548990	single-cell
+QTS000051	QTD000921	Natri_2024	CD4	CL_0000624	T cell	naive	57	ge	38548990	single-cell
+QTS000051	QTD000922	Natri_2024	CD8_NKT	CL_0000625	T cell	naive	65	ge	38548990	single-cell
+QTS000051	QTD000923	Natri_2024	Ciliated	CL_0000067	ciliated epithelial cell	naive	92	ge	38548990	single-cell
+QTS000051	QTD000924	Natri_2024	Inflammatory_monocyte	CL_0000860	classical monocyte	naive	100	ge	38548990	single-cell
+QTS000051	QTD000925	Natri_2024	Interstitial_macrophage	CL_4033043	lung interstitial macrophage	naive	53	ge	38548990	single-cell
+QTS000051	QTD000926	Natri_2024	Monocyte	CL_0000860	classical monocyte	naive	81	ge	38548990	single-cell
+QTS000051	QTD000927	Natri_2024	Monocyte-derived_macrophage	CL_0000235	macrophage	naive	105	ge	38548990	single-cell
+QTS000051	QTD000928	Natri_2024	NK	CL_0000623	NK cell	naive	55	ge	38548990	single-cell
+QTS000051	QTD000929	Natri_2024	Proliferating_-_Imm	NA	NA	naive	72	ge	38548990	single-cell
+QTS000051	QTD000930	Natri_2024	Secretory_-_SCGB1A1+_MUC5B+	CL_0002638	bronchioalveolar stem cell	naive	74	ge	38548990	single-cell
+QTS000051	QTD000931	Natri_2024	Secretory_-_SCGB1A1+_SCGB3A2+	CL_0002638	bronchioalveolar stem cell	naive	74	ge	38548990	single-cell
+QTS000051	QTD000932	Natri_2024	Secretory_-_SCGB3A2+	CL_0002638	bronchioalveolar stem cell	naive	64	ge	38548990	single-cell
+QTS000051	QTD000933	Natri_2024	Systemic_venous	CL_0002543	vein endothelial cell	naive	58	ge	38548990	single-cell
+QTS000051	QTD000934	Natri_2024	Venule	CL_1000414	venule endothelial cell	naive	72	ge	38548990	single-cell
+QTS000051	QTD000935	Natri_2024	aCap	CL_4028003	alveolar capillary type 2 endothelial cell	naive	57	ge	38548990	single-cell
+QTS000051	QTD000936	Natri_2024	cDC2	CL_0000990	conventional dendritic cell	naive	71	ge	38548990	single-cell
+QTS000051	QTD000937	Natri_2024	moDC	CL_0011031	monocyte-derived dendritic cell	naive	78	ge	38548990	single-cell
+QTS000052	QTD000938	Natri_2024_reannotated	ATII	CL_0002063	alveolar type 2 cell	naive	77	ge	38548990	single-cell
+QTS000052	QTD000939	Natri_2024_reannotated	Ciliated	CL_0000067	ciliated epithelial cell	naive	76	ge	38548990	single-cell
+QTS000052	QTD000940	Natri_2024_reannotated	Club	CL_0000158	club cell	naive	72	ge	38548990	single-cell
+QTS000052	QTD000941	Natri_2024_reannotated	Goblet	CL_0000160	goblet cell	naive	65	ge	38548990	single-cell
+QTS000052	QTD000942	Natri_2024_reannotated	Macrophage	CL_0000235	macrophage	naive	90	ge	38548990	single-cell
+QTS000052	QTD000943	Natri_2024_reannotated	Macrophage_Alveolar	CL_0000583	alveolar macrophage	naive	69	ge	38548990	single-cell
+QTS000052	QTD000944	Natri_2024_reannotated	NK	CL_0000623	NK cell	naive	54	ge	38548990	single-cell
+QTS000052	QTD000945	Natri_2024_reannotated	T_CD4	CL_0000624	T cell	naive	52	ge	38548990	single-cell
+QTS000052	QTD000946	Natri_2024_reannotated	T_Cytotoxic	CL_0000625	T cell	naive	62	ge	38548990	single-cell
+QTS000052	QTD000947	Natri_2024_reannotated	VE_Arterial	CL_1000412	arteriole endothelial cell	naive	51	ge	38548990	single-cell
+QTS000052	QTD000948	Natri_2024_reannotated	VE_Capillary_B	CL_4028002	alveolar capillary type 1 endothelial cell	naive	62	ge	38548990	single-cell
+QTS000052	QTD000949	Natri_2024_reannotated	cDC2	CL_0000990	conventional dendritic cell	naive	75	ge	38548990	single-cell
+QTS000052	QTD000950	Natri_2024_reannotated	cMonocyte	CL_0000860	classical monocyte	naive	85	ge	38548990	single-cell
