@@ -1,5 +1,5 @@
 library("dplyr")
-makeDatasetMetadata <- function(study_label, sample_groups, quant_methods = c("ge","exon","tx","txrev","leafcutter"), study_index_start, dataset_index_start){
+makeDatasetMetadata <- function(study_label, sample_groups, quant_methods = c("ge","exon","tx","txrev","leafcutter", "majiq"), study_index_start, dataset_index_start){
   
   quant_methods = dplyr::tibble(quant_method = quant_methods)
   
@@ -61,6 +61,11 @@ interval_meta = dplyr::bind_rows(interval_rna, interval_rna_wgs) %>%
                    condition_label = "naive", sample_size = NA, quant_method, pmid = "40038547", study_type = "bulk")
 write.table(interval_meta, "~/Downloads/interval_meta.tsv", sep = "\t", row.names = F, quote = F)
 
-
+#AFR_LCL
+afr_lcl = makeDatasetMetadata("AFR_LCL", "LCL", study_index_start = 55, dataset_index_start = 1006)
+afr_lcl_meta = afr_lcl %>%
+  dplyr::transmute(study_id, dataset_id, study_label, sample_group, tissue_id = "EFO_0005292", tissue_label = "LCL",
+                   condition_label = "naive", sample_size = NA, quant_method, pmid = "NA", study_type = "bulk")
+write.table(afr_lcl_meta, "~/Downloads/afr_lcl_meta.tsv", sep = "\t", row.names = F, quote = F)
 
 
