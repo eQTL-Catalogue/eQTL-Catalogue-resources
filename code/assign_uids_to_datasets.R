@@ -53,4 +53,14 @@ gtex_majiq_meta = dplyr::left_join(gtex_majiq_dsids, tissue_meta, by = "sample_g
   dplyr::select(study_id, dataset_id, study_label, sample_group, tissue_id, tissue_label, condition_label, sample_size, quant_method, pmid, study_type)
 write.table(gtex_majiq_meta, "~/Downloads/gtex_meta.tsv", sep = "\t", row.names = F, quote = F)
 
+#Generate ids for INTERVAL RNA
+interval_rna = makeDatasetMetadata("INTERVAL_RNA", "blood", quant_methods = c("ge","leafcutter","majiq"), 53, 1000)
+interval_rna_wgs = makeDatasetMetadata("INTERVAL_RNA_WGS", "blood", quant_methods = c("ge","leafcutter","majiq"), 54, 1003)
+interval_meta = dplyr::bind_rows(interval_rna, interval_rna_wgs) %>%
+  dplyr::transmute(study_id, dataset_id, study_label, sample_group, tissue_id = "UBERON_0000178", tissue_label = "blood",
+                   condition_label = "naive", sample_size = NA, quant_method, pmid = "40038547", study_type = "bulk")
+write.table(interval_meta, "~/Downloads/interval_meta.tsv", sep = "\t", row.names = F, quote = F)
+
+
+
 
