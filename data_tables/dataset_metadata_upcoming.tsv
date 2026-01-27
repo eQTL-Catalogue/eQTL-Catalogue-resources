@@ -1018,3 +1018,9 @@ QTS000056	QTD001016	DICE	TH17	CL_0000899	Th17 cell	naive	77	ge	35213211	single-c
 QTS000056	QTD001017	DICE	TH2	CL_0000546	Th2 cell	naive	77	ge	35213211	single-cell
 QTS000056	QTD001018	DICE	Treg_Mem	CL_0002678	Treg naive	naive	77	ge	35213211	single-cell
 QTS000056	QTD001019	DICE	Treg_Naive	CL_0002677	Treg memory	naive	77	ge	35213211	single-cell
+QTS000057	QTD001020	DICE_reannotated	Regulatory_T_cells	CL_0000815	regulatory T cell	naive	77	ge	35213211	single-cell
+QTS000057	QTD001021	DICE_reannotated	T_agonist_	CL_0000084	T cell	naive	75	ge	35213211	single-cell
+QTS000057	QTD001022	DICE_reannotated	Tcm_Naive_helper_T_cells	CL_0000904	CD4+ TCM cell	naive	77	ge	35213211	single-cell
+QTS000057	QTD001023	DICE_reannotated	Tem_Effector_helper_T_cells	CL_0000905	CD4+ TEM cell	naive	77	ge	35213211	single-cell
+QTS000057	QTD001024	DICE_reannotated	Tem_Trm_cytotoxic_T_cells	CL_0000913	CD8+ TEM cell	naive	70	ge	35213211	single-cell
+QTS000057	QTD001025	DICE_reannotated	Type_17_helper_T_cells	CL_0000899	Th17 cell	naive	77	ge	35213211	single-cell
