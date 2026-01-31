@@ -1,10 +1,10 @@
 # Files available from the FTP server
 
-* **QTD*.all.parquet** - Full nominal cis-QTL summary staistics for all tested molecular traits (available only for ge, microarray and aptamer quantification methods).
-* **QTD*.cc.parquet** - Nominal cis-QTL summary staistics for all molecular traits that permutation-based FDR < 1% and at least one fine mapped credible set detected by SuSiE. This is a filtered version of the **QTD*.all.parquet** file.
-* **QTD*.permuted.parquet** - Permutation p-values for all tested molecular traits.
-* **QTD*.credible_sets.parquet** - Fine mapped credible sets detected by SuSiE (purity filtered).
-* **QTD*.lbf_variable.parquet** - Fine mapped log Bayes factors from SuSiE for all conditinally distinct signals.
+* **QTD\*.all.parquet** - Full nominal cis-QTL summary staistics for all tested molecular traits (available only for ge, microarray and aptamer quantification methods).
+* **QTD\*.cc.parquet** - Nominal cis-QTL summary staistics for all molecular traits that permutation-based FDR < 1% and at least one fine mapped credible set detected by SuSiE. This is a filtered version of the **QTD*.all.parquet** file.
+* **QTD\*.permuted.parquet** - Permutation p-values for all tested molecular traits.
+* **QTD\*.credible_sets.parquet** - Fine mapped credible sets detected by SuSiE (purity filtered).
+* **QTD\*.lbf_variable.parquet** - Fine mapped log Bayes factors from SuSiE for all conditinally distinct signals.
 
 
 # Column names of the nominal cis-QTL summary statistics files (QTD*.all.parquet and QTD*.cc.parquet)
