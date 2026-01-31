@@ -820,14 +820,14 @@ QTS000045	QTD000818	OTAR2057_IBDverse	Platelet	CL_0000233	platelet	naive	83	ge	N
 QTS000045	QTD000819	OTAR2057_IBDverse	Tcell_GD_KLRG1+	CL_0000798	gamma-delta T cell	naive	100	ge	NA	single-cell
 QTS000045	QTD000820	OTAR2057_IBDverse	B_Cell_germinal_centre_plasmablast	CL_0000980	plasmablast	naive	135	ge	NA	single-cell
 QTS000045	QTD000821	OTAR2057_IBDverse	B_Cell_germinal_centre_plasmablast_proliferating	CL_0000980	plasmablast	naive	114	ge	NA	single-cell
-QTS000045	QTD000822	OTAR2057_IBDverse	CCL3_CCL4_CXCL9_10_Macrophages	CL_4052007	tissue-resident macrophage	naive	45	ge	NA	single-cell
+QTS000045	QTD000822	OTAR2057_IBDverse	CCL3_CCL4_CXCL9_10_Macrophages	CL_0000864	tissue-resident macrophage	naive	45	ge	NA	single-cell
 QTS000045	QTD000823	OTAR2057_IBDverse	CD4+_PASK	CL_0000624	CD4-positive, alpha-beta T cell	naive	286	ge	NA	single-cell
 QTS000045	QTD000824	OTAR2057_IBDverse	Tissue_CD4+_Treg	CL_0000792	CD4-positive, CD25-positive, alpha-beta regulatory T cell	naive	173	ge	NA	single-cell
 QTS000045	QTD000825	OTAR2057_IBDverse	CD4+_memory_CXCR6+	CL_0001204	CD4-positive, alpha-beta memory T cell, CD45RO-positive	naive	295	ge	NA	single-cell
 QTS000045	QTD000826	OTAR2057_IBDverse	CD8+_TRM_TGCR2+	CL_0001203	CD8-positive, alpha-beta memory T cell, CD45RO-positive	naive	339	ge	NA	single-cell
-QTS000045	QTD000827	OTAR2057_IBDverse	Macrophages_CD163+	CL_4052007	tissue-resident macrophage	naive	298	ge	NA	single-cell
-QTS000045	QTD000828	OTAR2057_IBDverse	Macrophages_CD163++	CL_4052007	tissue-resident macrophage	naive	218	ge	NA	single-cell
-QTS000045	QTD000829	OTAR2057_IBDverse	Macrophages_Proliferating	CL_4052007	tissue-resident macrophage	naive	125	ge	NA	single-cell
+QTS000045	QTD000827	OTAR2057_IBDverse	Macrophages_CD163+	CL_0000864	tissue-resident macrophage	naive	298	ge	NA	single-cell
+QTS000045	QTD000828	OTAR2057_IBDverse	Macrophages_CD163++	CL_0000864	tissue-resident macrophage	naive	218	ge	NA	single-cell
+QTS000045	QTD000829	OTAR2057_IBDverse	Macrophages_Proliferating	CL_0000864	tissue-resident macrophage	naive	125	ge	NA	single-cell
 QTS000045	QTD000830	OTAR2057_IBDverse	Memory_B_CD27Lo_	CL_0000787	memory B cell	naive	227	ge	NA	single-cell
 QTS000045	QTD000831	OTAR2057_IBDverse	Memory_B_PDE4D_TEX9	CL_0000790	memory B cell	naive	301	ge	NA	single-cell
 QTS000045	QTD000832	OTAR2057_IBDverse	Memory_B_PTPRJ	CL_0000789	memory B cell	naive	313	ge	NA	single-cell
