@@ -213,3 +213,9 @@ QTS000050	QTD000913	Cytoimmgen_reannotated	Tcm_Naive_helper_T_cells_STIM_5D	CL_0
 QTS000050	QTD000914	Cytoimmgen_reannotated	Tcm_Naive_helper_T_cells_UNS_16H	CL_0000904	CD4+ TCM cell	naive_16H	106	ge	35618845	single-cell
 QTS000050	QTD000915	Cytoimmgen_reannotated	Tem_Effector_helper_T_cells_STIM_16H	CL_0000905	CD4+ TEM cell	anti-CD3-CD28_16H	59	ge	35618845	single-cell
 QTS000050	QTD000916	Cytoimmgen_reannotated	Tem_Effector_helper_T_cells_UNS_16H	CL_0000905	CD4+ TEM cell	naive_16H	93	ge	35618845	single-cell
+QTS000053	QTD001000	INTERVAL_RNA	blood	UBERON_0000178	blood	naive	4729	ge	40038547	bulk
+QTS000053	QTD001001	INTERVAL_RNA	blood	UBERON_0000178	blood	naive	4729	leafcutter	40038547	bulk
+QTS000053	QTD001002	INTERVAL_RNA	blood	UBERON_0000178	blood	naive	4729	majiq	40038547	bulk
+QTS000054	QTD001003	INTERVAL_RNA_WGS	blood	UBERON_0000178	blood	naive	2892	ge	39053458	bulk
+QTS000054	QTD001004	INTERVAL_RNA_WGS	blood	UBERON_0000178	blood	naive	2892	leafcutter	39053458	bulk
+QTS000054	QTD001005	INTERVAL_RNA_WGS	blood	UBERON_0000178	blood	naive	2892	majiq	39053458	bulk
