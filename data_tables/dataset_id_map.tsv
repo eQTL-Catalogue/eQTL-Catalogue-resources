@@ -816,3 +816,7 @@ GTEx	thyroid	majiq	QTS000015	QTD000996
 GTEx	uterus	majiq	QTS000015	QTD000997
 GTEx	vagina	majiq	QTS000015	QTD000998
 GTEx	blood	majiq	QTS000015	QTD000999
+Alasoo_2018	macrophage_naive	majiq	QTS000001	QTD001026
+Alasoo_2018	macrophage_IFNg	majiq	QTS000001	QTD001027
+Alasoo_2018	macrophage_Salmonella	majiq	QTS000001	QTD001028
+Alasoo_2018	macrophage_IFNg+Salmonella	majiq	QTS000001	QTD001029

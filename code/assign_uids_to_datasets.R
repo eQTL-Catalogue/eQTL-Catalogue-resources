@@ -68,4 +68,38 @@ afr_lcl_meta = afr_lcl %>%
                    condition_label = "naive", sample_size = NA, quant_method, pmid = "NA", study_type = "bulk")
 write.table(afr_lcl_meta, "~/Downloads/afr_lcl_meta.tsv", sep = "\t", row.names = F, quote = F)
 
+#Alasoo_2018 majiq
+ds_meta = readr::read_tsv("~/projects/eQTL-Catalogue-resources/data_tables/dataset_metadata_r7.tsv")
+Alasoo_2018_tissues = dplyr::filter(ds_meta, study_label == "Alasoo_2018", quant_method == "ge")
 
+alasoo_2018 = makeDatasetMetadata("Alasoo_2018", Alasoo_2018_tissues$sample_group, quant_methods = c("majiq"), 1, 1026)
+write.table(alasoo_2018, "~/Downloads/new_dataset_id_map.tsv", sep = "\t", row.names = F, quote = F)
+
+tissue_meta = dplyr::select(Alasoo_2018_tissues, sample_group, tissue_id, tissue_label, condition_label, sample_size, pmid, study_type)
+
+alasoo_majiq_meta = dplyr::left_join(alasoo_2018, tissue_meta, by = "sample_group") %>%
+  dplyr::select(study_id, dataset_id, study_label, sample_group, tissue_id, tissue_label, condition_label, sample_size, quant_method, pmid, study_type)
+write.table(alasoo_majiq_meta, "~/Downloads/gtex_meta.tsv", sep = "\t", row.names = F, quote = F)
+
+#Nassiri_2025
+nassiri_sample_size = readr::read_tsv("../../SampleArcheology/studies/cleaned/Nassiri_2025.tsv") %>%
+  dplyr::filter(genotype_qc_passed, rna_qc_passed) %>%
+  dplyr::group_by(qtl_group) %>%
+  dplyr::summarise(sample_size = n())
+nassiri_conditions = readr::read_tsv("../ontology_mappings/condition_labels.tsv")
+friendly_names = readr::read_tsv("../ontology_mappings/friendly_names.tsv")
+
+nassiri_mappings = readr::read_tsv("../ontology_mappings/tissue_ontology_mapping.tsv") %>% 
+  dplyr::filter(study == "Nassiri_2025") %>%
+  dplyr::left_join(nassiri_sample_size) %>%
+  dplyr::left_join(nassiri_conditions) %>%
+  dplyr::left_join(friendly_names) %>%
+  dplyr::rename(sample_group = qtl_group) %>%
+  dplyr::rename(study_label = study) %>%
+  dplyr::rename(tissue_id = tissue_ontology_id)
+
+nassiri_dataset_ids = makeDatasetMetadata("Nassiri_2025", nassiri_mappings$sample_group, quant_methods = c("ge","exon","tx","txrev","leafcutter","majiq"), 58, 1030)
+nassiri_meta = dplyr::left_join(nassiri_dataset_ids, nassiri_mappings, by = c("study_label", "sample_group")) %>%
+  dplyr::transmute(study_id, dataset_id, study_label, sample_group, tissue_id, 
+                   tissue_label, condition_label, sample_size, quant_method, pmid = "41022800", study_type = "bulk")
+write.table(nassiri_meta, "~/Downloads/Nassiri_meta.tsv", sep = "\t", row.names = F, quote = F)

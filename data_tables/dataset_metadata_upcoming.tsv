@@ -429,3 +429,31 @@ QTS000057	QTD001022	DICE_reannotated	Tcm_Naive_helper_T_cells	CL_0000904	CD4+ TC
 QTS000057	QTD001023	DICE_reannotated	Tem_Effector_helper_T_cells	CL_0000905	CD4+ TEM cell	naive	77	ge	35213211	single-cell
 QTS000057	QTD001024	DICE_reannotated	Tem_Trm_cytotoxic_T_cells	CL_0000913	CD8+ TEM cell	naive	70	ge	35213211	single-cell
 QTS000057	QTD001025	DICE_reannotated	Type_17_helper_T_cells	CL_0000899	Th17 cell	naive	77	ge	35213211	single-cell
+QTS000001	QTD001026	Alasoo_2018	macrophage_naive	CL_0000235	macrophage	naive	84	majiq	29379200	bulk
+QTS000001	QTD001027	Alasoo_2018	macrophage_IFNg	CL_0000235	macrophage	IFNg_18h	84	majiq	29379200	bulk
+QTS000001	QTD001028	Alasoo_2018	macrophage_Salmonella	CL_0000235	macrophage	Salmonella_5h	84	majiq	29379200	bulk
+QTS000001	QTD001029	Alasoo_2018	macrophage_IFNg+Salmonella	CL_0000235	macrophage	IFNg_18h+Salmonella_5h	84	majiq	29379200	bulk
+QTS000058	QTD001030	Nassiri_2025	monocyte_naive	CL_0002057	monocyte	naive	177	ge	41022800	bulk
+QTS000058	QTD001031	Nassiri_2025	monocyte_naive	CL_0002057	monocyte	naive	177	exon	41022800	bulk
+QTS000058	QTD001032	Nassiri_2025	monocyte_naive	CL_0002057	monocyte	naive	177	tx	41022800	bulk
+QTS000058	QTD001033	Nassiri_2025	monocyte_naive	CL_0002057	monocyte	naive	177	txrev	41022800	bulk
+QTS000058	QTD001034	Nassiri_2025	monocyte_naive	CL_0002057	monocyte	naive	177	leafcutter	41022800	bulk
+QTS000058	QTD001035	Nassiri_2025	monocyte_naive	CL_0002057	monocyte	naive	177	majiq	41022800	bulk
+QTS000058	QTD001036	Nassiri_2025	monocyte_IFN	CL_0002057	monocyte	IFNg_24h	139	ge	41022800	bulk
+QTS000058	QTD001037	Nassiri_2025	monocyte_IFN	CL_0002057	monocyte	IFNg_24h	139	exon	41022800	bulk
+QTS000058	QTD001038	Nassiri_2025	monocyte_IFN	CL_0002057	monocyte	IFNg_24h	139	tx	41022800	bulk
+QTS000058	QTD001039	Nassiri_2025	monocyte_IFN	CL_0002057	monocyte	IFNg_24h	139	txrev	41022800	bulk
+QTS000058	QTD001040	Nassiri_2025	monocyte_IFN	CL_0002057	monocyte	IFNg_24h	139	leafcutter	41022800	bulk
+QTS000058	QTD001041	Nassiri_2025	monocyte_IFN	CL_0002057	monocyte	IFNg_24h	139	majiq	41022800	bulk
+QTS000058	QTD001042	Nassiri_2025	monocyte_LPS24	CL_0002057	monocyte	LPS_24h	176	ge	41022800	bulk
+QTS000058	QTD001043	Nassiri_2025	monocyte_LPS24	CL_0002057	monocyte	LPS_24h	176	exon	41022800	bulk
+QTS000058	QTD001044	Nassiri_2025	monocyte_LPS24	CL_0002057	monocyte	LPS_24h	176	tx	41022800	bulk
+QTS000058	QTD001045	Nassiri_2025	monocyte_LPS24	CL_0002057	monocyte	LPS_24h	176	txrev	41022800	bulk
+QTS000058	QTD001046	Nassiri_2025	monocyte_LPS24	CL_0002057	monocyte	LPS_24h	176	leafcutter	41022800	bulk
+QTS000058	QTD001047	Nassiri_2025	monocyte_LPS24	CL_0002057	monocyte	LPS_24h	176	majiq	41022800	bulk
+QTS000058	QTD001048	Nassiri_2025	monocyte_MET1m	CL_0002057	monocyte	MET1m_24h	98	ge	41022800	bulk
+QTS000058	QTD001049	Nassiri_2025	monocyte_MET1m	CL_0002057	monocyte	MET1m_24h	98	exon	41022800	bulk
+QTS000058	QTD001050	Nassiri_2025	monocyte_MET1m	CL_0002057	monocyte	MET1m_24h	98	tx	41022800	bulk
+QTS000058	QTD001051	Nassiri_2025	monocyte_MET1m	CL_0002057	monocyte	MET1m_24h	98	txrev	41022800	bulk
+QTS000058	QTD001052	Nassiri_2025	monocyte_MET1m	CL_0002057	monocyte	MET1m_24h	98	leafcutter	41022800	bulk
+QTS000058	QTD001053	Nassiri_2025	monocyte_MET1m	CL_0002057	monocyte	MET1m_24h	98	majiq	41022800	bulk

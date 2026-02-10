@@ -144,3 +144,7 @@ Kim-Hellmuth_2017	monocyte_LPS_6h	LPS_6h
 Kim-Hellmuth_2017	monocyte_LPS_90min	LPS_90min
 Kim-Hellmuth_2017	monocyte_MDP_6h	MDP_6h
 Kim-Hellmuth_2017	monocyte_MDP_90min	MDP_90min
+Nassiri_2025	monocyte_naive	naive
+Nassiri_2025	monocyte_IFN	IFNg_24h
+Nassiri_2025	monocyte_LPS24	LPS_24h
+Nassiri_2025	monocyte_MET1m	MET1m_24h
