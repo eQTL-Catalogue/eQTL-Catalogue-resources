@@ -103,3 +103,32 @@ nassiri_meta = dplyr::left_join(nassiri_dataset_ids, nassiri_mappings, by = c("s
   dplyr::transmute(study_id, dataset_id, study_label, sample_group, tissue_id, 
                    tissue_label, condition_label, sample_size, quant_method, pmid = "41022800", study_type = "bulk")
 write.table(nassiri_meta, "~/Downloads/Nassiri_meta.tsv", sep = "\t", row.names = F, quote = F)
+
+
+#### MacroMap ####
+#Import sample metadata
+macromap_meta = readr::read_tsv("../SampleArcheology/studies/cleaned/MacroMap.tsv")
+macromap_sample_size = macromap_meta %>%
+  dplyr::filter(genotype_qc_passed, rna_qc_passed) %>%
+  dplyr::group_by(qtl_group) %>%
+  dplyr::summarise(sample_size = n())
+conditions = readr::read_tsv("ontology_mappings/condition_labels.tsv")
+friendly_names = readr::read_tsv("ontology_mappings/friendly_names.tsv")
+
+macropmap_mappings = readr::read_tsv("ontology_mappings/tissue_ontology_mapping.tsv") %>% 
+  dplyr::filter(study == "MacroMap") %>%
+  dplyr::left_join(macromap_sample_size) %>%
+  dplyr::left_join(conditions) %>%
+  dplyr::left_join(friendly_names) %>%
+  dplyr::rename(sample_group = qtl_group) %>%
+  dplyr::rename(study_label = study) %>%
+  dplyr::rename(tissue_id = tissue_ontology_id)
+
+macromap_dataset_ids = makeDatasetMetadata("MacroMap", macromap_sample_size$qtl_group, quant_methods = c("ge","exon","tx","txrev","leafcutter","majiq"), 59, 1055)
+write.table(macromap_dataset_ids, "~/Downloads/MacroMap_ids.tsv", sep = "\t", row.names = F, quote = F)
+
+macromap_ds_meta = dplyr::left_join(macromap_dataset_ids, macropmap_mappings, by = c("study_label", "sample_group")) %>%
+  dplyr::transmute(study_id, dataset_id, study_label, sample_group, tissue_id, 
+                   tissue_label, condition_label, sample_size, quant_method, pmid = "40866338", study_type = "bulk")
+write.table(macromap_ds_meta, "~/Downloads/MacroMap_meta.tsv", sep = "\t", row.names = F, quote = F)
+

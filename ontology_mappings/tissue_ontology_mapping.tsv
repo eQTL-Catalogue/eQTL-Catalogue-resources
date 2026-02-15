@@ -330,3 +330,27 @@ Nassiri_2025	monocyte	monocyte_naive	CL_0002057	"CD14-positive, CD16-negative cl
 Nassiri_2025	monocyte	monocyte_IFN	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
 Nassiri_2025	monocyte	monocyte_LPS24	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
 Nassiri_2025	monocyte	monocyte_MET1m	CL_0002057	"CD14-positive, CD16-negative classical monocyte"
+MacroMap	macrophage	CIL_24	CL_0000235	macrophage
+MacroMap	macrophage	CIL_6	CL_0000235	macrophage
+MacroMap	macrophage	Ctrl_24	CL_0000235	macrophage
+MacroMap	macrophage	Ctrl_6	CL_0000235	macrophage
+MacroMap	macrophage	IFNB_24	CL_0000235	macrophage
+MacroMap	macrophage	IFNB_6	CL_0000235	macrophage
+MacroMap	macrophage	IFNG_24	CL_0000235	macrophage
+MacroMap	macrophage	IFNG_6	CL_0000235	macrophage
+MacroMap	macrophage	IL4_24	CL_0000235	macrophage
+MacroMap	macrophage	IL4_6	CL_0000235	macrophage
+MacroMap	macrophage	LIL10_24	CL_0000235	macrophage
+MacroMap	macrophage	LIL10_6	CL_0000235	macrophage
+MacroMap	macrophage	MBP_24	CL_0000235	macrophage
+MacroMap	macrophage	MBP_6	CL_0000235	macrophage
+MacroMap	macrophage	P3C_24	CL_0000235	macrophage
+MacroMap	macrophage	P3C_6	CL_0000235	macrophage
+MacroMap	macrophage	PIC_24	CL_0000235	macrophage
+MacroMap	macrophage	PIC_6	CL_0000235	macrophage
+MacroMap	macrophage	Prec_D0	CL_0000235	macrophage
+MacroMap	macrophage	Prec_D2	CL_0000235	macrophage
+MacroMap	macrophage	R848_24	CL_0000235	macrophage
+MacroMap	macrophage	R848_6	CL_0000235	macrophage
+MacroMap	macrophage	sLPS_24	CL_0000235	macrophage
+MacroMap	macrophage	sLPS_6	CL_0000235	macrophage
