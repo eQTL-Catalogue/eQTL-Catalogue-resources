@@ -132,3 +132,18 @@ macromap_ds_meta = dplyr::left_join(macromap_dataset_ids, macropmap_mappings, by
                    tissue_label, condition_label, sample_size, quant_method, pmid = "40866338", study_type = "bulk")
 write.table(macromap_ds_meta, "~/Downloads/MacroMap_meta.tsv", sep = "\t", row.names = F, quote = F)
 
+
+#Add MAJIQ ids for Schmiedel_2018
+#Add MAJIQ ids for GTEx
+ds_meta = readr::read_tsv("~/projects/eQTL-Catalogue-resources/data_tables/dataset_metadata_r7.tsv")
+gtex_tissues = dplyr::filter(ds_meta, study_label == "Schmiedel_2018", quant_method == "ge")
+
+gtex_majiq_dsids = makeDatasetMetadata("Schmiedel_2018", gtex_tissues$sample_group, quant_methods = c("majiq"), 26, 1200)
+write.table(gtex_majiq_dsids, "~/Downloads/new_dataset_id_map.tsv", sep = "\t", row.names = F, quote = F)
+
+tissue_meta = dplyr::select(gtex_tissues, sample_group, tissue_id, tissue_label, condition_label, sample_size, pmid, study_type)
+
+gtex_majiq_meta = dplyr::left_join(gtex_majiq_dsids, tissue_meta, by = "sample_group") %>%
+  dplyr::select(study_id, dataset_id, study_label, sample_group, tissue_id, tissue_label, condition_label, sample_size, quant_method, pmid, study_type)
+write.table(gtex_majiq_meta, "~/Downloads/new_meta.tsv", sep = "\t", row.names = F, quote = F)
+

@@ -602,3 +602,20 @@ QTS000059	QTD001195	MacroMap	sLPS_6	CL_0000235	macrophage	LPS_6h	188	tx	40866338
 QTS000059	QTD001196	MacroMap	sLPS_6	CL_0000235	macrophage	LPS_6h	188	txrev	40866338	bulk
 QTS000059	QTD001197	MacroMap	sLPS_6	CL_0000235	macrophage	LPS_6h	188	leafcutter	40866338	bulk
 QTS000059	QTD001198	MacroMap	sLPS_6	CL_0000235	macrophage	LPS_6h	188	majiq	40866338	bulk
+QTS000013	QTD001199	GEUVADIS	LCL	EFO_0005292	LCL	naive	445	majiq	24037378	bulk
+QTS000026	QTD001200	Schmiedel_2018	Tfh_memory	CL_0002038	Tfh cell	naive	89	majiq	30449622	bulk
+QTS000026	QTD001201	Schmiedel_2018	Th17_memory	CL_0000899	Th17 cell	naive	89	majiq	30449622	bulk
+QTS000026	QTD001202	Schmiedel_2018	Th1_memory	CL_0000545	Th1 cell	naive	82	majiq	30449622	bulk
+QTS000026	QTD001203	Schmiedel_2018	Th2_memory	CL_0000546	Th2 cell	naive	89	majiq	30449622	bulk
+QTS000026	QTD001204	Schmiedel_2018	Th1-17_memory	CL_0000899	Th17 cell	naive	88	majiq	30449622	bulk
+QTS000026	QTD001205	Schmiedel_2018	Treg_memory	CL_0002678	Treg naive	naive	89	majiq	30449622	bulk
+QTS000026	QTD001206	Schmiedel_2018	Treg_naive	CL_0002677	Treg memory	naive	89	majiq	30449622	bulk
+QTS000026	QTD001207	Schmiedel_2018	B-cell_naive	CL_0000236	B cell	naive	91	majiq	30449622	bulk
+QTS000026	QTD001208	Schmiedel_2018	CD4_T-cell_naive	CL_0000624	CD4+ T cell	naive	88	majiq	30449622	bulk
+QTS000026	QTD001209	Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	CL_0000624	CD4+ T cell	anti-CD3-CD28_4h	89	majiq	30449622	bulk
+QTS000026	QTD001210	Schmiedel_2018	CD8_T-cell_naive	CL_0000625	CD8+ T cell	naive	89	majiq	30449622	bulk
+QTS000026	QTD001211	Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	CL_0000625	CD8+ T cell	anti-CD3-CD28_4h	88	majiq	30449622	bulk
+QTS000026	QTD001212	Schmiedel_2018	monocyte_CD16_naive	CL_0002396	CD16+ monocyte	naive	90	majiq	30449622	bulk
+QTS000026	QTD001213	Schmiedel_2018	monocyte_naive	CL_0002057	monocyte	naive	91	majiq	30449622	bulk
+QTS000026	QTD001214	Schmiedel_2018	NK-cell_naive	CL_0000623	NK cell	naive	90	majiq	30449622	bulk
+
