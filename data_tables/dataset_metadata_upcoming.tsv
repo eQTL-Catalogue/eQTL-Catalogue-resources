@@ -618,4 +618,8 @@ QTS000026	QTD001211	Schmiedel_2018	CD8_T-cell_anti-CD3-CD28	CL_0000625	CD8+ T ce
 QTS000026	QTD001212	Schmiedel_2018	monocyte_CD16_naive	CL_0002396	CD16+ monocyte	naive	90	majiq	30449622	bulk
 QTS000026	QTD001213	Schmiedel_2018	monocyte_naive	CL_0002057	monocyte	naive	91	majiq	30449622	bulk
 QTS000026	QTD001214	Schmiedel_2018	NK-cell_naive	CL_0000623	NK cell	naive	90	majiq	30449622	bulk
-
+QTS000024	QTD001215	Quach_2016	monocyte_naive	CL_0002057	monocyte	naive	200	majiq	27768888	bulk
+QTS000024	QTD001216	Quach_2016	monocyte_LPS	CL_0002057	monocyte	LPS_6h	184	majiq	27768888	bulk
+QTS000024	QTD001217	Quach_2016	monocyte_Pam3CSK4	CL_0002057	monocyte	Pam3CSK4_6h	196	majiq	27768888	bulk
+QTS000024	QTD001218	Quach_2016	monocyte_R848	CL_0002057	monocyte	R848_6h	191	majiq	27768888	bulk
+QTS000024	QTD001219	Quach_2016	monocyte_IAV	CL_0002057	monocyte	Influenza_6h	198	majiq	27768888	bulk
