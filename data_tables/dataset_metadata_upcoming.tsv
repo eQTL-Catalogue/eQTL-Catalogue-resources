@@ -623,3 +623,42 @@ QTS000024	QTD001216	Quach_2016	monocyte_LPS	CL_0002057	monocyte	LPS_6h	184	majiq
 QTS000024	QTD001217	Quach_2016	monocyte_Pam3CSK4	CL_0002057	monocyte	Pam3CSK4_6h	196	majiq	27768888	bulk
 QTS000024	QTD001218	Quach_2016	monocyte_R848	CL_0002057	monocyte	R848_6h	191	majiq	27768888	bulk
 QTS000024	QTD001219	Quach_2016	monocyte_IAV	CL_0002057	monocyte	Influenza_6h	198	majiq	27768888	bulk
+QTS000002	QTD001220	BLUEPRINT	monocyte	CL_0002057	monocyte	naive	191	majiq	27863251	bulk
+QTS000002	QTD001221	BLUEPRINT	neutrophil	CL_0000775	neutrophil	naive	196	majiq	27863251	bulk
+QTS000002	QTD001222	BLUEPRINT	T-cell	CL_0000624	CD4+ T cell	naive	167	majiq	27863251	bulk
+QTS000003	QTD001223	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg memory	naive	119	majiq	35591976	bulk
+QTS000004	QTD001224	Braineac2	putamen	UBERON_0001874	brain (putamen)	naive	102	majiq	32098967	bulk
+QTS000004	QTD001225	Braineac2	substantia_nigra	UBERON_0002038	brain (substantia nigra)	naive	65	majiq	32098967	bulk
+QTS000005	QTD001226	BrainSeq	brain	UBERON_0009834	brain (DLPFC)	naive	479	majiq	30050107	bulk
+QTS000006	QTD001227	CAP	LCL_naive	EFO_0005292	LCL	naive	148	majiq	32787775	bulk
+QTS000006	QTD001228	CAP	LCL_statin	EFO_0005292	LCL	statin	148	majiq	32787775	bulk
+QTS000008	QTD001229	CommonMind	DLPFC_naive	UBERON_0009834	brain (DLPFC)	naive	586	majiq	31551426	bulk
+QTS000011	QTD001230	FUSION	muscle_naive	UBERON_0001134	muscle	naive	288	majiq	31076557	bulk
+QTS000011	QTD001231	FUSION	adipose_naive	UBERON_0001013	adipose	naive	271	majiq	31076557	bulk
+QTS000012	QTD001232	GENCORD	LCL	EFO_0005292	LCL	naive	190	majiq	23755361	bulk
+QTS000012	QTD001233	GENCORD	fibroblast	CL_0000057	fibroblast	naive	186	majiq	23755361	bulk
+QTS000012	QTD001234	GENCORD	T-cell	CL_0000084	T cell	naive	184	majiq	23755361	bulk
+QTS000016	QTD001235	HipSci	iPSC	EFO_0004905	iPSC	naive	322	majiq	28489815	bulk
+QTS000017	QTD001236	iPSCORE	iPSC	EFO_0004905	iPSC	naive	101	majiq	28410642	bulk
+QTS000019	QTD001237	Lepik_2017	blood	UBERON_0000178	blood	naive	471	majiq	28922377	bulk
+QTS000021	QTD001238	Nedelec_2016	macrophage_Listeria	CL_0000235	macrophage	Listeria_5h	163	majiq	27768889	bulk
+QTS000021	QTD001239	Nedelec_2016	macrophage_naive	CL_0000235	macrophage	naive	163	majiq	27768889	bulk
+QTS000021	QTD001240	Nedelec_2016	macrophage_Salmonella	CL_0000235	macrophage	Salmonella_5h	167	majiq	27768889	bulk
+QTS000022	QTD001241	Peng_2018	placenta_naive	UBERON_0001987	placenta	naive	149	majiq	30596636	bulk
+QTS000023	QTD001242	PhLiPS	iPSC	EFO_0004905	iPSC	naive	83	majiq	28388432	bulk
+QTS000023	QTD001243	PhLiPS	HLC	CL_0000182	hepatocyte	naive	79	majiq	28388432	bulk
+QTS000025	QTD001244	ROSMAP	brain_naive	UBERON_0009834	brain (DLPFC)	naive	560	majiq	28869584	bulk
+QTS000027	QTD001245	Schwartzentruber_2018	sensory_neuron	CL_0000101	sensory neuron	naive	98	majiq	29229984	bulk
+QTS000028	QTD001246	Steinberg_2020	synovium_naive	UBERON_0007616	synovium	naive	72	majiq	33637762	bulk
+QTS000028	QTD001247	Steinberg_2020	low_grade_cartilage_naive	UBERON_0002418	cartilage	naive	69	majiq	33637762	bulk
+QTS000028	QTD001248	Steinberg_2020	high_grade_cartilage_naive	UBERON_0002418	cartilage	naive	69	majiq	33637762	bulk
+QTS000029	QTD001249	TwinsUK	fat	UBERON_0001013	adipose	naive	381	majiq	25436857	bulk
+QTS000029	QTD001250	TwinsUK	LCL	EFO_0005292	LCL	naive	418	majiq	25436857	bulk
+QTS000029	QTD001251	TwinsUK	skin	UBERON_0002097	skin	naive	370	majiq	25436857	bulk
+QTS000029	QTD001252	TwinsUK	blood	UBERON_0000178	blood	naive	195	majiq	25436857	bulk
+QTS000030	QTD001253	van_de_Bunt_2015	pancreatic_islet	UBERON_0000006	pancreatic islet	naive	117	majiq	26624892	bulk
+QTS000031	QTD001254	Young_2019	microglia_naive	CL_0000129	microglia	naive	104	majiq	34083789	bulk
+QTS000032	QTD001255	Aygun_2021	Progenitor	CL_0011020	neural progenitor	naive	85	majiq	34416157	bulk
+QTS000032	QTD001256	Aygun_2021	Neuron	CL_0000540	neuron	naive	73	majiq	34416157	bulk
+QTS000033	QTD001257	PISA	pancreatic_islet	UBERON_0000006	pancreatic islet	naive	127	majiq	33264613	bulk
+QTS000034	QTD001258	Walker_2019	Neocortex	UBERON_0001950	neocortex	naive	211	majiq	31626773	bulk

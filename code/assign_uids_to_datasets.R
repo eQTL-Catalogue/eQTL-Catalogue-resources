@@ -147,3 +147,24 @@ gtex_majiq_meta = dplyr::left_join(gtex_majiq_dsids, tissue_meta, by = "sample_g
   dplyr::select(study_id, dataset_id, study_label, sample_group, tissue_id, tissue_label, condition_label, sample_size, quant_method, pmid, study_type)
 write.table(gtex_majiq_meta, "~/Downloads/new_meta.tsv", sep = "\t", row.names = F, quote = F)
 
+
+
+#Add MAJIQ ids to all other RNA-seq datasets
+ds_meta_r7 = readr::read_tsv("~/projects/eQTL-Catalogue-resources/data_tables/dataset_metadata_r7.tsv")
+ds_meta_upcoming = readr::read_tsv("~/projects/eQTL-Catalogue-resources/data_tables/dataset_metadata_upcoming.tsv")
+
+#Quant methods with ge
+ge_datasets = dplyr::filter(ds_meta_r7, quant_method == "ge", study_type == "bulk")
+
+#Existing majiq studies
+majiq_studies = ds_meta_upcoming %>% dplyr::select(study_id, quant_method) %>% dplyr::filter(quant_method == "majiq") %>% dplyr::distinct()
+
+#missing majiq
+no_majq_datasets = dplyr::anti_join(ge_datasets, majiq_studies, by = "study_id")
+
+#Make new dataset ids
+dataset_ids = makeDatasetMetadata("AAAA", no_majq_datasets$sample_group, quant_methods = "majiq", 
+                                  study_index_start = 1, dataset_index_start = 1220)
+
+new_majiq_datasets = dplyr::mutate(no_majq_datasets, dataset_id = dataset_ids$dataset_id, quant_method = "majiq")
+write.table(new_majiq_datasets, "~/Downloads/new_meta.tsv", sep = "\t", row.names = F, quote = F)
