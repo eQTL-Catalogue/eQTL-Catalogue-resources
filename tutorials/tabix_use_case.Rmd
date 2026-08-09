@@ -184,7 +184,11 @@ summary_list = purrr::map(ftp_path_list, ~safe_import(., region, selected_gene_i
 
 #Extract successful results
 result_list = purrr::map(summary_list, ~.$result)
-result_list = result_list[!unlist(purrr::map(result_list, is.null))]
+
+tissue_noDATA = function(df) {
+  is.data.frame(df) && nrow(df) == 0
+} 
+result_list = result_list[!unlist(purrr::map(result_list, ~tissue_noDATA(.)))]
 
 #Download failed
 message("Download failed for: ")
@@ -214,7 +218,11 @@ summary_list = purrr::map(ftp_path_list, ~safe_import(., region, selected_gene_i
 
 #Extract successful results
 result_list = purrr::map(summary_list, ~.$result)
-result_list = result_list[!unlist(purrr::map(result_list, is.null))]
+
+tissue_noDATA = function(df) {
+  is.data.frame(df) && nrow(df) == 0
+} 
+result_list = result_list[!unlist(purrr::map(result_list, ~tissue_noDATA(.)))]
 
 #Download failed
 message("Download failed for: ")
