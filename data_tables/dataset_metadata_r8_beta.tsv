@@ -1,4 +1,298 @@
 study_id	dataset_id	study_label	sample_group	tissue_id	tissue_label	condition_label	sample_size	quant_method	pmid	study_type
+QTS000015	QTD000116	GTEx_v10	adipose_subcutaneous	UBERON_0001013	adipose	naive	749	ge	32913098	bulk
+QTS000015	QTD000117	GTEx_v10	adipose_subcutaneous	UBERON_0001013	adipose	naive	749	exon	32913098	bulk
+QTS000015	QTD000118	GTEx_v10	adipose_subcutaneous	UBERON_0001013	adipose	naive	749	tx	32913098	bulk
+QTS000015	QTD000119	GTEx_v10	adipose_subcutaneous	UBERON_0001013	adipose	naive	749	txrev	32913098	bulk
+QTS000015	QTD000120	GTEx_v10	adipose_subcutaneous	UBERON_0001013	adipose	naive	749	leafcutter	32913098	bulk
+QTS000015	QTD000121	GTEx_v10	adipose_visceral	UBERON_0010414	adipose (visceral)	naive	606	ge	32913098	bulk
+QTS000015	QTD000122	GTEx_v10	adipose_visceral	UBERON_0010414	adipose (visceral)	naive	606	exon	32913098	bulk
+QTS000015	QTD000123	GTEx_v10	adipose_visceral	UBERON_0010414	adipose (visceral)	naive	606	tx	32913098	bulk
+QTS000015	QTD000124	GTEx_v10	adipose_visceral	UBERON_0010414	adipose (visceral)	naive	606	txrev	32913098	bulk
+QTS000015	QTD000125	GTEx_v10	adipose_visceral	UBERON_0010414	adipose (visceral)	naive	606	leafcutter	32913098	bulk
+QTS000015	QTD000126	GTEx_v10	adrenal_gland	UBERON_0002369	adrenal gland	naive	305	ge	32913098	bulk
+QTS000015	QTD000127	GTEx_v10	adrenal_gland	UBERON_0002369	adrenal gland	naive	305	exon	32913098	bulk
+QTS000015	QTD000128	GTEx_v10	adrenal_gland	UBERON_0002369	adrenal gland	naive	305	tx	32913098	bulk
+QTS000015	QTD000129	GTEx_v10	adrenal_gland	UBERON_0002369	adrenal gland	naive	305	txrev	32913098	bulk
+QTS000015	QTD000130	GTEx_v10	adrenal_gland	UBERON_0002369	adrenal gland	naive	305	leafcutter	32913098	bulk
+QTS000015	QTD000131	GTEx_v10	artery_aorta	UBERON_0001496	artery (aorta)	naive	492	ge	32913098	bulk
+QTS000015	QTD000132	GTEx_v10	artery_aorta	UBERON_0001496	artery (aorta)	naive	492	exon	32913098	bulk
+QTS000015	QTD000133	GTEx_v10	artery_aorta	UBERON_0001496	artery (aorta)	naive	492	tx	32913098	bulk
+QTS000015	QTD000134	GTEx_v10	artery_aorta	UBERON_0001496	artery (aorta)	naive	492	txrev	32913098	bulk
+QTS000015	QTD000135	GTEx_v10	artery_aorta	UBERON_0001496	artery (aorta)	naive	492	leafcutter	32913098	bulk
+QTS000015	QTD000136	GTEx_v10	artery_coronary	UBERON_0001621	artery (coronary)	naive	279	ge	32913098	bulk
+QTS000015	QTD000137	GTEx_v10	artery_coronary	UBERON_0001621	artery (coronary)	naive	279	exon	32913098	bulk
+QTS000015	QTD000138	GTEx_v10	artery_coronary	UBERON_0001621	artery (coronary)	naive	279	tx	32913098	bulk
+QTS000015	QTD000139	GTEx_v10	artery_coronary	UBERON_0001621	artery (coronary)	naive	279	txrev	32913098	bulk
+QTS000015	QTD000140	GTEx_v10	artery_coronary	UBERON_0001621	artery (coronary)	naive	279	leafcutter	32913098	bulk
+QTS000015	QTD000141	GTEx_v10	artery_tibial	UBERON_0007610	artery (tibial)	naive	736	ge	32913098	bulk
+QTS000015	QTD000142	GTEx_v10	artery_tibial	UBERON_0007610	artery (tibial)	naive	736	exon	32913098	bulk
+QTS000015	QTD000143	GTEx_v10	artery_tibial	UBERON_0007610	artery (tibial)	naive	736	tx	32913098	bulk
+QTS000015	QTD000144	GTEx_v10	artery_tibial	UBERON_0007610	artery (tibial)	naive	736	txrev	32913098	bulk
+QTS000015	QTD000145	GTEx_v10	artery_tibial	UBERON_0007610	artery (tibial)	naive	736	leafcutter	32913098	bulk
+QTS000015	QTD000146	GTEx_v10	brain_amygdala	UBERON_0001876	brain (amygdala)	naive	202	ge	32913098	bulk
+QTS000015	QTD000147	GTEx_v10	brain_amygdala	UBERON_0001876	brain (amygdala)	naive	202	exon	32913098	bulk
+QTS000015	QTD000148	GTEx_v10	brain_amygdala	UBERON_0001876	brain (amygdala)	naive	202	tx	32913098	bulk
+QTS000015	QTD000149	GTEx_v10	brain_amygdala	UBERON_0001876	brain (amygdala)	naive	202	txrev	32913098	bulk
+QTS000015	QTD000150	GTEx_v10	brain_amygdala	UBERON_0001876	brain (amygdala)	naive	202	leafcutter	32913098	bulk
+QTS000015	QTD000151	GTEx_v10	brain_anterior_cingulate_cortex	UBERON_0009835	brain (anterior cingulate cortex)	naive	242	ge	32913098	bulk
+QTS000015	QTD000152	GTEx_v10	brain_anterior_cingulate_cortex	UBERON_0009835	brain (anterior cingulate cortex)	naive	242	exon	32913098	bulk
+QTS000015	QTD000153	GTEx_v10	brain_anterior_cingulate_cortex	UBERON_0009835	brain (anterior cingulate cortex)	naive	242	tx	32913098	bulk
+QTS000015	QTD000154	GTEx_v10	brain_anterior_cingulate_cortex	UBERON_0009835	brain (anterior cingulate cortex)	naive	242	txrev	32913098	bulk
+QTS000015	QTD000155	GTEx_v10	brain_anterior_cingulate_cortex	UBERON_0009835	brain (anterior cingulate cortex)	naive	242	leafcutter	32913098	bulk
+QTS000015	QTD000156	GTEx_v10	brain_caudate	UBERON_0001873	brain (caudate)	naive	315	ge	32913098	bulk
+QTS000015	QTD000157	GTEx_v10	brain_caudate	UBERON_0001873	brain (caudate)	naive	315	exon	32913098	bulk
+QTS000015	QTD000158	GTEx_v10	brain_caudate	UBERON_0001873	brain (caudate)	naive	315	tx	32913098	bulk
+QTS000015	QTD000159	GTEx_v10	brain_caudate	UBERON_0001873	brain (caudate)	naive	315	txrev	32913098	bulk
+QTS000015	QTD000160	GTEx_v10	brain_caudate	UBERON_0001873	brain (caudate)	naive	315	leafcutter	32913098	bulk
+QTS000015	QTD000161	GTEx_v10	brain_cerebellar_hemisphere	UBERON_0002037	brain (cerebellum)	naive	286	ge	32913098	bulk
+QTS000015	QTD000162	GTEx_v10	brain_cerebellar_hemisphere	UBERON_0002037	brain (cerebellum)	naive	286	exon	32913098	bulk
+QTS000015	QTD000163	GTEx_v10	brain_cerebellar_hemisphere	UBERON_0002037	brain (cerebellum)	naive	286	tx	32913098	bulk
+QTS000015	QTD000164	GTEx_v10	brain_cerebellar_hemisphere	UBERON_0002037	brain (cerebellum)	naive	286	txrev	32913098	bulk
+QTS000015	QTD000165	GTEx_v10	brain_cerebellar_hemisphere	UBERON_0002037	brain (cerebellum)	naive	286	leafcutter	32913098	bulk
+QTS000015	QTD000166	GTEx_v10	brain_cerebellum	UBERON_0002037	brain (cerebellum)	naive	272	ge	32913098	bulk
+QTS000015	QTD000167	GTEx_v10	brain_cerebellum	UBERON_0002037	brain (cerebellum)	naive	272	exon	32913098	bulk
+QTS000015	QTD000168	GTEx_v10	brain_cerebellum	UBERON_0002037	brain (cerebellum)	naive	272	tx	32913098	bulk
+QTS000015	QTD000169	GTEx_v10	brain_cerebellum	UBERON_0002037	brain (cerebellum)	naive	272	txrev	32913098	bulk
+QTS000015	QTD000170	GTEx_v10	brain_cerebellum	UBERON_0002037	brain (cerebellum)	naive	272	leafcutter	32913098	bulk
+QTS000015	QTD000171	GTEx_v10	brain_cortex	UBERON_0001870	brain (cortex)	naive	284	ge	32913098	bulk
+QTS000015	QTD000172	GTEx_v10	brain_cortex	UBERON_0001870	brain (cortex)	naive	284	exon	32913098	bulk
+QTS000015	QTD000173	GTEx_v10	brain_cortex	UBERON_0001870	brain (cortex)	naive	284	tx	32913098	bulk
+QTS000015	QTD000174	GTEx_v10	brain_cortex	UBERON_0001870	brain (cortex)	naive	284	txrev	32913098	bulk
+QTS000015	QTD000175	GTEx_v10	brain_cortex	UBERON_0001870	brain (cortex)	naive	284	leafcutter	32913098	bulk
+QTS000015	QTD000176	GTEx_v10	brain_frontal_cortex	UBERON_0009834	brain (DLPFC)	naive	285	ge	32913098	bulk
+QTS000015	QTD000177	GTEx_v10	brain_frontal_cortex	UBERON_0009834	brain (DLPFC)	naive	285	exon	32913098	bulk
+QTS000015	QTD000178	GTEx_v10	brain_frontal_cortex	UBERON_0009834	brain (DLPFC)	naive	285	tx	32913098	bulk
+QTS000015	QTD000179	GTEx_v10	brain_frontal_cortex	UBERON_0009834	brain (DLPFC)	naive	285	txrev	32913098	bulk
+QTS000015	QTD000180	GTEx_v10	brain_frontal_cortex	UBERON_0009834	brain (DLPFC)	naive	285	leafcutter	32913098	bulk
+QTS000015	QTD000181	GTEx_v10	brain_hippocampus	UBERON_0001954	brain (hippocampus)	naive	272	ge	32913098	bulk
+QTS000015	QTD000182	GTEx_v10	brain_hippocampus	UBERON_0001954	brain (hippocampus)	naive	272	exon	32913098	bulk
+QTS000015	QTD000183	GTEx_v10	brain_hippocampus	UBERON_0001954	brain (hippocampus)	naive	272	tx	32913098	bulk
+QTS000015	QTD000184	GTEx_v10	brain_hippocampus	UBERON_0001954	brain (hippocampus)	naive	272	txrev	32913098	bulk
+QTS000015	QTD000185	GTEx_v10	brain_hippocampus	UBERON_0001954	brain (hippocampus)	naive	272	leafcutter	32913098	bulk
+QTS000015	QTD000186	GTEx_v10	brain_hypothalamus	UBERON_0001898	brain (hypothalamus)	naive	276	ge	32913098	bulk
+QTS000015	QTD000187	GTEx_v10	brain_hypothalamus	UBERON_0001898	brain (hypothalamus)	naive	276	exon	32913098	bulk
+QTS000015	QTD000188	GTEx_v10	brain_hypothalamus	UBERON_0001898	brain (hypothalamus)	naive	276	tx	32913098	bulk
+QTS000015	QTD000189	GTEx_v10	brain_hypothalamus	UBERON_0001898	brain (hypothalamus)	naive	276	txrev	32913098	bulk
+QTS000015	QTD000190	GTEx_v10	brain_hypothalamus	UBERON_0001898	brain (hypothalamus)	naive	276	leafcutter	32913098	bulk
+QTS000015	QTD000191	GTEx_v10	brain_nucleus_accumbens	UBERON_0001882	brain (nucleus accumbens)	naive	308	ge	32913098	bulk
+QTS000015	QTD000192	GTEx_v10	brain_nucleus_accumbens	UBERON_0001882	brain (nucleus accumbens)	naive	308	exon	32913098	bulk
+QTS000015	QTD000193	GTEx_v10	brain_nucleus_accumbens	UBERON_0001882	brain (nucleus accumbens)	naive	308	tx	32913098	bulk
+QTS000015	QTD000194	GTEx_v10	brain_nucleus_accumbens	UBERON_0001882	brain (nucleus accumbens)	naive	308	txrev	32913098	bulk
+QTS000015	QTD000195	GTEx_v10	brain_nucleus_accumbens	UBERON_0001882	brain (nucleus accumbens)	naive	308	leafcutter	32913098	bulk
+QTS000015	QTD000196	GTEx_v10	brain_putamen	UBERON_0001874	brain (putamen)	naive	267	ge	32913098	bulk
+QTS000015	QTD000197	GTEx_v10	brain_putamen	UBERON_0001874	brain (putamen)	naive	267	exon	32913098	bulk
+QTS000015	QTD000198	GTEx_v10	brain_putamen	UBERON_0001874	brain (putamen)	naive	267	tx	32913098	bulk
+QTS000015	QTD000199	GTEx_v10	brain_putamen	UBERON_0001874	brain (putamen)	naive	267	txrev	32913098	bulk
+QTS000015	QTD000200	GTEx_v10	brain_putamen	UBERON_0001874	brain (putamen)	naive	267	leafcutter	32913098	bulk
+QTS000015	QTD000201	GTEx_v10	brain_spinal_cord	UBERON_0006469	brain (spinal cord)	naive	213	ge	32913098	bulk
+QTS000015	QTD000202	GTEx_v10	brain_spinal_cord	UBERON_0006469	brain (spinal cord)	naive	213	exon	32913098	bulk
+QTS000015	QTD000203	GTEx_v10	brain_spinal_cord	UBERON_0006469	brain (spinal cord)	naive	213	tx	32913098	bulk
+QTS000015	QTD000204	GTEx_v10	brain_spinal_cord	UBERON_0006469	brain (spinal cord)	naive	213	txrev	32913098	bulk
+QTS000015	QTD000205	GTEx_v10	brain_spinal_cord	UBERON_0006469	brain (spinal cord)	naive	213	leafcutter	32913098	bulk
+QTS000015	QTD000206	GTEx_v10	brain_substantia_nigra	UBERON_0002038	brain (substantia nigra)	naive	193	ge	32913098	bulk
+QTS000015	QTD000207	GTEx_v10	brain_substantia_nigra	UBERON_0002038	brain (substantia nigra)	naive	193	exon	32913098	bulk
+QTS000015	QTD000208	GTEx_v10	brain_substantia_nigra	UBERON_0002038	brain (substantia nigra)	naive	193	tx	32913098	bulk
+QTS000015	QTD000209	GTEx_v10	brain_substantia_nigra	UBERON_0002038	brain (substantia nigra)	naive	193	txrev	32913098	bulk
+QTS000015	QTD000210	GTEx_v10	brain_substantia_nigra	UBERON_0002038	brain (substantia nigra)	naive	193	leafcutter	32913098	bulk
+QTS000015	QTD000211	GTEx_v10	breast	UBERON_0008367	breast	naive	530	ge	32913098	bulk
+QTS000015	QTD000212	GTEx_v10	breast	UBERON_0008367	breast	naive	530	exon	32913098	bulk
+QTS000015	QTD000213	GTEx_v10	breast	UBERON_0008367	breast	naive	530	tx	32913098	bulk
+QTS000015	QTD000214	GTEx_v10	breast	UBERON_0008367	breast	naive	530	txrev	32913098	bulk
+QTS000015	QTD000215	GTEx_v10	breast	UBERON_0008367	breast	naive	530	leafcutter	32913098	bulk
+QTS000015	QTD000216	GTEx_v10	fibroblast	CL_0000057	fibroblast	naive	659	ge	32913098	bulk
+QTS000015	QTD000217	GTEx_v10	fibroblast	CL_0000057	fibroblast	naive	659	exon	32913098	bulk
+QTS000015	QTD000218	GTEx_v10	fibroblast	CL_0000057	fibroblast	naive	659	tx	32913098	bulk
+QTS000015	QTD000219	GTEx_v10	fibroblast	CL_0000057	fibroblast	naive	659	txrev	32913098	bulk
+QTS000015	QTD000220	GTEx_v10	fibroblast	CL_0000057	fibroblast	naive	659	leafcutter	32913098	bulk
+QTS000015	QTD000221	GTEx_v10	LCL	EFO_0005292	LCL	naive	329	ge	32913098	bulk
+QTS000015	QTD000222	GTEx_v10	LCL	EFO_0005292	LCL	naive	329	exon	32913098	bulk
+QTS000015	QTD000223	GTEx_v10	LCL	EFO_0005292	LCL	naive	329	tx	32913098	bulk
+QTS000015	QTD000224	GTEx_v10	LCL	EFO_0005292	LCL	naive	329	txrev	32913098	bulk
+QTS000015	QTD000225	GTEx_v10	LCL	EFO_0005292	LCL	naive	329	leafcutter	32913098	bulk
+QTS000015	QTD000226	GTEx_v10	colon_sigmoid	UBERON_0001159	sigmoid colon	naive	430	ge	32913098	bulk
+QTS000015	QTD000227	GTEx_v10	colon_sigmoid	UBERON_0001159	sigmoid colon	naive	430	exon	32913098	bulk
+QTS000015	QTD000228	GTEx_v10	colon_sigmoid	UBERON_0001159	sigmoid colon	naive	430	tx	32913098	bulk
+QTS000015	QTD000229	GTEx_v10	colon_sigmoid	UBERON_0001159	sigmoid colon	naive	430	txrev	32913098	bulk
+QTS000015	QTD000230	GTEx_v10	colon_sigmoid	UBERON_0001159	sigmoid colon	naive	430	leafcutter	32913098	bulk
+QTS000015	QTD000231	GTEx_v10	colon_transverse	UBERON_0001157	transverse colon	naive	497	ge	32913098	bulk
+QTS000015	QTD000232	GTEx_v10	colon_transverse	UBERON_0001157	transverse colon	naive	497	exon	32913098	bulk
+QTS000015	QTD000233	GTEx_v10	colon_transverse	UBERON_0001157	transverse colon	naive	497	tx	32913098	bulk
+QTS000015	QTD000234	GTEx_v10	colon_transverse	UBERON_0001157	transverse colon	naive	497	txrev	32913098	bulk
+QTS000015	QTD000235	GTEx_v10	colon_transverse	UBERON_0001157	transverse colon	naive	497	leafcutter	32913098	bulk
+QTS000015	QTD000236	GTEx_v10	esophagus_gej	UBERON_0004550	esophagus (gej)	naive	419	ge	32913098	bulk
+QTS000015	QTD000237	GTEx_v10	esophagus_gej	UBERON_0004550	esophagus (gej)	naive	419	exon	32913098	bulk
+QTS000015	QTD000238	GTEx_v10	esophagus_gej	UBERON_0004550	esophagus (gej)	naive	419	tx	32913098	bulk
+QTS000015	QTD000239	GTEx_v10	esophagus_gej	UBERON_0004550	esophagus (gej)	naive	419	txrev	32913098	bulk
+QTS000015	QTD000240	GTEx_v10	esophagus_gej	UBERON_0004550	esophagus (gej)	naive	419	leafcutter	32913098	bulk
+QTS000015	QTD000241	GTEx_v10	esophagus_mucosa	UBERON_0006920	esophagus (mucosa)	naive	634	ge	32913098	bulk
+QTS000015	QTD000242	GTEx_v10	esophagus_mucosa	UBERON_0006920	esophagus (mucosa)	naive	634	exon	32913098	bulk
+QTS000015	QTD000243	GTEx_v10	esophagus_mucosa	UBERON_0006920	esophagus (mucosa)	naive	634	tx	32913098	bulk
+QTS000015	QTD000244	GTEx_v10	esophagus_mucosa	UBERON_0006920	esophagus (mucosa)	naive	634	txrev	32913098	bulk
+QTS000015	QTD000245	GTEx_v10	esophagus_mucosa	UBERON_0006920	esophagus (mucosa)	naive	634	leafcutter	32913098	bulk
+QTS000015	QTD000246	GTEx_v10	esophagus_muscularis	UBERON_0004648	esophagus (muscularis)	naive	590	ge	32913098	bulk
+QTS000015	QTD000247	GTEx_v10	esophagus_muscularis	UBERON_0004648	esophagus (muscularis)	naive	590	exon	32913098	bulk
+QTS000015	QTD000248	GTEx_v10	esophagus_muscularis	UBERON_0004648	esophagus (muscularis)	naive	590	tx	32913098	bulk
+QTS000015	QTD000249	GTEx_v10	esophagus_muscularis	UBERON_0004648	esophagus (muscularis)	naive	590	txrev	32913098	bulk
+QTS000015	QTD000250	GTEx_v10	esophagus_muscularis	UBERON_0004648	esophagus (muscularis)	naive	590	leafcutter	32913098	bulk
+QTS000015	QTD000251	GTEx_v10	heart_atrial_appendage	UBERON_0006631	heart (atrial appendage)	naive	473	ge	32913098	bulk
+QTS000015	QTD000252	GTEx_v10	heart_atrial_appendage	UBERON_0006631	heart (atrial appendage)	naive	473	exon	32913098	bulk
+QTS000015	QTD000253	GTEx_v10	heart_atrial_appendage	UBERON_0006631	heart (atrial appendage)	naive	473	tx	32913098	bulk
+QTS000015	QTD000254	GTEx_v10	heart_atrial_appendage	UBERON_0006631	heart (atrial appendage)	naive	473	txrev	32913098	bulk
+QTS000015	QTD000255	GTEx_v10	heart_atrial_appendage	UBERON_0006631	heart (atrial appendage)	naive	473	leafcutter	32913098	bulk
+QTS000015	QTD000256	GTEx_v10	heart_left_ventricle	UBERON_0006566	heart (left ventricle)	naive	481	ge	32913098	bulk
+QTS000015	QTD000257	GTEx_v10	heart_left_ventricle	UBERON_0006566	heart (left ventricle)	naive	481	exon	32913098	bulk
+QTS000015	QTD000258	GTEx_v10	heart_left_ventricle	UBERON_0006566	heart (left ventricle)	naive	481	tx	32913098	bulk
+QTS000015	QTD000259	GTEx_v10	heart_left_ventricle	UBERON_0006566	heart (left ventricle)	naive	481	txrev	32913098	bulk
+QTS000015	QTD000260	GTEx_v10	heart_left_ventricle	UBERON_0006566	heart (left ventricle)	naive	481	leafcutter	32913098	bulk
+QTS000015	QTD000261	GTEx_v10	kidney_cortex	UBERON_0001225	kidney (cortex)	naive	106	ge	32913098	bulk
+QTS000015	QTD000262	GTEx_v10	kidney_cortex	UBERON_0001225	kidney (cortex)	naive	106	exon	32913098	bulk
+QTS000015	QTD000263	GTEx_v10	kidney_cortex	UBERON_0001225	kidney (cortex)	naive	106	tx	32913098	bulk
+QTS000015	QTD000264	GTEx_v10	kidney_cortex	UBERON_0001225	kidney (cortex)	naive	106	txrev	32913098	bulk
+QTS000015	QTD000265	GTEx_v10	kidney_cortex	UBERON_0001225	kidney (cortex)	naive	106	leafcutter	32913098	bulk
+QTS000015	QTD000266	GTEx_v10	liver	UBERON_0001114	liver	naive	269	ge	32913098	bulk
+QTS000015	QTD000267	GTEx_v10	liver	UBERON_0001114	liver	naive	269	exon	32913098	bulk
+QTS000015	QTD000268	GTEx_v10	liver	UBERON_0001114	liver	naive	269	tx	32913098	bulk
+QTS000015	QTD000269	GTEx_v10	liver	UBERON_0001114	liver	naive	269	txrev	32913098	bulk
+QTS000015	QTD000270	GTEx_v10	liver	UBERON_0001114	liver	naive	269	leafcutter	32913098	bulk
+QTS000015	QTD000271	GTEx_v10	lung	UBERON_0008952	lung	naive	652	ge	32913098	bulk
+QTS000015	QTD000272	GTEx_v10	lung	UBERON_0008952	lung	naive	652	exon	32913098	bulk
+QTS000015	QTD000273	GTEx_v10	lung	UBERON_0008952	lung	naive	652	tx	32913098	bulk
+QTS000015	QTD000274	GTEx_v10	lung	UBERON_0008952	lung	naive	652	txrev	32913098	bulk
+QTS000015	QTD000275	GTEx_v10	lung	UBERON_0008952	lung	naive	652	leafcutter	32913098	bulk
+QTS000015	QTD000276	GTEx_v10	minor_salivary_gland	UBERON_0006330	minor salivary gland	naive	185	ge	32913098	bulk
+QTS000015	QTD000277	GTEx_v10	minor_salivary_gland	UBERON_0006330	minor salivary gland	naive	185	exon	32913098	bulk
+QTS000015	QTD000278	GTEx_v10	minor_salivary_gland	UBERON_0006330	minor salivary gland	naive	185	tx	32913098	bulk
+QTS000015	QTD000279	GTEx_v10	minor_salivary_gland	UBERON_0006330	minor salivary gland	naive	185	txrev	32913098	bulk
+QTS000015	QTD000280	GTEx_v10	minor_salivary_gland	UBERON_0006330	minor salivary gland	naive	185	leafcutter	32913098	bulk
+QTS000015	QTD000281	GTEx_v10	muscle	UBERON_0001134	muscle	naive	871	ge	32913098	bulk
+QTS000015	QTD000282	GTEx_v10	muscle	UBERON_0001134	muscle	naive	871	exon	32913098	bulk
+QTS000015	QTD000283	GTEx_v10	muscle	UBERON_0001134	muscle	naive	871	tx	32913098	bulk
+QTS000015	QTD000284	GTEx_v10	muscle	UBERON_0001134	muscle	naive	871	txrev	32913098	bulk
+QTS000015	QTD000285	GTEx_v10	muscle	UBERON_0001134	muscle	naive	871	leafcutter	32913098	bulk
+QTS000015	QTD000286	GTEx_v10	nerve_tibial	UBERON_0001323	tibial nerve	naive	708	ge	32913098	bulk
+QTS000015	QTD000287	GTEx_v10	nerve_tibial	UBERON_0001323	tibial nerve	naive	708	exon	32913098	bulk
+QTS000015	QTD000288	GTEx_v10	nerve_tibial	UBERON_0001323	tibial nerve	naive	708	tx	32913098	bulk
+QTS000015	QTD000289	GTEx_v10	nerve_tibial	UBERON_0001323	tibial nerve	naive	708	txrev	32913098	bulk
+QTS000015	QTD000290	GTEx_v10	nerve_tibial	UBERON_0001323	tibial nerve	naive	708	leafcutter	32913098	bulk
+QTS000015	QTD000291	GTEx_v10	ovary	UBERON_0000992	ovary	naive	201	ge	32913098	bulk
+QTS000015	QTD000292	GTEx_v10	ovary	UBERON_0000992	ovary	naive	201	exon	32913098	bulk
+QTS000015	QTD000293	GTEx_v10	ovary	UBERON_0000992	ovary	naive	201	tx	32913098	bulk
+QTS000015	QTD000294	GTEx_v10	ovary	UBERON_0000992	ovary	naive	201	txrev	32913098	bulk
+QTS000015	QTD000295	GTEx_v10	ovary	UBERON_0000992	ovary	naive	201	leafcutter	32913098	bulk
+QTS000015	QTD000296	GTEx_v10	pancreas	UBERON_0001150	pancreas	naive	376	ge	32913098	bulk
+QTS000015	QTD000297	GTEx_v10	pancreas	UBERON_0001150	pancreas	naive	376	exon	32913098	bulk
+QTS000015	QTD000298	GTEx_v10	pancreas	UBERON_0001150	pancreas	naive	376	tx	32913098	bulk
+QTS000015	QTD000299	GTEx_v10	pancreas	UBERON_0001150	pancreas	naive	376	txrev	32913098	bulk
+QTS000015	QTD000300	GTEx_v10	pancreas	UBERON_0001150	pancreas	naive	376	leafcutter	32913098	bulk
+QTS000015	QTD000301	GTEx_v10	pituitary	UBERON_0000007	pituitary	naive	324	ge	32913098	bulk
+QTS000015	QTD000302	GTEx_v10	pituitary	UBERON_0000007	pituitary	naive	324	exon	32913098	bulk
+QTS000015	QTD000303	GTEx_v10	pituitary	UBERON_0000007	pituitary	naive	324	tx	32913098	bulk
+QTS000015	QTD000304	GTEx_v10	pituitary	UBERON_0000007	pituitary	naive	324	txrev	32913098	bulk
+QTS000015	QTD000305	GTEx_v10	pituitary	UBERON_0000007	pituitary	naive	324	leafcutter	32913098	bulk
+QTS000015	QTD000306	GTEx_v10	prostate	UBERON_0002367	prostate	naive	294	ge	32913098	bulk
+QTS000015	QTD000307	GTEx_v10	prostate	UBERON_0002367	prostate	naive	294	exon	32913098	bulk
+QTS000015	QTD000308	GTEx_v10	prostate	UBERON_0002367	prostate	naive	294	tx	32913098	bulk
+QTS000015	QTD000309	GTEx_v10	prostate	UBERON_0002367	prostate	naive	294	txrev	32913098	bulk
+QTS000015	QTD000310	GTEx_v10	prostate	UBERON_0002367	prostate	naive	294	leafcutter	32913098	bulk
+QTS000015	QTD000311	GTEx_v10	skin_not_sun_exposed	UBERON_0036149	skin (suprapubic)	naive	668	ge	32913098	bulk
+QTS000015	QTD000312	GTEx_v10	skin_not_sun_exposed	UBERON_0036149	skin (suprapubic)	naive	668	exon	32913098	bulk
+QTS000015	QTD000313	GTEx_v10	skin_not_sun_exposed	UBERON_0036149	skin (suprapubic)	naive	668	tx	32913098	bulk
+QTS000015	QTD000314	GTEx_v10	skin_not_sun_exposed	UBERON_0036149	skin (suprapubic)	naive	668	txrev	32913098	bulk
+QTS000015	QTD000315	GTEx_v10	skin_not_sun_exposed	UBERON_0036149	skin (suprapubic)	naive	668	leafcutter	32913098	bulk
+QTS000015	QTD000316	GTEx_v10	skin_sun_exposed	UBERON_0002097	skin	naive	802	ge	32913098	bulk
+QTS000015	QTD000317	GTEx_v10	skin_sun_exposed	UBERON_0002097	skin	naive	802	exon	32913098	bulk
+QTS000015	QTD000318	GTEx_v10	skin_sun_exposed	UBERON_0002097	skin	naive	802	tx	32913098	bulk
+QTS000015	QTD000319	GTEx_v10	skin_sun_exposed	UBERON_0002097	skin	naive	802	txrev	32913098	bulk
+QTS000015	QTD000320	GTEx_v10	skin_sun_exposed	UBERON_0002097	skin	naive	802	leafcutter	32913098	bulk
+QTS000015	QTD000321	GTEx_v10	small_intestine	UBERON_0001211	small intestine	naive	212	ge	32913098	bulk
+QTS000015	QTD000322	GTEx_v10	small_intestine	UBERON_0001211	small intestine	naive	212	exon	32913098	bulk
+QTS000015	QTD000323	GTEx_v10	small_intestine	UBERON_0001211	small intestine	naive	212	tx	32913098	bulk
+QTS000015	QTD000324	GTEx_v10	small_intestine	UBERON_0001211	small intestine	naive	212	txrev	32913098	bulk
+QTS000015	QTD000325	GTEx_v10	small_intestine	UBERON_0001211	small intestine	naive	212	leafcutter	32913098	bulk
+QTS000015	QTD000326	GTEx_v10	spleen	UBERON_0002106	spleen	naive	280	ge	32913098	bulk
+QTS000015	QTD000327	GTEx_v10	spleen	UBERON_0002106	spleen	naive	280	exon	32913098	bulk
+QTS000015	QTD000328	GTEx_v10	spleen	UBERON_0002106	spleen	naive	280	tx	32913098	bulk
+QTS000015	QTD000329	GTEx_v10	spleen	UBERON_0002106	spleen	naive	280	txrev	32913098	bulk
+QTS000015	QTD000330	GTEx_v10	spleen	UBERON_0002106	spleen	naive	280	leafcutter	32913098	bulk
+QTS000015	QTD000331	GTEx_v10	stomach	UBERON_0000945	stomach	naive	418	ge	32913098	bulk
+QTS000015	QTD000332	GTEx_v10	stomach	UBERON_0000945	stomach	naive	418	exon	32913098	bulk
+QTS000015	QTD000333	GTEx_v10	stomach	UBERON_0000945	stomach	naive	418	tx	32913098	bulk
+QTS000015	QTD000334	GTEx_v10	stomach	UBERON_0000945	stomach	naive	418	txrev	32913098	bulk
+QTS000015	QTD000335	GTEx_v10	stomach	UBERON_0000945	stomach	naive	418	leafcutter	32913098	bulk
+QTS000015	QTD000336	GTEx_v10	testis	UBERON_0000473	testis	naive	424	ge	32913098	bulk
+QTS000015	QTD000337	GTEx_v10	testis	UBERON_0000473	testis	naive	424	exon	32913098	bulk
+QTS000015	QTD000338	GTEx_v10	testis	UBERON_0000473	testis	naive	424	tx	32913098	bulk
+QTS000015	QTD000339	GTEx_v10	testis	UBERON_0000473	testis	naive	424	txrev	32913098	bulk
+QTS000015	QTD000340	GTEx_v10	testis	UBERON_0000473	testis	naive	424	leafcutter	32913098	bulk
+QTS000015	QTD000341	GTEx_v10	thyroid	UBERON_0002046	thyroid	naive	724	ge	32913098	bulk
+QTS000015	QTD000342	GTEx_v10	thyroid	UBERON_0002046	thyroid	naive	724	exon	32913098	bulk
+QTS000015	QTD000343	GTEx_v10	thyroid	UBERON_0002046	thyroid	naive	724	tx	32913098	bulk
+QTS000015	QTD000344	GTEx_v10	thyroid	UBERON_0002046	thyroid	naive	724	txrev	32913098	bulk
+QTS000015	QTD000345	GTEx_v10	thyroid	UBERON_0002046	thyroid	naive	724	leafcutter	32913098	bulk
+QTS000015	QTD000346	GTEx_v10	uterus	UBERON_0000995	uterus	naive	161	ge	32913098	bulk
+QTS000015	QTD000347	GTEx_v10	uterus	UBERON_0000995	uterus	naive	161	exon	32913098	bulk
+QTS000015	QTD000348	GTEx_v10	uterus	UBERON_0000995	uterus	naive	161	tx	32913098	bulk
+QTS000015	QTD000349	GTEx_v10	uterus	UBERON_0000995	uterus	naive	161	txrev	32913098	bulk
+QTS000015	QTD000350	GTEx_v10	uterus	UBERON_0000995	uterus	naive	161	leafcutter	32913098	bulk
+QTS000015	QTD000351	GTEx_v10	vagina	UBERON_0000996	vagina	naive	176	ge	32913098	bulk
+QTS000015	QTD000352	GTEx_v10	vagina	UBERON_0000996	vagina	naive	176	exon	32913098	bulk
+QTS000015	QTD000353	GTEx_v10	vagina	UBERON_0000996	vagina	naive	176	tx	32913098	bulk
+QTS000015	QTD000354	GTEx_v10	vagina	UBERON_0000996	vagina	naive	176	txrev	32913098	bulk
+QTS000015	QTD000355	GTEx_v10	vagina	UBERON_0000996	vagina	naive	176	leafcutter	32913098	bulk
+QTS000015	QTD000356	GTEx_v10	blood	UBERON_0000178	blood	naive	853	ge	32913098	bulk
+QTS000015	QTD000357	GTEx_v10	blood	UBERON_0000178	blood	naive	853	exon	32913098	bulk
+QTS000015	QTD000358	GTEx_v10	blood	UBERON_0000178	blood	naive	853	tx	32913098	bulk
+QTS000015	QTD000359	GTEx_v10	blood	UBERON_0000178	blood	naive	853	txrev	32913098	bulk
+QTS000015	QTD000360	GTEx_v10	blood	UBERON_0000178	blood	naive	853	leafcutter	32913098	bulk
+QTS000015	QTD000951	GTEx_v10	adipose_subcutaneous	UBERON_0001013	adipose	naive	749	majiq	32913098	bulk
+QTS000015	QTD000952	GTEx_v10	adipose_visceral	UBERON_0010414	adipose (visceral)	naive	606	majiq	32913098	bulk
+QTS000015	QTD000953	GTEx_v10	adrenal_gland	UBERON_0002369	adrenal gland	naive	305	majiq	32913098	bulk
+QTS000015	QTD000954	GTEx_v10	artery_aorta	UBERON_0001496	artery (aorta)	naive	492	majiq	32913098	bulk
+QTS000015	QTD000955	GTEx_v10	artery_coronary	UBERON_0001621	artery (coronary)	naive	279	majiq	32913098	bulk
+QTS000015	QTD000956	GTEx_v10	artery_tibial	UBERON_0007610	artery (tibial)	naive	736	majiq	32913098	bulk
+QTS000015	QTD000957	GTEx_v10	brain_amygdala	UBERON_0001876	brain (amygdala)	naive	202	majiq	32913098	bulk
+QTS000015	QTD000958	GTEx_v10	brain_anterior_cingulate_cortex	UBERON_0009835	brain (anterior cingulate cortex)	naive	242	majiq	32913098	bulk
+QTS000015	QTD000959	GTEx_v10	brain_caudate	UBERON_0001873	brain (caudate)	naive	315	majiq	32913098	bulk
+QTS000015	QTD000960	GTEx_v10	brain_cerebellar_hemisphere	UBERON_0002037	brain (cerebellum)	naive	286	majiq	32913098	bulk
+QTS000015	QTD000961	GTEx_v10	brain_cerebellum	UBERON_0002037	brain (cerebellum)	naive	272	majiq	32913098	bulk
+QTS000015	QTD000962	GTEx_v10	brain_cortex	UBERON_0001870	brain (cortex)	naive	284	majiq	32913098	bulk
+QTS000015	QTD000963	GTEx_v10	brain_frontal_cortex	UBERON_0009834	brain (DLPFC)	naive	285	majiq	32913098	bulk
+QTS000015	QTD000964	GTEx_v10	brain_hippocampus	UBERON_0001954	brain (hippocampus)	naive	272	majiq	32913098	bulk
+QTS000015	QTD000965	GTEx_v10	brain_hypothalamus	UBERON_0001898	brain (hypothalamus)	naive	276	majiq	32913098	bulk
+QTS000015	QTD000966	GTEx_v10	brain_nucleus_accumbens	UBERON_0001882	brain (nucleus accumbens)	naive	308	majiq	32913098	bulk
+QTS000015	QTD000967	GTEx_v10	brain_putamen	UBERON_0001874	brain (putamen)	naive	267	majiq	32913098	bulk
+QTS000015	QTD000968	GTEx_v10	brain_spinal_cord	UBERON_0006469	brain (spinal cord)	naive	213	majiq	32913098	bulk
+QTS000015	QTD000969	GTEx_v10	brain_substantia_nigra	UBERON_0002038	brain (substantia nigra)	naive	193	majiq	32913098	bulk
+QTS000015	QTD000970	GTEx_v10	breast	UBERON_0008367	breast	naive	530	majiq	32913098	bulk
+QTS000015	QTD000971	GTEx_v10	fibroblast	CL_0000057	fibroblast	naive	659	majiq	32913098	bulk
+QTS000015	QTD000972	GTEx_v10	LCL	EFO_0005292	LCL	naive	329	majiq	32913098	bulk
+QTS000015	QTD000973	GTEx_v10	colon_sigmoid	UBERON_0001159	sigmoid colon	naive	430	majiq	32913098	bulk
+QTS000015	QTD000974	GTEx_v10	colon_transverse	UBERON_0001157	transverse colon	naive	497	majiq	32913098	bulk
+QTS000015	QTD000975	GTEx_v10	esophagus_gej	UBERON_0004550	esophagus (gej)	naive	419	majiq	32913098	bulk
+QTS000015	QTD000976	GTEx_v10	esophagus_mucosa	UBERON_0006920	esophagus (mucosa)	naive	634	majiq	32913098	bulk
+QTS000015	QTD000977	GTEx_v10	esophagus_muscularis	UBERON_0004648	esophagus (muscularis)	naive	590	majiq	32913098	bulk
+QTS000015	QTD000978	GTEx_v10	heart_atrial_appendage	UBERON_0006631	heart (atrial appendage)	naive	473	majiq	32913098	bulk
+QTS000015	QTD000979	GTEx_v10	heart_left_ventricle	UBERON_0006566	heart (left ventricle)	naive	481	majiq	32913098	bulk
+QTS000015	QTD000980	GTEx_v10	kidney_cortex	UBERON_0001225	kidney (cortex)	naive	106	majiq	32913098	bulk
+QTS000015	QTD000981	GTEx_v10	liver	UBERON_0001114	liver	naive	269	majiq	32913098	bulk
+QTS000015	QTD000982	GTEx_v10	lung	UBERON_0008952	lung	naive	652	majiq	32913098	bulk
+QTS000015	QTD000983	GTEx_v10	minor_salivary_gland	UBERON_0006330	minor salivary gland	naive	185	majiq	32913098	bulk
+QTS000015	QTD000984	GTEx_v10	muscle	UBERON_0001134	muscle	naive	871	majiq	32913098	bulk
+QTS000015	QTD000985	GTEx_v10	nerve_tibial	UBERON_0001323	tibial nerve	naive	708	majiq	32913098	bulk
+QTS000015	QTD000986	GTEx_v10	ovary	UBERON_0000992	ovary	naive	201	majiq	32913098	bulk
+QTS000015	QTD000987	GTEx_v10	pancreas	UBERON_0001150	pancreas	naive	376	majiq	32913098	bulk
+QTS000015	QTD000988	GTEx_v10	pituitary	UBERON_0000007	pituitary	naive	324	majiq	32913098	bulk
+QTS000015	QTD000989	GTEx_v10	prostate	UBERON_0002367	prostate	naive	294	majiq	32913098	bulk
+QTS000015	QTD000990	GTEx_v10	skin_not_sun_exposed	UBERON_0036149	skin (suprapubic)	naive	668	majiq	32913098	bulk
+QTS000015	QTD000991	GTEx_v10	skin_sun_exposed	UBERON_0002097	skin	naive	802	majiq	32913098	bulk
+QTS000015	QTD000992	GTEx_v10	small_intestine	UBERON_0001211	small intestine	naive	212	majiq	32913098	bulk
+QTS000015	QTD000993	GTEx_v10	spleen	UBERON_0002106	spleen	naive	280	majiq	32913098	bulk
+QTS000015	QTD000994	GTEx_v10	stomach	UBERON_0000945	stomach	naive	418	majiq	32913098	bulk
+QTS000015	QTD000995	GTEx_v10	testis	UBERON_0000473	testis	naive	424	majiq	32913098	bulk
+QTS000015	QTD000996	GTEx_v10	thyroid	UBERON_0002046	thyroid	naive	724	majiq	32913098	bulk
+QTS000015	QTD000997	GTEx_v10	uterus	UBERON_0000995	uterus	naive	161	majiq	32913098	bulk
+QTS000015	QTD000998	GTEx_v10	vagina	UBERON_0000996	vagina	naive	176	majiq	32913098	bulk
+QTS000015	QTD000999	GTEx_v10	blood	UBERON_0000178	blood	naive	853	majiq	32913098	bulk
 QTS000036	QTD000585	Randolph_2021	B_NI	CL_0000236	B cell	naive	89	ge	34822289	single-cell
 QTS000036	QTD000586	Randolph_2021	B_flu	CL_0000236	B cell	Influenza_6h	89	ge	34822289	single-cell
 QTS000036	QTD000587	Randolph_2021	CD4_T_NI	CL_0000624	CD4+ T cell	naive	89	ge	34822289	single-cell
@@ -137,6 +431,84 @@ QTS000041	QTD000744	Cytoimmgen	TCM2_Lowly_Active_STIM_40H	CL_0000624	CD4+ T cell
 QTS000041	QTD000747	Cytoimmgen	nTreg_UNS_16H	CL_0000624	CD4+ T cell	naive	93	ge	35618845	single-cell
 QTS000041	QTD000749	Cytoimmgen	TN-TCM_CXCR4+_STIM_40H	CL_0000624	CD4+ T cell	anti-CD3-CD28_40h	64	ge	35618845	single-cell
 QTS000041	QTD000751	Cytoimmgen	TN1_Lowly_Active_STIM_16H	CL_0000624	CD4+ T cell	anti-CD3-CD28_16h	84	ge	35618845	single-cell
+QTS000044	QTD000764	MAGE	LCL	EFO_0005292	LCL	naive	675	ge	39020179	bulk
+QTS000044	QTD000765	MAGE	LCL	EFO_0005292	LCL	naive	675	exon	39020179	bulk
+QTS000044	QTD000766	MAGE	LCL	EFO_0005292	LCL	naive	675	tx	39020179	bulk
+QTS000044	QTD000767	MAGE	LCL	EFO_0005292	LCL	naive	675	txrev	39020179	bulk
+QTS000044	QTD000768	MAGE	LCL	EFO_0005292	LCL	naive	675	leafcutter	39020179	bulk
+QTS000044	QTD001054	MAGE	LCL	EFO_0005292	LCL	naive	675	majiq	39020179	bulk
+QTS000045	QTD000769	IBDverse	CD4+_CRM_Naive	CL_0000904	central memory CD4-positive, alpha-beta T cell	naive	230	ge	42236949	single-cell
+QTS000045	QTD000770	IBDverse	CD4+_CRM	CL_0000904	central memory CD4-positive, alpha-beta T cell	naive	133	ge	42236949	single-cell
+QTS000045	QTD000771	IBDverse	CD8+_EM_THEMIS+	CL_0000913	effector memory CD8-positive, alpha-beta T cell	naive	86	ge	42236949	single-cell
+QTS000045	QTD000772	IBDverse	CD8+_EM_TIGIT+	CL_0001062	effector memory CD8-positive, alpha-beta T cell, terminally differentiated	naive	79	ge	42236949	single-cell
+QTS000045	QTD000773	IBDverse	Classical_monocytes	CL_0000860	classical monocyte	naive	95	ge	42236949	single-cell
+QTS000045	QTD000774	IBDverse	Intermediate_monocytes	CL_0002393	intermediate monocyte	naive	93	ge	42236949	single-cell
+QTS000045	QTD000775	IBDverse	NK1	CL_0000623	natural killer cell	naive	82	ge	42236949	single-cell
+QTS000045	QTD000776	IBDverse	Non-classical_monocytes	CL_0000875	non-classical monocyte	naive	92	ge	42236949	single-cell
+QTS000045	QTD000777	IBDverse	atypical_B_Cells	CL_0000236	B cell	naive	121	ge	42236949	single-cell
+QTS000045	QTD000778	IBDverse	pDCs	CL_0000784	plasmacytoid dendritic cell	naive	90	ge	42236949	single-cell
+QTS000045	QTD000779	IBDverse	T_cell_GD_LEF1+	CL_0000798	gamma-delta T cell	naive	91	ge	42236949	single-cell
+QTS000045	QTD000780	IBDverse	CD4+_Treg	CL_0000792	CD4-positive, CD25-positive, alpha-beta regulatory T cell	naive	149	ge	42236949	single-cell
+QTS000045	QTD000781	IBDverse	CD4+_memory	CL_0000897	CD4-positive, alpha-beta memory T cell	naive	318	ge	42236949	single-cell
+QTS000045	QTD000782	IBDverse	CD8+_GZMK+	CL_4052021	granzyme K-associated CD8 T cell	naive	260	ge	42236949	single-cell
+QTS000045	QTD000783	IBDverse	CD8+_Naive	CL_0000900	naive thymus-derived CD8-positive, alpha-beta T cell	naive	144	ge	42236949	single-cell
+QTS000045	QTD000784	IBDverse	Colon_Goblet_ATOH1_(MUC2_Lo)	CL_0009057	anorectum goblet cell	naive	210	ge	42236949	single-cell
+QTS000045	QTD000785	IBDverse	Colon_Goblet_MUC2++_BCAS1+	CL_0009057	anorectum goblet cell	naive	53	ge	42236949	single-cell
+QTS000045	QTD000786	IBDverse	Colon_Goblet_MUC2+_SPDEF+	CL_0009057	anorectum goblet cell	naive	255	ge	42236949	single-cell
+QTS000045	QTD000787	IBDverse	Colon_Progenitor_OLMF4+	CL_4047018	early colonocyte	naive	253	ge	42236949	single-cell
+QTS000045	QTD000788	IBDverse	Epithelial_Progenitor_OLMF4++	CL_4047018	early colonocyte	naive	88	ge	42236949	single-cell
+QTS000045	QTD000789	IBDverse	Colon_Progenitor_OLMF4+Ki67+	CL_4047018	early colonocyte	naive	230	ge	42236949	single-cell
+QTS000045	QTD000790	IBDverse	Colon_ileum_Enterochromaffin_TPH1_CES1+	CL_0000504	enterochromaffin-like cell	naive	229	ge	42236949	single-cell
+QTS000045	QTD000791	IBDverse	Epithelial_Enteroendocrine_NTS_PYY_GCG_ISL1+	CL_1001516	intestinal enteroendocrine cell	naive	231	ge	42236949	single-cell
+QTS000045	QTD000792	IBDverse	Colonocyte_BEST4+	CL_4047052	BEST4+ colonocyte	naive	224	ge	42236949	single-cell
+QTS000045	QTD000793	IBDverse	Colonocyte_CAECAM7++_KRT20++_IFI27++	CL_1000347	colonocyte	naive	197	ge	42236949	single-cell
+QTS000045	QTD000794	IBDverse	Colonocyte_CAECAM7+_KRT20+_IFI27+	CL_1000347	colonocyte	naive	255	ge	42236949	single-cell
+QTS000045	QTD000795	IBDverse	Colonocyte_Progenitor_OLMF4++Ki67+	CL_4047018	early colonocyte	naive	233	ge	42236949	single-cell
+QTS000045	QTD000796	IBDverse	Colonocyte_RBFOX1+	CL_1000347	colonocyte	naive	257	ge	42236949	single-cell
+QTS000045	QTD000797	IBDverse	Colonocyte_stem_cell_LGR5+	CL_0009043	intestinal crypt stem cell of colon	naive	239	ge	42236949	single-cell
+QTS000045	QTD000798	IBDverse	Enterocyte_BEST4+	CL_4030026	BEST4+ enterocyte	naive	166	ge	42236949	single-cell
+QTS000045	QTD000799	IBDverse	Enterocyte_Progenitor_OLMF4++Ki67+	CL_1000342	enterocyte of epithelium proper of ileum	naive	220	ge	42236949	single-cell
+QTS000045	QTD000800	IBDverse	Enterocyte_progenitor_precursor_crypt_OLFM4+	CL_1000342	enterocyte of epithelium proper of ileum	naive	324	ge	42236949	single-cell
+QTS000045	QTD000801	IBDverse	Enterocyte_progenitor_precursor_crypt_OLFM4++	CL_1000342	enterocyte of epithelium proper of ileum	naive	182	ge	42236949	single-cell
+QTS000045	QTD000802	IBDverse	Enterocyte_stem_cell_MKI67+	CL_0009017	intestinal crypt stem cell of small intestine	naive	280	ge	42236949	single-cell
+QTS000045	QTD000803	IBDverse	Enterocyte_stem_cell_OLFM4+_LGR5+	CL_0009017	intestinal crypt stem cell of small intestine	naive	273	ge	42236949	single-cell
+QTS000045	QTD000804	IBDverse	Enterocyte_top_villus	CL_1000342	enterocyte of epithelium proper of ileum	naive	328	ge	42236949	single-cell
+QTS000045	QTD000805	IBDverse	Enterocytes_progenitor_crypt_OLFM4++	CL_0009017	intestinal crypt stem cell of small intestine	naive	303	ge	42236949	single-cell
+QTS000045	QTD000806	IBDverse	Fibroblast_CPM+	CL_0000057	fibroblast	naive	131	ge	42236949	single-cell
+QTS000045	QTD000807	IBDverse	ILCs_Nkp44	CL_0001065	innate lymphoid cell	naive	197	ge	42236949	single-cell
+QTS000045	QTD000808	IBDverse	Ileum_Goblet_MUC2+	CL_1000326	ileal goblet cell	naive	189	ge	42236949	single-cell
+QTS000045	QTD000809	IBDverse	Ileum_Goblet_MUC2++_BCAS1++	CL_1000326	ileal goblet cell	naive	286	ge	42236949	single-cell
+QTS000045	QTD000810	IBDverse	Ileum_Goblet_MUC2+_BCAS1+	CL_1000326	ileal goblet cell	naive	346	ge	42236949	single-cell
+QTS000045	QTD000811	IBDverse	Ileum_Goblet_MUC2+_SPINK4++	CL_0009057	anorectum goblet cell	naive	291	ge	42236949	single-cell
+QTS000045	QTD000812	IBDverse	Ileum_Paneth_DEF6A	CL_1000343	paneth cell of epithelium of small intestine	naive	130	ge	42236949	single-cell
+QTS000045	QTD000813	IBDverse	Ileum_goblet_Ki67+	CL_1000326	ileal goblet cell	naive	185	ge	42236949	single-cell
+QTS000045	QTD000814	IBDverse	LP_fibroblast_ADAMDEC1	CL_0000057	fibroblast	naive	90	ge	42236949	single-cell
+QTS000045	QTD000815	IBDverse	Mast	CL_0000097	mast cell	naive	243	ge	42236949	single-cell
+QTS000045	QTD000816	IBDverse	Myofibroblast_ADGRL3	CL_0000186	myofibroblast cell	naive	50	ge	42236949	single-cell
+QTS000045	QTD000817	IBDverse	NK2	CL_0000623	natural killer cell	naive	188	ge	42236949	single-cell
+QTS000045	QTD000818	IBDverse	Platelet	CL_0000233	platelet	naive	83	ge	42236949	single-cell
+QTS000045	QTD000819	IBDverse	Tcell_GD_KLRG1+	CL_0000798	gamma-delta T cell	naive	100	ge	42236949	single-cell
+QTS000045	QTD000820	IBDverse	B_Cell_germinal_centre_plasmablast	CL_0000980	plasmablast	naive	135	ge	42236949	single-cell
+QTS000045	QTD000821	IBDverse	B_Cell_germinal_centre_plasmablast_proliferating	CL_0000980	plasmablast	naive	114	ge	42236949	single-cell
+QTS000045	QTD000822	IBDverse	CCL3_CCL4_CXCL9_10_Macrophages	CL_0000864	tissue-resident macrophage	naive	45	ge	42236949	single-cell
+QTS000045	QTD000823	IBDverse	CD4+_PASK	CL_0000624	CD4-positive, alpha-beta T cell	naive	286	ge	42236949	single-cell
+QTS000045	QTD000824	IBDverse	Tissue_CD4+_Treg	CL_0000792	CD4-positive, CD25-positive, alpha-beta regulatory T cell	naive	173	ge	42236949	single-cell
+QTS000045	QTD000825	IBDverse	CD4+_memory_CXCR6+	CL_0001204	CD4-positive, alpha-beta memory T cell, CD45RO-positive	naive	295	ge	42236949	single-cell
+QTS000045	QTD000826	IBDverse	CD8+_TRM_TGCR2+	CL_0001203	CD8-positive, alpha-beta memory T cell, CD45RO-positive	naive	339	ge	42236949	single-cell
+QTS000045	QTD000827	IBDverse	Macrophages_CD163+	CL_0000864	tissue-resident macrophage	naive	298	ge	42236949	single-cell
+QTS000045	QTD000828	IBDverse	Macrophages_CD163++	CL_0000864	tissue-resident macrophage	naive	218	ge	42236949	single-cell
+QTS000045	QTD000829	IBDverse	Macrophages_Proliferating	CL_0000864	tissue-resident macrophage	naive	125	ge	42236949	single-cell
+QTS000045	QTD000830	IBDverse	Memory_B_CD27Lo_	CL_0000787	memory B cell	naive	227	ge	42236949	single-cell
+QTS000045	QTD000831	IBDverse	Memory_B_PDE4D_TEX9	CL_0000790	memory B cell	naive	301	ge	42236949	single-cell
+QTS000045	QTD000832	IBDverse	Memory_B_PTPRJ	CL_0000789	memory B cell	naive	313	ge	42236949	single-cell
+QTS000045	QTD000833	IBDverse	Monocytes_S100A8_9+	CL_0000576	monocyte	naive	65	ge	42236949	single-cell
+QTS000045	QTD000834	IBDverse	Naive_B_cells	CL_0000788	naive B cell	naive	307	ge	42236949	single-cell
+QTS000045	QTD000835	IBDverse	PlasmaB_CD38++	CL_0000787	plasma cell	naive	162	ge	42236949	single-cell
+QTS000045	QTD000836	IBDverse	PlasmaB_CD38+++	CL_0000786	plasma cell	naive	359	ge	42236949	single-cell
+QTS000045	QTD000837	IBDverse	PlasmaB_CD38++++_IgG+_IgA+	CL_0000786	plasma cell	naive	147	ge	42236949	single-cell
+QTS000045	QTD000838	IBDverse	Tissue_Tcell_GD	CL_0000798	gamma-delta T cell	naive	272	ge	42236949	single-cell
+QTS000045	QTD000839	IBDverse	Tuft	CL_0019032	intestinal tuft cell	naive	245	ge	42236949	single-cell
+QTS000045	QTD000840	IBDverse	cDC2	CL_0000990	conventional dendritic cell	naive	127	ge	42236949	single-cell
 QTS000046	QTD000841	Randolph_2021_reannotated	Alveolar_macrophages_NI	CL_0000583	alveolar macrophage	naive	65	ge	34822289	single-cell
 QTS000046	QTD000842	Randolph_2021_reannotated	CD16+_NK_cells_NI	CL_0000623	NK cell	naive	56	ge	34822289	single-cell
 QTS000046	QTD000843	Randolph_2021_reannotated	CD16+_NK_cells_flu	CL_0000623	NK cell	Influenza_6h	60	ge	34822289	single-cell
