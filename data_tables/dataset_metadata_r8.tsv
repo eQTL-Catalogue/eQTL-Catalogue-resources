@@ -841,76 +841,76 @@ QTS000044	QTD000766	MAGE	LCL	EFO_0005292	LCL	naive	675	tx	39020179	bulk
 QTS000044	QTD000767	MAGE	LCL	EFO_0005292	LCL	naive	675	txrev	39020179	bulk
 QTS000044	QTD000768	MAGE	LCL	EFO_0005292	LCL	naive	675	leafcutter	39020179	bulk
 QTS000044	QTD001054	MAGE	LCL	EFO_0005292	LCL	naive	675	majiq	39020179	bulk
-QTS000045	QTD000769	IBDverse	CD4+_CRM_Naive	CL_0000904	central memory CD4-positive, alpha-beta T cell	naive	230	ge	42236949	single-cell
-QTS000045	QTD000770	IBDverse	CD4+_CRM	CL_0000904	central memory CD4-positive, alpha-beta T cell	naive	133	ge	42236949	single-cell
-QTS000045	QTD000771	IBDverse	CD8+_EM_THEMIS+	CL_0000913	effector memory CD8-positive, alpha-beta T cell	naive	86	ge	42236949	single-cell
-QTS000045	QTD000772	IBDverse	CD8+_EM_TIGIT+	CL_0001062	effector memory CD8-positive, alpha-beta T cell, terminally differentiated	naive	79	ge	42236949	single-cell
-QTS000045	QTD000773	IBDverse	Classical_monocytes	CL_0000860	classical monocyte	naive	95	ge	42236949	single-cell
-QTS000045	QTD000774	IBDverse	Intermediate_monocytes	CL_0002393	intermediate monocyte	naive	93	ge	42236949	single-cell
+QTS000045	QTD000769	IBDverse	CD4 CM/naive	CL_0000904	central memory CD4-positive, alpha-beta T cell	naive	230	ge	42236949	single-cell
+QTS000045	QTD000770	IBDverse	CD4 CM	CL_0000904	central memory CD4-positive, alpha-beta T cell	naive	133	ge	42236949	single-cell
+QTS000045	QTD000771	IBDverse	CD8 EM THEMIS	CL_0000913	effector memory CD8-positive, alpha-beta T cell	naive	86	ge	42236949	single-cell
+QTS000045	QTD000772	IBDverse	CD8 EM TIGIT	CL_0001062	effector memory CD8-positive, alpha-beta T cell, terminally differentiated	naive	79	ge	42236949	single-cell
+QTS000045	QTD000773	IBDverse	Classical monocyte	CL_0000860	classical monocyte	naive	95	ge	42236949	single-cell
+QTS000045	QTD000774	IBDverse	Intermediate monocyte	CL_0002393	intermediate monocyte	naive	93	ge	42236949	single-cell
 QTS000045	QTD000775	IBDverse	NK1	CL_0000623	natural killer cell	naive	82	ge	42236949	single-cell
-QTS000045	QTD000776	IBDverse	Non-classical_monocytes	CL_0000875	non-classical monocyte	naive	92	ge	42236949	single-cell
-QTS000045	QTD000777	IBDverse	atypical_B_Cells	CL_0000236	B cell	naive	121	ge	42236949	single-cell
-QTS000045	QTD000778	IBDverse	pDCs	CL_0000784	plasmacytoid dendritic cell	naive	90	ge	42236949	single-cell
-QTS000045	QTD000779	IBDverse	T_cell_GD_LEF1+	CL_0000798	gamma-delta T cell	naive	91	ge	42236949	single-cell
-QTS000045	QTD000780	IBDverse	CD4+_Treg	CL_0000792	CD4-positive, CD25-positive, alpha-beta regulatory T cell	naive	149	ge	42236949	single-cell
-QTS000045	QTD000781	IBDverse	CD4+_memory	CL_0000897	CD4-positive, alpha-beta memory T cell	naive	318	ge	42236949	single-cell
-QTS000045	QTD000782	IBDverse	CD8+_GZMK+	CL_4052021	granzyme K-associated CD8 T cell	naive	260	ge	42236949	single-cell
-QTS000045	QTD000783	IBDverse	CD8+_Naive	CL_0000900	naive thymus-derived CD8-positive, alpha-beta T cell	naive	144	ge	42236949	single-cell
-QTS000045	QTD000784	IBDverse	Colon_Goblet_ATOH1_(MUC2_Lo)	CL_0009057	anorectum goblet cell	naive	210	ge	42236949	single-cell
-QTS000045	QTD000785	IBDverse	Colon_Goblet_MUC2++_BCAS1+	CL_0009057	anorectum goblet cell	naive	53	ge	42236949	single-cell
-QTS000045	QTD000786	IBDverse	Colon_Goblet_MUC2+_SPDEF+	CL_0009057	anorectum goblet cell	naive	255	ge	42236949	single-cell
-QTS000045	QTD000787	IBDverse	Colon_Progenitor_OLMF4+	CL_4047018	early colonocyte	naive	253	ge	42236949	single-cell
-QTS000045	QTD000788	IBDverse	Epithelial_Progenitor_OLMF4++	CL_4047018	early colonocyte	naive	88	ge	42236949	single-cell
-QTS000045	QTD000789	IBDverse	Colon_Progenitor_OLMF4+Ki67+	CL_4047018	early colonocyte	naive	230	ge	42236949	single-cell
-QTS000045	QTD000790	IBDverse	Colon_ileum_Enterochromaffin_TPH1_CES1+	CL_0000504	enterochromaffin-like cell	naive	229	ge	42236949	single-cell
-QTS000045	QTD000791	IBDverse	Epithelial_Enteroendocrine_NTS_PYY_GCG_ISL1+	CL_1001516	intestinal enteroendocrine cell	naive	231	ge	42236949	single-cell
-QTS000045	QTD000792	IBDverse	Colonocyte_BEST4+	CL_4047052	BEST4+ colonocyte	naive	224	ge	42236949	single-cell
-QTS000045	QTD000793	IBDverse	Colonocyte_CAECAM7++_KRT20++_IFI27++	CL_1000347	colonocyte	naive	197	ge	42236949	single-cell
-QTS000045	QTD000794	IBDverse	Colonocyte_CAECAM7+_KRT20+_IFI27+	CL_1000347	colonocyte	naive	255	ge	42236949	single-cell
-QTS000045	QTD000795	IBDverse	Colonocyte_Progenitor_OLMF4++Ki67+	CL_4047018	early colonocyte	naive	233	ge	42236949	single-cell
-QTS000045	QTD000796	IBDverse	Colonocyte_RBFOX1+	CL_1000347	colonocyte	naive	257	ge	42236949	single-cell
-QTS000045	QTD000797	IBDverse	Colonocyte_stem_cell_LGR5+	CL_0009043	intestinal crypt stem cell of colon	naive	239	ge	42236949	single-cell
-QTS000045	QTD000798	IBDverse	Enterocyte_BEST4+	CL_4030026	BEST4+ enterocyte	naive	166	ge	42236949	single-cell
-QTS000045	QTD000799	IBDverse	Enterocyte_Progenitor_OLMF4++Ki67+	CL_1000342	enterocyte of epithelium proper of ileum	naive	220	ge	42236949	single-cell
-QTS000045	QTD000800	IBDverse	Enterocyte_progenitor_precursor_crypt_OLFM4+	CL_1000342	enterocyte of epithelium proper of ileum	naive	324	ge	42236949	single-cell
-QTS000045	QTD000801	IBDverse	Enterocyte_progenitor_precursor_crypt_OLFM4++	CL_1000342	enterocyte of epithelium proper of ileum	naive	182	ge	42236949	single-cell
-QTS000045	QTD000802	IBDverse	Enterocyte_stem_cell_MKI67+	CL_0009017	intestinal crypt stem cell of small intestine	naive	280	ge	42236949	single-cell
-QTS000045	QTD000803	IBDverse	Enterocyte_stem_cell_OLFM4+_LGR5+	CL_0009017	intestinal crypt stem cell of small intestine	naive	273	ge	42236949	single-cell
-QTS000045	QTD000804	IBDverse	Enterocyte_top_villus	CL_1000342	enterocyte of epithelium proper of ileum	naive	328	ge	42236949	single-cell
-QTS000045	QTD000805	IBDverse	Enterocytes_progenitor_crypt_OLFM4++	CL_0009017	intestinal crypt stem cell of small intestine	naive	303	ge	42236949	single-cell
-QTS000045	QTD000806	IBDverse	Fibroblast_CPM+	CL_0000057	fibroblast	naive	131	ge	42236949	single-cell
-QTS000045	QTD000807	IBDverse	ILCs_Nkp44	CL_0001065	innate lymphoid cell	naive	197	ge	42236949	single-cell
-QTS000045	QTD000808	IBDverse	Ileum_Goblet_MUC2+	CL_1000326	ileal goblet cell	naive	189	ge	42236949	single-cell
-QTS000045	QTD000809	IBDverse	Ileum_Goblet_MUC2++_BCAS1++	CL_1000326	ileal goblet cell	naive	286	ge	42236949	single-cell
-QTS000045	QTD000810	IBDverse	Ileum_Goblet_MUC2+_BCAS1+	CL_1000326	ileal goblet cell	naive	346	ge	42236949	single-cell
-QTS000045	QTD000811	IBDverse	Ileum_Goblet_MUC2+_SPINK4++	CL_0009057	anorectum goblet cell	naive	291	ge	42236949	single-cell
-QTS000045	QTD000812	IBDverse	Ileum_Paneth_DEF6A	CL_1000343	paneth cell of epithelium of small intestine	naive	130	ge	42236949	single-cell
-QTS000045	QTD000813	IBDverse	Ileum_goblet_Ki67+	CL_1000326	ileal goblet cell	naive	185	ge	42236949	single-cell
-QTS000045	QTD000814	IBDverse	LP_fibroblast_ADAMDEC1	CL_0000057	fibroblast	naive	90	ge	42236949	single-cell
+QTS000045	QTD000776	IBDverse	Non-classical monocyte	CL_0000875	non-classical monocyte	naive	92	ge	42236949	single-cell
+QTS000045	QTD000777	IBDverse	Atypical B	CL_0000236	B cell	naive	121	ge	42236949	single-cell
+QTS000045	QTD000778	IBDverse	pDC	CL_0000784	plasmacytoid dendritic cell	naive	90	ge	42236949	single-cell
+QTS000045	QTD000779	IBDverse	GD T LEF1	CL_0000798	gamma-delta T cell	naive	91	ge	42236949	single-cell
+QTS000045	QTD000780	IBDverse	CD4 Treg	CL_0000792	CD4-positive, CD25-positive, alpha-beta regulatory T cell	naive	149	ge	42236949	single-cell
+QTS000045	QTD000781	IBDverse	CD4 memory	CL_0000897	CD4-positive, alpha-beta memory T cell	naive	318	ge	42236949	single-cell
+QTS000045	QTD000782	IBDverse	CD8 GZMKint	CL_4052021	granzyme K-associated CD8 T cell	naive	260	ge	42236949	single-cell
+QTS000045	QTD000783	IBDverse	CD8 naive	CL_0000900	naive thymus-derived CD8-positive, alpha-beta T cell	naive	144	ge	42236949	single-cell
+QTS000045	QTD000784	IBDverse	Colon goblet ATOH1lo MUC2lo	CL_0009057	anorectum goblet cell	naive	210	ge	42236949	single-cell
+QTS000045	QTD000785	IBDverse	Colon goblet MUC2hi BCAS1int	CL_0009057	anorectum goblet cell	naive	53	ge	42236949	single-cell
+QTS000045	QTD000786	IBDverse	Colon goblet MUC2int SPDEFhi	CL_0009057	anorectum goblet cell	naive	255	ge	42236949	single-cell
+QTS000045	QTD000787	IBDverse	Colonocyte progenitor OLFM4lo	CL_4047018	early colonocyte	naive	253	ge	42236949	single-cell
+QTS000045	QTD000788	IBDverse	Epithelial progenitor OLFM4hi	CL_4047018	early colonocyte	naive	88	ge	42236949	single-cell
+QTS000045	QTD000789	IBDverse	Colonocyte progenitor OLFM4lo MKI67lo	CL_4047018	early colonocyte	naive	230	ge	42236949	single-cell
+QTS000045	QTD000790	IBDverse	Colon ileum enterochromaffin TPH1 CES1	CL_0000504	enterochromaffin-like cell	naive	229	ge	42236949	single-cell
+QTS000045	QTD000791	IBDverse	Enteroendocrine NTS PYY GCG ISL1	CL_1001516	intestinal enteroendocrine cell	naive	231	ge	42236949	single-cell
+QTS000045	QTD000792	IBDverse	Colonocyte BEST4	CL_4047052	BEST4+ colonocyte	naive	224	ge	42236949	single-cell
+QTS000045	QTD000793	IBDverse	Colonocyte CEACAM7hi KRT20hi IFI27hi	CL_1000347	colonocyte	naive	197	ge	42236949	single-cell
+QTS000045	QTD000794	IBDverse	Colonocyte CEACAM7lo KRT20lo IFI27lo	CL_1000347	colonocyte	naive	255	ge	42236949	single-cell
+QTS000045	QTD000795	IBDverse	Colonocyte progenitor OLFM4hi MKI67hi	CL_4047018	early colonocyte	naive	233	ge	42236949	single-cell
+QTS000045	QTD000796	IBDverse	Colonocyte RBFOX1	CL_1000347	colonocyte	naive	257	ge	42236949	single-cell
+QTS000045	QTD000797	IBDverse	Colonocyte stem LGR5lo	CL_0009043	intestinal crypt stem cell of colon	naive	239	ge	42236949	single-cell
+QTS000045	QTD000798	IBDverse	Enterocyte BEST4	CL_4030026	BEST4+ enterocyte	naive	166	ge	42236949	single-cell
+QTS000045	QTD000799	IBDverse	Enterocyte progenitor OLFM4int MKI67	CL_1000342	enterocyte of epithelium proper of ileum	naive	220	ge	42236949	single-cell
+QTS000045	QTD000800	IBDverse	Enterocyte progenitor/precursor crypt OLFM4lo	CL_1000342	enterocyte of epithelium proper of ileum	naive	324	ge	42236949	single-cell
+QTS000045	QTD000801	IBDverse	Enterocyte progenitor/precursor crypt OLFM4hi	CL_1000342	enterocyte of epithelium proper of ileum	naive	182	ge	42236949	single-cell
+QTS000045	QTD000802	IBDverse	Enterocyte stem MKI67	CL_0009017	intestinal crypt stem cell of small intestine	naive	280	ge	42236949	single-cell
+QTS000045	QTD000803	IBDverse	Enterocyte stem OLFM4lo LGR5hi	CL_0009017	intestinal crypt stem cell of small intestine	naive	273	ge	42236949	single-cell
+QTS000045	QTD000804	IBDverse	Enterocyte top villus	CL_1000342	enterocyte of epithelium proper of ileum	naive	328	ge	42236949	single-cell
+QTS000045	QTD000805	IBDverse	Enterocyte progenitor crypt OLFM4hi	CL_0009017	intestinal crypt stem cell of small intestine	naive	303	ge	42236949	single-cell
+QTS000045	QTD000806	IBDverse	Fibroblast CPM	CL_0000057	fibroblast	naive	131	ge	42236949	single-cell
+QTS000045	QTD000807	IBDverse	ILC NCR2	CL_0001065	innate lymphoid cell	naive	197	ge	42236949	single-cell
+QTS000045	QTD000808	IBDverse	Ileum goblet MUC2int	CL_1000326	ileal goblet cell	naive	189	ge	42236949	single-cell
+QTS000045	QTD000809	IBDverse	Ileum goblet MUC2hi BCAS1hi	CL_1000326	ileal goblet cell	naive	286	ge	42236949	single-cell
+QTS000045	QTD000810	IBDverse	Ileum goblet MUC2lo BCAS1int	CL_1000326	ileal goblet cell	naive	346	ge	42236949	single-cell
+QTS000045	QTD000811	IBDverse	Ileum goblet MUC2hi SPINK4hi	CL_0009057	anorectum goblet cell	naive	291	ge	42236949	single-cell
+QTS000045	QTD000812	IBDverse	Ileum paneth DEFA6	CL_1000343	paneth cell of epithelium of small intestine	naive	130	ge	42236949	single-cell
+QTS000045	QTD000813	IBDverse	Ileum goblet MKI67	CL_1000326	ileal goblet cell	naive	185	ge	42236949	single-cell
+QTS000045	QTD000814	IBDverse	LP fibroblast ADAMDEC1	CL_0000057	fibroblast	naive	90	ge	42236949	single-cell
 QTS000045	QTD000815	IBDverse	Mast	CL_0000097	mast cell	naive	243	ge	42236949	single-cell
-QTS000045	QTD000816	IBDverse	Myofibroblast_ADGRL3	CL_0000186	myofibroblast cell	naive	50	ge	42236949	single-cell
+QTS000045	QTD000816	IBDverse	Myofibroblast ADGRL3	CL_0000186	myofibroblast cell	naive	50	ge	42236949	single-cell
 QTS000045	QTD000817	IBDverse	NK2	CL_0000623	natural killer cell	naive	188	ge	42236949	single-cell
 QTS000045	QTD000818	IBDverse	Platelet	CL_0000233	platelet	naive	83	ge	42236949	single-cell
-QTS000045	QTD000819	IBDverse	Tcell_GD_KLRG1+	CL_0000798	gamma-delta T cell	naive	100	ge	42236949	single-cell
-QTS000045	QTD000820	IBDverse	B_Cell_germinal_centre_plasmablast	CL_0000980	plasmablast	naive	135	ge	42236949	single-cell
-QTS000045	QTD000821	IBDverse	B_Cell_germinal_centre_plasmablast_proliferating	CL_0000980	plasmablast	naive	114	ge	42236949	single-cell
-QTS000045	QTD000822	IBDverse	CCL3_CCL4_CXCL9_10_Macrophages	CL_0000864	tissue-resident macrophage	naive	45	ge	42236949	single-cell
-QTS000045	QTD000823	IBDverse	CD4+_PASK	CL_0000624	CD4-positive, alpha-beta T cell	naive	286	ge	42236949	single-cell
-QTS000045	QTD000824	IBDverse	Tissue_CD4+_Treg	CL_0000792	CD4-positive, CD25-positive, alpha-beta regulatory T cell	naive	173	ge	42236949	single-cell
-QTS000045	QTD000825	IBDverse	CD4+_memory_CXCR6+	CL_0001204	CD4-positive, alpha-beta memory T cell, CD45RO-positive	naive	295	ge	42236949	single-cell
-QTS000045	QTD000826	IBDverse	CD8+_TRM_TGCR2+	CL_0001203	CD8-positive, alpha-beta memory T cell, CD45RO-positive	naive	339	ge	42236949	single-cell
-QTS000045	QTD000827	IBDverse	Macrophages_CD163+	CL_0000864	tissue-resident macrophage	naive	298	ge	42236949	single-cell
-QTS000045	QTD000828	IBDverse	Macrophages_CD163++	CL_0000864	tissue-resident macrophage	naive	218	ge	42236949	single-cell
-QTS000045	QTD000829	IBDverse	Macrophages_Proliferating	CL_0000864	tissue-resident macrophage	naive	125	ge	42236949	single-cell
-QTS000045	QTD000830	IBDverse	Memory_B_CD27Lo_	CL_0000787	memory B cell	naive	227	ge	42236949	single-cell
-QTS000045	QTD000831	IBDverse	Memory_B_PDE4D_TEX9	CL_0000790	memory B cell	naive	301	ge	42236949	single-cell
-QTS000045	QTD000832	IBDverse	Memory_B_PTPRJ	CL_0000789	memory B cell	naive	313	ge	42236949	single-cell
-QTS000045	QTD000833	IBDverse	Monocytes_S100A8_9+	CL_0000576	monocyte	naive	65	ge	42236949	single-cell
-QTS000045	QTD000834	IBDverse	Naive_B_cells	CL_0000788	naive B cell	naive	307	ge	42236949	single-cell
-QTS000045	QTD000835	IBDverse	PlasmaB_CD38++	CL_0000787	plasma cell	naive	162	ge	42236949	single-cell
-QTS000045	QTD000836	IBDverse	PlasmaB_CD38+++	CL_0000786	plasma cell	naive	359	ge	42236949	single-cell
-QTS000045	QTD000837	IBDverse	PlasmaB_CD38++++_IgG+_IgA+	CL_0000786	plasma cell	naive	147	ge	42236949	single-cell
-QTS000045	QTD000838	IBDverse	Tissue_Tcell_GD	CL_0000798	gamma-delta T cell	naive	272	ge	42236949	single-cell
+QTS000045	QTD000819	IBDverse	GD T KLRG1	CL_0000798	gamma-delta T cell	naive	100	ge	42236949	single-cell
+QTS000045	QTD000820	IBDverse	B germinal centre/plasmablast	CL_0000980	plasmablast	naive	135	ge	42236949	single-cell
+QTS000045	QTD000821	IBDverse	B germinal centre/plasmablast proliferating	CL_0000980	plasmablast	naive	114	ge	42236949	single-cell
+QTS000045	QTD000822	IBDverse	Macrophage CCL3/4 CXCL9/10	CL_0000864	tissue-resident macrophage	naive	45	ge	42236949	single-cell
+QTS000045	QTD000823	IBDverse	CD4 PASK	CL_0000624	CD4-positive, alpha-beta T cell	naive	286	ge	42236949	single-cell
+QTS000045	QTD000824	IBDverse	Tissue CD4 Treg	CL_0000792	CD4-positive, CD25-positive, alpha-beta regulatory T cell	naive	173	ge	42236949	single-cell
+QTS000045	QTD000825	IBDverse	CD4 memory CXCR6	CL_0001204	CD4-positive, alpha-beta memory T cell, CD45RO-positive	naive	295	ge	42236949	single-cell
+QTS000045	QTD000826	IBDverse	CD8 TRM TRGC2	CL_0001203	CD8-positive, alpha-beta memory T cell, CD45RO-positive	naive	339	ge	42236949	single-cell
+QTS000045	QTD000827	IBDverse	Macrophage CD163lo	CL_0000864	tissue-resident macrophage	naive	298	ge	42236949	single-cell
+QTS000045	QTD000828	IBDverse	Macrophage CD163hi	CL_0000864	tissue-resident macrophage	naive	218	ge	42236949	single-cell
+QTS000045	QTD000829	IBDverse	Macrophage proliferating	CL_0000864	tissue-resident macrophage	naive	125	ge	42236949	single-cell
+QTS000045	QTD000830	IBDverse	Memory B CD27lo	CL_0000787	memory B cell	naive	227	ge	42236949	single-cell
+QTS000045	QTD000831	IBDverse	Memory B PDE4D TEX9	CL_0000790	memory B cell	naive	301	ge	42236949	single-cell
+QTS000045	QTD000832	IBDverse	Memory B PTPRJ	CL_0000789	memory B cell	naive	313	ge	42236949	single-cell
+QTS000045	QTD000833	IBDverse	Monocyte S100A8/9	CL_0000576	monocyte	naive	65	ge	42236949	single-cell
+QTS000045	QTD000834	IBDverse	Naive B	CL_0000788	naive B cell	naive	307	ge	42236949	single-cell
+QTS000045	QTD000835	IBDverse	Plasma B CD38lo	CL_0000787	plasma cell	naive	162	ge	42236949	single-cell
+QTS000045	QTD000836	IBDverse	Plasma B CD38int	CL_0000786	plasma cell	naive	359	ge	42236949	single-cell
+QTS000045	QTD000837	IBDverse	Plasma B CD38hi IgG IgA	CL_0000786	plasma cell	naive	147	ge	42236949	single-cell
+QTS000045	QTD000838	IBDverse	Tissue resident GD T	CL_0000798	gamma-delta T cell	naive	272	ge	42236949	single-cell
 QTS000045	QTD000839	IBDverse	Tuft	CL_0019032	intestinal tuft cell	naive	245	ge	42236949	single-cell
 QTS000045	QTD000840	IBDverse	cDC2	CL_0000990	conventional dendritic cell	naive	127	ge	42236949	single-cell
 QTS000046	QTD000841	Randolph_2021_reannotated	Alveolar_macrophages_NI	CL_0000583	alveolar macrophage	naive	65	ge	34822289	single-cell
