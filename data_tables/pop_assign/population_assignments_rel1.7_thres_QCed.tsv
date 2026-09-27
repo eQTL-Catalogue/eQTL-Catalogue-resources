@@ -1,7 +1,6 @@
-study	EUR	AFR	SAS	EAS	Unassigned	count	proportion
+study	EUR	AFR	SAS	EAS	Unassigned	count
 Alasoo_2018	84	0	0	0	0	84
-BLUEPRINT_PE	197	0	0	0	0	197
-BLUEPRINT_SE	197	0	0	0	0	197
+BLUEPRINT	197	0	0	0	0	197
 Bossini-Castillo_2019	119	0	0	0	0	119
 Braineac2	110	0	0	0	0	110
 BrainSeq	232	231	1	0	15	479
@@ -32,3 +31,9 @@ TwinsUK	432	0	0	0	1	433
 van_de_Bunt_2015	117	0	0	0	0	117
 Young_2019	96	3	3	0	2	104
 Nathan_2022	5	1	0	38	214	258
+MacroMap	202	0	0	0	0	202
+Cytoimmgem	119	0	0	0	1	120
+Perez_2022	145	2	5	98	8	258
+OneK1K	1093	0	2	3	0	1098
+GAinS	607	1	16	3	3	630
+AFR_LCL	0	650	0	0	9	659
