@@ -70,4 +70,3 @@ ge_cs_sorted = tidyr::separate(ge_cs, variant, c("chromosome", "position", "ref"
   dplyr::arrange(chromosome, position, dataset_id, molecular_trait_id) %>%
   dplyr::mutate(cs_id = paste0(dataset_id, "_", cs_id))
 arrow::write_parquet(ge_cs_sorted, "big_data/cs_by_quant_r7/eQTL_Catalogue_r7_cs_txrev_071026.parquet")
-
