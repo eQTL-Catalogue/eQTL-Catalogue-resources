@@ -1032,3 +1032,94 @@ TenK10K	pDC	ge	QTS000064	QTD001308
 TenK10K	Plasmablast	ge	QTS000064	QTD001309
 TenK10K	Treg	ge	QTS000064	QTD001310
 AdipoExpress	adipose	ge	QTS000065	QTD001311
+Finngen_Multiome	B (L1)	ge	QTS000066	QTD001312
+Finngen_Multiome	CD4_T (L1)	ge	QTS000066	QTD001313
+Finngen_Multiome	CD8_T (L1)	ge	QTS000066	QTD001314
+Finngen_Multiome	DC (L1)	ge	QTS000066	QTD001315
+Finngen_Multiome	Mono (L1)	ge	QTS000066	QTD001316
+Finngen_Multiome	NK (L1)	ge	QTS000066	QTD001317
+Finngen_Multiome	PBMC (L1)	ge	QTS000066	QTD001318
+Finngen_Multiome	other (L1)	ge	QTS000066	QTD001319
+Finngen_Multiome	other_T (L1)	ge	QTS000066	QTD001320
+Finngen_Multiome	B_intermediate (L2)	ge	QTS000066	QTD001321
+Finngen_Multiome	B_memory (L2)	ge	QTS000066	QTD001322
+Finngen_Multiome	B_naive (L2)	ge	QTS000066	QTD001323
+Finngen_Multiome	CD14_Mono (L2)	ge	QTS000066	QTD001324
+Finngen_Multiome	CD16_Mono (L2)	ge	QTS000066	QTD001325
+Finngen_Multiome	CD4_CTL (L2)	ge	QTS000066	QTD001326
+Finngen_Multiome	CD4_Naive (L2)	ge	QTS000066	QTD001327
+Finngen_Multiome	CD4_TCM (L2)	ge	QTS000066	QTD001328
+Finngen_Multiome	CD4_TEM (L2)	ge	QTS000066	QTD001329
+Finngen_Multiome	CD8_Naive (L2)	ge	QTS000066	QTD001330
+Finngen_Multiome	CD8_TEM (L2)	ge	QTS000066	QTD001331
+Finngen_Multiome	HSPC (L2)	ge	QTS000066	QTD001332
+Finngen_Multiome	ILC (L2)	ge	QTS000066	QTD001333
+Finngen_Multiome	MAIT (L2)	ge	QTS000066	QTD001334
+Finngen_Multiome	NK (L2)	ge	QTS000066	QTD001335
+Finngen_Multiome	NK_CD56bright (L2)	ge	QTS000066	QTD001336
+Finngen_Multiome	NK_Proliferating (L2)	ge	QTS000066	QTD001337
+Finngen_Multiome	Plasmablast (L2)	ge	QTS000066	QTD001338
+Finngen_Multiome	Platelet (L2)	ge	QTS000066	QTD001339
+Finngen_Multiome	Treg (L2)	ge	QTS000066	QTD001340
+Finngen_Multiome	cDC2 (L2)	ge	QTS000066	QTD001341
+Finngen_Multiome	dnT (L2)	ge	QTS000066	QTD001342
+Finngen_Multiome	gdT (L2)	ge	QTS000066	QTD001343
+Finngen_Multiome	pDC (L2)	ge	QTS000066	QTD001344
+SingleBrain	Ast_control	ge	QTS000067	QTD001345
+SingleBrain	Ast_disease	ge	QTS000067	QTD001346
+SingleBrain	Ast_female	ge	QTS000067	QTD001347
+SingleBrain	Ast_male	ge	QTS000067	QTD001348
+SingleBrain	Ext_control	ge	QTS000067	QTD001349
+SingleBrain	Ext_disease	ge	QTS000067	QTD001350
+SingleBrain	Ext_female	ge	QTS000067	QTD001351
+SingleBrain	Ext_male	ge	QTS000067	QTD001352
+SingleBrain	IN_control	ge	QTS000067	QTD001353
+SingleBrain	IN_disease	ge	QTS000067	QTD001354
+SingleBrain	IN_female	ge	QTS000067	QTD001355
+SingleBrain	IN_male	ge	QTS000067	QTD001356
+SingleBrain	MG_control	ge	QTS000067	QTD001357
+SingleBrain	MG_disease	ge	QTS000067	QTD001358
+SingleBrain	MG_female	ge	QTS000067	QTD001359
+SingleBrain	MG_male	ge	QTS000067	QTD001360
+SingleBrain	OD_control	ge	QTS000067	QTD001361
+SingleBrain	OD_disease	ge	QTS000067	QTD001362
+SingleBrain	OD_female	ge	QTS000067	QTD001363
+SingleBrain	OD_male	ge	QTS000067	QTD001364
+SingleBrain	OPC_control	ge	QTS000067	QTD001365
+SingleBrain	OPC_disease	ge	QTS000067	QTD001366
+SingleBrain	OPC_female	ge	QTS000067	QTD001367
+SingleBrain	OPC_male	ge	QTS000067	QTD001368
+PsychAD	Adaptive_subclass	ge	QTS000068	QTD001369
+PsychAD	Astro_class	ge	QTS000068	QTD001370
+PsychAD	Astro_subclass	ge	QTS000068	QTD001371
+PsychAD	EN_class	ge	QTS000068	QTD001372
+PsychAD	EN_L2_3_IT_subclass	ge	QTS000068	QTD001373
+PsychAD	EN_L3_5_IT_1_subclass	ge	QTS000068	QTD001374
+PsychAD	EN_L3_5_IT_2_subclass	ge	QTS000068	QTD001375
+PsychAD	EN_L3_5_IT_3_subclass	ge	QTS000068	QTD001376
+PsychAD	EN_L5_6_NP_subclass	ge	QTS000068	QTD001377
+PsychAD	EN_L6B_subclass	ge	QTS000068	QTD001378
+PsychAD	EN_L6_CT_subclass	ge	QTS000068	QTD001379
+PsychAD	EN_L6_IT_1_subclass	ge	QTS000068	QTD001380
+PsychAD	EN_L6_IT_2_subclass	ge	QTS000068	QTD001381
+PsychAD	Endo_class	ge	QTS000068	QTD001382
+PsychAD	Endo_subclass	ge	QTS000068	QTD001383
+PsychAD	IN_class	ge	QTS000068	QTD001384
+PsychAD	IN_ADARB2_subclass	ge	QTS000068	QTD001385
+PsychAD	IN_LAMP5_LHX6_subclass	ge	QTS000068	QTD001386
+PsychAD	IN_LAMP5_RELN_subclass	ge	QTS000068	QTD001387
+PsychAD	IN_PVALB_subclass	ge	QTS000068	QTD001388
+PsychAD	IN_PVALB_CHC_subclass	ge	QTS000068	QTD001389
+PsychAD	IN_SST_subclass	ge	QTS000068	QTD001390
+PsychAD	IN_VIP_subclass	ge	QTS000068	QTD001391
+PsychAD	Immune_class	ge	QTS000068	QTD001392
+PsychAD	Micro_subclass	ge	QTS000068	QTD001393
+PsychAD	Mural_class	ge	QTS000068	QTD001394
+PsychAD	OPC_class	ge	QTS000068	QTD001395
+PsychAD	OPC_subclass	ge	QTS000068	QTD001396
+PsychAD	Oligo_class	ge	QTS000068	QTD001397
+PsychAD	Oligo_subclass	ge	QTS000068	QTD001398
+PsychAD	PC_subclass	ge	QTS000068	QTD001399
+PsychAD	PVM_subclass	ge	QTS000068	QTD001400
+PsychAD	SMC_subclass	ge	QTS000068	QTD001401
+PsychAD	VLMC_subclass	ge	QTS000068	QTD001402
