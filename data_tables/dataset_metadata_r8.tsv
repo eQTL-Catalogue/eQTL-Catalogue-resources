@@ -41,12 +41,12 @@ QTS000002	QTD000035	BLUEPRINT	T-cell	CL_0000624	CD4+ T cell	naive	167	leafcutter
 QTS000002	QTD001220	BLUEPRINT	monocyte	CL_0002057	monocyte	naive	191	majiq	27863251	bulk
 QTS000002	QTD001221	BLUEPRINT	neutrophil	CL_0000775	neutrophil	naive	196	majiq	27863251	bulk
 QTS000002	QTD001222	BLUEPRINT	T-cell	CL_0000624	CD4+ T cell	naive	167	majiq	27863251	bulk
-QTS000003	QTD000036	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg naive	naive	119	ge	35591976	bulk
-QTS000003	QTD000037	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg naive	naive	119	exon	35591976	bulk
-QTS000003	QTD000038	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg naive	naive	119	tx	35591976	bulk
-QTS000003	QTD000039	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg naive	naive	119	txrev	35591976	bulk
-QTS000003	QTD000040	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg naive	naive	119	leafcutter	35591976	bulk
-QTS000003	QTD001223	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg naive	naive	119	majiq	35591976	bulk
+QTS000003	QTD000036	Bossini-Castillo_2019	Treg_naive	CL_0000815	regulatory T cell	naive	119	ge	35591976	bulk
+QTS000003	QTD000037	Bossini-Castillo_2019	Treg_naive	CL_0000815	regulatory T cell	naive	119	exon	35591976	bulk
+QTS000003	QTD000038	Bossini-Castillo_2019	Treg_naive	CL_0000815	regulatory T cell	naive	119	tx	35591976	bulk
+QTS000003	QTD000039	Bossini-Castillo_2019	Treg_naive	CL_0000815	regulatory T cell	naive	119	txrev	35591976	bulk
+QTS000003	QTD000040	Bossini-Castillo_2019	Treg_naive	CL_0000815	regulatory T cell	naive	119	leafcutter	35591976	bulk
+QTS000003	QTD001223	Bossini-Castillo_2019	Treg_naive	CL_0000815	regulatory T cell	naive	119	majiq	35591976	bulk
 QTS000004	QTD000041	Braineac2	putamen	UBERON_0001874	brain (putamen)	naive	102	ge	32098967	bulk
 QTS000004	QTD000042	Braineac2	putamen	UBERON_0001874	brain (putamen)	naive	102	exon	32098967	bulk
 QTS000004	QTD000043	Braineac2	putamen	UBERON_0001874	brain (putamen)	naive	102	tx	32098967	bulk
