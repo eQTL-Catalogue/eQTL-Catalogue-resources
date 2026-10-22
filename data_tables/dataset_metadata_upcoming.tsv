@@ -38,7 +38,7 @@ QTS000066	QTD001314	Finngen_Multiome	CD8_T (L1)	CL_0000625	CD8+ T cell	naive	110
 QTS000066	QTD001315	Finngen_Multiome	DC (L1)	CL_0000451	dendritic cell	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001316	Finngen_Multiome	Mono (L1)	CL_0002057	monocyte	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001317	Finngen_Multiome	NK (L1)	CL_0000623	NK cell	naive	1108	ge	42816628	single-cell
-QTS000066	QTD001318	Finngen_Multiome	PBMC (L1)	CL_2000001	peripheral blood mononuclear cell	naive	1108	ge42816628	single-cell
+QTS000066	QTD001318	Finngen_Multiome	PBMC (L1)	CL_2000001	peripheral blood mononuclear cell	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001319	Finngen_Multiome	other (L1)	CL_2000001	peripheral blood mononuclear cell	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001320	Finngen_Multiome	other_T (L1)	CL_0000084	T cell	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001321	Finngen_Multiome	B_intermediate (L2)	CL_0000236	B cell	naive	1108	ge	42816628	single-cell
