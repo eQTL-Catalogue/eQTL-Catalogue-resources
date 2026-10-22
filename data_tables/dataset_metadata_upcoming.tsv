@@ -48,7 +48,7 @@ QTS000066	QTD001324	Finngen_Multiome	CD14_Mono (L2)	CL_0000860	classical monocyt
 QTS000066	QTD001325	Finngen_Multiome	CD16_Mono (L2)	CL_0000875	non-classical monocyte	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001326	Finngen_Multiome	CD4_CTL (L2)	CL_0000934	CD4+ CTL cell	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001327	Finngen_Multiome	CD4_Naive (L2)	CL_0000624	CD4+ T cell	naive	1108	ge	42816628	single-cell
-QTS000066	QTD001328	Finngen_Multiome	CD4_TCM (L2)	CD4+ TCM cell	naive	1108	ge	42816628	single-cell
+QTS000066	QTD001328	Finngen_Multiome	CD4_TCM (L2)	CL_0000904	CD4+ TCM cell	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001329	Finngen_Multiome	CD4_TEM (L2)	CL_0000905	CD4+ TEM cell	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001330	Finngen_Multiome	CD8_Naive (L2)	CL_0000625	CD8+ T cell	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001331	Finngen_Multiome	CD8_TEM (L2)	CL_0000913	CD8+ TEM cell	naive	1108	ge	42816628	single-cell
