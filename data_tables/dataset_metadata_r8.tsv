@@ -41,12 +41,12 @@ QTS000002	QTD000035	BLUEPRINT	T-cell	CL_0000624	CD4+ T cell	naive	167	leafcutter
 QTS000002	QTD001220	BLUEPRINT	monocyte	CL_0002057	monocyte	naive	191	majiq	27863251	bulk
 QTS000002	QTD001221	BLUEPRINT	neutrophil	CL_0000775	neutrophil	naive	196	majiq	27863251	bulk
 QTS000002	QTD001222	BLUEPRINT	T-cell	CL_0000624	CD4+ T cell	naive	167	majiq	27863251	bulk
-QTS000003	QTD000036	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg memory	naive	119	ge	35591976	bulk
-QTS000003	QTD000037	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg memory	naive	119	exon	35591976	bulk
-QTS000003	QTD000038	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg memory	naive	119	tx	35591976	bulk
-QTS000003	QTD000039	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg memory	naive	119	txrev	35591976	bulk
-QTS000003	QTD000040	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg memory	naive	119	leafcutter	35591976	bulk
-QTS000003	QTD001223	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg memory	naive	119	majiq	35591976	bulk
+QTS000003	QTD000036	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg naive	naive	119	ge	35591976	bulk
+QTS000003	QTD000037	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg naive	naive	119	exon	35591976	bulk
+QTS000003	QTD000038	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg naive	naive	119	tx	35591976	bulk
+QTS000003	QTD000039	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg naive	naive	119	txrev	35591976	bulk
+QTS000003	QTD000040	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg naive	naive	119	leafcutter	35591976	bulk
+QTS000003	QTD001223	Bossini-Castillo_2019	Treg_naive	CL_0002677	Treg naive	naive	119	majiq	35591976	bulk
 QTS000004	QTD000041	Braineac2	putamen	UBERON_0001874	brain (putamen)	naive	102	ge	32098967	bulk
 QTS000004	QTD000042	Braineac2	putamen	UBERON_0001874	brain (putamen)	naive	102	exon	32098967	bulk
 QTS000004	QTD000043	Braineac2	putamen	UBERON_0001874	brain (putamen)	naive	102	tx	32098967	bulk
@@ -540,16 +540,16 @@ QTS000026	QTD000460	Schmiedel_2018	Th1-17_memory	CL_0000899	Th17 cell	naive	88	e
 QTS000026	QTD000461	Schmiedel_2018	Th1-17_memory	CL_0000899	Th17 cell	naive	88	tx	30449622	bulk
 QTS000026	QTD000462	Schmiedel_2018	Th1-17_memory	CL_0000899	Th17 cell	naive	88	txrev	30449622	bulk
 QTS000026	QTD000463	Schmiedel_2018	Th1-17_memory	CL_0000899	Th17 cell	naive	88	leafcutter	30449622	bulk
-QTS000026	QTD000464	Schmiedel_2018	Treg_memory	CL_0002678	Treg naive	naive	89	ge	30449622	bulk
-QTS000026	QTD000465	Schmiedel_2018	Treg_memory	CL_0002678	Treg naive	naive	89	exon	30449622	bulk
-QTS000026	QTD000466	Schmiedel_2018	Treg_memory	CL_0002678	Treg naive	naive	89	tx	30449622	bulk
-QTS000026	QTD000467	Schmiedel_2018	Treg_memory	CL_0002678	Treg naive	naive	89	txrev	30449622	bulk
-QTS000026	QTD000468	Schmiedel_2018	Treg_memory	CL_0002678	Treg naive	naive	89	leafcutter	30449622	bulk
-QTS000026	QTD000469	Schmiedel_2018	Treg_naive	CL_0002677	Treg memory	naive	89	ge	30449622	bulk
-QTS000026	QTD000470	Schmiedel_2018	Treg_naive	CL_0002677	Treg memory	naive	89	exon	30449622	bulk
-QTS000026	QTD000471	Schmiedel_2018	Treg_naive	CL_0002677	Treg memory	naive	89	tx	30449622	bulk
-QTS000026	QTD000472	Schmiedel_2018	Treg_naive	CL_0002677	Treg memory	naive	89	txrev	30449622	bulk
-QTS000026	QTD000473	Schmiedel_2018	Treg_naive	CL_0002677	Treg memory	naive	89	leafcutter	30449622	bulk
+QTS000026	QTD000464	Schmiedel_2018	Treg_memory	CL_0002677	Treg naive	naive	89	ge	30449622	bulk
+QTS000026	QTD000465	Schmiedel_2018	Treg_memory	CL_0002677	Treg naive	naive	89	exon	30449622	bulk
+QTS000026	QTD000466	Schmiedel_2018	Treg_memory	CL_0002677	Treg naive	naive	89	tx	30449622	bulk
+QTS000026	QTD000467	Schmiedel_2018	Treg_memory	CL_0002677	Treg naive	naive	89	txrev	30449622	bulk
+QTS000026	QTD000468	Schmiedel_2018	Treg_memory	CL_0002677	Treg naive	naive	89	leafcutter	30449622	bulk
+QTS000026	QTD000469	Schmiedel_2018	Treg_naive	CL_0002678	Treg memory	naive	89	ge	30449622	bulk
+QTS000026	QTD000470	Schmiedel_2018	Treg_naive	CL_0002678	Treg memory	naive	89	exon	30449622	bulk
+QTS000026	QTD000471	Schmiedel_2018	Treg_naive	CL_0002678	Treg memory	naive	89	tx	30449622	bulk
+QTS000026	QTD000472	Schmiedel_2018	Treg_naive	CL_0002678	Treg memory	naive	89	txrev	30449622	bulk
+QTS000026	QTD000473	Schmiedel_2018	Treg_naive	CL_0002678	Treg memory	naive	89	leafcutter	30449622	bulk
 QTS000026	QTD000474	Schmiedel_2018	B-cell_naive	CL_0000236	B cell	naive	91	ge	30449622	bulk
 QTS000026	QTD000475	Schmiedel_2018	B-cell_naive	CL_0000236	B cell	naive	91	exon	30449622	bulk
 QTS000026	QTD000476	Schmiedel_2018	B-cell_naive	CL_0000236	B cell	naive	91	tx	30449622	bulk
@@ -595,8 +595,8 @@ QTS000026	QTD001201	Schmiedel_2018	Th17_memory	CL_0000899	Th17 cell	naive	89	maj
 QTS000026	QTD001202	Schmiedel_2018	Th1_memory	CL_0000545	Th1 cell	naive	82	majiq	30449622	bulk
 QTS000026	QTD001203	Schmiedel_2018	Th2_memory	CL_0000546	Th2 cell	naive	89	majiq	30449622	bulk
 QTS000026	QTD001204	Schmiedel_2018	Th1-17_memory	CL_0000899	Th17 cell	naive	88	majiq	30449622	bulk
-QTS000026	QTD001205	Schmiedel_2018	Treg_memory	CL_0002678	Treg naive	naive	89	majiq	30449622	bulk
-QTS000026	QTD001206	Schmiedel_2018	Treg_naive	CL_0002677	Treg memory	naive	89	majiq	30449622	bulk
+QTS000026	QTD001205	Schmiedel_2018	Treg_memory	CL_0002677	Treg naive	naive	89	majiq	30449622	bulk
+QTS000026	QTD001206	Schmiedel_2018	Treg_naive	CL_0002678	Treg memory	naive	89	majiq	30449622	bulk
 QTS000026	QTD001207	Schmiedel_2018	B-cell_naive	CL_0000236	B cell	naive	91	majiq	30449622	bulk
 QTS000026	QTD001208	Schmiedel_2018	CD4_T-cell_naive	CL_0000624	CD4+ T cell	naive	88	majiq	30449622	bulk
 QTS000026	QTD001209	Schmiedel_2018	CD4_T-cell_anti-CD3-CD28	CL_0000624	CD4+ T cell	anti-CD3-CD28_4h	89	majiq	30449622	bulk
@@ -725,7 +725,7 @@ QTS000038	QTD000617	OneK1K	CD8_TEM	CL_0000913	CD8+ TEM cell	naive	946	ge	3538977
 QTS000038	QTD000619	OneK1K	MAIT	CL_0000940	MAIT cell	naive	186	ge	35389779	single-cell
 QTS000038	QTD000620	OneK1K	NK	CL_0000623	NK cell	naive	951	ge	35389779	single-cell
 QTS000038	QTD000621	OneK1K	NK_CD56bright	CL_0000938	CD56+ NK cell	naive	88	ge	35389779	single-cell
-QTS000038	QTD000625	OneK1K	Treg	CL_0002677	Treg memory	naive	745	ge	35389779	single-cell
+QTS000038	QTD000625	OneK1K	Treg	CL_0000815	regulatory T cell	745	ge	35389779	single-cell
 QTS000038	QTD000628	OneK1K	gdT	CL_0000798	gdT cell	naive	453	ge	35389779	single-cell
 QTS000039	QTD000630	Jerber_2021	NB_Naive_D11	BTO_0000930	neuroblast	naive_D11	61	ge	33664506	single-cell
 QTS000039	QTD000631	Jerber_2021	U_Neur1_ROT_D52	CL_0000540	neuron	rotenone_D52	59	ge	33664506	single-cell
@@ -1028,8 +1028,8 @@ QTS000056	QTD001014	DICE	TH1	CL_0000545	Th1 cell	naive	77	ge	35213211	single-cel
 QTS000056	QTD001015	DICE	TH1,17	CL_0000899	Th17 cell	naive	77	ge	35213211	single-cell
 QTS000056	QTD001016	DICE	TH17	CL_0000899	Th17 cell	naive	77	ge	35213211	single-cell
 QTS000056	QTD001017	DICE	TH2	CL_0000546	Th2 cell	naive	77	ge	35213211	single-cell
-QTS000056	QTD001018	DICE	Treg_Mem	CL_0002678	Treg naive	naive	77	ge	35213211	single-cell
-QTS000056	QTD001019	DICE	Treg_Naive	CL_0002677	Treg memory	naive	77	ge	35213211	single-cell
+QTS000056	QTD001018	DICE	Treg_Mem	CL_0002678	Treg memory	naive	77	ge	35213211	single-cell
+QTS000056	QTD001019	DICE	Treg_Naive	CL_0002677	Treg naive	naive	77	ge	35213211	single-cell
 QTS000057	QTD001020	DICE_reannotated	Regulatory_T_cells	CL_0000815	regulatory T cell	naive	77	ge	35213211	single-cell
 QTS000057	QTD001021	DICE_reannotated	T_agonist_	CL_0000084	T cell	naive	75	ge	35213211	single-cell
 QTS000057	QTD001022	DICE_reannotated	Tcm_Naive_helper_T_cells	CL_0000904	CD4+ TCM cell	naive	77	ge	35213211	single-cell
