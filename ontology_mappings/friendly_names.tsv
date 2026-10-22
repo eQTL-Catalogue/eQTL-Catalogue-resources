@@ -14,8 +14,8 @@ CL_0002038	T follicular helper cell	Tfh cell
 CL_0000899	T-helper 17 cell	Th17 cell
 CL_0000545	T-helper 1 cell	Th1 cell
 CL_0000546	T-helper 2 cell	Th2 cell
-CL_0002678	memory regulatory T cell	Treg naive
-CL_0002677	naive regulatory T cell	Treg memory
+CL_0002678	memory regulatory T cell	Treg memory
+CL_0002677	naive regulatory T cell	Treg naive
 CL_0002396	CD14-low, CD16-positive monocyte	CD16+ monocyte
 CL_0000623	natural killer cell	NK cell
 EFO_0004905	induced pluripotent stem cell	iPSC
