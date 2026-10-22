@@ -60,7 +60,7 @@ QTS000066	QTD001336	Finngen_Multiome	NK_CD56bright (L2)	CL_0000938	CD56+ NK cell
 QTS000066	QTD001337	Finngen_Multiome	NK_Proliferating (L2)	CL_0000623	NK cell	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001338	Finngen_Multiome	Plasmablast (L2)	CL_0000980	plasmablast	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001339	Finngen_Multiome	Platelet (L2)	CL_0000233	platelet	naive	1108	ge	42816628	single-cell
-QTS000066	QTD001340	Finngen_Multiome	Treg (L2)	CL_0000815	regulatory T cell	1108	ge	42816628	single-cell
+QTS000066	QTD001340	Finngen_Multiome	Treg (L2)	CL_0000815	regulatory T cell	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001341	Finngen_Multiome	cDC2 (L2)	CL_0000990	conventional dendritic cell	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001342	Finngen_Multiome	dnT (L2)	CL_0002489	double negative T cell	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001343	Finngen_Multiome	gdT (L2)	CL_0000798	gdT cell	naive	1108	ge	42816628	single-cell
