@@ -726,7 +726,7 @@ QTS000038	QTD000619	OneK1K	MAIT	CL_0000940	MAIT cell	naive	186	ge	35389779	singl
 QTS000038	QTD000620	OneK1K	NK	CL_0000623	NK cell	naive	951	ge	35389779	single-cell
 QTS000038	QTD000621	OneK1K	NK_CD56bright	CL_0000938	CD56+ NK cell	naive	88	ge	35389779	single-cell
 QTS000038	QTD000625	OneK1K	Treg	CL_0000815	regulatory T cell	745	ge	35389779	single-cell
-QTS000038	QTD000628	OneK1K	gdT	CL_0000798	gdT cell	naive	453	ge	35389779	single-cell
+QTS000038	QTD000628	OneK1K	gdT	CL_0000798	gamma-delta T cell	naive	453	ge	35389779	single-cell
 QTS000039	QTD000630	Jerber_2021	NB_Naive_D11	BTO_0000930	neuroblast	naive_D11	61	ge	33664506	single-cell
 QTS000039	QTD000631	Jerber_2021	U_Neur1_ROT_D52	CL_0000540	neuron	rotenone_D52	59	ge	33664506	single-cell
 QTS000039	QTD000632	Jerber_2021	P_FPP_ROT_D52	UBERON_0003079	floor plate progenitor	rotenone_D52	66	ge	33664506	single-cell
@@ -756,29 +756,29 @@ QTS000040	QTD000660	Nathan_2022	CD4+_CCR4+ICOS+_central	CL_0000624	CD4+ T cell	n
 QTS000040	QTD000661	Nathan_2022	CD4+_central	CL_0000624	CD4+ T cell	naive	196	ge	35545678	single-cell
 QTS000040	QTD000662	Nathan_2022	CD4+_CCR5+_cytotoxic	CL_0000624	CD4+ T cell	naive	74	ge	35545678	single-cell
 QTS000040	QTD000663	Nathan_2022	CD4+_CD161+_cytotoxic	CL_0000624	CD4+ T cell	naive	119	ge	35545678	single-cell
-QTS000040	QTD000664	Nathan_2022	CD8+_GZMK+	CL_0000624	CD4+ T cell	naive	180	ge	35545678	single-cell
-QTS000040	QTD000665	Nathan_2022	CD8+_GZMB+	CL_0000624	CD4+ T cell	naive	154	ge	35545678	single-cell
+QTS000040	QTD000664	Nathan_2022	CD8+_GZMK+	CL_0000625	CD8+ T cell	naive	180	ge	35545678	single-cell
+QTS000040	QTD000665	Nathan_2022	CD8+_GZMB+	CL_0000625	CD8+ T cell	naive	154	ge	35545678	single-cell
 QTS000040	QTD000666	Nathan_2022	CD4+_activated	CL_0000624	CD4+ T cell	naive	147	ge	35545678	single-cell
-QTS000040	QTD000667	Nathan_2022	Vd2	CL_0000624	CD4+ T cell	naive	134	ge	35545678	single-cell
+QTS000040	QTD000667	Nathan_2022	Vd2	CL_0000798	gamma-delta T cell	naive	134	ge	35545678	single-cell
 QTS000040	QTD000668	Nathan_2022	CD4+_CD161+_Th2	CL_0000624	CD4+ T cell	naive	188	ge	35545678	single-cell
 QTS000040	QTD000669	Nathan_2022	CD4-8+_PD-1+TIGIT+	CL_0000624	CD4+ T cell	naive	151	ge	35545678	single-cell
-QTS000040	QTD000671	Nathan_2022	CD8+_central	CL_0000624	CD4+ T cell	naive	126	ge	35545678	single-cell
+QTS000040	QTD000671	Nathan_2022	CD8+_central	CL_0000625	CD8+ T cell	naive	126	ge	35545678	single-cell
 QTS000040	QTD000672	Nathan_2022	CD4+_CD161+_Th1	CL_0000624	CD4+ T cell	naive	189	ge	35545678	single-cell
 QTS000040	QTD000673	Nathan_2022	CD4+_Th17-1	CL_0000624	CD4+ T cell	naive	201	ge	35545678	single-cell
 QTS000040	QTD000674	Nathan_2022	CD4+_HLA-DR+	CL_0000624	CD4+ T cell	naive	153	ge	35545678	single-cell
 QTS000040	QTD000675	Nathan_2022	CD4+_CCR4+_central	CL_0000624	CD4+ T cell	naive	197	ge	35545678	single-cell
-QTS000040	QTD000676	Nathan_2022	CD8+_CXCR3+	CL_0000624	CD4+ T cell	naive	99	ge	35545678	single-cell
+QTS000040	QTD000676	Nathan_2022	CD8+_CXCR3+	CL_0000625	CD8+ T cell	naive	99	ge	35545678	single-cell
 QTS000040	QTD000677	Nathan_2022	CD4+_Th2	CL_0000624	CD4+ T cell	naive	200	ge	35545678	single-cell
 QTS000040	QTD000678	Nathan_2022	CD4+_CCR4+	CL_0000624	CD4+ T cell	naive	196	ge	35545678	single-cell
 QTS000040	QTD000679	Nathan_2022	CD4+_CD38+ICOS+_central	CL_0000624	CD4+ T cell	naive	133	ge	35545678	single-cell
 QTS000040	QTD000680	Nathan_2022	CD4+_cytotoxic	CL_0000624	CD4+ T cell	naive	174	ge	35545678	single-cell
 QTS000040	QTD000681	Nathan_2022	CD4+_CD27+CD161+	CL_0000624	CD4+ T cell	naive	197	ge	35545678	single-cell
-QTS000040	QTD000682	Nathan_2022	CD4+_RORC+_Treg	CL_0000624	CD4+ T cell	naive	62	ge	35545678	single-cell
+QTS000040	QTD000682	Nathan_2022	CD4+_RORC+_Treg	CL_0000815	regulatory T cell	naive	62	ge	35545678	single-cell
 QTS000040	QTD000683	Nathan_2022	CD4+_Th1	CL_0000624	CD4+ T cell	naive	203	ge	35545678	single-cell
-QTS000040	QTD000684	Nathan_2022	CD8+_activated	CL_0000624	CD4+ T cell	naive	42	ge	35545678	single-cell
+QTS000040	QTD000684	Nathan_2022	CD8+_activated	CL_0000625	CD8+ T cell	naive	42	ge	35545678	single-cell
 QTS000040	QTD000685	Nathan_2022	CD4+_CD27+	CL_0000624	CD4+ T cell	naive	197	ge	35545678	single-cell
 QTS000040	QTD000686	Nathan_2022	CD4+_lncRNA	CL_0000624	CD4+ T cell	naive	202	ge	35545678	single-cell
-QTS000040	QTD000687	Nathan_2022	CD4+_Treg	CL_0000624	CD4+ T cell	naive	195	ge	35545678	single-cell
+QTS000040	QTD000687	Nathan_2022	CD4+_Treg	CL_0000815	regulatory T cell	naive	195	ge	35545678	single-cell
 QTS000040	QTD000688	Nathan_2022	CD4+_Th17	CL_0000624	CD4+ T cell	naive	193	ge	35545678	single-cell
 QTS000041	QTD000689	Cytoimmgen	combined_CD4_Naive_UNS_16H	CL_0000624	CD4+ T cell	naive	105	ge	35618845	single-cell
 QTS000041	QTD000690	Cytoimmgen	combined_CD4_Naive_STIM_40H	CL_0000624	CD4+ T cell	anti-CD3-CD28_40h	94	ge	35618845	single-cell
@@ -993,8 +993,8 @@ QTS000051	QTD000917	Natri_2024	AT2	CL_0002063	alveolar type 2 cell	naive	88	ge	3
 QTS000051	QTD000918	Natri_2024	Alveolar_macrophage	CL_0000583	alveolar macrophage	naive	65	ge	38548990	single-cell
 QTS000051	QTD000919	Natri_2024	Arteriole	CL_1000412	arteriole endothelial cell	naive	73	ge	38548990	single-cell
 QTS000051	QTD000920	Natri_2024	Basal	CL_0000646	basal cell	naive	53	ge	38548990	single-cell
-QTS000051	QTD000921	Natri_2024	CD4	CL_0000624	T cell	naive	57	ge	38548990	single-cell
-QTS000051	QTD000922	Natri_2024	CD8_NKT	CL_0000625	T cell	naive	65	ge	38548990	single-cell
+QTS000051	QTD000921	Natri_2024	CD4	CL_0000624	CD4+ T cell	naive	57	ge	38548990	single-cell
+QTS000051	QTD000922	Natri_2024	CD8_NKT	CL_0000625	CD8+ T cell	naive	65	ge	38548990	single-cell
 QTS000051	QTD000923	Natri_2024	Ciliated	CL_0000067	ciliated epithelial cell	naive	92	ge	38548990	single-cell
 QTS000051	QTD000924	Natri_2024	Inflammatory_monocyte	CL_0000860	classical monocyte	naive	100	ge	38548990	single-cell
 QTS000051	QTD000925	Natri_2024	Interstitial_macrophage	CL_4033043	lung interstitial macrophage	naive	53	ge	38548990	single-cell
