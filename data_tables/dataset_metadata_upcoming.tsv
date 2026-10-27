@@ -66,3 +66,39 @@ QTS000066	QTD001341	Finngen_Multiome	cDC2 (L2)	CL_0000990	conventional dendritic
 QTS000066	QTD001342	Finngen_Multiome	dnT (L2)	CL_0002489	double negative T cell	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001343	Finngen_Multiome	gdT (L2)	CL_0000798	gdT cell	naive	1108	ge	42816628	single-cell
 QTS000066	QTD001344	Finngen_Multiome	pDC (L2)	CL_0000784	plasmacytoid dendritic cell	naive	1108	ge	42816628	single-cell
+QTS000069	QTD001403	AIDA	CD14-low_CD16-positive_monocyte	CL_0002396	CD16+ monocyte	naive	300	ge	 39627432	single-cell
+QTS000069	QTD001404	AIDA	CD14-positive_monocyte	CL_0001054	monocyte	naive	305	ge	 39627432	single-cell
+QTS000069	QTD001405	AIDA	CD16-positive_CD56-dim_natural_killer_cell_human	CL_0000939	NK cell	naive	302	ge	 39627432	single-cell
+QTS000069	QTD001406	AIDA	CD1c-positive_myeloid_dendritic_cell	CL_0002399	DC	naive	205	ge	 39627432	single-cell
+QTS000069	QTD001407	AIDA	CD4-positive_alpha-beta_T_cell	CL_0000624	CD4+ T cell	naive	302	ge	 39627432	single-cell
+QTS000069	QTD001408	AIDA	CD4-positive_alpha-beta_cytotoxic_T_cell	CL_0000934	CD4+ CTL cell	naive	143	ge	 39627432	single-cell
+QTS000069	QTD001409	AIDA	CD8-positive_alpha-beta_T_cell	CL_0000625	CD8+ T cell	naive	296	ge	 39627432	single-cell
+QTS000069	QTD001410	AIDA	CD8-positive_alpha-beta_cytotoxic_T_cell	CL_0000794	T cell	naive	253	ge	 39627432	single-cell
+QTS000069	QTD001411	AIDA	CD8-positive_alpha-beta_memory_T_cell	CL_0000909		naive	275	ge	 39627432	single-cell
+QTS000069	QTD001412	AIDA	T_cell	CL_0000084	T cell	naive	273	ge	 39627432	single-cell
+QTS000069	QTD001413	AIDA	central_memory_CD4-positive_alpha-beta_T_cell	CL_0000904	CD4+ TCM cell	naive	304	ge	 39627432	single-cell
+QTS000069	QTD001414	AIDA	effector_memory_CD4-positive_alpha-beta_T_cell	CL_0000905	CD4+ TEM cell	naive	281	ge	 39627432	single-cell
+QTS000069	QTD001415	AIDA	gamma-delta_T_cell	CL_0000798	gdT cell	naive	238	ge	 39627432	single-cell
+QTS000069	QTD001416	AIDA	memory_B_cell	CL_0000787	memory B cell	naive	287	ge	 39627432	single-cell
+QTS000069	QTD001417	AIDA	mucosal-associated_invariant_T_cell	CL_0000940	MAIT cell	naive	224	ge	 39627432	single-cell
+QTS000069	QTD001418	AIDA	myeloid_cell	CL_0000763	myeloid cell	naive	269	ge	 39627432	single-cell
+QTS000069	QTD001419	AIDA	naive_B_cell	CL_0000788	naive B cell	naive	253	ge	 39627432	single-cell
+QTS000069	QTD001420	AIDA	naive_thymus-derived_CD4-positive_alpha-beta_T_cell	CL_0000895	T cell	naive	304	ge	 39627432	single-cell
+QTS000069	QTD001421	AIDA	naive_thymus-derived_CD8-positive_alpha-beta_T_cell	CL_0000900	T cell	naive	296	ge	 39627432	single-cell
+QTS000069	QTD001422	AIDA	natural_killer_cell	CL_0000623	NK cell	naive	172	ge	 39627432	single-cell
+QTS000069	QTD001423	AIDA	platelet	CL_0000233	platelet	naive	170	ge	 39627432	single-cell
+QTS000069	QTD001424	AIDA	regulatory_T_cell	CL_0000815	regulatory T cell	naive	226	ge	 39627432	single-cell
+QTS000070	QTD001425	AIDA_reannotated	CD16+_NK_cells	CL_0000939	NK cell	naive	303	ge	 39627432	single-cell
+QTS000070	QTD001426	AIDA_reannotated	Classical_monocytes	CL_0001054	monocyte	naive	305	ge	 39627432	single-cell
+QTS000070	QTD001427	AIDA_reannotated	DC2	CL_0000990	conventional dendritic cell	naive	194	ge	 39627432	single-cell
+QTS000070	QTD001428	AIDA_reannotated	MAIT_cells	CL_0000940	MAIT cell	naive	222	ge	 39627432	single-cell
+QTS000070	QTD001429	AIDA_reannotated	Memory_B_cells	CL_0000787	memory B cell	naive	268	ge	 39627432	single-cell
+QTS000070	QTD001430	AIDA_reannotated	Naive_B_cells	CL_0000788	naive B cell	naive	232	ge	 39627432	single-cell
+QTS000070	QTD001431	AIDA_reannotated	Non-classical_monocytes	CL_0000875	non-classical monocyte	naive	298	ge	 39627432	single-cell
+QTS000070	QTD001432	AIDA_reannotated	Regulatory_T_cells	CL_0000815	regulatory T cell	naive	242	ge	 39627432	single-cell
+QTS000070	QTD001433	AIDA_reannotated	Tcm_Naive_cytotoxic_T_cells	CL_0000907	CD8+ TCM cell	naive	291	ge	 39627432	single-cell
+QTS000070	QTD001434	AIDA_reannotated	Tcm_Naive_helper_T_cells	CL_0000904	CD4+ TCM cell	naive	304	ge	 39627432	single-cell
+QTS000070	QTD001435	AIDA_reannotated	Tem_Effector_helper_T_cells	CL_0000905	CD4+ TEM cell	naive	296	ge	 39627432	single-cell
+QTS000070	QTD001436	AIDA_reannotated	Tem_Temra_cytotoxic_T_cells	CL_0001062	Tem/Temra cytotoxic T cell	naive	295	ge	 39627432	single-cell
+QTS000070	QTD001437	AIDA_reannotated	Tem_Trm_cytotoxic_T_cells	CL_0000913	CD8+ TEM cell	naive	291	ge	 39627432	single-cell
+QTS000070	QTD001438	AIDA_reannotated	pDC	CL_0000784	plasmacytoid dendritic cell	naive	98	ge	 39627432	single-cell
