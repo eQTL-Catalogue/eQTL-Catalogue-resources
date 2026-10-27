@@ -354,3 +354,39 @@ MacroMap	macrophage	R848_24	CL_0000235	macrophage
 MacroMap	macrophage	R848_6	CL_0000235	macrophage
 MacroMap	macrophage	sLPS_24	CL_0000235	macrophage
 MacroMap	macrophage	sLPS_6	CL_0000235	macrophage
+AIDA	monocyte	CD14-low_CD16-positive_monocyte	CL_0002396	CD14-low, CD16-positive monocyte
+AIDA	monocyte	CD14-positive_monocyte	CL_0001054	CD14-positive monocyte
+AIDA	NK	CD16-positive_CD56-dim_natural_killer_cell_human	CL_0000939	CD16-positive, CD56-dim natural killer cell, human
+AIDA	DC	CD1c-positive_myeloid_dendritic_cell	CL_0002399	CD1c-positive myeloid dendritic cell
+AIDA	T cell	CD4-positive_alpha-beta_T_cell	CL_0000624	CD4-positive, alpha-beta T cell
+AIDA	T cell	CD4-positive_alpha-beta_cytotoxic_T_cell	CL_0000934	CD4-positive, alpha-beta cytotoxic T cell
+AIDA	T cell	CD8-positive_alpha-beta_T_cell	CL_0000625	CD8-positive, alpha-beta T cell
+AIDA	T cell	CD8-positive_alpha-beta_cytotoxic_T_cell	CL_0000794	CD8-positive, alpha-beta cytotoxic T cell
+AIDA	T cell	CD8-positive_alpha-beta_memory_T_cell	CL_0000909	CD8-positive, alpha-beta memory T cell
+AIDA	T cell	T_cell	CL_0000084	T cell
+AIDA	T cell	central_memory_CD4-positive_alpha-beta_T_cell	CL_0000904	central memory CD4-positive, alpha-beta T cell
+AIDA	T cell	effector_memory_CD4-positive_alpha-beta_T_cell	CL_0000905	effector memory CD4-positive, alpha-beta T cell
+AIDA	T cell	gamma-delta_T_cell	CL_0000798	gamma-delta T cell
+AIDA	B cell	memory_B_cell	CL_0000787	memory B cell
+AIDA	T cell	mucosal-associated_invariant_T_cell	CL_0000940	mucosal-associated invariant T cell
+AIDA	myeloid cell	myeloid_cell	CL_0000763	myeloid cell
+AIDA	B cell	naive_B_cell	CL_0000788	naive B cell
+AIDA	T cell	naive_thymus-derived_CD4-positive_alpha-beta_T_cell	CL_0000895	naive thymus-derived CD4-positive, alpha-beta T cell
+AIDA	T cell	naive_thymus-derived_CD8-positive_alpha-beta_T_cell	CL_0000900	naive thymus-derived CD8-positive, alpha-beta T cell
+AIDA	NK	natural_killer_cell	CL_0000623	natural killer cell
+AIDA	platelet	platelet	CL_0000233	platelet
+AIDA	T cell	regulatory_T_cell	CL_0000815	regulatory T cell
+AIDA_reannotated	NK	CD16+_NK_cells	CL_0000939	CD16-positive, CD56-dim natural killer cell, human
+AIDA_reannotated	monocyte	Classical_monocytes	CL_0001054	CD14-positive monocyte
+AIDA_reannotated	DC	DC2	CL_0000990	conventional dendritic cell
+AIDA_reannotated	T cell	MAIT_cells	CL_0000940	mucosal-associated invariant T cell
+AIDA_reannotated	B cell	Memory_B_cells	CL_0000787	memory B cell
+AIDA_reannotated	B cell	Naive_B_cells	CL_0000788	naive B cell
+AIDA_reannotated	monocyte	Non-classical_monocytes	CL_0000875	non-classical monocyte
+AIDA_reannotated	T cell	Regulatory_T_cells	CL_0000815	regulatory T cell
+AIDA_reannotated	T cell	Tcm_Naive_cytotoxic_T_cells	CL_0000907	central memory CD8-positive, alpha-beta T cell
+AIDA_reannotated	T cell	Tcm_Naive_helper_T_cells	CL_0000904	central memory CD4-positive, alpha-beta T cell
+AIDA_reannotated	T cell	Tem_Effector_helper_T_cells	CL_0000905	effector memory CD4-positive, alpha-beta T cell
+AIDA_reannotated	T cell	Tem_Temra_cytotoxic_T_cells	CL_0001062	effector memory CD8-positive, alpha-beta T cell, terminally differentiated
+AIDA_reannotated	T cell	Tem_Trm_cytotoxic_T_cells	CL_0000913	effector memory CD8-positive, alpha-beta T cell
+AIDA_reannotated	DC	pDC	CL_0000784	plasmacytoid dendritic cell

@@ -120,3 +120,11 @@ CL_0011031	monocyte-derived dendritic cell	monocyte-derived dendritic cell
 CL_0000158	club cell	club cell
 CL_0000160	goblet cell	goblet cell
 CL_4028002	alveolar capillary type 1 endothelial cell	alveolar capillary type 1 endothelial cell
+CL_0001054	CD14-positive monocyte	monocyte
+CL_0000939	CD16-positive, CD56-dim natural killer cell, human	NK cell
+CL_0002399	CD1c-positive myeloid dendritic cell	DC
+CL_0000794	CD8-positive, alpha-beta cytotoxic T cell	T cell
+CL_0000909	CD8-positive, alpha-beta memory T cell T cell
+CL_0000763	myeloid cell	myeloid cell
+CL_0000895	naive thymus-derived CD4-positive, alpha-beta T cell	T cell
+CL_0000900	naive thymus-derived CD8-positive, alpha-beta T cell	T cell
