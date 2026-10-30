@@ -102,3 +102,37 @@ QTS000070	QTD001435	AIDA_reannotated	Tem_Effector_helper_T_cells	CL_0000905	CD4+
 QTS000070	QTD001436	AIDA_reannotated	Tem_Temra_cytotoxic_T_cells	CL_0001062	Tem/Temra cytotoxic T cell	naive	295	ge	 39627432	single-cell
 QTS000070	QTD001437	AIDA_reannotated	Tem_Trm_cytotoxic_T_cells	CL_0000913	CD8+ TEM cell	naive	291	ge	 39627432	single-cell
 QTS000070	QTD001438	AIDA_reannotated	pDC	CL_0000784	plasmacytoid dendritic cell	naive	98	ge	 39627432	single-cell
+QTS000068	QTD001370	PsychAD	Astro_class	CL_0000127	astrocyte	naive	1655	ge	42778721	single-cell
+QTS000068	QTD001372	PsychAD	EN_class	CL_0000679	glutamatergic neuron	naive	1614	ge	42778721	single-cell
+QTS000068	QTD001382	PsychAD	Endo_class	CL_0000115	endothelial cell	naive	1454	ge	42778721	single-cell
+QTS000068	QTD001384	PsychAD	IN_class	CL_0000617	GABAergic neuron	naive	1623	ge	42778721	single-cell
+QTS000068	QTD001394	PsychAD	Mural_class	CL_0008034	mural cell	naive	1214	ge	42778721	single-cell
+QTS000068	QTD001395	PsychAD	OPC_class	CL_0002453	oligodendrocyte precursor cell	naive	1652	ge	42778721	single-cell
+QTS000068	QTD001397	PsychAD	Oligo_class	CL_0000128	oligodendrocyte	naive	1646	ge	42778721	single-cell
+QTS000068	QTD001392	PsychAD	Immune_class	CL_0000738	leukocyte	naive	1637	ge	42778721	single-cell
+QTS000068	QTD001373	PsychAD	EN_L2_3_IT_subclass	CL_4030059	L2/3 intratelencephalic projecting glutamatergic neuron	naive	1614	ge	42778721	single-cell
+QTS000068	QTD001374	PsychAD	EN_L3_5_IT_1_subclass	CL_4030059	L2/3 intratelencephalic projecting glutamatergic neuron	naive	1543	ge	42778721	single-cell
+QTS000068	QTD001375	PsychAD	EN_L3_5_IT_2_subclass	CL_4030059	L2/3 intratelencephalic projecting glutamatergic neuron	naive	1568	ge	42778721	single-cell
+QTS000068	QTD001376	PsychAD	EN_L3_5_IT_3_subclass	CL_4030059	L2/3 intratelencephalic projecting glutamatergic neuron	naive	1572	ge	42778721	single-cell
+QTS000068	QTD001377	PsychAD	EN_L5_6_NP_subclass	CL_4030067	L5/6 near-projecting glutamatergic neuron	naive	1376	ge	42778721	single-cell
+QTS000068	QTD001378	PsychAD	EN_L6B_subclass	CL_4023038	L6b glutamatergic cortical neuron	naive	1285	ge	42778721	single-cell
+QTS000068	QTD001379	PsychAD	EN_L6_CT_subclass	CL_4023042	L6 corticothalamic-projecting glutamatergic cortical neuron	naive	1406	ge	42778721	single-cell
+QTS000068	QTD001380	PsychAD	EN_L6_IT_1_subclass	CL_4030065	L6 intratelencephalic projecting glutamatergic neuron	naive	1389	ge	42778721	single-cell
+QTS000068	QTD001381	PsychAD	EN_L6_IT_2_subclass	CL_4030065	L6 intratelencephalic projecting glutamatergic neuron	naive	1252	ge	42778721	single-cell
+QTS000068	QTD001383	PsychAD	Endo_subclass	CL_0000115	endothelial cell	naive	1454	ge	42778721	single-cell
+QTS000068	QTD001385	PsychAD	IN_ADARB2_subclass	CL_4310122	STR SST-ADARB2 GABA sst GABAergic interneuron (Primate)	naive	1506	ge	42778721	single-cell
+QTS000068	QTD001386	PsychAD	IN_LAMP5_LHX6_subclass	CL_4042013	Lamp5 Lhx6 neuron	naive	1517	ge	42778721	single-cell
+QTS000068	QTD001387	PsychAD	IN_LAMP5_RELN_subclass	CL_4023011	lamp5 GABAergic interneuron	naive	1581	ge	42778721	single-cell
+QTS000068	QTD001388	PsychAD	IN_PVALB_subclass	CL_4023018	pvalb GABAergic interneuron	naive	1588	ge	42778721	single-cell
+QTS000068	QTD001389	PsychAD	IN_PVALB_CHC_subclass	CL_4023036	pvalb chandelier GABAergic interneuron	naive	1502	ge	42778721	single-cell
+QTS000068	QTD001390	PsychAD	IN_SST_subclass	CL_4023017	sst GABAergic interneuron	naive	1590	ge	42778721	single-cell
+QTS000068	QTD001391	PsychAD	IN_VIP_subclass	CL_4023016	VIP GABAergic interneuron	naive	1623	ge	42778721	single-cell
+QTS000068	QTD001393	PsychAD	Micro_subclass	CL_0000129	microglial cell	naive	1637	ge	42778721	single-cell
+QTS000068	QTD001396	PsychAD	OPC_subclass	CL_0002453	oligodendrocyte precursor cell	naive	1652	ge	42778721	single-cell
+QTS000068	QTD001398	PsychAD	Oligo_subclass	CL_0000128	oligodendrocyte	naive	1646	ge	42778721	single-cell
+QTS000068	QTD001399	PsychAD	PC_subclass	CL_0000121	Purkinje cell	naive	1118	ge	42778721	single-cell
+QTS000068	QTD001400	PsychAD	PVM_subclass	CL_0000881	perivascular macrophage	naive	1050	ge	42778721	single-cell
+QTS000068	QTD001401	PsychAD	SMC_subclass	CL_0000192	smooth muscle cell	naive	421	ge	42778721	single-cell
+QTS000068	QTD001402	PsychAD	VLMC_subclass	CL_4023051	vascular leptomeningeal cell	naive	1214	ge	42778721	single-cell
+QTS000068	QTD001369	PsychAD	Adaptive_subclass	CL_0000542	lymphocyte	naive	373	ge	42778721	single-cell
+QTS000068	QTD001371	PsychAD	Astro_subclass	CL_0000127	astrocyte	naive	1655	ge	42778721	single-cell
